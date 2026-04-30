@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 try {
-  const html = fs.readFileSync('index.html', 'utf8');
+  const html = fs.readFileSync('template.html', 'utf8');
   const jsx = fs.readFileSync('roadmap.jsx', 'utf8');
 
   // Replace the external script tag with the inline script
@@ -10,8 +10,8 @@ try {
     `<script type="text/babel">\n${jsx}\n</script>`
   );
 
-  fs.writeFileSync('Standalone_Roadmap.html', standaloneHtml);
-  console.log('Successfully created Standalone_Roadmap.html!');
+  fs.writeFileSync('index.html', standaloneHtml);
+  console.log('Successfully created index.html for GitHub Pages!');
 } catch (err) {
   console.error('Error:', err);
 }
