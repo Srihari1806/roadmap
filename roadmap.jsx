@@ -3622,57 +3622,6 @@ function Roadmap() {
               </div>
             )}
 
-            {/* Week header */}
-            <div style={{
-              background: CARD,
-              border: `1px solid ${BORDER}`,
-              borderLeft: `4px solid ${currentWeekData.color}`,
-              borderRadius: 8,
-              padding: "16px 20px",
-              marginBottom: 20,
-            }}>
-              <div style={{ color: currentWeekData.color, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>
-                WEEK {currentWeekData.week}
-              </div>
-              <div style={{ fontSize: 18, fontWeight: 800, marginTop: 4 }}>{currentWeekData.label}</div>
-              <div style={{ fontSize: 12, color: MUTED, marginTop: 2 }}>{currentWeekData.theme}</div>
-            </div>
-
-            {/* Day grid */}
-            {!currentDayData && (
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 12, marginBottom: 20 }}>
-                {currentWeekData.days.map(day => (
-                  <div key={day.day} onClick={() => setSelectedDay(day.day)} style={{
-                    background: CARD,
-                    border: `1px solid ${BORDER}`,
-                    borderRadius: 8,
-                    padding: 16,
-                    cursor: "pointer",
-                    transition: "border-color 0.2s, transform 0.1s",
-                  }}
-                    onMouseEnter={e => e.currentTarget.style.borderColor = currentWeekData.color}
-                    onMouseLeave={e => e.currentTarget.style.borderColor = BORDER}
-                  >
-                    <div style={{ fontSize: 11, color: currentWeekData.color, fontWeight: 700 }}>DAY {day.day}</div>
-                    <div style={{ fontSize: 14, fontWeight: 700, marginTop: 4, marginBottom: 8 }}>{day.title}</div>
-                    <div style={{ fontSize: 11, color: MUTED, marginBottom: 10 }}>
-                      {day.tasks.length} tasks
-                    </div>
-                    <div style={{
-                      background: "#1a1a2e",
-                      borderRadius: 4,
-                      padding: "8px 10px",
-                      fontSize: 11,
-                      color: GREEN,
-                      lineHeight: 1.4,
-                    }}>
-                      ✓ {day.outcome}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
             {/* Day detail */}
             {currentDayData && (
               <div>
