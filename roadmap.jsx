@@ -2688,6 +2688,295 @@ const taskTypeColors = {
   watch: "#FF0000",
 };
 
+// ─── PROJECT DATA ────────────────────────────────────────────────────────────
+// Insert this block just before `function Roadmap()` in roadmap.jsx
+
+const projectsData = [
+  {
+    id: "ipl",
+    emoji: "🏏",
+    title: "IPL Analytics Engine",
+    subtitle: "Sports · Product · Business · Growth · Strategy",
+    accentColor: "#F4A72A",
+    deliverable: "Interactive website hosted on Vercel — all dashboards, reports and blogs redirect from portfolio",
+    metaInsight: '"IPL is not cricket. It is a product, a media empire, and an economic ecosystem."',
+    layers: [
+      {
+        num: "1", icon: "📊", title: "On-Field Data Intelligence",
+        role: "Sports / Performance Analyst",
+        color: "#4A9EFF",
+        what: "Decision intelligence, not just player stats",
+        analyze: ["Player impact vs salary (ROI per crore)", "Toss vs win probability", "Venue bias — spin vs pace dominance", "Pressure performance — death overs, chase vs defend"],
+        metrics: ["Strike Rate under pressure", "Economy rate in powerplay vs death", "Win % by toss decision per venue", "ROI = Runs+Wickets / Salary (crores)"],
+        outputs: ["Heatmaps — player scoring zones", "Win probability graph — over by over", "'The Undervalued XI' report", "Clutch Index leaderboard"],
+      },
+      {
+        num: "2", icon: "📱", title: "IPL as a Product",
+        role: "Product / User Behavior Analyst",
+        color: "#A855F7",
+        what: "Think like Hotstar / Dream11, not a cricket fan",
+        analyze: ["User journey: match → highlights → fantasy → reels", "Drop-off points — when viewers leave", "Engagement spikes — last overs, wickets, Dhoni entry"],
+        metrics: ["Avg watch time per match", "Retention curve per match type", "Peak concurrency estimate", "Fantasy team creation rate"],
+        outputs: ["Funnel diagram: Awareness→Tune-in→Engage→Share", "Retention graphs per match phase", "'Why IPL beats OTT shows in engagement' report"],
+      },
+      {
+        num: "3", icon: "💰", title: "Business & Revenue Engine",
+        role: "Business / Financial Analyst",
+        color: "#F4A72A",
+        what: "Separate yourself from 90% of analysts",
+        analyze: ["Media rights value (broadcaster splits)", "Sponsorship layers — title, jersey, digital", "Franchise valuation growth 2010→2024", "Ticket + merchandising revenue"],
+        metrics: ["Revenue per match", "Revenue per viewer", "Brand value CAGR per franchise", "Sponsorship ROI per category"],
+        outputs: ["Revenue breakdown waterfall chart", "Franchise valuation comparison timeline", "'Why RCB earns more without trophies?' case study"],
+      },
+      {
+        num: "4", icon: "📈", title: "Growth & Marketing Strategy",
+        role: "Growth / Marketing Analyst",
+        color: "#2ECC71",
+        what: "Creativity + strategy mindset combined",
+        analyze: ["Why IPL dominates summer — seasonality", "Brand campaigns — Swiggy, CRED, Dream11 ads", "Meme economy + reels virality", "Correlation: match moments vs social spikes"],
+        metrics: ["Hashtag trend velocity", "Influencer reach vs conversion estimate", "Ad recall score proxy", "Social spike timing vs match event"],
+        outputs: ["Social media spike timeline graphs", "Campaign breakdown case studies", "'How IPL hijacks internet attention' report"],
+      },
+      {
+        num: "5", icon: "🌍", title: "Macro Impact",
+        role: "Strategy / Market Research Analyst",
+        color: "#F97316",
+        what: "No one does this. Make it your differentiator.",
+        analyze: ["IPL vs movie industry revenue — summer window", "Impact on OTT release calendar", "Fantasy + betting economy size", "Local business impact — restaurants, bars"],
+        metrics: ["Seasonal GMV shift in entertainment", "OTT subscriber gain during IPL months", "Movie box office depression % during IPL weeks"],
+        outputs: ["Industry comparison charts", "Seasonal economy timeline", "'IPL as an Economic Ecosystem' report"],
+      },
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Live Website", desc: "Vercel-hosted interactive site — all 5 layers as separate pages with charts + filters" },
+      { icon: "📊", label: "Power BI Dashboard", desc: "Player stats, venue heatmap, team performance — interactive with slicers" },
+      { icon: "📝", label: "Blog Series", desc: "'Why CSK builds better teams' · 'IPL is not cricket, it's a product' · 'The Undervalued XI'" },
+      { icon: "📄", label: "Deep Report (PDF)", desc: "10–15 page McKinsey-style consulting report" },
+      { icon: "📱", label: "LinkedIn Carousels", desc: "5-slide visual breakdowns of key insights" },
+    ],
+    roleMap: [
+      { section: "Player + Match Data", role: "Data Analyst" },
+      { section: "Viewer Behavior", role: "Product Analyst" },
+      { section: "Revenue + Franchise", role: "Business Analyst" },
+      { section: "Ads + Engagement", role: "Growth Analyst" },
+      { section: "Industry Impact", role: "Strategy Analyst" },
+    ]
+  },
+  {
+    id: "ott",
+    emoji: "🎬",
+    title: "OTT vs Theatre Intelligence",
+    subtitle: "Content · Audience · Distribution · Business · COVID Impact",
+    accentColor: "#A855F7",
+    deliverable: "Interactive website with 9 analysis modules — linked from portfolio",
+    metaInsight: '"Theatres capture the peak. OTT captures the memory."',
+    layers: [
+      {
+        num: "1", icon: "🎭", title: "Content Performance + Genre Analysis",
+        role: "Content / Data Analyst",
+        color: "#4A9EFF",
+        what: "What genres actually win — theatres vs OTT",
+        analyze: ["Genre vs revenue — Action, Romance, Thriller, Comedy", "Pan-India vs niche regional content", "Telugu, Tamil rise vs Hindi dominance"],
+        metrics: ["Revenue per genre", "OTT completion rate proxy (ratings count)", "Regional vs national opening ratio"],
+        outputs: ["Genre vs revenue bar chart", "OTT completion rate by genre", "Insight: 'Mass content wins theatres, niche thrives on OTT'"],
+      },
+      {
+        num: "2", icon: "⭐", title: "Reviews & Word-of-Mouth Impact",
+        role: "Data / Sentiment Analyst",
+        color: "#EC4899",
+        what: "Reviews don't just rate films — they decide revenue",
+        analyze: ["IMDb ratings vs box office trajectory", "Critics vs audience score gap", "Social media sentiment vs occupancy"],
+        metrics: ["Day 1 vs Day 3 revenue drop %", "Rating vs revenue correlation coefficient", "Sentiment score (VADER) per film"],
+        outputs: ["Rating vs revenue scatter plot", "Sentiment vs box office trend line", "Insight: 'Hype opens, reviews sustain'"],
+      },
+      {
+        num: "3", icon: "🎟️", title: "Distribution — Multiplex vs Single Screen",
+        role: "Business / Market Analyst",
+        color: "#F4A72A",
+        what: "Urban watches content, rural celebrates cinema",
+        analyze: ["Urban (PVR/INOX) vs Rural (single screen) occupancy", "Price sensitivity — premium vs budget seats", "Content type preference by screen tier"],
+        metrics: ["ATP (Avg Ticket Price) by tier", "Occupancy % — Multiplex vs Single Screen", "Regional language share of screens"],
+        outputs: ["Urban vs rural revenue split chart", "Occupancy comparison bar chart", "Insight: 'Urban watches content, rural celebrates cinema'"],
+      },
+      {
+        num: "4", icon: "📱", title: "Booking Behavior Funnel",
+        role: "Product / UX Analyst",
+        color: "#2ECC71",
+        what: "Intent is high — pricing and timing decide conversion",
+        analyze: ["BookMyShow funnel: Search→Browse→Select→Book→Watch", "Weekend vs weekday booking patterns", "Group booking vs solo behavior"],
+        metrics: ["Funnel drop-off % at each stage", "Booking-to-show time gap", "Advance booking % vs walk-in %"],
+        outputs: ["Booking heatmap — time vs demand", "Funnel drop-off diagram", "Insight: 'Intent is high, but pricing decides conversion'"],
+      },
+      {
+        num: "5", icon: "🔗", title: "Full Content Lifecycle",
+        role: "Strategy / Content Analyst",
+        color: "#14B8A6",
+        what: "Theatre window to OTT gap has collapsed 60→8 weeks",
+        analyze: ["Pre→Release→Reviews→OTT→Re-watch timeline", "Theatre window shrinkage 2019 vs 2024", "Re-watch patterns on OTT"],
+        metrics: ["Days from release to OTT", "Revenue % earned in Week 1 vs Week 2+", "OTT views spike timing post-theatre"],
+        outputs: ["Revenue lifecycle curve", "Engagement-over-time chart", "Insight: 'Theatres capture peak, OTT captures memory'"],
+      },
+      {
+        num: "6", icon: "📈", title: "Marketing & Promotion Strategies",
+        role: "Growth / Marketing Analyst",
+        color: "#F97316",
+        what: "Promotion doesn't just inform — it creates cultural moments",
+        analyze: ["Trailer launch vs opening weekend correlation", "College tours, fan events, viral reel challenges", "Meme marketing — pre-release to post-release"],
+        metrics: ["YouTube trailer views vs Day 1 BO", "Engagement spike on promo events", "Hashtag reach vs opening collection"],
+        outputs: ["Promotion vs engagement spike graph", "Campaign type vs success matrix", "Insight: 'Promotion creates cultural moments, not just awareness'"],
+      },
+      {
+        num: "7", icon: "🧠", title: "Demographics Analysis",
+        role: "Product / Audience Analyst",
+        color: "#A855F7",
+        what: "Different age groups consume same content for different reasons",
+        analyze: ["15–25: reels, hype, action | 25–40: story, realism | 40+: drama, emotion", "Genre preference by age group", "OTT vs theatre usage by demographic"],
+        metrics: ["Age-segment revenue share", "Platform preference % by age group", "Genre completion rate by segment"],
+        outputs: ["Age vs content preference chart", "Platform vs age usage heatmap", "Insight: 'Same film, different consumption reasons by age'"],
+      },
+      {
+        num: "8", icon: "🦠", title: "COVID Impact Analysis",
+        role: "Business / Strategy Analyst",
+        color: "#EF4444",
+        what: "COVID didn't kill theatres — it forced evolution",
+        analyze: ["Pre-COVID: theatre dominant | During: OTT boom | Post: hybrid", "OTT subscriber growth 2019→2024", "Theatre footfall recovery curve"],
+        metrics: ["YoY OTT subscriber growth %", "Theatre recovery footfall index", "Hybrid content release % post-COVID"],
+        outputs: ["Year vs OTT growth line chart", "Theatre recovery curve", "Insight: 'COVID forced the evolution of distribution'"],
+      },
+      {
+        num: "9", icon: "💰", title: "Business Model Comparison",
+        role: "Financial / Business Analyst",
+        color: "#2ECC71",
+        what: "OTT optimizes lifetime value — theatres maximize moment value",
+        analyze: ["OTT: subscription tiers, ad revenue, content spend", "Theatre: ticket revenue, F&B margin 40–50%, real estate costs", "Risk vs reward per model"],
+        metrics: ["Revenue per subscriber (OTT)", "Revenue per screen per show (Theatre)", "Content spend as % of revenue"],
+        outputs: ["Revenue model comparison chart", "Risk vs reward matrix", "Insight: 'OTT optimizes LTV, theatres optimize moments'"],
+      },
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Live Website", desc: "9-module interactive site with all charts — Vercel hosted, linked from portfolio" },
+      { icon: "📊", label: "Tableau Dashboard", desc: "Genre trends, sentiment vs revenue, COVID timeline, demographic breakdown" },
+      { icon: "🎯", label: "Case Study (MANDATORY)", desc: "Pick 1 film: Pre-release hype → Opening → Reviews impact → OTT shift timeline" },
+      { icon: "📄", label: "Reports (PDF)", desc: "'Why theatres survive OTT era' · 'Reviews vs Revenue' · 'COVID reshaped entertainment'" },
+      { icon: "📱", label: "LinkedIn Series", desc: "5-slide carousels per insight — 9 posts total" },
+    ],
+    roleMap: [
+      { section: "Content + Reviews", role: "Data Analyst" },
+      { section: "Booking Funnel", role: "Product Analyst" },
+      { section: "Demographics", role: "Audience Analyst" },
+      { section: "Marketing ROI", role: "Growth Analyst" },
+      { section: "Business Models", role: "Business Analyst" },
+    ]
+  },
+  {
+    id: "ecom",
+    emoji: "🛒",
+    title: "E-Commerce + Ads System",
+    subtitle: "Sales · Psychology · Quick Commerce · Offline Impact · Conglomerates",
+    accentColor: "#2ECC71",
+    deliverable: "Interactive website with 9 analysis modules — redirects from portfolio",
+    metaInsight: '"E-commerce is not selling products. It is controlling attention, behavior, logistics, and ecosystems."',
+    layers: [
+      {
+        num: "1", icon: "🛍️", title: "Seasonal Sales — Festival vs Normal",
+        role: "Data / Business Analyst",
+        color: "#F4A72A",
+        what: "Festivals are engineered demand spikes, not organic ones",
+        analyze: ["Diwali / Big Billion Days / Great Indian Sale spikes", "Category performance: mobiles > fashion > appliances", "Normal vs festival day GMV delta"],
+        metrics: ["GMV spike % vs normal week", "Order volume by category", "AOV (Avg Order Value) during sale vs normal"],
+        outputs: ["Festival sales heatmap by category", "GMV spike timeline chart", "Insight: 'Urgency is manufactured, not accidental'"],
+      },
+      {
+        num: "2", icon: "💸", title: "Pricing + Discount Strategy",
+        role: "Data / Behavioral Analyst",
+        color: "#4A9EFF",
+        what: "Anchoring psychology drives more sales than actual discounts",
+        analyze: ["Fake vs real discount detection in dataset", "Anchor pricing: ₹50,000 → ₹29,999 psychology", "Limited-time urgency mechanics"],
+        metrics: ["Discount % offered vs actual price change", "Conversion rate lift with countdown timers", "Price elasticity by category"],
+        outputs: ["Fake vs real discount scatter", "'Psychology of ₹29,999' analysis", "Insight: 'Price anchoring > actual savings in conversion'"],
+      },
+      {
+        num: "3", icon: "📱", title: "Instagram Ads Impact",
+        role: "Growth / Marketing Analyst",
+        color: "#EC4899",
+        what: "Reels ads are the highest converting format in e-commerce",
+        analyze: ["Ad impressions → clicks → purchases funnel", "Influencer vs brand ads conversion", "Reels ads vs Story ads performance"],
+        metrics: ["CTR (Click-Through Rate) by ad format", "CAC (Customer Acquisition Cost)", "ROAS (Return on Ad Spend)"],
+        outputs: ["Ad funnel conversion chart", "Format vs conversion comparison", "Insight: 'Reels ads outperform every format in discovery-to-purchase'"],
+      },
+      {
+        num: "4", icon: "🧠", title: "Consumer Psychology",
+        role: "Behavioral / Product Analyst",
+        color: "#A855F7",
+        what: "FOMO and urgency are engineered — not felt",
+        analyze: ["Cart abandonment patterns (industry: 70%+ abandonment)", "FOMO effect — stock alerts, countdown timers", "Subscription model stickiness (Prime, Flipkart Plus)"],
+        metrics: ["Cart abandonment rate by category", "Conversion lift from urgency triggers", "Subscription retention rate proxy"],
+        outputs: ["Conversion funnel chart", "Cart abandonment analysis", "Insight: 'Urgency drives conversion more than discount'"],
+      },
+      {
+        num: "5", icon: "💰", title: "Revenue Strategy",
+        role: "Business / Financial Analyst",
+        color: "#2ECC71",
+        what: "LTV and retention, not just first sale, determine profitability",
+        analyze: ["AOV, Conversion Rate, Repeat customer %", "Subscription model revenue vs transactional", "LTV by customer segment"],
+        metrics: ["LTV / CAC ratio", "Repeat purchase rate", "Subscription ARPU (Avg Revenue Per User)"],
+        outputs: ["LTV vs CAC comparison chart", "Revenue model breakdown", "Insight: 'Subscriptions convert buyers into ecosystems'"],
+      },
+      {
+        num: "6", icon: "⚡", title: "Quick Commerce Deep Dive",
+        role: "Strategy / Product Analyst",
+        color: "#14B8A6",
+        what: "Time is replacing price as the #1 purchase decision factor",
+        analyze: ["Blinkit vs Instamart vs BigBasket — speed, UI, trust", "10–20 min delivery: convenience over price shift", "Planned buying → instant buying behavior change"],
+        metrics: ["AOV per platform", "Delivery SLA vs industry avg", "Category strength per platform"],
+        outputs: ["Platform comparison matrix", "Time vs price consumer decision chart", "Insight: 'Quick commerce increases frequency, not basket size'"],
+      },
+      {
+        num: "7", icon: "🏪", title: "Impact on Offline Market",
+        role: "Market Research / Strategy Analyst",
+        color: "#F97316",
+        what: "Offline is not dying — it is being absorbed into online ecosystems",
+        analyze: ["Kirana store footfall loss — data points", "Price competition from e-commerce platforms", "JioMart model — kirana onboarding"],
+        metrics: ["Kirana store count change YoY", "Average footfall decline %", "Platform-onboarded kirana % growth"],
+        outputs: ["Offline vs online market share chart", "Kirana absorption model", "Insight: 'Offline is not dying, it is becoming a delivery node'"],
+      },
+      {
+        num: "8", icon: "🏢", title: "Big Conglomerate Game",
+        role: "Strategy / Business Analyst",
+        color: "#EF4444",
+        what: "This is not apps vs apps — it's ecosystems vs ecosystems",
+        analyze: ["Reliance: Jio+JioMart+retail ecosystem", "Tata: BigBasket+Tata Neu+trust brand", "DMart: low-cost offline efficiency", "Adani: backend supply chain control"],
+        metrics: ["Market share % by segment", "Ecosystem reach (services bundled)", "Revenue per ecosystem user"],
+        outputs: ["Conglomerate strategy comparison matrix", "Ecosystem map visualization", "Insight: 'The battle is won in logistics and data, not UI'"],
+      },
+      {
+        num: "9", icon: "🧬", title: "Meta Insight — The Full System",
+        role: "All Roles Combined",
+        color: "#A855F7",
+        what: "Connect all 8 layers into one unified narrative",
+        analyze: ["How attention → behavior → logistics → ecosystem forms a loop", "Which companies own each layer", "What breaks the loop (regulation, trust, competition)"],
+        metrics: ["Customer journey touchpoints controlled per platform", "Lock-in index (how many services bundle together)", "Switching cost proxy"],
+        outputs: ["Ecosystem control map", "Full system narrative report", "Insight: 'E-commerce is attention + behavior + logistics + ecosystem control'"],
+      },
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Live Website", desc: "9-module site with all analysis, charts and insights — Vercel hosted, portfolio linked" },
+      { icon: "📊", label: "Power BI Dashboard", desc: "Festival sales heatmaps, funnel drop-offs, CAC analysis, platform comparison" },
+      { icon: "📝", label: "Insights (5–7 must)", desc: "Urgency drives conversion · Quick commerce = frequency not size · Anchoring > discount" },
+      { icon: "💡", label: "Recommendations", desc: "Optimize for reels ads · Push urgency-based UI · Target subscription for LTV" },
+      { icon: "📄", label: "Deep Report (PDF)", desc: "'The Psychology of Big Billion Days' — 10 pages consulting style" },
+    ],
+    roleMap: [
+      { section: "Sales + Pricing", role: "Data Analyst" },
+      { section: "Ads Funnel", role: "Growth Analyst" },
+      { section: "Consumer Psych", role: "Behavioral Analyst" },
+      { section: "Quick Commerce", role: "Strategy Analyst" },
+      { section: "Conglomerates", role: "Business Analyst" },
+    ]
+  }
+];
+
+
 const skillsRoadmap = [
   {
     role: "Data Analyst",
@@ -2750,6 +3039,96 @@ const skillsRoadmap = [
     ]
   },
 ];
+
+// ─── ProjectCard Component ────────────────────────────────────────────────────
+function ProjectCard({ proj }) {
+  const [expanded, setExpanded] = React.useState(null);
+  return (
+    <div style={{ background: CARD, border: `2px solid ${proj.accentColor}`, borderRadius: 12, padding: 24 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+        <span style={{ fontSize: 32 }}>{proj.emoji}</span>
+        <div>
+          <h2 style={{ margin: 0, fontSize: 20, fontWeight: 800 }}>{proj.title}</h2>
+          <p style={{ margin: 0, color: proj.accentColor, fontSize: 11, fontWeight: 700 }}>{proj.subtitle}</p>
+        </div>
+      </div>
+      <div style={{ background: "#1a1a2e", borderRadius: 6, padding: "10px 14px", marginBottom: 16, fontSize: 12, color: MUTED }}>
+        🌐 <strong style={{ color: proj.accentColor }}>Delivery:</strong> {proj.deliverable}
+      </div>
+
+      {/* Layers */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 16 }}>
+        {proj.layers.map((layer, i) => (
+          <div key={i} style={{ border: `1px solid ${expanded === i ? layer.color : BORDER}`, borderRadius: 8, overflow: "hidden", transition: "border-color 0.2s" }}>
+            <div onClick={() => setExpanded(expanded === i ? null : i)} style={{ padding: "12px 16px", cursor: "pointer", display: "flex", justifyContent: "space-between", alignItems: "center", background: expanded === i ? layer.color + "18" : "transparent" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{ fontSize: 16 }}>{layer.icon}</span>
+                <div>
+                  <span style={{ fontSize: 11, color: layer.color, fontWeight: 700 }}>LAYER {layer.num} · </span>
+                  <span style={{ fontSize: 13, fontWeight: 800 }}>{layer.title}</span>
+                </div>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <span style={{ fontSize: 10, background: layer.color + "25", color: layer.color, padding: "2px 8px", borderRadius: 4, fontWeight: 700 }}>{layer.role}</span>
+                <span style={{ color: MUTED }}>{expanded === i ? "−" : "+"}</span>
+              </div>
+            </div>
+            {expanded === i && (
+              <div style={{ borderTop: `1px solid ${BORDER}`, padding: "14px 16px" }}>
+                <div style={{ fontSize: 12, color: layer.color, fontStyle: "italic", marginBottom: 12 }}>💡 {layer.what}</div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
+                  <div>
+                    <div style={{ color: MUTED, fontSize: 10, fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>ANALYZE</div>
+                    {layer.analyze.map((a, j) => <div key={j} style={{ fontSize: 11, color: TEXT, padding: "3px 0", borderBottom: `1px solid ${BORDER}20` }}>• {a}</div>)}
+                  </div>
+                  <div>
+                    <div style={{ color: MUTED, fontSize: 10, fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>METRICS TO BUILD</div>
+                    {layer.metrics.map((m, j) => <div key={j} style={{ fontSize: 11, color: ACCENT, padding: "3px 0", borderBottom: `1px solid ${BORDER}20` }}>📐 {m}</div>)}
+                  </div>
+                  <div>
+                    <div style={{ color: MUTED, fontSize: 10, fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>OUTPUTS</div>
+                    {layer.outputs.map((o, j) => <div key={j} style={{ fontSize: 11, color: GREEN, padding: "3px 0", borderBottom: `1px solid ${BORDER}20` }}>✓ {o}</div>)}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Deliverables */}
+      <div style={{ marginBottom: 14 }}>
+        <div style={{ color: MUTED, fontSize: 10, fontWeight: 700, letterSpacing: 1, marginBottom: 8 }}>FINAL DELIVERABLES</div>
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          {proj.deliverables.map((d, i) => (
+            <div key={i} style={{ background: "#1a1a2e", border: `1px solid ${BORDER}`, borderRadius: 6, padding: "6px 10px" }}>
+              <span style={{ fontSize: 14 }}>{d.icon}</span>
+              <span style={{ fontSize: 11, fontWeight: 700, marginLeft: 4 }}>{d.label}</span>
+              <div style={{ fontSize: 10, color: MUTED, marginTop: 2 }}>{d.desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Role Map */}
+      <div>
+        <div style={{ color: MUTED, fontSize: 10, fontWeight: 700, letterSpacing: 1, marginBottom: 8 }}>ROLE MAP</div>
+        <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+          {proj.roleMap.map((r, i) => (
+            <div key={i} style={{ background: proj.accentColor + "20", border: `1px solid ${proj.accentColor}40`, borderRadius: 4, padding: "4px 10px", fontSize: 10 }}>
+              <span style={{ color: MUTED }}>{r.section} → </span>
+              <span style={{ color: proj.accentColor, fontWeight: 700 }}>{r.role}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ background: "#1a1a2e", borderRadius: 6, padding: "10px 14px", marginTop: 14, fontSize: 12, fontStyle: "italic", color: TEXT }}>
+        {proj.metaInsight}
+      </div>
+    </div>
+  );
+}
 
 function Roadmap() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -3601,186 +3980,172 @@ function Roadmap() {
         {/* PROJECTS TAB */}
         {activeTab === "projects" && (
           <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
-            {/* Project 1 */}
-            <div style={{ background: CARD, border: `1px solid ${ACCENT}`, borderRadius: 12, padding: 24 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-                <span style={{ fontSize: 32 }}>🏏</span>
-                <div>
-                  <h2 style={{ margin: 0, fontSize: 24, fontWeight: 800 }}>IPL Analytics Engine</h2>
-                  <p style={{ margin: 0, color: ACCENT, fontWeight: 700 }}>Sports + Product + Business Engine</p>
-                </div>
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
-                <div>
-                  <h3 style={{ color: MUTED, fontSize: 12, textTransform: "uppercase", letterSpacing: 1 }}>The 5 Layers</h3>
-                  <ul style={{ paddingLeft: 20, marginTop: 12, color: TEXT, lineHeight: 1.6 }}>
-                    <li><strong style={{color: BLUE}}>1. On-Field Data Intelligence:</strong> Player impact vs salary, toss probability, venue bias. (Sports Data Analyst)</li>
-                    <li><strong style={{color: PURPLE}}>2. IPL as a Product:</strong> User journey, drop-off points, engagement spikes. (Product Analyst)</li>
-                    <li><strong style={{color: ACCENT}}>3. Business & Revenue Engine:</strong> Media rights, sponsorships, franchise valuation. (Business Analyst)</li>
-                    <li><strong style={{color: GREEN}}>4. Growth & Marketing:</strong> Brand campaigns, meme economy, social spikes. (Growth Analyst)</li>
-                    <li><strong style={{color: "#F97316"}}>5. Macro Impact:</strong> IPL vs movie revenue, OTT impact, local economy. (Strategy Analyst)</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 style={{ color: MUTED, fontSize: 12, textTransform: "uppercase", letterSpacing: 1 }}>Final Presentation Focus</h3>
-                  <div style={{ background: "#1a1a2e", padding: 16, borderRadius: 8, marginTop: 12 }}>
-                    <div style={{ marginBottom: 8, color: ACCENT, fontWeight: 700 }}>💡 Key Insight to Present: "The Undervalued XI"</div>
-                    <div style={{ fontSize: 12, color: MUTED, marginBottom: 12 }}>Create a fantasy team of players who cost the least but deliver the highest ROI (Runs/Wickets per Crore). Use the STAR method to present this.</div>
-                    <div style={{ marginBottom: 8 }}>📊 <strong>Tableau/Power BI Dashboards</strong></div>
-                    <div style={{ marginBottom: 8 }}>📝 <strong>Blog Series</strong> ("Why CSK builds better teams")</div>
-                    <div>📄 <strong>Deep Reports</strong> (10-15 page McKinsey-style PDF)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 2 */}
-            <div style={{ background: CARD, border: `1px solid ${PURPLE}`, borderRadius: 12, padding: 24 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-                <span style={{ fontSize: 32 }}>🎬</span>
-                <div>
-                  <h2 style={{ margin: 0, fontSize: 24, fontWeight: 800 }}>OTT vs Theatre</h2>
-                  <p style={{ margin: 0, color: PURPLE, fontWeight: 700 }}>Content, Audience, and Revenue Intelligence</p>
-                </div>
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
-                <div style={{ background: "#1a1a2e", padding: 16, borderRadius: 8 }}>
-                  <h4 style={{ margin: "0 0 8px 0", color: BLUE }}>1. Content & Reviews</h4>
-                  <p style={{ fontSize: 13, color: MUTED }}>Genre vs revenue, pan-India vs niche. IMDb ratings vs box office drop-off (Hype opens, reviews sustain).</p>
-                </div>
-                <div style={{ background: "#1a1a2e", padding: 16, borderRadius: 8 }}>
-                  <h4 style={{ margin: "0 0 8px 0", color: ACCENT }}>2. Audience Behavior</h4>
-                  <p style={{ fontSize: 13, color: MUTED }}>Urban vs Rural split. Booking funnel (BookMyShow). Demographics tracking by age & platform preference.</p>
-                </div>
-                <div style={{ background: "#1a1a2e", padding: 16, borderRadius: 8 }}>
-                  <h4 style={{ margin: "0 0 8px 0", color: GREEN }}>3. Business & Strategy</h4>
-                  <p style={{ fontSize: 13, color: MUTED }}>Marketing/Promotions ROI. COVID Impact analysis. Subscription vs Box Office revenue model comparison.</p>
-                </div>
-              </div>
-              <div style={{ background: "#2e1a2e", border: `1px solid ${PURPLE}40`, padding: 16, borderRadius: 8, marginTop: 16 }}>
-                <h4 style={{ margin: "0 0 8px 0", color: PURPLE }}>💡 Key Insight to Present: "The Lifecycle of a Movie"</h4>
-                <p style={{ fontSize: 13, color: TEXT, margin: 0 }}>Show a timeline of box office drop-off vs. OTT viewership spikes. Present this as a 5-slide PDF carousel on LinkedIn, combining both analytics and creative visual storytelling.</p>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div style={{ background: CARD, border: `1px solid ${GREEN}`, borderRadius: 12, padding: 24 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-                <span style={{ fontSize: 32 }}>🛒</span>
-                <div>
-                  <h2 style={{ margin: 0, fontSize: 24, fontWeight: 800 }}>E-Commerce + Ads</h2>
-                  <p style={{ margin: 0, color: GREEN, fontWeight: 700 }}>Sales & Consumer Psychology</p>
-                </div>
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
-                <ul style={{ paddingLeft: 20, color: TEXT, lineHeight: 1.6 }}>
-                  <li><strong>Seasonal Sales & Pricing:</strong> Festival spikes, fake vs real discounts, anchoring.</li>
-                  <li><strong>Consumer Psychology:</strong> FOMO, cart abandonment, urgency triggers.</li>
-                  <li><strong>Instagram Ads:</strong> Ad impressions → clicks → purchase funnel. Reels vs Stories.</li>
-                  <li><strong>Quick Commerce:</strong> Blinkit/Instamart. Speed replacing price as decision factor.</li>
-                  <li><strong>Conglomerate Game:</strong> Reliance, Tata, Adani. Ecosystem vs Ecosystem strategy.</li>
-                </ul>
-                <div style={{ background: "#0d2e1a", border: `1px solid ${GREEN}40`, padding: 16, borderRadius: 8 }}>
-                  <h4 style={{ margin: "0 0 12px 0", color: GREEN }}>Meta Insight & Presentation</h4>
-                  <div style={{ marginBottom: 12 }}>
-                    <strong style={{ color: GREEN }}>💡 Present: "The Psychology of Big Billion Days"</strong><br/>
-                    <span style={{ fontSize: 13, color: MUTED }}>Show how discount anchoring works using fake vs. real pricing data to demonstrate consumer psychology.</span>
-                  </div>
-                  <p style={{ fontSize: 14, fontStyle: "italic", lineHeight: 1.6, color: TEXT }}>"E-commerce is not just selling products—it is controlling attention, behavior, logistics, and ecosystems."</p>
-                </div>
-              </div>
-            </div>
+            <p style={{ color: MUTED, fontSize: 12, lineHeight: 1.7, marginBottom: 8 }}>
+              Each project is delivered as a <strong style={{color: ACCENT}}>live website on Vercel</strong> — not just a PPT.
+              All 3 link back to your portfolio. Click any layer to see the full execution plan.
+            </p>
+            {projectsData.map(proj => (
+              <ProjectCard key={proj.id} proj={proj} />
+            ))}
           </div>
         )}
 
-        {/* PLATFORMS TAB */}
+                {/* PLATFORMS TAB */}
         {activeTab === "platforms" && (
-          <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+
             <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderLeft: `4px solid ${BLUE}`, padding: 24, borderRadius: 8 }}>
-              <h2 style={{ fontSize: 22, fontWeight: 800, marginBottom: 16 }}>1. Personal Portfolio Website</h2>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+              <h2 style={{ fontSize: 20, fontWeight: 800, marginBottom: 4 }}>1. Personal Portfolio Website</h2>
+              <p style={{ color: BLUE, fontSize: 12, margin: "0 0 16px" }}>Tech · Analytics · Strategy — your central hub</p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <div>
-                  <h3 style={{ color: MUTED, fontSize: 13, marginBottom: 8 }}>Tech Stack</h3>
-                  <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16 }}>
-                    {["Next.js / React", "Tailwind CSS", "Vercel Hosting", "Chart.js / Recharts"].map(t => (
-                      <span key={t} style={{ background: "#1a1a2e", padding: "4px 10px", borderRadius: 4, fontSize: 12 }}>{t}</span>
+                  <div style={{ color: MUTED, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 8 }}>TECH STACK</div>
+                  <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 16 }}>
+                    {["Next.js / React", "Tailwind CSS", "Vercel Hosting", "Chart.js / Recharts", "Framer Motion"].map(t => (
+                      <span key={t} style={{ background: "#1a1a2e", border: `1px solid ${BORDER}`, padding: "3px 8px", borderRadius: 4, fontSize: 11 }}>{t}</span>
                     ))}
                   </div>
-                  <h3 style={{ color: MUTED, fontSize: 13, marginBottom: 8 }}>Design Aesthetic</h3>
-                  <p style={{ fontSize: 14, lineHeight: 1.6 }}>Modern, dark-theme, scroll-based storytelling (Inshorts style). Heavy use of glassmorphism and subtle micro-animations.</p>
+                  <div style={{ color: MUTED, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 8 }}>PAGES</div>
+                  <ul style={{ paddingLeft: 18, fontSize: 12, lineHeight: 1.8, color: TEXT }}>
+                    <li><strong>Hero:</strong> "Data Analyst & Product Thinker — turning data into decisions"</li>
+                    <li><strong>Projects:</strong> 3 live website links (IPL, OTT, E-Commerce) with STAR summaries</li>
+                    <li><strong>Skills:</strong> SQL · Python · Power BI · Tableau · Excel — with proof links</li>
+                    <li><strong>Creative:</strong> Sahitya Rachanalu as "Founder" project</li>
+                    <li><strong>Resume:</strong> 2 versions — Data Analyst + Product Analyst focus</li>
+                    <li><strong>Blog:</strong> Latest 3 posts auto-pulled from Medium/Substack</li>
+                  </ul>
                 </div>
                 <div style={{ background: "#1a1a2e", padding: 16, borderRadius: 8 }}>
-                  <h3 style={{ color: BLUE, fontSize: 13, marginBottom: 12 }}>Sitemap & Inside Content</h3>
-                  <ul style={{ paddingLeft: 20, fontSize: 13, lineHeight: 1.7 }}>
-                    <li><strong>Home (Hero):</strong> "Data Analyst & Product Thinker | Bridging the gap between numbers and consumer behavior."</li>
-                    <li><strong>Case Studies:</strong> Use STAR method. Focus on business solutions over just code (e.g. "Identified undervalued players...").</li>
-                    <li><strong>Creative Tech section:</strong> Highlight Sahitya Rachanalu as a live product showing Next.js + Design skills.</li>
-                    <li><strong>Resume:</strong> Provide 2 versions (Data vs Product focused).</li>
-                  </ul>
+                  <div style={{ color: BLUE, fontSize: 11, fontWeight: 700, marginBottom: 12 }}>ARCHITECTURE PLAN</div>
+                  {[
+                    { label: "3 Project Sub-Sites", desc: "Each project is a separate Vercel site — ipl.yourdomain.com etc." },
+                    { label: "Portfolio Hub", desc: "Central site with cards linking to each project site + Sahitya" },
+                    { label: "Analytics Tracking", desc: "Vercel Analytics to track which project recruiters visit most" },
+                    { label: "Dark Theme + Glassmorphism", desc: "Cinematic scroll-reveal, micro-animations, premium feel" },
+                  ].map(item => (
+                    <div key={item.label} style={{ marginBottom: 10 }}>
+                      <div style={{ fontSize: 12, fontWeight: 700, color: TEXT }}>{item.label}</div>
+                      <div style={{ fontSize: 11, color: MUTED }}>{item.desc}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
 
             <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderLeft: `4px solid ${PURPLE}`, padding: 24, borderRadius: 8 }}>
-              <h2 style={{ fontSize: 22, fontWeight: 800, marginBottom: 16 }}>2. Sahitya Rachanalu (Creative Platform)</h2>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+              <h2 style={{ fontSize: 20, fontWeight: 800, marginBottom: 4 }}>2. Sahitya Rachanalu</h2>
+              <p style={{ color: PURPLE, fontSize: 12, margin: "0 0 16px" }}>Creative Platform — Telugu literature, cinema, music & culture</p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <div>
-                  <ul style={{ paddingLeft: 20, fontSize: 13, lineHeight: 1.7 }}>
-                    <li><strong>Cinepedia:</strong> More than cast/crew. Add 'Thematic Analysis' and 'Cultural Impact' for films.</li>
-                    <li><strong>Fictionary:</strong> Take 5 famous Telugu dialogues (e.g. Mahesh Babu/Pawan Kalyan) and break down *why* they went viral.</li>
-                    <li><strong>Lyrics Engine:</strong> Format like Spotify. Add a sidebar that explains the *meaning* behind your original lyrics.</li>
-                    <li><strong>Novels/Audiobooks:</strong> Chapter-by-chapter release, distraction-free reading UI.</li>
-                    <li><strong>Meme/GIF Keyboard:</strong> Unique customized cultural emojis.</li>
-                  </ul>
+                  {[
+                    { icon: "📖", label: "Novels / Audiobooks", desc: "Chapter-by-chapter release. Singers dubbed. Distraction-free reading UI. Purchasable links." },
+                    { icon: "🎵", label: "Lyrics Engine", desc: "Spotify-style layout. Original lyrics + meaning sidebar. Other singers data dashboard." },
+                    { icon: "🎬", label: "Cinepedia", desc: "Wikipedia for films — new format. Thematic analysis, cultural impact, director deep-dives." },
+                    { icon: "💬", label: "Fictionary", desc: "Famous dialogues and expressions — card-flip UI. Why they went viral breakdown." },
+                    { icon: "😄", label: "Meme / GIF Keyboard", desc: "Custom cultural emojis and expressions — shareable, unique to Telugu culture." },
+                    { icon: "✍️", label: "Writeups", desc: "Articles, script analyses, anime-format series, blogs. All SEO-optimized." },
+                  ].map(item => (
+                    <div key={item.label} style={{ display: "flex", gap: 10, marginBottom: 12 }}>
+                      <span style={{ fontSize: 18, flexShrink: 0 }}>{item.icon}</span>
+                      <div>
+                        <div style={{ fontSize: 12, fontWeight: 700 }}>{item.label}</div>
+                        <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.5 }}>{item.desc}</div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
                 <div style={{ background: "#2e1a2e", padding: 16, borderRadius: 8 }}>
-                  <h3 style={{ color: PURPLE, fontSize: 13, marginBottom: 12 }}>Integration Plan</h3>
-                  <p style={{ fontSize: 14, lineHeight: 1.6 }}>
-                    This platform will be linked directly from your primary portfolio as your "Founder & Creative Identity" project.
-                    The 3 analytics projects will be hosted as sub-sites or interactive dashboards that redirect back to the main portfolio.
-                  </p>
+                  <div style={{ color: PURPLE, fontSize: 11, fontWeight: 700, marginBottom: 12 }}>INTEGRATION PLAN</div>
+                  {[
+                    { label: "Cross-Link", desc: "Portfolio → Sahitya under 'Founder @ Creative Platform'" },
+                    { label: "Sub-domain", desc: "sahityarachanalu.com — separate Vercel project" },
+                    { label: "Content Engine", desc: "Write 1 article/week — pipeline into LinkedIn + Medium" },
+                    { label: "Cinepedia Launch", desc: "3 film deep-dives first — Telugu (2) + Hindi (1)" },
+                    { label: "Tech Stack", desc: "Next.js + MDX for content, JSON for film DB, Tailwind" },
+                  ].map(item => (
+                    <div key={item.label} style={{ marginBottom: 10 }}>
+                      <div style={{ fontSize: 12, fontWeight: 700, color: TEXT }}>{item.label}</div>
+                      <div style={{ fontSize: 11, color: MUTED }}>{item.desc}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
+
           </div>
         )}
 
-        {/* CREATIVE TAB */}
+                {/* CREATIVE TAB */}
         {activeTab === "creative" && (
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-            <h2 style={{ fontSize: 22, fontWeight: 800, borderBottom: `1px solid ${BORDER}`, paddingBottom: 16 }}>The 10 Content Aspects (Creative Hub)</h2>
-            <p style={{ color: MUTED, fontSize: 13, marginBottom: 16 }}>Write 500-800 words for each of these topics to populate your platforms and LinkedIn. They perfectly blend your love for Tech, Cinema, and Analytics.</p>
-            
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 16, marginBottom: 24 }}>
-              {[
-                { title: "1. Script/Screenplay Analysis", desc: "'Why the Interval Bang in [Movie] Works' (pacing, psychology)." },
-                { title: "2. Character Psychology", desc: "'The Anti-Hero's Journey' (Why audiences root for grey characters like Pushpa)." },
-                { title: "3. Film Economics (Data + Cinema)", desc: "'Pan-India Blockbusters: Marketing Genius or Cultural Shift?' (Budgets/ROI)." },
-                { title: "4. E-Commerce Psychology", desc: "'The Anatomy of Cart Abandonment' (FOMO and anchoring)." },
-                { title: "5. Product Teardowns", desc: "'Why BookMyShow's UI is perfect for FOMO' (Analyzing 'fast filling' tags)." },
-                { title: "6. The Creator Economy", desc: "'How Meme Pages became Movie Promoters' (Instagram business models)." },
-                { title: "7. Visual Storytelling", desc: "'Color Theory in Cinema' (How directors use color to tell stories without words)." },
-                { title: "8. Sports Analytics (Product)", desc: "'IPL as a Product' (How to keep viewers engaged for 4 hours)." },
-                { title: "9. Music & Tech Integration", desc: "'How Spotify's Algorithm Shapes What We Listen To' (Recommendation engines)." },
-                { title: "10. Your Personal Journey", desc: "'Why I built Sahitya Rachanalu' (Documenting Next.js learnings & cultural hubs)." }
-              ].map(aspect => (
-                <div key={aspect.title} style={{ background: CARD, border: `1px solid ${BORDER}`, padding: 16, borderRadius: 8, borderLeft: `3px solid ${PURPLE}` }}>
-                  <div style={{ fontWeight: 800, color: TEXT, marginBottom: 6, fontSize: 14 }}>{aspect.title}</div>
-                  <div style={{ fontSize: 12, color: MUTED }}>{aspect.desc}</div>
+            <h2 style={{ fontSize: 20, fontWeight: 800, borderBottom: `1px solid ${BORDER}`, paddingBottom: 12 }}>
+              Creative Content Hub
+            </h2>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>WRITING ROLES TO TARGET</div>
+                {[
+                  { role: "Content Writer", desc: "Blogs, posts, LinkedIn articles" },
+                  { role: "Creative Writer", desc: "Stories, scripts, reel concepts" },
+                  { role: "Copywriter", desc: "Captions, ads, punchlines, marketing lines" },
+                  { role: "Script Writer", desc: "YouTube, reels, short films, ads" },
+                  { role: "Screenplay / Story Writer", desc: "Films, web series (long term)" },
+                  { role: "Lyricist", desc: "Songs, indie music, reels" },
+                  { role: "Sports Content Writer", desc: "Cricket pages, apps, sites" },
+                  { role: "Film Critic / Reviewer", desc: "YouTube, blogs, pages, analytics overlay" },
+                  { role: "Social Media Strategist", desc: "Ideas + captions + content calendars" },
+                ].map(r => (
+                  <div key={r.role} style={{ display: "flex", justifyContent: "space-between", padding: "6px 0", borderBottom: `1px solid ${BORDER}` }}>
+                    <span style={{ fontSize: 12, fontWeight: 700 }}>{r.role}</span>
+                    <span style={{ fontSize: 11, color: MUTED, maxWidth: 160, textAlign: "right" }}>{r.desc}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div>
+                <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16, marginBottom: 12 }}>
+                  <div style={{ color: PURPLE, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>10 CONTENT TOPICS (500–800 words each)</div>
+                  {[
+                    "Script/Screenplay Analysis — 'Why the interval bang in [Film] works'",
+                    "Character Psychology — 'Why audiences root for grey characters (Pushpa)'",
+                    "Film Economics — 'Pan-India Blockbusters: Marketing genius or cultural shift?'",
+                    "E-Commerce Psychology — 'The anatomy of cart abandonment'",
+                    "Product Teardowns — 'Why BookMyShow UI is built for FOMO'",
+                    "Creator Economy — 'How meme pages became movie promoters'",
+                    "Visual Storytelling — 'Color theory in cinema'",
+                    "Sports Analytics — 'IPL as a product: 4 hours of engineered engagement'",
+                    "Music + Tech — 'How Spotify's algorithm shapes what we hear'",
+                    "Personal Journey — 'Why I built Sahitya Rachanalu'",
+                  ].map((t, i) => (
+                    <div key={i} style={{ fontSize: 11, color: MUTED, padding: "4px 0", borderBottom: `1px solid ${BORDER}20` }}>
+                      {i + 1}. {t}
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
 
-            <div style={{ background: "linear-gradient(135deg, #1a1a2e 0%, #0A0A0F 100%)", padding: 24, borderRadius: 12, border: `1px solid ${BLUE}` }}>
-              <h3 style={{ fontSize: 18, fontWeight: 800, marginBottom: 16 }}>Portfolio Creative Presentation</h3>
-              <ul style={{ paddingLeft: 20, color: TEXT, lineHeight: 1.8 }}>
-                <li><strong>Video Editing Style Opening:</strong> Template-based cinematic opening for portfolio.</li>
-                <li><strong>Content Creation Pipeline:</strong> Books (film script wise with purchase links).</li>
-                <li><strong>Visual Storyboards:</strong> Made with AI + advanced editing.</li>
-                <li><strong>Music Dashboard:</strong> Spotify-style creative layout with lyrics + singers data.</li>
-                <li><strong>New Presentation Formats:</strong> Interactive, engaging ways to present movie/IPL content instead of static PPTs.</li>
-              </ul>
+            <div style={{ background: "linear-gradient(135deg, #1a1a2e, #0A0A0F)", border: `1px solid ${BLUE}`, borderRadius: 10, padding: 20 }}>
+              <h3 style={{ fontSize: 16, fontWeight: 800, marginBottom: 16, color: BLUE }}>🎬 Creative Portfolio Presentation Formats</h3>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
+                {[
+                  { icon: "🎬", label: "Video Opening", desc: "Cinematic template-style portfolio intro with motion design" },
+                  { icon: "📚", label: "Books / Audiobooks", desc: "Film-script format, chapter releases, purchasable links" },
+                  { icon: "🎨", label: "Visual Storyboards", desc: "AI-generated + manual editing for concept visualization" },
+                  { icon: "🎵", label: "Music Dashboard", desc: "Spotify-style layout — lyrics + singers + streaming data" },
+                  { icon: "🏏", label: "IPL Content Hub", desc: "Dedicated section: job roles, match reports, insights" },
+                  { icon: "🎭", label: "Movies Watch List", desc: "Curated cinematic list with thematic notes and ratings" },
+                ].map(item => (
+                  <div key={item.label} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 12 }}>
+                    <span style={{ fontSize: 20 }}>{item.icon}</span>
+                    <div style={{ fontSize: 12, fontWeight: 700, marginTop: 6 }}>{item.label}</div>
+                    <div style={{ fontSize: 11, color: MUTED, marginTop: 4, lineHeight: 1.4 }}>{item.desc}</div>
+                  </div>
+                ))}
+              </div>
             </div>
+
           </div>
         )}
       </div>
