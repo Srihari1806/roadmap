@@ -769,20 +769,126 @@ weeks_data = [
     }
 ]
 
-# Inject DSA and Aptitude into every day
+# ─────────────────────────────────────────────────────────────────
+# 16-WEEK DATA ANALYTICS ROADMAP (2026) — mapped to 8-week days
+# Resources appear at 6am BEFORE the daily DSA/Core warmup
+# ─────────────────────────────────────────────────────────────────
+resource_tasks_by_day = {
+    # ── WEEK 1: SQL Foundations (16W Wk 1–3) ──
+    4: [
+        {"time": "6–7am", "task": "📺 [16W·SQL] Watch: Luke Barousse – SQL for Data Analytics (4 hrs) | Goal: SELECT, WHERE, ORDER BY, GROUP BY, HAVING", "type": "watch", "link": "https://www.youtube.com/watch?v=7mz73uXD9DA"},
+    ],
+    5: [
+        {"time": "6–7am", "task": "📺 [16W·SQL] Watch: freeCodeCamp – SQL Course for Beginners (Full) | Goal: JOINs, subqueries, window functions", "type": "watch", "link": "https://www.youtube.com/watch?v=7S_tz1z_5bA"},
+    ],
+    6: [
+        {"time": "6–7am", "task": "📺 [16W·SQL] Watch (Optional): SQL For Data Analysis – Full Portfolio Project", "type": "watch", "link": "https://www.youtube.com/watch?v=zZpMvAedh_E"},
+    ],
+    # ── WEEK 2: Python + Power BI (16W Wk 4–5 & 7–8) ──
+    9: [
+        {"time": "6–7am", "task": "📺 [16W·BI] Watch: Power BI Tutorial for Beginners to Advanced | Goal: interface, import, visuals, slicers", "type": "watch", "link": "https://www.youtube.com/watch?v=cyWVzAQF9YU"},
+    ],
+    10: [
+        {"time": "6–7am", "task": "📺 [16W·BI] Watch: Learn Power BI in 7 Hours – Beginner to Advanced with Dashboard Project", "type": "watch", "link": "https://www.youtube.com/watch?v=KdC5R7oPCAI"},
+    ],
+    11: [
+        {"time": "6–7am", "task": "📺 [16W·PY] Watch: Python for Data Analytics – Full Course for Beginners | Goal: data types, loops, functions, pandas, EDA", "type": "watch", "link": "https://www.youtube.com/watch?v=wUSDVGivd-8"},
+    ],
+    12: [
+        {"time": "6–7am", "task": "📺 [16W·PY] Watch: Data Analysis with Python – Full Course (NumPy, Pandas, Matplotlib, Seaborn)", "type": "watch", "link": "https://www.youtube.com/watch?v=r-uOLxNrNk8"},
+    ],
+    13: [
+        {"time": "6–7am", "task": "📺 [16W·PY] Watch (Optional): Python for Data Analysis – Full Project for Beginners", "type": "watch", "link": "https://www.youtube.com/watch?v=VX6kCjwdNPw"},
+    ],
+    # ── WEEK 2 Review = 16W Wk 6: SQL + Python Mini Project ──
+    14: [
+        {"time": "6–6:30am", "task": "📺 [16W·PROJ] Watch & Replicate: End to End Data Analytics Project (Python + SQL)", "type": "watch", "link": "https://www.youtube.com/watch?v=uL0-6kfiH3g"},
+        {"time": "6:30–7am", "task": "📺 [16W·PROJ] Alt: End to End SQL Portfolio Project for Data Analyst", "type": "watch", "link": "https://www.youtube.com/watch?v=sxgAb6FGTBE"},
+    ],
+    # ── WEEK 3: IPL / Storytelling + Advanced Dashboards (16W Wk 9–10) ──
+    19: [
+        {"time": "6–6:30am", "task": "📺 [16W·STORY] Watch: Power BI Sales Dashboard Project (End-to-End) | Goal: KPIs, drill-downs, narrative", "type": "watch", "link": "https://www.youtube.com/watch?v=fZn83JRt4Nk"},
+        {"time": "6:30–7am", "task": "📺 [16W·STORY] Watch: How to Explain Your Project in Power BI Interview (storytelling)", "type": "watch", "link": "https://www.youtube.com/watch?v=lnItIEHp8g8"},
+    ],
+    # ── WEEK 3 Review = 16W Wk 11: Data Modeling / Star Schema ──
+    21: [
+        {"time": "6–6:30am", "task": "📺 [16W·MODEL] Watch: Data Modelling & Star Schema for Power BI in 20 Min", "type": "watch", "link": "https://www.youtube.com/watch?v=4ePNrdxWtY0"},
+        {"time": "6:30–7am", "task": "📺 [16W·MODEL] Watch: Star Schema Data Modeling Power BI Tutorial 2024", "type": "watch", "link": "https://www.youtube.com/watch?v=MXiH6rdUM1I"},
+    ],
+    # ── WEEK 4: OTT = 16W Wk 12: Data Engineering / ETL Intro ──
+    27: [
+        {"time": "6–7am", "task": "📺 [16W·DE] Watch: Build an ELT Pipeline in 1 Hour (dbt, Snowflake, Airflow) | Goal: ingest→transform→load→BI", "type": "watch", "link": "https://www.youtube.com/watch?v=OLXkGB7krGo"},
+    ],
+    28: [
+        {"time": "6–7am", "task": "📺 [16W·DE] Watch: How to Create an ELT Pipeline using Airflow, Snowflake, and dbt", "type": "watch", "link": "https://www.youtube.com/watch?v=VWnakVAT-Bk"},
+    ],
+    # ── WEEK 5: E-Commerce = 16W Wk 13: dbt + Airflow + Snowflake Project ──
+    33: [
+        {"time": "6–7am", "task": "📺 [16W·DE] Watch: DBT Beginner to Pro – End to End Pipeline with Airflow, Snowflake & DBT", "type": "watch", "link": "https://www.youtube.com/watch?v=RXWYPZ3T9ys"},
+    ],
+    34: [
+        {"time": "6–6:30am", "task": "📺 [16W·DE] Watch: Snowflake Data Engineering – Build End-to-End Pipelines with DBT & Airflow", "type": "watch", "link": "https://www.youtube.com/watch?v=iWjSsniB-RU"},
+        {"time": "6:30–7am", "task": "📺 [16W·DE] Watch (Optional): End-to-End E-Commerce Data Pipeline – Snowflake, dbt, Airflow", "type": "watch", "link": "https://www.youtube.com/watch?v=AmRvNJaECqo"},
+    ],
+    # ── WEEK 6: Portfolio = 16W Wk 14: AI + Forecasting ──
+    36: [
+        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: Time Series Forecasting in Python – Tutorial for Beginners (freeCodeCamp)", "type": "watch", "link": "https://www.youtube.com/watch?v=fxx_E0ojKrc"},
+        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: Power BI Forecasting Tutorial (Built-in Analytics)", "type": "watch", "link": "https://www.youtube.com/watch?v=96qsaQUVNcg"},
+    ],
+    37: [
+        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: AI-Driven Analytics in Power BI (Key Influencers, Q&A, Smart Narratives)", "type": "watch", "link": "https://www.youtube.com/watch?v=cKEbTXY0xQo"},
+        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: ChatGPT for Data Analytics – Real Use Cases (SQL, Python, Insights)", "type": "watch", "link": "https://www.youtube.com/watch?v=s6g-Ki0iemI"},
+    ],
+    # ── WEEK 6: Portfolio = 16W Wk 15: Portfolio Building ──
+    38: [
+        {"time": "6–6:30am", "task": "📺 [16W·PORT] Watch: The ONLY Data Analytics Portfolio You Need (Blueprint)", "type": "watch", "link": "https://www.youtube.com/watch?v=QyQYckvmxtI"},
+        {"time": "6:30–7am", "task": "📺 [16W·PORT] Watch: How to Build a Professional Data Portfolio Website (No-Code)", "type": "watch", "link": "https://www.youtube.com/watch?v=U69s3XXBMbg"},
+    ],
+    39: [
+        {"time": "6–7am", "task": "📺 [16W·AI] Watch: Copilot in Power BI – How to Use AI for Measures, Insights & Reports", "type": "watch", "link": "https://www.youtube.com/watch?v=J4l34uUqHtw"},
+    ],
+    # ── WEEK 7: Sahitya / Interviews = 16W Wk 16 ──
+    47: [
+        {"time": "6–6:30am", "task": "📺 [16W·INT] Watch: How to Explain Your Project Like a Pro in Interviews", "type": "watch", "link": "https://www.youtube.com/watch?v=iP3MuGqNI24"},
+        {"time": "6:30–7am", "task": "📺 [16W·INT] Watch: How to Explain Project in Data Analytics Interview", "type": "watch", "link": "https://www.youtube.com/watch?v=nsKItCQCZkA"},
+    ],
+    48: [
+        {"time": "6–7am", "task": "📺 [16W·INT] Watch: Going Deep on Past Projects in Interviews", "type": "watch", "link": "https://www.youtube.com/watch?v=wRSLJKSum2k"},
+    ],
+    # ── WEEK 8: Final Sprint = extra AI/ChatGPT resources ──
+    51: [
+        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: Using ChatGPT with Power BI – End-to-End Analytics Project", "type": "watch", "link": "https://www.youtube.com/watch?v=MjeDkDHJqzc"},
+        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: ChatGPT for Data Analysis: 7 Practical Use Cases", "type": "watch", "link": "https://www.youtube.com/watch?v=6h5xKWoDZ_U"},
+    ],
+    52: [
+        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: How to Use ChatGPT for SQL & Data Queries (Practical)", "type": "watch", "link": "https://www.youtube.com/watch?v=Z1lw4I7tcVQ"},
+        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: Microsoft Excel AI Features (Data Analysis & Insights)", "type": "watch", "link": "https://www.youtube.com/watch?v=2a2GR3Ee2s0"},
+    ],
+    53: [
+        {"time": "6–7am", "task": "📺 [16W·AI] Watch: Complete Time Series Analysis and Forecasting with Python", "type": "watch", "link": "https://www.youtube.com/watch?v=A3fowDMo8mM"},
+    ],
+}
+
+# Inject DSA, Core and 16-Week resources into every day
 day_counter = 0
 for week in weeks_data:
     for day in week['days']:
         dsa = tuf_dsa_topics[day_counter % len(tuf_dsa_topics)]
         core = tuf_core_topics[day_counter % len(tuf_core_topics)]
         day['day'] = day_counter + 1
-        
+
         # Prepend the DSA/Aptitude tasks to the tasks list
         dsa_task = {"time": "7–8am", "task": f"Takeuforward DSA: {dsa}", "type": "practice"}
         apt_task = {"time": "8–9am", "task": f"Takeuforward Core: {core}", "type": "practice"}
         day['tasks'].insert(0, apt_task)
         day['tasks'].insert(0, dsa_task)
-        
+
+        # Prepend 16-week resource tasks (appear at 6am, before DSA)
+        day_num = day_counter + 1
+        if day_num in resource_tasks_by_day:
+            for res in reversed(resource_tasks_by_day[day_num]):
+                day['tasks'].insert(0, res)
+
         day_counter += 1
 
 # Convert weeks_data to a JavaScript string representation
