@@ -2949,7 +2949,10 @@ function Roadmap() {
                   padding: "14px 16px",
                   cursor: "pointer",
                   transition: "border-color 0.2s",
-                }} onClick={() => { setActiveTab("daily"); setSelectedWeek(idx); setSelectedDay(null); }}>
+                }} onClick={() => { setActiveTab("daily"); setSelectedWeek(idx); setSelectedDay(null); }}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = week.color}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = BORDER; e.currentTarget.style.borderLeftColor = week.color; }}
+                >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
                       <span style={{ color: week.color, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>
@@ -2957,28 +2960,19 @@ function Roadmap() {
                       </span>
                       <span style={{ marginLeft: 8, fontWeight: 700, fontSize: 14 }}>{week.label}</span>
                     </div>
-                    <span style={{
-                      background: `${week.color}20`,
-                      color: week.color,
-                      padding: "3px 10px",
-                      borderRadius: 4,
-                      fontSize: 11,
-                      fontWeight: 700,
-                    }}>{week.theme}</span>
-                  </div>
-                  <div style={{ marginTop: 8, display: "flex", gap: 8, flexWrap: "wrap" }}>
-                    {week.days.slice(0, 3).map(d => (
-                      <span key={d.day} style={{
+                    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      <span style={{
+                        background: `${week.color}20`,
+                        color: week.color,
+                        padding: "3px 10px",
+                        borderRadius: 4,
                         fontSize: 11,
-                        color: MUTED,
-                        background: "#1a1a2e",
-                        padding: "2px 8px",
-                        borderRadius: 3,
-                      }}>Day {d.day}: {d.title}</span>
-                    ))}
-                    {week.days.length > 3 && (
-                      <span style={{ fontSize: 11, color: MUTED }}>+{week.days.length - 3} more</span>
-                    )}
+                        fontWeight: 700,
+                      }}>{week.theme}</span>
+                      <span style={{ fontSize: 11, color: MUTED }}>
+                        {week.days.length} days →
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}
