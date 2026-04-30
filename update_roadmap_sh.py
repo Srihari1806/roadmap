@@ -255,260 +255,263 @@ weeks_data = [
     {
         "week": 3,
         "label": "IPL Analytics Engine",
-        "theme": "Applying Python + SQL + BI",
+        "theme": "On-Field · Product · Revenue",
         "color": "ACCENT",
         "days": [
             {
-                "title": "Data Cleaning & On-Field Analysis",
+                "title": "On-Field Data Intelligence",
                 "tasks": [
-                    {"time": "9–11am", "task": "Load IPL CSV. Explore shape, columns, nulls. Standardize team names in Pandas.", "type": "data"},
-                    {"time": "11am–1pm", "task": "Build: Top 10 run scorers, top wicket takers, win rate by toss decision.", "type": "build"},
-                    {"time": "2–4pm", "task": "Build: Venue bias analysis (avg score by venue, spin vs pace dominance).", "type": "build"},
-                    {"time": "4–5pm", "task": "Write 3 SQL queries replicating the Pandas results to practice both skills.", "type": "build"},
-                    {"time": "5–6pm", "task": "Document findings in a README. Push to GitHub.", "type": "output"}
+                    {"time": "9–11am", "task": "Load IPL Ball-by-Ball data. Clean team/player names. Merge with Auction Salary data.", "type": "data"},
+                    {"time": "11am–1pm", "task": "ROI Analysis: Calculate Runs/Wickets per Crore. Identify 'Undervalued XI'.", "type": "build"},
+                    {"time": "2–4pm", "task": "Decision Intelligence: Analyze Toss vs Win probability and Venue Bias (Spin vs Pace).", "type": "build"},
+                    {"time": "4–5pm", "task": "Pressure Performance: Calculate Death Overs (16-20) strike rates and 'Clutch Index'.", "type": "build"},
+                    {"time": "5–6pm", "task": "Output: Generate player scoring zone heatmaps and win probability over-by-over graphs.", "type": "output"}
                 ],
-                "outcome": "IPL dataset cleaned. On-field analysis complete."
+                "outcome": "Sports Data Analyst role ready: On-field stats and performance models built."
             },
             {
-                "title": "Player Value & Pressure Analysis",
+                "title": "IPL as a Product (Viewer Behavior)",
                 "tasks": [
-                    {"time": "9–11am", "task": "Research IPL auction data. Merge salaries with player performance data.", "type": "data"},
-                    {"time": "11am–1pm", "task": "Calculate ROI: Runs/wickets per crore spent. Identify undervalued players.", "type": "build"},
-                    {"time": "2–4pm", "task": "Analyze Death Overs (16-20): Strike rates under pressure. Clutch Index.", "type": "build"},
-                    {"time": "4–5pm", "task": "Build: Scatter plot (Salary vs Performance Score) using Seaborn.", "type": "build"},
-                    {"time": "5–6pm", "task": "Write Insight: 'Top 5 Undervalued Players'. Save as blog draft.", "type": "output"}
+                    {"time": "9–11am", "task": "Model User Journey: match -> highlights -> fantasy -> reels. Identify drop-off points.", "type": "think"},
+                    {"time": "11am–1pm", "task": "Analyze Engagement Spikes: correlate Dhoni entry/wickets with peak concurrency proxies.", "type": "build"},
+                    {"time": "2–4pm", "task": "Metrics: Calculate Avg Watch Time and Retention Curves per match type.", "type": "build"},
+                    {"time": "4–5pm", "task": "Build Funnel Diagram: Awareness -> Tune-in -> Engagement -> Sharing.", "type": "build"},
+                    {"time": "5–6pm", "task": "Output: 'Why IPL beats OTT in engagement' report draft.", "type": "output"}
                 ],
-                "outcome": "Player value model built. First blog drafted."
+                "outcome": "Product Analyst role ready: User behavior and engagement metrics modeled."
             },
             {
-                "title": "Product Metrics: IPL Viewer Funnel",
+                "title": "Business & Revenue Engine",
                 "tasks": [
-                    {"time": "9–11am", "task": "Map IPL to product: viewers = users, matches = sessions. Create synthetic funnel data.", "type": "think"},
-                    {"time": "11am–1pm", "task": "Model viewer funnel: Awareness → Tune-in → Engagement → Reels sharing.", "type": "build"},
-                    {"time": "2–4pm", "task": "Map engagement spikes: Which match events drive peaks (wickets, sixes).", "type": "build"},
-                    {"time": "4–5pm", "task": "Export clean data for Power BI visualization tomorrow.", "type": "data"},
-                    {"time": "5–6pm", "task": "Write Insight: 'Why IPL beats OTT in engagement metrics'.", "type": "output"}
+                    {"time": "9–11am", "task": "Research Media Rights (Broadcaster splits). Build sponsorship layer model (Title vs Jersey).", "type": "research"},
+                    {"time": "11am–1pm", "task": "Analyze Franchise Valuation Growth (2010-2024). Calculate Revenue per match/viewer.", "type": "build"},
+                    {"time": "2–4pm", "task": "Brand Value Analysis: Correlate team performance with brand value CAGR.", "type": "build"},
+                    {"time": "4–5pm", "task": "Build Revenue Breakdown charts (Broadcasting, Tickets, Merchandising).", "type": "build"},
+                    {"time": "5–6pm", "task": "Case Study: 'Why RCB earns more without trophies?' type financial insights.", "type": "output"}
                 ],
-                "outcome": "Product analytics lens applied to IPL viewership."
+                "outcome": "Business Analyst role ready: Revenue streams and valuation models complete."
             },
             {
-                "title": "Business Revenue & Marketing",
+                "title": "Growth & Marketing Strategy",
                 "tasks": [
-                    {"time": "9–11am", "task": "Research IPL revenue: media rights, sponsorships, ticketing. Build Excel model.", "type": "research"},
-                    {"time": "11am–1pm", "task": "Analyze brand category performance (Dream11, CRED) during IPL.", "type": "build"},
-                    {"time": "2–4pm", "task": "Use pytrends API: Pull IPL-related keyword spikes across seasons.", "type": "build"},
-                    {"time": "4–5pm", "task": "Build franchise valuation comparison chart (2010 vs 2024).", "type": "build"},
-                    {"time": "5–6pm", "task": "Compile all Python layers into one master Jupyter notebook.", "type": "output"}
+                    {"time": "9–11am", "task": "Seasonality Study: Why IPL dominates summer window. Correlate with brand campaigns (Swiggy/CRED).", "type": "research"},
+                    {"time": "11am–1pm", "task": "Meme Economy Analysis: Track hashtag trend velocity during match moments.", "type": "build"},
+                    {"time": "2–4pm", "task": "Influencer Marketing Impact: Analyze social spikes vs influencer reel timelines.", "type": "build"},
+                    {"time": "4–5pm", "task": "Build Social Media Spike graphs correlated with 'Viral Moments'.", "type": "build"},
+                    {"time": "5–6pm", "task": "Campaign breakdown case studies: 'How IPL hijacks internet attention'.", "type": "output"}
                 ],
-                "outcome": "Business & Growth analysis complete. Master notebook ready."
+                "outcome": "Growth Analyst role ready: Social virality and marketing impact analyzed."
             },
             {
-                "title": "Power BI Dashboard Build",
+                "title": "Macro Impact & Visual Dashboards",
                 "tasks": [
-                    {"time": "9–11am", "task": "Load all cleaned IPL datasets into Power BI. Create Star Schema.", "type": "build"},
-                    {"time": "11am–1pm", "task": "Write DAX measures for Win Rate, Average Score, Player ROI.", "type": "build"},
-                    {"time": "2–4pm", "task": "Build visual dashboard: Player Stats, Venue Analysis, Team Performance.", "type": "build"},
-                    {"time": "4–5pm", "task": "Add interactive filters (season, team, player). Apply premium dark theme.", "type": "design"},
-                    {"time": "5–6pm", "task": "Publish dashboard to Power BI service. Add link to GitHub.", "type": "output"}
+                    {"time": "9–11am", "task": "Industry Comparison: IPL vs Movie industry revenue during summer. Impact on OTT release calendar.", "type": "research"},
+                    {"time": "11am–1pm", "task": "Economic Ecosystem: Impact on local businesses (restaurants/bars) and fantasy economy growth.", "type": "build"},
+                    {"time": "2–4pm", "task": "Power BI / Tableau: Build public interactive dashboard integrating all 5 layers.", "type": "build"},
+                    {"time": "4–5pm", "task": "Visual Storytelling: Build 'CSK vs Others' team building comparison dashboard.", "type": "design"},
+                    {"time": "5–6pm", "task": "LinkedIn: Share first carousel on 'IPL as a Product'.", "type": "content"}
                 ],
-                "outcome": "Interactive Power BI Dashboard is LIVE."
+                "outcome": "Strategy Analyst role ready: Macro-economic and comparative charts built."
             },
             {
-                "title": "Deep Report Generation",
+                "title": "Deep Reports & Blog Series",
                 "tasks": [
-                    {"time": "9–11am", "task": "Start 10-page IPL report: Exec Summary, 4 Analysis Layers, Insights. (Canva/Word)", "type": "write"},
-                    {"time": "11am–1pm", "task": "Insert charts from Power BI and Python, export as professional PDF.", "type": "write"},
-                    {"time": "2–4pm", "task": "Record a 3-minute video of yourself presenting the dashboard (Loom).", "type": "practice"},
-                    {"time": "4–5pm", "task": "Setup OTT Project Folder. Download IMDb & Box Office datasets.", "type": "setup"},
-                    {"time": "5–6pm", "task": "Write LinkedIn Post: 'IPL Analytics Engine is LIVE'. Share dashboard & video.", "type": "content"}
+                    {"time": "9–11am", "task": "Write Blog: 'Why CSK builds better teams than others' (Analytics perspective).", "type": "write"},
+                    {"time": "11am–1pm", "task": "Write Blog: 'IPL is not cricket, it’s a product' (Product perspective).", "type": "write"},
+                    {"time": "2–4pm", "task": "Professional PDF: Start 10-15 page 'McKinsey-style' Deep Report on IPL Ecosystem.", "type": "write"},
+                    {"time": "4–5pm", "task": "Formatting: Insert high-res charts and consulting-style layout.", "type": "design"},
+                    {"time": "5–6pm", "task": "Export final PDF and update GitHub repository.", "type": "output"}
                 ],
-                "outcome": "IPL Project officially wrapped. Report published."
+                "outcome": "Content Analyst role ready: Professional reports and high-engagement blogs complete."
             },
             {
-                "title": "Week 3 Review & OTT Setup",
+                "title": "Week 3 Audit & OTT Setup",
                 "tasks": [
-                    {"time": "9–11am", "task": "Review IPL outputs. Identify what SQL/Power BI gaps remain.", "type": "review"},
-                    {"time": "11am–1pm", "task": "Explore OTT Datasets. Write data dictionary. Handle nulls in Pandas.", "type": "data"},
-                    {"time": "2–4pm", "task": "Plan OTT project structure (Genre, Sentiment, Revenue).", "type": "plan"},
-                    {"time": "4–5pm", "task": "Do 3 Leetcode SQL window function problems to maintain edge.", "type": "practice"},
-                    {"time": "5–6pm", "task": "Rest and reflect. Project 1 is fully done.", "type": "reflect"}
+                    {"time": "9–11am", "task": "Audit IPL Github: ensure all SQL/Python/PowerBI files are clean.", "type": "review"},
+                    {"time": "11am–1pm", "task": "Setup OTT Project: Download Netflix, Hotstar, and BoxOffice datasets.", "type": "setup"},
+                    {"time": "2–4pm", "task": "Plan 9-layer OTT analysis (Genre, Reviews, Distribution, Funnel, etc.).", "type": "plan"},
+                    {"time": "4–5pm", "task": "Initial EDA: Check OTT audience split (Urban vs Rural) variables.", "type": "data"},
+                    {"time": "5–6pm", "task": "Rest. Preparation for Movie Intelligence week.", "type": "reflect"}
                 ],
-                "outcome": "Ready for OTT Project. SQL/Python skills assessed."
+                "outcome": "IPL Project officially archived. OTT roadmap ready."
             }
         ]
     },
+
     # WEEK 4
     {
         "week": 4,
         "label": "OTT vs Theatre",
-        "theme": "Content + Audience Intelligence",
+        "theme": "Content · Audience · Revenue",
         "color": "PURPLE",
         "days": [
             {
-                "title": "OTT Data Deep Cleaning + Genre Analysis",
+                "title": "Content & Genre Analysis",
                 "tasks": [
-                    {"time": "9–11am", "task": "Final clean of IMDb + Box Office datasets. Merge on movie title + year. Handle duplicates.", "type": "data"},
-                    {"time": "11am–1pm", "task": "Genre performance analysis: revenue by genre, completion rate proxy by ratings count.", "type": "build"},
-                    {"time": "2–4pm", "task": "Pan-India vs regional film analysis: Telugu, Tamil vs Hindi box office trends 2018–2024.", "type": "build"},
-                    {"time": "4–5pm", "task": "Build: Genre vs revenue bar chart using Seaborn.", "type": "build"},
-                    {"time": "5–6pm", "task": "Write insight: 'Mass content wins theatres, niche content thrives on OTT'.", "type": "output"}
+                    {"time": "9–11am", "task": "Analyze Genre Performance: Action vs Romance vs Thriller. Pan-India vs Niche.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Regional Content Rise: Track growth of Telugu/Tamil/Kannada in national OTT.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Genre vs Revenue graph + Genre vs OTT Completion Rate heatmap.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight Generation: 'Mass wins theatres, Niche thrives on OTT'.", "type": "output"},
+                    {"time": "5–6pm", "task": "Save clean dataset for SQL sentiment analysis tomorrow.", "type": "data"}
                 ],
-                "outcome": "OTT Layer 1 complete. Genre intelligence report written."
+                "outcome": "Content Intelligence complete. Genre success metrics established."
             },
             {
-                "title": "Reviews + Sentiment Analysis",
+                "title": "Reviews & Sentiment Impact",
                 "tasks": [
-                    {"time": "9–11am", "task": "Collect: IMDb user reviews for 20 major films using cinemagoer Python library.", "type": "data"},
-                    {"time": "11am–1pm", "task": "Run VADER sentiment analysis on reviews. Score each film: positive/negative/neutral %.", "type": "build"},
-                    {"time": "2–4pm", "task": "Correlate: sentiment score vs opening weekend box office. Find pattern.", "type": "build"},
-                    {"time": "4–5pm", "task": "Build: Day 1 vs Day 3 revenue drop analysis. Which films held vs collapsed?", "type": "build"},
-                    {"time": "5–6pm", "task": "Write insight: 'Hype Opens, Reviews Sustain'. Save as blog draft.", "type": "output"}
+                    {"time": "9–11am", "task": "Correlate IMDb ratings vs Box Office. Analyze Day 1 vs Day 3 revenue drop.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Social Sentiment Analysis: Map reviews to opening weekend occupancy.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Sentiment vs Occupancy trend line and Rating vs Revenue scatter plot.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'Hype opens, Reviews sustain'. Build case study around 'RRR' or 'Kalki'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Publish: Write LinkedIn post on 'Review-Revenue Correlation'.", "type": "content"}
                 ],
-                "outcome": "Sentiment analysis model built. Review-revenue correlation established."
+                "outcome": "Sentiment Analysis complete. Reviews mapped to revenue sustainability."
             },
             {
-                "title": "Booking Funnel + COVID Impact",
+                "title": "Distribution (Multiplex vs Rural)",
                 "tasks": [
-                    {"time": "9–11am", "task": "Model BookMyShow funnel (public data): Search → Browse → Select → Book → Watch.", "type": "build"},
-                    {"time": "11am–1pm", "task": "Build: Weekend vs weekday booking behavior analysis using SQL aggregations.", "type": "build"},
-                    {"time": "2–4pm", "task": "COVID impact: Collect pre/during/post-COVID OTT subscriber data. Build timeline.", "type": "data"},
-                    {"time": "4–5pm", "task": "Build: Theatre recovery curve 2021–2024. OTT subscriber growth curve.", "type": "build"},
-                    {"time": "5–6pm", "task": "Write insight: 'COVID didn't kill theatres — it forced evolution'.", "type": "output"}
+                    {"time": "9–11am", "task": "Analyze Urban (Multiplex) vs Rural (Single Screen) split using PVR/INOX data.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Price Sensitivity Analysis: How ticket pricing affects rural footfall.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Urban vs Rural revenue split and Occupancy comparison chart.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'Urban watches content, rural celebrates cinema'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Update GitHub with SQL joins for screen-tier analysis.", "type": "output"}
                 ],
-                "outcome": "Booking funnel modeled. COVID impact timeline visualized."
+                "outcome": "Distribution strategy analyzed. Audience segmentation complete."
             },
             {
-                "title": "Content Lifecycle + Business Models",
+                "title": "Booking Behavior & Funnel",
                 "tasks": [
-                    {"time": "9–11am", "task": "Build content lifecycle chart: Teaser → Release → Reviews → OTT → Re-watch.", "type": "build"},
-                    {"time": "11am–1pm", "task": "Analyze: Theatre window to OTT gap (2019 vs 2024). How has it shrunk?", "type": "build"},
-                    {"time": "2–4pm", "task": "OTT business model: subscription tiers, ad-supported revenue, content spend.", "type": "research"},
-                    {"time": "4–5pm", "task": "Theatre business model: ticket revenue, F&B margin (40–50%), real estate costs.", "type": "research"},
-                    {"time": "5–6pm", "task": "Write insight: 'OTT optimizes lifetime value, theatres maximize moment value'.", "type": "output"}
+                    {"time": "9–11am", "task": "Model BookMyShow Funnel: Weekend vs Weekday patterns. Group vs Solo bookings.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Funnel Drop-off: Identify where users leave before final payment.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Booking Heatmap (Time vs Demand) and Funnel Drop-off diagram.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'Intent is high, but pricing/timing decides conversion'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Save clean funnel data for final dashboard.", "type": "data"}
                 ],
-                "outcome": "Business model comparison complete. Data ready for dashboard."
+                "outcome": "Product Analyst role ready: Booking funnel and intent mapped."
             },
             {
-                "title": "Tableau Dashboard Build",
+                "title": "Demographics & COVID Impact",
                 "tasks": [
-                    {"time": "9–11am", "task": "Load OTT data into Tableau Public. (Diversifying BI skills).", "type": "build"},
-                    {"time": "11am–1pm", "task": "Build Genre Trends, Sentiment vs Revenue scatter plot, COVID Timeline.", "type": "build"},
-                    {"time": "2–4pm", "task": "Add dashboard actions, filters, and tooltips. Ensure clean layout.", "type": "design"},
-                    {"time": "4–5pm", "task": "Publish to Tableau Public. Link from GitHub.", "type": "output"},
-                    {"time": "5–6pm", "task": "Write LinkedIn post: 'Why I used Tableau for this project instead of Power BI'.", "type": "content"}
+                    {"time": "9–11am", "task": "Audience Segmentation: 15-25 (Hype/Action) vs 25-40 (Realism) vs 40+ (Drama).", "type": "build"},
+                    {"time": "11am–1pm", "task": "COVID Timeline: Before (Theatre) vs During (OTT Boom) vs After (Hybrid).", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Year vs OTT Growth and Theatre Recovery Curve (2021-2024).", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'COVID didn't kill theatres—it forced evolution'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Build demographic content preference matrix.", "type": "build"}
                 ],
-                "outcome": "OTT Tableau dashboard live."
+                "outcome": "Strategy Analyst role ready: Demographic trends and market evolution mapped."
             },
             {
-                "title": "OTT Deep Report",
+                "title": "Marketing & Business Models",
                 "tasks": [
-                    {"time": "9–11am", "task": "Write OTT report: 8 pages covering Content, Audience, Sentiment, Revenue.", "type": "write"},
-                    {"time": "11am–1pm", "task": "Insert Tableau visualizations and Python outputs.", "type": "write"},
-                    {"time": "2–4pm", "task": "Add case study appendix: RRR global OTT journey vs Theatre journey.", "type": "write"},
-                    {"time": "4–5pm", "task": "Format, design cover, export as PDF.", "type": "design"},
-                    {"time": "5–6pm", "task": "Upload to portfolio. Project 2 officially complete.", "type": "output"}
+                    {"time": "9–11am", "task": "Analyze Promotion Spikes: Meme marketing, Influencer tours, Viral Reels.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Compare Business Models: OTT (Subscription/LTV) vs Theatre (Ticket/F&B).", "type": "research"},
+                    {"time": "2–4pm", "task": "Output: Promotion vs Engagement spike graph and Revenue Model comparison.", "type": "output"},
+                    {"time": "4–5pm", "task": "Case Study: Pick 1 movie (Hype -> Opening -> Reviews -> OTT).", "type": "write"},
+                    {"time": "5–6pm", "task": "Build interactive Tableau dashboard with all OTT modules.", "type": "build"}
                 ],
-                "outcome": "OTT deep report published."
+                "outcome": "Marketing and Business Intelligence complete. Final dashboard live."
             },
             {
-                "title": "Week 4 Review & E-Commerce Prep",
+                "title": "OTT Audit & E-Com Setup",
                 "tasks": [
-                    {"time": "9–11am", "task": "Review Week 4. Check Tableau vs Power BI preferences.", "type": "review"},
-                    {"time": "11am–1pm", "task": "Collect E-commerce data: Flipkart/Amazon public sales data (Kaggle).", "type": "data"},
-                    {"time": "2–4pm", "task": "Research: Quick commerce market size data (Blinkit, Zepto, Swiggy Instamart).", "type": "research"},
-                    {"time": "4–5pm", "task": "Set up e-commerce project folder. Build data dictionary.", "type": "setup"},
-                    {"time": "5–6pm", "task": "Write project plan: Funnel + Pricing + Quick Commerce.", "type": "plan"}
+                    {"time": "9–11am", "task": "Finalize OTT Deep Report: 10-page professional analysis PDF.", "type": "write"},
+                    {"time": "11am–1pm", "task": "Audit OTT GitHub: verify SQL views and Tableau links.", "type": "review"},
+                    {"time": "2–4pm", "task": "Setup E-Commerce Project: Download Flipkart/Amazon/Instamart data.", "type": "setup"},
+                    {"time": "4–5pm", "task": "Plan E-com layers: Seasonal, Pricing, Ads, Quick-Commerce, Conglomerates.", "type": "plan"},
+                    {"time": "5–6pm", "task": "Rest. Getting ready for Consumer Psychology week.", "type": "reflect"}
                 ],
-                "outcome": "E-commerce data architecture complete. Ready for Week 5."
+                "outcome": "OTT Project wrapped. E-commerce architecture defined."
             }
         ]
     },
+
     # WEEK 5
     {
         "week": 5,
-        "label": "E-Commerce Project",
-        "theme": "Consumer Psychology + Growth",
+        "label": "E-Commerce + Ads",
+        "theme": "Sales · Psych · Logistics",
         "color": "GREEN",
         "days": [
             {
-                "title": "Seasonal Sales + Pricing Analysis",
+                "title": "Seasonal Sales & Pricing Strategy",
                 "tasks": [
-                    {"time": "9–11am", "task": "Build festival vs normal sales comparison using SQL: categories, GMV, order volume.", "type": "build"},
-                    {"time": "11am–1pm", "task": "Anchor pricing analysis: Document fake vs real discount patterns in dataset.", "type": "build"},
-                    {"time": "2–4pm", "task": "Build: 'Psychology of ₹29,999' analysis. Odd pricing impact.", "type": "build"},
-                    {"time": "4–5pm", "task": "Build festival sales heatmap by category in Python.", "type": "build"},
-                    {"time": "5–6pm", "task": "Write insight: 'How e-commerce uses urgency and anchoring to engineer sales'.", "type": "output"}
+                    {"time": "9–11am", "task": "Analyze Festival Spikes: Diwali/Big Billion Days vs Normal. GMV delta by category.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Anchor Pricing Study: Document fake vs real discount patterns. Find '₹29,999' impact.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Category performance graph and Festival vs Normal sales heatmap.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'Urgency drives conversion more than actual discount value'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Build price elasticity model for Mobiles vs Fashion.", "type": "build"}
                 ],
-                "outcome": "Seasonal + pricing psychology layer complete."
+                "outcome": "Sales and Pricing Intelligence complete. Behavioral patterns mapped."
             },
             {
-                "title": "Consumer Funnel + Cart Abandonment",
+                "title": "Instagram Ads & Growth",
                 "tasks": [
-                    {"time": "9–11am", "task": "Model e-commerce funnel: Awareness → Search → View → Cart → Checkout.", "type": "build"},
-                    {"time": "11am–1pm", "task": "Analyze cart abandonment rates (industry benchmarks vs sample data).", "type": "research"},
-                    {"time": "2–4pm", "task": "Map FOMO triggers: countdown timers, stock alerts. Use data to prove effectiveness.", "type": "build"},
-                    {"time": "4–5pm", "task": "Build: Conversion funnel chart in Excel to practice advanced charting.", "type": "build"},
-                    {"time": "5–6pm", "task": "Write: 'The Anatomy of Cart Abandonment'.", "type": "output"}
+                    {"time": "9–11am", "task": "Model Ad Funnel: Impressions -> Clicks -> Purchase. Calculate CAC and ROAS.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Format Battle: Compare Reels Ads vs Story Ads vs Influencer collaboration.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Ad Spend vs Revenue graph and Conversion Funnel breakdown.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'Reels ads have the highest attention-to-conversion ratio'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Save ad performance data for Power BI dashboard.", "type": "data"}
                 ],
-                "outcome": "Consumer funnel model built in Excel."
+                "outcome": "Growth Analyst role ready: Ad funnel and ROI metrics modeled."
             },
             {
-                "title": "Digital Marketing + Ads Funnel",
+                "title": "Consumer Psych & Funnel",
                 "tasks": [
-                    {"time": "9–11am", "task": "Research Instagram ad formats (Reels, Carousel). CPM/CPC benchmarks.", "type": "research"},
-                    {"time": "11am–1pm", "task": "Model: Ad spend → impression → click → purchase funnel. Calculate CAC.", "type": "build"},
-                    {"time": "2–4pm", "task": "Build: Influencer vs brand ad conversion comparison (mock or sample data).", "type": "build"},
-                    {"time": "4–5pm", "task": "Write SQL queries to find highest LTV (Lifetime Value) customer segments.", "type": "build"},
-                    {"time": "5–6pm", "task": "Write: 'Why Reels ads outperform everything else in e-commerce'.", "type": "output"}
+                    {"time": "9–11am", "task": "Model Cart Abandonment: Analyze reasons for 70%+ drop-off at checkout.", "type": "build"},
+                    {"time": "11am–1pm", "task": "FOMO Effect Analysis: quantify lift from countdown timers and 'limited stock'.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Cart abandonment patterns chart and Urgency lift graph.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'Cart abandonment is a window into consumer doubt'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Model repeat customer rate vs subscription (Prime/Plus) status.", "type": "build"}
                 ],
-                "outcome": "Digital ads analysis complete. Ad funnel model built."
+                "outcome": "Consumer Psychology complete. Retention and conversion mapped."
             },
             {
-                "title": "Quick Commerce Deep Dive",
+                "title": "Quick Commerce Economy",
                 "tasks": [
-                    {"time": "9–11am", "task": "Research Blinkit, Instamart, Zepto market data. GMV, city presence.", "type": "research"},
-                    {"time": "11am–1pm", "task": "Build Quick commerce comparison matrix: speed, AOV, category strength.", "type": "build"},
-                    {"time": "2–4pm", "task": "Analyze Dark store economics: Cost per delivery vs traditional logistics.", "type": "research"},
-                    {"time": "4–5pm", "task": "Build: 'Time vs Price' consumer decision matrix.", "type": "build"},
-                    {"time": "5–6pm", "task": "Write: 'Time is replacing price as the #1 purchase decision factor'.", "type": "output"}
+                    {"time": "9–11am", "task": "Analyze Speed Economy: Blinkit vs Instamart vs BigBasket market share.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Behavior Shift: Planned buying (Weekly) vs Instant buying (10-min).", "type": "think"},
+                    {"time": "2–4pm", "task": "Output: Quick Commerce comparison matrix and AOV vs Time chart.", "type": "output"},
+                    {"time": "4–5pm", "task": "Insight: 'Time is replacing price as the #1 purchase decision factor'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Case study on Blinkit's revenue per delivery model.", "type": "research"}
                 ],
-                "outcome": "Quick commerce business model documented."
+                "outcome": "Strategy Analyst role ready: Quick-commerce market shift analyzed."
             },
             {
-                "title": "Conglomerate Strategy + Offline Impact",
+                "title": "Conglomerate Game & Offline",
                 "tasks": [
-                    {"time": "9–11am", "task": "Map conglomerate strategies: Reliance (JioMart), Tata (BigBasket).", "type": "research"},
-                    {"time": "11am–1pm", "task": "Analyze Impact on kirana stores — footfall loss, hybrid models.", "type": "build"},
-                    {"time": "2–4pm", "task": "Compile all e-commerce data into a master SQL database for final querying.", "type": "build"},
-                    {"time": "4–5pm", "task": "Export clean views for dashboarding.", "type": "data"},
-                    {"time": "5–6pm", "task": "Write meta insight: 'E-commerce is controlling attention and logistics'.", "type": "output"}
+                    {"time": "9–11am", "task": "Ecosystem Battle: Reliance (Jio) vs Tata (Neu) vs Adani (Backend Logistics).", "type": "research"},
+                    {"time": "11am–1pm", "task": "Offline Impact: analyze footfall loss in Kirana stores and JioMart model.", "type": "build"},
+                    {"time": "2–4pm", "task": "Output: Conglomerate Strategy table and Offline vs Online market share chart.", "type": "output"},
+                    {"time": "4–5pm", "task": "Meta Insight: 'E-commerce is about controlling attention and logistics'.", "type": "write"},
+                    {"time": "5–6pm", "task": "Compile final E-com database for Power BI.", "type": "data"}
                 ],
-                "outcome": "Conglomerate layer complete. Database ready for BI."
+                "outcome": "Market Research complete. Ecosystem power dynamics mapped."
             },
             {
-                "title": "E-Commerce Dashboard + Report Build",
+                "title": "Dashboards & Meta-Insight",
                 "tasks": [
-                    {"time": "9–11am", "task": "Build Power BI dashboard: Funnel Drop-offs, Seasonal Heatmaps, CAC Analysis.", "type": "build"},
-                    {"time": "11am–1pm", "task": "Publish dashboard to Power BI Service.", "type": "output"},
-                    {"time": "2–4pm", "task": "Write E-commerce Deep Report (8 pages). Combine insights and visuals.", "type": "write"},
-                    {"time": "4–5pm", "task": "Format in Canva, export as PDF, upload to portfolio folder.", "type": "design"},
-                    {"time": "5–6pm", "task": "Write LinkedIn post: 'E-commerce Growth Analytics Project Complete'.", "type": "content"}
+                    {"time": "9–11am", "task": "Build Power BI Dashboard: Sales Funnel, Ad ROI, and Category Trends.", "type": "build"},
+                    {"time": "11am–1pm", "task": "Write Deep Report: 10-15 page McKinsey-style PDF on E-com Ecosystem.", "type": "write"},
+                    {"time": "2–4pm", "task": "Output: Ad Spend vs Revenue dashboard and final Conversion Graphs.", "type": "output"},
+                    {"time": "4–5pm", "task": "Recommendation: build urgency-based UI tweaks for higher conversion.", "type": "write"},
+                    {"time": "5–6pm", "task": "Publish: Write LinkedIn post on 'The Psychology of Big Billion Days'.", "type": "content"}
                 ],
-                "outcome": "Project 3 completely finished. Power BI skills reinforced."
+                "outcome": "Project 3 officially wrapped. Full E-com suite ready for portfolio."
             },
             {
-                "title": "Week 5 Audit & Portfolio Setup",
+                "title": "Week 5 Audit & Launch Prep",
                 "tasks": [
-                    {"time": "9–11am", "task": "Audit all 3 projects: Ensure SQL files, Jupyter notebooks, and PDFs are in GitHub.", "type": "review"},
-                    {"time": "11am–1pm", "task": "Design portfolio website structure in Figma (Home, Projects, About).", "type": "plan"},
-                    {"time": "2–4pm", "task": "Write CV bullet points for all 3 projects using XYZ formula.", "type": "write"},
-                    {"time": "4–5pm", "task": "Research Next.js, React, and Tailwind CSS basics for Week 6.", "type": "learn"},
-                    {"time": "5–6pm", "task": "Celebrate! The core Data Analyst portfolio is fully built.", "type": "reflect"}
+                    {"time": "9–11am", "task": "Audit all 3 projects: IPL, OTT, E-com. Check PDF quality.", "type": "review"},
+                    {"time": "11am–1pm", "task": "Portfolio Design: Finalize Figma layouts for project sub-sites.", "type": "design"},
+                    {"time": "2–4pm", "task": "Resume: Update with detailed metrics (ROI/Conversion lift) from projects.", "type": "write"},
+                    {"time": "4–5pm", "task": "Vercel Prep: Setup subdomains (ipl.srihari.dev etc.).", "type": "setup"},
+                    {"time": "5–6pm", "task": "Rest. Big Web-Dev launch week starts tomorrow.", "type": "reflect"}
                 ],
-                "outcome": "Projects audited. Ready for Web Dev phase."
+                "outcome": "Portfolio Ready. Project phase complete."
             }
         ]
     },
+
     # WEEK 6
     {
         "week": 6,
