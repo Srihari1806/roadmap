@@ -14,13 +14,13 @@ const RED = "#EF4444";
 const weeks = [
   {
     "week": 1,
-    "label": "Phase 1",
-    "theme": "Skill Execution",
+    "label": "Phase 1: Basics - Language",
+    "theme": "Technical Mastery",
     "color": PURPLE,
     "days": [
       {
         "day": 1,
-        "title": "Day 1: IPL Analytics Sprints",
+        "title": "Day 1: Basics - Language & C1: Intro to Data Analytics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -58,11 +58,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Basics - Language & C1: Intro to Data Analytics concepts."
       },
       {
         "day": 2,
-        "title": "Day 2: IPL Analytics Sprints",
+        "title": "Day 2: Logic Building & C2: Excel Basics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -100,11 +100,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Logic Building & C2: Excel Basics concepts."
       },
       {
         "day": 3,
-        "title": "Day 3: IPL Analytics Sprints",
+        "title": "Day 3: STL/Collections & C3: Data Viz with Excel & Cognos",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -142,11 +142,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered STL/Collections & C3: Data Viz with Excel & Cognos concepts."
       },
       {
         "day": 4,
-        "title": "Day 4: IPL Analytics Sprints",
+        "title": "Day 4: Selection Sort & C4: Python for Data Science",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -184,11 +184,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Selection Sort & C4: Python for Data Science concepts."
       },
       {
         "day": 5,
-        "title": "Day 5: IPL Analytics Sprints",
+        "title": "Day 5: Bubble Sort & C5: Python Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -226,11 +226,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Bubble Sort & C5: Python Project concepts."
       },
       {
         "day": 6,
-        "title": "Day 6: IPL Analytics Sprints",
+        "title": "Day 6: Insertion Sort & C6: Databases and SQL",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -268,11 +268,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Insertion Sort & C6: Databases and SQL concepts."
       },
       {
         "day": 7,
-        "title": "Day 7: IPL Analytics Sprints",
+        "title": "Day 7: Easy Arrays & C7: Data Analysis with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -310,19 +310,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Easy Arrays & C7: Data Analysis with Python concepts."
       }
     ]
   },
   {
     "week": 2,
-    "label": "Phase 2",
-    "theme": "Skill Execution",
+    "label": "Phase 2: Medium Arrays",
+    "theme": "Technical Mastery",
     "color": BLUE,
     "days": [
       {
         "day": 8,
-        "title": "Day 8: IPL Analytics Sprints",
+        "title": "Day 8: Medium Arrays & C8: Data Viz with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -360,11 +360,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Medium Arrays & C8: Data Viz with Python concepts."
       },
       {
         "day": 9,
-        "title": "Day 9: IPL Analytics Sprints",
+        "title": "Day 9: Hard Arrays & C9: Capstone Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -402,11 +402,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Hard Arrays & C9: Capstone Project concepts."
       },
       {
         "day": 10,
-        "title": "Day 10: IPL Analytics Sprints",
+        "title": "Day 10: BS on 1D Arrays & C10: Generative AI",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -444,11 +444,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on 1D Arrays & C10: Generative AI concepts."
       },
       {
         "day": 11,
-        "title": "Day 11: IPL Analytics Sprints",
+        "title": "Day 11: BS on Answers & C11: Career Guide & Interview",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -486,11 +486,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on Answers & C11: Career Guide & Interview concepts."
       },
       {
         "day": 12,
-        "title": "Day 12: IPL Analytics Sprints",
+        "title": "Day 12: BS on 2D Arrays & C1: Intro to Data Analytics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -528,11 +528,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on 2D Arrays & C1: Intro to Data Analytics concepts."
       },
       {
         "day": 13,
-        "title": "Day 13: IPL Analytics Sprints",
+        "title": "Day 13: Strings - Basic & C2: Excel Basics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -570,11 +570,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Strings - Basic & C2: Excel Basics concepts."
       },
       {
         "day": 14,
-        "title": "Day 14: IPL Analytics Sprints",
+        "title": "Day 14: Strings - Medium & C3: Data Viz with Excel & Cognos",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -612,19 +612,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Strings - Medium & C3: Data Viz with Excel & Cognos concepts."
       }
     ]
   },
   {
     "week": 3,
-    "label": "Phase 3",
-    "theme": "Skill Execution",
+    "label": "Phase 3: Singly LL",
+    "theme": "Technical Mastery",
     "color": PURPLE,
     "days": [
       {
         "day": 15,
-        "title": "Day 15: OTT Dashboard Sprints",
+        "title": "Day 15: Singly LL & C4: Python for Data Science",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -662,11 +662,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Singly LL & C4: Python for Data Science concepts."
       },
       {
         "day": 16,
-        "title": "Day 16: OTT Dashboard Sprints",
+        "title": "Day 16: Doubly LL & C5: Python Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -704,11 +704,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Doubly LL & C5: Python Project concepts."
       },
       {
         "day": 17,
-        "title": "Day 17: OTT Dashboard Sprints",
+        "title": "Day 17: Medium LL Problems & C6: Databases and SQL",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -746,11 +746,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Medium LL Problems & C6: Databases and SQL concepts."
       },
       {
         "day": 18,
-        "title": "Day 18: OTT Dashboard Sprints",
+        "title": "Day 18: Basic Recursion & C7: Data Analysis with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -788,11 +788,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Basic Recursion & C7: Data Analysis with Python concepts."
       },
       {
         "day": 19,
-        "title": "Day 19: OTT Dashboard Sprints",
+        "title": "Day 19: Subsets & C8: Data Viz with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -830,11 +830,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Subsets & C8: Data Viz with Python concepts."
       },
       {
         "day": 20,
-        "title": "Day 20: OTT Dashboard Sprints",
+        "title": "Day 20: Bit Manipulation & C9: Capstone Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -872,11 +872,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Bit Manipulation & C9: Capstone Project concepts."
       },
       {
         "day": 21,
-        "title": "Day 21: OTT Dashboard Sprints",
+        "title": "Day 21: Stack and Queues & C10: Generative AI",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -914,19 +914,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Stack and Queues & C10: Generative AI concepts."
       }
     ]
   },
   {
     "week": 4,
-    "label": "Phase 4",
-    "theme": "Skill Execution",
+    "label": "Phase 4: Sliding Window",
+    "theme": "Technical Mastery",
     "color": BLUE,
     "days": [
       {
         "day": 22,
-        "title": "Day 22: OTT Dashboard Sprints",
+        "title": "Day 22: Sliding Window & C11: Career Guide & Interview",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -964,11 +964,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Sliding Window & C11: Career Guide & Interview concepts."
       },
       {
         "day": 23,
-        "title": "Day 23: OTT Dashboard Sprints",
+        "title": "Day 23: Basics - Language & C1: Intro to Data Analytics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1006,11 +1006,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Basics - Language & C1: Intro to Data Analytics concepts."
       },
       {
         "day": 24,
-        "title": "Day 24: OTT Dashboard Sprints",
+        "title": "Day 24: Logic Building & C2: Excel Basics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1048,11 +1048,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Logic Building & C2: Excel Basics concepts."
       },
       {
         "day": 25,
-        "title": "Day 25: OTT Dashboard Sprints",
+        "title": "Day 25: STL/Collections & C3: Data Viz with Excel & Cognos",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1090,11 +1090,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered STL/Collections & C3: Data Viz with Excel & Cognos concepts."
       },
       {
         "day": 26,
-        "title": "Day 26: OTT Dashboard Sprints",
+        "title": "Day 26: Selection Sort & C4: Python for Data Science",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1132,11 +1132,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Selection Sort & C4: Python for Data Science concepts."
       },
       {
         "day": 27,
-        "title": "Day 27: OTT Dashboard Sprints",
+        "title": "Day 27: Bubble Sort & C5: Python Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1174,11 +1174,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Bubble Sort & C5: Python Project concepts."
       },
       {
         "day": 28,
-        "title": "Day 28: OTT Dashboard Sprints",
+        "title": "Day 28: Insertion Sort & C6: Databases and SQL",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1216,19 +1216,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Insertion Sort & C6: Databases and SQL concepts."
       }
     ]
   },
   {
     "week": 5,
-    "label": "Phase 5",
-    "theme": "Skill Execution",
+    "label": "Phase 5: Easy Arrays",
+    "theme": "Technical Mastery",
     "color": PURPLE,
     "days": [
       {
         "day": 29,
-        "title": "Day 29: E-com Platform Sprints",
+        "title": "Day 29: Easy Arrays & C7: Data Analysis with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1266,11 +1266,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Easy Arrays & C7: Data Analysis with Python concepts."
       },
       {
         "day": 30,
-        "title": "Day 30: E-com Platform Sprints",
+        "title": "Day 30: Medium Arrays & C8: Data Viz with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1308,11 +1308,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Medium Arrays & C8: Data Viz with Python concepts."
       },
       {
         "day": 31,
-        "title": "Day 31: E-com Platform Sprints",
+        "title": "Day 31: Hard Arrays & C9: Capstone Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1350,11 +1350,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Hard Arrays & C9: Capstone Project concepts."
       },
       {
         "day": 32,
-        "title": "Day 32: E-com Platform Sprints",
+        "title": "Day 32: BS on 1D Arrays & C10: Generative AI",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1392,11 +1392,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on 1D Arrays & C10: Generative AI concepts."
       },
       {
         "day": 33,
-        "title": "Day 33: E-com Platform Sprints",
+        "title": "Day 33: BS on Answers & C11: Career Guide & Interview",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1434,11 +1434,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on Answers & C11: Career Guide & Interview concepts."
       },
       {
         "day": 34,
-        "title": "Day 34: E-com Platform Sprints",
+        "title": "Day 34: BS on 2D Arrays & C1: Intro to Data Analytics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1476,11 +1476,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on 2D Arrays & C1: Intro to Data Analytics concepts."
       },
       {
         "day": 35,
-        "title": "Day 35: E-com Platform Sprints",
+        "title": "Day 35: Strings - Basic & C2: Excel Basics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1518,19 +1518,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Strings - Basic & C2: Excel Basics concepts."
       }
     ]
   },
   {
     "week": 6,
-    "label": "Phase 6",
-    "theme": "Skill Execution",
+    "label": "Phase 6: Strings - Medium",
+    "theme": "Technical Mastery",
     "color": BLUE,
     "days": [
       {
         "day": 36,
-        "title": "Day 36: E-com Platform Sprints",
+        "title": "Day 36: Strings - Medium & C3: Data Viz with Excel & Cognos",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1568,11 +1568,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Strings - Medium & C3: Data Viz with Excel & Cognos concepts."
       },
       {
         "day": 37,
-        "title": "Day 37: E-com Platform Sprints",
+        "title": "Day 37: Singly LL & C4: Python for Data Science",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1610,11 +1610,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Singly LL & C4: Python for Data Science concepts."
       },
       {
         "day": 38,
-        "title": "Day 38: E-com Platform Sprints",
+        "title": "Day 38: Doubly LL & C5: Python Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1652,11 +1652,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Doubly LL & C5: Python Project concepts."
       },
       {
         "day": 39,
-        "title": "Day 39: E-com Platform Sprints",
+        "title": "Day 39: Medium LL Problems & C6: Databases and SQL",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1694,11 +1694,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Medium LL Problems & C6: Databases and SQL concepts."
       },
       {
         "day": 40,
-        "title": "Day 40: E-com Platform Sprints",
+        "title": "Day 40: Basic Recursion & C7: Data Analysis with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1736,11 +1736,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Basic Recursion & C7: Data Analysis with Python concepts."
       },
       {
         "day": 41,
-        "title": "Day 41: E-com Platform Sprints",
+        "title": "Day 41: Subsets & C8: Data Viz with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1778,11 +1778,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Subsets & C8: Data Viz with Python concepts."
       },
       {
         "day": 42,
-        "title": "Day 42: E-com Platform Sprints",
+        "title": "Day 42: Bit Manipulation & C9: Capstone Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1820,19 +1820,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Bit Manipulation & C9: Capstone Project concepts."
       }
     ]
   },
   {
     "week": 7,
-    "label": "Phase 7",
-    "theme": "Skill Execution",
+    "label": "Phase 7: Stack and Queues",
+    "theme": "Technical Mastery",
     "color": PURPLE,
     "days": [
       {
         "day": 43,
-        "title": "Day 43: Financial Insights Sprints",
+        "title": "Day 43: Stack and Queues & C10: Generative AI",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1870,11 +1870,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Stack and Queues & C10: Generative AI concepts."
       },
       {
         "day": 44,
-        "title": "Day 44: Financial Insights Sprints",
+        "title": "Day 44: Sliding Window & C11: Career Guide & Interview",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1912,11 +1912,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Sliding Window & C11: Career Guide & Interview concepts."
       },
       {
         "day": 45,
-        "title": "Day 45: Financial Insights Sprints",
+        "title": "Day 45: Basics - Language & C1: Intro to Data Analytics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1954,11 +1954,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Basics - Language & C1: Intro to Data Analytics concepts."
       },
       {
         "day": 46,
-        "title": "Day 46: Financial Insights Sprints",
+        "title": "Day 46: Logic Building & C2: Excel Basics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -1996,11 +1996,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Logic Building & C2: Excel Basics concepts."
       },
       {
         "day": 47,
-        "title": "Day 47: Financial Insights Sprints",
+        "title": "Day 47: STL/Collections & C3: Data Viz with Excel & Cognos",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2038,11 +2038,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered STL/Collections & C3: Data Viz with Excel & Cognos concepts."
       },
       {
         "day": 48,
-        "title": "Day 48: Financial Insights Sprints",
+        "title": "Day 48: Selection Sort & C4: Python for Data Science",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2080,11 +2080,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Selection Sort & C4: Python for Data Science concepts."
       },
       {
         "day": 49,
-        "title": "Day 49: Financial Insights Sprints",
+        "title": "Day 49: Bubble Sort & C5: Python Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2122,19 +2122,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Bubble Sort & C5: Python Project concepts."
       }
     ]
   },
   {
     "week": 8,
-    "label": "Phase 8",
-    "theme": "Skill Execution",
+    "label": "Phase 8: Insertion Sort",
+    "theme": "Technical Mastery",
     "color": BLUE,
     "days": [
       {
         "day": 50,
-        "title": "Day 50: Financial Insights Sprints",
+        "title": "Day 50: Insertion Sort & C6: Databases and SQL",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2172,11 +2172,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Insertion Sort & C6: Databases and SQL concepts."
       },
       {
         "day": 51,
-        "title": "Day 51: Financial Insights Sprints",
+        "title": "Day 51: Easy Arrays & C7: Data Analysis with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2214,11 +2214,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Easy Arrays & C7: Data Analysis with Python concepts."
       },
       {
         "day": 52,
-        "title": "Day 52: Financial Insights Sprints",
+        "title": "Day 52: Medium Arrays & C8: Data Viz with Python",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2256,11 +2256,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Medium Arrays & C8: Data Viz with Python concepts."
       },
       {
         "day": 53,
-        "title": "Day 53: Financial Insights Sprints",
+        "title": "Day 53: Hard Arrays & C9: Capstone Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2298,11 +2298,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Hard Arrays & C9: Capstone Project concepts."
       },
       {
         "day": 54,
-        "title": "Day 54: Financial Insights Sprints",
+        "title": "Day 54: BS on 1D Arrays & C10: Generative AI",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2340,11 +2340,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on 1D Arrays & C10: Generative AI concepts."
       },
       {
         "day": 55,
-        "title": "Day 55: Financial Insights Sprints",
+        "title": "Day 55: BS on Answers & C11: Career Guide & Interview",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2382,11 +2382,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on Answers & C11: Career Guide & Interview concepts."
       },
       {
         "day": 56,
-        "title": "Day 56: Financial Insights Sprints",
+        "title": "Day 56: BS on 2D Arrays & C1: Intro to Data Analytics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2424,19 +2424,19 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered BS on 2D Arrays & C1: Intro to Data Analytics concepts."
       }
     ]
   },
   {
     "week": 9,
-    "label": "Phase 9",
-    "theme": "Skill Execution",
+    "label": "Phase 9: Strings - Basic",
+    "theme": "Technical Mastery",
     "color": PURPLE,
     "days": [
       {
         "day": 57,
-        "title": "Day 57: Final Portfolio Sprints",
+        "title": "Day 57: Strings - Basic & C2: Excel Basics",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2474,11 +2474,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Strings - Basic & C2: Excel Basics concepts."
       },
       {
         "day": 58,
-        "title": "Day 58: Final Portfolio Sprints",
+        "title": "Day 58: Strings - Medium & C3: Data Viz with Excel & Cognos",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2516,11 +2516,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Strings - Medium & C3: Data Viz with Excel & Cognos concepts."
       },
       {
         "day": 59,
-        "title": "Day 59: Final Portfolio Sprints",
+        "title": "Day 59: Singly LL & C4: Python for Data Science",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2558,11 +2558,11 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Singly LL & C4: Python for Data Science concepts."
       },
       {
         "day": 60,
-        "title": "Day 60: Final Portfolio Sprints",
+        "title": "Day 60: Doubly LL & C5: Python Project",
         "tasks": [
           {
             "time": "6\u20137am",
@@ -2600,11 +2600,13 @@ const weeks = [
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Track mastery and layered project build."
+        "outcome": "Mastered Doubly LL & C5: Python Project concepts."
       }
     ]
   }
 ];
+
+
 
 
 
@@ -3152,32 +3154,15 @@ function Roadmap() {
 
   const domains = [
     { id: "All", label: "All Tasks (Normal View)" },
-    { id: "IBM-All", label: "🎓 IBM Professional Cert (All)", match: ["IBM C", "🎓"] },
-    { id: "IBM-C1", label: "IBM C1: Intro", match: ["IBM C1:"] },
-    { id: "IBM-C2", label: "IBM C2: Excel Basics", match: ["IBM C2:"] },
-    { id: "IBM-C3", label: "IBM C3: Excel/Cognos Viz", match: ["IBM C3:"] },
-    { id: "IBM-C4", label: "IBM C4: Python Foundations", match: ["IBM C4:"] },
-    { id: "IBM-C5", label: "IBM C5: Python Project", match: ["IBM C5:"] },
-    { id: "IBM-C6", label: "IBM C6: SQL for DS", match: ["IBM C6:"] },
-    { id: "IBM-C7", label: "IBM C7: Data Analysis", match: ["IBM C7:"] },
-    { id: "IBM-C8", label: "IBM C8: Data Viz Python", match: ["IBM C8:"] },
-    { id: "IBM-C9", label: "IBM C9: Capstone", match: ["IBM C9:"] },
-    { id: "IBM-C10", label: "IBM C10: Gen AI", match: ["IBM C10:"] },
-    { id: "IBM-C11", label: "IBM C11: Career Prep", match: ["IBM C11:"] },
-    { id: "DSA", label: "🧠 DSA Cycle", match: ["DSA:", "A2Z:"] },
-    { id: "SQL", label: "🗄️ SQL Track", match: ["SQL"] },
-    { id: "Python", label: "🐍 Python Track", match: ["Python", "Pandas"] },
-    { id: "Excel", label: "📊 Excel Track", match: ["Excel"] },
-    { id: "PowerBI", label: "📈 Power BI Track", match: ["PowerBI", "DAX"] },
-    { id: "DBMS", label: "💾 DBMS Track", match: ["DBMS"] },
-    { id: "Aptitude", label: "📊 Aptitude & Stats", match: ["Aptitude:", "Stats:"] },
-    { id: "IPL", label: "🏏 IPL Project", match: ["IPL"] },
-    { id: "OTT", label: "🎬 OTT Project", match: ["OTT", "Tableau"] },
-    { id: "E-Commerce", label: "🛒 E-Commerce", match: ["E-commerce", "E-Commerce"] },
-    { id: "Web", label: "🌐 Web Dev & Portfolio", match: ["Portfolio", "React", "Next.js", "Tailwind"] },
-    { id: "Sahitya", label: "🎨 Sahitya Rachanalu", match: ["Sahitya", "Creative", "Meme", "Lyrics"] },
-    { id: "Job", label: "🚀 Job Hunt", match: ["Apply", "Resume", "LinkedIn", "Interview", "Mock"] },
+    { id: "ibm", label: "🎓 IBM Cert", match: ["IBM:"] },
+    { id: "dsa", label: "⚔️ DSA Track", match: ["DSA:"] },
+    { id: "sql", label: "🗄️ SQL Track", match: ["SQL", "Technical:"] },
+    { id: "aptitude", label: "🧠 Aptitude", match: ["Aptitude:"] },
+    { id: "math", label: "📊 Math/Stats", match: ["Math:"] },
+    { id: "project", label: "🏗️ Projects", match: ["Project", "🏗️"] },
   ];
+
+
 
   const tabs = [
     { id: "overview", label: "🗺️ Overview" },

@@ -3,7 +3,7 @@ import os
 import re
 
 # ─────────────────────────────────────────────────────────────────
-# DATA ANALYST ROADMAP GENERATOR (v5.0) - MICRO-PRECISION
+# DATA ANALYST ROADMAP GENERATOR (v6.0) - SURGICAL PRECISION
 # ─────────────────────────────────────────────────────────────────
 
 # 1. CURRICULA & LINK DEFINITIONS
@@ -55,7 +55,7 @@ math_stats_curriculum = [
 weeks_data = []
 day_idx = 0
 
-for w in range(1, 10): # Enough for 60+ days
+for w in range(1, 10):
     days = []
     for d in range(1, 8):
         day_num = day_idx + 1
@@ -82,7 +82,7 @@ for w in range(1, 10): # Enough for 60+ days
         
         day_in_project = day_idx % 14
         layer_num = (day_in_project // 3) + 1
-        rotation_step = day_in_project % 3 # 0: Analyse, 1: Build, 2: Output
+        rotation_step = day_in_project % 3
         
         if rotation_step == 0:
             p_task = f"🏗️ {p_name} (L{layer_num}): ANALYSE 4-5 business statements."
@@ -96,17 +96,17 @@ for w in range(1, 10): # Enough for 60+ days
         
         days.append({
             "day": day_num,
-            "title": f"Day {day_num}: {p_name} Sprints",
+            "title": f"Day {day_num}: {dsa} & {ibm['name']}",
             "tasks": tasks,
-            "outcome": "Track mastery and layered project build."
+            "outcome": f"Mastered {dsa} & {ibm['name']} concepts."
         })
         day_idx += 1
         
     if days:
         weeks_data.append({
             "week": w,
-            "label": f"Phase {w}",
-            "theme": "Skill Execution",
+            "label": f"Phase {w}: {days[0]['tasks'][1]['task'].replace('⚔️ DSA: ', '')}",
+            "theme": "Technical Mastery",
             "color": "BLUE" if w%2==0 else "PURPLE",
             "days": days
         })
@@ -115,28 +115,38 @@ for w in range(1, 10): # Enough for 60+ days
 weeks_js = "const weeks = " + json.dumps(weeks_data, indent=2) + ";"
 weeks_js = re.sub(r'"color": "(BLUE|PURPLE|GREEN|ACCENT|RED)"', r'"color": \1', weeks_js)
 
+# SANITIZED DOMAINS / FILTERS
+domains_js = """const domains = [
+    { id: "All", label: "All Tasks (Normal View)" },
+    { id: "ibm", label: "🎓 IBM Cert", match: ["IBM:"] },
+    { id: "dsa", label: "⚔️ DSA Track", match: ["DSA:"] },
+    { id: "sql", label: "🗄️ SQL Track", match: ["SQL", "Technical:"] },
+    { id: "aptitude", label: "🧠 Aptitude", match: ["Aptitude:"] },
+    { id: "math", label: "📊 Math/Stats", match: ["Math:"] },
+    { id: "project", label: "🏗️ Projects", match: ["Project", "🏗️"] },
+  ];"""
+
 def update_file(path):
     if not os.path.exists(path): return
     with open(path, 'r', encoding='utf-8') as f: content = f.read()
     
-    # Replace Weeks
+    # 1. Replace Weeks
     s_marker, e_marker = "const weeks = [", "const finalChecklist ="
     s_idx = content.find(s_marker)
-    e_idx = content.find(e_marker)
-    if s_idx != -1 and e_idx != -1:
+    if s_idx != -1:
+        e_idx = content.find(e_marker)
         e_arr_idx = content.rfind("];", s_idx, e_idx) + 2
         content = content[:s_idx] + weeks_js + "\n\n" + content[e_arr_idx:]
         
-    # Update Filters (Sanitized)
-    f_marker, fe_marker = "const filters = [", "];"
-    fs_idx = content.find(f_marker)
-    if fs_idx != -1:
-        fe_idx = content.find(fe_marker, fs_idx) + 2
-        new_filters = 'const filters = ["All", "dsa", "sql", "aptitude", "ibm", "math", "project"];'
-        content = content[:fs_idx] + new_filters + content[fe_idx:]
+    # 2. Replace Domains (The Filter Buttons)
+    ds_marker, de_marker = "const domains = [", "];"
+    ds_idx = content.find(ds_marker)
+    if ds_idx != -1:
+        de_idx = content.find(de_marker, ds_idx) + 2
+        content = content[:ds_idx] + domains_js + "\n\n" + content[de_idx:]
 
-    # Update Guidance Text
-    p_text = "Project layers are built in 3-day precision cycles: Day 1 (Analyse 4-5 statements), Day 2 (Build 4-5 metrics), Day 3 (Generate 4-5 outputs)."
+    # 3. Update Guidance Text
+    p_text = "Project layers are built in 3-day cycles: Day 1 (Analyse 4-5 statements), Day 2 (Build 4-5 metrics), Day 3 (Generate 4-5 outputs)."
     content = re.sub(r'Each Layer.*?moving to the next\.', p_text, content)
     content = re.sub(r'Each project is built.*?\.', p_text, content)
 
