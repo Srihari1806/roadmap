@@ -6,7 +6,7 @@
     <title>Srihari's 60-Day Analyst Launch Plan | Execution Roadmap</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; padding: 0; background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; }
@@ -14,9 +14,33 @@
     </style>
 </head>
 <body>
-    <div id="root"></div>
+     <div id="root">
+       <div id="loading" style="color: #F4A72A; padding: 40px; font-family: 'Inter', sans-serif; text-align: center;">
+         <div style="font-size: 24px; margin-bottom: 10px;">🚀 Loading Roadmap...</div>
+         <div style="color: #6B6B8A; font-size: 14px;">If this persists, check browser console (F12) for errors.</div>
+       </div>
+       <noscript>
+         <div style="color: white; padding: 20px; font-family: sans-serif;">
+           JavaScript is required to view this roadmap. Please enable JavaScript.
+         </div>
+       </noscript>
+     </div>
     <script type="text/babel">
-const { useState } = React;
+    // Debug: Check if React/ReactDOM are loaded
+    console.log('React available:', typeof React !== 'undefined');
+    console.log('ReactDOM available:', typeof ReactDOM !== 'undefined');
+    
+    if (typeof React === 'undefined') {
+      document.body.innerHTML = '<div style="color:red;padding:20px;">React failed to load. Check internet connection.</div>';
+    }
+    
+    if (typeof ReactDOM === 'undefined') {
+      document.body.innerHTML = '<div style="color:red;padding:20px;">ReactDOM failed to load. Check internet connection.</div>';
+    }
+    
+    console.log('Script starting...');
+    try {
+    const { useState } = React;
 
 const ACCENT = "#F4A72A";
 const BG = "#0A0A0F";
@@ -4727,10 +4751,30 @@ function Roadmap() {
   );
 }
 
-// Render the app
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Roadmap />);
+// Global error handler
+window.onerror = function(message, source, lineno, colno, error) {
+  console.error('Global error:', message, 'at', source, ':', lineno);
+  document.getElementById('root').innerHTML = 
+    '<div style="color:red;padding:20px;font-family:monospace;">' + 
+    'ERROR: ' + message + '<br>Line: ' + lineno + '<br>Check console (F12)' + 
+    '</div>';
+  return true; // Prevent default error handling
+};
 
+// Render the app
+try {
+  console.log('Creating root...');
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  console.log('Rendering component...');
+  root.render(<Roadmap />);
+  console.log('Render complete');
+} catch (error) {
+  console.error('Error rendering app:', error);
+  document.getElementById('root').innerHTML = 
+    '<div style="color:red;padding:20px;font-family:monospace;">' + 
+    'RENDER ERROR: ' + error.message + '<br>' + error.stack + 
+    '</div>';
+}
     </script>
 </body>
 </html>
