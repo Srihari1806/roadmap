@@ -837,36 +837,90 @@ if start_idx != -1 and end_idx != -1:
     
     new_content = before + weeks_js + "\n\n" + after
     
-    with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\roadmap.jsx', 'w', encoding='utf-8') as f:
-        f.write(new_content)
-    print("Successfully updated roadmap.jsx!")
-else:
-    print("Failed to find boundaries in roadmap.jsx.")
+# ─────────────────────────────────────────────────────────────────
+# DOMAIN FILTERS (TRACKING OPTIONS)
+# ─────────────────────────────────────────────────────────────────
+domains_js = """
+  const domains = [
+    { id: "All", label: "All Tasks (Normal View)" },
+    { id: "IBM-All", label: "🎓 IBM Professional Cert (All)", match: ["IBM C", "🎓"] },
+    { id: "IBM-C1", label: "IBM C1: Intro", match: ["IBM C1:"] },
+    { id: "IBM-C2", label: "IBM C2: Excel Basics", match: ["IBM C2:"] },
+    { id: "IBM-C3", label: "IBM C3: Excel/Cognos Viz", match: ["IBM C3:"] },
+    { id: "IBM-C4", label: "IBM C4: Python Foundations", match: ["IBM C4:"] },
+    { id: "IBM-C5", label: "IBM C5: Python Project", match: ["IBM C5:"] },
+    { id: "IBM-C6", label: "IBM C6: SQL for DS", match: ["IBM C6:"] },
+    { id: "IBM-C7", label: "IBM C7: Data Analysis", match: ["IBM C7:"] },
+    { id: "IBM-C8", label: "IBM C8: Data Viz Python", match: ["IBM C8:"] },
+    { id: "IBM-C9", label: "IBM C9: Capstone", match: ["IBM C9:"] },
+    { id: "IBM-C10", label: "IBM C10: Gen AI", match: ["IBM C10:"] },
+    { id: "IBM-C11", label: "IBM C11: Career Prep", match: ["IBM C11:"] },
+    { id: "DSA", label: "🧠 DSA Cycle", match: ["DSA:", "A2Z:"] },
+    { id: "SQL", label: "🗄️ SQL Track", match: ["SQL"] },
+    { id: "Python", label: "🐍 Python Track", match: ["Python", "Pandas"] },
+    { id: "Excel", label: "📊 Excel Track", match: ["Excel"] },
+    { id: "PowerBI", label: "📈 Power BI Track", match: ["PowerBI", "DAX"] },
+    { id: "DBMS", label: "💾 DBMS Track", match: ["DBMS"] },
+    { id: "Aptitude", label: "📊 Aptitude & Stats", match: ["Aptitude:", "Stats:"] },
+    { id: "IPL", label: "🏏 IPL Project", match: ["IPL"] },
+    { id: "OTT", label: "🎬 OTT Project", match: ["OTT", "Tableau"] },
+    { id: "E-Commerce", label: "🛒 E-Commerce", match: ["E-commerce", "E-Commerce"] },
+    { id: "Web", label: "🌐 Web Dev & Portfolio", match: ["Portfolio", "React", "Next.js", "Tailwind"] },
+    { id: "Sahitya", label: "🎨 Sahitya Rachanalu", match: ["Sahitya", "Creative", "Meme", "Lyrics"] },
+    { id: "Job", label: "🚀 Job Hunt", match: ["Apply", "Resume", "LinkedIn", "Interview", "Mock"] },
+  ];
+"""
 
-# --- ALSO UPDATE index.html (Standalone for GitHub Pages) ---
+# --- UPDATE roadmap.jsx ---
+with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\roadmap.jsx', 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Replace weeks
+start_marker = "const weeks = ["
+end_marker = "];"
+start_idx = content.find(start_marker)
+end_idx = content.find(end_marker, start_idx) + 2
+
+if start_idx != -1 and end_idx != -1:
+    content = content[:start_idx] + weeks_js + content[end_idx:]
+
+# Replace domains
+d_start_marker = "const domains = ["
+d_end_marker = "];"
+d_start_idx = content.find(d_start_marker)
+d_end_idx = content.find(d_end_marker, d_start_idx) + 2
+
+if d_start_idx != -1 and d_end_idx != -1:
+    content = content[:d_start_idx] + domains_js.strip() + content[d_end_idx:]
+
+with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\roadmap.jsx', 'w', encoding='utf-8') as f:
+    f.write(content)
+print("Successfully updated roadmap.jsx!")
+
+# --- UPDATE index.html ---
 with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\index.html', 'r', encoding='utf-8') as f:
     html_content = f.read()
 
-# Find "const weeks = [" and the end of the array before "const finalChecklist ="
-start_marker = "const weeks = ["
-end_marker = "const finalChecklist ="
+# Replace weeks
+h_start_marker = "const weeks = ["
+h_end_marker = "const finalChecklist ="
+h_start_idx = html_content.find(h_start_marker)
+h_next_marker_idx = html_content.find(h_end_marker)
 
-start_idx = html_content.find(start_marker)
-next_marker_idx = html_content.find(end_marker)
+if h_start_idx != -1 and h_next_marker_idx != -1:
+    h_end_array_idx = html_content.rfind("];", h_start_idx, h_next_marker_idx) + 2
+    html_content = html_content[:h_start_idx] + weeks_js + "\n\n" + html_content[h_end_array_idx:]
 
-if start_idx != -1 and next_marker_idx != -1:
-    # Find the precise end of the weeks array (the last ]; before next marker)
-    end_array_idx = html_content.rfind("];", start_idx, next_marker_idx) + 2
-    
-    before = html_content[:start_idx]
-    after = html_content[end_array_idx:]
-    
-    # In index.html, we don't need "const weeks = " prefix if we replace the whole assignment
-    # But for simplicity, we'll use the same weeks_js string and handle the "const weeks =" part
-    new_html_content = before + weeks_js + "\n\n" + after
-    
-    with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\index.html', 'w', encoding='utf-8') as f:
-        f.write(new_html_content)
-    print("Successfully updated index.html for GitHub Pages!")
-else:
-    print("Failed to find boundaries in index.html.")
+# Replace domains
+hd_start_marker = "const domains = ["
+hd_end_marker = "const tabs = ["
+hd_start_idx = html_content.find(hd_start_marker)
+hd_next_marker_idx = html_content.find(hd_end_marker)
+
+if hd_start_idx != -1 and hd_next_marker_idx != -1:
+    hd_end_array_idx = html_content.rfind("];", hd_start_idx, hd_next_marker_idx) + 2
+    html_content = html_content[:hd_start_idx] + domains_js.strip() + "\n\n" + html_content[hd_end_array_idx:]
+
+with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+print("Successfully updated index.html for GitHub Pages!")

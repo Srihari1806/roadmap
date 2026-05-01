@@ -2478,6 +2478,8 @@ const weeks = [
 
 
 
+
+
 const finalChecklist = [
   { item: "IPL Analytics Project (5 layers)", category: "Projects", done: false },
   { item: "OTT vs Theatre Project (9 layers)", category: "Projects", done: false },
@@ -3000,6 +3002,18 @@ function Roadmap() {
 
   const domains = [
     { id: "All", label: "All Tasks (Normal View)" },
+    { id: "IBM-All", label: "🎓 IBM Professional Cert (All)", match: ["IBM C", "🎓"] },
+    { id: "IBM-C1", label: "IBM C1: Intro", match: ["IBM C1:"] },
+    { id: "IBM-C2", label: "IBM C2: Excel Basics", match: ["IBM C2:"] },
+    { id: "IBM-C3", label: "IBM C3: Excel/Cognos Viz", match: ["IBM C3:"] },
+    { id: "IBM-C4", label: "IBM C4: Python Foundations", match: ["IBM C4:"] },
+    { id: "IBM-C5", label: "IBM C5: Python Project", match: ["IBM C5:"] },
+    { id: "IBM-C6", label: "IBM C6: SQL for DS", match: ["IBM C6:"] },
+    { id: "IBM-C7", label: "IBM C7: Data Analysis", match: ["IBM C7:"] },
+    { id: "IBM-C8", label: "IBM C8: Data Viz Python", match: ["IBM C8:"] },
+    { id: "IBM-C9", label: "IBM C9: Capstone", match: ["IBM C9:"] },
+    { id: "IBM-C10", label: "IBM C10: Gen AI", match: ["IBM C10:"] },
+    { id: "IBM-C11", label: "IBM C11: Career Prep", match: ["IBM C11:"] },
     { id: "DSA", label: "🧠 DSA Cycle", match: ["DSA:", "A2Z:"] },
     { id: "SQL", label: "🗄️ SQL Track", match: ["SQL"] },
     { id: "Python", label: "🐍 Python Track", match: ["Python", "Pandas"] },
@@ -3013,8 +3027,9 @@ function Roadmap() {
     { id: "Web", label: "🌐 Web Dev & Portfolio", match: ["Portfolio", "React", "Next.js", "Tailwind"] },
     { id: "Sahitya", label: "🎨 Sahitya Rachanalu", match: ["Sahitya", "Creative", "Meme", "Lyrics"] },
     { id: "Job", label: "🚀 Job Hunt", match: ["Apply", "Resume", "LinkedIn", "Interview", "Mock"] },
-    { id: "Watch16W", label: "📺 16-Week Resources", match: ["[16W"] },
   ];
+
+
 
   const tabs = [
     { id: "overview", label: "🗺️ Overview" },
