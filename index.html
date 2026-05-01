@@ -2585,6 +2585,8 @@ const weeks = [
 
 
 
+
+
 const finalChecklist = [
   { item: "IPL Analytics Project (5 layers)", category: "Projects", done: false },
   { item: "OTT vs Theatre Project (9 layers)", category: "Projects", done: false },
@@ -3138,6 +3140,8 @@ function Roadmap() {
 
 
 
+
+
   const tabs = [
     { id: "overview", label: "🗺️ Overview" },
     { id: "projects", label: "🚀 Projects Deep-Dive" },
@@ -3555,12 +3559,31 @@ function Roadmap() {
                           <div style={{ fontSize: 10, color: MUTED, marginTop: 4 }}>{t.time}</div>
                         </div>
                         <div style={{ flex: 1 }}>
-                          <div style={{ 
-                            fontSize: 13, lineHeight: 1.5,
-                            color: isDone ? GREEN : TEXT,
-                            textDecoration: isDone ? "line-through" : "none",
-                            opacity: isDone ? 0.7 : 1 
-                          }}>{t.task}</div>
+                          {t.link && ["practice", "learn", "watch"].includes(t.type) ? (
+                            <a 
+                              href={t.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              onClick={e => e.stopPropagation()}
+                              style={{ 
+                                fontSize: 13, lineHeight: 1.5,
+                                color: isDone ? GREEN : TEXT,
+                                textDecoration: isDone ? "line-through" : "none",
+                                borderBottom: isDone ? "none" : `1px dashed ${ACCENT}50`,
+                                cursor: "pointer",
+                                opacity: isDone ? 0.7 : 1,
+                                display: "block"
+                              }}>
+                              {t.task}
+                            </a>
+                          ) : (
+                            <div style={{ 
+                              fontSize: 13, lineHeight: 1.5,
+                              color: isDone ? GREEN : TEXT,
+                              textDecoration: isDone ? "line-through" : "none",
+                              opacity: isDone ? 0.7 : 1 
+                            }}>{t.task}</div>
+                          )}
                         </div>
                         <div style={{
                           background: `${taskTypeColors[t.type] || MUTED}20`,
@@ -3645,36 +3668,30 @@ function Roadmap() {
                         </div>
                         <div style={{ minWidth: 65, fontSize: 11, color: MUTED, paddingTop: 2 }}>{task.time}</div>
                         <div style={{ flex: 1 }}>
-                          <div style={{ 
-                            fontSize: 13, lineHeight: 1.5, 
-                            color: isDone ? GREEN : task.type === "watch" ? "#FF6B6B" : TEXT,
-                            textDecoration: isDone ? "line-through" : "none",
-                            opacity: isDone ? 0.7 : 1
-                          }}>{task.task}</div>
-                          {task.link && (
-                            <a
-                              href={task.link}
-                              target="_blank"
+                          {task.link && ["practice", "learn", "watch"].includes(task.type) ? (
+                            <a 
+                              href={task.link} 
+                              target="_blank" 
                               rel="noopener noreferrer"
                               onClick={e => e.stopPropagation()}
-                              style={{
-                                display: "inline-flex",
-                                alignItems: "center",
-                                gap: 4,
-                                marginTop: 5,
-                                background: "#FF000022",
-                                border: "1px solid #FF000055",
-                                color: "#FF6B6B",
-                                padding: "2px 8px",
-                                borderRadius: 4,
-                                fontSize: 10,
-                                fontWeight: 700,
-                                textDecoration: "none",
-                                letterSpacing: 0.5,
-                              }}
-                            >
-                              ▶ YouTube
+                              style={{ 
+                                fontSize: 13, lineHeight: 1.5,
+                                color: isDone ? GREEN : task.type === "watch" ? "#FF6B6B" : TEXT,
+                                textDecoration: isDone ? "line-through" : "none",
+                                borderBottom: isDone ? "none" : `1px dashed ${ACCENT}50`,
+                                cursor: "pointer",
+                                opacity: isDone ? 0.7 : 1,
+                                display: "block"
+                              }}>
+                              {task.task}
                             </a>
+                          ) : (
+                            <div style={{ 
+                              fontSize: 13, lineHeight: 1.5, 
+                              color: isDone ? GREEN : task.type === "watch" ? "#FF6B6B" : TEXT,
+                              textDecoration: isDone ? "line-through" : "none",
+                              opacity: isDone ? 0.7 : 1
+                            }}>{task.task}</div>
                           )}
                         </div>
                         <div style={{
