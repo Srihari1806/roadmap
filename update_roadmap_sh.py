@@ -3,59 +3,86 @@ import os
 import re
 
 # ─────────────────────────────────────────────────────────────────
-# DATA ANALYST ROADMAP GENERATOR (v8.2) - MOCK TEST EXPANSION
+# DATA ANALYST ROADMAP GENERATOR (v8.3) - TOTAL CURRICULUM AUDIT
 # ─────────────────────────────────────────────────────────────────
 
-# 1. CURRICULA DEFINITIONS
+# 1. DSA (25 Surgical Topics for Data Analysts)
 tuf_dsa_topics = [
-    "Basics - Language", "Logic Building", "STL/Collections", "Selection Sort", "Bubble Sort", 
-    "Insertion Sort", "Easy Arrays", "Medium Arrays", "Hard Arrays", "BS on 1D Arrays", 
-    "BS on Answers", "BS on 2D Arrays", "Strings - Basic", "Strings - Medium",
-    "Singly LL", "Doubly LL", "Medium LL Problems", "Basic Recursion", "Subsets",
-    "Bit Manipulation", "Stack and Queues", "Sliding Window"
+    "Arrays - Easy (Hashing, Two-Pointers)", "Arrays - Medium (Kadane's, Sorting)", 
+    "Arrays - Hard (Merged Intervals)", "Binary Search - 1D Arrays", 
+    "Binary Search - Answers (SQRT, Allocation)", "Binary Search - 2D Arrays",
+    "Strings - Basic (Anagrams, Palindromes)", "Strings - Medium (Reverse, Frequency)",
+    "Singly Linked List - Basics", "Doubly Linked List - Basics", 
+    "LL Problems - Medium (Mid-point, Reverse)", "Recursion - Basic Patterns",
+    "Subsets & Subsequences", "Bit Manipulation - Basics", "Stacks - Basics",
+    "Queues - Basics", "Sliding Window - Basics", "Hashing - Maps & Sets",
+    "Two Pointers - Advanced", "Greedy - Basic Patterns", "Sorting - Quick & Merge",
+    "Mathematics for DSA", "Time Complexity Analysis", "Searching Algorithms", "Heaps - Basic Intro"
 ]
 
+# 2. SQL (20 Surgical Topics - Zero Missing)
 tuf_sql_topics = [
-    "Basic SELECT & Filtering", "Sorting & Limiting Data", "Inner Joins", "Left/Right/Full Joins",
-    "GROUP BY & Aggregations", "HAVING Clause", "String Functions", "Date & Time Functions",
-    "Subqueries & Nested Queries", "Common Table Expressions (CTEs)", "Window Functions: RANK",
-    "Window Functions: ROW_NUMBER", "Set Operators (UNION/INTERSECT)", "CASE Statements"
+    "SELECT, Filtering & Logic (AND/OR/NOT)", "Sorting & TOP/LIMIT Clauses",
+    "Aggregation Functions (SUM, AVG, COUNT)", "GROUP BY & HAVING Depth",
+    "Inner Joins & Self Joins", "Left, Right, and Full Joins",
+    "Subqueries - Scalar & Multiple Row", "Correlated Subqueries",
+    "CTEs - Non-Recursive Foundations", "Window Functions: ROW_NUMBER & RANK",
+    "Window Functions: LEAD & LAG (Time Series)", "Window Functions: SUM/AVG Over Partition",
+    "String Manipulation (CONCAT, SUBSTR, TRIM)", "Date/Time Functions & Formatting",
+    "CASE Statements (Conditional Logic)", "Set Operators (UNION, INTERSECT, EXCEPT)",
+    "Data Types & Type Casting (CAST/CONVERT)", "Handling NULLs (COALESCE, IFNULL)",
+    "Database Constraints & Keys", "Transaction Basics (COMMIT/ROLLBACK)"
 ]
 
-# COMPREHENSIVE APTITUDE CURRICULUM (NO REPETITION + 60 MOCKS)
-tuf_apt_curriculum = []
+# 3. MATH & STATS (15 Surgical Topics - Codebasics & Industry)
+math_stats_curriculum = [
+    {"task": "Mean, Median, Mode", "desc": "Stats 1: Central tendency for baseline analysis.", "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"},
+    {"task": "Std Deviation & Variance", "desc": "Stats 2: Measuring dataset volatility.", "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"},
+    {"task": "Normal Dist & Z-Score", "desc": "Stats 3: Standardizing scales and bell curves.", "link": "https://www.youtube.com/watch?v=okhrFgaUwio"},
+    {"task": "Logarithm & Scaling", "desc": "Math 1: Handling skewed financial data.", "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"},
+    {"task": "A/B Testing Basics", "desc": "Decision 1: Scientific validation of changes.", "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"},
+    {"task": "Hypothesis Testing (P-values)", "desc": "Decision 2: Determining significance.", "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"},
+    {"task": "Correlation (Pearson/Spearman)", "desc": "Stats 4: Measuring relationships between variables.", "link": "https://www.youtube.com/watch?v=P_iMSYQonko"},
+    {"task": "Central Limit Theorem", "desc": "Stats 5: The backbone of sampling & inference.", "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE"},
+    {"task": "Probability: Binomial Dist", "desc": "Stats 6: Success/Failure probability modeling.", "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q"},
+    {"task": "Probability: Poisson Dist", "desc": "Stats 7: Modeling event frequency over time.", "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4"},
+    {"task": "Chi-Square Test", "desc": "Decision 3: Testing independence between categories.", "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E"},
+    {"task": "Confidence Intervals", "desc": "Stats 8: Estimating ranges with precision.", "link": "https://www.youtube.com/watch?v=tFWsuO9f74o"},
+    {"task": "Linear Regression Foundations", "desc": "Math 2: Predictive modeling baseline.", "link": "https://www.youtube.com/watch?v=4b4MUYve_U8"},
+    {"task": "Outlier Detection (IQR)", "desc": "Stats 9: Cleaning data using statistical bounds.", "link": "https://www.youtube.com/watch?v=A7XvUvT44s8"},
+    {"task": "Derivatives (Slope/Change)", "desc": "Math 3: Understanding rate of change in business trends.", "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg"}
+]
 
-# Core Lessons (Logical, Quant, Verbal)
+# 4. APTITUDE (Lessons + 60 Mocks)
+tuf_apt_curriculum = []
 lessons = [
     {"topic": "LR: Number Series", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
     {"topic": "Quant: Number System", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude"},
     {"topic": "Verbal: Sentence Rearrangement", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability"},
-    {"topic": "LR: Missing Numbers", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
+    {"topic": "LR: Coding-Decoding", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning"},
     {"topic": "Quant: Percentages", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude"},
     {"topic": "Verbal: Reading Comprehension", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability"},
-    {"topic": "LR: Odd One Out", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
-    {"topic": "Quant: Profit & Loss", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude"},
-    {"topic": "LR: Coding-Decoding", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning"},
-    {"topic": "Quant: Ratio & Proportion", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude"},
-    {"topic": "Verbal: Grammar & Usage", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability"},
     {"topic": "LR: Blood Relations", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning"},
-    {"topic": "Quant: Time & Work", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude"},
-    {"topic": "Verbal: Vocabulary", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability"},
+    {"topic": "Quant: Profit & Loss", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude"},
+    {"topic": "Verbal: Grammar & Usage", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability"},
     {"topic": "LR: Direction Sense", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning"},
-    {"topic": "Quant: Time & Distance", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude"},
+    {"topic": "Quant: Ratio & Proportion", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude"},
+    {"topic": "Verbal: Vocabulary", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability"},
     {"topic": "LR: Syllogism", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning"},
-    {"topic": "Quant: Data Interpretation", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude"},
+    {"topic": "Quant: Time & Work", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude"},
     {"topic": "LR: Seating Arrangement", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning"},
+    {"topic": "Quant: Data Interpretation", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude"},
+    {"topic": "Quant: Time & Distance", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude"},
+    {"topic": "LR: Missing Numbers", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
+    {"topic": "Quant: Average", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/average/basic?subject=quantitative-aptitude"}
 ]
 tuf_apt_curriculum.extend(lessons)
-
-# Inject Mocks (20 for each category)
 for i in range(1, 21):
     tuf_apt_curriculum.append({"topic": f"Quant Mock {i}", "link": f"https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-{i}-aptitude?subject=mock-test"})
     tuf_apt_curriculum.append({"topic": f"LR Mock {i}", "link": f"https://takeuforward.org/plus/mock-test/logical-reasoning/mock-{i}-logical?subject=mock-test"})
     tuf_apt_curriculum.append({"topic": f"Verbal Mock {i}", "link": f"https://takeuforward.org/plus/mock-test/verbal-ability/mock-{i}-verbal?subject=mock-test"})
 
-# (IBM schedule, math curriculum, project statements, phase titles follow same logic as v8.1)
+# 5. IBM (11 Courses Mapped Correctly)
 ibm_schedule = [
     {"name": "C1: Intro to Data Analytics", "days": 4, "link": "https://www.coursera.org/learn/introduction-to-data-analytics", "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."},
     {"name": "C2: Excel Basics", "days": 4, "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm", "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."},
@@ -68,15 +95,6 @@ ibm_schedule = [
     {"name": "C9: Capstone Project", "days": 7, "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project", "desc": "Course 9: Final industry-style capstone following all data phases."},
     {"name": "C10: Generative AI", "days": 3, "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career", "desc": "Course 10: Leveraging LLMs to automate cleaning and presentation."},
     {"name": "C11: Career Guide & Interview", "days": 5, "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst", "desc": "Course 11: Professional branding and interview excellence."}
-]
-
-math_stats_curriculum = [
-    {"task": "Mean, Median, Mode", "desc": "Stats 1: Central tendency concepts from the YT playlist.", "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"},
-    {"task": "Std Deviation & MAD", "desc": "Stats 2: Data dispersion and consistency analysis.", "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"},
-    {"task": "Normal Dist & Z Score", "desc": "Stats 3: Standardizing datasets and probability modeling.", "link": "https://www.youtube.com/watch?v=okhrFgaUwio"},
-    {"task": "Logarithm Basics", "desc": "Math 1: Scaling skewed data for linear modeling.", "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"},
-    {"task": "A/B Testing", "desc": "Analysis 1: Statistical validation for product experiments.", "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"},
-    {"task": "Hypothesis Testing", "desc": "Analysis 2: Determining statistical significance levels.", "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"}
 ]
 
 project_statements = {
@@ -93,7 +111,7 @@ project_statements = {
 }
 
 phase_titles = {
-    1: "Phase 1: Foundations & IPL Analysis",
+    1: "Phase 1: Foundations & IPL Analytics",
     2: "Phase 2: Advanced SQL & IPL Build",
     3: "Phase 3: OTT Insights & Python Mastery",
     4: "Phase 4: OTT Build & Advanced Viz",

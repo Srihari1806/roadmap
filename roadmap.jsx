@@ -14,13 +14,13 @@ const RED = "#EF4444";
 const weeks = [
   {
     "week": 1,
-    "label": "Phase 1: Foundations & IPL Analysis",
+    "label": "Phase 1: Foundations & IPL Analytics",
     "theme": "Execution",
     "color": PURPLE,
     "days": [
       {
         "day": 1,
-        "title": "Day 1: Basics - Language & Basic SELECT & Filtering",
+        "title": "Day 1: Arrays - Easy (Hashing, Two-Pointers) & SELECT, Filtering & Logic (AND/OR/NOT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -31,10 +31,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Basics - Language",
+            "task": "\u2694\ufe0f DSA: Arrays - Easy (Hashing, Two-Pointers)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Basics - Language patterns via TUF A2Z."
+            "desc": "Master Arrays - Easy (Hashing, Two-Pointers) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -48,7 +48,7 @@ const weeks = [
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "desc": "Stats 1: Central tendency for baseline analysis."
           },
           {
             "time": "1\u20134pm",
@@ -58,17 +58,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT, Filtering & Logic (AND/OR/NOT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master SELECT, Filtering & Logic (AND/OR/NOT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Basics - Language & Basic SELECT & Filtering."
+        "outcome": "Built depth in Arrays - Easy (Hashing, Two-Pointers) & SELECT, Filtering & Logic (AND/OR/NOT)."
       },
       {
         "day": 2,
-        "title": "Day 2: Logic Building & Sorting & Limiting Data",
+        "title": "Day 2: Arrays - Medium (Kadane's, Sorting) & Sorting & TOP/LIMIT Clauses",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -79,10 +79,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Logic Building",
+            "task": "\u2694\ufe0f DSA: Arrays - Medium (Kadane's, Sorting)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Logic Building patterns via TUF A2Z."
+            "desc": "Master Arrays - Medium (Kadane's, Sorting) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -93,10 +93,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "desc": "Stats 2: Measuring dataset volatility."
           },
           {
             "time": "1\u20134pm",
@@ -106,17 +106,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & TOP/LIMIT Clauses",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Sorting & TOP/LIMIT Clauses techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Logic Building & Sorting & Limiting Data."
+        "outcome": "Built depth in Arrays - Medium (Kadane's, Sorting) & Sorting & TOP/LIMIT Clauses."
       },
       {
         "day": 3,
-        "title": "Day 3: STL/Collections & Inner Joins",
+        "title": "Day 3: Arrays - Hard (Merged Intervals) & Aggregation Functions (SUM, AVG, COUNT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -127,10 +127,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: STL/Collections",
+            "task": "\u2694\ufe0f DSA: Arrays - Hard (Merged Intervals)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master STL/Collections patterns via TUF A2Z."
+            "desc": "Master Arrays - Hard (Merged Intervals) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -141,10 +141,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "desc": "Stats 3: Standardizing scales and bell curves."
           },
           {
             "time": "1\u20134pm",
@@ -154,17 +154,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregation Functions (SUM, AVG, COUNT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins techniques on TUF."
+            "desc": "Master Aggregation Functions (SUM, AVG, COUNT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in STL/Collections & Inner Joins."
+        "outcome": "Built depth in Arrays - Hard (Merged Intervals) & Aggregation Functions (SUM, AVG, COUNT)."
       },
       {
         "day": 4,
-        "title": "Day 4: Selection Sort & Left/Right/Full Joins",
+        "title": "Day 4: Binary Search - 1D Arrays & GROUP BY & HAVING Depth",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -175,24 +175,24 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Selection Sort",
+            "task": "\u2694\ufe0f DSA: Binary Search - 1D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Selection Sort patterns via TUF A2Z."
+            "desc": "Master Binary Search - 1D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Missing Numbers via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "desc": "Math 1: Handling skewed financial data."
           },
           {
             "time": "1\u20134pm",
@@ -202,17 +202,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING Depth",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master GROUP BY & HAVING Depth techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Selection Sort & Left/Right/Full Joins."
+        "outcome": "Built depth in Binary Search - 1D Arrays & GROUP BY & HAVING Depth."
       },
       {
         "day": 5,
-        "title": "Day 5: Bubble Sort & GROUP BY & Aggregations",
+        "title": "Day 5: Binary Search - Answers (SQRT, Allocation) & Inner Joins & Self Joins",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -223,10 +223,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Bubble Sort",
+            "task": "\u2694\ufe0f DSA: Binary Search - Answers (SQRT, Allocation)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Bubble Sort patterns via TUF A2Z."
+            "desc": "Master Binary Search - Answers (SQRT, Allocation) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -237,10 +237,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "desc": "Decision 1: Scientific validation of changes."
           },
           {
             "time": "1\u20134pm",
@@ -250,17 +250,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins & Self Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master Inner Joins & Self Joins techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Bubble Sort & GROUP BY & Aggregations."
+        "outcome": "Built depth in Binary Search - Answers (SQRT, Allocation) & Inner Joins & Self Joins."
       },
       {
         "day": 6,
-        "title": "Day 6: Insertion Sort & HAVING Clause",
+        "title": "Day 6: Binary Search - 2D Arrays & Left, Right, and Full Joins",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -271,10 +271,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Insertion Sort",
+            "task": "\u2694\ufe0f DSA: Binary Search - 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Insertion Sort patterns via TUF A2Z."
+            "desc": "Master Binary Search - 2D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -285,10 +285,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "desc": "Decision 2: Determining significance."
           },
           {
             "time": "1\u20134pm",
@@ -298,17 +298,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Left, Right, and Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master HAVING Clause techniques on TUF."
+            "desc": "Master Left, Right, and Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Insertion Sort & HAVING Clause."
+        "outcome": "Built depth in Binary Search - 2D Arrays & Left, Right, and Full Joins."
       },
       {
         "day": 7,
-        "title": "Day 7: Easy Arrays & String Functions",
+        "title": "Day 7: Strings - Basic (Anagrams, Palindromes) & Subqueries - Scalar & Multiple Row",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -319,24 +319,24 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Easy Arrays",
+            "task": "\u2694\ufe0f DSA: Strings - Basic (Anagrams, Palindromes)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Easy Arrays patterns via TUF A2Z."
+            "desc": "Master Strings - Basic (Anagrams, Palindromes) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Odd One Out via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Stats 4: Measuring relationships between variables."
           },
           {
             "time": "1\u20134pm",
@@ -346,13 +346,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries - Scalar & Multiple Row",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master String Functions techniques on TUF."
+            "desc": "Master Subqueries - Scalar & Multiple Row techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Easy Arrays & String Functions."
+        "outcome": "Built depth in Strings - Basic (Anagrams, Palindromes) & Subqueries - Scalar & Multiple Row."
       }
     ]
   },
@@ -364,7 +364,7 @@ const weeks = [
     "days": [
       {
         "day": 8,
-        "title": "Day 8: Medium Arrays & Date & Time Functions",
+        "title": "Day 8: Strings - Medium (Reverse, Frequency) & Correlated Subqueries",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -375,10 +375,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Medium Arrays",
+            "task": "\u2694\ufe0f DSA: Strings - Medium (Reverse, Frequency)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Medium Arrays patterns via TUF A2Z."
+            "desc": "Master Strings - Medium (Reverse, Frequency) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -389,10 +389,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
+            "desc": "Stats 5: The backbone of sampling & inference."
           },
           {
             "time": "1\u20134pm",
@@ -402,17 +402,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Correlated Subqueries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Date & Time Functions techniques on TUF."
+            "desc": "Master Correlated Subqueries techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Medium Arrays & Date & Time Functions."
+        "outcome": "Built depth in Strings - Medium (Reverse, Frequency) & Correlated Subqueries."
       },
       {
         "day": 9,
-        "title": "Day 9: Hard Arrays & Subqueries & Nested Queries",
+        "title": "Day 9: Singly Linked List - Basics & CTEs - Non-Recursive Foundations",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -423,106 +423,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Hard Arrays",
+            "task": "\u2694\ufe0f DSA: Singly Linked List - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Hard Arrays patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Coding-Decoding via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Subqueries & Nested Queries techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Hard Arrays & Subqueries & Nested Queries."
-      },
-      {
-        "day": 10,
-        "title": "Day 10: BS on 1D Arrays & Common Table Expressions (CTEs)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on 1D Arrays patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Ratio & Proportion via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in BS on 1D Arrays & Common Table Expressions (CTEs)."
-      },
-      {
-        "day": 11,
-        "title": "Day 11: BS on Answers & Window Functions: RANK",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on Answers",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on Answers patterns via TUF A2Z."
+            "desc": "Master Singly Linked List - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -533,58 +437,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: RANK techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in BS on Answers & Window Functions: RANK."
-      },
-      {
-        "day": 12,
-        "title": "Day 12: BS on 2D Arrays & Window Functions: ROW_NUMBER",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on 2D Arrays patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Blood Relations via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
+            "desc": "Stats 6: Success/Failure probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -594,17 +450,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs - Non-Recursive Foundations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master CTEs - Non-Recursive Foundations techniques on TUF."
           }
         ],
-        "outcome": "Built depth in BS on 2D Arrays & Window Functions: ROW_NUMBER."
+        "outcome": "Built depth in Singly Linked List - Basics & CTEs - Non-Recursive Foundations."
       },
       {
-        "day": 13,
-        "title": "Day 13: Strings - Basic & Set Operators (UNION/INTERSECT)",
+        "day": 10,
+        "title": "Day 10: Doubly Linked List - Basics & Window Functions: ROW_NUMBER & RANK",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -615,24 +471,24 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Basic",
+            "task": "\u2694\ufe0f DSA: Doubly Linked List - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Basic patterns via TUF A2Z."
+            "desc": "Master Doubly Linked List - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Time & Work via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Direction Sense via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
+            "desc": "Stats 7: Modeling event frequency over time."
           },
           {
             "time": "1\u20134pm",
@@ -642,31 +498,79 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER & RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master Window Functions: ROW_NUMBER & RANK techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Strings - Basic & Set Operators (UNION/INTERSECT)."
+        "outcome": "Built depth in Doubly Linked List - Basics & Window Functions: ROW_NUMBER & RANK."
       },
       {
-        "day": 14,
-        "title": "Day 14: Strings - Medium & CASE Statements",
+        "day": 11,
+        "title": "Day 11: LL Problems - Medium (Mid-point, Reverse) & Window Functions: LEAD & LAG (Time Series)",
         "tasks": [
           {
             "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Medium",
+            "task": "\u2694\ufe0f DSA: LL Problems - Medium (Mid-point, Reverse)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Medium patterns via TUF A2Z."
+            "desc": "Master LL Problems - Medium (Mid-point, Reverse) patterns via TUF A2Z."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Ratio & Proportion via Takeuforward Plus."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Chi-Square Test",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
+            "desc": "Decision 3: Testing independence between categories."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
+            "type": "project",
+            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD & LAG (Time Series)",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: LEAD & LAG (Time Series) techniques on TUF."
+          }
+        ],
+        "outcome": "Built depth in LL Problems - Medium (Mid-point, Reverse) & Window Functions: LEAD & LAG (Time Series)."
+      },
+      {
+        "day": 12,
+        "title": "Day 12: Recursion - Basic Patterns & Window Functions: SUM/AVG Over Partition",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Recursion - Basic Patterns",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Recursion - Basic Patterns patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -677,10 +581,106 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Confidence Intervals",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
+            "desc": "Stats 8: Estimating ranges with precision."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
+            "type": "project",
+            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: SUM/AVG Over Partition",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: SUM/AVG Over Partition techniques on TUF."
+          }
+        ],
+        "outcome": "Built depth in Recursion - Basic Patterns & Window Functions: SUM/AVG Over Partition."
+      },
+      {
+        "day": 13,
+        "title": "Day 13: Subsets & Subsequences & String Manipulation (CONCAT, SUBSTR, TRIM)",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Subsets & Subsequences",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Subsets & Subsequences patterns via TUF A2Z."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Syllogism via Takeuforward Plus."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Linear Regression Foundations",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
+            "desc": "Math 2: Predictive modeling baseline."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
+            "type": "project",
+            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: String Manipulation (CONCAT, SUBSTR, TRIM)",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master String Manipulation (CONCAT, SUBSTR, TRIM) techniques on TUF."
+          }
+        ],
+        "outcome": "Built depth in Subsets & Subsequences & String Manipulation (CONCAT, SUBSTR, TRIM)."
+      },
+      {
+        "day": 14,
+        "title": "Day 14: Bit Manipulation - Basics & Date/Time Functions & Formatting",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Bit Manipulation - Basics",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Bit Manipulation - Basics patterns via TUF A2Z."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Time & Work via Takeuforward Plus."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
+            "desc": "Stats 9: Cleaning data using statistical bounds."
           },
           {
             "time": "1\u20134pm",
@@ -690,13 +690,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions & Formatting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CASE Statements techniques on TUF."
+            "desc": "Master Date/Time Functions & Formatting techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Strings - Medium & CASE Statements."
+        "outcome": "Built depth in Bit Manipulation - Basics & Date/Time Functions & Formatting."
       }
     ]
   },
@@ -708,7 +708,7 @@ const weeks = [
     "days": [
       {
         "day": 15,
-        "title": "Day 15: Singly LL & Basic SELECT & Filtering",
+        "title": "Day 15: Stacks - Basics & CASE Statements (Conditional Logic)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -719,202 +719,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Singly LL",
+            "task": "\u2694\ufe0f DSA: Stacks - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Singly LL patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Direction Sense via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Basic SELECT & Filtering techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Singly LL & Basic SELECT & Filtering."
-      },
-      {
-        "day": 16,
-        "title": "Day 16: Doubly LL & Sorting & Limiting Data",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Doubly LL",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Doubly LL patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Time & Distance via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & Limiting Data techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Doubly LL & Sorting & Limiting Data."
-      },
-      {
-        "day": 17,
-        "title": "Day 17: Medium LL Problems & Inner Joins",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Medium LL Problems",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Medium LL Problems patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Syllogism via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Medium LL Problems & Inner Joins."
-      },
-      {
-        "day": 18,
-        "title": "Day 18: Basic Recursion & Left/Right/Full Joins",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Basic Recursion",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Basic Recursion patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Data Interpretation via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left/Right/Full Joins techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Basic Recursion & Left/Right/Full Joins."
-      },
-      {
-        "day": 19,
-        "title": "Day 19: Subsets & GROUP BY & Aggregations",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Subsets",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Subsets patterns via TUF A2Z."
+            "desc": "Master Stacks - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -925,30 +733,30 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
+            "desc": "Math 3: Understanding rate of change in business trends."
           },
           {
             "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements (Conditional Logic)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master CASE Statements (Conditional Logic) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Subsets & GROUP BY & Aggregations."
+        "outcome": "Built depth in Stacks - Basics & CASE Statements (Conditional Logic)."
       },
       {
-        "day": 20,
-        "title": "Day 20: Bit Manipulation & HAVING Clause",
+        "day": 16,
+        "title": "Day 16: Queues - Basics & Set Operators (UNION, INTERSECT, EXCEPT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -959,10 +767,202 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Bit Manipulation",
+            "task": "\u2694\ufe0f DSA: Queues - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Bit Manipulation patterns via TUF A2Z."
+            "desc": "Master Queues - Basics patterns via TUF A2Z."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Data Interpretation via Takeuforward Plus."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Stats 1: Central tendency for baseline analysis."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
+            "type": "project",
+            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION, INTERSECT, EXCEPT)",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Set Operators (UNION, INTERSECT, EXCEPT) techniques on TUF."
+          }
+        ],
+        "outcome": "Built depth in Queues - Basics & Set Operators (UNION, INTERSECT, EXCEPT)."
+      },
+      {
+        "day": 17,
+        "title": "Day 17: Sliding Window - Basics & Data Types & Type Casting (CAST/CONVERT)",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Sliding Window - Basics",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Sliding Window - Basics patterns via TUF A2Z."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Time & Distance via Takeuforward Plus."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Stats 2: Measuring dataset volatility."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
+            "type": "project",
+            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Data Types & Type Casting (CAST/CONVERT)",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Data Types & Type Casting (CAST/CONVERT) techniques on TUF."
+          }
+        ],
+        "outcome": "Built depth in Sliding Window - Basics & Data Types & Type Casting (CAST/CONVERT)."
+      },
+      {
+        "day": 18,
+        "title": "Day 18: Hashing - Maps & Sets & Handling NULLs (COALESCE, IFNULL)",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Hashing - Maps & Sets",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Hashing - Maps & Sets patterns via TUF A2Z."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Missing Numbers via Takeuforward Plus."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
+            "desc": "Stats 3: Standardizing scales and bell curves."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
+            "type": "project",
+            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs (COALESCE, IFNULL)",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Handling NULLs (COALESCE, IFNULL) techniques on TUF."
+          }
+        ],
+        "outcome": "Built depth in Hashing - Maps & Sets & Handling NULLs (COALESCE, IFNULL)."
+      },
+      {
+        "day": 19,
+        "title": "Day 19: Two Pointers - Advanced & Database Constraints & Keys",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Two Pointers - Advanced",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Two Pointers - Advanced patterns via TUF A2Z."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant: Average",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/average/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Average via Takeuforward Plus."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
+            "desc": "Math 1: Handling skewed financial data."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
+            "type": "project",
+            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Database Constraints & Keys",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Database Constraints & Keys techniques on TUF."
+          }
+        ],
+        "outcome": "Built depth in Two Pointers - Advanced & Database Constraints & Keys."
+      },
+      {
+        "day": 20,
+        "title": "Day 20: Greedy - Basic Patterns & Transaction Basics (COMMIT/ROLLBACK)",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Greedy - Basic Patterns",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Greedy - Basic Patterns patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -973,10 +973,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
+            "desc": "Decision 1: Scientific validation of changes."
           },
           {
             "time": "1\u20134pm",
@@ -986,17 +986,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics (COMMIT/ROLLBACK)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master HAVING Clause techniques on TUF."
+            "desc": "Master Transaction Basics (COMMIT/ROLLBACK) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Bit Manipulation & HAVING Clause."
+        "outcome": "Built depth in Greedy - Basic Patterns & Transaction Basics (COMMIT/ROLLBACK)."
       },
       {
         "day": 21,
-        "title": "Day 21: Stack and Queues & String Functions",
+        "title": "Day 21: Sorting - Quick & Merge & SELECT, Filtering & Logic (AND/OR/NOT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1007,10 +1007,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Stack and Queues",
+            "task": "\u2694\ufe0f DSA: Sorting - Quick & Merge",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Stack and Queues patterns via TUF A2Z."
+            "desc": "Master Sorting - Quick & Merge patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1021,10 +1021,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
+            "desc": "Decision 2: Determining significance."
           },
           {
             "time": "1\u20134pm",
@@ -1034,13 +1034,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT, Filtering & Logic (AND/OR/NOT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master String Functions techniques on TUF."
+            "desc": "Master SELECT, Filtering & Logic (AND/OR/NOT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Stack and Queues & String Functions."
+        "outcome": "Built depth in Sorting - Quick & Merge & SELECT, Filtering & Logic (AND/OR/NOT)."
       }
     ]
   },
@@ -1052,7 +1052,7 @@ const weeks = [
     "days": [
       {
         "day": 22,
-        "title": "Day 22: Sliding Window & Date & Time Functions",
+        "title": "Day 22: Mathematics for DSA & Sorting & TOP/LIMIT Clauses",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1063,10 +1063,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Sliding Window",
+            "task": "\u2694\ufe0f DSA: Mathematics for DSA",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Sliding Window patterns via TUF A2Z."
+            "desc": "Master Mathematics for DSA patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1077,10 +1077,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Stats 4: Measuring relationships between variables."
           },
           {
             "time": "1\u20134pm",
@@ -1090,17 +1090,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & TOP/LIMIT Clauses",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Date & Time Functions techniques on TUF."
+            "desc": "Master Sorting & TOP/LIMIT Clauses techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Sliding Window & Date & Time Functions."
+        "outcome": "Built depth in Mathematics for DSA & Sorting & TOP/LIMIT Clauses."
       },
       {
         "day": 23,
-        "title": "Day 23: Basics - Language & Subqueries & Nested Queries",
+        "title": "Day 23: Time Complexity Analysis & Aggregation Functions (SUM, AVG, COUNT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1111,10 +1111,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Basics - Language",
+            "task": "\u2694\ufe0f DSA: Time Complexity Analysis",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Basics - Language patterns via TUF A2Z."
+            "desc": "Master Time Complexity Analysis patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1125,10 +1125,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
+            "desc": "Stats 5: The backbone of sampling & inference."
           },
           {
             "time": "1\u20134pm",
@@ -1138,17 +1138,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregation Functions (SUM, AVG, COUNT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Subqueries & Nested Queries techniques on TUF."
+            "desc": "Master Aggregation Functions (SUM, AVG, COUNT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Basics - Language & Subqueries & Nested Queries."
+        "outcome": "Built depth in Time Complexity Analysis & Aggregation Functions (SUM, AVG, COUNT)."
       },
       {
         "day": 24,
-        "title": "Day 24: Logic Building & Common Table Expressions (CTEs)",
+        "title": "Day 24: Searching Algorithms & GROUP BY & HAVING Depth",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1159,10 +1159,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Logic Building",
+            "task": "\u2694\ufe0f DSA: Searching Algorithms",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Logic Building patterns via TUF A2Z."
+            "desc": "Master Searching Algorithms patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1173,10 +1173,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
+            "desc": "Stats 6: Success/Failure probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1186,17 +1186,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING Depth",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
+            "desc": "Master GROUP BY & HAVING Depth techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Logic Building & Common Table Expressions (CTEs)."
+        "outcome": "Built depth in Searching Algorithms & GROUP BY & HAVING Depth."
       },
       {
         "day": 25,
-        "title": "Day 25: STL/Collections & Window Functions: RANK",
+        "title": "Day 25: Heaps - Basic Intro & Inner Joins & Self Joins",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1207,10 +1207,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: STL/Collections",
+            "task": "\u2694\ufe0f DSA: Heaps - Basic Intro",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master STL/Collections patterns via TUF A2Z."
+            "desc": "Master Heaps - Basic Intro patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1221,10 +1221,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
+            "desc": "Stats 7: Modeling event frequency over time."
           },
           {
             "time": "1\u20134pm",
@@ -1234,17 +1234,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins & Self Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: RANK techniques on TUF."
+            "desc": "Master Inner Joins & Self Joins techniques on TUF."
           }
         ],
-        "outcome": "Built depth in STL/Collections & Window Functions: RANK."
+        "outcome": "Built depth in Heaps - Basic Intro & Inner Joins & Self Joins."
       },
       {
         "day": 26,
-        "title": "Day 26: Selection Sort & Window Functions: ROW_NUMBER",
+        "title": "Day 26: Arrays - Easy (Hashing, Two-Pointers) & Left, Right, and Full Joins",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1255,10 +1255,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Selection Sort",
+            "task": "\u2694\ufe0f DSA: Arrays - Easy (Hashing, Two-Pointers)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Selection Sort patterns via TUF A2Z."
+            "desc": "Master Arrays - Easy (Hashing, Two-Pointers) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1269,10 +1269,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Chi-Square Test",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
+            "desc": "Decision 3: Testing independence between categories."
           },
           {
             "time": "1\u20134pm",
@@ -1282,17 +1282,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Left, Right, and Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master Left, Right, and Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Selection Sort & Window Functions: ROW_NUMBER."
+        "outcome": "Built depth in Arrays - Easy (Hashing, Two-Pointers) & Left, Right, and Full Joins."
       },
       {
         "day": 27,
-        "title": "Day 27: Bubble Sort & Set Operators (UNION/INTERSECT)",
+        "title": "Day 27: Arrays - Medium (Kadane's, Sorting) & Subqueries - Scalar & Multiple Row",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1303,10 +1303,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Bubble Sort",
+            "task": "\u2694\ufe0f DSA: Arrays - Medium (Kadane's, Sorting)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Bubble Sort patterns via TUF A2Z."
+            "desc": "Master Arrays - Medium (Kadane's, Sorting) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1317,10 +1317,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Confidence Intervals",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
+            "desc": "Stats 8: Estimating ranges with precision."
           },
           {
             "time": "1\u20134pm",
@@ -1330,17 +1330,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries - Scalar & Multiple Row",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master Subqueries - Scalar & Multiple Row techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Bubble Sort & Set Operators (UNION/INTERSECT)."
+        "outcome": "Built depth in Arrays - Medium (Kadane's, Sorting) & Subqueries - Scalar & Multiple Row."
       },
       {
         "day": 28,
-        "title": "Day 28: Insertion Sort & CASE Statements",
+        "title": "Day 28: Arrays - Hard (Merged Intervals) & Correlated Subqueries",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1351,10 +1351,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Insertion Sort",
+            "task": "\u2694\ufe0f DSA: Arrays - Hard (Merged Intervals)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Insertion Sort patterns via TUF A2Z."
+            "desc": "Master Arrays - Hard (Merged Intervals) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1365,10 +1365,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Linear Regression Foundations",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
+            "desc": "Math 2: Predictive modeling baseline."
           },
           {
             "time": "1\u20134pm",
@@ -1378,13 +1378,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Correlated Subqueries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CASE Statements techniques on TUF."
+            "desc": "Master Correlated Subqueries techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Insertion Sort & CASE Statements."
+        "outcome": "Built depth in Arrays - Hard (Merged Intervals) & Correlated Subqueries."
       }
     ]
   },
@@ -1396,7 +1396,7 @@ const weeks = [
     "days": [
       {
         "day": 29,
-        "title": "Day 29: Easy Arrays & Basic SELECT & Filtering",
+        "title": "Day 29: Binary Search - 1D Arrays & CTEs - Non-Recursive Foundations",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1407,10 +1407,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Easy Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - 1D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Easy Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - 1D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1421,10 +1421,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
+            "desc": "Stats 9: Cleaning data using statistical bounds."
           },
           {
             "time": "1\u20134pm",
@@ -1434,17 +1434,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs - Non-Recursive Foundations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master CTEs - Non-Recursive Foundations techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Easy Arrays & Basic SELECT & Filtering."
+        "outcome": "Built depth in Binary Search - 1D Arrays & CTEs - Non-Recursive Foundations."
       },
       {
         "day": 30,
-        "title": "Day 30: Medium Arrays & Sorting & Limiting Data",
+        "title": "Day 30: Binary Search - Answers (SQRT, Allocation) & Window Functions: ROW_NUMBER & RANK",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1455,10 +1455,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Medium Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - Answers (SQRT, Allocation)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Medium Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - Answers (SQRT, Allocation) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1469,10 +1469,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
+            "desc": "Math 3: Understanding rate of change in business trends."
           },
           {
             "time": "1\u20134pm",
@@ -1482,17 +1482,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER & RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Window Functions: ROW_NUMBER & RANK techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Medium Arrays & Sorting & Limiting Data."
+        "outcome": "Built depth in Binary Search - Answers (SQRT, Allocation) & Window Functions: ROW_NUMBER & RANK."
       },
       {
         "day": 31,
-        "title": "Day 31: Hard Arrays & Inner Joins",
+        "title": "Day 31: Binary Search - 2D Arrays & Window Functions: LEAD & LAG (Time Series)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1503,10 +1503,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Hard Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Hard Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - 2D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1520,7 +1520,7 @@ const weeks = [
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "desc": "Stats 1: Central tendency for baseline analysis."
           },
           {
             "time": "1\u20134pm",
@@ -1530,17 +1530,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD & LAG (Time Series)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins techniques on TUF."
+            "desc": "Master Window Functions: LEAD & LAG (Time Series) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Hard Arrays & Inner Joins."
+        "outcome": "Built depth in Binary Search - 2D Arrays & Window Functions: LEAD & LAG (Time Series)."
       },
       {
         "day": 32,
-        "title": "Day 32: BS on 1D Arrays & Left/Right/Full Joins",
+        "title": "Day 32: Strings - Basic (Anagrams, Palindromes) & Window Functions: SUM/AVG Over Partition",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1551,10 +1551,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
+            "task": "\u2694\ufe0f DSA: Strings - Basic (Anagrams, Palindromes)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on 1D Arrays patterns via TUF A2Z."
+            "desc": "Master Strings - Basic (Anagrams, Palindromes) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1565,10 +1565,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "desc": "Stats 2: Measuring dataset volatility."
           },
           {
             "time": "1\u20134pm",
@@ -1578,17 +1578,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: SUM/AVG Over Partition",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Window Functions: SUM/AVG Over Partition techniques on TUF."
           }
         ],
-        "outcome": "Built depth in BS on 1D Arrays & Left/Right/Full Joins."
+        "outcome": "Built depth in Strings - Basic (Anagrams, Palindromes) & Window Functions: SUM/AVG Over Partition."
       },
       {
         "day": 33,
-        "title": "Day 33: BS on Answers & GROUP BY & Aggregations",
+        "title": "Day 33: Strings - Medium (Reverse, Frequency) & String Manipulation (CONCAT, SUBSTR, TRIM)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1599,10 +1599,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on Answers",
+            "task": "\u2694\ufe0f DSA: Strings - Medium (Reverse, Frequency)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on Answers patterns via TUF A2Z."
+            "desc": "Master Strings - Medium (Reverse, Frequency) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1613,10 +1613,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "desc": "Stats 3: Standardizing scales and bell curves."
           },
           {
             "time": "1\u20134pm",
@@ -1626,17 +1626,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: String Manipulation (CONCAT, SUBSTR, TRIM)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master String Manipulation (CONCAT, SUBSTR, TRIM) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in BS on Answers & GROUP BY & Aggregations."
+        "outcome": "Built depth in Strings - Medium (Reverse, Frequency) & String Manipulation (CONCAT, SUBSTR, TRIM)."
       },
       {
         "day": 34,
-        "title": "Day 34: BS on 2D Arrays & HAVING Clause",
+        "title": "Day 34: Singly Linked List - Basics & Date/Time Functions & Formatting",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1647,10 +1647,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
+            "task": "\u2694\ufe0f DSA: Singly Linked List - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on 2D Arrays patterns via TUF A2Z."
+            "desc": "Master Singly Linked List - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1661,10 +1661,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "desc": "Math 1: Handling skewed financial data."
           },
           {
             "time": "1\u20134pm",
@@ -1674,17 +1674,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions & Formatting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master HAVING Clause techniques on TUF."
+            "desc": "Master Date/Time Functions & Formatting techniques on TUF."
           }
         ],
-        "outcome": "Built depth in BS on 2D Arrays & HAVING Clause."
+        "outcome": "Built depth in Singly Linked List - Basics & Date/Time Functions & Formatting."
       },
       {
         "day": 35,
-        "title": "Day 35: Strings - Basic & String Functions",
+        "title": "Day 35: Doubly Linked List - Basics & CASE Statements (Conditional Logic)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1695,10 +1695,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Basic",
+            "task": "\u2694\ufe0f DSA: Doubly Linked List - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Basic patterns via TUF A2Z."
+            "desc": "Master Doubly Linked List - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1709,10 +1709,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "desc": "Decision 1: Scientific validation of changes."
           },
           {
             "time": "1\u20134pm",
@@ -1722,13 +1722,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements (Conditional Logic)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master String Functions techniques on TUF."
+            "desc": "Master CASE Statements (Conditional Logic) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Strings - Basic & String Functions."
+        "outcome": "Built depth in Doubly Linked List - Basics & CASE Statements (Conditional Logic)."
       }
     ]
   },
@@ -1740,7 +1740,7 @@ const weeks = [
     "days": [
       {
         "day": 36,
-        "title": "Day 36: Strings - Medium & Date & Time Functions",
+        "title": "Day 36: LL Problems - Medium (Mid-point, Reverse) & Set Operators (UNION, INTERSECT, EXCEPT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1751,10 +1751,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Medium",
+            "task": "\u2694\ufe0f DSA: LL Problems - Medium (Mid-point, Reverse)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Medium patterns via TUF A2Z."
+            "desc": "Master LL Problems - Medium (Mid-point, Reverse) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1765,10 +1765,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "desc": "Decision 2: Determining significance."
           },
           {
             "time": "1\u20134pm",
@@ -1778,17 +1778,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION, INTERSECT, EXCEPT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Date & Time Functions techniques on TUF."
+            "desc": "Master Set Operators (UNION, INTERSECT, EXCEPT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Strings - Medium & Date & Time Functions."
+        "outcome": "Built depth in LL Problems - Medium (Mid-point, Reverse) & Set Operators (UNION, INTERSECT, EXCEPT)."
       },
       {
         "day": 37,
-        "title": "Day 37: Singly LL & Subqueries & Nested Queries",
+        "title": "Day 37: Recursion - Basic Patterns & Data Types & Type Casting (CAST/CONVERT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1799,10 +1799,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Singly LL",
+            "task": "\u2694\ufe0f DSA: Recursion - Basic Patterns",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Singly LL patterns via TUF A2Z."
+            "desc": "Master Recursion - Basic Patterns patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1813,10 +1813,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Stats 4: Measuring relationships between variables."
           },
           {
             "time": "1\u20134pm",
@@ -1826,17 +1826,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Data Types & Type Casting (CAST/CONVERT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Subqueries & Nested Queries techniques on TUF."
+            "desc": "Master Data Types & Type Casting (CAST/CONVERT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Singly LL & Subqueries & Nested Queries."
+        "outcome": "Built depth in Recursion - Basic Patterns & Data Types & Type Casting (CAST/CONVERT)."
       },
       {
         "day": 38,
-        "title": "Day 38: Doubly LL & Common Table Expressions (CTEs)",
+        "title": "Day 38: Subsets & Subsequences & Handling NULLs (COALESCE, IFNULL)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1847,10 +1847,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Doubly LL",
+            "task": "\u2694\ufe0f DSA: Subsets & Subsequences",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Doubly LL patterns via TUF A2Z."
+            "desc": "Master Subsets & Subsequences patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1861,10 +1861,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
+            "desc": "Stats 5: The backbone of sampling & inference."
           },
           {
             "time": "1\u20134pm",
@@ -1874,17 +1874,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs (COALESCE, IFNULL)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
+            "desc": "Master Handling NULLs (COALESCE, IFNULL) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Doubly LL & Common Table Expressions (CTEs)."
+        "outcome": "Built depth in Subsets & Subsequences & Handling NULLs (COALESCE, IFNULL)."
       },
       {
         "day": 39,
-        "title": "Day 39: Medium LL Problems & Window Functions: RANK",
+        "title": "Day 39: Bit Manipulation - Basics & Database Constraints & Keys",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1895,10 +1895,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Medium LL Problems",
+            "task": "\u2694\ufe0f DSA: Bit Manipulation - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Medium LL Problems patterns via TUF A2Z."
+            "desc": "Master Bit Manipulation - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1909,10 +1909,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
+            "desc": "Stats 6: Success/Failure probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1922,17 +1922,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Database Constraints & Keys",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: RANK techniques on TUF."
+            "desc": "Master Database Constraints & Keys techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Medium LL Problems & Window Functions: RANK."
+        "outcome": "Built depth in Bit Manipulation - Basics & Database Constraints & Keys."
       },
       {
         "day": 40,
-        "title": "Day 40: Basic Recursion & Window Functions: ROW_NUMBER",
+        "title": "Day 40: Stacks - Basics & Transaction Basics (COMMIT/ROLLBACK)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1943,10 +1943,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Basic Recursion",
+            "task": "\u2694\ufe0f DSA: Stacks - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Basic Recursion patterns via TUF A2Z."
+            "desc": "Master Stacks - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -1957,10 +1957,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
+            "desc": "Stats 7: Modeling event frequency over time."
           },
           {
             "time": "1\u20134pm",
@@ -1970,17 +1970,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics (COMMIT/ROLLBACK)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master Transaction Basics (COMMIT/ROLLBACK) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Basic Recursion & Window Functions: ROW_NUMBER."
+        "outcome": "Built depth in Stacks - Basics & Transaction Basics (COMMIT/ROLLBACK)."
       },
       {
         "day": 41,
-        "title": "Day 41: Subsets & Set Operators (UNION/INTERSECT)",
+        "title": "Day 41: Queues - Basics & SELECT, Filtering & Logic (AND/OR/NOT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -1991,10 +1991,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Subsets",
+            "task": "\u2694\ufe0f DSA: Queues - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Subsets patterns via TUF A2Z."
+            "desc": "Master Queues - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2005,10 +2005,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: Chi-Square Test",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
+            "desc": "Decision 3: Testing independence between categories."
           },
           {
             "time": "1\u20134pm",
@@ -2018,17 +2018,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT, Filtering & Logic (AND/OR/NOT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master SELECT, Filtering & Logic (AND/OR/NOT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Subsets & Set Operators (UNION/INTERSECT)."
+        "outcome": "Built depth in Queues - Basics & SELECT, Filtering & Logic (AND/OR/NOT)."
       },
       {
         "day": 42,
-        "title": "Day 42: Bit Manipulation & CASE Statements",
+        "title": "Day 42: Sliding Window - Basics & Sorting & TOP/LIMIT Clauses",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2039,10 +2039,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Bit Manipulation",
+            "task": "\u2694\ufe0f DSA: Sliding Window - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Bit Manipulation patterns via TUF A2Z."
+            "desc": "Master Sliding Window - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2053,10 +2053,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Confidence Intervals",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
+            "desc": "Stats 8: Estimating ranges with precision."
           },
           {
             "time": "1\u20134pm",
@@ -2066,13 +2066,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & TOP/LIMIT Clauses",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CASE Statements techniques on TUF."
+            "desc": "Master Sorting & TOP/LIMIT Clauses techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Bit Manipulation & CASE Statements."
+        "outcome": "Built depth in Sliding Window - Basics & Sorting & TOP/LIMIT Clauses."
       }
     ]
   },
@@ -2084,7 +2084,7 @@ const weeks = [
     "days": [
       {
         "day": 43,
-        "title": "Day 43: Stack and Queues & Basic SELECT & Filtering",
+        "title": "Day 43: Hashing - Maps & Sets & Aggregation Functions (SUM, AVG, COUNT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2095,10 +2095,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Stack and Queues",
+            "task": "\u2694\ufe0f DSA: Hashing - Maps & Sets",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Stack and Queues patterns via TUF A2Z."
+            "desc": "Master Hashing - Maps & Sets patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2109,10 +2109,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Linear Regression Foundations",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
+            "desc": "Math 2: Predictive modeling baseline."
           },
           {
             "time": "1\u20134pm",
@@ -2122,17 +2122,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregation Functions (SUM, AVG, COUNT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master Aggregation Functions (SUM, AVG, COUNT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Stack and Queues & Basic SELECT & Filtering."
+        "outcome": "Built depth in Hashing - Maps & Sets & Aggregation Functions (SUM, AVG, COUNT)."
       },
       {
         "day": 44,
-        "title": "Day 44: Sliding Window & Sorting & Limiting Data",
+        "title": "Day 44: Two Pointers - Advanced & GROUP BY & HAVING Depth",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2143,10 +2143,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Sliding Window",
+            "task": "\u2694\ufe0f DSA: Two Pointers - Advanced",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Sliding Window patterns via TUF A2Z."
+            "desc": "Master Two Pointers - Advanced patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2157,10 +2157,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
+            "desc": "Stats 9: Cleaning data using statistical bounds."
           },
           {
             "time": "1\u20134pm",
@@ -2170,17 +2170,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING Depth",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master GROUP BY & HAVING Depth techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Sliding Window & Sorting & Limiting Data."
+        "outcome": "Built depth in Two Pointers - Advanced & GROUP BY & HAVING Depth."
       },
       {
         "day": 45,
-        "title": "Day 45: Basics - Language & Inner Joins",
+        "title": "Day 45: Greedy - Basic Patterns & Inner Joins & Self Joins",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2191,10 +2191,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Basics - Language",
+            "task": "\u2694\ufe0f DSA: Greedy - Basic Patterns",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Basics - Language patterns via TUF A2Z."
+            "desc": "Master Greedy - Basic Patterns patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2205,10 +2205,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
+            "desc": "Math 3: Understanding rate of change in business trends."
           },
           {
             "time": "1\u20134pm",
@@ -2218,17 +2218,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins & Self Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins techniques on TUF."
+            "desc": "Master Inner Joins & Self Joins techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Basics - Language & Inner Joins."
+        "outcome": "Built depth in Greedy - Basic Patterns & Inner Joins & Self Joins."
       },
       {
         "day": 46,
-        "title": "Day 46: Logic Building & Left/Right/Full Joins",
+        "title": "Day 46: Sorting - Quick & Merge & Left, Right, and Full Joins",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2239,10 +2239,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Logic Building",
+            "task": "\u2694\ufe0f DSA: Sorting - Quick & Merge",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Logic Building patterns via TUF A2Z."
+            "desc": "Master Sorting - Quick & Merge patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2253,10 +2253,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Stats 1: Central tendency for baseline analysis."
           },
           {
             "time": "1\u20134pm",
@@ -2266,17 +2266,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Left, Right, and Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Left, Right, and Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Logic Building & Left/Right/Full Joins."
+        "outcome": "Built depth in Sorting - Quick & Merge & Left, Right, and Full Joins."
       },
       {
         "day": 47,
-        "title": "Day 47: STL/Collections & GROUP BY & Aggregations",
+        "title": "Day 47: Mathematics for DSA & Subqueries - Scalar & Multiple Row",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2287,10 +2287,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: STL/Collections",
+            "task": "\u2694\ufe0f DSA: Mathematics for DSA",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master STL/Collections patterns via TUF A2Z."
+            "desc": "Master Mathematics for DSA patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2301,10 +2301,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Stats 2: Measuring dataset volatility."
           },
           {
             "time": "1\u20134pm",
@@ -2314,17 +2314,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries - Scalar & Multiple Row",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master Subqueries - Scalar & Multiple Row techniques on TUF."
           }
         ],
-        "outcome": "Built depth in STL/Collections & GROUP BY & Aggregations."
+        "outcome": "Built depth in Mathematics for DSA & Subqueries - Scalar & Multiple Row."
       },
       {
         "day": 48,
-        "title": "Day 48: Selection Sort & HAVING Clause",
+        "title": "Day 48: Time Complexity Analysis & Correlated Subqueries",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2335,10 +2335,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Selection Sort",
+            "task": "\u2694\ufe0f DSA: Time Complexity Analysis",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Selection Sort patterns via TUF A2Z."
+            "desc": "Master Time Complexity Analysis patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2349,10 +2349,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
+            "desc": "Stats 3: Standardizing scales and bell curves."
           },
           {
             "time": "1\u20134pm",
@@ -2362,17 +2362,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Correlated Subqueries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master HAVING Clause techniques on TUF."
+            "desc": "Master Correlated Subqueries techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Selection Sort & HAVING Clause."
+        "outcome": "Built depth in Time Complexity Analysis & Correlated Subqueries."
       },
       {
         "day": 49,
-        "title": "Day 49: Bubble Sort & String Functions",
+        "title": "Day 49: Searching Algorithms & CTEs - Non-Recursive Foundations",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2383,10 +2383,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Bubble Sort",
+            "task": "\u2694\ufe0f DSA: Searching Algorithms",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Bubble Sort patterns via TUF A2Z."
+            "desc": "Master Searching Algorithms patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2397,10 +2397,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
+            "desc": "Math 1: Handling skewed financial data."
           },
           {
             "time": "1\u20134pm",
@@ -2410,13 +2410,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs - Non-Recursive Foundations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master String Functions techniques on TUF."
+            "desc": "Master CTEs - Non-Recursive Foundations techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Bubble Sort & String Functions."
+        "outcome": "Built depth in Searching Algorithms & CTEs - Non-Recursive Foundations."
       }
     ]
   },
@@ -2428,7 +2428,7 @@ const weeks = [
     "days": [
       {
         "day": 50,
-        "title": "Day 50: Insertion Sort & Date & Time Functions",
+        "title": "Day 50: Heaps - Basic Intro & Window Functions: ROW_NUMBER & RANK",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2439,10 +2439,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Insertion Sort",
+            "task": "\u2694\ufe0f DSA: Heaps - Basic Intro",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Insertion Sort patterns via TUF A2Z."
+            "desc": "Master Heaps - Basic Intro patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2453,10 +2453,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
+            "desc": "Decision 1: Scientific validation of changes."
           },
           {
             "time": "1\u20134pm",
@@ -2466,17 +2466,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER & RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Date & Time Functions techniques on TUF."
+            "desc": "Master Window Functions: ROW_NUMBER & RANK techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Insertion Sort & Date & Time Functions."
+        "outcome": "Built depth in Heaps - Basic Intro & Window Functions: ROW_NUMBER & RANK."
       },
       {
         "day": 51,
-        "title": "Day 51: Easy Arrays & Subqueries & Nested Queries",
+        "title": "Day 51: Arrays - Easy (Hashing, Two-Pointers) & Window Functions: LEAD & LAG (Time Series)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2487,10 +2487,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Easy Arrays",
+            "task": "\u2694\ufe0f DSA: Arrays - Easy (Hashing, Two-Pointers)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Easy Arrays patterns via TUF A2Z."
+            "desc": "Master Arrays - Easy (Hashing, Two-Pointers) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2501,10 +2501,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
+            "desc": "Decision 2: Determining significance."
           },
           {
             "time": "1\u20134pm",
@@ -2514,17 +2514,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD & LAG (Time Series)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Subqueries & Nested Queries techniques on TUF."
+            "desc": "Master Window Functions: LEAD & LAG (Time Series) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Easy Arrays & Subqueries & Nested Queries."
+        "outcome": "Built depth in Arrays - Easy (Hashing, Two-Pointers) & Window Functions: LEAD & LAG (Time Series)."
       },
       {
         "day": 52,
-        "title": "Day 52: Medium Arrays & Common Table Expressions (CTEs)",
+        "title": "Day 52: Arrays - Medium (Kadane's, Sorting) & Window Functions: SUM/AVG Over Partition",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2535,10 +2535,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Medium Arrays",
+            "task": "\u2694\ufe0f DSA: Arrays - Medium (Kadane's, Sorting)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Medium Arrays patterns via TUF A2Z."
+            "desc": "Master Arrays - Medium (Kadane's, Sorting) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2549,10 +2549,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Stats 4: Measuring relationships between variables."
           },
           {
             "time": "1\u20134pm",
@@ -2562,17 +2562,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: SUM/AVG Over Partition",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
+            "desc": "Master Window Functions: SUM/AVG Over Partition techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Medium Arrays & Common Table Expressions (CTEs)."
+        "outcome": "Built depth in Arrays - Medium (Kadane's, Sorting) & Window Functions: SUM/AVG Over Partition."
       },
       {
         "day": 53,
-        "title": "Day 53: Hard Arrays & Window Functions: RANK",
+        "title": "Day 53: Arrays - Hard (Merged Intervals) & String Manipulation (CONCAT, SUBSTR, TRIM)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2583,10 +2583,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Hard Arrays",
+            "task": "\u2694\ufe0f DSA: Arrays - Hard (Merged Intervals)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Hard Arrays patterns via TUF A2Z."
+            "desc": "Master Arrays - Hard (Merged Intervals) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2597,10 +2597,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
+            "desc": "Stats 5: The backbone of sampling & inference."
           },
           {
             "time": "1\u20134pm",
@@ -2610,17 +2610,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: String Manipulation (CONCAT, SUBSTR, TRIM)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: RANK techniques on TUF."
+            "desc": "Master String Manipulation (CONCAT, SUBSTR, TRIM) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Hard Arrays & Window Functions: RANK."
+        "outcome": "Built depth in Arrays - Hard (Merged Intervals) & String Manipulation (CONCAT, SUBSTR, TRIM)."
       },
       {
         "day": 54,
-        "title": "Day 54: BS on 1D Arrays & Window Functions: ROW_NUMBER",
+        "title": "Day 54: Binary Search - 1D Arrays & Date/Time Functions & Formatting",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2631,10 +2631,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - 1D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on 1D Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - 1D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2645,10 +2645,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
+            "desc": "Stats 6: Success/Failure probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -2658,17 +2658,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions & Formatting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master Date/Time Functions & Formatting techniques on TUF."
           }
         ],
-        "outcome": "Built depth in BS on 1D Arrays & Window Functions: ROW_NUMBER."
+        "outcome": "Built depth in Binary Search - 1D Arrays & Date/Time Functions & Formatting."
       },
       {
         "day": 55,
-        "title": "Day 55: BS on Answers & Set Operators (UNION/INTERSECT)",
+        "title": "Day 55: Binary Search - Answers (SQRT, Allocation) & CASE Statements (Conditional Logic)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2679,10 +2679,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on Answers",
+            "task": "\u2694\ufe0f DSA: Binary Search - Answers (SQRT, Allocation)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on Answers patterns via TUF A2Z."
+            "desc": "Master Binary Search - Answers (SQRT, Allocation) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2693,10 +2693,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency concepts from the YT playlist."
+            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
+            "desc": "Stats 7: Modeling event frequency over time."
           },
           {
             "time": "1\u20134pm",
@@ -2706,17 +2706,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements (Conditional Logic)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master CASE Statements (Conditional Logic) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in BS on Answers & Set Operators (UNION/INTERSECT)."
+        "outcome": "Built depth in Binary Search - Answers (SQRT, Allocation) & CASE Statements (Conditional Logic)."
       },
       {
         "day": 56,
-        "title": "Day 56: BS on 2D Arrays & CASE Statements",
+        "title": "Day 56: Binary Search - 2D Arrays & Set Operators (UNION, INTERSECT, EXCEPT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2727,10 +2727,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master BS on 2D Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - 2D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2741,10 +2741,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "task": "\ud83d\udcca Math: Chi-Square Test",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Data dispersion and consistency analysis."
+            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
+            "desc": "Decision 3: Testing independence between categories."
           },
           {
             "time": "1\u20134pm",
@@ -2754,13 +2754,13 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION, INTERSECT, EXCEPT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CASE Statements techniques on TUF."
+            "desc": "Master Set Operators (UNION, INTERSECT, EXCEPT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in BS on 2D Arrays & CASE Statements."
+        "outcome": "Built depth in Binary Search - 2D Arrays & Set Operators (UNION, INTERSECT, EXCEPT)."
       }
     ]
   },
@@ -2772,7 +2772,7 @@ const weeks = [
     "days": [
       {
         "day": 57,
-        "title": "Day 57: Strings - Basic & Basic SELECT & Filtering",
+        "title": "Day 57: Strings - Basic (Anagrams, Palindromes) & Data Types & Type Casting (CAST/CONVERT)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2783,10 +2783,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Basic",
+            "task": "\u2694\ufe0f DSA: Strings - Basic (Anagrams, Palindromes)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Basic patterns via TUF A2Z."
+            "desc": "Master Strings - Basic (Anagrams, Palindromes) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2797,10 +2797,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z Score",
+            "task": "\ud83d\udcca Math: Confidence Intervals",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing datasets and probability modeling."
+            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
+            "desc": "Stats 8: Estimating ranges with precision."
           },
           {
             "time": "1\u20134pm",
@@ -2810,17 +2810,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Data Types & Type Casting (CAST/CONVERT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master Data Types & Type Casting (CAST/CONVERT) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Strings - Basic & Basic SELECT & Filtering."
+        "outcome": "Built depth in Strings - Basic (Anagrams, Palindromes) & Data Types & Type Casting (CAST/CONVERT)."
       },
       {
         "day": 58,
-        "title": "Day 58: Strings - Medium & Sorting & Limiting Data",
+        "title": "Day 58: Strings - Medium (Reverse, Frequency) & Handling NULLs (COALESCE, IFNULL)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2831,10 +2831,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Medium",
+            "task": "\u2694\ufe0f DSA: Strings - Medium (Reverse, Frequency)",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Medium patterns via TUF A2Z."
+            "desc": "Master Strings - Medium (Reverse, Frequency) patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2845,10 +2845,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Linear Regression Foundations",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Scaling skewed data for linear modeling."
+            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
+            "desc": "Math 2: Predictive modeling baseline."
           },
           {
             "time": "1\u20134pm",
@@ -2858,17 +2858,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs (COALESCE, IFNULL)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Handling NULLs (COALESCE, IFNULL) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Strings - Medium & Sorting & Limiting Data."
+        "outcome": "Built depth in Strings - Medium (Reverse, Frequency) & Handling NULLs (COALESCE, IFNULL)."
       },
       {
         "day": 59,
-        "title": "Day 59: Singly LL & Inner Joins",
+        "title": "Day 59: Singly Linked List - Basics & Database Constraints & Keys",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2879,10 +2879,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Singly LL",
+            "task": "\u2694\ufe0f DSA: Singly Linked List - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Singly LL patterns via TUF A2Z."
+            "desc": "Master Singly Linked List - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2893,10 +2893,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: A/B Testing",
+            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Analysis 1: Statistical validation for product experiments."
+            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
+            "desc": "Stats 9: Cleaning data using statistical bounds."
           },
           {
             "time": "1\u20134pm",
@@ -2906,17 +2906,17 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Database Constraints & Keys",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins techniques on TUF."
+            "desc": "Master Database Constraints & Keys techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Singly LL & Inner Joins."
+        "outcome": "Built depth in Singly Linked List - Basics & Database Constraints & Keys."
       },
       {
         "day": 60,
-        "title": "Day 60: Doubly LL & Left/Right/Full Joins",
+        "title": "Day 60: Doubly Linked List - Basics & Transaction Basics (COMMIT/ROLLBACK)",
         "tasks": [
           {
             "time": "6\u20139am",
@@ -2927,10 +2927,10 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Doubly LL",
+            "task": "\u2694\ufe0f DSA: Doubly Linked List - Basics",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Doubly LL patterns via TUF A2Z."
+            "desc": "Master Doubly Linked List - Basics patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
@@ -2941,10 +2941,10 @@ const weeks = [
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Analysis 2: Determining statistical significance levels."
+            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
+            "desc": "Math 3: Understanding rate of change in business trends."
           },
           {
             "time": "1\u20134pm",
@@ -2954,17 +2954,19 @@ const weeks = [
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics (COMMIT/ROLLBACK)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Transaction Basics (COMMIT/ROLLBACK) techniques on TUF."
           }
         ],
-        "outcome": "Built depth in Doubly LL & Left/Right/Full Joins."
+        "outcome": "Built depth in Doubly Linked List - Basics & Transaction Basics (COMMIT/ROLLBACK)."
       }
     ]
   }
 ];
+
+
 
 
 
