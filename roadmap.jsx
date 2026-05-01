@@ -14,7 +14,7 @@ const RED = "#EF4444";
 const weeks = [
   {
     "week": 1,
-    "label": "Phase 1",
+    "label": "Phase 1: Foundations & IPL Analytics",
     "theme": "Execution",
     "color": PURPLE,
     "days": [
@@ -27,28 +27,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Understanding data analyst roles, tools, and the data ecosystem."
+            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Basics - Language",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Basics - Language coding patterns via TUF A2Z Sheet."
+            "desc": "Master Basics - Language patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
+            "task": "\ud83e\udde0 Aptitude: LR: Number Series",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Number Series via TUF Plus."
+            "desc": "Revise LR: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -61,10 +61,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master Basic SELECT & Filtering techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Basics - Language, Basic SELECT & Filtering, and IPL Analytics execution."
+        "outcome": "Built depth in Basics - Language & Basic SELECT & Filtering."
       },
       {
         "day": 2,
@@ -75,28 +75,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Understanding data analyst roles, tools, and the data ecosystem."
+            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Logic Building",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Logic Building coding patterns via TUF A2Z Sheet."
+            "desc": "Master Logic Building patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Number System via TUF Plus."
+            "desc": "Revise Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -109,10 +109,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Sorting & Limiting Data techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Logic Building, Sorting & Limiting Data, and IPL Analytics execution."
+        "outcome": "Built depth in Logic Building & Sorting & Limiting Data."
       },
       {
         "day": 3,
@@ -123,28 +123,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Understanding data analyst roles, tools, and the data ecosystem."
+            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: STL/Collections",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master STL/Collections coding patterns via TUF A2Z Sheet."
+            "desc": "Master STL/Collections patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Sentence Rearrangement via TUF Plus."
+            "desc": "Revise Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -157,10 +157,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Inner Joins techniques on TUF."
+            "desc": "Master Inner Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in STL/Collections, Inner Joins, and IPL Analytics execution."
+        "outcome": "Built depth in STL/Collections & Inner Joins."
       },
       {
         "day": 4,
@@ -171,28 +171,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Understanding data analyst roles, tools, and the data ecosystem."
+            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Selection Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Selection Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Selection Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Missing Numbers via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -205,10 +205,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Left/Right/Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Selection Sort, Left/Right/Full Joins, and IPL Analytics execution."
+        "outcome": "Built depth in Selection Sort & Left/Right/Full Joins."
       },
       {
         "day": 5,
@@ -219,28 +219,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Mastering spreadsheets, formulas, and basic data cleaning."
+            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Bubble Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Bubble Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Bubble Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Percentages via TUF Plus."
+            "desc": "Revise Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -253,10 +253,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master GROUP BY & Aggregations techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Bubble Sort, GROUP BY & Aggregations, and IPL Analytics execution."
+        "outcome": "Built depth in Bubble Sort & GROUP BY & Aggregations."
       },
       {
         "day": 6,
@@ -267,28 +267,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Mastering spreadsheets, formulas, and basic data cleaning."
+            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Insertion Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Insertion Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Insertion Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Reading Comprehension via TUF Plus."
+            "desc": "Revise Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -301,10 +301,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master HAVING Clause techniques on TUF."
+            "desc": "Master HAVING Clause techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Insertion Sort, HAVING Clause, and IPL Analytics execution."
+        "outcome": "Built depth in Insertion Sort & HAVING Clause."
       },
       {
         "day": 7,
@@ -315,28 +315,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Mastering spreadsheets, formulas, and basic data cleaning."
+            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Easy Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Easy Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Easy Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: LR: Odd One Out",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Odd One Out via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -349,16 +349,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master String Functions techniques on TUF."
+            "desc": "Master String Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Easy Arrays, String Functions, and IPL Analytics execution."
+        "outcome": "Built depth in Easy Arrays & String Functions."
       }
     ]
   },
   {
     "week": 2,
-    "label": "Phase 2",
+    "label": "Phase 2: Advanced SQL & IPL Build",
     "theme": "Execution",
     "color": BLUE,
     "days": [
@@ -371,28 +371,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Mastering spreadsheets, formulas, and basic data cleaning."
+            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Medium Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Medium Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Medium Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Profit & Loss via TUF Plus."
+            "desc": "Revise Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -405,10 +405,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Date & Time Functions techniques on TUF."
+            "desc": "Master Date & Time Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Medium Arrays, Date & Time Functions, and IPL Analytics execution."
+        "outcome": "Built depth in Medium Arrays & Date & Time Functions."
       },
       {
         "day": 9,
@@ -419,28 +419,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Building interactive dashboards and visual stories using Excel/Cognos."
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Hard Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Hard Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Hard Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
+            "task": "\ud83e\udde0 Aptitude: Mock Test 1",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Focus: Solve problems on Mock Test: Aptitude 1 via TUF Plus."
+            "desc": "Revise Mock Test 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -453,10 +453,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Subqueries & Nested Queries techniques on TUF."
+            "desc": "Master Subqueries & Nested Queries techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Hard Arrays, Subqueries & Nested Queries, and IPL Analytics execution."
+        "outcome": "Built depth in Hard Arrays & Subqueries & Nested Queries."
       },
       {
         "day": 10,
@@ -467,28 +467,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Building interactive dashboards and visual stories using Excel/Cognos."
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on 1D Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on 1D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
+            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -501,10 +501,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Common Table Expressions (CTEs) techniques on TUF."
+            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on 1D Arrays, Common Table Expressions (CTEs), and IPL Analytics execution."
+        "outcome": "Built depth in BS on 1D Arrays & Common Table Expressions (CTEs)."
       },
       {
         "day": 11,
@@ -515,28 +515,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Building interactive dashboards and visual stories using Excel/Cognos."
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on Answers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on Answers coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on Answers patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Number System via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Ratio & Proportion via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -549,10 +549,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: RANK techniques on TUF."
+            "desc": "Master Window Functions: RANK techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on Answers, Window Functions: RANK, and IPL Analytics execution."
+        "outcome": "Built depth in BS on Answers & Window Functions: RANK."
       },
       {
         "day": 12,
@@ -563,28 +563,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Building interactive dashboards and visual stories using Excel/Cognos."
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on 2D Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on 2D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Sentence Rearrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -597,10 +597,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on 2D Arrays, Window Functions: ROW_NUMBER, and IPL Analytics execution."
+        "outcome": "Built depth in BS on 2D Arrays & Window Functions: ROW_NUMBER."
       },
       {
         "day": 13,
@@ -611,28 +611,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Building interactive dashboards and visual stories using Excel/Cognos."
+            "desc": "Course 3: Building interactive dashboards and storytelling with data."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Strings - Basic",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Strings - Basic coding patterns via TUF A2Z Sheet."
+            "desc": "Master Strings - Basic patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -645,10 +645,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Strings - Basic, Set Operators (UNION/INTERSECT), and IPL Analytics execution."
+        "outcome": "Built depth in Strings - Basic & Set Operators (UNION/INTERSECT)."
       },
       {
         "day": 14,
@@ -659,28 +659,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Strings - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Strings - Medium coding patterns via TUF A2Z Sheet."
+            "desc": "Master Strings - Medium patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -693,16 +693,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master CASE Statements techniques on TUF."
+            "desc": "Master CASE Statements techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Strings - Medium, CASE Statements, and IPL Analytics execution."
+        "outcome": "Built depth in Strings - Medium & CASE Statements."
       }
     ]
   },
   {
     "week": 3,
-    "label": "Phase 3",
+    "label": "Phase 3: OTT Insights & Python Mastery",
     "theme": "Execution",
     "color": PURPLE,
     "days": [
@@ -715,28 +715,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Singly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Singly LL coding patterns via TUF A2Z Sheet."
+            "desc": "Master Singly LL patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Reading Comprehension via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Vocabulary via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -749,10 +749,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master Basic SELECT & Filtering techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Singly LL, Basic SELECT & Filtering, and IPL Analytics execution."
+        "outcome": "Built depth in Singly LL & Basic SELECT & Filtering."
       },
       {
         "day": 16,
@@ -763,28 +763,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Doubly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Doubly LL coding patterns via TUF A2Z Sheet."
+            "desc": "Master Doubly LL patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Direction Sense via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -797,10 +797,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Sorting & Limiting Data techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Doubly LL, Sorting & Limiting Data, and IPL Analytics execution."
+        "outcome": "Built depth in Doubly LL & Sorting & Limiting Data."
       },
       {
         "day": 17,
@@ -811,28 +811,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Medium LL Problems",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Medium LL Problems coding patterns via TUF A2Z Sheet."
+            "desc": "Master Medium LL Problems patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Time & Distance via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -845,10 +845,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Inner Joins techniques on TUF."
+            "desc": "Master Inner Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Medium LL Problems, Inner Joins, and IPL Analytics execution."
+        "outcome": "Built depth in Medium LL Problems & Inner Joins."
       },
       {
         "day": 18,
@@ -859,28 +859,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Basic Recursion",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Basic Recursion coding patterns via TUF A2Z Sheet."
+            "desc": "Master Basic Recursion patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
+            "task": "\ud83e\udde0 Aptitude: Mock Test 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Focus: Solve problems on Mock Test: Aptitude 1 via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test",
+            "desc": "Revise Mock Test 2 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -893,10 +893,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Left/Right/Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Basic Recursion, Left/Right/Full Joins, and IPL Analytics execution."
+        "outcome": "Built depth in Basic Recursion & Left/Right/Full Joins."
       },
       {
         "day": 19,
@@ -907,28 +907,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Subsets",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Subsets coding patterns via TUF A2Z Sheet."
+            "desc": "Master Subsets patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
+            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -941,10 +941,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master GROUP BY & Aggregations techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Subsets, GROUP BY & Aggregations, and IPL Analytics execution."
+        "outcome": "Built depth in Subsets & GROUP BY & Aggregations."
       },
       {
         "day": 20,
@@ -955,28 +955,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Bit Manipulation",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Bit Manipulation coding patterns via TUF A2Z Sheet."
+            "desc": "Master Bit Manipulation patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Number System via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Data Interpretation via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -989,10 +989,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master HAVING Clause techniques on TUF."
+            "desc": "Master HAVING Clause techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Bit Manipulation, HAVING Clause, and IPL Analytics execution."
+        "outcome": "Built depth in Bit Manipulation & HAVING Clause."
       },
       {
         "day": 21,
@@ -1003,28 +1003,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Python foundations: types, loops, functions, and libraries for data."
+            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Stack and Queues",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Stack and Queues coding patterns via TUF A2Z Sheet."
+            "desc": "Master Stack and Queues patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Sentence Rearrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Seating Arrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1037,16 +1037,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master String Functions techniques on TUF."
+            "desc": "Master String Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Stack and Queues, String Functions, and IPL Analytics execution."
+        "outcome": "Built depth in Stack and Queues & String Functions."
       }
     ]
   },
   {
     "week": 4,
-    "label": "Phase 4",
+    "label": "Phase 4: OTT Build & Advanced Viz",
     "theme": "Execution",
     "color": BLUE,
     "days": [
@@ -1059,28 +1059,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C5: Python Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-project-for-data-science",
-            "desc": "Applied Python: Building a real-world data science mini-project."
+            "desc": "Course 5: Applying Python to a real-world stock/revenue analysis project."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Sliding Window",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Sliding Window coding patterns via TUF A2Z Sheet."
+            "desc": "Master Sliding Window patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Mock Test 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test",
+            "desc": "Revise Mock Test 3 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1093,10 +1093,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Date & Time Functions techniques on TUF."
+            "desc": "Master Date & Time Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Sliding Window, Date & Time Functions, and OTT Dashboard execution."
+        "outcome": "Built depth in Sliding Window & Date & Time Functions."
       },
       {
         "day": 23,
@@ -1107,28 +1107,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C5: Python Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-project-for-data-science",
-            "desc": "Applied Python: Building a real-world data science mini-project."
+            "desc": "Course 5: Applying Python to a real-world stock/revenue analysis project."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Basics - Language",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Basics - Language coding patterns via TUF A2Z Sheet."
+            "desc": "Master Basics - Language patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: LR: Number Series",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -1141,10 +1141,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Subqueries & Nested Queries techniques on TUF."
+            "desc": "Master Subqueries & Nested Queries techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Basics - Language, Subqueries & Nested Queries, and OTT Dashboard execution."
+        "outcome": "Built depth in Basics - Language & Subqueries & Nested Queries."
       },
       {
         "day": 24,
@@ -1155,28 +1155,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Database foundations and SQL querying for data analysis."
+            "desc": "Course 6: Querying relational databases for professional insights."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Logic Building",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Logic Building coding patterns via TUF A2Z Sheet."
+            "desc": "Master Logic Building patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Reading Comprehension via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -1189,10 +1189,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Common Table Expressions (CTEs) techniques on TUF."
+            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Logic Building, Common Table Expressions (CTEs), and OTT Dashboard execution."
+        "outcome": "Built depth in Logic Building & Common Table Expressions (CTEs)."
       },
       {
         "day": 25,
@@ -1203,28 +1203,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Database foundations and SQL querying for data analysis."
+            "desc": "Course 6: Querying relational databases for professional insights."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: STL/Collections",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master STL/Collections coding patterns via TUF A2Z Sheet."
+            "desc": "Master STL/Collections patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -1237,10 +1237,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: RANK techniques on TUF."
+            "desc": "Master Window Functions: RANK techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in STL/Collections, Window Functions: RANK, and OTT Dashboard execution."
+        "outcome": "Built depth in STL/Collections & Window Functions: RANK."
       },
       {
         "day": 26,
@@ -1251,28 +1251,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Database foundations and SQL querying for data analysis."
+            "desc": "Course 6: Querying relational databases for professional insights."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Selection Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Selection Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Selection Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Missing Numbers via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -1285,10 +1285,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Selection Sort, Window Functions: ROW_NUMBER, and OTT Dashboard execution."
+        "outcome": "Built depth in Selection Sort & Window Functions: ROW_NUMBER."
       },
       {
         "day": 27,
@@ -1299,28 +1299,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Database foundations and SQL querying for data analysis."
+            "desc": "Course 6: Querying relational databases for professional insights."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Bubble Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Bubble Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Bubble Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
+            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Focus: Solve problems on Mock Test: Aptitude 1 via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1333,10 +1333,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Bubble Sort, Set Operators (UNION/INTERSECT), and OTT Dashboard execution."
+        "outcome": "Built depth in Bubble Sort & Set Operators (UNION/INTERSECT)."
       },
       {
         "day": 28,
@@ -1347,28 +1347,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Database foundations and SQL querying for data analysis."
+            "desc": "Course 6: Querying relational databases for professional insights."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Insertion Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Insertion Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Insertion Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1381,16 +1381,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master CASE Statements techniques on TUF."
+            "desc": "Master CASE Statements techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Insertion Sort, CASE Statements, and OTT Dashboard execution."
+        "outcome": "Built depth in Insertion Sort & CASE Statements."
       }
     ]
   },
   {
     "week": 5,
-    "label": "Phase 5",
+    "label": "Phase 5: E-commerce Strategy & Capstone",
     "theme": "Execution",
     "color": PURPLE,
     "days": [
@@ -1403,28 +1403,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Database foundations and SQL querying for data analysis."
+            "desc": "Course 6: Querying relational databases for professional insights."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Easy Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Easy Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Easy Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: LR: Odd One Out",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Number System via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Odd One Out via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -1437,10 +1437,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master Basic SELECT & Filtering techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Easy Arrays, Basic SELECT & Filtering, and OTT Dashboard execution."
+        "outcome": "Built depth in Easy Arrays & Basic SELECT & Filtering."
       },
       {
         "day": 30,
@@ -1451,28 +1451,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "EDA, Pandas, and data wrangling techniques in Python."
+            "desc": "Course 7: EDA, model development, and evaluation with Python."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Medium Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Medium Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Medium Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Sentence Rearrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -1485,10 +1485,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Sorting & Limiting Data techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Medium Arrays, Sorting & Limiting Data, and OTT Dashboard execution."
+        "outcome": "Built depth in Medium Arrays & Sorting & Limiting Data."
       },
       {
         "day": 31,
@@ -1499,28 +1499,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "EDA, Pandas, and data wrangling techniques in Python."
+            "desc": "Course 7: EDA, model development, and evaluation with Python."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Hard Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Hard Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Hard Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Mock Test 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Revise Mock Test 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -1533,10 +1533,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Inner Joins techniques on TUF."
+            "desc": "Master Inner Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Hard Arrays, Inner Joins, and OTT Dashboard execution."
+        "outcome": "Built depth in Hard Arrays & Inner Joins."
       },
       {
         "day": 32,
@@ -1547,28 +1547,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "EDA, Pandas, and data wrangling techniques in Python."
+            "desc": "Course 7: EDA, model development, and evaluation with Python."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on 1D Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on 1D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -1581,10 +1581,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Left/Right/Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on 1D Arrays, Left/Right/Full Joins, and OTT Dashboard execution."
+        "outcome": "Built depth in BS on 1D Arrays & Left/Right/Full Joins."
       },
       {
         "day": 33,
@@ -1595,28 +1595,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "EDA, Pandas, and data wrangling techniques in Python."
+            "desc": "Course 7: EDA, model development, and evaluation with Python."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on Answers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on Answers coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on Answers patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Reading Comprehension via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Ratio & Proportion via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1629,10 +1629,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master GROUP BY & Aggregations techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on Answers, GROUP BY & Aggregations, and OTT Dashboard execution."
+        "outcome": "Built depth in BS on Answers & GROUP BY & Aggregations."
       },
       {
         "day": 34,
@@ -1643,28 +1643,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "EDA, Pandas, and data wrangling techniques in Python."
+            "desc": "Course 7: EDA, model development, and evaluation with Python."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on 2D Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on 2D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1677,10 +1677,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master HAVING Clause techniques on TUF."
+            "desc": "Master HAVING Clause techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on 2D Arrays, HAVING Clause, and OTT Dashboard execution."
+        "outcome": "Built depth in BS on 2D Arrays & HAVING Clause."
       },
       {
         "day": 35,
@@ -1691,28 +1691,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "EDA, Pandas, and data wrangling techniques in Python."
+            "desc": "Course 7: EDA, model development, and evaluation with Python."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Strings - Basic",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Strings - Basic coding patterns via TUF A2Z Sheet."
+            "desc": "Master Strings - Basic patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -1725,16 +1725,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master String Functions techniques on TUF."
+            "desc": "Master String Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Strings - Basic, String Functions, and OTT Dashboard execution."
+        "outcome": "Built depth in Strings - Basic & String Functions."
       }
     ]
   },
   {
     "week": 6,
-    "label": "Phase 6",
+    "label": "Phase 6: E-commerce Build & Gen AI",
     "theme": "Execution",
     "color": BLUE,
     "days": [
@@ -1747,28 +1747,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Advanced plotting with Matplotlib, Seaborn, and Plotly."
+            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Strings - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Strings - Medium coding patterns via TUF A2Z Sheet."
+            "desc": "Master Strings - Medium patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Focus: Solve problems on Mock Test: Aptitude 1 via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -1781,10 +1781,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Date & Time Functions techniques on TUF."
+            "desc": "Master Date & Time Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Strings - Medium, Date & Time Functions, and OTT Dashboard execution."
+        "outcome": "Built depth in Strings - Medium & Date & Time Functions."
       },
       {
         "day": 37,
@@ -1795,28 +1795,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Advanced plotting with Matplotlib, Seaborn, and Plotly."
+            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Singly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Singly LL coding patterns via TUF A2Z Sheet."
+            "desc": "Master Singly LL patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Vocabulary via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -1829,10 +1829,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Subqueries & Nested Queries techniques on TUF."
+            "desc": "Master Subqueries & Nested Queries techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Singly LL, Subqueries & Nested Queries, and OTT Dashboard execution."
+        "outcome": "Built depth in Singly LL & Subqueries & Nested Queries."
       },
       {
         "day": 38,
@@ -1843,28 +1843,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Advanced plotting with Matplotlib, Seaborn, and Plotly."
+            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Doubly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Doubly LL coding patterns via TUF A2Z Sheet."
+            "desc": "Master Doubly LL patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Number System via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Direction Sense via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -1877,10 +1877,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Common Table Expressions (CTEs) techniques on TUF."
+            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Doubly LL, Common Table Expressions (CTEs), and OTT Dashboard execution."
+        "outcome": "Built depth in Doubly LL & Common Table Expressions (CTEs)."
       },
       {
         "day": 39,
@@ -1891,28 +1891,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Advanced plotting with Matplotlib, Seaborn, and Plotly."
+            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Medium LL Problems",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Medium LL Problems coding patterns via TUF A2Z Sheet."
+            "desc": "Master Medium LL Problems patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Sentence Rearrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Time & Distance via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1925,10 +1925,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: RANK techniques on TUF."
+            "desc": "Master Window Functions: RANK techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Medium LL Problems, Window Functions: RANK, and OTT Dashboard execution."
+        "outcome": "Built depth in Medium LL Problems & Window Functions: RANK."
       },
       {
         "day": 40,
@@ -1939,28 +1939,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Advanced plotting with Matplotlib, Seaborn, and Plotly."
+            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Basic Recursion",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Basic Recursion coding patterns via TUF A2Z Sheet."
+            "desc": "Master Basic Recursion patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Mock Test 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test",
+            "desc": "Revise Mock Test 2 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -1973,10 +1973,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Basic Recursion, Window Functions: ROW_NUMBER, and OTT Dashboard execution."
+        "outcome": "Built depth in Basic Recursion & Window Functions: ROW_NUMBER."
       },
       {
         "day": 41,
@@ -1987,28 +1987,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Advanced plotting with Matplotlib, Seaborn, and Plotly."
+            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Subsets",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Subsets coding patterns via TUF A2Z Sheet."
+            "desc": "Master Subsets patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -2021,10 +2021,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Subsets, Set Operators (UNION/INTERSECT), and OTT Dashboard execution."
+        "outcome": "Built depth in Subsets & Set Operators (UNION/INTERSECT)."
       },
       {
         "day": 42,
@@ -2035,28 +2035,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "End-to-end data analysis project following the full lifecycle."
+            "desc": "Course 9: Final industry-style capstone following all data phases."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Bit Manipulation",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Bit Manipulation coding patterns via TUF A2Z Sheet."
+            "desc": "Master Bit Manipulation patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Reading Comprehension via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Data Interpretation via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -2069,16 +2069,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master CASE Statements techniques on TUF."
+            "desc": "Master CASE Statements techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Bit Manipulation, CASE Statements, and OTT Dashboard execution."
+        "outcome": "Built depth in Bit Manipulation & CASE Statements."
       }
     ]
   },
   {
     "week": 7,
-    "label": "Phase 7",
+    "label": "Phase 7: Portfolio & Professional Branding",
     "theme": "Execution",
     "color": PURPLE,
     "days": [
@@ -2091,28 +2091,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "End-to-end data analysis project following the full lifecycle."
+            "desc": "Course 9: Final industry-style capstone following all data phases."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Stack and Queues",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Stack and Queues coding patterns via TUF A2Z Sheet."
+            "desc": "Master Stack and Queues patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Seating Arrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -2125,10 +2125,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master Basic SELECT & Filtering techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Stack and Queues, Basic SELECT & Filtering, and E-com Platform execution."
+        "outcome": "Built depth in Stack and Queues & Basic SELECT & Filtering."
       },
       {
         "day": 44,
@@ -2139,28 +2139,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "End-to-end data analysis project following the full lifecycle."
+            "desc": "Course 9: Final industry-style capstone following all data phases."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Sliding Window",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Sliding Window coding patterns via TUF A2Z Sheet."
+            "desc": "Master Sliding Window patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Mock Test 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test",
+            "desc": "Revise Mock Test 3 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -2173,10 +2173,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Sorting & Limiting Data techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Sliding Window, Sorting & Limiting Data, and E-com Platform execution."
+        "outcome": "Built depth in Sliding Window & Sorting & Limiting Data."
       },
       {
         "day": 45,
@@ -2187,28 +2187,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "End-to-end data analysis project following the full lifecycle."
+            "desc": "Course 9: Final industry-style capstone following all data phases."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Basics - Language",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Basics - Language coding patterns via TUF A2Z Sheet."
+            "desc": "Master Basics - Language patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
+            "task": "\ud83e\udde0 Aptitude: LR: Number Series",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Focus: Solve problems on Mock Test: Aptitude 1 via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -2221,10 +2221,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Inner Joins techniques on TUF."
+            "desc": "Master Inner Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Basics - Language, Inner Joins, and E-com Platform execution."
+        "outcome": "Built depth in Basics - Language & Inner Joins."
       },
       {
         "day": 46,
@@ -2235,28 +2235,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "End-to-end data analysis project following the full lifecycle."
+            "desc": "Course 9: Final industry-style capstone following all data phases."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Logic Building",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Logic Building coding patterns via TUF A2Z Sheet."
+            "desc": "Master Logic Building patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -2269,10 +2269,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Left/Right/Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Logic Building, Left/Right/Full Joins, and E-com Platform execution."
+        "outcome": "Built depth in Logic Building & Left/Right/Full Joins."
       },
       {
         "day": 47,
@@ -2283,28 +2283,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "End-to-end data analysis project following the full lifecycle."
+            "desc": "Course 9: Final industry-style capstone following all data phases."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: STL/Collections",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master STL/Collections coding patterns via TUF A2Z Sheet."
+            "desc": "Master STL/Collections patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Number System via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -2317,10 +2317,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & Aggregations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master GROUP BY & Aggregations techniques on TUF."
+            "desc": "Master GROUP BY & Aggregations techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in STL/Collections, GROUP BY & Aggregations, and E-com Platform execution."
+        "outcome": "Built depth in STL/Collections & GROUP BY & Aggregations."
       },
       {
         "day": 48,
@@ -2331,28 +2331,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "End-to-end data analysis project following the full lifecycle."
+            "desc": "Course 9: Final industry-style capstone following all data phases."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Selection Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Selection Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Selection Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Sentence Rearrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Missing Numbers via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -2365,10 +2365,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: HAVING Clause",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master HAVING Clause techniques on TUF."
+            "desc": "Master HAVING Clause techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Selection Sort, HAVING Clause, and E-com Platform execution."
+        "outcome": "Built depth in Selection Sort & HAVING Clause."
       },
       {
         "day": 49,
@@ -2379,28 +2379,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C10: Generative AI",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
-            "desc": "Using AI tools to accelerate cleaning, analysis, and reporting."
+            "desc": "Course 10: Leveraging LLMs to automate cleaning and presentation."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Bubble Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Bubble Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Bubble Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -2413,16 +2413,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master String Functions techniques on TUF."
+            "desc": "Master String Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Bubble Sort, String Functions, and E-com Platform execution."
+        "outcome": "Built depth in Bubble Sort & String Functions."
       }
     ]
   },
   {
     "week": 8,
-    "label": "Phase 8",
+    "label": "Phase 8: Job Hunt & Interview Readiness",
     "theme": "Execution",
     "color": BLUE,
     "days": [
@@ -2435,28 +2435,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C10: Generative AI",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
-            "desc": "Using AI tools to accelerate cleaning, analysis, and reporting."
+            "desc": "Course 10: Leveraging LLMs to automate cleaning and presentation."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Insertion Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Insertion Sort coding patterns via TUF A2Z Sheet."
+            "desc": "Master Insertion Sort patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -2469,10 +2469,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Date & Time Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Date & Time Functions techniques on TUF."
+            "desc": "Master Date & Time Functions techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Insertion Sort, Date & Time Functions, and E-com Platform execution."
+        "outcome": "Built depth in Insertion Sort & Date & Time Functions."
       },
       {
         "day": 51,
@@ -2483,28 +2483,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C10: Generative AI",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
-            "desc": "Using AI tools to accelerate cleaning, analysis, and reporting."
+            "desc": "Course 10: Leveraging LLMs to automate cleaning and presentation."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Easy Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Easy Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Easy Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: LR: Odd One Out",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Reading Comprehension via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Odd One Out via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -2517,10 +2517,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries & Nested Queries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Subqueries & Nested Queries techniques on TUF."
+            "desc": "Master Subqueries & Nested Queries techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Easy Arrays, Subqueries & Nested Queries, and E-com Platform execution."
+        "outcome": "Built depth in Easy Arrays & Subqueries & Nested Queries."
       },
       {
         "day": 52,
@@ -2531,28 +2531,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Medium Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Medium Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Medium Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -2565,10 +2565,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Common Table Expressions (CTEs)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Common Table Expressions (CTEs) techniques on TUF."
+            "desc": "Master Common Table Expressions (CTEs) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Medium Arrays, Common Table Expressions (CTEs), and E-com Platform execution."
+        "outcome": "Built depth in Medium Arrays & Common Table Expressions (CTEs)."
       },
       {
         "day": 53,
@@ -2579,28 +2579,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Hard Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Hard Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master Hard Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Mock Test 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Revise Mock Test 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -2613,10 +2613,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: RANK techniques on TUF."
+            "desc": "Master Window Functions: RANK techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Hard Arrays, Window Functions: RANK, and E-com Platform execution."
+        "outcome": "Built depth in Hard Arrays & Window Functions: RANK."
       },
       {
         "day": 54,
@@ -2627,28 +2627,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on 1D Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on 1D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
+            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Focus: Solve problems on Mock Test: Aptitude 1 via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -2661,10 +2661,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Window Functions: ROW_NUMBER techniques on TUF."
+            "desc": "Master Window Functions: ROW_NUMBER techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on 1D Arrays, Window Functions: ROW_NUMBER, and E-com Platform execution."
+        "outcome": "Built depth in BS on 1D Arrays & Window Functions: ROW_NUMBER."
       },
       {
         "day": 55,
@@ -2675,28 +2675,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on Answers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on Answers coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on Answers patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Ratio & Proportion via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Central tendencies: How to represent average performance."
+            "desc": "Stats 1: Central tendency concepts from the YT playlist."
           },
           {
             "time": "1\u20134pm",
@@ -2709,10 +2709,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION/INTERSECT)",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Set Operators (UNION/INTERSECT) techniques on TUF."
+            "desc": "Master Set Operators (UNION/INTERSECT) techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on Answers, Set Operators (UNION/INTERSECT), and E-com Platform execution."
+        "outcome": "Built depth in BS on Answers & Set Operators (UNION/INTERSECT)."
       },
       {
         "day": 56,
@@ -2723,28 +2723,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master BS on 2D Arrays coding patterns via TUF A2Z Sheet."
+            "desc": "Master BS on 2D Arrays patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Number System via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Volatility & Spread: Measuring consistency in datasets."
+            "desc": "Stats 2: Data dispersion and consistency analysis."
           },
           {
             "time": "1\u20134pm",
@@ -2757,10 +2757,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master CASE Statements techniques on TUF."
+            "desc": "Master CASE Statements techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in BS on 2D Arrays, CASE Statements, and E-com Platform execution."
+        "outcome": "Built depth in BS on 2D Arrays & CASE Statements."
       }
     ]
   },
@@ -2779,28 +2779,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Strings - Basic",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Strings - Basic coding patterns via TUF A2Z Sheet."
+            "desc": "Master Strings - Basic patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Sentence Rearrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Probability: Identifying outliers and standardizing scales."
+            "desc": "Stats 3: Standardizing datasets and probability modeling."
           },
           {
             "time": "1\u20134pm",
@@ -2813,10 +2813,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Basic SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Basic SELECT & Filtering techniques on TUF."
+            "desc": "Master Basic SELECT & Filtering techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Strings - Basic, Basic SELECT & Filtering, and E-com Platform execution."
+        "outcome": "Built depth in Strings - Basic & Basic SELECT & Filtering."
       },
       {
         "day": 58,
@@ -2827,28 +2827,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Strings - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Strings - Medium coding patterns via TUF A2Z Sheet."
+            "desc": "Master Strings - Medium patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Focus: Solve problems on Logical: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Revise Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Data Scaling: Handling extreme values and exponential growth."
+            "desc": "Math 1: Scaling skewed data for linear modeling."
           },
           {
             "time": "1\u20134pm",
@@ -2861,10 +2861,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting Data",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Sorting & Limiting Data techniques on TUF."
+            "desc": "Master Sorting & Limiting Data techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Strings - Medium, Sorting & Limiting Data, and E-com Platform execution."
+        "outcome": "Built depth in Strings - Medium & Sorting & Limiting Data."
       },
       {
         "day": 59,
@@ -2875,28 +2875,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Singly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Singly LL coding patterns via TUF A2Z Sheet."
+            "desc": "Master Singly LL patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Focus: Solve problems on Quant: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
+            "desc": "Revise Verbal: Vocabulary via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision Science: Scientific validation of product changes."
+            "desc": "Analysis 1: Statistical validation for product experiments."
           },
           {
             "time": "1\u20134pm",
@@ -2909,10 +2909,10 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Inner Joins techniques on TUF."
+            "desc": "Master Inner Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Singly LL, Inner Joins, and E-com Platform execution."
+        "outcome": "Built depth in Singly LL & Inner Joins."
       },
       {
         "day": 60,
@@ -2923,28 +2923,28 @@ const weeks = [
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Professional branding, resume optimization, and mock interview prep."
+            "desc": "Course 11: Professional branding and interview excellence."
           },
           {
             "time": "9\u201310am",
             "task": "\u2694\ufe0f DSA: Doubly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Revision: Master Doubly LL coding patterns via TUF A2Z Sheet."
+            "desc": "Master Doubly LL patterns via TUF A2Z."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Focus: Solve problems on Verbal: Reading Comprehension via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Direction Sense via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Statistical Proof: Determining if results are significant."
+            "desc": "Analysis 2: Determining statistical significance levels."
           },
           {
             "time": "1\u20134pm",
@@ -2957,14 +2957,16 @@ const weeks = [
             "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right/Full Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Practice surgical SQL: Master Left/Right/Full Joins techniques on TUF."
+            "desc": "Master Left/Right/Full Joins techniques on TUF."
           }
         ],
-        "outcome": "Track mastery in Doubly LL, Left/Right/Full Joins, and E-com Platform execution."
+        "outcome": "Built depth in Doubly LL & Left/Right/Full Joins."
       }
     ]
   }
 ];
+
+
 
 
 
@@ -3491,6 +3493,7 @@ function Roadmap() {
   const [checklist, setChecklist] = useState(finalChecklist.map(i => ({ ...i })));
   const [expandedSkill, setExpandedSkill] = useState(null);
   const [domainFilter, setDomainFilter] = useState("All");
+  const [expandedDayTask, setExpandedDayTask] = useState(null);
 
   const [completedTasks, setCompletedTasks] = React.useState(() => {
     try {
@@ -3950,6 +3953,7 @@ function Roadmap() {
                     const originalTaskIndex = d.tasks.findIndex(orig => orig.task === t.task && orig.time === t.time);
                     const taskId = `d${d.day}-t${originalTaskIndex}`;
                     const isDone = !!completedTasks[taskId];
+                    const isExpanded = expandedDayTask === taskId;
                     return (
                       <div key={`${d.day}-${i}`} style={{
                         background: isDone ? "#0d2e1a" : CARD,
@@ -3960,10 +3964,11 @@ function Roadmap() {
                         display: "flex",
                         gap: 14,
                         alignItems: "flex-start",
+                        cursor: "pointer",
                         transition: "all 0.2s"
-                      }}>
+                      }} onClick={() => setExpandedDayTask(isExpanded ? null : taskId)}>
                         <div 
-                          onClick={() => toggleTask(taskId)}
+                          onClick={(e) => { e.stopPropagation(); toggleTask(taskId); }}
                           style={{
                             width: 18, height: 18, borderRadius: 4, flexShrink: 0, marginTop: 4,
                             border: `2px solid ${isDone ? GREEN : BORDER}`,
@@ -3973,29 +3978,14 @@ function Roadmap() {
                           }}>
                           {isDone ? "✓" : ""}
                         </div>
-                        <div style={{ minWidth: 60 }}>
-                          <div style={{ fontSize: 11, color: ACCENT, fontWeight: 700 }}>DAY {d.day}</div>
-                          <div style={{ fontSize: 10, color: MUTED, marginTop: 4 }}>{t.time}</div>
-                        </div>
                         <div style={{ flex: 1 }}>
+                          <div style={{ fontSize: 10, color: MUTED, marginBottom: 2 }}>{t.time}</div>
                           <div style={{ 
-                            fontSize: 13, fontWeight: 700, lineHeight: 1.5,
+                            fontSize: 14, fontWeight: 700, lineHeight: 1.4,
                             color: isDone ? GREEN : TEXT,
                             textDecoration: isDone ? "line-through" : "none",
                             opacity: isDone ? 0.7 : 1 
                           }}>{t.task}</div>
-                          {t.desc && (
-                            <div style={{ fontSize: 11, color: MUTED, marginTop: 4, lineHeight: 1.4 }}>
-                              {t.desc}
-                            </div>
-                          )}
-                          {t.link && (
-                            <div style={{ marginTop: 8 }}>
-                              <a 
-                                href={t.link} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                onClick={e => e.stopPropagation()}
                                 style={{ 
                                   fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "3px 8px", borderRadius: 4, textDecoration: "none", fontWeight: 800
                                 }}>
