@@ -3,7 +3,7 @@ import os
 import re
 
 # ─────────────────────────────────────────────────────────────────
-# DATA ANALYST ROADMAP GENERATOR (v7.1) - HYPER-PRECISION
+# DATA ANALYST ROADMAP GENERATOR (v7.2) - APTITUDE EXPANSION
 # ─────────────────────────────────────────────────────────────────
 
 # 1. CURRICULA & TOPICS
@@ -15,10 +15,20 @@ tuf_dsa_topics = [
     "Bit Manipulation", "Stack and Queues", "Sliding Window"
 ]
 
-tuf_apt_topics = [
-    "Number Series", "Missing Numbers", "Odd One Out", "Coding-Decoding", "Blood Relations",
-    "Direction Sense", "Syllogism", "Seating Arrangement", "Percentages", "Profit & Loss", 
-    "Ratio & Proportion", "Time & Work", "Time & Distance", "Data Interpretation"
+# Comprehensive Aptitude Rotation (Logical, Quant, Verbal, Mocks)
+tuf_apt_curriculum = [
+    {"topic": "Logical: Number Series", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
+    {"topic": "Quant: Number System", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude"},
+    {"topic": "Verbal: Sentence Rearrangement", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability"},
+    {"topic": "Logical: Coding-Decoding", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning"},
+    {"topic": "Quant: Percentages", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude"},
+    {"topic": "Verbal: Reading Comprehension", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability"},
+    {"topic": "Logical: Blood Relations", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning"},
+    {"topic": "Quant: Profit & Loss", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude"},
+    {"topic": "Mock Test: Aptitude 1", "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test"},
+    {"topic": "Logical: Syllogism", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning"},
+    {"topic": "Quant: Time & Work", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude"},
+    {"topic": "Verbal: Grammar & Usage", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability"},
 ]
 
 ibm_schedule = [
@@ -58,7 +68,6 @@ project_statements = {
 }
 
 tuf_dsa_link = "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-tuf_apt_link = "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
 tuf_sql_link = "https://takeuforward.org/plus/sql-data-engineering"
 
 # 2. GENERATE DATA
@@ -75,7 +84,7 @@ for w in range(1, 10):
         if day_num > 60: break
         
         dsa = tuf_dsa_topics[day_idx % len(tuf_dsa_topics)]
-        apt = tuf_apt_topics[day_idx % len(tuf_apt_topics)]
+        apt = tuf_apt_curriculum[day_idx % len(tuf_apt_curriculum)]
         math = math_stats_curriculum[day_idx % len(math_stats_curriculum)]
         ibm = ibm_daily[day_idx % len(ibm_daily)] if day_idx < len(ibm_daily) else ibm_daily[-1]
         
@@ -90,7 +99,7 @@ for w in range(1, 10):
         tasks = [
             {"time": "6–9am", "task": f"🎓 IBM: {ibm['name']}", "type": "ibm", "link": ibm['link'], "desc": f"3-hour session on {ibm['name']}. Progress: {round((day_idx/60)*100)}% of Cert."},
             {"time": "9–10am", "task": f"⚔️ DSA: {dsa}", "type": "dsa", "link": tuf_dsa_link, "desc": f"Revision: {dsa} via TUF A2Z Sheet."},
-            {"time": "10–11am", "task": f"🧠 Aptitude: {apt}", "type": "aptitude", "link": tuf_apt_link, "desc": f"Logical Reasoning: {apt} via TUF Plus."},
+            {"time": "10–11am", "task": f"🧠 Aptitude: {apt['topic']}", "type": "aptitude", "link": apt['link'], "desc": f"Focus: {apt['topic']} via Takeuforward Plus."},
             {"time": "11am–12pm", "task": f"📊 Math: {math['task']}", "type": "math", "link": math['link'], "desc": math['desc']},
             {"time": "1–4pm", "task": p_task, "type": "project", "desc": p_desc},
             {"time": "4–6pm", "task": f"🛠️ SQL Revision", "type": "sql", "link": tuf_sql_link, "desc": "Project-specific SQL queries on TUF."}

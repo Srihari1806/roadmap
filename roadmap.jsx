@@ -38,10 +38,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -86,10 +86,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Missing Numbers via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -134,10 +134,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Odd One Out via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -182,10 +182,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -230,10 +230,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -278,10 +278,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Direction Sense via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -326,10 +326,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Syllogism",
+            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Syllogism via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -382,10 +382,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
+            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Seating Arrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -430,10 +430,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Focus: Mock Test: Aptitude 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -478,10 +478,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Logical: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -526,10 +526,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Ratio & Proportion via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -574,10 +574,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Work via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -622,10 +622,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Distance",
+            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Distance via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -670,10 +670,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Data Interpretation via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -726,10 +726,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -774,10 +774,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Missing Numbers via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -822,10 +822,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Odd One Out via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -870,10 +870,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -918,10 +918,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -966,10 +966,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Direction Sense via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1014,10 +1014,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Syllogism",
+            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Syllogism via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Focus: Mock Test: Aptitude 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1070,10 +1070,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
+            "task": "\ud83e\udde0 Aptitude: Logical: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Seating Arrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1118,10 +1118,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1166,10 +1166,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1214,10 +1214,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Ratio & Proportion via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1262,10 +1262,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Work via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1310,10 +1310,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Distance",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Distance via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1358,10 +1358,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Data Interpretation via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1414,10 +1414,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1462,10 +1462,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Missing Numbers via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1510,10 +1510,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Odd One Out via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1558,10 +1558,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1606,10 +1606,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Focus: Mock Test: Aptitude 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1654,10 +1654,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: Logical: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Direction Sense via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1702,10 +1702,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Syllogism",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Syllogism via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1758,10 +1758,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Seating Arrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1806,10 +1806,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1854,10 +1854,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1902,10 +1902,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Ratio & Proportion via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1950,10 +1950,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Work via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1998,10 +1998,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Distance",
+            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Distance via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2046,10 +2046,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Data Interpretation via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2102,10 +2102,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2150,10 +2150,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Missing Numbers via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2198,10 +2198,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Odd One Out via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Focus: Mock Test: Aptitude 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2246,10 +2246,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Logical: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2294,10 +2294,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Blood Relations via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2342,10 +2342,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Direction Sense via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2390,10 +2390,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Syllogism",
+            "task": "\ud83e\udde0 Aptitude: Logical: Number Series",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Syllogism via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2446,10 +2446,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
+            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Seating Arrangement via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2494,10 +2494,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Percentages via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2542,10 +2542,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Logical: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Profit & Loss via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2590,10 +2590,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Ratio & Proportion via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2638,10 +2638,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Work via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2686,10 +2686,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Time & Distance",
+            "task": "\ud83e\udde0 Aptitude: Logical: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Time & Distance via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2734,10 +2734,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Data Interpretation via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2790,10 +2790,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Mock Test: Aptitude 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Number Series via TUF Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Focus: Mock Test: Aptitude 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2838,10 +2838,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Logical: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Missing Numbers via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Focus: Logical: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2886,10 +2886,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Odd One Out via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Focus: Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2934,10 +2934,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open",
-            "desc": "Logical Reasoning: Coding-Decoding via TUF Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Focus: Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2965,6 +2965,8 @@ const weeks = [
     ]
   }
 ];
+
+
 
 
 
