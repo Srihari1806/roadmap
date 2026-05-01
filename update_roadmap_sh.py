@@ -3,25 +3,10 @@ import os
 import re
 
 # ─────────────────────────────────────────────────────────────────
-# DATA ANALYST ROADMAP GENERATOR (v6.0) - SURGICAL PRECISION
+# DATA ANALYST ROADMAP GENERATOR (v7.1) - HYPER-PRECISION
 # ─────────────────────────────────────────────────────────────────
 
-# 1. CURRICULA & LINK DEFINITIONS
-ibm_courses = [
-    {"name": "C1: Intro to Data Analytics", "link": "https://www.coursera.org/learn/introduction-to-data-analytics"},
-    {"name": "C2: Excel Basics", "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"},
-    {"name": "C3: Data Viz with Excel & Cognos", "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"},
-    {"name": "C4: Python for Data Science", "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"},
-    {"name": "C5: Python Project", "link": "https://www.coursera.org/learn/python-project-for-data-science"},
-    {"name": "C6: Databases and SQL", "link": "https://www.coursera.org/learn/sql-data-science"},
-    {"name": "C7: Data Analysis with Python", "link": "https://www.coursera.org/learn/data-analysis-with-python"},
-    {"name": "C8: Data Viz with Python", "link": "https://www.coursera.org/learn/python-for-data-visualization"},
-    {"name": "C9: Capstone Project", "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"},
-    {"name": "C10: Generative AI", "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"},
-    {"name": "C11: Career Guide & Interview", "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"}
-]
-
-tuf_dsa_link = "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+# 1. CURRICULA & TOPICS
 tuf_dsa_topics = [
     "Basics - Language", "Logic Building", "STL/Collections", "Selection Sort", "Bubble Sort", 
     "Insertion Sort", "Easy Arrays", "Medium Arrays", "Hard Arrays", "BS on 1D Arrays", 
@@ -30,30 +15,58 @@ tuf_dsa_topics = [
     "Bit Manipulation", "Stack and Queues", "Sliding Window"
 ]
 
-tuf_apt_link = "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
 tuf_apt_topics = [
     "Number Series", "Missing Numbers", "Odd One Out", "Coding-Decoding", "Blood Relations",
     "Direction Sense", "Syllogism", "Seating Arrangement", "Percentages", "Profit & Loss", 
     "Ratio & Proportion", "Time & Work", "Time & Distance", "Data Interpretation"
 ]
 
-tuf_sql_link = "https://takeuforward.org/plus/sql-data-engineering"
-
-math_stats_curriculum = [
-    {"task": "Mean, Median, Mode, Percentile", "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"},
-    {"task": "Std Deviation & MAD", "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"},
-    {"task": "Normal Distribution & Z Score", "link": "https://www.youtube.com/watch?v=okhrFgaUwio"},
-    {"task": "Logarithm Basics", "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"},
-    {"task": "Log Normal Dist", "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"},
-    {"task": "Cosine Similarity", "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"},
-    {"task": "A/B Testing", "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"},
-    {"task": "Outlier Detection (Z Score)", "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"},
-    {"task": "Hypothesis Testing", "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"}
+ibm_schedule = [
+    {"name": "C1: Intro to Data Analytics", "hours": 11, "days": 4, "link": "https://www.coursera.org/learn/introduction-to-data-analytics"},
+    {"name": "C2: Excel Basics", "hours": 13, "days": 4, "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"},
+    {"name": "C3: Data Viz with Excel & Cognos", "hours": 16, "days": 5, "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"},
+    {"name": "C4: Python for Data Science", "hours": 24, "days": 8, "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"},
+    {"name": "C5: Python Project", "hours": 7, "days": 2, "link": "https://www.coursera.org/learn/python-project-for-data-science"},
+    {"name": "C6: Databases and SQL", "hours": 18, "days": 6, "link": "https://www.coursera.org/learn/sql-data-science"},
+    {"name": "C7: Data Analysis with Python", "hours": 17, "days": 6, "link": "https://www.coursera.org/learn/data-analysis-with-python"},
+    {"name": "C8: Data Viz with Python", "hours": 19, "days": 6, "link": "https://www.coursera.org/learn/python-for-data-visualization"},
+    {"name": "C9: Capstone Project", "hours": 20, "days": 7, "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"},
+    {"name": "C10: Generative AI", "hours": 8, "days": 3, "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"},
+    {"name": "C11: Career Guide & Interview", "hours": 10, "days": 5, "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"}
 ]
 
-# 2. GENERATE 60 DAYS OF MICRO-PRECISION DATA
+math_stats_curriculum = [
+    {"task": "Mean, Median, Mode", "desc": "Foundational stats: Central tendencies and data distributions.", "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"},
+    {"task": "Std Deviation & MAD", "desc": "Measuring variance: How spread out is your data?", "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"},
+    {"task": "Normal Dist & Z Score", "desc": "Bell curves: Probability, standardizing, and confidence.", "link": "https://www.youtube.com/watch?v=okhrFgaUwio"},
+    {"task": "Logarithm Basics", "desc": "Essential for handling skewed financial/engagement data.", "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"},
+    {"task": "A/B Testing", "desc": "Hypothesis testing in the real world: Which version wins?", "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"},
+    {"task": "Hypothesis Testing", "desc": "Validating claims: P-values and significance levels.", "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"}
+]
+
+project_statements = {
+    "IPL Analytics": {
+        "Analyse": ["Player consistency (5yrs)", "Venue win probability", "Toss impact on RR", "PP Spinner efficiency", "Death over strike rates"],
+        "Build": ["KPI: Player Radar Chart", "SQL: Venue History Matrix", "Heatmap: Runs per Over", "Predictor: Score ranges", "KPI: Match-up Odds"],
+        "Output": ["McKinsey-style Pitch Deck", "Strategic Team Report", "Batting Order Analysis", "Win-Probability Matrix", "Star Player ROI Study"]
+    },
+    "OTT Dashboard": {
+        "Analyse": ["Churn rate by genre", "Sentiment vs Watch-time", "Completion rates by region", "Marketing ROI by platform", "Niche genre growth trends"],
+        "Build": ["Viz: Churn Funnel", "SQL: Sentiment Join Table", "KPI: Region-wise retention", "Viz: Marketing ROI Scatter", "KPI: Growth Velocity"],
+        "Output": ["Content Strategy Doc", "Marketing Optimization Report", "Retention Playbook", "Genre investment roadmap", "Competitor teardown"]
+    }
+}
+
+tuf_dsa_link = "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+tuf_apt_link = "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+tuf_sql_link = "https://takeuforward.org/plus/sql-data-engineering"
+
+# 2. GENERATE DATA
 weeks_data = []
 day_idx = 0
+ibm_daily = []
+for course in ibm_schedule:
+    for _ in range(course['days']): ibm_daily.append(course)
 
 for w in range(1, 10):
     days = []
@@ -61,95 +74,50 @@ for w in range(1, 10):
         day_num = day_idx + 1
         if day_num > 60: break
         
-        # Curricula Rotation
         dsa = tuf_dsa_topics[day_idx % len(tuf_dsa_topics)]
         apt = tuf_apt_topics[day_idx % len(tuf_apt_topics)]
         math = math_stats_curriculum[day_idx % len(math_stats_curriculum)]
-        ibm = ibm_courses[day_idx % len(ibm_courses)]
+        ibm = ibm_daily[day_idx % len(ibm_daily)] if day_idx < len(ibm_daily) else ibm_daily[-1]
         
-        # Morning Tracks
-        tasks = [
-            {"time": "6–7am", "task": f"🎓 IBM: {ibm['name']}", "type": "ibm", "link": ibm['link']},
-            {"time": "7–8am", "task": f"⚔️ DSA: {dsa}", "type": "dsa", "link": tuf_dsa_link},
-            {"time": "8–9am", "task": f"🧠 Aptitude: {apt}", "type": "aptitude", "link": tuf_apt_link},
-            {"time": "9–10am", "task": f"📊 Math: {math['task']}", "type": "math", "link": math['link']}
-        ]
+        p_name = "IPL Analytics" if day_idx < 21 else ("OTT Dashboard" if day_idx < 42 else "E-com Platform")
+        statements = project_statements.get(p_name, project_statements["IPL Analytics"])
+        rot_step = day_idx % 3
         
-        # Project Blocks (3-Day Precision Rotation)
-        project_num = (day_idx // 14) + 1
-        project_names = {1: "IPL Analytics", 2: "OTT Dashboard", 3: "E-com Platform", 4: "Financial Insights"}
-        p_name = project_names.get(project_num, "Final Portfolio")
-        
-        day_in_project = day_idx % 14
-        layer_num = (day_in_project // 3) + 1
-        rotation_step = day_in_project % 3
-        
-        if rotation_step == 0:
-            p_task = f"🏗️ {p_name} (L{layer_num}): ANALYSE 4-5 business statements."
-        elif rotation_step == 1:
-            p_task = f"🏗️ {p_name} (L{layer_num}): BUILD 4-5 Metrics/KPIs."
-        else:
-            p_task = f"🏗️ {p_name} (L{layer_num}): GENERATE 4-5 Outputs/Insights."
+        type_labels = ["Analyse", "Build", "Output"]
+        p_task = f"🏗️ {p_name}: {type_labels[rot_step].upper()}"
+        p_desc = " | ".join(statements[type_labels[rot_step]])
 
-        tasks.append({"time": "10am–1pm", "task": p_task, "type": "project"})
-        tasks.append({"time": "2–5pm", "task": f"🛠️ Technical: Master {p_name} SQL/BI patterns.", "type": "sql", "link": tuf_sql_link})
+        tasks = [
+            {"time": "6–9am", "task": f"🎓 IBM: {ibm['name']}", "type": "ibm", "link": ibm['link'], "desc": f"3-hour session on {ibm['name']}. Progress: {round((day_idx/60)*100)}% of Cert."},
+            {"time": "9–10am", "task": f"⚔️ DSA: {dsa}", "type": "dsa", "link": tuf_dsa_link, "desc": f"Revision: {dsa} via TUF A2Z Sheet."},
+            {"time": "10–11am", "task": f"🧠 Aptitude: {apt}", "type": "aptitude", "link": tuf_apt_link, "desc": f"Logical Reasoning: {apt} via TUF Plus."},
+            {"time": "11am–12pm", "task": f"📊 Math: {math['task']}", "type": "math", "link": math['link'], "desc": math['desc']},
+            {"time": "1–4pm", "task": p_task, "type": "project", "desc": p_desc},
+            {"time": "4–6pm", "task": f"🛠️ SQL Revision", "type": "sql", "link": tuf_sql_link, "desc": "Project-specific SQL queries on TUF."}
+        ]
         
         days.append({
             "day": day_num,
             "title": f"Day {day_num}: {dsa} & {ibm['name']}",
             "tasks": tasks,
-            "outcome": f"Mastered {dsa} & {ibm['name']} concepts."
+            "outcome": f"Track mastery and {p_name} execution."
         })
         day_idx += 1
         
     if days:
-        weeks_data.append({
-            "week": w,
-            "label": f"Phase {w}: {days[0]['tasks'][1]['task'].replace('⚔️ DSA: ', '')}",
-            "theme": "Technical Mastery",
-            "color": "BLUE" if w%2==0 else "PURPLE",
-            "days": days
-        })
+        weeks_data.append({"week": w, "label": f"Phase {w}", "theme": "Execution", "color": "BLUE" if w%2==0 else "PURPLE", "days": days})
 
-# 3. UPDATE FRONTEND FILES
+# 3. UPDATE FRONTEND
 weeks_js = "const weeks = " + json.dumps(weeks_data, indent=2) + ";"
 weeks_js = re.sub(r'"color": "(BLUE|PURPLE|GREEN|ACCENT|RED)"', r'"color": \1', weeks_js)
-
-# SANITIZED DOMAINS / FILTERS
-domains_js = """const domains = [
-    { id: "All", label: "All Tasks (Normal View)" },
-    { id: "ibm", label: "🎓 IBM Cert", match: ["IBM:"] },
-    { id: "dsa", label: "⚔️ DSA Track", match: ["DSA:"] },
-    { id: "sql", label: "🗄️ SQL Track", match: ["SQL", "Technical:"] },
-    { id: "aptitude", label: "🧠 Aptitude", match: ["Aptitude:"] },
-    { id: "math", label: "📊 Math/Stats", match: ["Math:"] },
-    { id: "project", label: "🏗️ Projects", match: ["Project", "🏗️"] },
-  ];"""
 
 def update_file(path):
     if not os.path.exists(path): return
     with open(path, 'r', encoding='utf-8') as f: content = f.read()
-    
-    # 1. Replace Weeks
-    s_marker, e_marker = "const weeks = [", "const finalChecklist ="
-    s_idx = content.find(s_marker)
+    s_idx = content.find("const weeks = [")
     if s_idx != -1:
-        e_idx = content.find(e_marker)
-        e_arr_idx = content.rfind("];", s_idx, e_idx) + 2
+        e_arr_idx = content.rfind("];", s_idx, content.find("const finalChecklist =")) + 2
         content = content[:s_idx] + weeks_js + "\n\n" + content[e_arr_idx:]
-        
-    # 2. Replace Domains (The Filter Buttons)
-    ds_marker, de_marker = "const domains = [", "];"
-    ds_idx = content.find(ds_marker)
-    if ds_idx != -1:
-        de_idx = content.find(de_marker, ds_idx) + 2
-        content = content[:ds_idx] + domains_js + "\n\n" + content[de_idx:]
-
-    # 3. Update Guidance Text
-    p_text = "Project layers are built in 3-day cycles: Day 1 (Analyse 4-5 statements), Day 2 (Build 4-5 metrics), Day 3 (Generate 4-5 outputs)."
-    content = re.sub(r'Each Layer.*?moving to the next\.', p_text, content)
-    content = re.sub(r'Each project is built.*?\.', p_text, content)
-
     with open(path, 'w', encoding='utf-8') as f: f.write(content)
     print(f"Updated {os.path.basename(path)}")
 
