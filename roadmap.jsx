@@ -43,31 +43,31 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Learn Descriptive Stats: Mean, Median, Mode, Variance, Standard Deviation.",
             "type": "learn",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Probability Basics: Probability distributions, Normal distribution, Z-scores.",
             "type": "learn",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Inferential Stats: Hypothesis testing, p-values, A/B testing theory.",
             "type": "learn",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Calculate stats on a sample dataset using pen and paper or calculator.",
             "type": "practice",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           },
           {
             "time": "5\u20136pm",
             "task": "Document notes on Notion/GitHub. Roadmap.sh Math section complete.",
             "type": "output",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           }
         ],
         "outcome": "Solid foundation in data mathematics and statistics.",
@@ -129,7 +129,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 2: Excel Basics for Data Analysis | Focus: Data cleaning & basic formulas",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
           },
           {
             "time": "7\u20138am",
@@ -233,7 +233,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 2: Excel Advanced | Focus: VLOOKUP, INDEX-MATCH & Pivot Tables",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
           },
           {
             "time": "7\u20138am",
@@ -775,7 +775,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Analysis: Toss vs Win Probability + Venue Bias (Spin vs Pace dominance per venue).",
             "type": "build",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           },
           {
             "time": "2\u20134pm",
@@ -786,7 +786,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Generate Player Scoring Zone Heatmaps + over-by-over Win Probability graphs.",
             "type": "output",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           }
         ],
         "outcome": "On-field performance engine complete. Clutch Index leaderboard generated.",
@@ -946,7 +946,7 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Win Predictor: Build a basic ML model to predict match outcome based on mid-match stats.",
             "type": "build",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           },
           {
             "time": "4\u20136pm",
@@ -1494,7 +1494,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 8: Data Viz with Python | Focus: Matplotlib, Seaborn & Dash",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/data-visualization-with-python"
+            "link": "https://www.coursera.org/learn/python-for-data-visualization"
           },
           {
             "time": "7\u20138am",
@@ -1522,7 +1522,7 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Economic Model: Delivery speed vs Purchase probability correlation.",
             "type": "build",
-            "link": "https://www.statology.org/statistics-tutorials/"
+            "link": "https://www.khanacademy.org/math/statistics-probability"
           },
           {
             "time": "4\u20136pm",
@@ -1674,7 +1674,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 9: Capstone | Focus: Data Collection & Wrangling",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/data-analyst-capstone-project"
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
           },
           {
             "time": "7\u20138am",
@@ -1866,7 +1866,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 9: Capstone | Focus: EDA & Interactive Viz",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/data-analyst-capstone-project"
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
           },
           {
             "time": "7\u20138am",
@@ -2065,7 +2065,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 9: Capstone | Focus: Final Presentation & Peer Review",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/data-analyst-capstone-project"
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
           },
           {
             "time": "7\u20138am",
@@ -2207,7 +2207,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 10: Generative AI | Focus: AI for cleaning & storytelling",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/generative-ai-career-analytics"
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"
           },
           {
             "time": "7\u20138am",
@@ -2458,7 +2458,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 11: Career Guide | Focus: Resume & Portfolio optimization",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"
           },
           {
             "time": "7\u20138am",
@@ -2647,7 +2647,7 @@ const weeks = [
             "time": "6\u20137am",
             "task": "\ud83c\udf93 IBM Course 11: Interview Prep | Focus: Technical & behavioral mock Qs",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"
           },
           {
             "time": "7\u20138am",

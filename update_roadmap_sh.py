@@ -751,14 +751,13 @@ weeks_data = [
 ]
 
 # ─────────────────────────────────────────────────────────────────
-# 16-WEEK DATA ANALYTICS ROADMAP (2026) — mapped to 8-week days
-# Resources appear at 6am BEFORE the daily DSA/Core warmup
+# 16-WEEK DATA ANALYTICS ROADMAP (2026) — verified IBM links
 # ─────────────────────────────────────────────────────────────────
 resource_tasks_by_day = {
     # ── WEEK 1: Intro & Excel (C1 & C2) ──
     1: [{"time": "6–7am", "task": "🎓 IBM Course 1: Introduction to Data Analytics | Focus: Data ecosystem & analysts lifecycle", "type": "watch", "link": "https://www.coursera.org/learn/introduction-to-data-analytics"}],
-    3: [{"time": "6–7am", "task": "🎓 IBM Course 2: Excel Basics for Data Analysis | Focus: Data cleaning & basic formulas", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis"}],
-    5: [{"time": "6–7am", "task": "🎓 IBM Course 2: Excel Advanced | Focus: VLOOKUP, INDEX-MATCH & Pivot Tables", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis"}],
+    3: [{"time": "6–7am", "task": "🎓 IBM Course 2: Excel Basics for Data Analysis | Focus: Data cleaning & basic formulas", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"}],
+    5: [{"time": "6–7am", "task": "🎓 IBM Course 2: Excel Advanced | Focus: VLOOKUP, INDEX-MATCH & Pivot Tables", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"}],
     
     # ── WEEK 2: Dashboards & Python Intro (C3 & C4) ──
     8: [{"time": "6–7am", "task": "🎓 IBM Course 3: Data Viz with Excel & Cognos | Focus: Interactive dashboards", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"}],
@@ -775,24 +774,24 @@ resource_tasks_by_day = {
     
     # ── WEEK 5: Predictive Analysis & Viz (C7 & C8) ──
     29: [{"time": "6–7am", "task": "🎓 IBM Course 7: Modeling | Focus: Regression & predictive model building", "type": "watch", "link": "https://www.coursera.org/learn/data-analysis-with-python"}],
-    32: [{"time": "6–7am", "task": "🎓 IBM Course 8: Data Viz with Python | Focus: Matplotlib, Seaborn & Dash", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-with-python"}],
+    32: [{"time": "6–7am", "task": "🎓 IBM Course 8: Data Viz with Python | Focus: Matplotlib, Seaborn & Dash", "type": "watch", "link": "https://www.coursera.org/learn/python-for-data-visualization"}],
 
     # ── WEEK 6: Capstone Phase 1 (C9) ──
-    36: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: Data Collection & Wrangling", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
-    40: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: EDA & Interactive Viz", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
+    36: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: Data Collection & Wrangling", "type": "watch", "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"}],
+    40: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: EDA & Interactive Viz", "type": "watch", "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"}],
 
     # ── WEEK 7: Capstone Completion & Gen AI (C9 & C10) ──
-    44: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: Final Presentation & Peer Review", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
-    47: [{"time": "6–7am", "task": "🎓 IBM Course 10: Generative AI | Focus: AI for cleaning & storytelling", "type": "watch", "link": "https://www.coursera.org/learn/generative-ai-career-analytics"}],
+    44: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: Final Presentation & Peer Review", "type": "watch", "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"}],
+    47: [{"time": "6–7am", "task": "🎓 IBM Course 10: Generative AI | Focus: AI for cleaning & storytelling", "type": "watch", "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"}],
 
     # ── WEEK 8: Career & Interview Prep (C11) ──
-    52: [{"time": "6–7am", "task": "🎓 IBM Course 11: Career Guide | Focus: Resume & Portfolio optimization", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"}],
-    56: [{"time": "6–7am", "task": "🎓 IBM Course 11: Interview Prep | Focus: Technical & behavioral mock Qs", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"}],
+    52: [{"time": "6–7am", "task": "🎓 IBM Course 11: Career Guide | Focus: Resume & Portfolio optimization", "type": "watch", "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"}],
+    56: [{"time": "6–7am", "task": "🎓 IBM Course 11: Interview Prep | Focus: Technical & behavioral mock Qs", "type": "watch", "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"}],
 }
 
 # ─────────────────────────────────────────────────────────────────
 # GOLD STANDARD RESOURCE LINK MAPPING
-# Curated for 100% Knowledge Acquisition
+# Curated for 100% Knowledge Acquisition (Frustration-Free)
 # ─────────────────────────────────────────────────────────────────
 resource_links = {
     "A2Z:": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
@@ -811,9 +810,9 @@ resource_links = {
     "Numpy": "https://numpy.org/doc/stable/user/absolute_beginners.html",
     "Matplotlib": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html",
     "Seaborn": "https://seaborn.pydata.org/tutorial.html",
-    "Stats": "https://www.statology.org/statistics-tutorials/",
-    "Math": "https://www.statology.org/statistics-tutorials/",
-    "Probability": "https://www.statology.org/statistics-tutorials/",
+    "Stats": "https://www.khanacademy.org/math/statistics-probability",
+    "Math": "https://www.khanacademy.org/math/statistics-probability",
+    "Probability": "https://www.khanacademy.org/math/statistics-probability",
     "Kaggle": "https://www.kaggle.com/learn",
     "Viz": "https://www.storytellingwithdata.com/chart-guide",
     "Dashboard": "https://www.storytellingwithdata.com/blog",
