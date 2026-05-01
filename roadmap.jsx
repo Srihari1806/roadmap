@@ -14,7 +14,7 @@ const RED = "#EF4444";
 const weeks = [
   {
     "week": 1,
-    "label": "Phase 1: Foundations & IPL Analytics",
+    "label": "Phase 1: Foundations & IPL Analysis",
     "theme": "Execution",
     "color": PURPLE,
     "days": [
@@ -41,7 +41,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: LR: Number Series",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Number Series via Takeuforward Plus."
+            "desc": "Revision: Master LR: Number Series via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -89,7 +89,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Number System via Takeuforward Plus."
+            "desc": "Revision: Master Quant: Number System via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -137,7 +137,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Sentence Rearrangement via Takeuforward Plus."
+            "desc": "Revision: Master Verbal: Sentence Rearrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -185,7 +185,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Missing Numbers via Takeuforward Plus."
+            "desc": "Revision: Master LR: Missing Numbers via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -233,7 +233,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Percentages via Takeuforward Plus."
+            "desc": "Revision: Master Quant: Percentages via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -281,7 +281,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Reading Comprehension via Takeuforward Plus."
+            "desc": "Revision: Master Verbal: Reading Comprehension via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -329,7 +329,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: LR: Odd One Out",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Odd One Out via Takeuforward Plus."
+            "desc": "Revision: Master LR: Odd One Out via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -385,7 +385,7 @@ const weeks = [
             "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Profit & Loss via Takeuforward Plus."
+            "desc": "Revision: Master Quant: Profit & Loss via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -430,10 +430,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test 1",
+            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Revise Mock Test 1 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Coding-Decoding via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -478,10 +478,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Coding-Decoding via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Ratio & Proportion via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -526,10 +526,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Ratio & Proportion via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
+            "desc": "Revision: Master Verbal: Grammar & Usage via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -574,10 +574,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
+            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Grammar & Usage via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Blood Relations via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -622,10 +622,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Blood Relations via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Time & Work via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -670,10 +670,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Time & Work via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
+            "desc": "Revision: Master Verbal: Vocabulary via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -726,10 +726,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
+            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Vocabulary via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Direction Sense via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -774,10 +774,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Direction Sense via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Time & Distance via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -822,10 +822,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
+            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Time & Distance via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Syllogism via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -870,10 +870,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test 2",
+            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test",
-            "desc": "Revise Mock Test 2 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
+            "desc": "Revision: Master Quant: Data Interpretation via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -918,10 +918,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
+            "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangement",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Syllogism via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning",
+            "desc": "Revision: Master LR: Seating Arrangement via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -966,10 +966,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Data Interpretation via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1014,10 +1014,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangement",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Seating Arrangement via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-1-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1070,10 +1070,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test 3",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test",
-            "desc": "Revise Mock Test 3 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-1-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 1 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1118,10 +1118,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Number Series via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 2 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1166,10 +1166,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Number System via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-2-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 2 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1214,10 +1214,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Sentence Rearrangement via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-2-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 2 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1262,10 +1262,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Missing Numbers via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 3 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1310,10 +1310,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Percentages via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-3-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 3 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1358,10 +1358,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Reading Comprehension via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-3-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 3 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1414,10 +1414,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 4",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Odd One Out via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-4-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 4 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1462,10 +1462,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 4",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Profit & Loss via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-4-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 4 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1510,10 +1510,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test 1",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 4",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Revise Mock Test 1 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-4-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 4 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1558,10 +1558,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 5",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Coding-Decoding via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-5-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 5 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1606,10 +1606,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 5",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Ratio & Proportion via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-5-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 5 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1654,10 +1654,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 5",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Grammar & Usage via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-5-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 5 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1702,10 +1702,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 6",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Blood Relations via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-6-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 6 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1758,10 +1758,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 6",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Time & Work via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-6-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 6 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1806,10 +1806,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 6",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Vocabulary via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-6-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 6 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1854,10 +1854,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 7",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Direction Sense via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-7-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 7 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1902,10 +1902,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 7",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Time & Distance via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-7-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 7 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1950,10 +1950,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test 2",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 7",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test",
-            "desc": "Revise Mock Test 2 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-7-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 7 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -1998,10 +1998,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 8",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Syllogism via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-8-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 8 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2046,10 +2046,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 8",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Data Interpretation via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-8-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 8 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2102,10 +2102,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangement",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 8",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Seating Arrangement via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-8-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 8 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2150,10 +2150,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test 3",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 9",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test",
-            "desc": "Revise Mock Test 3 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-9-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 9 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2198,10 +2198,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Number Series",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 9",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Number Series via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-9-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 9 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2246,10 +2246,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Number System",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 9",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Number System via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-9-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 9 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2294,10 +2294,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 10",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Sentence Rearrangement via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-10-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 10 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2342,10 +2342,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 10",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Missing Numbers via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-10-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 10 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2390,10 +2390,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 10",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Percentages via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-10-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 10 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2446,10 +2446,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 11",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Reading Comprehension via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-11-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 11 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2494,10 +2494,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Odd One Out",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 11",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Odd One Out via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-11-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 11 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2542,10 +2542,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 11",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Profit & Loss via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-11-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 11 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2590,10 +2590,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Mock Test 1",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 12",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Revise Mock Test 1 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-12-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 12 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2638,10 +2638,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 12",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Coding-Decoding via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-12-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 12 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2686,10 +2686,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 12",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Ratio & Proportion via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-12-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 12 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2734,10 +2734,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 13",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Grammar & Usage via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-13-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 13 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2790,10 +2790,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 13",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Blood Relations via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-13-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 13 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2838,10 +2838,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 13",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
-            "desc": "Revise Quant: Time & Work via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-13-verbal?subject=mock-test",
+            "desc": "Revision: Master Verbal Mock 13 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2886,10 +2886,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 14",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
-            "desc": "Revise Verbal: Vocabulary via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-14-aptitude?subject=mock-test",
+            "desc": "Revision: Master Quant Mock 14 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2934,10 +2934,10 @@ const weeks = [
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 14",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
-            "desc": "Revise LR: Direction Sense via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-14-logical?subject=mock-test",
+            "desc": "Revision: Master LR Mock 14 via Takeuforward Plus."
           },
           {
             "time": "11am\u201312pm",
@@ -2965,6 +2965,8 @@ const weeks = [
     ]
   }
 ];
+
+
 
 
 

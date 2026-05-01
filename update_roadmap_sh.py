@@ -3,10 +3,10 @@ import os
 import re
 
 # ─────────────────────────────────────────────────────────────────
-# DATA ANALYST ROADMAP GENERATOR (v8.1) - TOTAL PRECISION
+# DATA ANALYST ROADMAP GENERATOR (v8.2) - MOCK TEST EXPANSION
 # ─────────────────────────────────────────────────────────────────
 
-# 1. COMPREHENSIVE CURRICULA
+# 1. CURRICULA DEFINITIONS
 tuf_dsa_topics = [
     "Basics - Language", "Logic Building", "STL/Collections", "Selection Sort", "Bubble Sort", 
     "Insertion Sort", "Easy Arrays", "Medium Arrays", "Hard Arrays", "BS on 1D Arrays", 
@@ -22,8 +22,11 @@ tuf_sql_topics = [
     "Window Functions: ROW_NUMBER", "Set Operators (UNION/INTERSECT)", "CASE Statements"
 ]
 
-# NO REPETITION APTITUDE CURRICULUM
-tuf_apt_curriculum = [
+# COMPREHENSIVE APTITUDE CURRICULUM (NO REPETITION + 60 MOCKS)
+tuf_apt_curriculum = []
+
+# Core Lessons (Logical, Quant, Verbal)
+lessons = [
     {"topic": "LR: Number Series", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
     {"topic": "Quant: Number System", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude"},
     {"topic": "Verbal: Sentence Rearrangement", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability"},
@@ -32,7 +35,6 @@ tuf_apt_curriculum = [
     {"topic": "Verbal: Reading Comprehension", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability"},
     {"topic": "LR: Odd One Out", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
     {"topic": "Quant: Profit & Loss", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude"},
-    {"topic": "Mock Test 1", "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test"},
     {"topic": "LR: Coding-Decoding", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning"},
     {"topic": "Quant: Ratio & Proportion", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude"},
     {"topic": "Verbal: Grammar & Usage", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability"},
@@ -41,13 +43,19 @@ tuf_apt_curriculum = [
     {"topic": "Verbal: Vocabulary", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability"},
     {"topic": "LR: Direction Sense", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning"},
     {"topic": "Quant: Time & Distance", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude"},
-    {"topic": "Mock Test 2", "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test"},
     {"topic": "LR: Syllogism", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning"},
     {"topic": "Quant: Data Interpretation", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude"},
     {"topic": "LR: Seating Arrangement", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning"},
-    {"topic": "Mock Test 3", "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test"},
 ]
+tuf_apt_curriculum.extend(lessons)
 
+# Inject Mocks (20 for each category)
+for i in range(1, 21):
+    tuf_apt_curriculum.append({"topic": f"Quant Mock {i}", "link": f"https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-{i}-aptitude?subject=mock-test"})
+    tuf_apt_curriculum.append({"topic": f"LR Mock {i}", "link": f"https://takeuforward.org/plus/mock-test/logical-reasoning/mock-{i}-logical?subject=mock-test"})
+    tuf_apt_curriculum.append({"topic": f"Verbal Mock {i}", "link": f"https://takeuforward.org/plus/mock-test/verbal-ability/mock-{i}-verbal?subject=mock-test"})
+
+# (IBM schedule, math curriculum, project statements, phase titles follow same logic as v8.1)
 ibm_schedule = [
     {"name": "C1: Intro to Data Analytics", "days": 4, "link": "https://www.coursera.org/learn/introduction-to-data-analytics", "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."},
     {"name": "C2: Excel Basics", "days": 4, "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm", "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."},
@@ -85,7 +93,7 @@ project_statements = {
 }
 
 phase_titles = {
-    1: "Phase 1: Foundations & IPL Analytics",
+    1: "Phase 1: Foundations & IPL Analysis",
     2: "Phase 2: Advanced SQL & IPL Build",
     3: "Phase 3: OTT Insights & Python Mastery",
     4: "Phase 4: OTT Build & Advanced Viz",
@@ -128,7 +136,7 @@ for w in range(1, 10):
         tasks = [
             {"time": "6–9am", "task": f"🎓 IBM: {ibm['name']}", "type": "ibm", "link": ibm['link'], "desc": ibm['desc']},
             {"time": "9–10am", "task": f"⚔️ DSA: {dsa}", "type": "dsa", "link": tuf_dsa_link, "desc": f"Master {dsa} patterns via TUF A2Z."},
-            {"time": "10–11am", "task": f"🧠 Aptitude: {apt['topic']}", "type": "aptitude", "link": apt['link'], "desc": f"Revise {apt['topic']} via Takeuforward Plus."},
+            {"time": "10–11am", "task": f"🧠 Aptitude: {apt['topic']}", "type": "aptitude", "link": apt['link'], "desc": f"Revision: Master {apt['topic']} via Takeuforward Plus."},
             {"time": "11am–12pm", "task": f"📊 Math: {math['task']}", "type": "math", "link": math['link'], "desc": math['desc']},
             {"time": "1–4pm", "task": p_task, "type": "project", "desc": p_desc},
             {"time": "4–6pm", "task": f"🛠️ SQL Revision: {sql_sub}", "type": "sql", "link": tuf_sql_link, "desc": f"Master {sql_sub} techniques on TUF."}
@@ -158,21 +166,10 @@ weeks_js = re.sub(r'"color": "(BLUE|PURPLE|GREEN|ACCENT|RED)"', r'"color": \1', 
 def update_file(path):
     if not os.path.exists(path): return
     with open(path, 'r', encoding='utf-8') as f: content = f.read()
-    
-    # 1. Update Weeks
     s_idx = content.find("const weeks = [")
     if s_idx != -1:
         e_arr_idx = content.rfind("];", s_idx, content.find("const finalChecklist =")) + 2
         content = content[:s_idx] + weeks_js + "\n\n" + content[e_arr_idx:]
-
-    # 2. Add Expandable Task Logic
-    # This involves replacing the task rendering block in roadmap.jsx
-    if "roadmap.jsx" in path:
-        # Inject expandedDayTask state if missing
-        if "const [expandedDayTask, setExpandedDayTask] = useState(null);" not in content:
-            content = content.replace('const [domainFilter, setDomainFilter] = useState("All");', 
-                                   'const [domainFilter, setDomainFilter] = useState("All");\n  const [expandedDayTask, setExpandedDayTask] = useState(null);')
-        
     with open(path, 'w', encoding='utf-8') as f: f.write(content)
     print(f"Updated {os.path.basename(path)}")
 
