@@ -825,15 +825,15 @@ def attach_link(task_obj):
             task_obj["link"] = link
             return
             
-    # Category based fallback for better results
-    if "interview" in task_text:
-        task_obj["link"] = resource_links["Interview Prep"]
-    elif "sql" in task_text:
-        task_obj["link"] = resource_links["SQL"]
-    elif "bi" in task_text or "dashboard" in task_text:
-        task_obj["link"] = resource_links["Power BI"]
-    elif "clean" in task_text or "pandas" in task_text:
-        task_obj["link"] = resource_links["Pandas"]
+    # ROADMAP.SH SPECIFIC REDIRECTS (EXACT PAGES)
+    if "sql" in task_text:
+        task_obj["link"] = "https://roadmap.sh/sql"
+    elif "python" in task_text:
+        task_obj["link"] = "https://roadmap.sh/python"
+    elif "postgresql" in task_text:
+        task_obj["link"] = "https://roadmap.sh/postgresql"
+    elif "bi" in task_text or "dashboard" in task_text or "viz" in task_text:
+        task_obj["link"] = "https://roadmap.sh/data-analyst" # Main analyst covers BI
     elif task_type in ["practice", "learn", "watch"]:
         task_obj["link"] = "https://roadmap.sh/data-analyst"
 

@@ -49,7 +49,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Learn Probability Basics: Probability distributions, Normal distribution, Z-scores.",
             "type": "learn",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -110,7 +110,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Download a messy sales dataset and clean/format it using formulas.",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -263,7 +263,7 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Learn CTEs (Common Table Expressions): Using the WITH clause for readability.",
             "type": "learn",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
@@ -359,7 +359,7 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Mini-Project: Build a final Pivot Dashboard from that data.",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
@@ -404,7 +404,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C3: Building Dashboards with Cognos",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -433,7 +433,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Document Data Viz principles. Roadmap.sh Data Viz section complete.",
-            "type": "output"
+            "type": "output",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Understand the theory behind effective data communication.",
@@ -481,7 +482,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Save the .pbix file. Push to GitHub.",
             "type": "output",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Can load data, build a Star Schema, and create basic visuals in Power BI.",
@@ -524,7 +525,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Build an interactive Sales Dashboard with slicers and tooltips.",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -604,7 +605,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C3: Interactive Dashboards & Slicers",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -772,7 +773,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Analysis: Toss vs Win Probability + Venue Bias (Spin vs Pace dominance per venue).",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -783,7 +784,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Generate Player Scoring Zone Heatmaps + over-by-over Win Probability graphs.",
             "type": "output",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "On-field performance engine complete. Clutch Index leaderboard generated.",
@@ -977,7 +978,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Dashboard Prep: Clean all 8 layers' data into a master star schema.",
             "type": "data",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -994,7 +995,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Live Interactive IPL Dashboard (The Mini-Cricbuzz + Consulting Hub).",
             "type": "output",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Project 1 Technical Build Complete. Dashboard is functional.",
@@ -1127,7 +1128,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Sentiment vs Occupancy trend line and 'Reviews Sustainability' report.",
             "type": "output",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Audience sentiment mapped to financial performance.",
@@ -1275,13 +1276,13 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Database Merge: Join IMDb, Box Office, and Sentiment scores into a clean BI view.",
             "type": "data",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Tableau Dashboard: Build side-by-side comparison of OTT vs Theatre metrics.",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -1292,7 +1293,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Live Tableau Dashboard covering all 8 layers of Movie Intelligence.",
             "type": "output",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Project 2 Technical Build Complete. Comparative dashboard live.",
@@ -1322,7 +1323,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "LinkedIn Content: Build 'The Death and Rebirth of Theatres' case study.",
             "type": "content",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -1372,7 +1373,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Analyze Festival Spikes: Diwali/Big Billion Days vs Normal. GMV delta by category.",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -1506,7 +1507,7 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Economic Model: Delivery speed vs Purchase probability correlation.",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20136pm",
@@ -1587,13 +1588,13 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "UX Design: Build a 'Live Sales' simulation view within the dashboard.",
             "type": "design",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: Final Interactive E-Commerce & Ads Growth Dashboard.",
             "type": "output",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Project 3 Technical Build Complete. Growth suite live.",
@@ -1760,7 +1761,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Dashboard Layouts & Callbacks",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1787,7 +1788,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Test responsiveness on mobile and tablet.",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Core UI built with animations.",
@@ -1817,8 +1818,7 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Link Deep Reports: Ensure PDFs open cleanly from the project cards.",
-            "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
+            "type": "build"
           },
           {
             "time": "2\u20134pm",
@@ -2062,7 +2062,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Build Lyrics Dashboard: Grid layout for songs (Spotify style).",
             "type": "build",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -2146,7 +2146,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C9: Capstone: Interactive Dashboard",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -2198,7 +2198,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C10: Generative AI for Data Cleaning",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -2253,7 +2253,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Write STAR answers: Tell me about yourself, Why analytics?, Biggest challenge.",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -2543,7 +2543,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Simulate a take-home assignment: Find a messy dataset, clean it, build a dashboard in 2 hours.",
             "type": "practice",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -2600,7 +2600,7 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Check Sahitya Rachanalu: ensure mobile view is perfect.",
             "type": "review",
-            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
