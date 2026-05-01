@@ -3,7 +3,7 @@ import os
 import re
 
 # ─────────────────────────────────────────────────────────────────
-# DATA ANALYST ROADMAP GENERATOR (v7.2) - APTITUDE EXPANSION
+# DATA ANALYST ROADMAP GENERATOR (v7.3) - SURGICAL SQL & DESCRIPTIONS
 # ─────────────────────────────────────────────────────────────────
 
 # 1. CURRICULA & TOPICS
@@ -15,7 +15,13 @@ tuf_dsa_topics = [
     "Bit Manipulation", "Stack and Queues", "Sliding Window"
 ]
 
-# Comprehensive Aptitude Rotation (Logical, Quant, Verbal, Mocks)
+tuf_sql_topics = [
+    "Basic SELECT & Filtering", "Sorting & Limiting Data", "Inner Joins", "Left/Right/Full Joins",
+    "GROUP BY & Aggregations", "HAVING Clause", "String Functions", "Date & Time Functions",
+    "Subqueries & Nested Queries", "Common Table Expressions (CTEs)", "Window Functions: RANK",
+    "Window Functions: ROW_NUMBER", "Set Operators (UNION/INTERSECT)", "CASE Statements"
+]
+
 tuf_apt_curriculum = [
     {"topic": "Logical: Number Series", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning"},
     {"topic": "Quant: Number System", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude"},
@@ -25,33 +31,30 @@ tuf_apt_curriculum = [
     {"topic": "Verbal: Reading Comprehension", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability"},
     {"topic": "Logical: Blood Relations", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning"},
     {"topic": "Quant: Profit & Loss", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude"},
-    {"topic": "Mock Test: Aptitude 1", "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test"},
-    {"topic": "Logical: Syllogism", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning"},
-    {"topic": "Quant: Time & Work", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude"},
-    {"topic": "Verbal: Grammar & Usage", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability"},
+    {"topic": "Mock Test: Aptitude 1", "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test"}
 ]
 
 ibm_schedule = [
-    {"name": "C1: Intro to Data Analytics", "hours": 11, "days": 4, "link": "https://www.coursera.org/learn/introduction-to-data-analytics"},
-    {"name": "C2: Excel Basics", "hours": 13, "days": 4, "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"},
-    {"name": "C3: Data Viz with Excel & Cognos", "hours": 16, "days": 5, "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"},
-    {"name": "C4: Python for Data Science", "hours": 24, "days": 8, "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"},
-    {"name": "C5: Python Project", "hours": 7, "days": 2, "link": "https://www.coursera.org/learn/python-project-for-data-science"},
-    {"name": "C6: Databases and SQL", "hours": 18, "days": 6, "link": "https://www.coursera.org/learn/sql-data-science"},
-    {"name": "C7: Data Analysis with Python", "hours": 17, "days": 6, "link": "https://www.coursera.org/learn/data-analysis-with-python"},
-    {"name": "C8: Data Viz with Python", "hours": 19, "days": 6, "link": "https://www.coursera.org/learn/python-for-data-visualization"},
-    {"name": "C9: Capstone Project", "hours": 20, "days": 7, "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"},
-    {"name": "C10: Generative AI", "hours": 8, "days": 3, "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"},
-    {"name": "C11: Career Guide & Interview", "hours": 10, "days": 5, "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"}
+    {"name": "C1: Intro to Data Analytics", "days": 4, "link": "https://www.coursera.org/learn/introduction-to-data-analytics", "desc": "Understanding data analyst roles, tools, and the data ecosystem."},
+    {"name": "C2: Excel Basics", "days": 4, "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm", "desc": "Mastering spreadsheets, formulas, and basic data cleaning."},
+    {"name": "C3: Data Viz with Excel & Cognos", "days": 5, "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos", "desc": "Building interactive dashboards and visual stories using Excel/Cognos."},
+    {"name": "C4: Python for Data Science", "days": 8, "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai", "desc": "Python foundations: types, loops, functions, and libraries for data."},
+    {"name": "C5: Python Project", "days": 2, "link": "https://www.coursera.org/learn/python-project-for-data-science", "desc": "Applied Python: Building a real-world data science mini-project."},
+    {"name": "C6: Databases and SQL", "days": 6, "link": "https://www.coursera.org/learn/sql-data-science", "desc": "Database foundations and SQL querying for data analysis."},
+    {"name": "C7: Data Analysis with Python", "days": 6, "link": "https://www.coursera.org/learn/data-analysis-with-python", "desc": "EDA, Pandas, and data wrangling techniques in Python."},
+    {"name": "C8: Data Viz with Python", "days": 6, "link": "https://www.coursera.org/learn/python-for-data-visualization", "desc": "Advanced plotting with Matplotlib, Seaborn, and Plotly."},
+    {"name": "C9: Capstone Project", "days": 7, "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project", "desc": "End-to-end data analysis project following the full lifecycle."},
+    {"name": "C10: Generative AI", "days": 3, "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career", "desc": "Using AI tools to accelerate cleaning, analysis, and reporting."},
+    {"name": "C11: Career Guide & Interview", "days": 5, "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst", "desc": "Professional branding, resume optimization, and mock interview prep."}
 ]
 
 math_stats_curriculum = [
-    {"task": "Mean, Median, Mode", "desc": "Foundational stats: Central tendencies and data distributions.", "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"},
-    {"task": "Std Deviation & MAD", "desc": "Measuring variance: How spread out is your data?", "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"},
-    {"task": "Normal Dist & Z Score", "desc": "Bell curves: Probability, standardizing, and confidence.", "link": "https://www.youtube.com/watch?v=okhrFgaUwio"},
-    {"task": "Logarithm Basics", "desc": "Essential for handling skewed financial/engagement data.", "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"},
-    {"task": "A/B Testing", "desc": "Hypothesis testing in the real world: Which version wins?", "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"},
-    {"task": "Hypothesis Testing", "desc": "Validating claims: P-values and significance levels.", "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"}
+    {"task": "Mean, Median, Mode", "desc": "Central tendencies: How to represent average performance.", "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"},
+    {"task": "Std Deviation & MAD", "desc": "Volatility & Spread: Measuring consistency in datasets.", "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"},
+    {"task": "Normal Dist & Z Score", "desc": "Probability: Identifying outliers and standardizing scales.", "link": "https://www.youtube.com/watch?v=okhrFgaUwio"},
+    {"task": "Logarithm Basics", "desc": "Data Scaling: Handling extreme values and exponential growth.", "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"},
+    {"task": "A/B Testing", "desc": "Decision Science: Scientific validation of product changes.", "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"},
+    {"task": "Hypothesis Testing", "desc": "Statistical Proof: Determining if results are significant.", "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"}
 ]
 
 project_statements = {
@@ -84,6 +87,7 @@ for w in range(1, 10):
         if day_num > 60: break
         
         dsa = tuf_dsa_topics[day_idx % len(tuf_dsa_topics)]
+        sql_sub = tuf_sql_topics[day_idx % len(tuf_sql_topics)]
         apt = tuf_apt_curriculum[day_idx % len(tuf_apt_curriculum)]
         math = math_stats_curriculum[day_idx % len(math_stats_curriculum)]
         ibm = ibm_daily[day_idx % len(ibm_daily)] if day_idx < len(ibm_daily) else ibm_daily[-1]
@@ -94,22 +98,22 @@ for w in range(1, 10):
         
         type_labels = ["Analyse", "Build", "Output"]
         p_task = f"🏗️ {p_name}: {type_labels[rot_step].upper()}"
-        p_desc = " | ".join(statements[type_labels[rot_step]])
+        p_desc = f"Solve 4-5 business problems for {p_name}: " + " | ".join(statements[type_labels[rot_step]])
 
         tasks = [
-            {"time": "6–9am", "task": f"🎓 IBM: {ibm['name']}", "type": "ibm", "link": ibm['link'], "desc": f"3-hour session on {ibm['name']}. Progress: {round((day_idx/60)*100)}% of Cert."},
-            {"time": "9–10am", "task": f"⚔️ DSA: {dsa}", "type": "dsa", "link": tuf_dsa_link, "desc": f"Revision: {dsa} via TUF A2Z Sheet."},
-            {"time": "10–11am", "task": f"🧠 Aptitude: {apt['topic']}", "type": "aptitude", "link": apt['link'], "desc": f"Focus: {apt['topic']} via Takeuforward Plus."},
+            {"time": "6–9am", "task": f"🎓 IBM: {ibm['name']}", "type": "ibm", "link": ibm['link'], "desc": ibm['desc']},
+            {"time": "9–10am", "task": f"⚔️ DSA: {dsa}", "type": "dsa", "link": tuf_dsa_link, "desc": f"Revision: Master {dsa} coding patterns via TUF A2Z Sheet."},
+            {"time": "10–11am", "task": f"🧠 Aptitude: {apt['topic']}", "type": "aptitude", "link": apt['link'], "desc": f"Focus: Solve problems on {apt['topic']} via TUF Plus."},
             {"time": "11am–12pm", "task": f"📊 Math: {math['task']}", "type": "math", "link": math['link'], "desc": math['desc']},
             {"time": "1–4pm", "task": p_task, "type": "project", "desc": p_desc},
-            {"time": "4–6pm", "task": f"🛠️ SQL Revision", "type": "sql", "link": tuf_sql_link, "desc": "Project-specific SQL queries on TUF."}
+            {"time": "4–6pm", "task": f"🛠️ SQL Revision: {sql_sub}", "type": "sql", "link": tuf_sql_link, "desc": f"Practice surgical SQL: Master {sql_sub} techniques on TUF."}
         ]
         
         days.append({
             "day": day_num,
-            "title": f"Day {day_num}: {dsa} & {ibm['name']}",
+            "title": f"Day {day_num}: {dsa} & {sql_sub}",
             "tasks": tasks,
-            "outcome": f"Track mastery and {p_name} execution."
+            "outcome": f"Track mastery in {dsa}, {sql_sub}, and {p_name} execution."
         })
         day_idx += 1
         
