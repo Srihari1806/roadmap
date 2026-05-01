@@ -3990,11 +3990,28 @@ function Roadmap() {
                             textDecoration: isDone ? "line-through" : "none",
                             opacity: isDone ? 0.7 : 1 
                           }}>{t.task}</div>
-                                style={{ 
-                                  fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "3px 8px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                }}>
-                                {t.type === "ibm" || t.type === "math" || t.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
-                              </a>
+                          
+                          {isExpanded && (
+                            <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
+                               {t.desc && (
+                                <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
+                                  💡 {t.desc}
+                                </div>
+                              )}
+                              {t.link && (
+                                <div style={{ marginTop: 10 }}>
+                                  <a 
+                                    href={t.link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={e => e.stopPropagation()}
+                                    style={{ 
+                                      fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                    }}>
+                                    {t.type === "ibm" || t.type === "math" || t.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
+                                  </a>
+                                </div>
+                              )}
                             </div>
                           )}
                         </div>
@@ -4057,21 +4074,24 @@ function Roadmap() {
                   ).map((task, i) => {
                     const taskId = `d${currentDayData.day}-t${i}`;
                     const isDone = !!completedTasks[taskId];
+                    const isExpanded = expandedDayTask === taskId;
                     return (
                       <div key={i} style={{
                         background: isDone ? "#0d2e1a" : CARD,
                         border: `1px solid ${isDone ? GREEN + "60" : BORDER}`,
+                        borderLeft: `4px solid ${isDone ? GREEN : (taskTypeColors[task.type] || ACCENT)}`,
                         borderRadius: 8,
                         padding: "14px 16px",
                         display: "flex",
                         gap: 14,
                         alignItems: "flex-start",
+                        cursor: "pointer",
                         transition: "all 0.2s"
-                      }}>
+                      }} onClick={() => setExpandedDayTask(isExpanded ? null : taskId)}>
                         <div 
-                          onClick={() => toggleTask(taskId)}
+                          onClick={(e) => { e.stopPropagation(); toggleTask(taskId); }}
                           style={{
-                            width: 18, height: 18, borderRadius: 4, flexShrink: 0, marginTop: 2,
+                            width: 18, height: 18, borderRadius: 4, flexShrink: 0, marginTop: 4,
                             border: `2px solid ${isDone ? GREEN : BORDER}`,
                             background: isDone ? GREEN : "transparent",
                             cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
@@ -4079,32 +4099,37 @@ function Roadmap() {
                           }}>
                           {isDone ? "✓" : ""}
                         </div>
-                        <div style={{ minWidth: 65, fontSize: 11, color: MUTED, paddingTop: 2 }}>{task.time}</div>
                         <div style={{ flex: 1 }}>
-                          {task.link && ["practice", "learn", "watch"].includes(task.type) ? (
-                            <a 
-                              href={task.link} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              onClick={e => e.stopPropagation()}
-                              style={{ 
-                                fontSize: 13, lineHeight: 1.5,
-                                color: isDone ? GREEN : task.type === "watch" ? "#FF6B6B" : TEXT,
-                                textDecoration: isDone ? "line-through" : "none",
-                                borderBottom: isDone ? "none" : `1px dashed ${ACCENT}50`,
-                                cursor: "pointer",
-                                opacity: isDone ? 0.7 : 1,
-                                display: "block"
-                              }}>
-                              {task.task}
-                            </a>
-                          ) : (
-                            <div style={{ 
-                              fontSize: 13, lineHeight: 1.5, 
-                              color: isDone ? GREEN : task.type === "watch" ? "#FF6B6B" : TEXT,
-                              textDecoration: isDone ? "line-through" : "none",
-                              opacity: isDone ? 0.7 : 1
-                            }}>{task.task}</div>
+                          <div style={{ fontSize: 10, color: MUTED, marginBottom: 2 }}>{task.time}</div>
+                          <div style={{ 
+                            fontSize: 14, fontWeight: 700, lineHeight: 1.4,
+                            color: isDone ? GREEN : TEXT,
+                            textDecoration: isDone ? "line-through" : "none",
+                            opacity: isDone ? 0.7 : 1
+                          }}>{task.task}</div>
+                          
+                          {isExpanded && (
+                            <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
+                               {task.desc && (
+                                <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
+                                  💡 {task.desc}
+                                </div>
+                              )}
+                              {task.link && (
+                                <div style={{ marginTop: 10 }}>
+                                  <a 
+                                    href={task.link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    onClick={e => e.stopPropagation()}
+                                    style={{ 
+                                      fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                    }}>
+                                    {task.type === "ibm" || task.type === "math" || task.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
+                                  </a>
+                                </div>
+                              )}
+                            </div>
                           )}
                         </div>
                         <div style={{
@@ -4114,8 +4139,6 @@ function Roadmap() {
                           borderRadius: 4,
                           fontSize: 10,
                           fontWeight: 700,
-                          letterSpacing: 0.5,
-                          whiteSpace: "nowrap",
                           textTransform: "uppercase",
                         }}>{task.type}</div>
                       </div>
