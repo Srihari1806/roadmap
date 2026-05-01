@@ -795,39 +795,58 @@ resource_tasks_by_day = {
 # ─────────────────────────────────────────────────────────────────
 resource_links = {
     "A2Z:": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
-    "TUF SQL:": "https://takeuforward.org/sql/sql-index/",
+    "SQL": "https://takeuforward.org/sql/sql-index/",
     "IPL": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset",
     "OTT": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies",
     "E-commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
     "E-Commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
-    "HackerRank SQL": "https://www.hackerrank.com/domains/sql",
-    "Leetcode SQL": "https://leetcode.com/problemset/database/",
-    "Excel": "https://www.microsoft.com/en-us/microsoft-365/excel",
-    "Power BI": "https://powerbi.microsoft.com/",
-    "Tableau": "https://public.tableau.com/s/",
-    "Python": "https://www.python.org/",
+    "HackerRank": "https://www.hackerrank.com/domains/sql",
+    "Leetcode": "https://leetcode.com/problemset/database/",
+    "Excel": "https://www.coursera.org/learn/excel-basics-data-analysis",
+    "Power BI": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview",
+    "Tableau": "https://public.tableau.com/s/getting-started",
+    "Python": "https://www.python.org/about/gettingstarted/",
+    "Pandas": "https://pandas.pydata.org/docs/user_guide/10min.html",
+    "Numpy": "https://numpy.org/doc/stable/user/absolute_beginners.html",
+    "Matplotlib": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html",
+    "Seaborn": "https://seaborn.pydata.org/tutorial.html",
+    "Stats": "https://roadmap.sh/data-analyst",
+    "Math": "https://roadmap.sh/data-analyst",
+    "Probability": "https://roadmap.sh/data-analyst",
     "Kaggle": "https://www.kaggle.com/datasets",
+    "Interview": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation",
+    "Portfolio": "https://roadmap.sh/data-analyst",
 }
 
 def attach_link(task_obj):
-    if "link" in task_obj: return # Don't overwrite existing links (like IBM)
+    if "link" in task_obj and task_obj["link"]: return # Don't overwrite
     task_text = task_obj.get("task", "")
+    task_type = task_obj.get("type", "")
+    
+    # Keyword match
     for key, link in resource_links.items():
-        if key in task_text:
+        if key.lower() in task_text.lower():
             task_obj["link"] = link
-            break
+            return
+            
+    # Fallback for practice/learn/watch
+    if task_type in ["practice", "learn", "watch"]:
+        task_obj["link"] = "https://roadmap.sh/data-analyst"
 
 # Inject DSA, Core and 16-Week resources into every day
 day_counter = 0
 for week in weeks_data:
     for day in week['days']:
-        dsa = tuf_dsa_topics[day_counter % len(tuf_dsa_topics)]
-        core = tuf_core_topics[day_counter % len(tuf_core_topics)]
+        dsa_topic = tuf_dsa_topics[day_counter % len(tuf_dsa_topics)]
+        core_topic = tuf_core_topics[day_counter % len(tuf_core_topics)]
         day['day'] = day_counter + 1
 
-        # Create tasks
-        dsa_task = {"time": "7–8am", "task": f"Takeuforward DSA: {dsa}", "type": "practice"}
-        apt_task = {"time": "8–9am", "task": f"Takeuforward Core: {core}", "type": "practice"}
+        # Create tasks with cleaner prefixes
+        dsa_prefix = "DSA Practice: "
+        core_prefix = "IBM Cert Module: " if "IBM" in core_topic else "Core Concept: "
+        
+        dsa_task = {"time": "7–8am", "task": f"{dsa_prefix}{dsa_topic}", "type": "practice"}
+        apt_task = {"time": "8–9am", "task": f"{core_prefix}{core_topic}", "type": "practice"}
         
         # Attach links to injected tasks
         attach_link(dsa_task)
@@ -843,7 +862,7 @@ for week in weeks_data:
             for res in reversed(resource_tasks_by_day[day_num]):
                 day['tasks'].insert(0, res)
 
-        # FINAL PASS: Attach links to ALL tasks (including original ones in weeks_data)
+        # FINAL PASS: Ensure ALL tasks (including original ones) have links if they are practice/learn/watch
         for task in day['tasks']:
             attach_link(task)
 

@@ -29,39 +29,45 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 1 - Basics (C++, Java, Python)",
+            "task": "DSA Practice: A2Z: Step 1 - Basics (C++, Java, Python)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C1: Data Ecosystem & Analyst Lifecycle",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C1: Data Ecosystem & Analyst Lifecycle",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Descriptive Stats: Mean, Median, Mode, Variance, Standard Deviation.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Probability Basics: Probability distributions, Normal distribution, Z-scores.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Inferential Stats: Hypothesis testing, p-values, A/B testing theory.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Calculate stats on a sample dataset using pen and paper or calculator.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
             "task": "Document notes on Notion/GitHub. Roadmap.sh Math section complete.",
-            "type": "output"
+            "type": "output",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Solid foundation in data mathematics and statistics.",
@@ -72,41 +78,45 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 1 - Logic Building",
+            "task": "DSA Practice: A2Z: Step 1 - Logic Building",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C1: Data Gathering & Mining Basics",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C1: Data Gathering & Mining Basics",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Excel Basics: Data entry, formatting, basic formulas (SUM, AVERAGE, COUNT).",
             "type": "learn",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Advanced Formulas: VLOOKUP, HLOOKUP, XLOOKUP, INDEX-MATCH.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Logic: IF, AND, OR, nested IFs, Conditional Formatting.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Download a messy sales dataset and clean/format it using formulas.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
             "task": "Save Excel workbook as 'Day2_Excel_Advanced.xlsx'.",
             "type": "output",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           }
         ],
         "outcome": "Mastery of essential and advanced Excel formulas.",
@@ -123,42 +133,45 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 2 - Sorting Techniques (Bubble, Selection)",
+            "task": "DSA Practice: A2Z: Step 2 - Sorting Techniques (Bubble, Selection)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C2: Excel Formulas (VLOOKUP, INDEX-MATCH)",
+            "task": "IBM Cert Module: IBM C2: Excel Formulas (VLOOKUP, INDEX-MATCH)",
             "type": "practice",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Pivot Tables: Summarizing data, calculated fields, Pivot Charts.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Power Query: Importing data, merging tables, unpivoting columns.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Data Validation & What-If Analysis (Goal Seek, Scenario Manager).",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Build a dynamic Excel dashboard using Pivot Charts and Slicers.",
             "type": "build",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           },
           {
             "time": "5\u20136pm",
             "task": "Push dashboard screenshots to GitHub. Roadmap.sh Excel section complete.",
             "type": "output",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           }
         ],
         "outcome": "Can build dynamic dashboards and clean data inside Excel.",
@@ -169,40 +182,45 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 2 - Sorting (Merge, Quick)",
+            "task": "DSA Practice: A2Z: Step 2 - Sorting (Merge, Quick)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C2: Data Cleaning in Excel (Power Query)",
+            "task": "IBM Cert Module: IBM C2: Data Cleaning in Excel (Power Query)",
             "type": "practice",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           },
           {
             "time": "9\u201311am",
             "task": "Understand Relational Databases (RDBMS). Primary Keys vs Foreign Keys.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Basic SQL: SELECT, FROM, WHERE, LIMIT, ORDER BY.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Aggregations: GROUP BY, HAVING, SUM, COUNT, AVG, MIN, MAX.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Solve 5 basic SQL query problems on HackerRank.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "5\u20136pm",
             "task": "Document SQL basics in a markdown file.",
-            "type": "output"
+            "type": "output",
+            "link": "https://takeuforward.org/sql/sql-index/"
           }
         ],
         "outcome": "Ability to query and filter basic datasets using SQL.",
@@ -219,34 +237,39 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 3 - Arrays (Easy Problems)",
+            "task": "DSA Practice: A2Z: Step 3 - Arrays (Easy Problems)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C2: Pivot Tables & Data Summarization",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C2: Pivot Tables & Data Summarization",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn JOINs: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Subqueries: Using queries inside WHERE, SELECT, and FROM clauses.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn CTEs (Common Table Expressions): Using the WITH clause for readability.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Write 3 queries joining multiple tables (e.g., Customers + Orders).",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "5\u20136pm",
@@ -262,39 +285,45 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 3 - Arrays (Medium Problems)",
+            "task": "DSA Practice: A2Z: Step 3 - Arrays (Medium Problems)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C2: Quality Assurance & Ethics",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C2: Quality Assurance & Ethics",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Window Functions: ROW_NUMBER(), RANK(), DENSE_RANK().",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Advanced Window Functions: LEAD(), LAG(), running totals.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Data Types, CAST, String manipulations (SUBSTRING, CONCAT), Date functions.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Solve 3 advanced SQL problems on Leetcode (Hard difficulty).",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "5\u20136pm",
             "task": "Roadmap.sh SQL section complete. Update LinkedIn skills.",
-            "type": "output"
+            "type": "output",
+            "link": "https://takeuforward.org/sql/sql-index/"
           }
         ],
         "outcome": "Mastered window functions and advanced SQL capabilities.",
@@ -305,27 +334,27 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 3 - Arrays (Hard Problems)",
+            "task": "DSA Practice: A2Z: Step 3 - Arrays (Hard Problems)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C3: Data Viz Principles in Excel",
+            "task": "IBM Cert Module: IBM C3: Data Viz Principles in Excel",
             "type": "practice",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "9\u201311am",
             "task": "Review Math, Excel, and SQL notes. Identify any weak points.",
             "type": "review",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Mini-Project: Export an SQL query result to CSV, import to Excel, use Power Query to clean.",
             "type": "build",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "2\u20134pm",
@@ -336,13 +365,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Write LinkedIn post: 'Week 1 of Data Analyst Roadmap: Mastered Excel & SQL'.",
             "type": "content",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "5\u20136pm",
             "task": "Rest and prepare for Week 2 (BI & Python).",
             "type": "reflect",
-            "link": "https://www.python.org/"
+            "link": "https://www.python.org/about/gettingstarted/"
           }
         ],
         "outcome": "Successfully integrated SQL extraction with Excel visualization.",
@@ -367,39 +396,45 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 4 - Binary Search (1D Arrays)",
+            "task": "DSA Practice: A2Z: Step 4 - Binary Search (1D Arrays)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C3: Building Dashboards with Cognos",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C3: Building Dashboards with Cognos",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Chart Types: When to use Bar, Line, Scatter, Pie, Histogram.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Design Principles: Cognitive load, Data-ink ratio, Color theory (categorical vs sequential).",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Data Storytelling: How to highlight insights, use titles effectively, guide the eye.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Critique 3 bad charts online and sketch improvements.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
             "task": "Document Data Viz principles. Roadmap.sh Data Viz section complete.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           }
         ],
         "outcome": "Understand the theory behind effective data communication.",
@@ -410,31 +445,33 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 4 - Binary Search (2D Arrays)",
+            "task": "DSA Practice: A2Z: Step 4 - Binary Search (2D Arrays)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C3: Cognos: AI Assistant & Storytelling",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C3: Cognos: AI Assistant & Storytelling",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Install Power BI Desktop. Learn to connect data sources (Excel, CSV, SQL).",
             "type": "setup",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Data Modeling: Creating relationships (1-to-many), Star Schema.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Power Query in Power BI: Transforming data, changing types, appending queries.",
             "type": "learn",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
           },
           {
             "time": "4\u20135pm",
@@ -455,29 +492,33 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 4 - BS on Search Space",
+            "task": "DSA Practice: A2Z: Step 4 - BS on Search Space",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C3: Case Study - Marketing Analysis",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C3: Case Study - Marketing Analysis",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn DAX Basics: Calculated Columns vs Measures. Context (Row vs Filter).",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Essential DAX: CALCULATE, FILTER, SUMX, ALL.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Time Intelligence DAX: YTD, MTD, SAMEPERIODLASTYEAR.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
@@ -488,7 +529,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Roadmap.sh BI Tools section complete. Publish to Power BI service (optional).",
             "type": "output",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
           }
         ],
         "outcome": "Mastered DAX and interactive dashboard creation in Power BI.",
@@ -505,41 +546,45 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 5 - Strings (Basic)",
+            "task": "DSA Practice: A2Z: Step 5 - Strings (Basic)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C2: Logic Functions (IF/AND/OR/XOR)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C2: Logic Functions (IF/AND/OR/XOR)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Install VS Code, Python, Jupyter. Learn Variables, Data Types, Operators.",
             "type": "setup",
-            "link": "https://www.python.org/"
+            "link": "https://www.python.org/about/gettingstarted/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Control Flow: If/Else, For loops, While loops.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Data Structures: Lists, Dictionaries, Tuples, Sets.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Learn Functions: def, arguments, return values, lambda functions.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
             "task": "Practice: Write 5 small Python scripts (e.g., calculator, palindrome checker).",
             "type": "build",
-            "link": "https://www.python.org/"
+            "link": "https://www.python.org/about/gettingstarted/"
           }
         ],
         "outcome": "Solid grasp of Python programming fundamentals.",
@@ -550,40 +595,45 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 5 - Strings (Medium)",
+            "task": "DSA Practice: A2Z: Step 5 - Strings (Medium)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C3: Interactive Dashboards & Slicers",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C3: Interactive Dashboards & Slicers",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Numpy: Arrays, vectorized operations, basic math functions.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://numpy.org/doc/stable/user/absolute_beginners.html"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Pandas Basics: Series, DataFrames, read_csv, head, info, describe.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Data Manipulation: Filtering rows, selecting columns, handling missing values (.isna).",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Learn Aggregation: groupby(), agg(), merge(), concat().",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
             "task": "Practice: Perform basic EDA on a Kaggle dataset using Pandas.",
             "type": "build",
-            "link": "https://www.kaggle.com/datasets"
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           }
         ],
         "outcome": "Can clean and manipulate tabular data using Pandas.",
@@ -594,35 +644,39 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 6 - LinkedList (Single LL)",
+            "task": "DSA Practice: A2Z: Step 6 - LinkedList (Single LL)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C3: Exporting & Sharing Insights",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C3: Exporting & Sharing Insights",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Matplotlib: plt.plot, plt.bar, labels, titles, subplots.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Seaborn: sns.histplot, sns.boxplot, sns.heatmap. Styling and themes.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://seaborn.pydata.org/tutorial.html"
           },
           {
             "time": "2\u20134pm",
             "task": "Practice: Recreate the Data Viz principles you learned on Day 8 using Python.",
             "type": "build",
-            "link": "https://www.python.org/"
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "4\u20135pm",
             "task": "Learn Plotly (Optional): Basic interactive charts.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -638,20 +692,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 6 - LinkedList (Double LL)",
+            "task": "DSA Practice: A2Z: Step 6 - LinkedList (Double LL)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Foundations: The 6-Step Data Process",
-            "type": "practice"
+            "task": "Core Concept: Foundations: The 6-Step Data Process",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Review Power BI and Python notes. You are now officially 'Analyst Ready'.",
             "type": "review",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
           },
           {
             "time": "11am\u20131pm",
@@ -698,15 +753,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 6 - LinkedList (Medium & Hard)",
+            "task": "DSA Practice: A2Z: Step 6 - LinkedList (Medium & Hard)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C4: Python Data Types & Control Flow",
+            "task": "IBM Cert Module: IBM C4: Python Data Types & Control Flow",
             "type": "practice",
-            "link": "https://www.python.org/"
+            "link": "https://www.python.org/about/gettingstarted/"
           },
           {
             "time": "9\u201311am",
@@ -716,7 +771,8 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Analysis: Toss vs Win Probability + Venue Bias (Spin vs Pace dominance per venue).",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -726,7 +782,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Generate Player Scoring Zone Heatmaps + over-by-over Win Probability graphs.",
-            "type": "output"
+            "type": "output",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "On-field performance engine complete. Clutch Index leaderboard generated.",
@@ -737,14 +794,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 7 - Recursion (PatternWise)",
+            "task": "DSA Practice: A2Z: Step 7 - Recursion (PatternWise)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C4: Numpy & Vectorized Ops",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C4: Numpy & Vectorized Ops",
+            "type": "practice",
+            "link": "https://numpy.org/doc/stable/user/absolute_beginners.html"
           },
           {
             "time": "9\u201311am",
@@ -775,14 +833,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 7 - Recursion (Hard)",
+            "task": "DSA Practice: A2Z: Step 7 - Recursion (Hard)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C4: Pandas: Cleaning & Missing Data",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C4: Pandas: Cleaning & Missing Data",
+            "type": "practice",
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           },
           {
             "time": "9\u201311am",
@@ -819,14 +878,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 8 - Bit Manipulation (Concepts)",
+            "task": "DSA Practice: A2Z: Step 8 - Bit Manipulation (Concepts)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C4: Pandas: Merging & Grouping",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C4: Pandas: Merging & Grouping",
+            "type": "practice",
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           },
           {
             "time": "9\u201311am",
@@ -858,14 +918,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 8 - Bit Manipulation (Problems)",
+            "task": "DSA Practice: A2Z: Step 8 - Bit Manipulation (Problems)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C4: API Integration & JSON Basics",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C4: API Integration & JSON Basics",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -880,7 +941,8 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Win Predictor: Build a basic ML model to predict match outcome based on mid-match stats.",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20136pm",
@@ -902,14 +964,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 9 - Stack & Queues (Learning)",
+            "task": "DSA Practice: A2Z: Step 9 - Stack & Queues (Learning)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C4: Web Scraping with BeautifulSoup",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C4: Web Scraping with BeautifulSoup",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -920,7 +983,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Power BI / Tableau: Build interactive filters for Seasons, Teams, and Players.",
             "type": "build",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
           },
           {
             "time": "2\u20134pm",
@@ -942,13 +1005,13 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 9 - Stack & Queues (Pre-In-Post-fix)",
+            "task": "DSA Practice: A2Z: Step 9 - Stack & Queues (Pre-In-Post-fix)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C5: Project: Analyzing Stock/IPL Data",
+            "task": "IBM Cert Module: IBM C5: Project: Analyzing Stock/IPL Data",
             "type": "practice",
             "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
@@ -999,13 +1062,13 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 9 - Monotonic Stack",
+            "task": "DSA Practice: A2Z: Step 9 - Monotonic Stack",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: SELECT, WHERE, ORDER BY",
+            "task": "Core Concept: TUF SQL: SELECT, WHERE, ORDER BY",
             "type": "practice",
             "link": "https://takeuforward.org/sql/sql-index/"
           },
@@ -1040,13 +1103,13 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 10 - Sliding Window (Fixed)",
+            "task": "DSA Practice: A2Z: Step 10 - Sliding Window (Fixed)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Joins (Inner, Left, Right, Full)",
+            "task": "Core Concept: TUF SQL: Joins (Inner, Left, Right, Full)",
             "type": "practice",
             "link": "https://takeuforward.org/sql/sql-index/"
           },
@@ -1079,20 +1142,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 10 - Sliding Window (Variable)",
+            "task": "DSA Practice: A2Z: Step 10 - Sliding Window (Variable)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Aggregations & Group By",
+            "task": "Core Concept: TUF SQL: Aggregations & Group By",
             "type": "practice",
             "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
             "task": "Distribution analysis: Urban Multiplex (PVR/INOX) vs Rural Single Screen split.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "11am\u20131pm",
@@ -1124,15 +1188,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 11 - Heaps (Learning & Medium)",
+            "task": "DSA Practice: A2Z: Step 11 - Heaps (Learning & Medium)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C6: SQL for Data Science w/ Python",
+            "task": "IBM Cert Module: IBM C6: SQL for Data Science w/ Python",
             "type": "practice",
-            "link": "https://www.python.org/"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
@@ -1165,14 +1229,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 11 - Heaps (Hard Problems)",
+            "task": "DSA Practice: A2Z: Step 11 - Heaps (Hard Problems)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C6: Advanced SQL (Subqueries, Views)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C6: Advanced SQL (Subqueries, Views)",
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
@@ -1204,14 +1269,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 12 - Greedy Algorithms (Easy)",
+            "task": "DSA Practice: A2Z: Step 12 - Greedy Algorithms (Easy)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C6: Transactions & Stored Procedures",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C6: Transactions & Stored Procedures",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1233,7 +1299,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Live Tableau Dashboard covering all 8 layers of Movie Intelligence.",
             "type": "output",
-            "link": "https://public.tableau.com/s/"
+            "link": "https://public.tableau.com/s/getting-started"
           }
         ],
         "outcome": "Project 2 Technical Build Complete. Comparative dashboard live.",
@@ -1244,14 +1310,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 12 - Greedy Algorithms (Medium/Hard)",
+            "task": "DSA Practice: A2Z: Step 12 - Greedy Algorithms (Medium/Hard)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C6: Working with Real-World Datasets",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C6: Working with Real-World Datasets",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1298,14 +1365,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 13 - Binary Trees (Traversals)",
+            "task": "DSA Practice: A2Z: Step 13 - Binary Trees (Traversals)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C7: Exploratory Data Analysis (EDA)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C7: Exploratory Data Analysis (EDA)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1336,14 +1404,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 13 - Binary Trees (Medium/Hard)",
+            "task": "DSA Practice: A2Z: Step 13 - Binary Trees (Medium/Hard)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C7: Model Development (Regression)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C7: Model Development (Regression)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1374,14 +1443,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 14 - Binary Search Trees (Concepts)",
+            "task": "DSA Practice: A2Z: Step 14 - Binary Search Trees (Concepts)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C7: Model Evaluation (Over/Underfitting)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C7: Model Evaluation (Over/Underfitting)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1418,14 +1488,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 14 - Binary Search Trees (Problems)",
+            "task": "DSA Practice: A2Z: Step 14 - Binary Search Trees (Problems)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C7: Pipelines & Grid Search",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C7: Pipelines & Grid Search",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1440,7 +1511,8 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Economic Model: Delivery speed vs Purchase probability correlation.",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20136pm",
@@ -1456,14 +1528,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 15 - Graphs (Concepts)",
+            "task": "DSA Practice: A2Z: Step 15 - Graphs (Concepts)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C8: Matplotlib & Seaborn Fundamentals",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C8: Matplotlib & Seaborn Fundamentals",
+            "type": "practice",
+            "link": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html"
           },
           {
             "time": "9\u201311am",
@@ -1494,25 +1567,27 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 15 - Graphs (BFS/DFS Problems)",
+            "task": "DSA Practice: A2Z: Step 15 - Graphs (BFS/DFS Problems)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C8: Statistical Plots & Heatmaps",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C8: Statistical Plots & Heatmaps",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Master Data Schema: Integrate Sales, Ads, Psych, and Logistics data into SQL.",
-            "type": "data"
+            "type": "data",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Power BI: Build 'Growth & Conversion' dashboard with ROAS/CAC interactive tracking.",
             "type": "build",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
           },
           {
             "time": "2\u20134pm",
@@ -1534,14 +1609,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 15 - Graphs (Shortest Path/MST)",
+            "task": "DSA Practice: A2Z: Step 15 - Graphs (Shortest Path/MST)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C8: Specialized Plots (Waffle, WordCloud)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C8: Specialized Plots (Waffle, WordCloud)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1558,7 +1634,8 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Portfolio Launch: Final polish on all 3 analytics project pages.",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20136pm",
@@ -1588,34 +1665,39 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 16 - DP (1D & 2D)",
+            "task": "DSA Practice: A2Z: Step 16 - DP (1D & 2D)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C8: Geospatial Viz with Folium",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C8: Geospatial Viz with Folium",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Learn UI/UX Basics: Color theory, typography, whitespace, Dark themes.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn HTML/CSS Basics: Flexbox, Grid, semantic tags.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Tailwind CSS: Utility classes, custom configurations, responsive design.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Design System: Finalize colors (Accent, Dark BG) for your portfolio.",
-            "type": "design"
+            "type": "design",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -1631,24 +1713,27 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 16 - DP (Strings & Subsequences)",
+            "task": "DSA Practice: A2Z: Step 16 - DP (Strings & Subsequences)",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C8: Dash: Interactive Web Apps (Plotly)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C8: Dash: Interactive Web Apps (Plotly)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "React Refresher: Components, props, useState, useEffect.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Next.js Basics: App Router, Server vs Client components.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -1674,14 +1759,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: A2Z: Step 17 - Tries",
+            "task": "DSA Practice: A2Z: Step 17 - Tries",
             "type": "practice",
             "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C8: Dashboard Layouts & Callbacks",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C8: Dashboard Layouts & Callbacks",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1692,7 +1778,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Build Skills Section: Interactive progress bars for SQL, Python, Power BI.",
             "type": "build",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "2\u20134pm",
@@ -1719,19 +1805,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: DSA Revision: Top 50 Array/String Questions",
-            "type": "practice"
+            "task": "DSA Practice: DSA Revision: Top 50 Array/String Questions",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Advanced SQL: Window Functions (Rank)",
-            "type": "practice"
+            "task": "Core Concept: Advanced SQL: Window Functions (Rank)",
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
             "task": "Integrate Dashboards: Embed or link Streamlit/Tableau/Power BI dashboards.",
             "type": "build",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
           },
           {
             "time": "11am\u20131pm",
@@ -1768,18 +1856,21 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: DSA Revision: Top 50 Linked List Questions",
-            "type": "practice"
+            "task": "DSA Practice: DSA Revision: Top 50 Linked List Questions",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Advanced SQL: CTEs & Complex Queries",
-            "type": "practice"
+            "task": "Core Concept: Advanced SQL: CTEs & Complex Queries",
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
             "task": "SEO Setup: Add meta tags, Open Graph images, semantic HTML.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -1800,7 +1891,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Write LinkedIn post: 'My Data Analyst Portfolio is Live'.",
-            "type": "content"
+            "type": "content",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Portfolio is SEO optimized and linked to a strong personal brand.",
@@ -1811,24 +1903,27 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: DSA Revision: Top 50 Stack/Queue Questions",
-            "type": "practice"
+            "task": "DSA Practice: DSA Revision: Top 50 Stack/Queue Questions",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Advanced SQL: Hard LeetCode SQL 1",
-            "type": "practice"
+            "task": "Core Concept: Advanced SQL: Hard LeetCode SQL 1",
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
             "task": "CV Strategy: Rewrite bullet points using the XYZ formula.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Version 1 (Data Analyst): Highlight SQL, Python, Power BI, IPL.",
             "type": "write",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "2\u20134pm",
@@ -1840,12 +1935,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Create master Job Tracker sheet in Excel (Company, Role, Status, Follow-up).",
             "type": "plan",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           },
           {
             "time": "5\u20136pm",
             "task": "Ask 3 mentors/seniors to review the portfolio and CV.",
-            "type": "review"
+            "type": "review",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "2 targeted CVs completed. Tracking system ready.",
@@ -1856,18 +1952,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: DSA Revision: Top 50 Tree Questions",
-            "type": "practice"
+            "task": "DSA Practice: DSA Revision: Top 50 Tree Questions",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Advanced SQL: Hard LeetCode SQL 2",
-            "type": "practice"
+            "task": "Core Concept: Advanced SQL: Hard LeetCode SQL 2",
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
             "task": "Implement feedback from mentors on Portfolio & CV.",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -1906,13 +2005,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: DSA Revision: Top 50 Graph/DP Questions",
-            "type": "practice"
+            "task": "DSA Practice: DSA Revision: Top 50 Graph/DP Questions",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C9: Capstone: Data Collection (API/Scrape)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C9: Capstone: Data Collection (API/Scrape)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1954,13 +2055,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Interview: Leetcode Easy Set",
-            "type": "practice"
+            "task": "DSA Practice: Mock Interview: Leetcode Easy Set",
+            "type": "practice",
+            "link": "https://leetcode.com/problemset/database/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C9: Capstone: Data Wrangling & SQL",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C9: Capstone: Data Wrangling & SQL",
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
@@ -1970,7 +2073,8 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Learn Markdown/MDX in Next.js to write stories natively in code.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -1996,13 +2100,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Interview: Leetcode Medium Set",
-            "type": "practice"
+            "task": "DSA Practice: Mock Interview: Leetcode Medium Set",
+            "type": "practice",
+            "link": "https://leetcode.com/problemset/database/"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C9: Capstone: EDA & Machine Learning",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C9: Capstone: EDA & Machine Learning",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -2038,13 +2144,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Interview: Amazon DSA Questions",
-            "type": "practice"
+            "task": "DSA Practice: Mock Interview: Amazon DSA Questions",
+            "type": "practice",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C9: Capstone: Interactive Dashboard",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C9: Capstone: Interactive Dashboard",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -2059,12 +2167,14 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Portfolio Update: Add 'Founder @ Sahitya' to main tech portfolio.",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20135pm",
             "task": "Cross-Linking: Ensure tech portfolio points to Sahitya and vice versa.",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -2086,30 +2196,33 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Interview: Google DSA Questions",
-            "type": "practice"
+            "task": "DSA Practice: Mock Interview: Google DSA Questions",
+            "type": "practice",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C10: Generative AI for Data Cleaning",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C10: Generative AI for Data Cleaning",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Practice: 10 Advanced SQL questions (Window functions, CTEs).",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Practice: Python Pandas \u2014 solve 5 business questions on a new dataset in 1 hour.",
             "type": "practice",
-            "link": "https://www.python.org/"
+            "link": "https://www.python.org/about/gettingstarted/"
           },
           {
             "time": "2\u20134pm",
             "task": "Practice: Excel/Power BI \u2014 build a rapid pivot/DAX report in 30 mins.",
             "type": "practice",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           },
           {
             "time": "4\u20135pm",
@@ -2120,7 +2233,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Record yourself pitching projects. Review and refine.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Technical interview reflexes sharpened.",
@@ -2131,23 +2245,27 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Interview: Meta DSA Questions",
-            "type": "practice"
+            "task": "DSA Practice: Mock Interview: Meta DSA Questions",
+            "type": "practice",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C10: AI-Powered Data Storytelling",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C10: AI-Powered Data Storytelling",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Write STAR answers: Tell me about yourself, Why analytics?, Biggest challenge.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Product Sense Practice: 'Diagnose a 20% drop in Hotstar viewership'.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -2157,12 +2275,14 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Prepare 3 smart questions to ask interviewers.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
           },
           {
             "time": "5\u20136pm",
             "task": "Mock interview with a friend or mentor.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
           }
         ],
         "outcome": "Behavioral and product case questions rehearsed.",
@@ -2173,14 +2293,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Interview: Microsoft DSA Questions",
-            "type": "practice"
+            "task": "DSA Practice: Mock Interview: Microsoft DSA Questions",
+            "type": "practice",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C10: Prompt Engineering for Python Code",
+            "task": "IBM Cert Module: IBM C10: Prompt Engineering for Python Code",
             "type": "practice",
-            "link": "https://www.python.org/"
+            "link": "https://www.python.org/about/gettingstarted/"
           },
           {
             "time": "9\u201311am",
@@ -2200,7 +2321,8 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Post on LinkedIn: Share an insight from Sahitya or your SQL query library.",
-            "type": "content"
+            "type": "content",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "5\u20136pm",
@@ -2224,13 +2346,15 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Test: DSA Written Round 1",
-            "type": "practice"
+            "task": "DSA Practice: Mock Test: DSA Written Round 1",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C10: Automating Workflows with AI",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C10: Automating Workflows with AI",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -2253,12 +2377,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Create a quick 1-page report or 1-page Power BI dashboard.",
             "type": "build",
-            "link": "https://powerbi.microsoft.com/"
+            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
           },
           {
             "time": "5\u20136pm",
             "task": "Add to portfolio as a 'Mini-Project'. Highlights versatility.",
-            "type": "output"
+            "type": "output",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Added a unique sports analytics project to stand out.",
@@ -2269,18 +2394,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Test: DSA Written Round 2",
-            "type": "practice"
+            "task": "DSA Practice: Mock Test: DSA Written Round 2",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C11: Data Analyst Resume Optimization",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C11: Data Analyst Resume Optimization",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Take a timed SQL test on HackerRank or LeetCode.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "11am\u20131pm",
@@ -2295,12 +2423,14 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Update your GitHub 'SQL Query Library' with complex solutions.",
-            "type": "build"
+            "type": "build",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "5\u20136pm",
             "task": "Post a SQL tip or snippet on LinkedIn.",
-            "type": "content"
+            "type": "content",
+            "link": "https://takeuforward.org/sql/sql-index/"
           }
         ],
         "outcome": "SQL skills hardened for technical rounds.",
@@ -2317,13 +2447,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Mock Test: DSA Written Round 3",
-            "type": "practice"
+            "task": "DSA Practice: Mock Test: DSA Written Round 3",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C11: Portfolio Building (LinkedIn/GitHub)",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C11: Portfolio Building (LinkedIn/GitHub)",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -2360,20 +2492,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Speed Test: 2 Mediums in 45 Mins",
-            "type": "practice"
+            "task": "DSA Practice: Speed Test: 2 Mediums in 45 Mins",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C11: Technical Interview Prep (SQL/Python)",
+            "task": "IBM Cert Module: IBM C11: Technical Interview Prep (SQL/Python)",
             "type": "practice",
-            "link": "https://www.python.org/"
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
             "task": "Targeted applications: Find 5 roles requiring specific skills you have (e.g., Tableau + Python).",
             "type": "apply",
-            "link": "https://public.tableau.com/s/"
+            "link": "https://public.tableau.com/s/getting-started"
           },
           {
             "time": "11am\u20131pm",
@@ -2394,7 +2527,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Update Excel tracker.",
             "type": "track",
-            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           }
         ],
         "outcome": "High-quality, tailored applications submitted.",
@@ -2405,18 +2538,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Speed Test: 1 Hard in 45 Mins",
-            "type": "practice"
+            "task": "DSA Practice: Speed Test: 1 Hard in 45 Mins",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM C11: Behavioral Case Study Prep",
-            "type": "practice"
+            "task": "IBM Cert Module: IBM C11: Behavioral Case Study Prep",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Simulate a take-home assignment: Find a messy dataset, clean it, build a dashboard in 2 hours.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -2426,12 +2562,14 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Review your speed and output quality. Identify bottlenecks.",
-            "type": "review"
+            "type": "review",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "4\u20135pm",
             "task": "Fix any portfolio bugs discovered during the week.",
-            "type": "build"
+            "type": "build",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -2447,18 +2585,21 @@ const weeks = [
         "tasks": [
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Review Weakness: Graphs & DP",
-            "type": "practice"
+            "task": "DSA Practice: Review Weakness: Graphs & DP",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Aptitude: Number Systems & Percentages",
-            "type": "practice"
+            "task": "Core Concept: Aptitude: Number Systems & Percentages",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Check every link, image, and download button on portfolio.",
-            "type": "review"
+            "type": "review",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
@@ -2495,13 +2636,15 @@ const weeks = [
           },
           {
             "time": "7\u20138am",
-            "task": "Takeuforward DSA: Review Weakness: Trees & BST",
-            "type": "practice"
+            "task": "DSA Practice: Review Weakness: Trees & BST",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Aptitude: Ratios & Proportions",
-            "type": "practice"
+            "task": "Core Concept: Aptitude: Ratios & Proportions",
+            "type": "practice",
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -2521,12 +2664,14 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Plan Month 3: Continuous interviewing, Leetcode, and maybe a Machine Learning intro.",
-            "type": "plan"
+            "type": "plan",
+            "link": "https://leetcode.com/problemset/database/"
           },
           {
             "time": "5\u20136pm",
             "task": "Celebrate! You have transformed your skills and built a world-class portfolio.",
-            "type": "reflect"
+            "type": "reflect",
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "60-Day Roadmap Complete.",
