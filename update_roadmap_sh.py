@@ -791,46 +791,54 @@ resource_tasks_by_day = {
 }
 
 # ─────────────────────────────────────────────────────────────────
-# RESOURCE LINK MAPPING (FOR UNIVERSAL REDIRECTS)
+# GOLD STANDARD RESOURCE LINK MAPPING
+# Curated for 100% Knowledge Acquisition
 # ─────────────────────────────────────────────────────────────────
 resource_links = {
     "A2Z:": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
-    "SQL": "https://takeuforward.org/sql/sql-index/",
+    "SQL": "https://mode.com/sql-tutorial/introduction-to-sql/",
     "IPL": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset",
     "OTT": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies",
     "E-commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
     "E-Commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
     "HackerRank": "https://www.hackerrank.com/domains/sql",
     "Leetcode": "https://leetcode.com/problemset/database/",
-    "Excel": "https://www.coursera.org/learn/excel-basics-data-analysis",
-    "Power BI": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview",
-    "Tableau": "https://public.tableau.com/s/getting-started",
-    "Python": "https://www.python.org/about/gettingstarted/",
+    "Excel": "https://chandoo.org/wp/excel-tutorial/",
+    "Power BI": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/",
+    "Tableau": "https://public.tableau.com/s/resources",
+    "Python": "https://jakevdp.github.io/PythonDataScienceHandbook/",
     "Pandas": "https://pandas.pydata.org/docs/user_guide/10min.html",
     "Numpy": "https://numpy.org/doc/stable/user/absolute_beginners.html",
     "Matplotlib": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html",
     "Seaborn": "https://seaborn.pydata.org/tutorial.html",
-    "Stats": "https://roadmap.sh/data-analyst",
-    "Math": "https://roadmap.sh/data-analyst",
-    "Probability": "https://roadmap.sh/data-analyst",
-    "Kaggle": "https://www.kaggle.com/datasets",
-    "Interview": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation",
+    "Stats": "https://www.statology.org/statistics-tutorials/",
+    "Math": "https://www.statology.org/statistics-tutorials/",
+    "Probability": "https://www.statology.org/statistics-tutorials/",
+    "Kaggle": "https://www.kaggle.com/learn",
+    "Viz": "https://www.storytellingwithdata.com/chart-guide",
+    "Dashboard": "https://www.storytellingwithdata.com/blog",
     "Portfolio": "https://roadmap.sh/data-analyst",
 }
 
 def attach_link(task_obj):
-    if "link" in task_obj and task_obj["link"]: return # Don't overwrite
-    task_text = task_obj.get("task", "")
+    if "link" in task_obj and task_obj["link"]: return
+    task_text = task_obj.get("task", "").lower()
     task_type = task_obj.get("type", "")
     
-    # Keyword match
+    # Priority keyword match
     for key, link in resource_links.items():
-        if key.lower() in task_text.lower():
+        if key.lower() in task_text:
             task_obj["link"] = link
             return
             
-    # Fallback for practice/learn/watch
-    if task_type in ["practice", "learn", "watch"]:
+    # Category based fallback for better results
+    if "clean" in task_text or "wrangle" in task_text:
+        task_obj["link"] = resource_links["Pandas"]
+    elif "chart" in task_text or "plot" in task_text:
+        task_obj["link"] = resource_links["Viz"]
+    elif "sql" in task_text or "query" in task_text:
+        task_obj["link"] = resource_links["SQL"]
+    elif task_type in ["practice", "learn", "watch"]:
         task_obj["link"] = "https://roadmap.sh/data-analyst"
 
 # Inject DSA, Core and 16-Week resources into every day

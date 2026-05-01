@@ -43,31 +43,31 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Learn Descriptive Stats: Mean, Median, Mode, Variance, Standard Deviation.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Probability Basics: Probability distributions, Normal distribution, Z-scores.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Inferential Stats: Hypothesis testing, p-values, A/B testing theory.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Calculate stats on a sample dataset using pen and paper or calculator.",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           },
           {
             "time": "5\u20136pm",
             "task": "Document notes on Notion/GitHub. Roadmap.sh Math section complete.",
             "type": "output",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           }
         ],
         "outcome": "Solid foundation in data mathematics and statistics.",
@@ -92,7 +92,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Learn Excel Basics: Data entry, formatting, basic formulas (SUM, AVERAGE, COUNT).",
             "type": "learn",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           },
           {
             "time": "11am\u20131pm",
@@ -110,13 +110,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Download a messy sales dataset and clean/format it using formulas.",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           },
           {
             "time": "5\u20136pm",
             "task": "Save Excel workbook as 'Day2_Excel_Advanced.xlsx'.",
             "type": "output",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           }
         ],
         "outcome": "Mastery of essential and advanced Excel formulas.",
@@ -141,19 +141,19 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C2: Excel Formulas (VLOOKUP, INDEX-MATCH)",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Pivot Tables: Summarizing data, calculated fields, Pivot Charts.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Power Query: Importing data, merging tables, unpivoting columns.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "2\u20134pm",
@@ -165,13 +165,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Build a dynamic Excel dashboard using Pivot Charts and Slicers.",
             "type": "build",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           },
           {
             "time": "5\u20136pm",
             "task": "Push dashboard screenshots to GitHub. Roadmap.sh Excel section complete.",
             "type": "output",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           }
         ],
         "outcome": "Can build dynamic dashboards and clean data inside Excel.",
@@ -190,7 +190,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C2: Data Cleaning in Excel (Power Query)",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           },
           {
             "time": "9\u201311am",
@@ -202,7 +202,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Learn Basic SQL: SELECT, FROM, WHERE, LIMIT, ORDER BY.",
             "type": "learn",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "2\u20134pm",
@@ -214,13 +214,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Solve 5 basic SQL query problems on HackerRank.",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "5\u20136pm",
             "task": "Document SQL basics in a markdown file.",
             "type": "output",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           }
         ],
         "outcome": "Ability to query and filter basic datasets using SQL.",
@@ -317,13 +317,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Solve 3 advanced SQL problems on Leetcode (Hard difficulty).",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "5\u20136pm",
             "task": "Roadmap.sh SQL section complete. Update LinkedIn skills.",
             "type": "output",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           }
         ],
         "outcome": "Mastered window functions and advanced SQL capabilities.",
@@ -348,30 +348,31 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Review Math, Excel, and SQL notes. Identify any weak points.",
             "type": "review",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Mini-Project: Export an SQL query result to CSV, import to Excel, use Power Query to clean.",
             "type": "build",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "2\u20134pm",
             "task": "Mini-Project: Build a final Pivot Dashboard from that data.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "4\u20135pm",
             "task": "Write LinkedIn post: 'Week 1 of Data Analyst Roadmap: Mastered Excel & SQL'.",
             "type": "content",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "5\u20136pm",
             "task": "Rest and prepare for Week 2 (BI & Python).",
             "type": "reflect",
-            "link": "https://www.python.org/about/gettingstarted/"
+            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
           }
         ],
         "outcome": "Successfully integrated SQL extraction with Excel visualization.",
@@ -404,13 +405,13 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C3: Building Dashboards with Cognos",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Chart Types: When to use Bar, Line, Scatter, Pie, Histogram.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "11am\u20131pm",
@@ -428,7 +429,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Critique 3 bad charts online and sketch improvements.",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "5\u20136pm",
@@ -459,7 +460,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Install Power BI Desktop. Learn to connect data sources (Excel, CSV, SQL).",
             "type": "setup",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "11am\u20131pm",
@@ -471,12 +472,13 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Learn Power Query in Power BI: Transforming data, changing types, appending queries.",
             "type": "learn",
-            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
+            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Build 3 basic visuals (Bar chart, Line chart, KPI card).",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "5\u20136pm",
@@ -523,13 +525,14 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Practice: Build an interactive Sales Dashboard with slicers and tooltips.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "5\u20136pm",
             "task": "Roadmap.sh BI Tools section complete. Publish to Power BI service (optional).",
             "type": "output",
-            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
+            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
           }
         ],
         "outcome": "Mastered DAX and interactive dashboard creation in Power BI.",
@@ -560,7 +563,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Install VS Code, Python, Jupyter. Learn Variables, Data Types, Operators.",
             "type": "setup",
-            "link": "https://www.python.org/about/gettingstarted/"
+            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
           },
           {
             "time": "11am\u20131pm",
@@ -584,7 +587,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Practice: Write 5 small Python scripts (e.g., calculator, palindrome checker).",
             "type": "build",
-            "link": "https://www.python.org/about/gettingstarted/"
+            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
           }
         ],
         "outcome": "Solid grasp of Python programming fundamentals.",
@@ -603,7 +606,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C3: Interactive Dashboards & Slicers",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "9\u201311am",
@@ -676,7 +679,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Learn Plotly (Optional): Basic interactive charts.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "5\u20136pm",
@@ -706,7 +709,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Review Power BI and Python notes. You are now officially 'Analyst Ready'.",
             "type": "review",
-            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
+            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
           },
           {
             "time": "11am\u20131pm",
@@ -761,7 +764,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C4: Python Data Types & Control Flow",
             "type": "practice",
-            "link": "https://www.python.org/about/gettingstarted/"
+            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
           },
           {
             "time": "9\u201311am",
@@ -772,7 +775,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Analysis: Toss vs Win Probability + Venue Bias (Spin vs Pace dominance per venue).",
             "type": "build",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           },
           {
             "time": "2\u20134pm",
@@ -783,7 +786,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Generate Player Scoring Zone Heatmaps + over-by-over Win Probability graphs.",
             "type": "output",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           }
         ],
         "outcome": "On-field performance engine complete. Clutch Index leaderboard generated.",
@@ -861,7 +864,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Franchise Valuation comparison chart + Campaign ROI table.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           }
         ],
         "outcome": "Financial and Marketing engines unified. Revenue per viewer calculated.",
@@ -942,12 +946,13 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Win Predictor: Build a basic ML model to predict match outcome based on mid-match stats.",
             "type": "build",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: 'Strategic Advantage' matrix and Auction Price prediction chart.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           }
         ],
         "outcome": "Advanced strategy and predictive analytics complete.",
@@ -977,18 +982,20 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Dashboard Prep: Clean all 8 layers' data into a master star schema.",
-            "type": "data"
+            "type": "data",
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "11am\u20131pm",
             "task": "Power BI / Tableau: Build interactive filters for Seasons, Teams, and Players.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
+            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
           },
           {
             "time": "2\u20134pm",
             "task": "Visual UX: Apply premium dark theme and McKinsey-style chart layouts.",
-            "type": "design"
+            "type": "design",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "4\u20136pm",
@@ -1070,7 +1077,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: TUF SQL: SELECT, WHERE, ORDER BY",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -1092,7 +1099,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Genre vs Revenue Heatmap + National vs Regional growth chart.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           }
         ],
         "outcome": "Content intelligence complete. Genre success metrics established.",
@@ -1111,7 +1119,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: TUF SQL: Joins (Inner, Left, Right, Full)",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -1150,7 +1158,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: TUF SQL: Aggregations & Group By",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -1196,7 +1204,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C6: SQL for Data Science w/ Python",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -1237,7 +1245,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C6: Advanced SQL (Subqueries, Views)",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -1282,7 +1290,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Database Merge: Join IMDb, Box Office, and Sentiment scores into a clean BI view.",
-            "type": "data"
+            "type": "data",
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           },
           {
             "time": "11am\u20131pm",
@@ -1299,7 +1308,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Live Tableau Dashboard covering all 8 layers of Movie Intelligence.",
             "type": "output",
-            "link": "https://public.tableau.com/s/getting-started"
+            "link": "https://public.tableau.com/s/resources"
           }
         ],
         "outcome": "Project 2 Technical Build Complete. Comparative dashboard live.",
@@ -1471,7 +1480,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Cart Abandonment pattern chart + Urgency Lift infographic.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           }
         ],
         "outcome": "Consumer behavior and friction layers mapped.",
@@ -1512,12 +1522,13 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Economic Model: Delivery speed vs Purchase probability correlation.",
             "type": "build",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.statology.org/statistics-tutorials/"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: Quick Commerce comparison matrix + 'Time vs Price' decision chart.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           }
         ],
         "outcome": "Quick commerce economy and speed impact modeled.",
@@ -1556,7 +1567,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Conglomerate Power Matrix + Offline vs Online market share chart.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           }
         ],
         "outcome": "Market power dynamics and offline impact analyzed.",
@@ -1575,24 +1587,25 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Statistical Plots & Heatmaps",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "9\u201311am",
             "task": "Master Data Schema: Integrate Sales, Ads, Psych, and Logistics data into SQL.",
             "type": "data",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Power BI: Build 'Growth & Conversion' dashboard with ROAS/CAC interactive tracking.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
+            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
           },
           {
             "time": "2\u20134pm",
             "task": "UX Design: Build a 'Live Sales' simulation view within the dashboard.",
-            "type": "design"
+            "type": "design",
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "4\u20136pm",
@@ -1617,7 +1630,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Specialized Plots (Waffle, WordCloud)",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "9\u201311am",
@@ -1673,7 +1686,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Geospatial Viz with Folium",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "9\u201311am",
@@ -1721,7 +1734,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Dash: Interactive Web Apps (Plotly)",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/chart-guide"
           },
           {
             "time": "9\u201311am",
@@ -1767,7 +1780,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Dashboard Layouts & Callbacks",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "9\u201311am",
@@ -1778,7 +1791,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Build Skills Section: Interactive progress bars for SQL, Python, Power BI.",
             "type": "build",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "2\u20134pm",
@@ -1813,18 +1826,19 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: Window Functions (Rank)",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
             "task": "Integrate Dashboards: Embed or link Streamlit/Tableau/Power BI dashboards.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
+            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Link Deep Reports: Ensure PDFs open cleanly from the project cards.",
-            "type": "build"
+            "type": "build",
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           },
           {
             "time": "2\u20134pm",
@@ -1864,7 +1878,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: CTEs & Complex Queries",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -1911,7 +1925,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: Hard LeetCode SQL 1",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -1923,7 +1937,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Version 1 (Data Analyst): Highlight SQL, Python, Power BI, IPL.",
             "type": "write",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "2\u20134pm",
@@ -1935,7 +1949,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Create master Job Tracker sheet in Excel (Company, Role, Status, Follow-up).",
             "type": "plan",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           },
           {
             "time": "5\u20136pm",
@@ -1960,7 +1974,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: Hard LeetCode SQL 2",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
@@ -2063,12 +2077,13 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C9: Capstone: Data Wrangling & SQL",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
             "task": "Build Lyrics Dashboard: Grid layout for songs (Spotify style).",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "11am\u20131pm",
@@ -2146,13 +2161,13 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Amazon DSA Questions",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C9: Capstone: Interactive Dashboard",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "9\u201311am",
@@ -2198,31 +2213,31 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Google DSA Questions",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C10: Generative AI for Data Cleaning",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
           },
           {
             "time": "9\u201311am",
             "task": "Practice: 10 Advanced SQL questions (Window functions, CTEs).",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Practice: Python Pandas \u2014 solve 5 business questions on a new dataset in 1 hour.",
             "type": "practice",
-            "link": "https://www.python.org/about/gettingstarted/"
+            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
           },
           {
             "time": "2\u20134pm",
             "task": "Practice: Excel/Power BI \u2014 build a rapid pivot/DAX report in 30 mins.",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           },
           {
             "time": "4\u20135pm",
@@ -2247,7 +2262,7 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Meta DSA Questions",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
@@ -2276,13 +2291,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Prepare 3 smart questions to ask interviewers.",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
             "task": "Mock interview with a friend or mentor.",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://roadmap.sh/data-analyst"
           }
         ],
         "outcome": "Behavioral and product case questions rehearsed.",
@@ -2295,13 +2310,13 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Microsoft DSA Questions",
             "type": "practice",
-            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C10: Prompt Engineering for Python Code",
             "type": "practice",
-            "link": "https://www.python.org/about/gettingstarted/"
+            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
           },
           {
             "time": "9\u201311am",
@@ -2322,7 +2337,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Post on LinkedIn: Share an insight from Sahitya or your SQL query library.",
             "type": "content",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "5\u20136pm",
@@ -2360,7 +2375,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Download Pro Kabaddi League (PKL) dataset from Kaggle.",
             "type": "data",
-            "link": "https://www.kaggle.com/datasets"
+            "link": "https://www.kaggle.com/learn"
           },
           {
             "time": "11am\u20131pm",
@@ -2377,7 +2392,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Create a quick 1-page report or 1-page Power BI dashboard.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-service-overview"
+            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
           },
           {
             "time": "5\u20136pm",
@@ -2408,7 +2423,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Take a timed SQL test on HackerRank or LeetCode.",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "11am\u20131pm",
@@ -2424,13 +2439,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Update your GitHub 'SQL Query Library' with complex solutions.",
             "type": "build",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "5\u20136pm",
             "task": "Post a SQL tip or snippet on LinkedIn.",
             "type": "content",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           }
         ],
         "outcome": "SQL skills hardened for technical rounds.",
@@ -2500,13 +2515,13 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C11: Technical Interview Prep (SQL/Python)",
             "type": "practice",
-            "link": "https://takeuforward.org/sql/sql-index/"
+            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
           },
           {
             "time": "9\u201311am",
             "task": "Targeted applications: Find 5 roles requiring specific skills you have (e.g., Tableau + Python).",
             "type": "apply",
-            "link": "https://public.tableau.com/s/getting-started"
+            "link": "https://public.tableau.com/s/resources"
           },
           {
             "time": "11am\u20131pm",
@@ -2527,7 +2542,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Update Excel tracker.",
             "type": "track",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+            "link": "https://chandoo.org/wp/excel-tutorial/"
           }
         ],
         "outcome": "High-quality, tailored applications submitted.",
@@ -2552,7 +2567,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Simulate a take-home assignment: Find a messy dataset, clean it, build a dashboard in 2 hours.",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.storytellingwithdata.com/blog"
           },
           {
             "time": "11am\u20131pm",
@@ -3353,6 +3368,37 @@ function Roadmap() {
                   <div style={{ fontSize: 11, color: MUTED, marginTop: 2, letterSpacing: 1 }}>{stat.label}</div>
                 </div>
               ))}
+            </div>
+
+            {/* SUCCESS BLUEPRINT */}
+            <div style={{
+              background: "linear-gradient(135deg, #1e1e3f, #0d0d1f)",
+              border: `1px solid ${BLUE}50`,
+              borderRadius: 12,
+              padding: 24,
+              marginBottom: 32,
+              position: "relative",
+              overflow: "hidden"
+            }}>
+              <div style={{ position: "absolute", top: -20, right: -20, fontSize: 100, opacity: 0.1 }}>🏆</div>
+              <h2 style={{ fontSize: 22, fontWeight: 900, color: BLUE, marginBottom: 8, marginTop: 0 }}>🧠 Guaranteed Success Blueprint</h2>
+              <p style={{ color: TEXT, fontSize: 14, lineHeight: 1.6, maxWidth: "80%", marginBottom: 20 }}>
+                I have curated the <strong>Gold Standard</strong> resources for you. To achieve 100% knowledge acquisition, follow this execution framework blindly:
+              </p>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }}>
+                {[
+                  { title: "Active Recall", icon: "⚡", desc: "Never just watch. For every 10 mins of video, spend 20 mins building the code yourself. Output is the only metric of learning." },
+                  { title: "The 'Stuck' Rule", icon: "🛑", desc: "Stuck? 30 mins: Debug yourself. 60 mins: Search Google/Docs. 90 mins: Ask AI. Don't move to next task until the current one works." },
+                  { title: "Project First", icon: "🏗️", desc: "Theory is secondary. If you learn a SQL Join today, it MUST appear in your IPL or OTT project by tonight. Context is king." },
+                ].map(rule => (
+                  <div key={rule.title} style={{ background: "#ffffff0a", padding: 16, borderRadius: 8, border: "1px solid #ffffff10" }}>
+                    <div style={{ fontSize: 20, marginBottom: 8 }}>{rule.icon}</div>
+                    <div style={{ fontSize: 13, fontWeight: 800, color: ACCENT, marginBottom: 4 }}>{rule.title}</div>
+                    <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.5 }}>{rule.desc}</div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Weekly timeline */}
