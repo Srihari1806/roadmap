@@ -39,36 +39,37 @@ tuf_dsa_topics = [
 ]
 
 tuf_core_topics = [
-  # PHASE 1: Excel & Python (Aligns with IPL Project)
-  "Excel: XLOOKUP & Advanced Formulas", "Excel: Advanced Pivot Tables",
-  "Excel: Power Query Basics", "Excel: Data Validation & Macros",
-  "Python: Data Types, Loops, Functions", "Python: Pandas Data Cleaning",
-  "Python: Pandas GroupBy & Merging", "Python: Matplotlib/Seaborn Viz",
-  "Python: Handling Missing Data", "Python: Advanced Pandas Techniques",
-  "Python: Web Scraping basics (BeautifulSoup)", "Python: API Requests (Requests lib)",
-  "Python: EDA (Exploratory Data Analysis)", "Python: Project 1 Data Prep",
+  # PHASE 1: IBM Excel & Google Data Process (Weeks 1-2)
+  "IBM Course 2: Excel Functions & Data Cleaning", "IBM Course 2: Advanced Excel (VLOOKUP, INDEX-MATCH)",
+  "Google Course 2: Asking Effective Questions (S.M.A.R.T)", "Google Course 3: Data Integrity & Cleanliness",
+  "IBM Course 3: Data Viz & Dashboards with Excel", "IBM Course 3: Intro to IBM Cognos Dashboards",
+  "Google Course 3: Managing Data Security & Ethics", "Google Course 1: The 6-Step Data Process (Ask-Act)",
+  "IBM Course 2: Power Query for Automated Cleaning", "IBM Course 2: Pivot Table Analysis & Slicers",
+  "Google Course 3: SQL for Data Preparation", "IBM Course 3: Building Interactive Reports",
+  "IBM Course 3: Data Storytelling with Cognos", "Google Course 4: Handling Biased Data",
   
-  # PHASE 2: SQL Foundations (Aligns with OTT Project)
+  # PHASE 2: TUF SQL Foundations & IBM Python (Weeks 3-4)
   "TUF SQL: Getting Started & Foundations", "TUF SQL: Core Database Structures",
   "TUF SQL: Querying Essentials (SELECT, SORT)", "TUF SQL: Aggregation (GROUP BY, SUM)",
-  "TUF SQL: Functions (Math, Conditional)", "TUF SQL: DDL & DML Operations",
-  "TUF SQL: Set Operations (UNION, INTERSECT)", "TUF SQL: INNER & LEFT JOINs",
-  "TUF SQL: OUTER JOINs & Complex Joins", "TUF SQL: Subqueries (Nested Queries)",
-  "TUF SQL: CTEs (Common Table Expressions)", "TUF SQL: Dates and Time Manipulation",
-  "TUF SQL: Window Functions (RANK, ROW_NUMBER)", "TUF SQL: JSON in SQL",
+  "IBM Course 4: Python Data Types, Loops, Functions", "IBM Course 4: Pandas for Data Cleaning",
+  "IBM Course 4: Handling Missing Data with Pandas", "IBM Course 4: Merging & Grouping DataFrames",
+  "TUF SQL: Set Operations & Advanced Filters", "TUF SQL: INNER & LEFT JOINs",
+  "IBM Course 5: Python Project - Analyzing IPL Trends", "TUF SQL: Subqueries & Nested Logic",
+  "TUF SQL: CTEs (Common Table Expressions)", "TUF SQL: Dates & Time Manipulation",
   
-  # PHASE 3: Power BI & Advanced SQL (Aligns with E-Commerce Project)
-  "PowerBI: Connect SQL Server / Datasets", "PowerBI: Data Transformation in PQ",
-  "PowerBI: Star Schema & Modeling", "PowerBI: DAX (CALCULATE & Filter Context)",
-  "PowerBI: DAX Time Intelligence", "PowerBI: Advanced DAX Measures",
-  "PowerBI: Dashboard Layout & UX", "PowerBI: Row-level Security",
-  "Advanced SQL: Query Optimization", "Advanced SQL: Indexing & Performance",
-  "Advanced SQL: Stored Procedures", "Advanced SQL: Triggers & Views",
+  # PHASE 3: IBM Advanced Python & Google Storytelling (Weeks 5-6)
+  "IBM Course 7: Data Analysis with Python (EDA)", "IBM Course 7: Predictive Modeling Foundations",
+  "IBM Course 8: Data Viz with Python (Matplotlib/Seaborn)", "IBM Course 8: Statistical Plots & Heatmaps",
+  "Google Course 6: Art of Visualization & Storytelling", "Google Course 6: Dashboard Design Principles",
+  "IBM Course 8: Interactive Viz with Plotly/Dash", "IBM Course 8: Advanced Plotting Techniques",
+  "TUF SQL: Window Functions (RANK, ROW_NUMBER)", "Advanced SQL: Query Optimization",
+  "Advanced SQL: Indexing & Performance", "Advanced SQL: Stored Procedures",
   "Advanced SQL: Hard LeetCode SQL 1", "Advanced SQL: Hard LeetCode SQL 2",
   
-  # PHASE 4: DBMS, Stats & Aptitude (Aligns with Final Job Prep Phase)
-  "DBMS: ACID Properties & Transactions", "DBMS: Normalization (1NF, 2NF, 3NF)",
-  "DBMS: Concurrency Control", "DBMS: SQL vs NoSQL Differences",
+  # PHASE 4: IBM Capstone & Google Job Prep (Weeks 7-8)
+  "IBM Course 9: Capstone - Project Scoping & Data Prep", "IBM Course 9: Capstone - Deep Analysis & Viz",
+  "Google Course 8: Case Study - Portfolio Construction", "DBMS: ACID Properties & Transactions",
+  "DBMS: Normalization (1NF, 2NF, 3NF)", "DBMS: Concurrency Control",
   "Stats: Mean, Median, Mode, Variance", "Stats: Probability & Distributions",
   "Stats: Hypothesis Testing (p-value)", "Stats: A/B Testing Setup & Analysis",
   "Aptitude: Number Systems & Percentages", "Aptitude: Ratios & Proportions",
@@ -754,99 +755,31 @@ weeks_data = [
 # Resources appear at 6am BEFORE the daily DSA/Core warmup
 # ─────────────────────────────────────────────────────────────────
 resource_tasks_by_day = {
-    # ── WEEK 1: SQL Foundations (16W Wk 1–3) ──
-    4: [
-        {"time": "6–7am", "task": "📺 [16W·SQL] Watch: Luke Barousse – SQL for Data Analytics (4 hrs) | Goal: SELECT, WHERE, ORDER BY, GROUP BY, HAVING", "type": "watch", "link": "https://www.youtube.com/watch?v=7mz73uXD9DA"},
-    ],
-    5: [
-        {"time": "6–7am", "task": "📺 [16W·SQL] Watch: freeCodeCamp – SQL Course for Beginners (Full) | Goal: JOINs, subqueries, window functions", "type": "watch", "link": "https://www.youtube.com/watch?v=7S_tz1z_5bA"},
-    ],
-    6: [
-        {"time": "6–7am", "task": "📺 [16W·SQL] Watch (Optional): SQL For Data Analysis – Full Portfolio Project", "type": "watch", "link": "https://www.youtube.com/watch?v=zZpMvAedh_E"},
-    ],
-    # ── WEEK 2: Python + Power BI (16W Wk 4–5 & 7–8) ──
-    9: [
-        {"time": "6–7am", "task": "📺 [16W·BI] Watch: Power BI Tutorial for Beginners to Advanced | Goal: interface, import, visuals, slicers", "type": "watch", "link": "https://www.youtube.com/watch?v=cyWVzAQF9YU"},
-    ],
-    10: [
-        {"time": "6–7am", "task": "📺 [16W·BI] Watch: Learn Power BI in 7 Hours – Beginner to Advanced with Dashboard Project", "type": "watch", "link": "https://www.youtube.com/watch?v=KdC5R7oPCAI"},
-    ],
-    11: [
-        {"time": "6–7am", "task": "📺 [16W·PY] Watch: Python for Data Analytics – Full Course for Beginners | Goal: data types, loops, functions, pandas, EDA", "type": "watch", "link": "https://www.youtube.com/watch?v=wUSDVGivd-8"},
-    ],
-    12: [
-        {"time": "6–7am", "task": "📺 [16W·PY] Watch: Data Analysis with Python – Full Course (NumPy, Pandas, Matplotlib, Seaborn)", "type": "watch", "link": "https://www.youtube.com/watch?v=r-uOLxNrNk8"},
-    ],
-    13: [
-        {"time": "6–7am", "task": "📺 [16W·PY] Watch (Optional): Python for Data Analysis – Full Project for Beginners", "type": "watch", "link": "https://www.youtube.com/watch?v=VX6kCjwdNPw"},
-    ],
-    # ── WEEK 2 Review = 16W Wk 6: SQL + Python Mini Project ──
-    14: [
-        {"time": "6–6:30am", "task": "📺 [16W·PROJ] Watch & Replicate: End to End Data Analytics Project (Python + SQL)", "type": "watch", "link": "https://www.youtube.com/watch?v=uL0-6kfiH3g"},
-        {"time": "6:30–7am", "task": "📺 [16W·PROJ] Alt: End to End SQL Portfolio Project for Data Analyst", "type": "watch", "link": "https://www.youtube.com/watch?v=sxgAb6FGTBE"},
-    ],
-    # ── WEEK 3: IPL / Storytelling + Advanced Dashboards (16W Wk 9–10) ──
-    19: [
-        {"time": "6–6:30am", "task": "📺 [16W·STORY] Watch: Power BI Sales Dashboard Project (End-to-End) | Goal: KPIs, drill-downs, narrative", "type": "watch", "link": "https://www.youtube.com/watch?v=fZn83JRt4Nk"},
-        {"time": "6:30–7am", "task": "📺 [16W·STORY] Watch: How to Explain Your Project in Power BI Interview (storytelling)", "type": "watch", "link": "https://www.youtube.com/watch?v=lnItIEHp8g8"},
-    ],
-    # ── WEEK 3 Review = 16W Wk 11: Data Modeling / Star Schema ──
-    21: [
-        {"time": "6–6:30am", "task": "📺 [16W·MODEL] Watch: Data Modelling & Star Schema for Power BI in 20 Min", "type": "watch", "link": "https://www.youtube.com/watch?v=4ePNrdxWtY0"},
-        {"time": "6:30–7am", "task": "📺 [16W·MODEL] Watch: Star Schema Data Modeling Power BI Tutorial 2024", "type": "watch", "link": "https://www.youtube.com/watch?v=MXiH6rdUM1I"},
-    ],
-    # ── WEEK 4: OTT = 16W Wk 12: Data Engineering / ETL Intro ──
-    27: [
-        {"time": "6–7am", "task": "📺 [16W·DE] Watch: Build an ELT Pipeline in 1 Hour (dbt, Snowflake, Airflow) | Goal: ingest→transform→load→BI", "type": "watch", "link": "https://www.youtube.com/watch?v=OLXkGB7krGo"},
-    ],
-    28: [
-        {"time": "6–7am", "task": "📺 [16W·DE] Watch: How to Create an ELT Pipeline using Airflow, Snowflake, and dbt", "type": "watch", "link": "https://www.youtube.com/watch?v=VWnakVAT-Bk"},
-    ],
-    # ── WEEK 5: E-Commerce = 16W Wk 13: dbt + Airflow + Snowflake Project ──
-    33: [
-        {"time": "6–7am", "task": "📺 [16W·DE] Watch: DBT Beginner to Pro – End to End Pipeline with Airflow, Snowflake & DBT", "type": "watch", "link": "https://www.youtube.com/watch?v=RXWYPZ3T9ys"},
-    ],
-    34: [
-        {"time": "6–6:30am", "task": "📺 [16W·DE] Watch: Snowflake Data Engineering – Build End-to-End Pipelines with DBT & Airflow", "type": "watch", "link": "https://www.youtube.com/watch?v=iWjSsniB-RU"},
-        {"time": "6:30–7am", "task": "📺 [16W·DE] Watch (Optional): End-to-End E-Commerce Data Pipeline – Snowflake, dbt, Airflow", "type": "watch", "link": "https://www.youtube.com/watch?v=AmRvNJaECqo"},
-    ],
-    # ── WEEK 6: Portfolio = 16W Wk 14: AI + Forecasting ──
-    36: [
-        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: Time Series Forecasting in Python – Tutorial for Beginners (freeCodeCamp)", "type": "watch", "link": "https://www.youtube.com/watch?v=fxx_E0ojKrc"},
-        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: Power BI Forecasting Tutorial (Built-in Analytics)", "type": "watch", "link": "https://www.youtube.com/watch?v=96qsaQUVNcg"},
-    ],
-    37: [
-        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: AI-Driven Analytics in Power BI (Key Influencers, Q&A, Smart Narratives)", "type": "watch", "link": "https://www.youtube.com/watch?v=cKEbTXY0xQo"},
-        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: ChatGPT for Data Analytics – Real Use Cases (SQL, Python, Insights)", "type": "watch", "link": "https://www.youtube.com/watch?v=s6g-Ki0iemI"},
-    ],
-    # ── WEEK 6: Portfolio = 16W Wk 15: Portfolio Building ──
-    38: [
-        {"time": "6–6:30am", "task": "📺 [16W·PORT] Watch: The ONLY Data Analytics Portfolio You Need (Blueprint)", "type": "watch", "link": "https://www.youtube.com/watch?v=QyQYckvmxtI"},
-        {"time": "6:30–7am", "task": "📺 [16W·PORT] Watch: How to Build a Professional Data Portfolio Website (No-Code)", "type": "watch", "link": "https://www.youtube.com/watch?v=U69s3XXBMbg"},
-    ],
-    39: [
-        {"time": "6–7am", "task": "📺 [16W·AI] Watch: Copilot in Power BI – How to Use AI for Measures, Insights & Reports", "type": "watch", "link": "https://www.youtube.com/watch?v=J4l34uUqHtw"},
-    ],
-    # ── WEEK 7: Sahitya / Interviews = 16W Wk 16 ──
-    47: [
-        {"time": "6–6:30am", "task": "📺 [16W·INT] Watch: How to Explain Your Project Like a Pro in Interviews", "type": "watch", "link": "https://www.youtube.com/watch?v=iP3MuGqNI24"},
-        {"time": "6:30–7am", "task": "📺 [16W·INT] Watch: How to Explain Project in Data Analytics Interview", "type": "watch", "link": "https://www.youtube.com/watch?v=nsKItCQCZkA"},
-    ],
-    48: [
-        {"time": "6–7am", "task": "📺 [16W·INT] Watch: Going Deep on Past Projects in Interviews", "type": "watch", "link": "https://www.youtube.com/watch?v=wRSLJKSum2k"},
-    ],
-    # ── WEEK 8: Final Sprint = extra AI/ChatGPT resources ──
-    51: [
-        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: Using ChatGPT with Power BI – End-to-End Analytics Project", "type": "watch", "link": "https://www.youtube.com/watch?v=MjeDkDHJqzc"},
-        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: ChatGPT for Data Analysis: 7 Practical Use Cases", "type": "watch", "link": "https://www.youtube.com/watch?v=6h5xKWoDZ_U"},
-    ],
-    52: [
-        {"time": "6–6:30am", "task": "📺 [16W·AI] Watch: How to Use ChatGPT for SQL & Data Queries (Practical)", "type": "watch", "link": "https://www.youtube.com/watch?v=Z1lw4I7tcVQ"},
-        {"time": "6:30–7am", "task": "📺 [16W·AI] Watch: Microsoft Excel AI Features (Data Analysis & Insights)", "type": "watch", "link": "https://www.youtube.com/watch?v=2a2GR3Ee2s0"},
-    ],
-    53: [
-        {"time": "6–7am", "task": "📺 [16W·AI] Watch: Complete Time Series Analysis and Forecasting with Python", "type": "watch", "link": "https://www.youtube.com/watch?v=A3fowDMo8mM"},
-    ],
+    # ── WEEK 1: Foundations & Excel ──
+    1: [{"time": "6–7am", "task": "🎓 [Google] Foundations: Data, Data, Everywhere | Focus: The 6-Step Data Analysis Process", "type": "watch", "link": "https://www.coursera.org/learn/foundations-data"}],
+    2: [{"time": "6–7am", "task": "🎓 [IBM] Excel Basics for Data Analysis | Focus: Formulas, cell referencing, data cleaning", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis"}],
+    3: [{"time": "6–7am", "task": "🎓 [Google] Ask Questions to Make Data-Driven Decisions | Focus: Structured thinking & SMART questions", "type": "watch", "link": "https://www.coursera.org/learn/ask-questions-make-decisions"}],
+    
+    # ── WEEK 2: Data Prep & Dashboards ──
+    8: [{"time": "6–7am", "task": "🎓 [Google] Prepare Data for Exploration | Focus: Data types, storage, and ethics", "type": "watch", "link": "https://www.coursera.org/learn/data-preparation"}],
+    9: [{"time": "6–7am", "task": "🎓 [IBM] Data Viz & Dashboards with Excel/Cognos | Focus: Pivot charts & Cognos intro", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"}],
+    10: [{"time": "6–7am", "task": "🎓 [Google] Process Data from Dirty to Clean | Focus: SQL cleaning & data integrity", "type": "watch", "link": "https://www.coursera.org/learn/process-data"}],
+
+    # ── WEEK 3: Python for Data Science (IPL Phase) ──
+    15: [{"time": "6–7am", "task": "🎓 [IBM] Python for Data Science, AI & Development | Focus: Numpy & Pandas foundations", "type": "watch", "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"}],
+    16: [{"time": "6–7am", "task": "🎓 [IBM] Python Project for Data Science | Focus: Scraping & analyzing real data", "type": "watch", "link": "https://www.coursera.org/learn/python-project-for-data-science"}],
+    
+    # ── WEEK 4: Advanced Analysis (OTT Phase) ──
+    22: [{"time": "6–7am", "task": "🎓 [Google] Analyze Data to Answer Questions | Focus: Organizing data & complex calculations", "type": "watch", "link": "https://www.coursera.org/learn/analyze-data"}],
+    23: [{"time": "6–7am", "task": "🎓 [IBM] Data Analysis with Python | Focus: Regression, predictive modeling & EDA", "type": "watch", "link": "https://www.coursera.org/learn/data-analysis-with-python"}],
+    
+    # ── WEEK 5: Data Storytelling (E-Commerce Phase) ──
+    29: [{"time": "6–7am", "task": "🎓 [Google] Share Data Through the Art of Viz | Focus: Tableau & Storytelling", "type": "watch", "link": "https://www.coursera.org/learn/visualize-data"}],
+    30: [{"time": "6–7am", "task": "🎓 [IBM] Data Visualization with Python | Focus: Matplotlib, Seaborn & Plotly", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-with-python"}],
+
+    # ── WEEK 6 & 7: Capstones & Portfolio ──
+    43: [{"time": "6–7am", "task": "🎓 [IBM] Data Analyst Capstone Project | Focus: End-to-end analysis & final report", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
+    44: [{"time": "6–7am", "task": "🎓 [Google] Google Data Analytics Capstone | Focus: Case studies & portfolio building", "type": "watch", "link": "https://www.coursera.org/learn/google-data-analytics-capstone"}],
 }
 
 # Inject DSA, Core and 16-Week resources into every day
