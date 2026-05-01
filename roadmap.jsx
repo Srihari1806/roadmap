@@ -15,22 +15,22 @@ const weeks = [
   {
     "week": 1,
     "label": "Phase 1",
-    "theme": "Skill Mastery & Project Build",
+    "theme": "Skill Execution",
     "color": PURPLE,
     "days": [
       {
         "day": 1,
-        "title": "Day 1: Building Depth",
+        "title": "Day 1: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/introduction-to-data-analytics"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - Language",
+            "task": "\u2694\ufe0f DSA: Basics - Language",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -42,37 +42,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Median, Mean, Mode, Percentile",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode, Percentile",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L1): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
         "day": 2,
-        "title": "Day 2: Building Depth",
+        "title": "Day 2: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - Logic Building",
+            "task": "\u2694\ufe0f DSA: Logic Building",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -84,37 +84,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Standard Deviation & MAD",
+            "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L1): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
         "day": 3,
-        "title": "Day 3: Building Depth",
+        "title": "Day 3: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - STL/Collections",
+            "task": "\u2694\ufe0f DSA: STL/Collections",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -126,37 +126,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Normal Distribution & Z Score",
+            "task": "\ud83d\udcca Math: Normal Distribution & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L1): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
         "day": 4,
-        "title": "Day 4: Building Depth",
+        "title": "Day 4: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Selection Sort",
+            "task": "\u2694\ufe0f DSA: Selection Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -168,37 +168,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L2): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
         "day": 5,
-        "title": "Day 5: Building Depth",
+        "title": "Day 5: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C5: Python Project",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-project-for-data-science"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Bubble Sort",
+            "task": "\u2694\ufe0f DSA: Bubble Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -210,37 +210,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Log Normal Distribution",
+            "task": "\ud83d\udcca Math: Log Normal Dist",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L2): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
         "day": 6,
-        "title": "Day 6: Building Depth",
+        "title": "Day 6: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/sql-data-science"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Insertion Sort",
+            "task": "\u2694\ufe0f DSA: Insertion Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -252,37 +252,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Sin/Cos/Tan Explained",
+            "task": "\ud83d\udcca Math: Cosine Similarity",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=o6nFv0UfEdI"
+            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L2): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
         "day": 7,
-        "title": "Day 7: Building Depth",
+        "title": "Day 7: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/data-analysis-with-python"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Easy Arrays",
+            "task": "\u2694\ufe0f DSA: Easy Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -294,45 +294,45 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Cosine Similarity & Distance",
+            "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L3): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       }
     ]
   },
   {
     "week": 2,
     "label": "Phase 2",
-    "theme": "Skill Mastery & Project Build",
+    "theme": "Skill Execution",
     "color": BLUE,
     "days": [
       {
         "day": 8,
-        "title": "Day 8: Building Depth",
+        "title": "Day 8: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-for-data-visualization"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Medium Arrays",
+            "task": "\u2694\ufe0f DSA: Medium Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -344,297 +344,381 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: A/B Testing Explained",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 9,
-        "title": "Day 9: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Hard Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Percentages",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Modified Z Score Outliers",
+            "task": "\ud83d\udcca Math: Outlier Detection (Z Score)",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L3): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 10,
-        "title": "Day 10: Building Depth",
+        "day": 9,
+        "title": "Day 9: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on 1D Arrays",
+            "task": "\u2694\ufe0f DSA: Hard Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Percentages",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Hypothesis Testing Fundamentals",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L3): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 11,
-        "title": "Day 11: Building Depth",
+        "day": 10,
+        "title": "Day 10: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C10: Generative AI",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on Answers",
+            "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Median, Mean, Mode, Percentile",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode, Percentile",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L4): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 12,
-        "title": "Day 12: Building Depth",
+        "day": 11,
+        "title": "Day 11: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on 2D Arrays",
+            "task": "\u2694\ufe0f DSA: BS on Answers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Standard Deviation & MAD",
+            "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L4): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 13,
-        "title": "Day 13: Building Depth",
+        "day": 12,
+        "title": "Day 12: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/introduction-to-data-analytics"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 5: Strings - Basic",
+            "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Time & Work",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Normal Distribution & Z Score",
+            "task": "\ud83d\udcca Math: Normal Distribution & Z Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L4): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 14,
-        "title": "Day 14: Building Depth",
+        "day": 13,
+        "title": "Day 13: IPL Analytics Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 5: Strings - Medium",
+            "task": "\u2694\ufe0f DSA: Strings - Basic",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Time & Distance",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 1 (IPL): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L5): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "SQL Practice on TUF: Foundations",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 14,
+        "title": "Day 14: IPL Analytics Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Strings - Medium",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Log Normal Dist",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics (L5): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master IPL Analytics SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
       }
     ]
   },
   {
     "week": 3,
     "label": "Phase 3",
-    "theme": "Skill Mastery & Project Build",
+    "theme": "Skill Execution",
     "color": PURPLE,
     "days": [
       {
         "day": 15,
-        "title": "Day 15: Building Depth",
+        "title": "Day 15: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 6: Singly LL",
+            "task": "\u2694\ufe0f DSA: Singly LL",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Cosine Similarity",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L1): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 16,
+        "title": "Day 16: OTT Dashboard Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C5: Python Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-project-for-data-science"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Doubly LL",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: A/B Testing",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L1): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 17,
+        "title": "Day 17: OTT Dashboard Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/sql-data-science"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Medium LL Problems",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -646,37 +730,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Log Normal Distribution",
+            "task": "\ud83d\udcca Math: Outlier Detection (Z Score)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
+            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L1): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 16,
-        "title": "Day 16: Building Depth",
+        "day": 18,
+        "title": "Day 18: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/data-analysis-with-python"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 6: Doubly LL",
+            "task": "\u2694\ufe0f DSA: Basic Recursion",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -688,37 +772,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Sin/Cos/Tan Explained",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=o6nFv0UfEdI"
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L2): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 17,
-        "title": "Day 17: Building Depth",
+        "day": 19,
+        "title": "Day 19: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-for-data-visualization"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 6: Medium LL Problems",
+            "task": "\u2694\ufe0f DSA: Subsets",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -730,37 +814,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Cosine Similarity & Distance",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode, Percentile",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L2): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 18,
-        "title": "Day 18: Building Depth",
+        "day": 20,
+        "title": "Day 20: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 7: Basic Recursion",
+            "task": "\u2694\ufe0f DSA: Bit Manipulation",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -772,37 +856,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: A/B Testing Explained",
+            "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L2): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 19,
-        "title": "Day 19: Building Depth",
+        "day": 21,
+        "title": "Day 21: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C10: Generative AI",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 7: Subsets/Combinations",
+            "task": "\u2694\ufe0f DSA: Stack and Queues",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -814,431 +898,515 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Modified Z Score Outliers",
+            "task": "\ud83d\udcca Math: Normal Distribution & Z Score",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L3): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 20,
-        "title": "Day 20: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 8: Bit Manipulation",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Hypothesis Testing Fundamentals",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 21,
-        "title": "Day 21: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 9: Stack and Queues",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Percentages",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Median, Mean, Mode, Percentile",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       }
     ]
   },
   {
     "week": 4,
     "label": "Phase 4",
-    "theme": "Skill Mastery & Project Build",
+    "theme": "Skill Execution",
     "color": BLUE,
     "days": [
       {
         "day": 22,
-        "title": "Day 22: Building Depth",
+        "title": "Day 22: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 10: Sliding Window",
+            "task": "\u2694\ufe0f DSA: Sliding Window",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Standard Deviation & MAD",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 23,
-        "title": "Day 23: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - Language",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Ratio & Proportion",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Normal Distribution & Z Score",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 24,
-        "title": "Day 24: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - Logic Building",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Time & Work",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L3): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 25,
-        "title": "Day 25: Building Depth",
+        "day": 23,
+        "title": "Day 23: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/introduction-to-data-analytics"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - STL/Collections",
+            "task": "\u2694\ufe0f DSA: Basics - Language",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "task": "\ud83e\udde0 Aptitude: Percentages",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Log Normal Distribution",
+            "task": "\ud83d\udcca Math: Log Normal Dist",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L3): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 26,
-        "title": "Day 26: Building Depth",
+        "day": 24,
+        "title": "Day 24: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Selection Sort",
+            "task": "\u2694\ufe0f DSA: Logic Building",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Sin/Cos/Tan Explained",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=o6nFv0UfEdI"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 27,
-        "title": "Day 27: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Bubble Sort",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Odd One Out",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Cosine Similarity & Distance",
+            "task": "\ud83d\udcca Math: Cosine Similarity",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L4): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 28,
-        "title": "Day 28: Building Depth",
+        "day": 25,
+        "title": "Day 25: OTT Dashboard Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Insertion Sort",
+            "task": "\u2694\ufe0f DSA: STL/Collections",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: A/B Testing Explained",
+            "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 2 (OTT): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L4): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Advanced SQL on TUF: Joins & CTEs",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 26,
+        "title": "Day 26: OTT Dashboard Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Selection Sort",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Time & Work",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Outlier Detection (Z Score)",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L4): GENERATE 4-5 Outputs/Insights.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 27,
+        "title": "Day 27: OTT Dashboard Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C5: Python Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-project-for-data-science"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Bubble Sort",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Time & Distance",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L5): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 28,
+        "title": "Day 28: OTT Dashboard Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/sql-data-science"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Insertion Sort",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode, Percentile",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard (L5): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master OTT Dashboard SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
       }
     ]
   },
   {
     "week": 5,
     "label": "Phase 5",
-    "theme": "Skill Mastery & Project Build",
+    "theme": "Skill Execution",
     "color": PURPLE,
     "days": [
       {
         "day": 29,
-        "title": "Day 29: Building Depth",
+        "title": "Day 29: E-com Platform Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/data-analysis-with-python"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Easy Arrays",
+            "task": "\u2694\ufe0f DSA: Easy Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L1): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 30,
+        "title": "Day 30: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-data-visualization"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Medium Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Normal Distribution & Z Score",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L1): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 31,
+        "title": "Day 31: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Hard Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Odd One Out",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L1): GENERATE 4-5 Outputs/Insights.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 32,
+        "title": "Day 32: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C10: Generative AI",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Log Normal Dist",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L2): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 33,
+        "title": "Day 33: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: BS on Answers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -1250,36 +1418,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Modified Z Score Outliers",
+            "task": "\ud83d\udcca Math: Cosine Similarity",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
+            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L2): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 30,
-        "title": "Day 30: Building Depth",
+        "day": 34,
+        "title": "Day 34: E-com Platform Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/introduction-to-data-analytics"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Medium Arrays",
+            "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -1291,36 +1460,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Hypothesis Testing Fundamentals",
+            "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L2): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 31,
-        "title": "Day 31: Building Depth",
+        "day": 35,
+        "title": "Day 35: E-com Platform Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Hard Arrays",
+            "task": "\u2694\ufe0f DSA: Strings - Basic",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -1332,749 +1502,347 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Median, Mean, Mode, Percentile",
+            "task": "\ud83d\udcca Math: Outlier Detection (Z Score)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
+            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L3): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 32,
-        "title": "Day 32: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on 1D Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Standard Deviation & MAD",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 33,
-        "title": "Day 33: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on Answers",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Percentages",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Normal Distribution & Z Score",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 34,
-        "title": "Day 34: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on 2D Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Profit & Loss",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Logarithm Basics",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 35,
-        "title": "Day 35: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 5: Strings - Basic",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Ratio & Proportion",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Log Normal Distribution",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       }
     ]
   },
   {
     "week": 6,
     "label": "Phase 6",
-    "theme": "Skill Mastery & Project Build",
+    "theme": "Skill Execution",
     "color": BLUE,
     "days": [
       {
         "day": 36,
-        "title": "Day 36: Building Depth",
+        "title": "Day 36: E-com Platform Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 5: Strings - Medium",
+            "task": "\u2694\ufe0f DSA: Strings - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Sin/Cos/Tan Explained",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=o6nFv0UfEdI"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 37,
-        "title": "Day 37: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 6: Singly LL",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Number Series",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Cosine Similarity & Distance",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 38,
-        "title": "Day 38: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 6: Doubly LL",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: A/B Testing Explained",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 39,
-        "title": "Day 39: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 6: Medium LL Problems",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Odd One Out",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Modified Z Score Outliers",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 40,
-        "title": "Day 40: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 7: Basic Recursion",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Hypothesis Testing Fundamentals",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L3): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 41,
-        "title": "Day 41: Building Depth",
+        "day": 37,
+        "title": "Day 37: E-com Platform Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 7: Subsets/Combinations",
+            "task": "\u2694\ufe0f DSA: Singly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: Percentages",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Median, Mean, Mode, Percentile",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode, Percentile",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L3): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 42,
-        "title": "Day 42: Building Depth",
+        "day": 38,
+        "title": "Day 38: E-com Platform Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C5: Python Project",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-project-for-data-science"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 8: Bit Manipulation",
+            "task": "\u2694\ufe0f DSA: Doubly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
           {
             "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Standard Deviation & MAD",
+            "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L4): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 39,
+        "title": "Day 39: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/sql-data-science"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Medium LL Problems",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Normal Distribution & Z Score",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L4): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 40,
+        "title": "Day 40: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Basic Recursion",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Time & Work",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L4): GENERATE 4-5 Outputs/Insights.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 41,
+        "title": "Day 41: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-data-visualization"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Subsets",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Time & Distance",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Log Normal Dist",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L5): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 42,
+        "title": "Day 42: E-com Platform Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Bit Manipulation",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Cosine Similarity",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform (L5): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master E-com Platform SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
       }
     ]
   },
   {
     "week": 7,
     "label": "Phase 7",
-    "theme": "Skill Mastery & Project Build",
+    "theme": "Skill Execution",
     "color": PURPLE,
     "days": [
       {
         "day": 43,
-        "title": "Day 43: Building Depth",
+        "title": "Day 43: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C10: Generative AI",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 9: Stack and Queues",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Syllogism",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Normal Distribution & Z Score",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 44,
-        "title": "Day 44: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 10: Sliding Window",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Seating Arrangement",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Logarithm Basics",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 45,
-        "title": "Day 45: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - Language",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Percentages",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Log Normal Distribution",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 46,
-        "title": "Day 46: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - Logic Building",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Profit & Loss",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Sin/Cos/Tan Explained",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=o6nFv0UfEdI"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 47,
-        "title": "Day 47: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 1: Basics - STL/Collections",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Ratio & Proportion",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Cosine Similarity & Distance",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 48,
-        "title": "Day 48: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Selection Sort",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
-          },
-          {
-            "time": "8\u20139am",
-            "task": "\ud83e\udde0 Aptitude: Arithmetic: Time & Work",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: A/B Testing Explained",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
-          },
-          {
-            "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
-            "type": "project"
-          },
-          {
-            "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
-          }
-        ],
-        "outcome": "Daily tracks and project layer completed."
-      },
-      {
-        "day": 49,
-        "title": "Day 49: Building Depth",
-        "tasks": [
-          {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
-            "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
-          },
-          {
-            "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Bubble Sort",
+            "task": "\u2694\ufe0f DSA: Stack and Queues",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2086,44 +1854,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Modified Z Score Outliers",
+            "task": "\ud83d\udcca Math: A/B Testing",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L1): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
-      }
-    ]
-  },
-  {
-    "week": 8,
-    "label": "Phase 8",
-    "theme": "Skill Mastery & Project Build",
-    "color": BLUE,
-    "days": [
+        "outcome": "Track mastery and layered project build."
+      },
       {
-        "day": 50,
-        "title": "Day 50: Building Depth",
+        "day": 44,
+        "title": "Day 44: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 2: Insertion Sort",
+            "task": "\u2694\ufe0f DSA: Sliding Window",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2135,36 +1896,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Hypothesis Testing Fundamentals",
+            "task": "\ud83d\udcca Math: Outlier Detection (Z Score)",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
+            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L1): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 51,
-        "title": "Day 51: Building Depth",
+        "day": 45,
+        "title": "Day 45: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/introduction-to-data-analytics"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Easy Arrays",
+            "task": "\u2694\ufe0f DSA: Basics - Language",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2176,36 +1938,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Median, Mean, Mode, Percentile",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L1): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 52,
-        "title": "Day 52: Building Depth",
+        "day": 46,
+        "title": "Day 46: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Medium Arrays",
+            "task": "\u2694\ufe0f DSA: Logic Building",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2217,36 +1980,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Standard Deviation & MAD",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode, Percentile",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L2): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 53,
-        "title": "Day 53: Building Depth",
+        "day": 47,
+        "title": "Day 47: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 3: Hard Arrays",
+            "task": "\u2694\ufe0f DSA: STL/Collections",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2258,36 +2022,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Normal Distribution & Z Score",
+            "task": "\ud83d\udcca Math: Std Deviation & MAD",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L2): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 54,
-        "title": "Day 54: Building Depth",
+        "day": 48,
+        "title": "Day 48: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on 1D Arrays",
+            "task": "\u2694\ufe0f DSA: Selection Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2299,36 +2064,37 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Logarithm Basics",
+            "task": "\ud83d\udcca Math: Normal Distribution & Z Score",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L2): GENERATE 4-5 Outputs/Insights.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
       },
       {
-        "day": 55,
-        "title": "Day 55: Building Depth",
+        "day": 49,
+        "title": "Day 49: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C5: Python Project",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/python-project-for-data-science"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on Answers",
+            "task": "\u2694\ufe0f DSA: Bubble Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2340,36 +2106,45 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Log Normal Distribution",
+            "task": "\ud83d\udcca Math: Logarithm Basics",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L3): ANALYSE 4-5 business statements.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
-      },
+        "outcome": "Track mastery and layered project build."
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "label": "Phase 8",
+    "theme": "Skill Execution",
+    "color": BLUE,
+    "days": [
       {
-        "day": 56,
-        "title": "Day 56: Building Depth",
+        "day": 50,
+        "title": "Day 50: Financial Insights Sprints",
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 IBM Cert: Module Mastery",
+            "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
-            "link": "https://www.coursera.org/professional-certificates/ibm-data-analyst"
+            "link": "https://www.coursera.org/learn/sql-data-science"
           },
           {
             "time": "7\u20138am",
-            "task": "\u2694\ufe0f DSA: Step 4: BS on 2D Arrays",
+            "task": "\u2694\ufe0f DSA: Insertion Sort",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
           },
@@ -2381,26 +2156,457 @@ const weeks = [
           },
           {
             "time": "9\u201310am",
-            "task": "\ud83d\udcca Math/Stats: Sin/Cos/Tan Explained",
+            "task": "\ud83d\udcca Math: Log Normal Dist",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=o6nFv0UfEdI"
+            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
           },
           {
             "time": "10am\u20131pm",
-            "task": "Project 3 (E-com): Layered Build - solve 10 business statements.",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L3): BUILD 4-5 Metrics/KPIs.",
             "type": "project"
           },
           {
             "time": "2\u20135pm",
-            "task": "Portfolio & Resume Build on GitHub",
-            "type": "portfolio"
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
           }
         ],
-        "outcome": "Daily tracks and project layer completed."
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 51,
+        "title": "Day 51: Financial Insights Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Easy Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Percentages",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Cosine Similarity",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L3): GENERATE 4-5 Outputs/Insights.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 52,
+        "title": "Day 52: Financial Insights Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-data-visualization"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Medium Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Profit & Loss",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: A/B Testing",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L4): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 53,
+        "title": "Day 53: Financial Insights Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Hard Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Ratio & Proportion",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Outlier Detection (Z Score)",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=m7KWxX23zCU"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L4): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 54,
+        "title": "Day 54: Financial Insights Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C10: Generative AI",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: BS on 1D Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Time & Work",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L4): GENERATE 4-5 Outputs/Insights.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 55,
+        "title": "Day 55: Financial Insights Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: BS on Answers",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Time & Distance",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode, Percentile",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L5): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 56,
+        "title": "Day 56: Financial Insights Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/introduction-to-data-analytics"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: BS on 2D Arrays",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Data Interpretation",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Std Deviation & MAD",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Financial Insights (L5): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Financial Insights SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "label": "Phase 9",
+    "theme": "Skill Execution",
+    "color": PURPLE,
+    "days": [
+      {
+        "day": 57,
+        "title": "Day 57: Final Portfolio Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C2: Excel Basics",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Strings - Basic",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Number Series",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Normal Distribution & Z Score",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Final Portfolio (L1): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Final Portfolio SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 58,
+        "title": "Day 58: Final Portfolio Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Strings - Medium",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Missing Numbers",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Logarithm Basics",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Final Portfolio (L1): BUILD 4-5 Metrics/KPIs.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Final Portfolio SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 59,
+        "title": "Day 59: Final Portfolio Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Singly LL",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Odd One Out",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Log Normal Dist",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=xtTX69JZ92w"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Final Portfolio (L1): GENERATE 4-5 Outputs/Insights.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Final Portfolio SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
+      },
+      {
+        "day": 60,
+        "title": "Day 60: Final Portfolio Sprints",
+        "tasks": [
+          {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM: C5: Python Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-project-for-data-science"
+          },
+          {
+            "time": "7\u20138am",
+            "task": "\u2694\ufe0f DSA: Doubly LL",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z"
+          },
+          {
+            "time": "8\u20139am",
+            "task": "\ud83e\udde0 Aptitude: Coding-Decoding",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open"
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\ud83d\udcca Math: Cosine Similarity",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=m_CooIRM3UI"
+          },
+          {
+            "time": "10am\u20131pm",
+            "task": "\ud83c\udfd7\ufe0f Final Portfolio (L2): ANALYSE 4-5 business statements.",
+            "type": "project"
+          },
+          {
+            "time": "2\u20135pm",
+            "task": "\ud83d\udee0\ufe0f Technical: Master Final Portfolio SQL/BI patterns.",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering"
+          }
+        ],
+        "outcome": "Track mastery and layered project build."
       }
     ]
   }
 ];
+
+
 
 
 
