@@ -831,6 +831,34 @@ if start_idx != -1 and end_idx != -1:
     
     with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\roadmap.jsx', 'w', encoding='utf-8') as f:
         f.write(new_content)
-    print("Successfully updated roadmap.jsx with Roadmap.sh integrated curriculum!")
+    print("Successfully updated roadmap.jsx!")
 else:
-    print("Failed to find boundaries.")
+    print("Failed to find boundaries in roadmap.jsx.")
+
+# --- ALSO UPDATE index.html (Standalone for GitHub Pages) ---
+with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\index.html', 'r', encoding='utf-8') as f:
+    html_content = f.read()
+
+# Find "const weeks = [" and the end of the array before "const finalChecklist ="
+start_marker = "const weeks = ["
+end_marker = "const finalChecklist ="
+
+start_idx = html_content.find(start_marker)
+next_marker_idx = html_content.find(end_marker)
+
+if start_idx != -1 and next_marker_idx != -1:
+    # Find the precise end of the weeks array (the last ]; before next marker)
+    end_array_idx = html_content.rfind("];", start_idx, next_marker_idx) + 2
+    
+    before = html_content[:start_idx]
+    after = html_content[end_array_idx:]
+    
+    # In index.html, we don't need "const weeks = " prefix if we replace the whole assignment
+    # But for simplicity, we'll use the same weeks_js string and handle the "const weeks =" part
+    new_html_content = before + weeks_js + "\n\n" + after
+    
+    with open('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\index.html', 'w', encoding='utf-8') as f:
+        f.write(new_html_content)
+    print("Successfully updated index.html for GitHub Pages!")
+else:
+    print("Failed to find boundaries in index.html.")
