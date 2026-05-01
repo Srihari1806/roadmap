@@ -150,5 +150,20 @@ def update_file(path):
     with open(path, 'w', encoding='utf-8') as f: f.write(content)
     print(f"Updated {os.path.basename(path)}")
 
-update_file('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\roadmap.jsx')
-update_file('c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\index.html')
+# 1. Update the local React file with new data
+jsx_path = 'c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\roadmap.jsx'
+update_file(jsx_path)
+
+# 2. Sync the complete React logic into index.html so the deployed site works
+html_path = 'c:\\\\Users\\\\KIIT0001\\\\Downloads\\\\PERSONAL PROJECTS\\\\ROADMAP\\\\index.html'
+if os.path.exists(jsx_path) and os.path.exists(html_path):
+    with open(jsx_path, 'r', encoding='utf-8') as f: jsx_content = f.read()
+    with open(html_path, 'r', encoding='utf-8') as f: html_content = f.read()
+    
+    s_idx = html_content.find('<script type="text/babel">')
+    e_idx = html_content.find('</script>', s_idx)
+    
+    if s_idx != -1 and e_idx != -1:
+        new_html = html_content[:s_idx + 26] + '\\n' + jsx_content + '\\n' + html_content[e_idx:]
+        with open(html_path, 'w', encoding='utf-8') as f: f.write(new_html)
+        print(f"Synced roadmap.jsx logic into index.html")
