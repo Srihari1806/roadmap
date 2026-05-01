@@ -30,7 +30,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 1 - Basics (C++, Java, Python)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -72,7 +73,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 1 - Logic Building",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -82,7 +84,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Learn Excel Basics: Data entry, formatting, basic formulas (SUM, AVERAGE, COUNT).",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "11am\u20131pm",
@@ -102,7 +105,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Save Excel workbook as 'Day2_Excel_Advanced.xlsx'.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           }
         ],
         "outcome": "Mastery of essential and advanced Excel formulas.",
@@ -120,12 +124,14 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 2 - Sorting Techniques (Bubble, Selection)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C2: Excel Formulas (VLOOKUP, INDEX-MATCH)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "9\u201311am",
@@ -145,12 +151,14 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Practice: Build a dynamic Excel dashboard using Pivot Charts and Slicers.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "5\u20136pm",
             "task": "Push dashboard screenshots to GitHub. Roadmap.sh Excel section complete.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           }
         ],
         "outcome": "Can build dynamic dashboards and clean data inside Excel.",
@@ -162,12 +170,14 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 2 - Sorting (Merge, Quick)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C2: Data Cleaning in Excel (Power Query)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "9\u201311am",
@@ -210,7 +220,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 3 - Arrays (Easy Problems)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -252,7 +263,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 3 - Arrays (Medium Problems)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -294,22 +306,26 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 3 - Arrays (Hard Problems)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C3: Data Viz Principles in Excel",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "9\u201311am",
             "task": "Review Math, Excel, and SQL notes. Identify any weak points.",
-            "type": "review"
+            "type": "review",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "11am\u20131pm",
             "task": "Mini-Project: Export an SQL query result to CSV, import to Excel, use Power Query to clean.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "2\u20134pm",
@@ -319,12 +335,14 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Write LinkedIn post: 'Week 1 of Data Analyst Roadmap: Mastered Excel & SQL'.",
-            "type": "content"
+            "type": "content",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "5\u20136pm",
             "task": "Rest and prepare for Week 2 (BI & Python).",
-            "type": "reflect"
+            "type": "reflect",
+            "link": "https://www.python.org/"
           }
         ],
         "outcome": "Successfully integrated SQL extraction with Excel visualization.",
@@ -350,7 +368,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 4 - Binary Search (1D Arrays)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -392,7 +411,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 4 - Binary Search (2D Arrays)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -402,7 +422,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Install Power BI Desktop. Learn to connect data sources (Excel, CSV, SQL).",
-            "type": "setup"
+            "type": "setup",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "11am\u20131pm",
@@ -412,7 +433,8 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Learn Power Query in Power BI: Transforming data, changing types, appending queries.",
-            "type": "learn"
+            "type": "learn",
+            "link": "https://powerbi.microsoft.com/"
           },
           {
             "time": "4\u20135pm",
@@ -434,7 +456,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 4 - BS on Search Space",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -464,7 +487,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Roadmap.sh BI Tools section complete. Publish to Power BI service (optional).",
-            "type": "output"
+            "type": "output",
+            "link": "https://powerbi.microsoft.com/"
           }
         ],
         "outcome": "Mastered DAX and interactive dashboard creation in Power BI.",
@@ -482,7 +506,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 5 - Strings (Basic)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -492,7 +517,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Install VS Code, Python, Jupyter. Learn Variables, Data Types, Operators.",
-            "type": "setup"
+            "type": "setup",
+            "link": "https://www.python.org/"
           },
           {
             "time": "11am\u20131pm",
@@ -512,7 +538,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Practice: Write 5 small Python scripts (e.g., calculator, palindrome checker).",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.python.org/"
           }
         ],
         "outcome": "Solid grasp of Python programming fundamentals.",
@@ -524,7 +551,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 5 - Strings (Medium)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -554,7 +582,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Practice: Perform basic EDA on a Kaggle dataset using Pandas.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets"
           }
         ],
         "outcome": "Can clean and manipulate tabular data using Pandas.",
@@ -566,7 +595,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 6 - LinkedList (Single LL)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -586,7 +616,8 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Practice: Recreate the Data Viz principles you learned on Day 8 using Python.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.python.org/"
           },
           {
             "time": "4\u20135pm",
@@ -608,7 +639,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 6 - LinkedList (Double LL)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -618,17 +650,20 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Review Power BI and Python notes. You are now officially 'Analyst Ready'.",
-            "type": "review"
+            "type": "review",
+            "link": "https://powerbi.microsoft.com/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Download IPL Dataset for Week 3. Do a quick 30-min EDA in Pandas to warm up.",
-            "type": "data"
+            "type": "data",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "2\u20134pm",
             "task": "Set up GitHub repositories for the 3 main projects (IPL, OTT, E-commerce).",
-            "type": "setup"
+            "type": "setup",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "4\u20135pm",
@@ -664,12 +699,14 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 6 - LinkedList (Medium & Hard)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C4: Python Data Types & Control Flow",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.python.org/"
           },
           {
             "time": "9\u201311am",
@@ -701,7 +738,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 7 - Recursion (PatternWise)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -738,7 +776,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 7 - Recursion (Hard)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -781,7 +820,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 8 - Bit Manipulation (Concepts)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -791,7 +831,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Macro Analysis: IPL vs Movie industry revenue. Impact on OTT release calendars.",
-            "type": "research"
+            "type": "research",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "11am\u20131pm",
@@ -818,7 +859,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 8 - Bit Manipulation (Problems)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -861,7 +903,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 9 - Stack & Queues (Learning)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -876,7 +919,8 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Power BI / Tableau: Build interactive filters for Seasons, Teams, and Players.",
-            "type": "build"
+            "type": "build",
+            "link": "https://powerbi.microsoft.com/"
           },
           {
             "time": "2\u20134pm",
@@ -886,7 +930,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Live Interactive IPL Dashboard (The Mini-Cricbuzz + Consulting Hub).",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           }
         ],
         "outcome": "Project 1 Technical Build Complete. Dashboard is functional.",
@@ -898,32 +943,38 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 9 - Stack & Queues (Pre-In-Post-fix)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C5: Project: Analyzing Stock/IPL Data",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "9\u201311am",
             "task": "Write Deep Report: 15-page PDF covering all 9 layers of IPL Ecosystem.",
-            "type": "write"
+            "type": "write",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "11am\u20131pm",
             "task": "LinkedIn Content: Build 'IPL is not Cricket, it's a Product' carousel.",
-            "type": "content"
+            "type": "content",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "2\u20134pm",
             "task": "Portfolio Update: Add IPL project case study with interactive links.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "4\u20136pm",
             "task": "Setup OTT Project: Download IMDB + Box Office + Hotstar datasets.",
-            "type": "setup"
+            "type": "setup",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           }
         ],
         "outcome": "IPL Project officially published. Ready for Movie Intelligence week.",
@@ -949,12 +1000,14 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 9 - Monotonic Stack",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: TUF SQL: SELECT, WHERE, ORDER BY",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
@@ -964,12 +1017,14 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Analysis: Pan-India vs Local box office trends. Completion Rate proxy on OTT.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "2\u20134pm",
             "task": "Insight: Identify content types that 'Win Theatre' vs 'Thrive on OTT'.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "4\u20136pm",
@@ -986,12 +1041,14 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 10 - Sliding Window (Fixed)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: TUF SQL: Joins (Inner, Left, Right, Full)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
@@ -1023,12 +1080,14 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 10 - Sliding Window (Variable)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: TUF SQL: Aggregations & Group By",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/sql/sql-index/"
           },
           {
             "time": "9\u201311am",
@@ -1066,12 +1125,14 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 11 - Heaps (Learning & Medium)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C6: SQL for Data Science w/ Python",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.python.org/"
           },
           {
             "time": "9\u201311am",
@@ -1081,12 +1142,14 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Drop-off Analysis: Identify high-friction points in theatre booking vs OTT subscription.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "2\u20134pm",
             "task": "Lifecycle Analysis: Theatre-to-OTT release window shrinkage (2019 vs 2024).",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "4\u20136pm",
@@ -1103,7 +1166,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 11 - Heaps (Hard Problems)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1113,7 +1177,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "COVID Timeline: Before (Theatre) vs During (OTT Boom) vs After (Hybrid Recovery).",
-            "type": "research"
+            "type": "research",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "11am\u20131pm",
@@ -1140,7 +1205,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 12 - Greedy Algorithms (Easy)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1155,7 +1221,8 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Tableau Dashboard: Build side-by-side comparison of OTT vs Theatre metrics.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "2\u20134pm",
@@ -1165,7 +1232,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Live Tableau Dashboard covering all 8 layers of Movie Intelligence.",
-            "type": "output"
+            "type": "output",
+            "link": "https://public.tableau.com/s/"
           }
         ],
         "outcome": "Project 2 Technical Build Complete. Comparative dashboard live.",
@@ -1177,7 +1245,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 12 - Greedy Algorithms (Medium/Hard)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1187,7 +1256,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Write Deep Report: 10-page 'Consulting-Style' PDF on OTT vs Theatre Ecosystem.",
-            "type": "write"
+            "type": "write",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "11am\u20131pm",
@@ -1197,7 +1267,8 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Portfolio Update: Integrate OTT dashboard and report into main site.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "4\u20136pm",
@@ -1228,7 +1299,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 13 - Binary Trees (Traversals)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1265,7 +1337,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 13 - Binary Trees (Medium/Hard)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1302,7 +1375,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 14 - Binary Search Trees (Concepts)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1345,7 +1419,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 14 - Binary Search Trees (Problems)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1382,7 +1457,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 15 - Graphs (Concepts)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1419,7 +1495,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 15 - Graphs (BFS/DFS Problems)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1434,7 +1511,8 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Power BI: Build 'Growth & Conversion' dashboard with ROAS/CAC interactive tracking.",
-            "type": "build"
+            "type": "build",
+            "link": "https://powerbi.microsoft.com/"
           },
           {
             "time": "2\u20134pm",
@@ -1444,7 +1522,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Final Interactive E-Commerce & Ads Growth Dashboard.",
-            "type": "output"
+            "type": "output",
+            "link": "https://www.kaggle.com/datasets/carrie1/ecommerce-data"
           }
         ],
         "outcome": "Project 3 Technical Build Complete. Growth suite live.",
@@ -1456,7 +1535,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 15 - Graphs (Shortest Path/MST)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1466,12 +1546,14 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Write Deep Report: 15-page PDF on 'The Future of Indian E-Commerce & Ads'.",
-            "type": "write"
+            "type": "write",
+            "link": "https://www.kaggle.com/datasets/carrie1/ecommerce-data"
           },
           {
             "time": "11am\u20131pm",
             "task": "Meta Insight: 'E-commerce is the control of Attention and Logistics'.",
-            "type": "content"
+            "type": "content",
+            "link": "https://www.kaggle.com/datasets/carrie1/ecommerce-data"
           },
           {
             "time": "2\u20134pm",
@@ -1507,7 +1589,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 16 - DP (1D & 2D)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1549,7 +1632,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 16 - DP (Strings & Subsequences)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1591,7 +1675,8 @@ const weeks = [
           {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 17 - Tries",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
           },
           {
             "time": "8\u20139am",
@@ -1606,12 +1691,14 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Build Skills Section: Interactive progress bars for SQL, Python, Power BI.",
-            "type": "build"
+            "type": "build",
+            "link": "https://powerbi.microsoft.com/"
           },
           {
             "time": "2\u20134pm",
             "task": "Build Projects Grid: Cards for IPL, OTT, E-commerce with glassmorphism.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "4\u20135pm",
@@ -1643,7 +1730,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Integrate Dashboards: Embed or link Streamlit/Tableau/Power BI dashboards.",
-            "type": "build"
+            "type": "build",
+            "link": "https://powerbi.microsoft.com/"
           },
           {
             "time": "11am\u20131pm",
@@ -1706,7 +1794,8 @@ const weeks = [
           {
             "time": "4\u20135pm",
             "task": "Pin Portfolio URL, IPL Dashboard, and E-commerce report to Featured section.",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "5\u20136pm",
@@ -1738,17 +1827,20 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Version 1 (Data Analyst): Highlight SQL, Python, Power BI, IPL.",
-            "type": "write"
+            "type": "write",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "2\u20134pm",
             "task": "Version 2 (Product Analyst): Highlight Funnel analysis, OTT metrics, E-commerce psychology.",
-            "type": "write"
+            "type": "write",
+            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
           },
           {
             "time": "4\u20135pm",
             "task": "Create master Job Tracker sheet in Excel (Company, Role, Status, Follow-up).",
-            "type": "plan"
+            "type": "plan",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "5\u20136pm",
@@ -2010,17 +2102,20 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Practice: Python Pandas \u2014 solve 5 business questions on a new dataset in 1 hour.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.python.org/"
           },
           {
             "time": "2\u20134pm",
             "task": "Practice: Excel/Power BI \u2014 build a rapid pivot/DAX report in 30 mins.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice verbal pitch: 'Walk me through your IPL/E-commerce project'.",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "5\u20136pm",
@@ -2084,7 +2179,8 @@ const weeks = [
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C10: Prompt Engineering for Python Code",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.python.org/"
           },
           {
             "time": "9\u201311am",
@@ -2139,7 +2235,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Download Pro Kabaddi League (PKL) dataset from Kaggle.",
-            "type": "data"
+            "type": "data",
+            "link": "https://www.kaggle.com/datasets"
           },
           {
             "time": "11am\u20131pm",
@@ -2149,12 +2246,14 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Build Player value vs contract analysis (apply IPL logic to PKL).",
-            "type": "build"
+            "type": "build",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "4\u20135pm",
             "task": "Create a quick 1-page report or 1-page Power BI dashboard.",
-            "type": "build"
+            "type": "build",
+            "link": "https://powerbi.microsoft.com/"
           },
           {
             "time": "5\u20136pm",
@@ -2234,7 +2333,8 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Create 1 Instagram/LinkedIn Carousel: '5 things I learned analyzing IPL'.",
-            "type": "design"
+            "type": "design",
+            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
           },
           {
             "time": "2\u20134pm",
@@ -2266,12 +2366,14 @@ const weeks = [
           {
             "time": "8\u20139am",
             "task": "Takeuforward Core: IBM C11: Technical Interview Prep (SQL/Python)",
-            "type": "practice"
+            "type": "practice",
+            "link": "https://www.python.org/"
           },
           {
             "time": "9\u201311am",
             "task": "Targeted applications: Find 5 roles requiring specific skills you have (e.g., Tableau + Python).",
-            "type": "apply"
+            "type": "apply",
+            "link": "https://public.tableau.com/s/"
           },
           {
             "time": "11am\u20131pm",
@@ -2291,7 +2393,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Update Excel tracker.",
-            "type": "track"
+            "type": "track",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/excel"
           }
         ],
         "outcome": "High-quality, tailored applications submitted.",

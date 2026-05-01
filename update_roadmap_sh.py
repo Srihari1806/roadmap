@@ -790,6 +790,33 @@ resource_tasks_by_day = {
     56: [{"time": "6–7am", "task": "🎓 IBM Course 11: Interview Prep | Focus: Technical & behavioral mock Qs", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"}],
 }
 
+# ─────────────────────────────────────────────────────────────────
+# RESOURCE LINK MAPPING (FOR UNIVERSAL REDIRECTS)
+# ─────────────────────────────────────────────────────────────────
+resource_links = {
+    "A2Z:": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
+    "TUF SQL:": "https://takeuforward.org/sql/sql-index/",
+    "IPL": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset",
+    "OTT": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies",
+    "E-commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
+    "E-Commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
+    "HackerRank SQL": "https://www.hackerrank.com/domains/sql",
+    "Leetcode SQL": "https://leetcode.com/problemset/database/",
+    "Excel": "https://www.microsoft.com/en-us/microsoft-365/excel",
+    "Power BI": "https://powerbi.microsoft.com/",
+    "Tableau": "https://public.tableau.com/s/",
+    "Python": "https://www.python.org/",
+    "Kaggle": "https://www.kaggle.com/datasets",
+}
+
+def attach_link(task_obj):
+    if "link" in task_obj: return # Don't overwrite existing links (like IBM)
+    task_text = task_obj.get("task", "")
+    for key, link in resource_links.items():
+        if key in task_text:
+            task_obj["link"] = link
+            break
+
 # Inject DSA, Core and 16-Week resources into every day
 day_counter = 0
 for week in weeks_data:
@@ -798,9 +825,15 @@ for week in weeks_data:
         core = tuf_core_topics[day_counter % len(tuf_core_topics)]
         day['day'] = day_counter + 1
 
-        # Prepend the DSA/Aptitude tasks to the tasks list
+        # Create tasks
         dsa_task = {"time": "7–8am", "task": f"Takeuforward DSA: {dsa}", "type": "practice"}
         apt_task = {"time": "8–9am", "task": f"Takeuforward Core: {core}", "type": "practice"}
+        
+        # Attach links to injected tasks
+        attach_link(dsa_task)
+        attach_link(apt_task)
+
+        # Prepend the DSA/Aptitude tasks to the tasks list
         day['tasks'].insert(0, apt_task)
         day['tasks'].insert(0, dsa_task)
 
@@ -809,6 +842,10 @@ for week in weeks_data:
         if day_num in resource_tasks_by_day:
             for res in reversed(resource_tasks_by_day[day_num]):
                 day['tasks'].insert(0, res)
+
+        # FINAL PASS: Attach links to ALL tasks (including original ones in weeks_data)
+        for task in day['tasks']:
+            attach_link(task)
 
         day_counter += 1
 
