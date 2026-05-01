@@ -23,9 +23,9 @@ const weeks = [
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 [Google] Foundations: Data, Data, Everywhere | Focus: The 6-Step Data Analysis Process",
+            "task": "\ud83c\udf93 IBM Course 1: Introduction to Data Analytics | Focus: Data ecosystem & analysts lifecycle",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/foundations-data"
+            "link": "https://www.coursera.org/learn/introduction-to-data-analytics"
           },
           {
             "time": "7\u20138am",
@@ -34,7 +34,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 2: Excel Functions & Data Cleaning",
+            "task": "Takeuforward Core: IBM C1: Data Ecosystem & Analyst Lifecycle",
             "type": "practice"
           },
           {
@@ -70,19 +70,13 @@ const weeks = [
         "title": "Excel Advanced Part 1",
         "tasks": [
           {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 [IBM] Excel Basics for Data Analysis | Focus: Formulas, cell referencing, data cleaning",
-            "type": "watch",
-            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
-          },
-          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 1 - Logic Building",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 2: Advanced Excel (VLOOKUP, INDEX-MATCH)",
+            "task": "Takeuforward Core: IBM C1: Data Gathering & Mining Basics",
             "type": "practice"
           },
           {
@@ -119,9 +113,9 @@ const weeks = [
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 [Google] Ask Questions to Make Data-Driven Decisions | Focus: Structured thinking & SMART questions",
+            "task": "\ud83c\udf93 IBM Course 2: Excel Basics for Data Analysis | Focus: Data cleaning & basic formulas",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/ask-questions-make-decisions"
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
           },
           {
             "time": "7\u20138am",
@@ -130,7 +124,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 2: Asking Effective Questions (S.M.A.R.T)",
+            "task": "Takeuforward Core: IBM C2: Excel Formulas (VLOOKUP, INDEX-MATCH)",
             "type": "practice"
           },
           {
@@ -172,7 +166,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 3: Data Integrity & Cleanliness",
+            "task": "Takeuforward Core: IBM C2: Data Cleaning in Excel (Power Query)",
             "type": "practice"
           },
           {
@@ -208,13 +202,19 @@ const weeks = [
         "title": "SQL Part 2: Joins & Relations",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 2: Excel Advanced | Focus: VLOOKUP, INDEX-MATCH & Pivot Tables",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/excel-basics-data-analysis"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 3 - Arrays (Easy Problems)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 3: Data Viz & Dashboards with Excel",
+            "task": "Takeuforward Core: IBM C2: Pivot Tables & Data Summarization",
             "type": "practice"
           },
           {
@@ -256,7 +256,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 3: Intro to IBM Cognos Dashboards",
+            "task": "Takeuforward Core: IBM C2: Quality Assurance & Ethics",
             "type": "practice"
           },
           {
@@ -298,7 +298,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 3: Managing Data Security & Ethics",
+            "task": "Takeuforward Core: IBM C3: Data Viz Principles in Excel",
             "type": "practice"
           },
           {
@@ -343,9 +343,9 @@ const weeks = [
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 [Google] Prepare Data for Exploration | Focus: Data types, storage, and ethics",
+            "task": "\ud83c\udf93 IBM Course 3: Data Viz with Excel & Cognos | Focus: Interactive dashboards",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/data-preparation"
+            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
           },
           {
             "time": "7\u20138am",
@@ -354,7 +354,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 1: The 6-Step Data Process (Ask-Act)",
+            "task": "Takeuforward Core: IBM C3: Building Dashboards with Cognos",
             "type": "practice"
           },
           {
@@ -390,19 +390,13 @@ const weeks = [
         "title": "Power BI Part 1",
         "tasks": [
           {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 [IBM] Data Viz & Dashboards with Excel/Cognos | Focus: Pivot charts & Cognos intro",
-            "type": "watch",
-            "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"
-          },
-          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 4 - Binary Search (2D Arrays)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 2: Power Query for Automated Cleaning",
+            "task": "Takeuforward Core: IBM C3: Cognos: AI Assistant & Storytelling",
             "type": "practice"
           },
           {
@@ -438,19 +432,13 @@ const weeks = [
         "title": "Power BI Part 2 (DAX)",
         "tasks": [
           {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 [Google] Process Data from Dirty to Clean | Focus: SQL cleaning & data integrity",
-            "type": "watch",
-            "link": "https://www.coursera.org/learn/process-data"
-          },
-          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 4 - BS on Search Space",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 2: Pivot Table Analysis & Slicers",
+            "task": "Takeuforward Core: IBM C3: Case Study - Marketing Analysis",
             "type": "practice"
           },
           {
@@ -486,13 +474,19 @@ const weeks = [
         "title": "Python Basics",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 4: Python for Data Science | Focus: Python types, loops & functions",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 5 - Strings (Basic)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 3: SQL for Data Preparation",
+            "task": "Takeuforward Core: IBM C2: Logic Functions (IF/AND/OR/XOR)",
             "type": "practice"
           },
           {
@@ -534,7 +528,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 3: Building Interactive Reports",
+            "task": "Takeuforward Core: IBM C3: Interactive Dashboards & Slicers",
             "type": "practice"
           },
           {
@@ -576,7 +570,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 3: Data Storytelling with Cognos",
+            "task": "Takeuforward Core: IBM C3: Exporting & Sharing Insights",
             "type": "practice"
           },
           {
@@ -618,7 +612,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 4: Handling Biased Data",
+            "task": "Takeuforward Core: Foundations: The 6-Step Data Process",
             "type": "practice"
           },
           {
@@ -663,7 +657,7 @@ const weeks = [
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 [IBM] Python for Data Science, AI & Development | Focus: Numpy & Pandas foundations",
+            "task": "\ud83c\udf93 IBM Course 4: Python Adv | Focus: Pandas & Numpy foundations",
             "type": "watch",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
           },
@@ -674,7 +668,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Getting Started & Foundations",
+            "task": "Takeuforward Core: IBM C4: Python Data Types & Control Flow",
             "type": "practice"
           },
           {
@@ -705,19 +699,13 @@ const weeks = [
         "title": "Layer 2: IPL as a Product (Retention)",
         "tasks": [
           {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 [IBM] Python Project for Data Science | Focus: Scraping & analyzing real data",
-            "type": "watch",
-            "link": "https://www.coursera.org/learn/python-project-for-data-science"
-          },
-          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 7 - Recursion (PatternWise)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Core Database Structures",
+            "task": "Takeuforward Core: IBM C4: Numpy & Vectorized Ops",
             "type": "practice"
           },
           {
@@ -754,7 +742,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Querying Essentials (SELECT, SORT)",
+            "task": "Takeuforward Core: IBM C4: Pandas: Cleaning & Missing Data",
             "type": "practice"
           },
           {
@@ -785,13 +773,19 @@ const weeks = [
         "title": "Layer 5 & 6: Macro & Social Impact",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 5: Python Project for Data Science | Focus: Scraping & API project",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/python-project-for-data-science"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 8 - Bit Manipulation (Concepts)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Aggregation (GROUP BY, SUM)",
+            "task": "Takeuforward Core: IBM C4: Pandas: Merging & Grouping",
             "type": "practice"
           },
           {
@@ -828,7 +822,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 4: Python Data Types, Loops, Functions",
+            "task": "Takeuforward Core: IBM C4: API Integration & JSON Basics",
             "type": "practice"
           },
           {
@@ -859,13 +853,19 @@ const weeks = [
         "title": "Layer 9: The Final Interactive Engine",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 6: Databases and SQL | Focus: SQL foundations with Python",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/sql-data-science"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 9 - Stack & Queues (Learning)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 4: Pandas for Data Cleaning",
+            "task": "Takeuforward Core: IBM C4: Web Scraping with BeautifulSoup",
             "type": "practice"
           },
           {
@@ -902,7 +902,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 4: Handling Missing Data with Pandas",
+            "task": "Takeuforward Core: IBM C5: Project: Analyzing Stock/IPL Data",
             "type": "practice"
           },
           {
@@ -942,9 +942,9 @@ const weeks = [
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 [Google] Analyze Data to Answer Questions | Focus: Organizing data & complex calculations",
+            "task": "\ud83c\udf93 IBM Course 6: Advanced SQL | Focus: Subqueries & complex joins",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/analyze-data"
+            "link": "https://www.coursera.org/learn/sql-data-science"
           },
           {
             "time": "7\u20138am",
@@ -953,7 +953,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 4: Merging & Grouping DataFrames",
+            "task": "Takeuforward Core: TUF SQL: SELECT, WHERE, ORDER BY",
             "type": "practice"
           },
           {
@@ -984,19 +984,13 @@ const weeks = [
         "title": "Layer 2: Reviews & Sentiment Engine",
         "tasks": [
           {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 [IBM] Data Analysis with Python | Focus: Regression, predictive modeling & EDA",
-            "type": "watch",
-            "link": "https://www.coursera.org/learn/data-analysis-with-python"
-          },
-          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 10 - Sliding Window (Fixed)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Set Operations & Advanced Filters",
+            "task": "Takeuforward Core: TUF SQL: Joins (Inner, Left, Right, Full)",
             "type": "practice"
           },
           {
@@ -1033,7 +1027,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: INNER & LEFT JOINs",
+            "task": "Takeuforward Core: TUF SQL: Aggregations & Group By",
             "type": "practice"
           },
           {
@@ -1064,13 +1058,19 @@ const weeks = [
         "title": "Layer 5 & 6: Booking & Content Lifecycle",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 7: Data Analysis with Python | Focus: Exploratory Data Analysis (EDA)",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 11 - Heaps (Learning & Medium)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 5: Python Project - Analyzing IPL Trends",
+            "task": "Takeuforward Core: IBM C6: SQL for Data Science w/ Python",
             "type": "practice"
           },
           {
@@ -1107,7 +1107,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Subqueries & Nested Logic",
+            "task": "Takeuforward Core: IBM C6: Advanced SQL (Subqueries, Views)",
             "type": "practice"
           },
           {
@@ -1144,7 +1144,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: CTEs (Common Table Expressions)",
+            "task": "Takeuforward Core: IBM C6: Transactions & Stored Procedures",
             "type": "practice"
           },
           {
@@ -1181,7 +1181,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Dates & Time Manipulation",
+            "task": "Takeuforward Core: IBM C6: Working with Real-World Datasets",
             "type": "practice"
           },
           {
@@ -1221,9 +1221,9 @@ const weeks = [
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 [Google] Share Data Through the Art of Viz | Focus: Tableau & Storytelling",
+            "task": "\ud83c\udf93 IBM Course 7: Modeling | Focus: Regression & predictive model building",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/visualize-data"
+            "link": "https://www.coursera.org/learn/data-analysis-with-python"
           },
           {
             "time": "7\u20138am",
@@ -1232,7 +1232,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 7: Data Analysis with Python (EDA)",
+            "task": "Takeuforward Core: IBM C7: Exploratory Data Analysis (EDA)",
             "type": "practice"
           },
           {
@@ -1263,19 +1263,13 @@ const weeks = [
         "title": "Layer 2: Instagram Ads & Growth Funnel",
         "tasks": [
           {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 [IBM] Data Visualization with Python | Focus: Matplotlib, Seaborn & Plotly",
-            "type": "watch",
-            "link": "https://www.coursera.org/learn/data-visualization-with-python"
-          },
-          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 13 - Binary Trees (Medium/Hard)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 7: Predictive Modeling Foundations",
+            "task": "Takeuforward Core: IBM C7: Model Development (Regression)",
             "type": "practice"
           },
           {
@@ -1312,7 +1306,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 8: Data Viz with Python (Matplotlib/Seaborn)",
+            "task": "Takeuforward Core: IBM C7: Model Evaluation (Over/Underfitting)",
             "type": "practice"
           },
           {
@@ -1343,13 +1337,19 @@ const weeks = [
         "title": "Layer 5 & 6: Quick Commerce & Speed",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 8: Data Viz with Python | Focus: Matplotlib, Seaborn & Dash",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/data-visualization-with-python"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 14 - Binary Search Trees (Problems)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 8: Statistical Plots & Heatmaps",
+            "task": "Takeuforward Core: IBM C7: Pipelines & Grid Search",
             "type": "practice"
           },
           {
@@ -1386,7 +1386,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 6: Art of Visualization & Storytelling",
+            "task": "Takeuforward Core: IBM C8: Matplotlib & Seaborn Fundamentals",
             "type": "practice"
           },
           {
@@ -1423,7 +1423,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 6: Dashboard Design Principles",
+            "task": "Takeuforward Core: IBM C8: Statistical Plots & Heatmaps",
             "type": "practice"
           },
           {
@@ -1460,7 +1460,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 8: Interactive Viz with Plotly/Dash",
+            "task": "Takeuforward Core: IBM C8: Specialized Plots (Waffle, WordCloud)",
             "type": "practice"
           },
           {
@@ -1499,13 +1499,19 @@ const weeks = [
         "title": "Learn UI/UX & Tailwind CSS",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 9: Capstone | Focus: Data Collection & Wrangling",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/data-analyst-capstone-project"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: A2Z: Step 16 - DP (1D & 2D)",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 8: Advanced Plotting Techniques",
+            "task": "Takeuforward Core: IBM C8: Geospatial Viz with Folium",
             "type": "practice"
           },
           {
@@ -1547,7 +1553,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: TUF SQL: Window Functions (RANK, ROW_NUMBER)",
+            "task": "Takeuforward Core: IBM C8: Dash: Interactive Web Apps (Plotly)",
             "type": "practice"
           },
           {
@@ -1589,7 +1595,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Advanced SQL: Query Optimization",
+            "task": "Takeuforward Core: IBM C8: Dashboard Layouts & Callbacks",
             "type": "practice"
           },
           {
@@ -1631,7 +1637,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Advanced SQL: Indexing & Performance",
+            "task": "Takeuforward Core: Advanced SQL: Window Functions (Rank)",
             "type": "practice"
           },
           {
@@ -1667,13 +1673,19 @@ const weeks = [
         "title": "SEO & Personal Brand Engine",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 9: Capstone | Focus: EDA & Interactive Viz",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/data-analyst-capstone-project"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: DSA Revision: Top 50 Linked List Questions",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Advanced SQL: Stored Procedures",
+            "task": "Takeuforward Core: Advanced SQL: CTEs & Complex Queries",
             "type": "practice"
           },
           {
@@ -1801,19 +1813,13 @@ const weeks = [
         "title": "Sahitya Foundation & UI",
         "tasks": [
           {
-            "time": "6\u20137am",
-            "task": "\ud83c\udf93 [IBM] Data Analyst Capstone Project | Focus: End-to-end analysis & final report",
-            "type": "watch",
-            "link": "https://www.coursera.org/learn/data-analyst-capstone-project"
-          },
-          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: DSA Revision: Top 50 Graph/DP Questions",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 9: Capstone - Project Scoping & Data Prep",
+            "task": "Takeuforward Core: IBM C9: Capstone: Data Collection (API/Scrape)",
             "type": "practice"
           },
           {
@@ -1850,9 +1856,9 @@ const weeks = [
         "tasks": [
           {
             "time": "6\u20137am",
-            "task": "\ud83c\udf93 [Google] Google Data Analytics Capstone | Focus: Case studies & portfolio building",
+            "task": "\ud83c\udf93 IBM Course 9: Capstone | Focus: Final Presentation & Peer Review",
             "type": "watch",
-            "link": "https://www.coursera.org/learn/google-data-analytics-capstone"
+            "link": "https://www.coursera.org/learn/data-analyst-capstone-project"
           },
           {
             "time": "7\u20138am",
@@ -1861,7 +1867,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: IBM Course 9: Capstone - Deep Analysis & Viz",
+            "task": "Takeuforward Core: IBM C9: Capstone: Data Wrangling & SQL",
             "type": "practice"
           },
           {
@@ -1903,7 +1909,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Google Course 8: Case Study - Portfolio Construction",
+            "task": "Takeuforward Core: IBM C9: Capstone: EDA & Machine Learning",
             "type": "practice"
           },
           {
@@ -1945,7 +1951,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: DBMS: ACID Properties & Transactions",
+            "task": "Takeuforward Core: IBM C9: Capstone: Interactive Dashboard",
             "type": "practice"
           },
           {
@@ -1981,13 +1987,19 @@ const weeks = [
         "title": "Interview Prep \u2014 Technical",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 10: Generative AI | Focus: AI for cleaning & storytelling",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/generative-ai-career-analytics"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: Mock Interview: Google DSA Questions",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: DBMS: Normalization (1NF, 2NF, 3NF)",
+            "task": "Takeuforward Core: IBM C10: Generative AI for Data Cleaning",
             "type": "practice"
           },
           {
@@ -2029,7 +2041,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: DBMS: Concurrency Control",
+            "task": "Takeuforward Core: IBM C10: AI-Powered Data Storytelling",
             "type": "practice"
           },
           {
@@ -2071,7 +2083,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Stats: Mean, Median, Mode, Variance",
+            "task": "Takeuforward Core: IBM C10: Prompt Engineering for Python Code",
             "type": "practice"
           },
           {
@@ -2121,7 +2133,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Stats: Probability & Distributions",
+            "task": "Takeuforward Core: IBM C10: Automating Workflows with AI",
             "type": "practice"
           },
           {
@@ -2163,7 +2175,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Stats: Hypothesis Testing (p-value)",
+            "task": "Takeuforward Core: IBM C11: Data Analyst Resume Optimization",
             "type": "practice"
           },
           {
@@ -2199,13 +2211,19 @@ const weeks = [
         "title": "Content Engine & Networking",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 11: Career Guide | Focus: Resume & Portfolio optimization",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: Mock Test: DSA Written Round 3",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Stats: A/B Testing Setup & Analysis",
+            "task": "Takeuforward Core: IBM C11: Portfolio Building (LinkedIn/GitHub)",
             "type": "practice"
           },
           {
@@ -2247,7 +2265,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Aptitude: Number Systems & Percentages",
+            "task": "Takeuforward Core: IBM C11: Technical Interview Prep (SQL/Python)",
             "type": "practice"
           },
           {
@@ -2289,7 +2307,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Aptitude: Ratios & Proportions",
+            "task": "Takeuforward Core: IBM C11: Behavioral Case Study Prep",
             "type": "practice"
           },
           {
@@ -2331,7 +2349,7 @@ const weeks = [
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Aptitude: Time, Speed & Distance",
+            "task": "Takeuforward Core: Aptitude: Number Systems & Percentages",
             "type": "practice"
           },
           {
@@ -2367,13 +2385,19 @@ const weeks = [
         "title": "Day 60: The Launch",
         "tasks": [
           {
+            "time": "6\u20137am",
+            "task": "\ud83c\udf93 IBM Course 11: Interview Prep | Focus: Technical & behavioral mock Qs",
+            "type": "watch",
+            "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"
+          },
+          {
             "time": "7\u20138am",
             "task": "Takeuforward DSA: Review Weakness: Trees & BST",
             "type": "practice"
           },
           {
             "time": "8\u20139am",
-            "task": "Takeuforward Core: Aptitude: Time & Work",
+            "task": "Takeuforward Core: Aptitude: Ratios & Proportions",
             "type": "practice"
           },
           {
@@ -2408,6 +2432,10 @@ const weeks = [
     ]
   }
 ];
+
+
+
+
 
 
 

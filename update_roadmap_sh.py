@@ -39,44 +39,44 @@ tuf_dsa_topics = [
 ]
 
 tuf_core_topics = [
-  # PHASE 1: IBM Excel & Google Data Process (Weeks 1-2)
-  "IBM Course 2: Excel Functions & Data Cleaning", "IBM Course 2: Advanced Excel (VLOOKUP, INDEX-MATCH)",
-  "Google Course 2: Asking Effective Questions (S.M.A.R.T)", "Google Course 3: Data Integrity & Cleanliness",
-  "IBM Course 3: Data Viz & Dashboards with Excel", "IBM Course 3: Intro to IBM Cognos Dashboards",
-  "Google Course 3: Managing Data Security & Ethics", "Google Course 1: The 6-Step Data Process (Ask-Act)",
-  "IBM Course 2: Power Query for Automated Cleaning", "IBM Course 2: Pivot Table Analysis & Slicers",
-  "Google Course 3: SQL for Data Preparation", "IBM Course 3: Building Interactive Reports",
-  "IBM Course 3: Data Storytelling with Cognos", "Google Course 4: Handling Biased Data",
+  # PHASE 1: IBM Course 1-3 (Excel & Foundations)
+  "IBM C1: Data Ecosystem & Analyst Lifecycle", "IBM C1: Data Gathering & Mining Basics",
+  "IBM C2: Excel Formulas (VLOOKUP, INDEX-MATCH)", "IBM C2: Data Cleaning in Excel (Power Query)",
+  "IBM C2: Pivot Tables & Data Summarization", "IBM C2: Quality Assurance & Ethics",
+  "IBM C3: Data Viz Principles in Excel", "IBM C3: Building Dashboards with Cognos",
+  "IBM C3: Cognos: AI Assistant & Storytelling", "IBM C3: Case Study - Marketing Analysis",
+  "IBM C2: Logic Functions (IF/AND/OR/XOR)", "IBM C3: Interactive Dashboards & Slicers",
+  "IBM C3: Exporting & Sharing Insights", "Foundations: The 6-Step Data Process",
   
-  # PHASE 2: TUF SQL Foundations & IBM Python (Weeks 3-4)
-  "TUF SQL: Getting Started & Foundations", "TUF SQL: Core Database Structures",
-  "TUF SQL: Querying Essentials (SELECT, SORT)", "TUF SQL: Aggregation (GROUP BY, SUM)",
-  "IBM Course 4: Python Data Types, Loops, Functions", "IBM Course 4: Pandas for Data Cleaning",
-  "IBM Course 4: Handling Missing Data with Pandas", "IBM Course 4: Merging & Grouping DataFrames",
-  "TUF SQL: Set Operations & Advanced Filters", "TUF SQL: INNER & LEFT JOINs",
-  "IBM Course 5: Python Project - Analyzing IPL Trends", "TUF SQL: Subqueries & Nested Logic",
-  "TUF SQL: CTEs (Common Table Expressions)", "TUF SQL: Dates & Time Manipulation",
+  # PHASE 2: IBM Course 4-6 (Python & SQL - Aligned with IPL)
+  "IBM C4: Python Data Types & Control Flow", "IBM C4: Numpy & Vectorized Ops",
+  "IBM C4: Pandas: Cleaning & Missing Data", "IBM C4: Pandas: Merging & Grouping",
+  "IBM C4: API Integration & JSON Basics", "IBM C4: Web Scraping with BeautifulSoup",
+  "IBM C5: Project: Analyzing Stock/IPL Data", "TUF SQL: SELECT, WHERE, ORDER BY",
+  "TUF SQL: Joins (Inner, Left, Right, Full)", "TUF SQL: Aggregations & Group By",
+  "IBM C6: SQL for Data Science w/ Python", "IBM C6: Advanced SQL (Subqueries, Views)",
+  "IBM C6: Transactions & Stored Procedures", "IBM C6: Working with Real-World Datasets",
   
-  # PHASE 3: IBM Advanced Python & Google Storytelling (Weeks 5-6)
-  "IBM Course 7: Data Analysis with Python (EDA)", "IBM Course 7: Predictive Modeling Foundations",
-  "IBM Course 8: Data Viz with Python (Matplotlib/Seaborn)", "IBM Course 8: Statistical Plots & Heatmaps",
-  "Google Course 6: Art of Visualization & Storytelling", "Google Course 6: Dashboard Design Principles",
-  "IBM Course 8: Interactive Viz with Plotly/Dash", "IBM Course 8: Advanced Plotting Techniques",
-  "TUF SQL: Window Functions (RANK, ROW_NUMBER)", "Advanced SQL: Query Optimization",
-  "Advanced SQL: Indexing & Performance", "Advanced SQL: Stored Procedures",
+  # PHASE 3: IBM Course 7-8 (Adv Python & Viz - Aligned with OTT/E-com)
+  "IBM C7: Exploratory Data Analysis (EDA)", "IBM C7: Model Development (Regression)",
+  "IBM C7: Model Evaluation (Over/Underfitting)", "IBM C7: Pipelines & Grid Search",
+  "IBM C8: Matplotlib & Seaborn Fundamentals", "IBM C8: Statistical Plots & Heatmaps",
+  "IBM C8: Specialized Plots (Waffle, WordCloud)", "IBM C8: Geospatial Viz with Folium",
+  "IBM C8: Dash: Interactive Web Apps (Plotly)", "IBM C8: Dashboard Layouts & Callbacks",
+  "Advanced SQL: Window Functions (Rank)", "Advanced SQL: CTEs & Complex Queries",
   "Advanced SQL: Hard LeetCode SQL 1", "Advanced SQL: Hard LeetCode SQL 2",
   
-  # PHASE 4: IBM Capstone & Google Job Prep (Weeks 7-8)
-  "IBM Course 9: Capstone - Project Scoping & Data Prep", "IBM Course 9: Capstone - Deep Analysis & Viz",
-  "Google Course 8: Case Study - Portfolio Construction", "DBMS: ACID Properties & Transactions",
-  "DBMS: Normalization (1NF, 2NF, 3NF)", "DBMS: Concurrency Control",
-  "Stats: Mean, Median, Mode, Variance", "Stats: Probability & Distributions",
-  "Stats: Hypothesis Testing (p-value)", "Stats: A/B Testing Setup & Analysis",
+  # PHASE 4: IBM Course 9-11 (Capstone, AI & Career)
+  "IBM C9: Capstone: Data Collection (API/Scrape)", "IBM C9: Capstone: Data Wrangling & SQL",
+  "IBM C9: Capstone: EDA & Machine Learning", "IBM C9: Capstone: Interactive Dashboard",
+  "IBM C10: Generative AI for Data Cleaning", "IBM C10: AI-Powered Data Storytelling",
+  "IBM C10: Prompt Engineering for Python Code", "IBM C10: Automating Workflows with AI",
+  "IBM C11: Data Analyst Resume Optimization", "IBM C11: Portfolio Building (LinkedIn/GitHub)",
+  "IBM C11: Technical Interview Prep (SQL/Python)", "IBM C11: Behavioral Case Study Prep",
   "Aptitude: Number Systems & Percentages", "Aptitude: Ratios & Proportions",
   "Aptitude: Time, Speed & Distance", "Aptitude: Time & Work",
-  "Aptitude: Profit & Loss", "Aptitude: Logical Reasoning (Syllogisms)",
-  "Aptitude: Data Interpretation (Charts)", "TUF SQL: Interview Situational Qs (Hard)",
-  "Mock Interview: SQL & DBMS Round", "Mock Interview: Data Case Study Round"
+  "Aptitude: Profit & Loss", "Aptitude: Logical Reasoning",
+  "Aptitude: Data Interpretation", "Mock Interview: SQL & Case Study"
 ]
 
 weeks_data = [
@@ -755,31 +755,39 @@ weeks_data = [
 # Resources appear at 6am BEFORE the daily DSA/Core warmup
 # ─────────────────────────────────────────────────────────────────
 resource_tasks_by_day = {
-    # ── WEEK 1: Foundations & Excel ──
-    1: [{"time": "6–7am", "task": "🎓 [Google] Foundations: Data, Data, Everywhere | Focus: The 6-Step Data Analysis Process", "type": "watch", "link": "https://www.coursera.org/learn/foundations-data"}],
-    2: [{"time": "6–7am", "task": "🎓 [IBM] Excel Basics for Data Analysis | Focus: Formulas, cell referencing, data cleaning", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis"}],
-    3: [{"time": "6–7am", "task": "🎓 [Google] Ask Questions to Make Data-Driven Decisions | Focus: Structured thinking & SMART questions", "type": "watch", "link": "https://www.coursera.org/learn/ask-questions-make-decisions"}],
+    # ── WEEK 1: Intro & Excel (C1 & C2) ──
+    1: [{"time": "6–7am", "task": "🎓 IBM Course 1: Introduction to Data Analytics | Focus: Data ecosystem & analysts lifecycle", "type": "watch", "link": "https://www.coursera.org/learn/introduction-to-data-analytics"}],
+    3: [{"time": "6–7am", "task": "🎓 IBM Course 2: Excel Basics for Data Analysis | Focus: Data cleaning & basic formulas", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis"}],
+    5: [{"time": "6–7am", "task": "🎓 IBM Course 2: Excel Advanced | Focus: VLOOKUP, INDEX-MATCH & Pivot Tables", "type": "watch", "link": "https://www.coursera.org/learn/excel-basics-data-analysis"}],
     
-    # ── WEEK 2: Data Prep & Dashboards ──
-    8: [{"time": "6–7am", "task": "🎓 [Google] Prepare Data for Exploration | Focus: Data types, storage, and ethics", "type": "watch", "link": "https://www.coursera.org/learn/data-preparation"}],
-    9: [{"time": "6–7am", "task": "🎓 [IBM] Data Viz & Dashboards with Excel/Cognos | Focus: Pivot charts & Cognos intro", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"}],
-    10: [{"time": "6–7am", "task": "🎓 [Google] Process Data from Dirty to Clean | Focus: SQL cleaning & data integrity", "type": "watch", "link": "https://www.coursera.org/learn/process-data"}],
+    # ── WEEK 2: Dashboards & Python Intro (C3 & C4) ──
+    8: [{"time": "6–7am", "task": "🎓 IBM Course 3: Data Viz with Excel & Cognos | Focus: Interactive dashboards", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos"}],
+    11: [{"time": "6–7am", "task": "🎓 IBM Course 4: Python for Data Science | Focus: Python types, loops & functions", "type": "watch", "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"}],
+    
+    # ── WEEK 3: Python Projects & SQL (C4, C5 & C6) ──
+    15: [{"time": "6–7am", "task": "🎓 IBM Course 4: Python Adv | Focus: Pandas & Numpy foundations", "type": "watch", "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"}],
+    18: [{"time": "6–7am", "task": "🎓 IBM Course 5: Python Project for Data Science | Focus: Scraping & API project", "type": "watch", "link": "https://www.coursera.org/learn/python-project-for-data-science"}],
+    20: [{"time": "6–7am", "task": "🎓 IBM Course 6: Databases and SQL | Focus: SQL foundations with Python", "type": "watch", "link": "https://www.coursera.org/learn/sql-data-science"}],
 
-    # ── WEEK 3: Python for Data Science (IPL Phase) ──
-    15: [{"time": "6–7am", "task": "🎓 [IBM] Python for Data Science, AI & Development | Focus: Numpy & Pandas foundations", "type": "watch", "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"}],
-    16: [{"time": "6–7am", "task": "🎓 [IBM] Python Project for Data Science | Focus: Scraping & analyzing real data", "type": "watch", "link": "https://www.coursera.org/learn/python-project-for-data-science"}],
+    # ── WEEK 4: Advanced SQL & Data Analysis (C6 & C7) ──
+    22: [{"time": "6–7am", "task": "🎓 IBM Course 6: Advanced SQL | Focus: Subqueries & complex joins", "type": "watch", "link": "https://www.coursera.org/learn/sql-data-science"}],
+    25: [{"time": "6–7am", "task": "🎓 IBM Course 7: Data Analysis with Python | Focus: Exploratory Data Analysis (EDA)", "type": "watch", "link": "https://www.coursera.org/learn/data-analysis-with-python"}],
     
-    # ── WEEK 4: Advanced Analysis (OTT Phase) ──
-    22: [{"time": "6–7am", "task": "🎓 [Google] Analyze Data to Answer Questions | Focus: Organizing data & complex calculations", "type": "watch", "link": "https://www.coursera.org/learn/analyze-data"}],
-    23: [{"time": "6–7am", "task": "🎓 [IBM] Data Analysis with Python | Focus: Regression, predictive modeling & EDA", "type": "watch", "link": "https://www.coursera.org/learn/data-analysis-with-python"}],
-    
-    # ── WEEK 5: Data Storytelling (E-Commerce Phase) ──
-    29: [{"time": "6–7am", "task": "🎓 [Google] Share Data Through the Art of Viz | Focus: Tableau & Storytelling", "type": "watch", "link": "https://www.coursera.org/learn/visualize-data"}],
-    30: [{"time": "6–7am", "task": "🎓 [IBM] Data Visualization with Python | Focus: Matplotlib, Seaborn & Plotly", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-with-python"}],
+    # ── WEEK 5: Predictive Analysis & Viz (C7 & C8) ──
+    29: [{"time": "6–7am", "task": "🎓 IBM Course 7: Modeling | Focus: Regression & predictive model building", "type": "watch", "link": "https://www.coursera.org/learn/data-analysis-with-python"}],
+    32: [{"time": "6–7am", "task": "🎓 IBM Course 8: Data Viz with Python | Focus: Matplotlib, Seaborn & Dash", "type": "watch", "link": "https://www.coursera.org/learn/data-visualization-with-python"}],
 
-    # ── WEEK 6 & 7: Capstones & Portfolio ──
-    43: [{"time": "6–7am", "task": "🎓 [IBM] Data Analyst Capstone Project | Focus: End-to-end analysis & final report", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
-    44: [{"time": "6–7am", "task": "🎓 [Google] Google Data Analytics Capstone | Focus: Case studies & portfolio building", "type": "watch", "link": "https://www.coursera.org/learn/google-data-analytics-capstone"}],
+    # ── WEEK 6: Capstone Phase 1 (C9) ──
+    36: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: Data Collection & Wrangling", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
+    40: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: EDA & Interactive Viz", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
+
+    # ── WEEK 7: Capstone Completion & Gen AI (C9 & C10) ──
+    44: [{"time": "6–7am", "task": "🎓 IBM Course 9: Capstone | Focus: Final Presentation & Peer Review", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-capstone-project"}],
+    47: [{"time": "6–7am", "task": "🎓 IBM Course 10: Generative AI | Focus: AI for cleaning & storytelling", "type": "watch", "link": "https://www.coursera.org/learn/generative-ai-career-analytics"}],
+
+    # ── WEEK 8: Career & Interview Prep (C11) ──
+    52: [{"time": "6–7am", "task": "🎓 IBM Course 11: Career Guide | Focus: Resume & Portfolio optimization", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"}],
+    56: [{"time": "6–7am", "task": "🎓 IBM Course 11: Interview Prep | Focus: Technical & behavioral mock Qs", "type": "watch", "link": "https://www.coursera.org/learn/data-analyst-career-guide-interview-preparation"}],
 }
 
 # Inject DSA, Core and 16-Week resources into every day
