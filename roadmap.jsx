@@ -43,31 +43,31 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Learn Descriptive Stats: Mean, Median, Mode, Variance, Standard Deviation.",
             "type": "learn",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuKaU2nBDwr6zrSOTzNCs0l"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Probability Basics: Probability distributions, Normal distribution, Z-scores.",
             "type": "learn",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "2\u20134pm",
             "task": "Learn Inferential Stats: Hypothesis testing, p-values, A/B testing theory.",
             "type": "learn",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuKaU2nBDwr6zrSOTzNCs0l"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Calculate stats on a sample dataset using pen and paper or calculator.",
             "type": "practice",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuKaU2nBDwr6zrSOTzNCs0l"
           },
           {
             "time": "5\u20136pm",
             "task": "Document notes on Notion/GitHub. Roadmap.sh Math section complete.",
             "type": "output",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtu.be/npgbI8KYvN8"
           }
         ],
         "outcome": "Solid foundation in data mathematics and statistics.",
@@ -92,7 +92,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Learn Excel Basics: Data entry, formatting, basic formulas (SUM, AVERAGE, COUNT).",
             "type": "learn",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           },
           {
             "time": "11am\u20131pm",
@@ -110,13 +110,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Download a messy sales dataset and clean/format it using formulas.",
             "type": "practice",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           },
           {
             "time": "5\u20136pm",
             "task": "Save Excel workbook as 'Day2_Excel_Advanced.xlsx'.",
             "type": "output",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           }
         ],
         "outcome": "Mastery of essential and advanced Excel formulas.",
@@ -141,19 +141,19 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C2: Excel Formulas (VLOOKUP, INDEX-MATCH)",
             "type": "practice",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Pivot Tables: Summarizing data, calculated fields, Pivot Charts.",
             "type": "learn",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Power Query: Importing data, merging tables, unpivoting columns.",
             "type": "learn",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -165,13 +165,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Build a dynamic Excel dashboard using Pivot Charts and Slicers.",
             "type": "build",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           },
           {
             "time": "5\u20136pm",
             "task": "Push dashboard screenshots to GitHub. Roadmap.sh Excel section complete.",
             "type": "output",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           }
         ],
         "outcome": "Can build dynamic dashboards and clean data inside Excel.",
@@ -190,7 +190,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C2: Data Cleaning in Excel (Power Query)",
             "type": "practice",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           },
           {
             "time": "9\u201311am",
@@ -202,7 +202,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Learn Basic SQL: SELECT, FROM, WHERE, LIMIT, ORDER BY.",
             "type": "learn",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "2\u20134pm",
@@ -214,13 +214,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Solve 5 basic SQL query problems on HackerRank.",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "5\u20136pm",
             "task": "Document SQL basics in a markdown file.",
             "type": "output",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           }
         ],
         "outcome": "Ability to query and filter basic datasets using SQL.",
@@ -263,13 +263,12 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Learn CTEs (Common Table Expressions): Using the WITH clause for readability.",
             "type": "learn",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Write 3 queries joining multiple tables (e.g., Customers + Orders).",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "build"
           },
           {
             "time": "5\u20136pm",
@@ -317,13 +316,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Solve 3 advanced SQL problems on Leetcode (Hard difficulty).",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "5\u20136pm",
             "task": "Roadmap.sh SQL section complete. Update LinkedIn skills.",
             "type": "output",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           }
         ],
         "outcome": "Mastered window functions and advanced SQL capabilities.",
@@ -342,37 +341,37 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C3: Data Viz Principles in Excel",
             "type": "practice",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           },
           {
             "time": "9\u201311am",
             "task": "Review Math, Excel, and SQL notes. Identify any weak points.",
             "type": "review",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Mini-Project: Export an SQL query result to CSV, import to Excel, use Power Query to clean.",
             "type": "build",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "2\u20134pm",
             "task": "Mini-Project: Build a final Pivot Dashboard from that data.",
             "type": "build",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "4\u20135pm",
             "task": "Write LinkedIn post: 'Week 1 of Data Analyst Roadmap: Mastered Excel & SQL'.",
             "type": "content",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "5\u20136pm",
             "task": "Rest and prepare for Week 2 (BI & Python).",
             "type": "reflect",
-            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           }
         ],
         "outcome": "Successfully integrated SQL extraction with Excel visualization.",
@@ -405,19 +404,19 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C3: Building Dashboards with Cognos",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Chart Types: When to use Bar, Line, Scatter, Pie, Histogram.",
             "type": "learn",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Design Principles: Cognitive load, Data-ink ratio, Color theory (categorical vs sequential).",
             "type": "learn",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "2\u20134pm",
@@ -429,13 +428,12 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Critique 3 bad charts online and sketch improvements.",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
             "task": "Document Data Viz principles. Roadmap.sh Data Viz section complete.",
-            "type": "output",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "output"
           }
         ],
         "outcome": "Understand the theory behind effective data communication.",
@@ -460,7 +458,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Install Power BI Desktop. Learn to connect data sources (Excel, CSV, SQL).",
             "type": "setup",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "11am\u20131pm",
@@ -472,18 +470,18 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Learn Power Query in Power BI: Transforming data, changing types, appending queries.",
             "type": "learn",
-            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice: Build 3 basic visuals (Bar chart, Line chart, KPI card).",
-            "type": "build",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "build"
           },
           {
             "time": "5\u20136pm",
             "task": "Save the .pbix file. Push to GitHub.",
-            "type": "output"
+            "type": "output",
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "Can load data, build a Star Schema, and create basic visuals in Power BI.",
@@ -526,13 +524,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Practice: Build an interactive Sales Dashboard with slicers and tooltips.",
             "type": "build",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "5\u20136pm",
             "task": "Roadmap.sh BI Tools section complete. Publish to Power BI service (optional).",
             "type": "output",
-            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "Mastered DAX and interactive dashboard creation in Power BI.",
@@ -563,7 +561,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Install VS Code, Python, Jupyter. Learn Variables, Data Types, Operators.",
             "type": "setup",
-            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           },
           {
             "time": "11am\u20131pm",
@@ -587,7 +585,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Practice: Write 5 small Python scripts (e.g., calculator, palindrome checker).",
             "type": "build",
-            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           }
         ],
         "outcome": "Solid grasp of Python programming fundamentals.",
@@ -606,19 +604,19 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C3: Interactive Dashboards & Slicers",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "9\u201311am",
             "task": "Learn Numpy: Arrays, vectorized operations, basic math functions.",
             "type": "learn",
-            "link": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+            "link": "https://www.youtube.com/playlist?list=PLeo1K3hjS3uset9zIVzJWqplaWBiacTEU"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Pandas Basics: Series, DataFrames, read_csv, head, info, describe.",
             "type": "learn",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           },
           {
             "time": "2\u20134pm",
@@ -636,7 +634,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Practice: Perform basic EDA on a Kaggle dataset using Pandas.",
             "type": "build",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           }
         ],
         "outcome": "Can clean and manipulate tabular data using Pandas.",
@@ -661,25 +659,25 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Learn Matplotlib: plt.plot, plt.bar, labels, titles, subplots.",
             "type": "learn",
-            "link": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl"
           },
           {
             "time": "11am\u20131pm",
             "task": "Learn Seaborn: sns.histplot, sns.boxplot, sns.heatmap. Styling and themes.",
             "type": "learn",
-            "link": "https://seaborn.pydata.org/tutorial.html"
+            "link": "https://youtube.com/playlist?list=PLjVLYmrlmjGfhqSO3rF4n02rrj9w2Ch2C"
           },
           {
             "time": "2\u20134pm",
             "task": "Practice: Recreate the Data Viz principles you learned on Day 8 using Python.",
             "type": "build",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           },
           {
             "time": "4\u20135pm",
             "task": "Learn Plotly (Optional): Basic interactive charts.",
             "type": "learn",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -709,19 +707,18 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Review Power BI and Python notes. You are now officially 'Analyst Ready'.",
             "type": "review",
-            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
             "task": "Download IPL Dataset for Week 3. Do a quick 30-min EDA in Pandas to warm up.",
             "type": "data",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           },
           {
             "time": "2\u20134pm",
             "task": "Set up GitHub repositories for the 3 main projects (IPL, OTT, E-commerce).",
-            "type": "setup",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "setup"
           },
           {
             "time": "4\u20135pm",
@@ -764,7 +761,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C4: Python Data Types & Control Flow",
             "type": "practice",
-            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           },
           {
             "time": "9\u201311am",
@@ -775,7 +772,7 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Analysis: Toss vs Win Probability + Venue Bias (Spin vs Pace dominance per venue).",
             "type": "build",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "2\u20134pm",
@@ -786,7 +783,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Generate Player Scoring Zone Heatmaps + over-by-over Win Probability graphs.",
             "type": "output",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "On-field performance engine complete. Clutch Index leaderboard generated.",
@@ -805,7 +802,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C4: Numpy & Vectorized Ops",
             "type": "practice",
-            "link": "https://numpy.org/doc/stable/user/absolute_beginners.html"
+            "link": "https://www.youtube.com/playlist?list=PLeo1K3hjS3uset9zIVzJWqplaWBiacTEU"
           },
           {
             "time": "9\u201311am",
@@ -844,7 +841,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C4: Pandas: Cleaning & Missing Data",
             "type": "practice",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           },
           {
             "time": "9\u201311am",
@@ -864,8 +861,7 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Franchise Valuation comparison chart + Campaign ROI table.",
-            "type": "output",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "output"
           }
         ],
         "outcome": "Financial and Marketing engines unified. Revenue per viewer calculated.",
@@ -890,13 +886,12 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C4: Pandas: Merging & Grouping",
             "type": "practice",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           },
           {
             "time": "9\u201311am",
             "task": "Macro Analysis: IPL vs Movie industry revenue. Impact on OTT release calendars.",
-            "type": "research",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "research"
           },
           {
             "time": "11am\u20131pm",
@@ -946,13 +941,12 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Win Predictor: Build a basic ML model to predict match outcome based on mid-match stats.",
             "type": "build",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuKaU2nBDwr6zrSOTzNCs0l"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: 'Strategic Advantage' matrix and Auction Price prediction chart.",
-            "type": "output",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "output"
           }
         ],
         "outcome": "Advanced strategy and predictive analytics complete.",
@@ -983,25 +977,24 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Dashboard Prep: Clean all 8 layers' data into a master star schema.",
             "type": "data",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
             "task": "Power BI / Tableau: Build interactive filters for Seasons, Teams, and Players.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "2\u20134pm",
             "task": "Visual UX: Apply premium dark theme and McKinsey-style chart layouts.",
-            "type": "design",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "design"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: Live Interactive IPL Dashboard (The Mini-Cricbuzz + Consulting Hub).",
             "type": "output",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "Project 1 Technical Build Complete. Dashboard is functional.",
@@ -1020,31 +1013,28 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C5: Project: Analyzing Stock/IPL Data",
             "type": "practice",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Write Deep Report: 15-page PDF covering all 9 layers of IPL Ecosystem.",
-            "type": "write",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "write"
           },
           {
             "time": "11am\u20131pm",
             "task": "LinkedIn Content: Build 'IPL is not Cricket, it's a Product' carousel.",
-            "type": "content",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "content"
           },
           {
             "time": "2\u20134pm",
             "task": "Portfolio Update: Add IPL project case study with interactive links.",
             "type": "build",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20136pm",
             "task": "Setup OTT Project: Download IMDB + Box Office + Hotstar datasets.",
-            "type": "setup",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "setup"
           }
         ],
         "outcome": "IPL Project officially published. Ready for Movie Intelligence week.",
@@ -1077,7 +1067,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: TUF SQL: SELECT, WHERE, ORDER BY",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
@@ -1087,20 +1077,17 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Analysis: Pan-India vs Local box office trends. Completion Rate proxy on OTT.",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "build"
           },
           {
             "time": "2\u20134pm",
             "task": "Insight: Identify content types that 'Win Theatre' vs 'Thrive on OTT'.",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "build"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: Genre vs Revenue Heatmap + National vs Regional growth chart.",
-            "type": "output",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "output"
           }
         ],
         "outcome": "Content intelligence complete. Genre success metrics established.",
@@ -1119,7 +1106,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: TUF SQL: Joins (Inner, Left, Right, Full)",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
@@ -1139,7 +1126,8 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Sentiment vs Occupancy trend line and 'Reviews Sustainability' report.",
-            "type": "output"
+            "type": "output",
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "Audience sentiment mapped to financial performance.",
@@ -1158,13 +1146,12 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: TUF SQL: Aggregations & Group By",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
             "task": "Distribution analysis: Urban Multiplex (PVR/INOX) vs Rural Single Screen split.",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "build"
           },
           {
             "time": "11am\u20131pm",
@@ -1204,7 +1191,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C6: SQL for Data Science w/ Python",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
@@ -1214,14 +1201,12 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Drop-off Analysis: Identify high-friction points in theatre booking vs OTT subscription.",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "build"
           },
           {
             "time": "2\u20134pm",
             "task": "Lifecycle Analysis: Theatre-to-OTT release window shrinkage (2019 vs 2024).",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "build"
           },
           {
             "time": "4\u20136pm",
@@ -1245,13 +1230,12 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C6: Advanced SQL (Subqueries, Views)",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
             "task": "COVID Timeline: Before (Theatre) vs During (OTT Boom) vs After (Hybrid Recovery).",
-            "type": "research",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "research"
           },
           {
             "time": "11am\u20131pm",
@@ -1291,13 +1275,13 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Database Merge: Join IMDb, Box Office, and Sentiment scores into a clean BI view.",
             "type": "data",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
             "task": "Tableau Dashboard: Build side-by-side comparison of OTT vs Theatre metrics.",
             "type": "build",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "2\u20134pm",
@@ -1308,7 +1292,7 @@ const weeks = [
             "time": "4\u20136pm",
             "task": "Output: Live Tableau Dashboard covering all 8 layers of Movie Intelligence.",
             "type": "output",
-            "link": "https://public.tableau.com/s/resources"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "Project 2 Technical Build Complete. Comparative dashboard live.",
@@ -1332,19 +1316,19 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Write Deep Report: 10-page 'Consulting-Style' PDF on OTT vs Theatre Ecosystem.",
-            "type": "write",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "write"
           },
           {
             "time": "11am\u20131pm",
             "task": "LinkedIn Content: Build 'The Death and Rebirth of Theatres' case study.",
-            "type": "content"
+            "type": "content",
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "2\u20134pm",
             "task": "Portfolio Update: Integrate OTT dashboard and report into main site.",
             "type": "build",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "4\u20136pm",
@@ -1387,7 +1371,8 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Analyze Festival Spikes: Diwali/Big Billion Days vs Normal. GMV delta by category.",
-            "type": "build"
+            "type": "build",
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
@@ -1480,8 +1465,7 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Cart Abandonment pattern chart + Urgency Lift infographic.",
-            "type": "output",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "output"
           }
         ],
         "outcome": "Consumer behavior and friction layers mapped.",
@@ -1522,13 +1506,12 @@ const weeks = [
             "time": "2\u20134pm",
             "task": "Economic Model: Delivery speed vs Purchase probability correlation.",
             "type": "build",
-            "link": "https://www.khanacademy.org/math/statistics-probability"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: Quick Commerce comparison matrix + 'Time vs Price' decision chart.",
-            "type": "output",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "output"
           }
         ],
         "outcome": "Quick commerce economy and speed impact modeled.",
@@ -1547,7 +1530,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Matplotlib & Seaborn Fundamentals",
             "type": "practice",
-            "link": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl"
           },
           {
             "time": "9\u201311am",
@@ -1567,8 +1550,7 @@ const weeks = [
           {
             "time": "4\u20136pm",
             "task": "Output: Conglomerate Power Matrix + Offline vs Online market share chart.",
-            "type": "output",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "type": "output"
           }
         ],
         "outcome": "Market power dynamics and offline impact analyzed.",
@@ -1587,31 +1569,31 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Statistical Plots & Heatmaps",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Master Data Schema: Integrate Sales, Ads, Psych, and Logistics data into SQL.",
             "type": "data",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Power BI: Build 'Growth & Conversion' dashboard with ROAS/CAC interactive tracking.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "2\u20134pm",
             "task": "UX Design: Build a 'Live Sales' simulation view within the dashboard.",
             "type": "design",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "4\u20136pm",
             "task": "Output: Final Interactive E-Commerce & Ads Growth Dashboard.",
             "type": "output",
-            "link": "https://www.kaggle.com/datasets/carrie1/ecommerce-data"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "Project 3 Technical Build Complete. Growth suite live.",
@@ -1630,19 +1612,17 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Specialized Plots (Waffle, WordCloud)",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
             "task": "Write Deep Report: 15-page PDF on 'The Future of Indian E-Commerce & Ads'.",
-            "type": "write",
-            "link": "https://www.kaggle.com/datasets/carrie1/ecommerce-data"
+            "type": "write"
           },
           {
             "time": "11am\u20131pm",
             "task": "Meta Insight: 'E-commerce is the control of Attention and Logistics'.",
-            "type": "content",
-            "link": "https://www.kaggle.com/datasets/carrie1/ecommerce-data"
+            "type": "content"
           },
           {
             "time": "2\u20134pm",
@@ -1686,7 +1666,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Geospatial Viz with Folium",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1734,7 +1714,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Dash: Interactive Web Apps (Plotly)",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/chart-guide"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "9\u201311am",
@@ -1780,7 +1760,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C8: Dashboard Layouts & Callbacks",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "9\u201311am",
@@ -1791,13 +1771,12 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Build Skills Section: Interactive progress bars for SQL, Python, Power BI.",
             "type": "build",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "2\u20134pm",
             "task": "Build Projects Grid: Cards for IPL, OTT, E-commerce with glassmorphism.",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "build"
           },
           {
             "time": "4\u20135pm",
@@ -1807,7 +1786,8 @@ const weeks = [
           {
             "time": "5\u20136pm",
             "task": "Test responsiveness on mobile and tablet.",
-            "type": "build"
+            "type": "build",
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           }
         ],
         "outcome": "Core UI built with animations.",
@@ -1826,19 +1806,19 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: Window Functions (Rank)",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
             "task": "Integrate Dashboards: Embed or link Streamlit/Tableau/Power BI dashboards.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
             "task": "Link Deep Reports: Ensure PDFs open cleanly from the project cards.",
             "type": "build",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           },
           {
             "time": "2\u20134pm",
@@ -1878,7 +1858,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: CTEs & Complex Queries",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
@@ -1900,7 +1880,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Pin Portfolio URL, IPL Dashboard, and E-commerce report to Featured section.",
             "type": "build",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://roadmap.sh/data-analyst"
           },
           {
             "time": "5\u20136pm",
@@ -1925,7 +1905,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: Hard LeetCode SQL 1",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
@@ -1937,19 +1917,18 @@ const weeks = [
             "time": "11am\u20131pm",
             "task": "Version 1 (Data Analyst): Highlight SQL, Python, Power BI, IPL.",
             "type": "write",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "2\u20134pm",
             "task": "Version 2 (Product Analyst): Highlight Funnel analysis, OTT metrics, E-commerce psychology.",
-            "type": "write",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "write"
           },
           {
             "time": "4\u20135pm",
             "task": "Create master Job Tracker sheet in Excel (Company, Role, Status, Follow-up).",
             "type": "plan",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           },
           {
             "time": "5\u20136pm",
@@ -1974,7 +1953,7 @@ const weeks = [
             "time": "8\u20139am",
             "task": "Core Concept: Advanced SQL: Hard LeetCode SQL 2",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
@@ -2071,19 +2050,19 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Leetcode Easy Set",
             "type": "practice",
-            "link": "https://leetcode.com/problemset/database/"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C9: Capstone: Data Wrangling & SQL",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
             "task": "Build Lyrics Dashboard: Grid layout for songs (Spotify style).",
             "type": "build",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
@@ -2117,7 +2096,7 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Leetcode Medium Set",
             "type": "practice",
-            "link": "https://leetcode.com/problemset/database/"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "8\u20139am",
@@ -2161,13 +2140,13 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Amazon DSA Questions",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C9: Capstone: Interactive Dashboard",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "9\u201311am",
@@ -2213,37 +2192,37 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Google DSA Questions",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C10: Generative AI for Data Cleaning",
             "type": "practice",
-            "link": "https://pandas.pydata.org/docs/user_guide/10min.html"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy"
           },
           {
             "time": "9\u201311am",
             "task": "Practice: 10 Advanced SQL questions (Window functions, CTEs).",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "11am\u20131pm",
             "task": "Practice: Python Pandas \u2014 solve 5 business questions on a new dataset in 1 hour.",
             "type": "practice",
-            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           },
           {
             "time": "2\u20134pm",
             "task": "Practice: Excel/Power BI \u2014 build a rapid pivot/DAX report in 30 mins.",
             "type": "practice",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "4\u20135pm",
             "task": "Practice verbal pitch: 'Walk me through your IPL/E-commerce project'.",
             "type": "practice",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "link": "https://www.youtube.com/watch?v=j4xlVLgsmNQ"
           },
           {
             "time": "5\u20136pm",
@@ -2262,7 +2241,7 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Meta DSA Questions",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "8\u20139am",
@@ -2274,7 +2253,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Write STAR answers: Tell me about yourself, Why analytics?, Biggest challenge.",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
@@ -2291,13 +2270,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Prepare 3 smart questions to ask interviewers.",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "5\u20136pm",
             "task": "Mock interview with a friend or mentor.",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           }
         ],
         "outcome": "Behavioral and product case questions rehearsed.",
@@ -2310,13 +2289,13 @@ const weeks = [
             "time": "7\u20138am",
             "task": "DSA Practice: Mock Interview: Microsoft DSA Questions",
             "type": "practice",
-            "link": "https://roadmap.sh/data-analyst"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C10: Prompt Engineering for Python Code",
             "type": "practice",
-            "link": "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           },
           {
             "time": "9\u201311am",
@@ -2337,7 +2316,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Post on LinkedIn: Share an insight from Sahitya or your SQL query library.",
             "type": "content",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "5\u20136pm",
@@ -2374,8 +2353,7 @@ const weeks = [
           {
             "time": "9\u201311am",
             "task": "Download Pro Kabaddi League (PKL) dataset from Kaggle.",
-            "type": "data",
-            "link": "https://www.kaggle.com/learn"
+            "type": "data"
           },
           {
             "time": "11am\u20131pm",
@@ -2385,14 +2363,13 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Build Player value vs contract analysis (apply IPL logic to PKL).",
-            "type": "build",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "build"
           },
           {
             "time": "4\u20135pm",
             "task": "Create a quick 1-page report or 1-page Power BI dashboard.",
             "type": "build",
-            "link": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "5\u20136pm",
@@ -2423,7 +2400,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Take a timed SQL test on HackerRank or LeetCode.",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "11am\u20131pm",
@@ -2439,13 +2416,13 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Update your GitHub 'SQL Query Library' with complex solutions.",
             "type": "build",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "5\u20136pm",
             "task": "Post a SQL tip or snippet on LinkedIn.",
             "type": "content",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           }
         ],
         "outcome": "SQL skills hardened for technical rounds.",
@@ -2480,8 +2457,7 @@ const weeks = [
           {
             "time": "11am\u20131pm",
             "task": "Create 1 Instagram/LinkedIn Carousel: '5 things I learned analyzing IPL'.",
-            "type": "design",
-            "link": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset"
+            "type": "design"
           },
           {
             "time": "2\u20134pm",
@@ -2515,13 +2491,13 @@ const weeks = [
             "time": "8\u20139am",
             "task": "IBM Cert Module: IBM C11: Technical Interview Prep (SQL/Python)",
             "type": "practice",
-            "link": "https://mode.com/sql-tutorial/introduction-to-sql/"
+            "link": "https://sqlbolt.com/"
           },
           {
             "time": "9\u201311am",
             "task": "Targeted applications: Find 5 roles requiring specific skills you have (e.g., Tableau + Python).",
             "type": "apply",
-            "link": "https://public.tableau.com/s/resources"
+            "link": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU"
           },
           {
             "time": "11am\u20131pm",
@@ -2542,7 +2518,7 @@ const weeks = [
             "time": "5\u20136pm",
             "task": "Update Excel tracker.",
             "type": "track",
-            "link": "https://chandoo.org/wp/excel-tutorial/"
+            "link": "https://www.youtube.com/watch?v=nopIGY1zJE0"
           }
         ],
         "outcome": "High-quality, tailored applications submitted.",
@@ -2567,7 +2543,7 @@ const weeks = [
             "time": "9\u201311am",
             "task": "Simulate a take-home assignment: Find a messy dataset, clean it, build a dashboard in 2 hours.",
             "type": "practice",
-            "link": "https://www.storytellingwithdata.com/blog"
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "11am\u20131pm",
@@ -2577,8 +2553,7 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Review your speed and output quality. Identify bottlenecks.",
-            "type": "review",
-            "link": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies"
+            "type": "review"
           },
           {
             "time": "4\u20135pm",
@@ -2624,7 +2599,8 @@ const weeks = [
           {
             "time": "2\u20134pm",
             "task": "Check Sahitya Rachanalu: ensure mobile view is perfect.",
-            "type": "review"
+            "type": "review",
+            "link": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9"
           },
           {
             "time": "4\u20135pm",
@@ -2680,7 +2656,7 @@ const weeks = [
             "time": "4\u20135pm",
             "task": "Plan Month 3: Continuous interviewing, Leetcode, and maybe a Machine Learning intro.",
             "type": "plan",
-            "link": "https://leetcode.com/problemset/database/"
+            "link": "https://www.interviewbit.com/data-analyst-interview-questions/"
           },
           {
             "time": "5\u20136pm",

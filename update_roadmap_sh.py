@@ -790,33 +790,28 @@ resource_tasks_by_day = {
 }
 
 # ─────────────────────────────────────────────────────────────────
-# GOLD STANDARD RESOURCE LINK MAPPING
-# Curated for 100% Knowledge Acquisition (Frustration-Free)
+# ULTIMATE FREE RESOURCE MAPPING (RESHAPED FROM CODEBASICS)
 # ─────────────────────────────────────────────────────────────────
 resource_links = {
     "A2Z:": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
-    "SQL": "https://mode.com/sql-tutorial/introduction-to-sql/",
-    "IPL": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset",
-    "OTT": "https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies",
-    "E-commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
-    "E-Commerce": "https://www.kaggle.com/datasets/carrie1/ecommerce-data",
-    "HackerRank": "https://www.hackerrank.com/domains/sql",
-    "Leetcode": "https://leetcode.com/problemset/database/",
-    "Excel": "https://chandoo.org/wp/excel-tutorial/",
-    "Power BI": "https://learn.microsoft.com/en-us/training/paths/perform-data-analysis-power-bi/",
-    "Tableau": "https://public.tableau.com/s/resources",
-    "Python": "https://jakevdp.github.io/PythonDataScienceHandbook/",
-    "Pandas": "https://pandas.pydata.org/docs/user_guide/10min.html",
-    "Numpy": "https://numpy.org/doc/stable/user/absolute_beginners.html",
-    "Matplotlib": "https://matplotlib.org/stable/tutorials/introductory/quick_start.html",
-    "Seaborn": "https://seaborn.pydata.org/tutorial.html",
-    "Stats": "https://www.khanacademy.org/math/statistics-probability",
-    "Math": "https://www.khanacademy.org/math/statistics-probability",
-    "Probability": "https://www.khanacademy.org/math/statistics-probability",
-    "Kaggle": "https://www.kaggle.com/learn",
-    "Viz": "https://www.storytellingwithdata.com/chart-guide",
-    "Dashboard": "https://www.storytellingwithdata.com/blog",
+    "SQL": "https://sqlbolt.com/",
+    "SQL Practice": "https://datalemur.com/",
+    "SQL Interview": "https://www.youtube.com/@techTFQ",
+    "Power BI": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9",
+    "Excel": "https://www.youtube.com/watch?v=nopIGY1zJE0",
+    "Python": "https://youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU",
+    "Python Exercise": "https://github.com/codebasics/py/tree/master/Basics/Exercise",
+    "Pandas": "https://youtube.com/playlist?list=PLeo1K3hjS3uuASpe-1LjfG5f14Bnozjwy",
+    "Numpy": "https://www.youtube.com/playlist?list=PLeo1K3hjS3uset9zIVzJWqplaWBiacTEU",
+    "Matplotlib": "https://youtube.com/playlist?list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl",
+    "Seaborn": "https://youtube.com/playlist?list=PLjVLYmrlmjGfhqSO3rF4n02rrj9w2Ch2C",
+    "Stats": "https://youtube.com/playlist?list=PLeo1K3hjS3uuKaU2nBDwr6zrSOTzNCs0l",
+    "Math": "https://youtu.be/npgbI8KYvN8",
+    "Interview": "https://www.interviewbit.com/data-analyst-interview-questions/",
+    "Interview Prep": "https://datalemur.com/",
     "Portfolio": "https://roadmap.sh/data-analyst",
+    "E-commerce Project": "https://www.youtube.com/watch?v=j4xlVLgsmNQ",
+    "IPL Project": "https://youtube.com/playlist?list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9",
 }
 
 def attach_link(task_obj):
@@ -831,12 +826,14 @@ def attach_link(task_obj):
             return
             
     # Category based fallback for better results
-    if "clean" in task_text or "wrangle" in task_text:
-        task_obj["link"] = resource_links["Pandas"]
-    elif "chart" in task_text or "plot" in task_text:
-        task_obj["link"] = resource_links["Viz"]
-    elif "sql" in task_text or "query" in task_text:
+    if "interview" in task_text:
+        task_obj["link"] = resource_links["Interview Prep"]
+    elif "sql" in task_text:
         task_obj["link"] = resource_links["SQL"]
+    elif "bi" in task_text or "dashboard" in task_text:
+        task_obj["link"] = resource_links["Power BI"]
+    elif "clean" in task_text or "pandas" in task_text:
+        task_obj["link"] = resource_links["Pandas"]
     elif task_type in ["practice", "learn", "watch"]:
         task_obj["link"] = "https://roadmap.sh/data-analyst"
 
