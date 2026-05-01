@@ -20,339 +20,353 @@ const weeks = [
     "days": [
       {
         "day": 1,
-        "title": "Day 1: Arrays - Easy (Hashing, Two-Pointers) & SELECT, Filtering & Logic (AND/OR/NOT)",
+        "title": "Day 1: Arrays - Easy & SELECT & Filtering",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
+            "desc": "Ecosystem and tools."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Easy (Hashing, Two-Pointers)",
+            "task": "\u2694\ufe0f DSA: Arrays - Easy",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Easy (Hashing, Two-Pointers) patterns via TUF A2Z."
+            "desc": "Master Arrays - Easy."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: LR: Number Series",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Number Series via Takeuforward Plus."
+            "desc": "Revise LR: Number Series."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency for baseline analysis."
+            "desc": "Central tendency."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT, Filtering & Logic (AND/OR/NOT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master SELECT, Filtering & Logic (AND/OR/NOT) techniques on TUF."
+            "desc": "Master SELECT & Filtering."
           }
         ],
-        "outcome": "Built depth in Arrays - Easy (Hashing, Two-Pointers) & SELECT, Filtering & Logic (AND/OR/NOT)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 2,
-        "title": "Day 2: Arrays - Medium (Kadane's, Sorting) & Sorting & TOP/LIMIT Clauses",
+        "title": "Day 2: Arrays - Medium & Sorting & Limiting",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
+            "desc": "Ecosystem and tools."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Medium (Kadane's, Sorting)",
+            "task": "\u2694\ufe0f DSA: Arrays - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Medium (Kadane's, Sorting) patterns via TUF A2Z."
+            "desc": "Master Arrays - Medium."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Quant: Number System",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Number System via Takeuforward Plus."
+            "desc": "Revise Quant: Number System."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Measuring dataset volatility."
+            "desc": "Dataset volatility."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & TOP/LIMIT Clauses",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & TOP/LIMIT Clauses techniques on TUF."
+            "desc": "Master Sorting & Limiting."
           }
         ],
-        "outcome": "Built depth in Arrays - Medium (Kadane's, Sorting) & Sorting & TOP/LIMIT Clauses."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 3,
-        "title": "Day 3: Arrays - Hard (Merged Intervals) & Aggregation Functions (SUM, AVG, COUNT)",
+        "title": "Day 3: Arrays - Hard & Aggregations Depth",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
+            "desc": "Ecosystem and tools."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Hard (Merged Intervals)",
+            "task": "\u2694\ufe0f DSA: Arrays - Hard",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Hard (Merged Intervals) patterns via TUF A2Z."
+            "desc": "Master Arrays - Hard."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability",
-            "desc": "Revision: Master Verbal: Sentence Rearrangement via Takeuforward Plus."
+            "desc": "Revise Verbal: Sentence Rearrangement."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing scales and bell curves."
+            "desc": "Standardizing scales."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregation Functions (SUM, AVG, COUNT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregations Depth",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Aggregation Functions (SUM, AVG, COUNT) techniques on TUF."
+            "desc": "Master Aggregations Depth."
           }
         ],
-        "outcome": "Built depth in Arrays - Hard (Merged Intervals) & Aggregation Functions (SUM, AVG, COUNT)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 4,
-        "title": "Day 4: Binary Search - 1D Arrays & GROUP BY & HAVING Depth",
+        "title": "Day 4: Binary Search - 1D & GROUP BY & HAVING",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C1: Intro to Data Analytics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/introduction-to-data-analytics",
-            "desc": "Course 1: Exploring roles, data types, and the analyst ecosystem."
+            "desc": "Ecosystem and tools."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - 1D Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - 1D",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - 1D Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - 1D."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding",
+            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Coding-Decoding via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
+            "desc": "Revise LR: Missing Numbers."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Handling skewed financial data."
+            "desc": "Handling skewed data."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING Depth",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master GROUP BY & HAVING Depth techniques on TUF."
+            "desc": "Master GROUP BY & HAVING."
           }
         ],
-        "outcome": "Built depth in Binary Search - 1D Arrays & GROUP BY & HAVING Depth."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 5,
-        "title": "Day 5: Binary Search - Answers (SQRT, Allocation) & Inner Joins & Self Joins",
+        "title": "Day 5: Binary Search - Answers & Inner & Self Joins",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
+            "desc": "Cleaning and formulas."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - Answers (SQRT, Allocation)",
+            "task": "\u2694\ufe0f DSA: Binary Search - Answers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - Answers (SQRT, Allocation) patterns via TUF A2Z."
+            "desc": "Master Binary Search - Answers."
           },
           {
             "time": "10\u201311am",
             "task": "\ud83e\udde0 Aptitude: Quant: Percentages",
             "type": "aptitude",
             "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Percentages via Takeuforward Plus."
+            "desc": "Revise Quant: Percentages."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision 1: Scientific validation of changes."
+            "desc": "Scientific validation."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins & Self Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner & Self Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins & Self Joins techniques on TUF."
+            "desc": "Master Inner & Self Joins."
           }
         ],
-        "outcome": "Built depth in Binary Search - Answers (SQRT, Allocation) & Inner Joins & Self Joins."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 6,
-        "title": "Day 6: Binary Search - 2D Arrays & Left, Right, and Full Joins",
+        "title": "Day 6: Binary Search - 2D & Left/Right Joins",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
+            "desc": "Cleaning and formulas."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - 2D Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - 2D",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - 2D Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - 2D."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/reading-comprehension/basic?subject=verbal-ability",
-            "desc": "Revision: Master Verbal: Reading Comprehension via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 1."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Decision 2: Determining significance."
+            "desc": "Significance determining."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left, Right, and Full Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left, Right, and Full Joins techniques on TUF."
+            "desc": "Master Left/Right Joins."
           }
         ],
-        "outcome": "Built depth in Binary Search - 2D Arrays & Left, Right, and Full Joins."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 7,
-        "title": "Day 7: Strings - Basic (Anagrams, Palindromes) & Subqueries - Scalar & Multiple Row",
+        "title": "Day 7: Strings - Basic & Subqueries",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
+            "desc": "Cleaning and formulas."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Basic (Anagrams, Palindromes)",
+            "task": "\u2694\ufe0f DSA: Strings - Basic",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Basic (Anagrams, Palindromes) patterns via TUF A2Z."
+            "desc": "Master Strings - Basic."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Blood Relations",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Blood Relations via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-1-logical?subject=mock-test",
+            "desc": "Revise LR Mock 1."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
+            "task": "\ud83d\udcca Math: Correlation",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
-            "desc": "Stats 4: Measuring relationships between variables."
+            "desc": "Variable relationships."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries - Scalar & Multiple Row",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Subqueries - Scalar & Multiple Row techniques on TUF."
+            "desc": "Master Subqueries."
           }
         ],
-        "outcome": "Built depth in Strings - Basic (Anagrams, Palindromes) & Subqueries - Scalar & Multiple Row."
+        "outcome": "Built depth in IPL Analytics."
       }
     ]
   },
@@ -364,339 +378,353 @@ const weeks = [
     "days": [
       {
         "day": 8,
-        "title": "Day 8: Strings - Medium (Reverse, Frequency) & Correlated Subqueries",
+        "title": "Day 8: Strings - Medium & Correlated Subqueries",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C2: Excel Basics",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/excel-basics-data-analysis-ibm",
-            "desc": "Course 2: Mastering data cleaning, formulas, and spreadsheet logic."
+            "desc": "Cleaning and formulas."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Medium (Reverse, Frequency)",
+            "task": "\u2694\ufe0f DSA: Strings - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Medium (Reverse, Frequency) patterns via TUF A2Z."
+            "desc": "Master Strings - Medium."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 1",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-loss/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Profit & Loss via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-1-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 1."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
-            "desc": "Stats 5: The backbone of sampling & inference."
+            "desc": "Sampling foundations."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
             "task": "\ud83d\udee0\ufe0f SQL Revision: Correlated Subqueries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Correlated Subqueries techniques on TUF."
+            "desc": "Master Correlated Subqueries."
           }
         ],
-        "outcome": "Built depth in Strings - Medium (Reverse, Frequency) & Correlated Subqueries."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 9,
-        "title": "Day 9: Singly Linked List - Basics & CTEs - Non-Recursive Foundations",
+        "title": "Day 9: Singly LL & CTEs Foundations",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
+            "desc": "Storytelling with data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Singly Linked List - Basics",
+            "task": "\u2694\ufe0f DSA: Singly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Singly Linked List - Basics patterns via TUF A2Z."
+            "desc": "Master Singly LL."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Grammar & Usage",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/grammar/basic?subject=verbal-ability",
-            "desc": "Revision: Master Verbal: Grammar & Usage via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 2."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
-            "desc": "Stats 6: Success/Failure probability modeling."
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Central tendency."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs - Non-Recursive Foundations",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs Foundations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CTEs - Non-Recursive Foundations techniques on TUF."
+            "desc": "Master CTEs Foundations."
           }
         ],
-        "outcome": "Built depth in Singly Linked List - Basics & CTEs - Non-Recursive Foundations."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 10,
-        "title": "Day 10: Doubly Linked List - Basics & Window Functions: ROW_NUMBER & RANK",
+        "title": "Day 10: Doubly LL & Window Functions: RANK",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
+            "desc": "Storytelling with data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Doubly Linked List - Basics",
+            "task": "\u2694\ufe0f DSA: Doubly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Doubly Linked List - Basics patterns via TUF A2Z."
+            "desc": "Master Doubly LL."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Direction Sense",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Direction Sense via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-2-logical?subject=mock-test",
+            "desc": "Revise LR Mock 2."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
-            "desc": "Stats 7: Modeling event frequency over time."
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Dataset volatility."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER & RANK",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: ROW_NUMBER & RANK techniques on TUF."
+            "desc": "Master Window Functions: RANK."
           }
         ],
-        "outcome": "Built depth in Doubly Linked List - Basics & Window Functions: ROW_NUMBER & RANK."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 11,
-        "title": "Day 11: LL Problems - Medium (Mid-point, Reverse) & Window Functions: LEAD & LAG (Time Series)",
+        "title": "Day 11: LL Medium & Window Functions: LEAD/LAG",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
+            "desc": "Storytelling with data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: LL Problems - Medium (Mid-point, Reverse)",
+            "task": "\u2694\ufe0f DSA: LL Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master LL Problems - Medium (Mid-point, Reverse) patterns via TUF A2Z."
+            "desc": "Master LL Medium."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 2",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-proportion/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Ratio & Proportion via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-2-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 2."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Chi-Square Test",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
-            "desc": "Decision 3: Testing independence between categories."
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
+            "desc": "Standardizing scales."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD & LAG (Time Series)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD/LAG",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: LEAD & LAG (Time Series) techniques on TUF."
+            "desc": "Master Window Functions: LEAD/LAG."
           }
         ],
-        "outcome": "Built depth in LL Problems - Medium (Mid-point, Reverse) & Window Functions: LEAD & LAG (Time Series)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 12,
-        "title": "Day 12: Recursion - Basic Patterns & Window Functions: SUM/AVG Over Partition",
+        "title": "Day 12: Recursion & Window Functions: Partition",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
+            "desc": "Storytelling with data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Recursion - Basic Patterns",
+            "task": "\u2694\ufe0f DSA: Recursion",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Recursion - Basic Patterns patterns via TUF A2Z."
+            "desc": "Master Recursion."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal: Vocabulary",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/verbal-ability/vocabulary/basic?subject=verbal-ability",
-            "desc": "Revision: Master Verbal: Vocabulary via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 3."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Confidence Intervals",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
-            "desc": "Stats 8: Estimating ranges with precision."
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
+            "desc": "Handling skewed data."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: SUM/AVG Over Partition",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: Partition",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: SUM/AVG Over Partition techniques on TUF."
+            "desc": "Master Window Functions: Partition."
           }
         ],
-        "outcome": "Built depth in Recursion - Basic Patterns & Window Functions: SUM/AVG Over Partition."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 13,
-        "title": "Day 13: Subsets & Subsequences & String Manipulation (CONCAT, SUBSTR, TRIM)",
+        "title": "Day 13: Subsets & String Functions",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C3: Data Viz with Excel & Cognos",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/data-visualization-dashboards-excel-cognos",
-            "desc": "Course 3: Building interactive dashboards and storytelling with data."
+            "desc": "Storytelling with data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Subsets & Subsequences",
+            "task": "\u2694\ufe0f DSA: Subsets",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Subsets & Subsequences patterns via TUF A2Z."
+            "desc": "Master Subsets."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Syllogism",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Syllogism via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-3-logical?subject=mock-test",
+            "desc": "Revise LR Mock 3."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Linear Regression Foundations",
+            "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
-            "desc": "Math 2: Predictive modeling baseline."
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
+            "desc": "Scientific validation."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: String Manipulation (CONCAT, SUBSTR, TRIM)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master String Manipulation (CONCAT, SUBSTR, TRIM) techniques on TUF."
+            "desc": "Master String Functions."
           }
         ],
-        "outcome": "Built depth in Subsets & Subsequences & String Manipulation (CONCAT, SUBSTR, TRIM)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 14,
-        "title": "Day 14: Bit Manipulation - Basics & Date/Time Functions & Formatting",
+        "title": "Day 14: Bit Manipulation & Date/Time Functions",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "desc": "Python foundations."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Bit Manipulation - Basics",
+            "task": "\u2694\ufe0f DSA: Bit Manipulation",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Bit Manipulation - Basics patterns via TUF A2Z."
+            "desc": "Master Bit Manipulation."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Work",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 3",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-work/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Time & Work via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-3-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 3."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
-            "desc": "Stats 9: Cleaning data using statistical bounds."
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
+            "desc": "Significance determining."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions & Formatting",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Date/Time Functions & Formatting techniques on TUF."
+            "desc": "Master Date/Time Functions."
           }
         ],
-        "outcome": "Built depth in Bit Manipulation - Basics & Date/Time Functions & Formatting."
+        "outcome": "Built depth in IPL Analytics."
       }
     ]
   },
@@ -708,339 +736,353 @@ const weeks = [
     "days": [
       {
         "day": 15,
-        "title": "Day 15: Stacks - Basics & CASE Statements (Conditional Logic)",
+        "title": "Day 15: Stacks & CASE Statements",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "desc": "Python foundations."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Stacks - Basics",
+            "task": "\u2694\ufe0f DSA: Stacks",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Stacks - Basics patterns via TUF A2Z."
+            "desc": "Master Stacks."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangement",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 4",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Seating Arrangement via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-4-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 4."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
+            "task": "\ud83d\udcca Math: Correlation",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
-            "desc": "Math 3: Understanding rate of change in business trends."
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Variable relationships."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements (Conditional Logic)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CASE Statements (Conditional Logic) techniques on TUF."
+            "desc": "Master CASE Statements."
           }
         ],
-        "outcome": "Built depth in Stacks - Basics & CASE Statements (Conditional Logic)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
         "day": 16,
-        "title": "Day 16: Queues - Basics & Set Operators (UNION, INTERSECT, EXCEPT)",
+        "title": "Day 16: Queues & Set Operators",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "desc": "Python foundations."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Queues - Basics",
+            "task": "\u2694\ufe0f DSA: Queues",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Queues - Basics patterns via TUF A2Z."
+            "desc": "Master Queues."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Data Interpretation",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 4",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/data-interpretation/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Data Interpretation via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-4-logical?subject=mock-test",
+            "desc": "Revise LR Mock 4."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Central Limit Theorem",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
+            "desc": "Sampling foundations."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
+            "type": "project",
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Set Operators."
+          }
+        ],
+        "outcome": "Built depth in IPL Analytics."
+      },
+      {
+        "day": 17,
+        "title": "Day 17: Sliding Window & Type Casting",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+            "desc": "Python foundations."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Sliding Window",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Sliding Window."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 4",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-4-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 4."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency for baseline analysis."
+            "desc": "Central tendency."
           },
           {
             "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION, INTERSECT, EXCEPT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Type Casting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Set Operators (UNION, INTERSECT, EXCEPT) techniques on TUF."
+            "desc": "Master Type Casting."
           }
         ],
-        "outcome": "Built depth in Queues - Basics & Set Operators (UNION, INTERSECT, EXCEPT)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
-        "day": 17,
-        "title": "Day 17: Sliding Window - Basics & Data Types & Type Casting (CAST/CONVERT)",
+        "day": 18,
+        "title": "Day 18: Hashing & Handling NULLs",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "desc": "Python foundations."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Sliding Window - Basics",
+            "task": "\u2694\ufe0f DSA: Hashing",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Sliding Window - Basics patterns via TUF A2Z."
+            "desc": "Master Hashing."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Time & Distance",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 5",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-distance/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Time & Distance via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-5-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 5."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Measuring dataset volatility."
+            "desc": "Dataset volatility."
           },
           {
             "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Data Types & Type Casting (CAST/CONVERT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Data Types & Type Casting (CAST/CONVERT) techniques on TUF."
+            "desc": "Master Handling NULLs."
           }
         ],
-        "outcome": "Built depth in Sliding Window - Basics & Data Types & Type Casting (CAST/CONVERT)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
-        "day": 18,
-        "title": "Day 18: Hashing - Maps & Sets & Handling NULLs (COALESCE, IFNULL)",
+        "day": 19,
+        "title": "Day 19: Two Pointers & Constraints & Keys",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "desc": "Python foundations."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Hashing - Maps & Sets",
+            "task": "\u2694\ufe0f DSA: Two Pointers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Hashing - Maps & Sets patterns via TUF A2Z."
+            "desc": "Master Two Pointers."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 5",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning",
-            "desc": "Revision: Master LR: Missing Numbers via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-5-logical?subject=mock-test",
+            "desc": "Revise LR Mock 5."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing scales and bell curves."
+            "desc": "Standardizing scales."
           },
           {
             "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs (COALESCE, IFNULL)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Constraints & Keys",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Handling NULLs (COALESCE, IFNULL) techniques on TUF."
+            "desc": "Master Constraints & Keys."
           }
         ],
-        "outcome": "Built depth in Hashing - Maps & Sets & Handling NULLs (COALESCE, IFNULL)."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
-        "day": 19,
-        "title": "Day 19: Two Pointers - Advanced & Database Constraints & Keys",
+        "day": 20,
+        "title": "Day 20: Greedy & Transaction Basics",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "desc": "Python foundations."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Two Pointers - Advanced",
+            "task": "\u2694\ufe0f DSA: Greedy",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Two Pointers - Advanced patterns via TUF A2Z."
+            "desc": "Master Greedy."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant: Average",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 5",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/average/basic?subject=quantitative-aptitude",
-            "desc": "Revision: Master Quant: Average via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-5-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 5."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Handling skewed financial data."
+            "desc": "Handling skewed data."
           },
           {
             "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: ANALYSE",
+            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Database Constraints & Keys",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Database Constraints & Keys techniques on TUF."
+            "desc": "Master Transaction Basics."
           }
         ],
-        "outcome": "Built depth in Two Pointers - Advanced & Database Constraints & Keys."
+        "outcome": "Built depth in IPL Analytics."
       },
       {
-        "day": 20,
-        "title": "Day 20: Greedy - Basic Patterns & Transaction Basics (COMMIT/ROLLBACK)",
+        "day": 21,
+        "title": "Day 21: Sorting & SELECT & Filtering",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
+            "desc": "Python foundations."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Greedy - Basic Patterns",
+            "task": "\u2694\ufe0f DSA: Sorting",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Greedy - Basic Patterns patterns via TUF A2Z."
+            "desc": "Master Sorting."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 1",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 6",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-1-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 1 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-6-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 6."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision 1: Scientific validation of changes."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f IPL Analytics: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics (COMMIT/ROLLBACK)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Transaction Basics (COMMIT/ROLLBACK) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Greedy - Basic Patterns & Transaction Basics (COMMIT/ROLLBACK)."
-      },
-      {
-        "day": 21,
-        "title": "Day 21: Sorting - Quick & Merge & SELECT, Filtering & Logic (AND/OR/NOT)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C4: Python for Data Science",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
-            "desc": "Course 4: Python fundamentals, data structures, and foundational libraries."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Sorting - Quick & Merge",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Sorting - Quick & Merge patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 1",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-1-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 1 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Decision 2: Determining significance."
+            "desc": "Scientific validation."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f IPL Analytics: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for IPL Analytics: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT, Filtering & Logic (AND/OR/NOT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master SELECT, Filtering & Logic (AND/OR/NOT) techniques on TUF."
+            "desc": "Master SELECT & Filtering."
           }
         ],
-        "outcome": "Built depth in Sorting - Quick & Merge & SELECT, Filtering & Logic (AND/OR/NOT)."
+        "outcome": "Built depth in IPL Analytics."
       }
     ]
   },
@@ -1052,339 +1094,353 @@ const weeks = [
     "days": [
       {
         "day": 22,
-        "title": "Day 22: Mathematics for DSA & Sorting & TOP/LIMIT Clauses",
+        "title": "Day 22: Math for DSA & Sorting & Limiting",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C5: Python Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-project-for-data-science",
-            "desc": "Course 5: Applying Python to a real-world stock/revenue analysis project."
+            "desc": "Applied implementation."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Mathematics for DSA",
+            "task": "\u2694\ufe0f DSA: Math for DSA",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Mathematics for DSA patterns via TUF A2Z."
+            "desc": "Master Math for DSA."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 1",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 6",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-1-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 1 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-6-logical?subject=mock-test",
+            "desc": "Revise LR Mock 6."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
-            "desc": "Stats 4: Measuring relationships between variables."
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
+            "desc": "Significance determining."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends"
+            "desc": "Goal: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & TOP/LIMIT Clauses",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & TOP/LIMIT Clauses techniques on TUF."
+            "desc": "Master Sorting & Limiting."
           }
         ],
-        "outcome": "Built depth in Mathematics for DSA & Sorting & TOP/LIMIT Clauses."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 23,
-        "title": "Day 23: Time Complexity Analysis & Aggregation Functions (SUM, AVG, COUNT)",
+        "title": "Day 23: Time Complexity & Aggregations Depth",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C5: Python Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-project-for-data-science",
-            "desc": "Course 5: Applying Python to a real-world stock/revenue analysis project."
+            "desc": "Applied implementation."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Time Complexity Analysis",
+            "task": "\u2694\ufe0f DSA: Time Complexity",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Time Complexity Analysis patterns via TUF A2Z."
+            "desc": "Master Time Complexity."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 2",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 6",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-2-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 2 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-6-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 6."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Correlation",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Variable relationships."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
+            "type": "project",
+            "desc": "Goal: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregations Depth",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Aggregations Depth."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 24,
+        "title": "Day 24: Searching & GROUP BY & HAVING",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/sql-data-science",
+            "desc": "Querying relational data."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Searching",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Searching."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 7",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-7-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 7."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
-            "desc": "Stats 5: The backbone of sampling & inference."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregation Functions (SUM, AVG, COUNT)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Aggregation Functions (SUM, AVG, COUNT) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Time Complexity Analysis & Aggregation Functions (SUM, AVG, COUNT)."
-      },
-      {
-        "day": 24,
-        "title": "Day 24: Searching Algorithms & GROUP BY & HAVING Depth",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Course 6: Querying relational databases for professional insights."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Searching Algorithms",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Searching Algorithms patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 2",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-2-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 2 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
-            "desc": "Stats 6: Success/Failure probability modeling."
+            "desc": "Sampling foundations."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown"
+            "desc": "Goal: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING Depth",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master GROUP BY & HAVING Depth techniques on TUF."
+            "desc": "Master GROUP BY & HAVING."
           }
         ],
-        "outcome": "Built depth in Searching Algorithms & GROUP BY & HAVING Depth."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 25,
-        "title": "Day 25: Heaps - Basic Intro & Inner Joins & Self Joins",
+        "title": "Day 25: Heaps & Inner & Self Joins",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Course 6: Querying relational databases for professional insights."
+            "desc": "Querying relational data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Heaps - Basic Intro",
+            "task": "\u2694\ufe0f DSA: Heaps",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Heaps - Basic Intro patterns via TUF A2Z."
+            "desc": "Master Heaps."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 2",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 7",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-2-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 2 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-7-logical?subject=mock-test",
+            "desc": "Revise LR Mock 7."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
-            "desc": "Stats 7: Modeling event frequency over time."
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Central tendency."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends"
+            "desc": "Goal: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins & Self Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner & Self Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins & Self Joins techniques on TUF."
+            "desc": "Master Inner & Self Joins."
           }
         ],
-        "outcome": "Built depth in Heaps - Basic Intro & Inner Joins & Self Joins."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 26,
-        "title": "Day 26: Arrays - Easy (Hashing, Two-Pointers) & Left, Right, and Full Joins",
+        "title": "Day 26: Arrays - Easy & Left/Right Joins",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Course 6: Querying relational databases for professional insights."
+            "desc": "Querying relational data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Easy (Hashing, Two-Pointers)",
+            "task": "\u2694\ufe0f DSA: Arrays - Easy",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Easy (Hashing, Two-Pointers) patterns via TUF A2Z."
+            "desc": "Master Arrays - Easy."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 3",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 7",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-3-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 3 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-7-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 7."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Chi-Square Test",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
-            "desc": "Decision 3: Testing independence between categories."
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Dataset volatility."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity"
+            "desc": "Goal: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left, Right, and Full Joins",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left, Right, and Full Joins techniques on TUF."
+            "desc": "Master Left/Right Joins."
           }
         ],
-        "outcome": "Built depth in Arrays - Easy (Hashing, Two-Pointers) & Left, Right, and Full Joins."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 27,
-        "title": "Day 27: Arrays - Medium (Kadane's, Sorting) & Subqueries - Scalar & Multiple Row",
+        "title": "Day 27: Arrays - Medium & Subqueries",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Course 6: Querying relational databases for professional insights."
+            "desc": "Querying relational data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Medium (Kadane's, Sorting)",
+            "task": "\u2694\ufe0f DSA: Arrays - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Medium (Kadane's, Sorting) patterns via TUF A2Z."
+            "desc": "Master Arrays - Medium."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 3",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 8",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-3-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 3 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-8-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 8."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Confidence Intervals",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
-            "desc": "Stats 8: Estimating ranges with precision."
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
+            "desc": "Standardizing scales."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown"
+            "desc": "Goal: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries - Scalar & Multiple Row",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Subqueries - Scalar & Multiple Row techniques on TUF."
+            "desc": "Master Subqueries."
           }
         ],
-        "outcome": "Built depth in Arrays - Medium (Kadane's, Sorting) & Subqueries - Scalar & Multiple Row."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 28,
-        "title": "Day 28: Arrays - Hard (Merged Intervals) & Correlated Subqueries",
+        "title": "Day 28: Arrays - Hard & Correlated Subqueries",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Course 6: Querying relational databases for professional insights."
+            "desc": "Querying relational data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Hard (Merged Intervals)",
+            "task": "\u2694\ufe0f DSA: Arrays - Hard",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Hard (Merged Intervals) patterns via TUF A2Z."
+            "desc": "Master Arrays - Hard."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 3",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 8",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-3-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 3 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-8-logical?subject=mock-test",
+            "desc": "Revise LR Mock 8."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Linear Regression Foundations",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
-            "desc": "Math 2: Predictive modeling baseline."
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
+            "desc": "Handling skewed data."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends"
+            "desc": "Goal: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
             "task": "\ud83d\udee0\ufe0f SQL Revision: Correlated Subqueries",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Correlated Subqueries techniques on TUF."
+            "desc": "Master Correlated Subqueries."
           }
         ],
-        "outcome": "Built depth in Arrays - Hard (Merged Intervals) & Correlated Subqueries."
+        "outcome": "Built depth in OTT Dashboard."
       }
     ]
   },
@@ -1396,339 +1452,353 @@ const weeks = [
     "days": [
       {
         "day": 29,
-        "title": "Day 29: Binary Search - 1D Arrays & CTEs - Non-Recursive Foundations",
+        "title": "Day 29: Binary Search - 1D & CTEs Foundations",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C6: Databases and SQL",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/sql-data-science",
-            "desc": "Course 6: Querying relational databases for professional insights."
+            "desc": "Querying relational data."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - 1D Arrays",
+            "task": "\u2694\ufe0f DSA: Binary Search - 1D",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - 1D Arrays patterns via TUF A2Z."
+            "desc": "Master Binary Search - 1D."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 4",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 8",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-4-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 4 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
-            "desc": "Stats 9: Cleaning data using statistical bounds."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs - Non-Recursive Foundations",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CTEs - Non-Recursive Foundations techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Binary Search - 1D Arrays & CTEs - Non-Recursive Foundations."
-      },
-      {
-        "day": 30,
-        "title": "Day 30: Binary Search - Answers (SQRT, Allocation) & Window Functions: ROW_NUMBER & RANK",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "Course 7: EDA, model development, and evaluation with Python."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - Answers (SQRT, Allocation)",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - Answers (SQRT, Allocation) patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 4",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-4-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 4 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
-            "desc": "Math 3: Understanding rate of change in business trends."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER & RANK",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: ROW_NUMBER & RANK techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Binary Search - Answers (SQRT, Allocation) & Window Functions: ROW_NUMBER & RANK."
-      },
-      {
-        "day": 31,
-        "title": "Day 31: Binary Search - 2D Arrays & Window Functions: LEAD & LAG (Time Series)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "Course 7: EDA, model development, and evaluation with Python."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - 2D Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - 2D Arrays patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 4",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-4-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 4 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency for baseline analysis."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD & LAG (Time Series)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: LEAD & LAG (Time Series) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Binary Search - 2D Arrays & Window Functions: LEAD & LAG (Time Series)."
-      },
-      {
-        "day": 32,
-        "title": "Day 32: Strings - Basic (Anagrams, Palindromes) & Window Functions: SUM/AVG Over Partition",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "Course 7: EDA, model development, and evaluation with Python."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Basic (Anagrams, Palindromes)",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Basic (Anagrams, Palindromes) patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 5",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-5-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 5 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & Variance",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Measuring dataset volatility."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: SUM/AVG Over Partition",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: SUM/AVG Over Partition techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Strings - Basic (Anagrams, Palindromes) & Window Functions: SUM/AVG Over Partition."
-      },
-      {
-        "day": 33,
-        "title": "Day 33: Strings - Medium (Reverse, Frequency) & String Manipulation (CONCAT, SUBSTR, TRIM)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "Course 7: EDA, model development, and evaluation with Python."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Medium (Reverse, Frequency)",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Medium (Reverse, Frequency) patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 5",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-5-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 5 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing scales and bell curves."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: String Manipulation (CONCAT, SUBSTR, TRIM)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master String Manipulation (CONCAT, SUBSTR, TRIM) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Strings - Medium (Reverse, Frequency) & String Manipulation (CONCAT, SUBSTR, TRIM)."
-      },
-      {
-        "day": 34,
-        "title": "Day 34: Singly Linked List - Basics & Date/Time Functions & Formatting",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "Course 7: EDA, model development, and evaluation with Python."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Singly Linked List - Basics",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Singly Linked List - Basics patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 5",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-5-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 5 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Logarithm & Scaling",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Handling skewed financial data."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions & Formatting",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Date/Time Functions & Formatting techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Singly Linked List - Basics & Date/Time Functions & Formatting."
-      },
-      {
-        "day": 35,
-        "title": "Day 35: Doubly Linked List - Basics & CASE Statements (Conditional Logic)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/data-analysis-with-python",
-            "desc": "Course 7: EDA, model development, and evaluation with Python."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Doubly Linked List - Basics",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Doubly Linked List - Basics patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 6",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-6-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 6 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-8-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 8."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision 1: Scientific validation of changes."
+            "desc": "Scientific validation."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity"
+            "desc": "Goal: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements (Conditional Logic)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs Foundations",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CASE Statements (Conditional Logic) techniques on TUF."
+            "desc": "Master CTEs Foundations."
           }
         ],
-        "outcome": "Built depth in Doubly Linked List - Basics & CASE Statements (Conditional Logic)."
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 30,
+        "title": "Day 30: Binary Search - Answers & Window Functions: RANK",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python",
+            "desc": "EDA and modeling."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Binary Search - Answers",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Binary Search - Answers."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 9",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-9-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 9."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
+            "desc": "Significance determining."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
+            "type": "project",
+            "desc": "Goal: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: RANK."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 31,
+        "title": "Day 31: Binary Search - 2D & Window Functions: LEAD/LAG",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python",
+            "desc": "EDA and modeling."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Binary Search - 2D",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Binary Search - 2D."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 9",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-9-logical?subject=mock-test",
+            "desc": "Revise LR Mock 9."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Correlation",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Variable relationships."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
+            "type": "project",
+            "desc": "Goal: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD/LAG",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: LEAD/LAG."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 32,
+        "title": "Day 32: Strings - Basic & Window Functions: Partition",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python",
+            "desc": "EDA and modeling."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Strings - Basic",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Strings - Basic."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 9",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-9-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 9."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Central Limit Theorem",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
+            "desc": "Sampling foundations."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
+            "type": "project",
+            "desc": "Goal: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: Partition",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: Partition."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 33,
+        "title": "Day 33: Strings - Medium & String Functions",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python",
+            "desc": "EDA and modeling."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Strings - Medium",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Strings - Medium."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 10",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-10-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 10."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Central tendency."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
+            "type": "project",
+            "desc": "Goal: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master String Functions."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 34,
+        "title": "Day 34: Singly LL & Date/Time Functions",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python",
+            "desc": "EDA and modeling."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Singly LL",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Singly LL."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 10",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-10-logical?subject=mock-test",
+            "desc": "Revise LR Mock 10."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Dataset volatility."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
+            "type": "project",
+            "desc": "Goal: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Date/Time Functions."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 35,
+        "title": "Day 35: Doubly LL & CASE Statements",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C7: Data Analysis with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/data-analysis-with-python",
+            "desc": "EDA and modeling."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Doubly LL",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Doubly LL."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 10",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-10-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 10."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
+            "desc": "Standardizing scales."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
+            "type": "project",
+            "desc": "Goal: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master CASE Statements."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
       }
     ]
   },
@@ -1740,339 +1810,353 @@ const weeks = [
     "days": [
       {
         "day": 36,
-        "title": "Day 36: LL Problems - Medium (Mid-point, Reverse) & Set Operators (UNION, INTERSECT, EXCEPT)",
+        "title": "Day 36: LL Medium & Set Operators",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
+            "desc": "Advanced plotting."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: LL Problems - Medium (Mid-point, Reverse)",
+            "task": "\u2694\ufe0f DSA: LL Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master LL Problems - Medium (Mid-point, Reverse) patterns via TUF A2Z."
+            "desc": "Master LL Medium."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 6",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 11",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-6-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 6 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-11-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 11."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Decision 2: Determining significance."
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
+            "desc": "Handling skewed data."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown"
+            "desc": "Goal: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION, INTERSECT, EXCEPT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Set Operators (UNION, INTERSECT, EXCEPT) techniques on TUF."
+            "desc": "Master Set Operators."
           }
         ],
-        "outcome": "Built depth in LL Problems - Medium (Mid-point, Reverse) & Set Operators (UNION, INTERSECT, EXCEPT)."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 37,
-        "title": "Day 37: Recursion - Basic Patterns & Data Types & Type Casting (CAST/CONVERT)",
+        "title": "Day 37: Recursion & Type Casting",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
+            "desc": "Advanced plotting."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Recursion - Basic Patterns",
+            "task": "\u2694\ufe0f DSA: Recursion",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Recursion - Basic Patterns patterns via TUF A2Z."
+            "desc": "Master Recursion."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 6",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 11",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-6-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 6 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-11-logical?subject=mock-test",
+            "desc": "Revise LR Mock 11."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
+            "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
-            "desc": "Stats 4: Measuring relationships between variables."
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
+            "desc": "Scientific validation."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends"
+            "desc": "Goal: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Data Types & Type Casting (CAST/CONVERT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Type Casting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Data Types & Type Casting (CAST/CONVERT) techniques on TUF."
+            "desc": "Master Type Casting."
           }
         ],
-        "outcome": "Built depth in Recursion - Basic Patterns & Data Types & Type Casting (CAST/CONVERT)."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 38,
-        "title": "Day 38: Subsets & Subsequences & Handling NULLs (COALESCE, IFNULL)",
+        "title": "Day 38: Subsets & Handling NULLs",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
+            "desc": "Advanced plotting."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Subsets & Subsequences",
+            "task": "\u2694\ufe0f DSA: Subsets",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Subsets & Subsequences patterns via TUF A2Z."
+            "desc": "Master Subsets."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 7",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 11",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-7-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 7 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-11-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 11."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
+            "desc": "Significance determining."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
+            "type": "project",
+            "desc": "Goal: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Handling NULLs."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 39,
+        "title": "Day 39: Bit Manipulation & Constraints & Keys",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-data-visualization",
+            "desc": "Advanced plotting."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Bit Manipulation",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Bit Manipulation."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 12",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-12-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 12."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Correlation",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Variable relationships."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
+            "type": "project",
+            "desc": "Goal: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Constraints & Keys",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Constraints & Keys."
+          }
+        ],
+        "outcome": "Built depth in OTT Dashboard."
+      },
+      {
+        "day": 40,
+        "title": "Day 40: Stacks & Transaction Basics",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/python-for-data-visualization",
+            "desc": "Advanced plotting."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Stacks",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Stacks."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 12",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-12-logical?subject=mock-test",
+            "desc": "Revise LR Mock 12."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
-            "desc": "Stats 5: The backbone of sampling & inference."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs (COALESCE, IFNULL)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Handling NULLs (COALESCE, IFNULL) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Subsets & Subsequences & Handling NULLs (COALESCE, IFNULL)."
-      },
-      {
-        "day": 39,
-        "title": "Day 39: Bit Manipulation - Basics & Database Constraints & Keys",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Bit Manipulation - Basics",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Bit Manipulation - Basics patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 7",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-7-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 7 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
-            "desc": "Stats 6: Success/Failure probability modeling."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Database Constraints & Keys",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Database Constraints & Keys techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Bit Manipulation - Basics & Database Constraints & Keys."
-      },
-      {
-        "day": 40,
-        "title": "Day 40: Stacks - Basics & Transaction Basics (COMMIT/ROLLBACK)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Stacks - Basics",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Stacks - Basics patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 7",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-7-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 7 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
-            "desc": "Stats 7: Modeling event frequency over time."
+            "desc": "Sampling foundations."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends"
+            "desc": "Goal: Churn rate by genre | Sentiment vs Watch-time | Completion rates by region | Marketing ROI by platform | Niche genre growth trends",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics (COMMIT/ROLLBACK)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Transaction Basics (COMMIT/ROLLBACK) techniques on TUF."
+            "desc": "Master Transaction Basics."
           }
         ],
-        "outcome": "Built depth in Stacks - Basics & Transaction Basics (COMMIT/ROLLBACK)."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 41,
-        "title": "Day 41: Queues - Basics & SELECT, Filtering & Logic (AND/OR/NOT)",
+        "title": "Day 41: Queues & SELECT & Filtering",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C8: Data Viz with Python",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/python-for-data-visualization",
-            "desc": "Course 8: Mastering Matplotlib, Seaborn, and Dash for reporting."
+            "desc": "Advanced plotting."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Queues - Basics",
+            "task": "\u2694\ufe0f DSA: Queues",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Queues - Basics patterns via TUF A2Z."
+            "desc": "Master Queues."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 8",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 12",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-8-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 8 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-12-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 12."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Chi-Square Test",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
-            "desc": "Decision 3: Testing independence between categories."
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Central tendency."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity"
+            "desc": "Goal: Viz: Churn Funnel | SQL: Sentiment Join Table | KPI: Region-wise retention | Viz: Marketing ROI Scatter | KPI: Growth Velocity",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT, Filtering & Logic (AND/OR/NOT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: SELECT & Filtering",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master SELECT, Filtering & Logic (AND/OR/NOT) techniques on TUF."
+            "desc": "Master SELECT & Filtering."
           }
         ],
-        "outcome": "Built depth in Queues - Basics & SELECT, Filtering & Logic (AND/OR/NOT)."
+        "outcome": "Built depth in OTT Dashboard."
       },
       {
         "day": 42,
-        "title": "Day 42: Sliding Window - Basics & Sorting & TOP/LIMIT Clauses",
+        "title": "Day 42: Sliding Window & Sorting & Limiting",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "Course 9: Final industry-style capstone following all data phases."
+            "desc": "End-to-end capstone."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Sliding Window - Basics",
+            "task": "\u2694\ufe0f DSA: Sliding Window",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Sliding Window - Basics patterns via TUF A2Z."
+            "desc": "Master Sliding Window."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 8",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 13",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-8-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 8 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-13-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 13."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Confidence Intervals",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
-            "desc": "Stats 8: Estimating ranges with precision."
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Dataset volatility."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f OTT Dashboard: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for OTT Dashboard: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown"
+            "desc": "Goal: Content Strategy Doc | Marketing Optimization Report | Retention Playbook | Genre investment roadmap | Competitor teardown",
+            "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows",
+            "info": "https://www.justwatch.com/in"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & TOP/LIMIT Clauses",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Sorting & Limiting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Sorting & TOP/LIMIT Clauses techniques on TUF."
+            "desc": "Master Sorting & Limiting."
           }
         ],
-        "outcome": "Built depth in Sliding Window - Basics & Sorting & TOP/LIMIT Clauses."
+        "outcome": "Built depth in OTT Dashboard."
       }
     ]
   },
@@ -2084,339 +2168,353 @@ const weeks = [
     "days": [
       {
         "day": 43,
-        "title": "Day 43: Hashing - Maps & Sets & Aggregation Functions (SUM, AVG, COUNT)",
+        "title": "Day 43: Hashing & Aggregations Depth",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "Course 9: Final industry-style capstone following all data phases."
+            "desc": "End-to-end capstone."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Hashing - Maps & Sets",
+            "task": "\u2694\ufe0f DSA: Hashing",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Hashing - Maps & Sets patterns via TUF A2Z."
+            "desc": "Master Hashing."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 8",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 13",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-8-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 8 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Linear Regression Foundations",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
-            "desc": "Math 2: Predictive modeling baseline."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregation Functions (SUM, AVG, COUNT)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Aggregation Functions (SUM, AVG, COUNT) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Hashing - Maps & Sets & Aggregation Functions (SUM, AVG, COUNT)."
-      },
-      {
-        "day": 44,
-        "title": "Day 44: Two Pointers - Advanced & GROUP BY & HAVING Depth",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "Course 9: Final industry-style capstone following all data phases."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Two Pointers - Advanced",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Two Pointers - Advanced patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 9",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-9-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 9 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
-            "desc": "Stats 9: Cleaning data using statistical bounds."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING Depth",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master GROUP BY & HAVING Depth techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Two Pointers - Advanced & GROUP BY & HAVING Depth."
-      },
-      {
-        "day": 45,
-        "title": "Day 45: Greedy - Basic Patterns & Inner Joins & Self Joins",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "Course 9: Final industry-style capstone following all data phases."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Greedy - Basic Patterns",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Greedy - Basic Patterns patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 9",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-9-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 9 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
-            "desc": "Math 3: Understanding rate of change in business trends."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner Joins & Self Joins",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Inner Joins & Self Joins techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Greedy - Basic Patterns & Inner Joins & Self Joins."
-      },
-      {
-        "day": 46,
-        "title": "Day 46: Sorting - Quick & Merge & Left, Right, and Full Joins",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "Course 9: Final industry-style capstone following all data phases."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Sorting - Quick & Merge",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Sorting - Quick & Merge patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 9",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-9-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 9 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Mean, Median, Mode",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
-            "desc": "Stats 1: Central tendency for baseline analysis."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Left, Right, and Full Joins",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Left, Right, and Full Joins techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Sorting - Quick & Merge & Left, Right, and Full Joins."
-      },
-      {
-        "day": 47,
-        "title": "Day 47: Mathematics for DSA & Subqueries - Scalar & Multiple Row",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "Course 9: Final industry-style capstone following all data phases."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Mathematics for DSA",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Mathematics for DSA patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 10",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-10-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 10 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Std Deviation & Variance",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
-            "desc": "Stats 2: Measuring dataset volatility."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries - Scalar & Multiple Row",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Subqueries - Scalar & Multiple Row techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Mathematics for DSA & Subqueries - Scalar & Multiple Row."
-      },
-      {
-        "day": 48,
-        "title": "Day 48: Time Complexity Analysis & Correlated Subqueries",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
-            "desc": "Course 9: Final industry-style capstone following all data phases."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Time Complexity Analysis",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Time Complexity Analysis patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 10",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-10-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 10 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-13-logical?subject=mock-test",
+            "desc": "Revise LR Mock 13."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
-            "desc": "Stats 3: Standardizing scales and bell curves."
+            "desc": "Standardizing scales."
           },
           {
             "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Correlated Subqueries",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Aggregations Depth",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Correlated Subqueries techniques on TUF."
+            "desc": "Master Aggregations Depth."
           }
         ],
-        "outcome": "Built depth in Time Complexity Analysis & Correlated Subqueries."
+        "outcome": "Built depth in E-com Platform."
       },
       {
-        "day": 49,
-        "title": "Day 49: Searching Algorithms & CTEs - Non-Recursive Foundations",
+        "day": 44,
+        "title": "Day 44: Two Pointers & GROUP BY & HAVING",
         "tasks": [
           {
             "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C10: Generative AI",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
             "type": "ibm",
-            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
-            "desc": "Course 10: Leveraging LLMs to automate cleaning and presentation."
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
+            "desc": "End-to-end capstone."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Searching Algorithms",
+            "task": "\u2694\ufe0f DSA: Two Pointers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Searching Algorithms patterns via TUF A2Z."
+            "desc": "Master Two Pointers."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 10",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 13",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-10-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 10 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-13-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 13."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
-            "desc": "Math 1: Handling skewed financial data."
+            "desc": "Handling skewed data."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
+            "type": "project",
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: GROUP BY & HAVING",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master GROUP BY & HAVING."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 45,
+        "title": "Day 45: Greedy & Inner & Self Joins",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
+            "desc": "End-to-end capstone."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Greedy",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Greedy."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 14",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-14-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 14."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: A/B Testing Basics",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
+            "desc": "Scientific validation."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
+            "type": "project",
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Inner & Self Joins",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Inner & Self Joins."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 46,
+        "title": "Day 46: Sorting & Left/Right Joins",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
+            "desc": "End-to-end capstone."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Sorting",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Sorting."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 14",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-14-logical?subject=mock-test",
+            "desc": "Revise LR Mock 14."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
+            "desc": "Significance determining."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs - Non-Recursive Foundations",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Left/Right Joins",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CTEs - Non-Recursive Foundations techniques on TUF."
+            "desc": "Master Left/Right Joins."
           }
         ],
-        "outcome": "Built depth in Searching Algorithms & CTEs - Non-Recursive Foundations."
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 47,
+        "title": "Day 47: Math for DSA & Subqueries",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
+            "desc": "End-to-end capstone."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Math for DSA",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Math for DSA."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 14",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-14-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 14."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Correlation",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
+            "desc": "Variable relationships."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
+            "type": "project",
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Subqueries",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Subqueries."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 48,
+        "title": "Day 48: Time Complexity & Correlated Subqueries",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C9: Capstone Project",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/ibm-data-analyst-capstone-project",
+            "desc": "End-to-end capstone."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Time Complexity",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Time Complexity."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 15",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-15-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 15."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Central Limit Theorem",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
+            "desc": "Sampling foundations."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
+            "type": "project",
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Correlated Subqueries",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Correlated Subqueries."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 49,
+        "title": "Day 49: Searching & CTEs Foundations",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C10: Generative AI",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
+            "desc": "Leveraging AI."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Searching",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Searching."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 15",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-15-logical?subject=mock-test",
+            "desc": "Revise LR Mock 15."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Central tendency."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
+            "type": "project",
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CTEs Foundations",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master CTEs Foundations."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
       }
     ]
   },
@@ -2428,339 +2526,353 @@ const weeks = [
     "days": [
       {
         "day": 50,
-        "title": "Day 50: Heaps - Basic Intro & Window Functions: ROW_NUMBER & RANK",
+        "title": "Day 50: Heaps & Window Functions: RANK",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C10: Generative AI",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
-            "desc": "Course 10: Leveraging LLMs to automate cleaning and presentation."
+            "desc": "Leveraging AI."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Heaps - Basic Intro",
+            "task": "\u2694\ufe0f DSA: Heaps",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Heaps - Basic Intro patterns via TUF A2Z."
+            "desc": "Master Heaps."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 11",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 15",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-11-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 11 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-15-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 15."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Dataset volatility."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
+            "type": "project",
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: RANK",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: RANK."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 51,
+        "title": "Day 51: Arrays - Easy & Window Functions: LEAD/LAG",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C10: Generative AI",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
+            "desc": "Leveraging AI."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Arrays - Easy",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Arrays - Easy."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 16",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-16-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 16."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
+            "desc": "Standardizing scales."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
+            "type": "project",
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD/LAG",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: LEAD/LAG."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 52,
+        "title": "Day 52: Arrays - Medium & Window Functions: Partition",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
+            "desc": "Professional excellence."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Arrays - Medium",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Arrays - Medium."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 16",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-16-logical?subject=mock-test",
+            "desc": "Revise LR Mock 16."
+          },
+          {
+            "time": "11am\u201312pm",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
+            "type": "math",
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
+            "desc": "Handling skewed data."
+          },
+          {
+            "time": "1\u20134pm",
+            "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
+            "type": "project",
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
+          },
+          {
+            "time": "4\u20136pm",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: Partition",
+            "type": "sql",
+            "link": "https://takeuforward.org/plus/sql-data-engineering",
+            "desc": "Master Window Functions: Partition."
+          }
+        ],
+        "outcome": "Built depth in E-com Platform."
+      },
+      {
+        "day": 53,
+        "title": "Day 53: Arrays - Hard & String Functions",
+        "tasks": [
+          {
+            "time": "6\u20139am",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
+            "type": "ibm",
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
+            "desc": "Professional excellence."
+          },
+          {
+            "time": "9\u201310am",
+            "task": "\u2694\ufe0f DSA: Arrays - Hard",
+            "type": "dsa",
+            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
+            "desc": "Master Arrays - Hard."
+          },
+          {
+            "time": "10\u201311am",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 16",
+            "type": "aptitude",
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-16-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 16."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: A/B Testing Basics",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=eiIhTbFP0ls",
-            "desc": "Decision 1: Scientific validation of changes."
+            "desc": "Scientific validation."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: ROW_NUMBER & RANK",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: String Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: ROW_NUMBER & RANK techniques on TUF."
+            "desc": "Master String Functions."
           }
         ],
-        "outcome": "Built depth in Heaps - Basic Intro & Window Functions: ROW_NUMBER & RANK."
+        "outcome": "Built depth in E-com Platform."
       },
       {
-        "day": 51,
-        "title": "Day 51: Arrays - Easy (Hashing, Two-Pointers) & Window Functions: LEAD & LAG (Time Series)",
+        "day": 54,
+        "title": "Day 54: Binary Search - 1D & Date/Time Functions",
         "tasks": [
           {
             "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C10: Generative AI",
+            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
-            "link": "https://www.coursera.org/learn/generative-ai-enhance-your-data-analytics-career",
-            "desc": "Course 10: Leveraging LLMs to automate cleaning and presentation."
+            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
+            "desc": "Professional excellence."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Easy (Hashing, Two-Pointers)",
+            "task": "\u2694\ufe0f DSA: Binary Search - 1D",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Easy (Hashing, Two-Pointers) patterns via TUF A2Z."
+            "desc": "Master Binary Search - 1D."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 11",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 17",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-11-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 11 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-17-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 17."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Hypothesis Testing (P-values)",
+            "task": "\ud83d\udcca Math: Hypothesis Testing",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=fb8BSFr0isg",
-            "desc": "Decision 2: Determining significance."
+            "desc": "Significance determining."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: LEAD & LAG (Time Series)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: LEAD & LAG (Time Series) techniques on TUF."
+            "desc": "Master Date/Time Functions."
           }
         ],
-        "outcome": "Built depth in Arrays - Easy (Hashing, Two-Pointers) & Window Functions: LEAD & LAG (Time Series)."
+        "outcome": "Built depth in E-com Platform."
       },
       {
-        "day": 52,
-        "title": "Day 52: Arrays - Medium (Kadane's, Sorting) & Window Functions: SUM/AVG Over Partition",
+        "day": 55,
+        "title": "Day 55: Binary Search - Answers & CASE Statements",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
+            "desc": "Professional excellence."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Medium (Kadane's, Sorting)",
+            "task": "\u2694\ufe0f DSA: Binary Search - Answers",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Medium (Kadane's, Sorting) patterns via TUF A2Z."
+            "desc": "Master Binary Search - Answers."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 11",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 17",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-11-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 11 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-17-logical?subject=mock-test",
+            "desc": "Revise LR Mock 17."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Correlation (Pearson/Spearman)",
+            "task": "\ud83d\udcca Math: Correlation",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=P_iMSYQonko",
-            "desc": "Stats 4: Measuring relationships between variables."
+            "desc": "Variable relationships."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Window Functions: SUM/AVG Over Partition",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Window Functions: SUM/AVG Over Partition techniques on TUF."
+            "desc": "Master CASE Statements."
           }
         ],
-        "outcome": "Built depth in Arrays - Medium (Kadane's, Sorting) & Window Functions: SUM/AVG Over Partition."
+        "outcome": "Built depth in E-com Platform."
       },
       {
-        "day": 53,
-        "title": "Day 53: Arrays - Hard (Merged Intervals) & String Manipulation (CONCAT, SUBSTR, TRIM)",
+        "day": 56,
+        "title": "Day 56: Binary Search - 2D & Set Operators",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
+            "desc": "Professional excellence."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Arrays - Hard (Merged Intervals)",
+            "task": "\u2694\ufe0f DSA: Binary Search - 2D",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Arrays - Hard (Merged Intervals) patterns via TUF A2Z."
+            "desc": "Master Binary Search - 2D."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 12",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 17",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-12-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 12 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-17-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 17."
           },
           {
             "time": "11am\u201312pm",
             "task": "\ud83d\udcca Math: Central Limit Theorem",
             "type": "math",
             "link": "https://www.youtube.com/watch?v=JNm3M9CQWRE",
-            "desc": "Stats 5: The backbone of sampling & inference."
+            "desc": "Sampling foundations."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: String Manipulation (CONCAT, SUBSTR, TRIM)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master String Manipulation (CONCAT, SUBSTR, TRIM) techniques on TUF."
+            "desc": "Master Set Operators."
           }
         ],
-        "outcome": "Built depth in Arrays - Hard (Merged Intervals) & String Manipulation (CONCAT, SUBSTR, TRIM)."
-      },
-      {
-        "day": 54,
-        "title": "Day 54: Binary Search - 1D Arrays & Date/Time Functions & Formatting",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - 1D Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - 1D Arrays patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 12",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-12-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 12 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Binomial Dist",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=8idr1WZ1A7Q",
-            "desc": "Stats 6: Success/Failure probability modeling."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Date/Time Functions & Formatting",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Date/Time Functions & Formatting techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Binary Search - 1D Arrays & Date/Time Functions & Formatting."
-      },
-      {
-        "day": 55,
-        "title": "Day 55: Binary Search - Answers (SQRT, Allocation) & CASE Statements (Conditional Logic)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - Answers (SQRT, Allocation)",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - Answers (SQRT, Allocation) patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 12",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-12-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 12 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Probability: Poisson Dist",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=cM1X_Hov6U4",
-            "desc": "Stats 7: Modeling event frequency over time."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: CASE Statements (Conditional Logic)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master CASE Statements (Conditional Logic) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Binary Search - Answers (SQRT, Allocation) & CASE Statements (Conditional Logic)."
-      },
-      {
-        "day": 56,
-        "title": "Day 56: Binary Search - 2D Arrays & Set Operators (UNION, INTERSECT, EXCEPT)",
-        "tasks": [
-          {
-            "time": "6\u20139am",
-            "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
-            "type": "ibm",
-            "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
-          },
-          {
-            "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Binary Search - 2D Arrays",
-            "type": "dsa",
-            "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Binary Search - 2D Arrays patterns via TUF A2Z."
-          },
-          {
-            "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 13",
-            "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-13-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 13 via Takeuforward Plus."
-          },
-          {
-            "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Chi-Square Test",
-            "type": "math",
-            "link": "https://www.youtube.com/watch?v=2QeLhU4fR4E",
-            "desc": "Decision 3: Testing independence between categories."
-          },
-          {
-            "time": "1\u20134pm",
-            "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
-            "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
-          },
-          {
-            "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Set Operators (UNION, INTERSECT, EXCEPT)",
-            "type": "sql",
-            "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Set Operators (UNION, INTERSECT, EXCEPT) techniques on TUF."
-          }
-        ],
-        "outcome": "Built depth in Binary Search - 2D Arrays & Set Operators (UNION, INTERSECT, EXCEPT)."
+        "outcome": "Built depth in E-com Platform."
       }
     ]
   },
@@ -2772,199 +2884,209 @@ const weeks = [
     "days": [
       {
         "day": 57,
-        "title": "Day 57: Strings - Basic (Anagrams, Palindromes) & Data Types & Type Casting (CAST/CONVERT)",
+        "title": "Day 57: Strings - Basic & Type Casting",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
+            "desc": "Professional excellence."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Basic (Anagrams, Palindromes)",
+            "task": "\u2694\ufe0f DSA: Strings - Basic",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Basic (Anagrams, Palindromes) patterns via TUF A2Z."
+            "desc": "Master Strings - Basic."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 13",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 18",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-13-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 13 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-18-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 18."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Confidence Intervals",
+            "task": "\ud83d\udcca Math: Mean, Median, Mode",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=tFWsuO9f74o",
-            "desc": "Stats 8: Estimating ranges with precision."
+            "link": "https://www.youtube.com/watch?v=t4LOv9h-FJM",
+            "desc": "Central tendency."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Data Types & Type Casting (CAST/CONVERT)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Type Casting",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Data Types & Type Casting (CAST/CONVERT) techniques on TUF."
+            "desc": "Master Type Casting."
           }
         ],
-        "outcome": "Built depth in Strings - Basic (Anagrams, Palindromes) & Data Types & Type Casting (CAST/CONVERT)."
+        "outcome": "Built depth in E-com Platform."
       },
       {
         "day": 58,
-        "title": "Day 58: Strings - Medium (Reverse, Frequency) & Handling NULLs (COALESCE, IFNULL)",
+        "title": "Day 58: Strings - Medium & Handling NULLs",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
+            "desc": "Professional excellence."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Strings - Medium (Reverse, Frequency)",
+            "task": "\u2694\ufe0f DSA: Strings - Medium",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Strings - Medium (Reverse, Frequency) patterns via TUF A2Z."
+            "desc": "Master Strings - Medium."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Verbal Mock 13",
+            "task": "\ud83e\udde0 Aptitude: LR Mock 18",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-13-verbal?subject=mock-test",
-            "desc": "Revision: Master Verbal Mock 13 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-18-logical?subject=mock-test",
+            "desc": "Revise LR Mock 18."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Linear Regression Foundations",
+            "task": "\ud83d\udcca Math: Std Deviation & Variance",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=4b4MUYve_U8",
-            "desc": "Math 2: Predictive modeling baseline."
+            "link": "https://www.youtube.com/watch?v=yCDevFTNbC0",
+            "desc": "Dataset volatility."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: ANALYSE",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates"
+            "desc": "Goal: Player consistency (5yrs) | Venue win probability | Toss impact on RR | PP Spinner efficiency | Death over strike rates",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs (COALESCE, IFNULL)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Handling NULLs",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Handling NULLs (COALESCE, IFNULL) techniques on TUF."
+            "desc": "Master Handling NULLs."
           }
         ],
-        "outcome": "Built depth in Strings - Medium (Reverse, Frequency) & Handling NULLs (COALESCE, IFNULL)."
+        "outcome": "Built depth in E-com Platform."
       },
       {
         "day": 59,
-        "title": "Day 59: Singly Linked List - Basics & Database Constraints & Keys",
+        "title": "Day 59: Singly LL & Constraints & Keys",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
+            "desc": "Professional excellence."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Singly Linked List - Basics",
+            "task": "\u2694\ufe0f DSA: Singly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Singly Linked List - Basics patterns via TUF A2Z."
+            "desc": "Master Singly LL."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: Quant Mock 14",
+            "task": "\ud83e\udde0 Aptitude: Verbal Mock 18",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-14-aptitude?subject=mock-test",
-            "desc": "Revision: Master Quant Mock 14 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/verbal-ability/mock-18-verbal?subject=mock-test",
+            "desc": "Revise Verbal Mock 18."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Outlier Detection (IQR)",
+            "task": "\ud83d\udcca Math: Normal Dist & Z-Score",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=A7XvUvT44s8",
-            "desc": "Stats 9: Cleaning data using statistical bounds."
+            "link": "https://www.youtube.com/watch?v=okhrFgaUwio",
+            "desc": "Standardizing scales."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: BUILD",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds"
+            "desc": "Goal: KPI: Player Radar Chart | SQL: Venue History Matrix | Heatmap: Runs per Over | Predictor: Score ranges | KPI: Match-up Odds",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Database Constraints & Keys",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Constraints & Keys",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Database Constraints & Keys techniques on TUF."
+            "desc": "Master Constraints & Keys."
           }
         ],
-        "outcome": "Built depth in Singly Linked List - Basics & Database Constraints & Keys."
+        "outcome": "Built depth in E-com Platform."
       },
       {
         "day": 60,
-        "title": "Day 60: Doubly Linked List - Basics & Transaction Basics (COMMIT/ROLLBACK)",
+        "title": "Day 60: Doubly LL & Transaction Basics",
         "tasks": [
           {
             "time": "6\u20139am",
             "task": "\ud83c\udf93 IBM: C11: Career Guide & Interview",
             "type": "ibm",
             "link": "https://www.coursera.org/learn/career-guide-and-interview-prep-for-data-analyst",
-            "desc": "Course 11: Professional branding and interview excellence."
+            "desc": "Professional excellence."
           },
           {
             "time": "9\u201310am",
-            "task": "\u2694\ufe0f DSA: Doubly Linked List - Basics",
+            "task": "\u2694\ufe0f DSA: Doubly LL",
             "type": "dsa",
             "link": "https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z",
-            "desc": "Master Doubly Linked List - Basics patterns via TUF A2Z."
+            "desc": "Master Doubly LL."
           },
           {
             "time": "10\u201311am",
-            "task": "\ud83e\udde0 Aptitude: LR Mock 14",
+            "task": "\ud83e\udde0 Aptitude: Quant Mock 19",
             "type": "aptitude",
-            "link": "https://takeuforward.org/plus/mock-test/logical-reasoning/mock-14-logical?subject=mock-test",
-            "desc": "Revision: Master LR Mock 14 via Takeuforward Plus."
+            "link": "https://takeuforward.org/plus/mock-test/quantitative-aptitude/mock-19-aptitude?subject=mock-test",
+            "desc": "Revise Quant Mock 19."
           },
           {
             "time": "11am\u201312pm",
-            "task": "\ud83d\udcca Math: Derivatives (Slope/Change)",
+            "task": "\ud83d\udcca Math: Logarithm & Scaling",
             "type": "math",
-            "link": "https://www.youtube.com/watch?v=rAof9Ld5sOg",
-            "desc": "Math 3: Understanding rate of change in business trends."
+            "link": "https://www.youtube.com/watch?v=KzQQCtgzQbw",
+            "desc": "Handling skewed data."
           },
           {
             "time": "1\u20134pm",
             "task": "\ud83c\udfd7\ufe0f E-com Platform: OUTPUT",
             "type": "project",
-            "desc": "Solve 4-5 business problems for E-com Platform: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study"
+            "desc": "Goal: McKinsey-style Pitch Deck | Strategic Team Report | Batting Order Analysis | Win-Probability Matrix | Star Player ROI Study",
+            "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-match-dataset",
+            "info": "https://www.espncricinfo.com/series/indian-premier-league-2024-1410320"
           },
           {
             "time": "4\u20136pm",
-            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics (COMMIT/ROLLBACK)",
+            "task": "\ud83d\udee0\ufe0f SQL Revision: Transaction Basics",
             "type": "sql",
             "link": "https://takeuforward.org/plus/sql-data-engineering",
-            "desc": "Master Transaction Basics (COMMIT/ROLLBACK) techniques on TUF."
+            "desc": "Master Transaction Basics."
           }
         ],
-        "outcome": "Built depth in Doubly Linked List - Basics & Transaction Basics (COMMIT/ROLLBACK)."
+        "outcome": "Built depth in E-com Platform."
       }
     ]
   }
 ];
+
+
 
 
 
@@ -3998,18 +4120,44 @@ function Roadmap() {
                                   💡 {t.desc}
                                 </div>
                               )}
-                              {t.link && (
-                                <div style={{ marginTop: 10 }}>
-                                  <a 
-                                    href={t.link} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={e => e.stopPropagation()}
-                                    style={{ 
-                                      fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                    }}>
-                                    {t.type === "ibm" || t.type === "math" || t.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
-                                  </a>
+                              {(t.link || t.dataset || t.info) && (
+                                <div style={{ marginTop: 10, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                                  {t.link && (
+                                    <a 
+                                      href={t.link} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      onClick={e => e.stopPropagation()}
+                                      style={{ 
+                                        fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                      }}>
+                                      {t.type === "ibm" || t.type === "math" || t.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
+                                    </a>
+                                  )}
+                                  {t.dataset && (
+                                    <a 
+                                      href={t.dataset} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      onClick={e => e.stopPropagation()}
+                                      style={{ 
+                                        fontSize: 10, background: "#FFD43B20", color: "#FFD43B", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                      }}>
+                                      DATASET ↗
+                                    </a>
+                                  )}
+                                  {t.info && (
+                                    <a 
+                                      href={t.info} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      onClick={e => e.stopPropagation()}
+                                      style={{ 
+                                        fontSize: 10, background: "#4dabf720", color: "#4dabf7", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                      }}>
+                                      INFO ↗
+                                    </a>
+                                  )}
                                 </div>
                               )}
                             </div>
@@ -4115,18 +4263,44 @@ function Roadmap() {
                                   💡 {task.desc}
                                 </div>
                               )}
-                              {task.link && (
-                                <div style={{ marginTop: 10 }}>
-                                  <a 
-                                    href={task.link} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    onClick={e => e.stopPropagation()}
-                                    style={{ 
-                                      fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                    }}>
-                                    {task.type === "ibm" || task.type === "math" || task.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
-                                  </a>
+                              {(task.link || task.dataset || task.info) && (
+                                <div style={{ marginTop: 10, display: "flex", gap: 8, flexWrap: "wrap" }}>
+                                  {task.link && (
+                                    <a 
+                                      href={task.link} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      onClick={e => e.stopPropagation()}
+                                      style={{ 
+                                        fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                      }}>
+                                      {task.type === "ibm" || task.type === "math" || task.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
+                                    </a>
+                                  )}
+                                  {task.dataset && (
+                                    <a 
+                                      href={task.dataset} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      onClick={e => e.stopPropagation()}
+                                      style={{ 
+                                        fontSize: 10, background: "#FFD43B20", color: "#FFD43B", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                      }}>
+                                      DATASET ↗
+                                    </a>
+                                  )}
+                                  {task.info && (
+                                    <a 
+                                      href={task.info} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      onClick={e => e.stopPropagation()}
+                                      style={{ 
+                                        fontSize: 10, background: "#4dabf720", color: "#4dabf7", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
+                                      }}>
+                                      INFO ↗
+                                    </a>
+                                  )}
                                 </div>
                               )}
                             </div>
