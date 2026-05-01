@@ -24,8 +24,7 @@
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="text/babel">
-const { useState } = React;
+  <script type="text/babel">\nconst { useState } = React;
 
 const ACCENT = "#F4A72A";
 const BG = "#0A0A0F";
@@ -3153,6 +3152,8 @@ const weeks = [
 
 
 
+
+
 const finalChecklist = [
   { item: "IPL Analytics Project (5 layers)", category: "Projects", done: false },
   { item: "OTT vs Theatre Project (9 layers)", category: "Projects", done: false },
@@ -4144,7 +4145,13 @@ function Roadmap() {
                             <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
                                {t.desc && (
                                 <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
-                                  💡 {t.desc}
+                                  <div style={{ fontWeight: 800, color: ACCENT, marginBottom: 4 }}>💡 TASK DETAILS:</div>
+                                  {t.desc.split(' | ').map((part, idx) => (
+                                    <div key={idx} style={{ display: 'flex', gap: 6, marginTop: 4 }}>
+                                      <span style={{ color: MUTED }}>•</span>
+                                      <span>{part.replace('Goal: ', '')}</span>
+                                    </div>
+                                  ))}
                                 </div>
                               )}
                               {(t.link || t.dataset || t.info) && (
@@ -4287,7 +4294,13 @@ function Roadmap() {
                             <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
                                {task.desc && (
                                 <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
-                                  💡 {task.desc}
+                                  <div style={{ fontWeight: 800, color: ACCENT, marginBottom: 4 }}>💡 TASK DETAILS:</div>
+                                  {task.desc.split(' | ').map((part, idx) => (
+                                    <div key={idx} style={{ display: 'flex', gap: 6, marginTop: 4 }}>
+                                      <span style={{ color: MUTED }}>•</span>
+                                      <span>{part.replace('Goal: ', '')}</span>
+                                    </div>
+                                  ))}
                                 </div>
                               )}
                               {(task.link || task.dataset || task.info) && (
@@ -4719,8 +4732,7 @@ function Roadmap() {
     </div>
   );
 }
-
-</script>
+\n</script>
   <script type="text/babel">
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(React.createElement(Roadmap));

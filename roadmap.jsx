@@ -3126,6 +3126,8 @@ const weeks = [
 
 
 
+
+
 const finalChecklist = [
   { item: "IPL Analytics Project (5 layers)", category: "Projects", done: false },
   { item: "OTT vs Theatre Project (9 layers)", category: "Projects", done: false },
@@ -4117,7 +4119,13 @@ function Roadmap() {
                             <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
                                {t.desc && (
                                 <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
-                                  💡 {t.desc}
+                                  <div style={{ fontWeight: 800, color: ACCENT, marginBottom: 4 }}>💡 TASK DETAILS:</div>
+                                  {t.desc.split(' | ').map((part, idx) => (
+                                    <div key={idx} style={{ display: 'flex', gap: 6, marginTop: 4 }}>
+                                      <span style={{ color: MUTED }}>•</span>
+                                      <span>{part.replace('Goal: ', '')}</span>
+                                    </div>
+                                  ))}
                                 </div>
                               )}
                               {(t.link || t.dataset || t.info) && (
@@ -4260,7 +4268,13 @@ function Roadmap() {
                             <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
                                {task.desc && (
                                 <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
-                                  💡 {task.desc}
+                                  <div style={{ fontWeight: 800, color: ACCENT, marginBottom: 4 }}>💡 TASK DETAILS:</div>
+                                  {task.desc.split(' | ').map((part, idx) => (
+                                    <div key={idx} style={{ display: 'flex', gap: 6, marginTop: 4 }}>
+                                      <span style={{ color: MUTED }}>•</span>
+                                      <span>{part.replace('Goal: ', '')}</span>
+                                    </div>
+                                  ))}
                                 </div>
                               )}
                               {(task.link || task.dataset || task.info) && (
