@@ -823,7 +823,7 @@ function Roadmap() {
             Srihari's <span style={{ color: ACCENT }}>Analyst</span> Launch Plan
           </h1>
           <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
-            May 1 → June 30 · 3 Projects · 2 Platforms · 15+ Applications
+            May 1 → June 30 · 4 Projects · 2 Platforms · 20+ Applications
           </p>
         </div>
       </div>
@@ -858,7 +858,7 @@ function Roadmap() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 24 }}>
               {[
                 { label: "Days", value: "60", color: ACCENT },
-                { label: "Projects", value: "3+", color: BLUE },
+                { label: "Projects", value: "4+", color: BLUE },
                 { label: "Platforms", value: "2", color: PURPLE },
                 { label: "Target Roles", value: "4", color: GREEN },
               ].map(stat => (
@@ -956,9 +956,10 @@ function Roadmap() {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
               {[
-                { emoji: "🏏", title: "IPL Analytics", week: "Weeks 1–2+7", layers: "7 layers", output: "Dashboard + Report + 3 blogs", color: ACCENT },
-                { emoji: "🎬", title: "OTT vs Theatre", week: "Weeks 3+7", layers: "9 layers", output: "Dashboard + Report + 2 blogs", color: PURPLE },
+                { emoji: "🏏", title: "IPL Analytics", week: "Weeks 1–2+8", layers: "7 layers", output: "Dashboard + Report + 3 blogs", color: ACCENT },
+                { emoji: "🎬", title: "OTT vs Theatre", week: "Weeks 3+8", layers: "9 layers", output: "Dashboard + Report + 2 blogs", color: PURPLE },
                 { emoji: "🛒", title: "E-Commerce", week: "Weeks 4+8", layers: "9 layers", output: "Dashboard + Report + 2 blogs", color: GREEN },
+                { emoji: "🎸", title: "BPL Ecosystem", week: "Weeks 5+8", layers: "8 layers", output: "Dashboard + Dataset + Report", color: "#F4A72A" },
               ].map(p => (
                 <div key={p.title} style={{
                   background: CARD,
@@ -984,7 +985,7 @@ function Roadmap() {
                 { project: "IPL", sources: "Kaggle (ipl.csv), ESPN Cricinfo, Cricbuzz salary data, BCCI press releases, pytrends" },
                 { project: "OTT", sources: "Kaggle (IMDb, Netflix), Box Office Mojo, PVR INOX annual reports, BARC data, cinemagoer" },
                 { project: "E-Commerce", sources: "Kaggle (Amazon reviews, Flipkart catalog), company press releases, Baymard Institute, public funding data" },
-                { project: "PKL", sources: "Kaggle PKL datasets, kabaddi.com, Pro Kabaddi League official site" },
+                { project: "BPL", sources: "Primary Data (Survey Monkey / Google Forms), Local Venue Listings, Artist pricing reports, Field interviews" },
               ].map(s => (
                 <div key={s.project} style={{
                   background: CARD,
@@ -1638,7 +1639,7 @@ function Roadmap() {
           <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
             <p style={{ color: MUTED, fontSize: 12, lineHeight: 1.7, marginBottom: 8 }}>
               Each project is delivered as a <strong style={{color: ACCENT}}>live website on Vercel</strong> — not just a PPT.
-              All 3 link back to your portfolio. Click any layer to see the full execution plan.
+              All 4 link back to your portfolio. Click any layer to see the full execution plan.
             </p>
             {projectsData.map(proj => (
               <ProjectCard key={proj.id} proj={proj} />
@@ -1664,7 +1665,7 @@ function Roadmap() {
                   <div style={{ color: MUTED, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 8 }}>PAGES</div>
                   <ul style={{ paddingLeft: 18, fontSize: 12, lineHeight: 1.8, color: TEXT }}>
                     <li><strong>Hero:</strong> "Data Analyst & Product Thinker — turning data into decisions"</li>
-                    <li><strong>Projects:</strong> 3 live website links (IPL, OTT, E-Commerce) with STAR summaries</li>
+                    <li><strong>Projects:</strong> 4 live website links (IPL, OTT, E-Commerce, BPL) with STAR summaries</li>
                     <li><strong>Skills:</strong> SQL · Python · Power BI · Tableau · Excel — with proof links</li>
                     <li><strong>Creative:</strong> Sahitya Rachanalu as "Founder" project</li>
                     <li><strong>Resume:</strong> 2 versions — Data Analyst + Product Analyst focus</li>
