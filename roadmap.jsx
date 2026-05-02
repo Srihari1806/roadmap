@@ -1,4 +1,40 @@
-const { useState } = React;
+const { useState, Component } = React;
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null, errorInfo: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error, errorInfo) {
+    this.setState({ errorInfo });
+    console.error('React error:', error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{
+          color: '#EF4444',
+          background: '#0A0A0F',
+          padding: '40px',
+          fontFamily: 'monospace',
+          lineHeight: 1.6,
+          minHeight: '100vh',
+        }}>
+          <h2 style={{ marginTop: 0 }}>Something went wrong:</h2>
+          <pre style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-all' }}>
+            {this.state.error && this.state.error.toString()}
+            {this.state.errorInfo && this.state.errorInfo.componentStack}
+          </pre>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 
 const ACCENT = "#F4A72A";
 const BG = "#0A0A0F";
@@ -1795,3 +1831,10 @@ function Roadmap() {
     </div>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <ErrorBoundary>
+    <Roadmap />
+  </ErrorBoundary>
+);
