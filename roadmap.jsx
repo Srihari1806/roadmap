@@ -255,7 +255,6 @@ const taskTypeColors = {
   content: "#EC4899",
   analytics: BLUE,
   ibm: PURPLE,
-};
   network: BLUE,
   plan: "#14B8A6",
   reflect: ACCENT,
