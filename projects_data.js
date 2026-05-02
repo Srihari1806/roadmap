@@ -1,5 +1,6 @@
 // ─── PROJECT DATA ────────────────────────────────────────────────────────────
-// Insert this block just before `function Roadmap()` in roadmap.jsx
+// This file defines the deep-dive layers for the three core projects.
+// Each layer is mapped to one of the 7 Analyst Roles and one of the 7 Core Analytics Types.
 
 const projectsData = [
   {
@@ -13,7 +14,8 @@ const projectsData = [
     layers: [
       {
         num: "1", icon: "📊", title: "On-Field Data Intelligence",
-        role: "Sports / Performance Analyst",
+        role: "Sports Analyst",
+        analyticsType: "Descriptive & Exploratory",
         color: "#4A9EFF",
         what: "Decision intelligence, not just player stats",
         analyze: ["Player impact vs salary (ROI per crore)", "Toss vs win probability", "Venue bias — spin vs pace dominance", "Pressure performance — death overs, chase vs defend"],
@@ -22,7 +24,8 @@ const projectsData = [
       },
       {
         num: "2", icon: "📱", title: "IPL as a Product",
-        role: "Product / User Behavior Analyst",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Behavioral",
         color: "#A855F7",
         what: "Think like Hotstar / Dream11, not a cricket fan",
         analyze: ["User journey: match → highlights → fantasy → reels", "Drop-off points — when viewers leave", "Engagement spikes — last overs, wickets, Dhoni entry"],
@@ -31,7 +34,8 @@ const projectsData = [
       },
       {
         num: "3", icon: "💰", title: "Business & Revenue Engine",
-        role: "Business / Financial Analyst",
+        role: "Business Analyst",
+        analyticsType: "Descriptive & Inferential",
         color: "#F4A72A",
         what: "Separate yourself from 90% of analysts",
         analyze: ["Media rights value (broadcaster splits)", "Sponsorship layers — title, jersey, digital", "Franchise valuation growth 2010→2024", "Ticket + merchandising revenue"],
@@ -41,6 +45,7 @@ const projectsData = [
       {
         num: "4", icon: "📈", title: "Growth & Marketing Strategy",
         role: "Growth / Marketing Analyst",
+        analyticsType: "Causal & Predictive",
         color: "#2ECC71",
         what: "Creativity + strategy mindset combined",
         analyze: ["Why IPL dominates summer — seasonality", "Brand campaigns — Swiggy, CRED, Dream11 ads", "Meme economy + reels virality", "Correlation: match moments vs social spikes"],
@@ -48,8 +53,9 @@ const projectsData = [
         outputs: ["Social media spike timeline graphs", "Campaign breakdown case studies", "'How IPL hijacks internet attention' report"],
       },
       {
-        num: "5", icon: "🌍", title: "Macro Impact",
-        role: "Strategy / Market Research Analyst",
+        num: "5", icon: "🌍", title: "Macro Impact & Future State",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Prescriptive & Strategy",
         color: "#F97316",
         what: "No one does this. Make it your differentiator.",
         analyze: ["IPL vs movie industry revenue — summer window", "Impact on OTT release calendar", "Fantasy + betting economy size", "Local business impact — restaurants, bars"],
@@ -65,7 +71,7 @@ const projectsData = [
       { icon: "📱", label: "LinkedIn Carousels", desc: "5-slide visual breakdowns of key insights" },
     ],
     roleMap: [
-      { section: "Player + Match Data", role: "Data Analyst" },
+      { section: "Player + Match Data", role: "Sports Analyst" },
       { section: "Viewer Behavior", role: "Product Analyst" },
       { section: "Revenue + Franchise", role: "Business Analyst" },
       { section: "Ads + Engagement", role: "Growth Analyst" },
@@ -83,7 +89,8 @@ const projectsData = [
     layers: [
       {
         num: "1", icon: "🎭", title: "Content Performance + Genre Analysis",
-        role: "Content / Data Analyst",
+        role: "Data Analyst",
+        analyticsType: "Descriptive & Exploratory",
         color: "#4A9EFF",
         what: "What genres actually win — theatres vs OTT",
         analyze: ["Genre vs revenue — Action, Romance, Thriller, Comedy", "Pan-India vs niche regional content", "Telugu, Tamil rise vs Hindi dominance"],
@@ -91,8 +98,9 @@ const projectsData = [
         outputs: ["Genre vs revenue bar chart", "OTT completion rate by genre", "Insight: 'Mass content wins theatres, niche thrives on OTT'"],
       },
       {
-        num: "2", icon: "⭐", title: "Reviews & Word-of-Mouth Impact",
-        role: "Data / Sentiment Analyst",
+        num: "2", icon: "⭐", title: "Reviews & Sentiment Impact",
+        role: "Product Analyst",
+        analyticsType: "Causal & Diagnostic",
         color: "#EC4899",
         what: "Reviews don't just rate films — they decide revenue",
         analyze: ["IMDb ratings vs box office trajectory", "Critics vs audience score gap", "Social media sentiment vs occupancy"],
@@ -101,7 +109,8 @@ const projectsData = [
       },
       {
         num: "3", icon: "🎟️", title: "Distribution — Multiplex vs Single Screen",
-        role: "Business / Market Analyst",
+        role: "Business Analyst",
+        analyticsType: "Exploratory & Market",
         color: "#F4A72A",
         what: "Urban watches content, rural celebrates cinema",
         analyze: ["Urban (PVR/INOX) vs Rural (single screen) occupancy", "Price sensitivity — premium vs budget seats", "Content type preference by screen tier"],
@@ -110,7 +119,8 @@ const projectsData = [
       },
       {
         num: "4", icon: "📱", title: "Booking Behavior Funnel",
-        role: "Product / UX Analyst",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Funnel",
         color: "#2ECC71",
         what: "Intent is high — pricing and timing decide conversion",
         analyze: ["BookMyShow funnel: Search→Browse→Select→Book→Watch", "Weekend vs weekday booking patterns", "Group booking vs solo behavior"],
@@ -119,7 +129,8 @@ const projectsData = [
       },
       {
         num: "5", icon: "🔗", title: "Full Content Lifecycle",
-        role: "Strategy / Content Analyst",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Inferential & Trends",
         color: "#14B8A6",
         what: "Theatre window to OTT gap has collapsed 60→8 weeks",
         analyze: ["Pre→Release→Reviews→OTT→Re-watch timeline", "Theatre window shrinkage 2019 vs 2024", "Re-watch patterns on OTT"],
@@ -129,6 +140,7 @@ const projectsData = [
       {
         num: "6", icon: "📈", title: "Marketing & Promotion Strategies",
         role: "Growth / Marketing Analyst",
+        analyticsType: "Causal & Attribution",
         color: "#F97316",
         what: "Promotion doesn't just inform — it creates cultural moments",
         analyze: ["Trailer launch vs opening weekend correlation", "College tours, fan events, viral reel challenges", "Meme marketing — pre-release to post-release"],
@@ -137,7 +149,8 @@ const projectsData = [
       },
       {
         num: "7", icon: "🧠", title: "Demographics Analysis",
-        role: "Product / Audience Analyst",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Segmentation",
         color: "#A855F7",
         what: "Different age groups consume same content for different reasons",
         analyze: ["15–25: reels, hype, action | 25–40: story, realism | 40+: drama, emotion", "Genre preference by age group", "OTT vs theatre usage by demographic"],
@@ -145,8 +158,9 @@ const projectsData = [
         outputs: ["Age vs content preference chart", "Platform vs age usage heatmap", "Insight: 'Same film, different consumption reasons by age'"],
       },
       {
-        num: "8", icon: "🦠", title: "COVID Impact Analysis",
-        role: "Business / Strategy Analyst",
+        num: "8", icon: "🦠", title: "COVID Impact & Recovery",
+        role: "Business Analyst",
+        analyticsType: "Causal & Macro",
         color: "#EF4444",
         what: "COVID didn't kill theatres — it forced evolution",
         analyze: ["Pre-COVID: theatre dominant | During: OTT boom | Post: hybrid", "OTT subscriber growth 2019→2024", "Theatre footfall recovery curve"],
@@ -155,7 +169,8 @@ const projectsData = [
       },
       {
         num: "9", icon: "💰", title: "Business Model Comparison",
-        role: "Financial / Business Analyst",
+        role: "Financial Analyst",
+        analyticsType: "Prescriptive & Financial",
         color: "#2ECC71",
         what: "OTT optimizes lifetime value — theatres maximize moment value",
         analyze: ["OTT: subscription tiers, ad revenue, content spend", "Theatre: ticket revenue, F&B margin 40–50%, real estate costs", "Risk vs reward per model"],
@@ -173,9 +188,9 @@ const projectsData = [
     roleMap: [
       { section: "Content + Reviews", role: "Data Analyst" },
       { section: "Booking Funnel", role: "Product Analyst" },
-      { section: "Demographics", role: "Audience Analyst" },
+      { section: "Demographics", role: "Product Analyst" },
       { section: "Marketing ROI", role: "Growth Analyst" },
-      { section: "Business Models", role: "Business Analyst" },
+      { section: "Business Models", role: "Financial Analyst" },
     ]
   },
   {
@@ -188,8 +203,9 @@ const projectsData = [
     metaInsight: '"E-commerce is not selling products. It is controlling attention, behavior, logistics, and ecosystems."',
     layers: [
       {
-        num: "1", icon: "🛍️", title: "Seasonal Sales — Festival vs Normal",
-        role: "Data / Business Analyst",
+        num: "1", icon: "🛍️", title: "Seasonal Sales Analysis",
+        role: "Data Analyst",
+        analyticsType: "Descriptive & Exploratory",
         color: "#F4A72A",
         what: "Festivals are engineered demand spikes, not organic ones",
         analyze: ["Diwali / Big Billion Days / Great Indian Sale spikes", "Category performance: mobiles > fashion > appliances", "Normal vs festival day GMV delta"],
@@ -197,8 +213,9 @@ const projectsData = [
         outputs: ["Festival sales heatmap by category", "GMV spike timeline chart", "Insight: 'Urgency is manufactured, not accidental'"],
       },
       {
-        num: "2", icon: "💸", title: "Pricing + Discount Strategy",
-        role: "Data / Behavioral Analyst",
+        num: "2", icon: "💸", title: "Pricing & Anchoring Strategy",
+        role: "Business Analyst",
+        analyticsType: "Diagnostic & Behavioral",
         color: "#4A9EFF",
         what: "Anchoring psychology drives more sales than actual discounts",
         analyze: ["Fake vs real discount detection in dataset", "Anchor pricing: ₹50,000 → ₹29,999 psychology", "Limited-time urgency mechanics"],
@@ -206,8 +223,9 @@ const projectsData = [
         outputs: ["Fake vs real discount scatter", "'Psychology of ₹29,999' analysis", "Insight: 'Price anchoring > actual savings in conversion'"],
       },
       {
-        num: "3", icon: "📱", title: "Instagram Ads Impact",
+        num: "3", icon: "📱", title: "Ads Impact & Conversion",
         role: "Growth / Marketing Analyst",
+        analyticsType: "Causal & Attribution",
         color: "#EC4899",
         what: "Reels ads are the highest converting format in e-commerce",
         analyze: ["Ad impressions → clicks → purchases funnel", "Influencer vs brand ads conversion", "Reels ads vs Story ads performance"],
@@ -215,8 +233,9 @@ const projectsData = [
         outputs: ["Ad funnel conversion chart", "Format vs conversion comparison", "Insight: 'Reels ads outperform every format in discovery-to-purchase'"],
       },
       {
-        num: "4", icon: "🧠", title: "Consumer Psychology",
-        role: "Behavioral / Product Analyst",
+        num: "4", icon: "🧠", title: "Consumer Psychology Funnel",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Funnel",
         color: "#A855F7",
         what: "FOMO and urgency are engineered — not felt",
         analyze: ["Cart abandonment patterns (industry: 70%+ abandonment)", "FOMO effect — stock alerts, countdown timers", "Subscription model stickiness (Prime, Flipkart Plus)"],
@@ -224,8 +243,9 @@ const projectsData = [
         outputs: ["Conversion funnel chart", "Cart abandonment analysis", "Insight: 'Urgency drives conversion more than discount'"],
       },
       {
-        num: "5", icon: "💰", title: "Revenue Strategy",
-        role: "Business / Financial Analyst",
+        num: "5", icon: "💰", title: "Unit Economics & LTV",
+        role: "Financial Analyst",
+        analyticsType: "Predictive & Financial",
         color: "#2ECC71",
         what: "LTV and retention, not just first sale, determine profitability",
         analyze: ["AOV, Conversion Rate, Repeat customer %", "Subscription model revenue vs transactional", "LTV by customer segment"],
@@ -233,8 +253,9 @@ const projectsData = [
         outputs: ["LTV vs CAC comparison chart", "Revenue model breakdown", "Insight: 'Subscriptions convert buyers into ecosystems'"],
       },
       {
-        num: "6", icon: "⚡", title: "Quick Commerce Deep Dive",
-        role: "Strategy / Product Analyst",
+        num: "6", icon: "⚡", title: "Quick Commerce Market Shift",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Exploratory & Market",
         color: "#14B8A6",
         what: "Time is replacing price as the #1 purchase decision factor",
         analyze: ["Blinkit vs Instamart vs BigBasket — speed, UI, trust", "10–20 min delivery: convenience over price shift", "Planned buying → instant buying behavior change"],
@@ -243,7 +264,8 @@ const projectsData = [
       },
       {
         num: "7", icon: "🏪", title: "Impact on Offline Market",
-        role: "Market Research / Strategy Analyst",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Causal & Macro",
         color: "#F97316",
         what: "Offline is not dying — it is being absorbed into online ecosystems",
         analyze: ["Kirana store footfall loss — data points", "Price competition from e-commerce platforms", "JioMart model — kirana onboarding"],
@@ -251,8 +273,9 @@ const projectsData = [
         outputs: ["Offline vs online market share chart", "Kirana absorption model", "Insight: 'Offline is not dying, it is becoming a delivery node'"],
       },
       {
-        num: "8", icon: "🏢", title: "Big Conglomerate Game",
-        role: "Strategy / Business Analyst",
+        num: "8", icon: "🏢", title: "Conglomerate Ecosystem Game",
+        role: "Business Analyst",
+        analyticsType: "Diagnostic & Strategic",
         color: "#EF4444",
         what: "This is not apps vs apps — it's ecosystems vs ecosystems",
         analyze: ["Reliance: Jio+JioMart+retail ecosystem", "Tata: BigBasket+Tata Neu+trust brand", "DMart: low-cost offline efficiency", "Adani: backend supply chain control"],
@@ -260,8 +283,9 @@ const projectsData = [
         outputs: ["Conglomerate strategy comparison matrix", "Ecosystem map visualization", "Insight: 'The battle is won in logistics and data, not UI'"],
       },
       {
-        num: "9", icon: "🧬", title: "Meta Insight — The Full System",
-        role: "All Roles Combined",
+        num: "9", icon: "🧬", title: "Prescriptive Strategy",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Prescriptive & Final",
         color: "#A855F7",
         what: "Connect all 8 layers into one unified narrative",
         analyze: ["How attention → behavior → logistics → ecosystem forms a loop", "Which companies own each layer", "What breaks the loop (regulation, trust, competition)"],
@@ -279,9 +303,11 @@ const projectsData = [
     roleMap: [
       { section: "Sales + Pricing", role: "Data Analyst" },
       { section: "Ads Funnel", role: "Growth Analyst" },
-      { section: "Consumer Psych", role: "Behavioral Analyst" },
+      { section: "Consumer Psych", role: "Product Analyst" },
       { section: "Quick Commerce", role: "Strategy Analyst" },
       { section: "Conglomerates", role: "Business Analyst" },
     ]
   }
 ];
+
+export default projectsData;
