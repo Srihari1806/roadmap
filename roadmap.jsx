@@ -58,7 +58,7 @@ const weeks = [
         "day": 1, "title": "Day 1: Excel Mastery",
         "tasks": [
           { "time": "6\u20139am", "task": "📊 AnalystBuilder: Excel for Data Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/excel-for-data-analytics", "desc": "Mastering Pivot Tables, XLOOKUP, and Data Cleaning." },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: LR: Number Series + Mock 1", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning" },
+          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Number System (Part 1) + Mock 1", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
           { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Clean a messy 10k row dataset in Excel", "type": "project" }
         ],
         "outcome": "Mastered Excel automation."
@@ -67,7 +67,7 @@ const weeks = [
         "day": 2, "title": "Day 2: SQL Foundations",
         "tasks": [
           { "time": "6\u20139am", "task": "📊 AnalystBuilder: SQL for Data Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/sql-for-data-analytics", "desc": "Joins, Aggregations, and CTEs." },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Number System + Mock 2", "type": "aptitude" },
+          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Number System (Part 2) + Mock 2", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
           { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Solve 50 SQL problems on AnalystBuilder", "type": "project" }
         ],
         "outcome": "Mastered complex SQL queries."
@@ -76,7 +76,7 @@ const weeks = [
         "day": 3, "title": "Day 3: Power BI",
         "tasks": [
           { "time": "6\u20139am", "task": "📊 AnalystBuilder: Power BI Mastery", "type": "analytics", "link": "https://www.analystbuilder.com/courses/power-bi-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Rearrangement + Mock 3", "type": "aptitude" },
+          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: LCM & HCF (Part 1) + Mock 3", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
           { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Build a Sales Dashboard in Power BI", "type": "project" }
         ],
         "outcome": "Built interactive Power BI dashboards."
@@ -85,7 +85,7 @@ const weeks = [
         "day": 4, "title": "Day 4: Tableau",
         "tasks": [
           { "time": "6\u20139am", "task": "📊 AnalystBuilder: Tableau for Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/tableau-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: LR: Missing Numbers + Mock 4", "type": "aptitude" },
+          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: LCM & HCF (Part 2) + Mock 4", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
           { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Re-create Sales Dashboard in Tableau", "type": "project" }
         ],
         "outcome": "Mastered visual storytelling."
@@ -94,7 +94,7 @@ const weeks = [
         "day": 5, "title": "Day 5: Python",
         "tasks": [
           { "time": "6\u20139am", "task": "📊 AnalystBuilder: Python for Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/python-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Percentages + Mock 5", "type": "aptitude" },
+          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Percentages (Part 1) + Mock 5", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude&sidebar=open" },
           { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Clean and Analyze a dataset in Jupyter", "type": "project" }
         ],
         "outcome": "Able to perform EDA in Python."
@@ -103,7 +103,7 @@ const weeks = [
         "day": 6, "title": "Day 6: Math & Statistics",
         "tasks": [
           { "time": "6\u20139am", "task": "📊 AnalystBuilder: Math/Stats Foundations", "type": "analytics", "link": "https://www.analystbuilder.com/courses/math-and-statistics-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant Mock 6 + Mock 7", "type": "aptitude" },
+          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Percentages (Part 2) + Mock 6", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude&sidebar=open" },
           { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Perform an A/B Test in Python", "type": "project" }
         ],
         "outcome": "Understood the math behind data."
@@ -112,7 +112,7 @@ const weeks = [
         "day": 7, "title": "Day 7: Gen AI & Tools",
         "tasks": [
           { "time": "6\u20139am", "task": "📊 AnalystBuilder: Gen AI for Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/generative-ai-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: LR Mock 8 + Mock 9", "type": "aptitude" },
+          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss (Part 1) + Mock 7", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-and-loss/basic?subject=quantitative-aptitude&sidebar=open" },
           { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Use AI to automate data tasks", "type": "project" }
         ],
         "outcome": "10x productivity with AI tools."
@@ -121,92 +121,92 @@ const weeks = [
   },
   {
     "week": 2,
-    "label": "Phase 2: IPL Analytics Engine (Execution)",
+    "label": "Phase 2: IPL Analytics Engine (Quant Continued)",
     "theme": "Execution",
     "color": BLUE,
     "days": [
-      { "day": 8, "title": "Day 8: IPL Layer 1", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 10 + Mock 11", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL On-Field Intelligence Build", "type": "project" }], "outcome": "Built SQL engine for IPL." },
-      { "day": 9, "title": "Day 9: IPL Layer 2", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 12 + Mock 13", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Engagement Analytics", "type": "project" }], "outcome": "Analyzed match moments." },
-      { "day": 10, "title": "Day 10: IPL Layer 3", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 14 + Mock 15", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Business Model & ROI", "type": "project" }], "outcome": "Completed revenue analysis." },
-      { "day": 11, "title": "Day 11: IPL Layer 4", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 16 + Mock 17", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Marketing & Growth", "type": "project" }], "outcome": "Mapped social media impact." },
-      { "day": 12, "title": "Day 12: IPL Layer 5", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 18 + Mock 19", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Macro Industry Impact", "type": "project" }], "outcome": "Completed 5-layer analysis." },
-      { "day": 13, "title": "Day 13: IPL Dashboard", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 20 + Mock 21", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Interactive Dashboard Build", "type": "project" }], "outcome": "Live dashboard complete." },
-      { "day": 14, "title": "Day 14: IPL Strategy Report", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 22 + Mock 23", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Consulting Report (McKinsey Style)", "type": "project" }], "outcome": "Project 1 finished." }
+      { "day": 8, "title": "Day 8: IPL Layer 1", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss (Part 2) + Mock 8", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-and-loss/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL On-Field Intelligence Build", "type": "project" }], "outcome": "Built SQL engine for IPL." },
+      { "day": 9, "title": "Day 9: IPL Layer 2", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: SI & CI (Part 1) + Mock 9", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Engagement Analytics", "type": "project" }], "outcome": "Analyzed match moments." },
+      { "day": 10, "title": "Day 10: IPL Layer 3", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: SI & CI (Part 2) + Mock 10", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Business Model & ROI", "type": "project" }], "outcome": "Completed revenue analysis." },
+      { "day": 11, "title": "Day 11: IPL Layer 4", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Averages (Part 1) + Mock 11", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Marketing & Growth", "type": "project" }], "outcome": "Mapped social media impact." },
+      { "day": 12, "title": "Day 12: IPL Layer 5", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Averages (Part 2) + Mock 12", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Macro Industry Impact", "type": "project" }], "outcome": "Completed 5-layer analysis." },
+      { "day": 13, "title": "Day 13: IPL Dashboard", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion (Part 1) + Mock 13", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Interactive Dashboard Build", "type": "project" }], "outcome": "Live dashboard complete." },
+      { "day": 14, "title": "Day 14: IPL Strategy Report", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion (Part 2) + Mock 14", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: IPL Consulting Report (McKinsey Style)", "type": "project" }], "outcome": "Project 1 finished." }
     ]
   },
   {
     "week": 3,
-    "label": "Phase 3: OTT vs Theatre Intelligence (Execution)",
+    "label": "Phase 3: OTT vs Theatre Intelligence (Quant & LR)",
     "theme": "Execution",
     "color": PURPLE,
     "days": [
-      { "day": 15, "title": "Day 15: OTT Layer 1", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 24 + Mock 25", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Genre Revenue Analysis", "type": "project" }] },
-      { "day": 16, "title": "Day 16: OTT Layer 2", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 26 + Mock 27", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Sentiment Analysis (IMDb)", "type": "project" }] },
-      { "day": 17, "title": "Day 17: OTT Layer 3", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 28 + Mock 29", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Distribution Mapping", "type": "project" }] },
-      { "day": 18, "title": "Day 18: OTT Layer 4", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 30 + Mock 31", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Booking Funnel Build", "type": "project" }] },
-      { "day": 19, "title": "Day 19: OTT Layer 5", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 32 + Mock 33", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Lifecycle Analysis", "type": "project" }] },
-      { "day": 20, "title": "Day 20: OTT Dashboard", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 34 + Mock 35", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Tableau Storyboard Build", "type": "project" }] },
-      { "day": 21, "title": "Day 21: OTT Final Case Study", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 36 + Mock 37", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Strategy Whitepaper", "type": "project" }] }
+      { "day": 15, "title": "Day 15: OTT Layer 1", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Mixtures & Alligations (Part 1) + Mock 15", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Genre Revenue Analysis", "type": "project" }] },
+      { "day": 16, "title": "Day 16: OTT Layer 2", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Mixtures & Alligations (Part 2) + Mock 16", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Sentiment Analysis (IMDb)", "type": "project" }] },
+      { "day": 17, "title": "Day 17: OTT Layer 3", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Time & Work (Part 1) + Mock 17", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Distribution Mapping", "type": "project" }] },
+      { "day": 18, "title": "Day 18: OTT Layer 4", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Time & Work (Part 2) + Mock 18", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Booking Funnel Build", "type": "project" }] },
+      { "day": 19, "title": "Day 19: OTT Layer 5", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Speed, Dist & Time (Part 1) + Mock 19", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Lifecycle Analysis", "type": "project" }] },
+      { "day": 20, "title": "Day 20: OTT Dashboard", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Speed, Dist & Time (Part 2) + Mock 20", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Tableau Storyboard Build", "type": "project" }] },
+      { "day": 21, "title": "Day 21: OTT Final Case Study", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Permutation & Probability + Mock 21", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: OTT Strategy Whitepaper", "type": "project" }] }
     ]
   },
   {
     "week": 4,
-    "label": "Phase 4: E-Commerce + Ads System (Execution)",
+    "label": "Phase 4: E-Commerce + Ads System (LR Track)",
     "theme": "Execution",
     "color": GREEN,
     "days": [
-      { "day": 22, "title": "Day 22: E-com Layer 1", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 38 + Mock 39", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Festival Spike Analysis", "type": "project" }] },
-      { "day": 23, "title": "Day 23: E-com Layer 2", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 40 + Mock 41", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Pricing Psychology Build", "type": "project" }] },
-      { "day": 24, "title": "Day 24: E-com Layer 3", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 42 + Mock 43", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Ads ROAS System", "type": "project" }] },
-      { "day": 25, "title": "Day 25: E-com Layer 4", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 44 + Mock 45", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Consumer Psychology Mapping", "type": "project" }] },
-      { "day": 26, "title": "Day 26: E-com Layer 5", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 46 + Mock 47", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Logistics Intelligence", "type": "project" }] },
-      { "day": 27, "title": "Day 27: E-com Dashboard", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 48 + Mock 49", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Power BI System Build", "type": "project" }] },
-      { "day": 28, "title": "Day 28: E-com Macro Report", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 50 + Mock 51", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Ecosystem Deep-Dive", "type": "project" }] }
+      { "day": 22, "title": "Day 22: E-com Layer 1", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Series (Part 1) + Mock 22", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Festival Spike Analysis", "type": "project" }] },
+      { "day": 23, "title": "Day 23: E-com Layer 2", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Series (Part 2) + Mock 23", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Pricing Psychology Build", "type": "project" }] },
+      { "day": 24, "title": "Day 24: E-com Layer 3", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Blood Relations (Part 1) + Mock 24", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Ads ROAS System", "type": "project" }] },
+      { "day": 25, "title": "Day 25: E-com Layer 4", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Blood Relations (Part 2) + Mock 25", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Consumer Psychology Mapping", "type": "project" }] },
+      { "day": 26, "title": "Day 26: E-com Layer 5", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding (Part 1) + Mock 26", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Logistics Intelligence", "type": "project" }] },
+      { "day": 27, "title": "Day 27: E-com Dashboard", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding (Part 2) + Mock 27", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Power BI System Build", "type": "project" }] },
+      { "day": 28, "title": "Day 28: E-com Macro Report", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Syllogisms (Part 1) + Mock 28", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Project: E-com Ecosystem Deep-Dive", "type": "project" }] }
     ]
   },
   {
     "week": 5,
-    "label": "Phase 5: Personal Portfolio Launch (Branding)",
+    "label": "Phase 5: Personal Portfolio Launch (LR & Verbal)",
     "theme": "Branding",
     "color": BLUE,
     "days": [
-      { "day": 29, "title": "Day 29: Portfolio UI", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 52 + Mock 53", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Hero & Architecture Build", "type": "project" }] },
-      { "day": 30, "title": "Day 30: Portfolio Projects", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 54 + Mock 55", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Project Hub Integration", "type": "project" }] },
-      { "day": 31, "title": "Day 31: Portfolio Proof", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 56 + Mock 57", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Skill Viz & Proof Build", "type": "project" }] },
-      { "day": 32, "title": "Day 32: Portfolio Content", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 58 + Mock 59", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Sahitya Hub Integration", "type": "project" }] },
-      { "day": 33, "title": "Day 33: Portfolio Resume", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 60", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Resume Downloads Build", "type": "project" }] },
-      { "day": 34, "title": "Day 34: Portfolio SEO", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Portfolio: Analytics & SEO Setup", "type": "project" }] },
-      { "day": 35, "title": "Day 35: Portfolio Launch", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Branding: LinkedIn Grand Reveal", "type": "project" }] }
+      { "day": 29, "title": "Day 29: Portfolio UI", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Syllogisms (Part 2) + Mock 29", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Hero & Architecture Build", "type": "project" }] },
+      { "day": 30, "title": "Day 30: Portfolio Projects", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangements (Part 1) + Mock 30", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Project Hub Integration", "type": "project" }] },
+      { "day": 31, "title": "Day 31: Portfolio Proof", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Seating Arrangements (Part 2) + Mock 31", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Skill Viz & Proof Build", "type": "project" }] },
+      { "day": 32, "title": "Day 32: Portfolio Content", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Direction Sense (Part 1) + Mock 32", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Sahitya Hub Integration", "type": "project" }] },
+      { "day": 33, "title": "Day 33: Portfolio Resume", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Direction Sense (Part 2) + Mock 33", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Resume Downloads Build", "type": "project" }] },
+      { "day": 34, "title": "Day 34: Portfolio SEO", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Venn Diagrams (Part 1) + Mock 34", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Analytics & SEO Setup", "type": "project" }] },
+      { "day": 35, "title": "Day 35: Portfolio Launch", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Venn Diagrams (Part 2) + Mock 35", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Branding: LinkedIn Grand Reveal", "type": "project" }] }
     ]
   },
   {
     "week": 6,
-    "label": "Phase 6: Sahitya Rachanalu Build (Creative/Tech)",
+    "label": "Phase 6: Sahitya Rachanalu Build (LR & Verbal)",
     "theme": "Creative",
     "color": PURPLE,
     "days": [
-      { "day": 36, "title": "Day 36: Sahitya Reading", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Sahitya: Reading Module Build", "type": "project" }] },
-      { "day": 37, "title": "Day 37: Sahitya Lyrics", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Sahitya: Lyrics Split-View Build", "type": "project" }] },
-      { "day": 38, "title": "Day 38: Sahitya Cinepedia", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Sahitya: Film Wiki UI Build", "type": "project" }] },
-      { "day": 39, "title": "Day 39: Sahitya Fictionary", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Sahitya: Dialogue Card Build", "type": "project" }] },
-      { "day": 40, "title": "Day 40: Sahitya Media", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Sahitya: Meme/GIF Keyboard Build", "type": "project" }] },
-      { "day": 41, "title": "Day 41: Sahitya Content", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Sahitya: MDX Article Feed Build", "type": "project" }] },
-      { "day": 42, "title": "Day 42: Sahitya Launch", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Branding: Founder Reveal Day", "type": "project" }] }
+      { "day": 36, "title": "Day 36: Sahitya Reading", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Clocks & Calendars (Part 1) + Mock 36", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Reading Module Build", "type": "project" }] },
+      { "day": 37, "title": "Day 37: Sahitya Lyrics", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Clocks & Calendars (Part 2) + Mock 37", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Lyrics Split-View Build", "type": "project" }] },
+      { "day": 38, "title": "Day 38: Sahitya Cinepedia", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Analogy & Odd One Out + Mock 38", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Film Wiki UI Build", "type": "project" }] },
+      { "day": 39, "title": "Day 39: Sahitya Fictionary", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comp (Part 1) + Mock 39", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Dialogue Card Build", "type": "project" }] },
+      { "day": 40, "title": "Day 40: Sahitya Media", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comp (Part 2) + Mock 40", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Meme/GIF Keyboard Build", "type": "project" }] },
+      { "day": 41, "title": "Day 41: Sahitya Content", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Tenses & Grammar (Part 1) + Mock 41", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: MDX Article Feed Build", "type": "project" }] },
+      { "day": 42, "title": "Day 42: Sahitya Launch", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Tenses & Grammar (Part 2) + Mock 42", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Branding: Founder Reveal Day", "type": "project" }] }
     ]
   },
   {
     "week": 7,
-    "label": "Phase 7: Polishing & Advanced Upgrades (Analytical)",
+    "label": "Phase 7: Polishing & Advanced Upgrades (Verbal Track)",
     "theme": "Polishing",
     "color": GREEN,
     "days": [
-      { "day": 43, "title": "Day 43: Upgrade: IPL ML", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Upgrade: IPL ML Predictive Build", "type": "project" }] },
-      { "day": 44, "title": "Day 44: Upgrade: OTT NLP", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Upgrade: OTT Sentiment NLP Build", "type": "project" }] },
-      { "day": 45, "title": "Day 45: Upgrade: E-com Price", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Upgrade: E-com Price Elasticity Build", "type": "project" }] },
-      { "day": 46, "title": "Day 46: Advanced Pipelines", "tasks": [{ "time": "1\u20136pm", "task": "📊 AnalystBuilder: Snowflake/DBT Build", "type": "analytics" }] },
-      { "day": 47, "title": "Day 47: Upgrade: UI Polish", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Portfolio: Motion & UI Polish", "type": "project" }] },
-      { "day": 48, "title": "Day 48: Upgrade: Sahitya Audio", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Sahitya: Audio Hub Integration", "type": "project" }] },
-      { "day": 49, "title": "Day 49: Resume Metric Polish", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Branding: Resume/LinkedIn Polish", "type": "project" }] }
+      { "day": 43, "title": "Day 43: Upgrade: IPL ML", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Synonyms & Antonyms (Part 1) + Mock 43", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Upgrade: IPL ML Predictive Build", "type": "project" }] },
+      { "day": 44, "title": "Day 44: Upgrade: OTT NLP", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Synonyms & Antonyms (Part 2) + Mock 44", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Upgrade: OTT Sentiment NLP Build", "type": "project" }] },
+      { "day": 45, "title": "Day 45: Upgrade: E-com Price", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Error Spotting (Part 1) + Mock 45", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Upgrade: E-com Price Elasticity Build", "type": "project" }] },
+      { "day": 46, "title": "Day 46: Advanced Pipelines", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Error Spotting (Part 2) + Mock 46", "type": "aptitude" }, { "time": "1\u20136pm", "task": "📊 AnalystBuilder: Snowflake/DBT Build", "type": "analytics" }] },
+      { "day": 47, "title": "Day 47: Upgrade: UI Polish", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Para Jumbles (Part 1) + Mock 47", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability&sidebar=open" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Motion & UI Polish", "type": "project" }] },
+      { "day": 48, "title": "Day 48: Upgrade: Sahitya Audio", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Para Jumbles (Part 2) + Mock 48", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability&sidebar=open" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Audio Hub Integration", "type": "project" }] },
+      { "day": 49, "title": "Day 49: Resume Metric Polish", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Para Jumbles (Part 3) + Mock 49", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability&sidebar=open" }, { "time": "1\u20136pm", "task": "🏗️ Branding: Resume/LinkedIn Polish", "type": "project" }] }
     ]
   },
   {
@@ -215,17 +215,17 @@ const weeks = [
     "theme": "Execution",
     "color": ACCENT,
     "days": [
-      { "day": 50, "title": "Day 50: Showcase", "tasks": [{ "time": "9am\u20136pm", "task": "🏗️ Strategy: Journey Showcase Post", "type": "project" }] },
-      { "day": 51, "title": "Day 51: Target Research", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Strategy: Company Reports Build", "type": "project" }] },
-      { "day": 52, "title": "Day 52: SQL Mock Interviews", "tasks": [{ "time": "1\u20136pm", "task": "📊 Practice: Technical Mock Sprints", "type": "analytics" }] },
-      { "day": 53, "title": "Day 53: Case Mock Interviews", "tasks": [{ "time": "1\u20136pm", "task": "📊 Practice: Business Case Sprints", "type": "analytics" }] },
-      { "day": 54, "title": "Day 54: Application Blitz", "tasks": [{ "time": "9am\u20136pm", "task": "🏗️ Strategy: High-Intent Applications", "type": "project" }] },
-      { "day": 55, "title": "Day 55: Portfolio Maintenance", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Polish: Bug fixing & QA", "type": "project" }] },
-      { "day": 56, "title": "Day 56: Mental Prep", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Strategy: Review & Confidence Build", "type": "project" }] },
-      { "day": 57, "title": "Day 57: Catch-up Day", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Catch-up on backlog", "type": "project" }] },
-      { "day": 58, "title": "Day 58: Outreach Blitz", "tasks": [{ "time": "9am\u20136pm", "task": "🏗️ Strategy: Referral Networking", "type": "project" }] },
-      { "day": 59, "title": "Day 59: Final Deployment", "tasks": [{ "time": "1\u20136pm", "task": "🏗️ Final Vercel & Production Sync", "type": "project" }] },
-      { "day": 60, "title": "Day 60: Hired Mindset", "tasks": [{ "time": "9am\u201312pm", "task": "🎉 Goal: Reflection & Next steps", "type": "project" }] }
+      { "day": 50, "title": "Day 50: Showcase", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 50", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Strategy: Journey Showcase Post", "type": "project" }] },
+      { "day": 51, "title": "Day 51: Target Research", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 51", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Strategy: Company Reports Build", "type": "project" }] },
+      { "day": 52, "title": "Day 52: SQL Mock Interviews", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 52", "type": "aptitude" }, { "time": "1\u20136pm", "task": "📊 Practice: Technical Mock Sprints", "type": "analytics" }] },
+      { "day": 53, "title": "Day 53: Case Mock Interviews", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 53", "type": "aptitude" }, { "time": "1\u20136pm", "task": "📊 Practice: Business Case Sprints", "type": "analytics" }] },
+      { "day": 54, "title": "Day 54: Application Blitz", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 54", "type": "aptitude" }, { "time": "9am\u20136pm", "task": "🏗️ Strategy: High-Intent Applications", "type": "project" }] },
+      { "day": 55, "title": "Day 55: Portfolio Maintenance", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 55", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Polish: Bug fixing & QA", "type": "project" }] },
+      { "day": 56, "title": "Day 56: Mental Prep", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 56", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Strategy: Review & Confidence Build", "type": "project" }] },
+      { "day": 57, "title": "Day 57: Catch-up Day", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 57", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Catch-up on backlog", "type": "project" }] },
+      { "day": 58, "title": "Day 58: Outreach Blitz", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 58", "type": "aptitude" }, { "time": "9am\u20136pm", "task": "🏗️ Strategy: Referral Networking", "type": "project" }] },
+      { "day": 59, "title": "Day 59: Final Deployment", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 59", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Final Vercel & Production Sync", "type": "project" }] },
+      { "day": 60, "title": "Day 60: Hired Mindset", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Mock 60", "type": "aptitude" }, { "time": "9am\u201312pm", "task": "🎉 Goal: Reflection & Next steps", "type": "project" }] }
     ]
   }
 ];
