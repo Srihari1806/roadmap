@@ -307,6 +307,110 @@ const projectsData = [
       { section: "Quick Commerce", role: "Strategy Analyst" },
       { section: "Conglomerates", role: "Business Analyst" },
     ]
+  },
+  {
+    id: "bpl",
+    emoji: "🎸",
+    title: "Band Premier League (BPL)",
+    subtitle: "Music · Market · Product · Revenue · Ecosystem",
+    accentColor: "#F4A72A",
+    deliverable: "Primary data collection project — Venue & Band Matchmaking System",
+    metaInsight: '"Live music is not just entertainment. It is a repeatable business model and a cultural economy."',
+    layers: [
+      {
+        num: "1", icon: "🟢", title: "Market & Supply Foundation",
+        role: "Data Analyst",
+        analyticsType: "Descriptive & Exploratory",
+        color: "#2ECC71",
+        what: "Ground reality of the Hyderabad live music scene",
+        analyze: ["Venue density by area", "Show frequency per venue type (Pub/Cafe)", "Live music vs non-music venue ratio"],
+        metrics: ["Venues per sq km", "% shows per week", "Avg gigs per month"],
+        outputs: ["Venue density map", "Shows per week trend graph"]
+      },
+      {
+        num: "2", icon: "🔵", title: "Demand & Audience Behavior",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Behavioral",
+        color: "#4A9EFF",
+        what: "Why people attend live music",
+        analyze: ["Footfall per venue (Weekend vs Weekday)", "Audience segmentation (Student/Professional)", "Motivation: Vibe vs Price vs Artist"],
+        metrics: ["Avg attendance per show", "Peak time traffic", "Customer Lifetime Value (CLV) proxy"],
+        outputs: ["Footfall heatmap", "Time vs Attendance trendline"]
+      },
+      {
+        num: "3", icon: "🟡", title: "Supply Side (Bands & Artists)",
+        role: "Data Analyst",
+        analyticsType: "Exploratory & Supply",
+        color: "#F4A72A",
+        what: "The artist economy and gig sourcing",
+        analyze: ["Active bands per genre", "Band pricing vs gig frequency", "Primary gig sourcing channels"],
+        metrics: ["Gig-to-band ratio", "Avg earnings per genre", "Band churn rate"],
+        outputs: ["Genre availability matrix", "Band income distribution"]
+      },
+      {
+        num: "4", icon: "🟣", title: "Matchmaking & Optimization",
+        role: "Product Analyst",
+        analyticsType: "Predictive & Prescriptive",
+        color: "#A855F7",
+        what: "The 'IPL System' layer — slot optimization",
+        analyze: ["Optimal band-venue pairing", "Scheduling to avoid clashing", "Slot utilization efficiency"],
+        metrics: ["Slot fill rate", "Match score (Band-Venue fit)", "Predicted attendance per slot"],
+        outputs: ["Optimal show calendar", "Scheduling model"]
+      },
+      {
+        num: "5", icon: "🔴", title: "Revenue & Business Model",
+        role: "Business Analyst",
+        analyticsType: "Descriptive & Financial",
+        color: "#EF4444",
+        what: "The money behind the music",
+        analyze: ["Break-even per show", "Revenue streams: Tickets, F&B share, Sponsorship", "Pricing strategy vs venue capacity"],
+        metrics: ["Revenue per match", "Profit margin per venue tier", "ROI on sponsorship"],
+        outputs: ["Revenue waterfall chart", "Profit/Show scenario analysis"]
+      },
+      {
+        num: "6", icon: "🟠", title: "Funnel & Product Analytics",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Funnel",
+        color: "#F97316",
+        what: "The booking journey (BookMyShow style)",
+        analyze: ["Awareness → Interest → Booking → Attendance", "Drop-off points in the booking journey", "Conversion lift from promo triggers"],
+        metrics: ["Funnel conversion %", "Booking-to-show lead time", "Repeat booking rate"],
+        outputs: ["Conversion funnel diagram", "Drop-off heatmaps"]
+      },
+      {
+        num: "7", icon: "🟤", title: "Growth & Marketing Strategy",
+        role: "Growth Analyst",
+        analyticsType: "Causal & Attribution",
+        color: "#78350F",
+        what: "Driving virality through reels and influencers",
+        analyze: ["Social media engagement vs attendance", "Meme marketing impact on ticket sales", "Campaign ROI per channel"],
+        metrics: ["Engagement velocity", "Influencer reach-to-booking ratio", "CAC (Customer Acquisition Cost)"],
+        outputs: ["Campaign ROI comparison", "Engagement vs Attendance scatter plot"]
+      },
+      {
+        num: "8", icon: "⚫", title: "Ecosystem Impact",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Prescriptive & Macro",
+        color: "#1F2937",
+        what: "Your edge — the big picture economic impact",
+        analyze: ["Venue revenue uplift during shows", "Artist income growth over time", "Local economy (F&B) impact"],
+        metrics: ["Revenue uplift %", "Artist income CAGR", "Market share growth"],
+        outputs: ["Economic impact report", "System growth curves"]
+      }
+    ],
+    deliverables: [
+      { icon: "📊", label: "Primary Dataset", desc: "Real-world survey & ground-zero data from 50+ venues" },
+      { icon: "🌐", label: "BPL Matchmaking Site", desc: "Live portal for venue/band scheduling & analytics" },
+      { icon: "📄", label: "Economic Report", desc: "'The Live Music Economy of Hyderabad' — 15-page deep-dive" },
+      { icon: "📱", label: "LinkedIn Series", desc: "Primary data insights sharing — 'Why venue X beats venue Y'" }
+    ],
+    roleMap: [
+      { section: "Market & Supply", role: "Data Analyst" },
+      { section: "Demand & Funnel", role: "Product Analyst" },
+      { section: "Revenue Model", role: "Business Analyst" },
+      { section: "Campaign ROI", role: "Growth Analyst" },
+      { section: "Macro Impact", role: "Strategy Analyst" }
+    ]
   }
 ];
 
