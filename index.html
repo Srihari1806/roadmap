@@ -20,7 +20,15 @@
   </style>
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <div style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#080810;color:#E8E8F0;font-family:Inter,Arial,sans-serif;">
+      <div style="max-width:520px;line-height:1.6;">
+        <h1 style="font-size:22px;margin:0 0 8px;color:#F4A72A;">Roadmap is loading...</h1>
+        <p style="margin:0 0 16px;color:#9A9AB3;">If this message stays visible, the React/Babel CDN script did not finish loading.</p>
+        <a href="mastery.html" style="color:#F4A72A;font-weight:700;">Open the Skill Mastery Plan</a>
+      </div>
+    </div>
+  </div>
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -74,185 +82,99 @@ const BLUE = "#4A9EFF";
 const PURPLE = "#A855F7";
 const RED = "#EF4444";
 
-const weeks = [
+const months = [
   {
-    "week": 1,
-    "label": "Phase 1: Skill Sprints (7 Days - 7 Skills)",
-    "theme": "Skill Mastery",
-    "color": PURPLE,
-    "days": [
-      {
-        "day": 1, "title": "Day 1: Excel Mastery",
-        "tasks": [
-          { "time": "6\u20139am", "task": "📊 AnalystBuilder: Excel for Data Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/excel-for-data-analytics", "desc": "Mastering Pivot Tables, XLOOKUP, and Data Cleaning." },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Number System Basics + Mock 1", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
-          { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Clean a messy 10k row dataset in Excel", "type": "project" }
-        ],
-        "outcome": "Mastered Excel automation."
-      },
-      {
-        "day": 2, "title": "Day 2: SQL Foundations",
-        "tasks": [
-          { "time": "6\u20139am", "task": "📊 AnalystBuilder: SQL for Data Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/sql-for-data-analytics", "desc": "Joins, Aggregations, and CTEs." },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Divisibility & Remainder + Mock 2", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
-          { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Solve 50 SQL problems on AnalystBuilder", "type": "project" }
-        ],
-        "outcome": "Mastered complex SQL queries."
-      },
-      {
-        "day": 3, "title": "Day 3: Power BI",
-        "tasks": [
-          { "time": "6\u20139am", "task": "📊 AnalystBuilder: Power BI Mastery", "type": "analytics", "link": "https://www.analystbuilder.com/courses/power-bi-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: LCM & HCF Applications + Mock 3", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
-          { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Build a Sales Dashboard in Power BI", "type": "project" }
-        ],
-        "outcome": "Built interactive Power BI dashboards."
-      },
-      {
-        "day": 4, "title": "Day 4: Tableau",
-        "tasks": [
-          { "time": "6\u20139am", "task": "📊 AnalystBuilder: Tableau for Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/tableau-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Unit Digits & Powers + Mock 4", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/numbers/basic?subject=quantitative-aptitude&sidebar=open" },
-          { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Re-create Sales Dashboard in Tableau", "type": "project" }
-        ],
-        "outcome": "Mastered visual storytelling."
-      },
-      {
-        "day": 5, "title": "Day 5: Python",
-        "tasks": [
-          { "time": "6\u20139am", "task": "📊 AnalystBuilder: Python for Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/python-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Percentages Basics + Mock 5", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/percentages/basic?subject=quantitative-aptitude&sidebar=open" },
-          { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Clean and Analyze a dataset in Jupyter", "type": "project" }
-        ],
-        "outcome": "Able to perform EDA in Python."
-      },
-      {
-        "day": 6, "title": "Day 6: Math & Statistics",
-        "tasks": [
-          { "time": "6\u20139am", "task": "📊 AnalystBuilder: Math/Stats Foundations", "type": "analytics", "link": "https://www.analystbuilder.com/courses/math-and-statistics-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss (Part 1) + Mock 6", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-and-loss/basic?subject=quantitative-aptitude&sidebar=open" },
-          { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Perform an A/B Test in Python", "type": "project" }
-        ],
-        "outcome": "Understood the math behind data."
-      },
-      {
-        "day": 7, "title": "Day 7: Gen AI & Tools",
-        "tasks": [
-          { "time": "6\u20139am", "task": "📊 AnalystBuilder: Gen AI for Analytics", "type": "analytics", "link": "https://www.analystbuilder.com/courses/generative-ai-for-data-analytics" },
-          { "time": "10\u201311am", "task": "\ud83e\udde0 Aptitude: Quant: Profit & Loss (Advanced) + Mock 7", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/profit-and-loss/basic?subject=quantitative-aptitude&sidebar=open" },
-          { "time": "1\u20134pm", "task": "\ud83c\udfd7\ufe0f Practice: Use AI to automate data tasks", "type": "project" }
-        ],
-        "outcome": "10x productivity with AI tools."
-      }
+    month: 1,
+    title: "Jul 2025: Foundations & IPL Data Analytics",
+    theme: "Data Collection & Exploratory Analysis",
+    color: BLUE,
+    focusRoles: ["Data Analyst", "Sports Analyst"],
+    projects: ["IPL Analytics Dashboard (Layers 1-3)"],
+    skills: ["SQL Basics", "Python (Pandas/NumPy)", "Data Cleaning"],
+    tasks: [
+      { task: "Learn SQL basics (SELECT, JOINs, Group By)", type: "sql" },
+      { task: "Learn Python Pandas & Matplotlib basics", type: "analytics" },
+      { task: "Clean & Prep IPL dataset (2008-2025)", type: "project" },
+      { task: "Build Sports Intelligence & Fan Psychology Layers", type: "project" },
+      { task: "Publish 1st Kaggle Notebook with commentary", type: "portfolio" }
     ]
   },
   {
-    "week": 2,
-    "label": "Phase 2: IPL Analytics Engine (Role-Based Deep Dive)",
-    "theme": "Execution",
-    "color": BLUE,
-    "days": [
-      { "day": 8, "title": "Day 8: IPL Sports & Fan Psychology", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Simple Interest + Mock 8", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/interest/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: IPL Layers 1 & 2: Sports + Behavioral Intelligence", "type": "project", "desc": "Build Clutch Index leaderboard | Analyze Star Dependency (Dhoni/Kohli effect) | Map emotional spikes vs match events.", "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset" }], "outcome": "Mastered clutch metrics & star-driven fan engagement." },
-      { "day": 9, "title": "Day 9: IPL Product & Gamification", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Compound Interest + Mock 9", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/interest/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: IPL Layer 3: Product Intelligence (Dopamine Loops)", "type": "project", "desc": "Map user journey Match\u2192Fantasy\u2192Reels | Analyze prediction psychology mechanics | Retention curve per match type.", "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset" }], "outcome": "Built retention engineering & dopamine loop models." },
-      { "day": 10, "title": "Day 10: IPL Second-Screen & Attention", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Ratio & Proportion + Mock 10", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/ratio-and-proportion/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: IPL Layers 4 & 5: Platform + Attention Economy", "type": "project", "desc": "Analyze parallel app behavior (Fantasy/Reddit) | Map ad timing vs peak intensity | Hype Index (Search + Social Mentions).", "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset" }], "outcome": "Mapped Hype Index vs Peak Attention peaks." },
-      { "day": 11, "title": "Day 11: IPL Broadcast & Business", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Mixtures & Alligations + Mock 11", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/alligations-and-mixtures/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: IPL Layers 6 & 7: Media + Business Intelligence", "type": "project", "desc": "Analyze commentator hype vs retention | Media rights (Digital vs TV) splits | Franchise valuation growth 2010\u21922024.", "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset" }], "outcome": "Completed media storytelling & revenue engine analysis." },
-      { "day": 12, "title": "Day 12: IPL Brand Economy & Strategy", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Averages + Mock 12", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/averages/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: IPL Layers 8 & 9: Brand + Economic Strategy", "type": "project", "desc": "Player Brand Pull Index (Social vs Performance) | Venue economics (Tourism/F&B impact) | Movie vs IPL cannibalization.", "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset" }], "outcome": "Mapped player brand power & macro-economic footprint." },
-      { "day": 13, "title": "Day 13: IPL AI & Dashboard Build", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Partnership & Share + Mock 13", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/partnership/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: IPL Layer 10: AI Intelligence & Dashboard", "type": "project", "desc": "Build match hype prediction engine | Highlight virality forecasting | Integrated Multi-Role Dashboard with 10 detailed layers.", "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset" }], "outcome": "AI-powered 10-layer predictive dashboard live." },
-      { "day": 14, "title": "Day 14: IPL Intelligence Ecosystem Report", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Problems on Ages + Mock 14", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/problems-on-ages/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: IPL 'Attention Economy' Strategic Report", "type": "project", "desc": "Compile 15-page McKinsey-style report on the IPL Intelligence Ecosystem | Focus on causal chains from event to revenue.", "dataset": "https://www.kaggle.com/datasets/patrickb122/ipl-all-time-dataset" }], "outcome": "Project 1 finished with elite 10-layer ecosystem report." }
+    month: 2,
+    title: "Aug 2025: Advanced Sports Analytics & BPL",
+    theme: "Benchmarking & Storytelling",
+    color: PURPLE,
+    focusRoles: ["Sports Analyst", "Product Analyst"],
+    projects: ["IPL Analytics (Layers 4-10)", "BPL Analytics"],
+    skills: ["Advanced Pandas", "Data Storytelling", "Power BI / Tableau Basics"],
+    tasks: [
+      { task: "Learn Power BI/Tableau for basic dashboards", type: "analytics" },
+      { task: "Complete IPL Business & AI Intelligence Layers", type: "project" },
+      { task: "BPL Analysis: Cross-dataset benchmarking", type: "project" },
+      { task: "Draft 'IPL: The Attention Economy' PDF report", type: "creative" },
+      { task: "Deploy IPL Streamlit/React Dashboard", type: "portfolio" }
     ]
   },
   {
-    "week": 3,
-    "label": "Phase 3: OTT vs Theatre Intelligence (Role-Based Deep Dive)",
-    "theme": "Execution",
-    "color": PURPLE,
-    "days": [
-      { "day": 15, "title": "Day 15: OTT Layer 1: Data Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Time & Work (Basics) + Mock 15", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-and-work/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: OTT Layer 1: Data Analyst (Genre & Revenue)", "type": "project", "desc": "Analyze Genre vs Revenue (Action vs Romance) | regional vs national content rise | Box Office trajectory vs IMDb ratings.", "dataset": "https://www.kaggle.com/datasets/shivamb/netflix-shows" }] },
-      { "day": 16, "title": "Day 16: OTT Layer 2: Product Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Time & Work (Advanced) + Mock 16", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-and-work/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: OTT Layer 2: Product Analyst (Sentiment & Booking)", "type": "project", "desc": "Map BookMyShow funnel: Browse\u2192Select\u2192Book | Sentiment analysis (VADER) per film | Price sensitivity Urban vs Rural.", "info": "https://www.bookmyshow.com/" }] },
-      { "day": 17, "title": "Day 17: OTT Layer 3: Business Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Pipes & Cisterns + Mock 17", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/time-and-work/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: OTT Layer 3: Business Analyst (Multiplex vs Single)", "type": "project", "desc": "Occupancy % Multiplex vs Single Screen | F&B margin (40-50%) impact | Premium vs budget seat price sensitivity.", "info": "https://www.pvrcinemas.com/investors" }] },
-      { "day": 18, "title": "Day 18: OTT Layer 4: Growth Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Time, Speed & Distance + Mock 18", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/speed-time-and-distance/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: OTT Layer 4: Growth Analyst (Marketing ROI)", "type": "project", "desc": "Trailer views vs Opening weekend correlation | Viral reel challenges impact | Meme marketing efficacy analysis.", "info": "https://www.youtube.com/c/NetflixIndia" }] },
-      { "day": 19, "title": "Day 19: OTT Layer 5: Strategy Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Relative Speed & Trains + Mock 19", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/speed-time-and-distance/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: OTT Layer 5: Strategy Analyst (Lifecycle & COVID)", "type": "project", "desc": "Theatre-to-OTT window shrinkage (60\u21928 weeks) | Post-COVID hybrid release model | OTT subscriber growth curve 2019-2024.", "info": "https://www.pwc.in/industries/entertainment-and-media.html" }] },
-      { "day": 20, "title": "Day 20: OTT Dashboard", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Boats & Streams + Mock 20", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/speed-time-and-distance/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: OTT Multi-Domain Tableau Storyboard", "type": "project", "desc": "Build Genre trends vs COVID timeline | Sentiment vs Revenue scatter plot | Interactive geographic occupancy map.", "link": "https://public.tableau.com/en-us/gallery" }] },
-      { "day": 21, "title": "Day 21: OTT Final Case Study", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Circular Motion & Races + Mock 21", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/quantitative-aptitude/speed-time-and-distance/basic?subject=quantitative-aptitude&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: OTT Financial & Strategy Whitepaper", "type": "project", "desc": "Case study: 'Why theatres survive the OTT era' | LTV calculation for OTT subscribers | Risk vs Reward matrix.", "info": "https://www.variety.com/v/digital/" }] }
+    month: 3,
+    title: "Sep 2025: E-Commerce & Business KPIs",
+    theme: "Funnel Analysis & Revenue Metrics",
+    color: GREEN,
+    focusRoles: ["Business Analyst", "Data Analyst"],
+    projects: ["E-Commerce Analytics (Layers 1-4)"],
+    skills: ["Advanced SQL (CTEs, Window Functions)", "Business Metrics (GMV, AOV)", "Excel (Advanced)"],
+    tasks: [
+      { task: "Master Advanced SQL and Excel Modeling", type: "sql" },
+      { task: "E-Commerce: Seasonal Sales & Pricing Analysis", type: "project" },
+      { task: "E-Commerce: Ads Impact & Funnel Drops", type: "project" },
+      { task: "Build Excel models for pricing scenarios", type: "analytics" },
+      { task: "Publish LinkedIn Case Study on E-Commerce pricing", type: "creative" }
     ]
   },
   {
-    "week": 4,
-    "label": "Phase 4: E-Commerce + Ads System (Role-Based Deep Dive)",
-    "theme": "Execution",
-    "color": GREEN,
-    "days": [
-      { "day": 22, "title": "Day 22: E-com Layer 1: Data Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Number Series + Mock 22", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/series-missing-numbers-odd-one-out/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: E-com Layer 1: Data Analyst (Seasonal Sales)", "type": "project", "desc": "Festival sales heatmap by category | GMV spike % vs normal weeks | Mobile vs Fashion performance delta.", "dataset": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" }] },
-      { "day": 23, "title": "Day 23: E-com Layer 2: Business Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Alphabet Series & Analogies + Mock 23", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/analogies/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: E-com Layer 2: Business Analyst (Pricing & Anchoring)", "type": "project", "desc": "Anchor pricing psychology (29,999 vs 50,000) | Fake vs Real discount detection | Price elasticity per segment.", "dataset": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" }] },
-      { "day": 24, "title": "Day 24: E-com Layer 3: Growth Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Coding-Decoding + Mock 24", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/coding-decoding/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: E-com Layer 3: Growth Analyst (Ads & Attribution)", "type": "project", "desc": "Instagram Reels vs Story ads conversion | CAC & ROAS analysis | Impressions\u2192Clicks\u2192Purchase funnel.", "dataset": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" }] },
-      { "day": 25, "title": "Day 25: E-com Layer 4: Product Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Blood Relations + Mock 25", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/blood-relations/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: E-com Layer 4: Product Analyst (Consumer Psych Funnel)", "type": "project", "desc": "Cart abandonment patterns (70%+) | Urgency/FOMO triggers impact | Subscription stickiness (Prime/Flipkart Plus).", "dataset": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" }] },
-      { "day": 26, "title": "Day 26: E-com Layer 5: Financial Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Direction Sense + Mock 26", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/direction-sense/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: E-com Layer 5: Financial Analyst (Unit Economics & LTV)", "type": "project", "desc": "LTV / CAC ratio per customer segment | Subscription ARPU analysis | Repeat purchase rate vs Acquisition cost.", "dataset": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" }] },
-      { "day": 27, "title": "Day 27: E-com Layer 6: Strategy Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Syllogisms (Basics) + Mock 27", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: E-com Layer 6: Strategy Analyst (Market Shifts)", "type": "project", "desc": "Quick Commerce rise (Blinkit/Instamart) | Time vs Price consumer decision shift | Kirana store footfall loss data.", "dataset": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" }] },
-      { "day": 28, "title": "Day 28: E-com Layer 7: Business Analyst", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Syllogisms (Advanced) + Mock 28", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/syllogism/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: E-com Layer 7: Business Analyst (Conglomerates)", "type": "project", "desc": "Reliance vs Tata vs Adani ecosystem war | Logistics & Data control analysis | Strategy comparison matrix.", "dataset": "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" }] }
+    month: 4,
+    title: "Oct 2025: Growth & Financial Modeling",
+    theme: "LTV, CAC & Conglomerate Strategy",
+    color: ACCENT,
+    focusRoles: ["Growth Analyst", "Financial Analyst", "Strategy Analyst"],
+    projects: ["E-Commerce Analytics (Layers 5-9)"],
+    skills: ["Cohort Analysis", "Financial Modeling Basics", "A/B Testing Basics"],
+    tasks: [
+      { task: "Learn Cohort Analysis & A/B Testing foundations", type: "analytics" },
+      { task: "E-Commerce: LTV vs CAC Unit Economics", type: "project" },
+      { task: "E-Commerce: Quick Commerce & Conglomerate Strategy", type: "project" },
+      { task: "Deploy E-Commerce Dashboard & Whitepaper", type: "portfolio" }
     ]
   },
   {
-    "week": 5,
-    "label": "Phase 5: Band Premier League (BPL Ecosystem)",
-    "theme": "Primary Data",
-    "color": ACCENT,
-    "days": [
-      { "day": 29, "title": "Day 29: BPL Layer 1 & 2: Market & Demand", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Linear Seating Arrangement + Mock 29", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: BPL Layer 1 (Market) & Layer 2 (Demand) Analysis", "type": "project", "desc": "Map Hyderabad venue density by area | Show frequency per venue type | Footfall segment (Student vs Prof).", "dataset": "https://www.google.com/maps/search/live+music+venues+hyderabad" }], "outcome": "Mapped Hyderabad venue density & traffic." },
-      { "day": 30, "title": "Day 30: BPL Layer 3 & 4: Supply & Matchmaking", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Circular Seating Arrangement + Mock 30", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/seating-arrangement/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: BPL Layer 3 (Bands) & Layer 4 (Optimization) Build", "type": "project", "desc": "Active bands per genre survey | Pricing vs Gig frequency | Build slot optimization & scheduling model.", "info": "https://www.insider.in/hyderabad" }], "outcome": "Built scheduling & slot optimization model." },
-      { "day": 31, "title": "Day 31: BPL Layer 5 & 6: Revenue & Funnel", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Complex Puzzles (Matrix) + Mock 31", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/puzzles/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: BPL Layer 5 (Revenue) & Layer 6 (Booking Funnel)", "type": "project", "desc": "Break-even per show analysis | Pricing vs capacity strategy | Aware\u2192Book\u2192Attend funnel drop-offs.", "info": "https://www.zomato.com/hyderabad/live-music" }], "outcome": "Completed pricing strategy & drop-off analysis." },
-      { "day": 32, "title": "Day 32: BPL Layer 7 & 8: Growth & Ecosystem", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Clocks (Angles & Mirrors) + Mock 32", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/clocks/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: BPL Layer 7 (Growth) & Layer 8 (Macro Impact)", "type": "project", "desc": "Social media engagement vs attendance | Influencer reach-to-booking ratio | Venue revenue uplift analysis.", "info": "https://www.f6s.com/companies/music/india/hyderabad" }], "outcome": "Economic impact model & growth curves complete." },
-      { "day": 33, "title": "Day 33: BPL Dashboard Build", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Calendars (Odd Days) + Mock 33", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/calendars/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: BPL Interactive Matchmaking Dashboard", "type": "project", "desc": "Live portal for venue/band scheduling | Interactive map of hotspots | Real-time matchmaking scoring.", "link": "https://www.glideapps.com/" }], "outcome": "Live analytics portal for venue/bands." },
-      { "day": 34, "title": "Day 34: BPL Economic Report", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Cubes & Dice + Mock 34", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/cubes-and-dice/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Project: BPL 15-page Primary Data Deep-Dive", "type": "project", "desc": "Compile primary survey data | 'The Live Music Economy of Hyderabad' report | Recommendation for venue owners.", "info": "https://www.statista.com/outlook/dmo/eservices/event-tickets/india" }], "outcome": "Finished professional industry report." },
-      { "day": 35, "title": "Day 35: BPL Launch & Pitch", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Data Sufficiency + Mock 35", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/logical-reasoning/data-sufficiency/basic?subject=logical-reasoning&sidebar=open" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Strategy: BPL LinkedIn Viral Breakdown", "type": "project", "desc": "LinkedIn visual storytelling | Primary data insight carousel | Outreach to venue partners.", "info": "https://www.linkedin.com/pulse/topics/analytics-5/" }], "outcome": "Primary data project live & shared." }
+    month: 5,
+    title: "Nov 2025: OTT Content & Product Analytics",
+    theme: "Retention & Churn Modeling",
+    color: RED,
+    focusRoles: ["Product Analyst", "Data Analyst"],
+    projects: ["OTT Platform Analytics (Layers 1-5)"],
+    skills: ["Product Metrics (DAU/MAU, Retention)", "Sentiment Analysis", "Amplitude/Mixpanel Concepts"],
+    tasks: [
+      { task: "Study Retention, Churn & Engagement Metrics", type: "analytics" },
+      { task: "OTT: Genre vs Revenue & Demographics", type: "project" },
+      { task: "OTT: Booking Funnel & Sentiment Analysis", type: "project" },
+      { task: "Tableau Dashboard for OTT Insights", type: "portfolio" }
     ]
   },
   {
-    "week": 6,
-    "label": "Phase 6: Personal Portfolio Launch (Branding)",
-    "theme": "Branding",
-    "color": BLUE,
-    "days": [
-      { "day": 36, "title": "Day 36: Portfolio UI", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Sentence Correction + Mock 36", "type": "aptitude", "link": "https://takeuforward.org/plus/aptitude/verbal-ability/passage-sentence-rearrangement/basic?subject=verbal-ability&sidebar=open" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Hero & Architecture Build", "type": "project" }] },
-      { "day": 37, "title": "Day 37: Portfolio Projects", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Error Spotting + Mock 37", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: 4-Project Hub Integration", "type": "project" }] },
-      { "day": 38, "title": "Day 38: Portfolio Proof", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension (Basics) + Mock 38", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Skill Viz & Proof Build", "type": "project" }] },
-      { "day": 39, "title": "Day 39: Portfolio Content", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Reading Comprehension (Advanced) + Mock 39", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Sahitya Hub Integration", "type": "project" }] },
-      { "day": 40, "title": "Day 40: Portfolio Resume", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Para Jumbles + Mock 40", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Resume Downloads Build", "type": "project" }] },
-      { "day": 41, "title": "Day 41: Portfolio SEO", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Synonyms & Antonyms + Mock 41", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Portfolio: Analytics & SEO Setup", "type": "project" }] },
-      { "day": 42, "title": "Day 42: Portfolio Launch", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Verbal: Idioms & Cloze Test + Mock 42", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Branding: LinkedIn Grand Reveal", "type": "project" }] }
-    ]
-  },
-  {
-    "week": 7,
-    "label": "Phase 7: Sahitya Rachanalu Build (Creative/Tech)",
-    "theme": "Creative",
-    "color": PURPLE,
-    "days": [
-      { "day": 43, "title": "Day 43: Sahitya Reading", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Statement & Conclusion + Mock 43", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Reading Module Build", "type": "project" }] },
-      { "day": 44, "title": "Day 44: Sahitya Lyrics", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Cause & Effect + Mock 44", "type": "aptitude" }, { "time": "1\u20136pm", "task": "\ud83c\udfd7\ufe0f Sahitya: Lyrics Split-View Build", "type": "project" }] },
-      { "day": 45, "title": "Day 45: Sahitya Cinepedia", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Input-Output + Mock 45", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Film Wiki UI Build", "type": "project" }] },
-      { "day": 46, "title": "Day 46: Sahitya Fictionary", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Venn Diagrams + Mock 46", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Dialogue Card Build", "type": "project" }] },
-      { "day": 47, "title": "Day 47: Sahitya Media", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Binary Logic + Mock 47", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: Meme/GIF Keyboard Build", "type": "project" }] },
-      { "day": 48, "title": "Day 48: Sahitya Content", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Decision Making + Mock 48", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Sahitya: MDX Article Feed Build", "type": "project" }] },
-      { "day": 49, "title": "Day 49: Sahitya Launch", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: LR: Critical Reasoning + Mock 49", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Branding: Founder Reveal Day", "type": "project" }] }
-    ]
-  },
-  {
-    "week": 8,
-    "label": "Phase 8: Polishing, Strategy & The Launch",
-    "theme": "Final Sprints",
-    "color": GREEN,
-    "days": [
-      { "day": 50, "title": "Day 50: Advanced Upgrades", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: DI: Tables & Formatting + Mock 50", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Upgrade: IPL/OTT/E-com ML & NLP Predictive Build", "type": "project" }] },
-      { "day": 51, "title": "Day 51: Advanced Pipelines", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: DI: Bar Graphs & Histograms + Mock 51", "type": "aptitude" }, { "time": "1\u20136pm", "task": "📊 AnalystBuilder: Snowflake/DBT Advanced Build", "type": "analytics" }] },
-      { "day": 52, "title": "Day 52: Showcase & Target Research", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: DI: Pie Charts & Degree Conversions + Mock 52", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Strategy: Journey Showcase & Company Reports Build", "type": "project" }] },
-      { "day": 53, "title": "Day 53: Technical Mock Interviews", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: DI: Line Graphs & Mixed Charts + Mock 53", "type": "aptitude" }, { "time": "1\u20136pm", "task": "📊 Practice: SQL & Technical Mock Sprints", "type": "analytics" }] },
-      { "day": 54, "title": "Day 54: Business Case Sprints", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Permutation & Combination + Mock 54", "type": "aptitude" }, { "time": "1\u20136pm", "task": "📊 Practice: Case Interview & Strategy Sprints", "type": "analytics" }] },
-      { "day": 55, "title": "Day 55: High-Intent Application Blitz", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Probability (Coins & Cards) + Mock 55", "type": "aptitude" }, { "time": "9am\u20136pm", "task": "🏗️ Strategy: 20+ High-Intent Applications", "type": "project" }] },
-      { "day": 56, "title": "Day 56: Maintenance & QA", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Geometry Basics + Mock 56", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Polish: Full System Bug fixing & QA", "type": "project" }] },
-      { "day": 57, "title": "Day 57: Referral & Networking", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Mensuration 2D & 3D + Mock 57", "type": "aptitude" }, { "time": "9am\u20136pm", "task": "🏗️ Strategy: Referral Outreach Blitz", "type": "project" }] },
-      { "day": 58, "title": "Day 58: Catch-up & Final Polish", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Quadratic Eq & Logarithms + Mock 58", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Catch-up on backlog & Resume Metric Polish", "type": "project" }] },
-      { "day": 59, "title": "Day 59: Final Deployment", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: Quant: Progressions (AP/GP/HP) + Mock 59", "type": "aptitude" }, { "time": "1\u20136pm", "task": "🏗️ Final Vercel & Production Sync", "type": "project" }] },
-      { "day": 60, "title": "Day 60: Hired Mindset Day", "tasks": [{ "time": "9am\u201310am", "task": "\ud83e\udde0 Aptitude: DI: Caselets & Final Review + Mock 60", "type": "aptitude" }, { "time": "9am\u201312pm", "task": "🎉 Goal: Reflection & Career Launch", "type": "project" }] }
+    month: 6,
+    title: "Dec 2025: OTT Strategy & Launch",
+    theme: "Macro Economics & Interview Prep",
+    color: BLUE,
+    focusRoles: ["Strategy Analyst", "Business Analyst"],
+    projects: ["OTT Platform Analytics (Layers 6-9)", "Portfolio Launch"],
+    skills: ["Interview Prep", "Case Studies", "Refining all skills"],
+    tasks: [
+      { task: "OTT: COVID Impact & Business Model Comparison", type: "project" },
+      { task: "Complete OTT 12-page Deep Report", type: "creative" },
+      { task: "Deploy Final Portfolio with all 4 projects", type: "portfolio" },
+      { task: "Mock Interviews & Resume Polishing", type: "aptitude" },
+      { task: "Start applying to 20+ High-Intent Roles", type: "project" }
     ]
   }
 ];
@@ -844,6 +766,152 @@ const skillsRoadmap = [
   },
 ];
 
+const resumeData = {
+  name: "Srihari [Last Name]",
+  title: "Analyst | Product & Growth | Sports Data",
+  contact: {
+    email: "srihari@email.com",
+    linkedin: "linkedin.com/in/srihari",
+    github: "github.com/srihari",
+    location: "Bhubaneswar / Mumbai",
+  },
+  summary: "Pre-final year Electronics & Computer Science student at KIIT (2027) with a track record in content strategy, community growth, and data storytelling. Founder of Sahitya Rachanalu — a Telugu literary community built from scratch. Passionate about sports analytics with hands-on projects in IPL and cricket data.",
+  education: {
+    degree: "B.Tech — Electronics & Computer Science",
+    college: "KIIT University, Bhubaneswar",
+    year: "2023 – 2027",
+    cgpa: "7.3",
+  },
+  projects: [
+    {
+      id: "ipl",
+      title: "IPL Analytics Dashboard",
+      status: "In Progress (Jul 2025)",
+      tags: ["Python", "Pandas", "Matplotlib", "Kaggle", "Sports Analytics"],
+      bullets: [
+        "Analyzed 2008–2025 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
+        "Built interactive visualizations: top scorers, wicket-takers, team win rates, and season-wise run trends",
+        "Identified partnership patterns and powerplay impact using aggregated match-level data",
+        "Publishing findings as a public Kaggle notebook with storytelling commentary",
+      ],
+      skills_demonstrated: ["SQL-style data wrangling", "Python/Pandas", "Data Visualization", "Sports Domain Knowledge"],
+    },
+    {
+      id: "bpl",
+      title: "BPL (Bangladesh Premier League) Analytics",
+      status: "Planned: Jul–Aug 2025",
+      tags: ["Python", "Sports Analytics", "Cricket"],
+      bullets: [
+        "Will extend IPL methodology to BPL — cross-league performance benchmarking",
+        "Focus: player valuation, form analysis, overseas vs local player impact",
+      ],
+      skills_demonstrated: ["Cross-dataset analysis", "Benchmarking", "Sports domain depth"],
+    },
+    {
+      id: "ecom",
+      title: "E-Commerce Analytics Project",
+      status: "Planned: Sep–Oct 2025",
+      tags: ["SQL", "Python", "Business Analysis", "Funnel Analytics"],
+      bullets: [
+        "Will analyze user funnel, cart abandonment, and revenue attribution using mock or public datasets",
+        "Focus: cohort retention, growth metrics, and product performance KPIs",
+      ],
+      skills_demonstrated: ["Funnel Analysis", "SQL", "Growth Metrics", "Business Analyst thinking"],
+    },
+    {
+      id: "ott",
+      title: "OTT Platform Analytics",
+      status: "Planned: Nov–Dec 2025",
+      tags: ["Python", "Content Analytics", "Product Analytics", "Recommendation Systems"],
+      bullets: [
+        "Will analyze content engagement, churn prediction, and genre/language preferences",
+        "Product lens: feature adoption, user journey mapping, retention KPIs",
+      ],
+      skills_demonstrated: ["Content Analytics", "Product Thinking", "Retention Metrics", "Churn Modeling"],
+    },
+    {
+      id: "hiremap",
+      title: "HireMap — Placement Web App",
+      status: "Completed",
+      tags: ["React 19", "TypeScript", "Firebase", "Vite", "Framer Motion"],
+      bullets: [
+        "Built frontend of a placement-focused web app for students — live at hiremap-eight.vercel.app",
+        "Implemented role-based auth, dynamic dashboards, and smooth UI transitions with Framer Motion",
+        "Contributed to product thinking: user flow, onboarding design, and feature prioritization",
+      ],
+      skills_demonstrated: ["Frontend Dev", "Product Thinking", "Deployment (Vercel)", "Collaboration"],
+    },
+    {
+      id: "sahitya",
+      title: "Sahitya Rachanalu — Telugu Literary Community",
+      status: "Founder | Ongoing",
+      tags: ["Content Strategy", "Community Building", "Growth", "Telugu"],
+      bullets: [
+        "Founded and scaled a Telugu literary content community from scratch",
+        "Curated and published original literary content; drove organic growth through consistent programming",
+        "Demonstrated: content calendar management, audience engagement, and creator community strategy",
+      ],
+      skills_demonstrated: ["Content Strategy", "Community Growth", "Brand Building", "Organic Distribution"],
+    },
+  ],
+  skills: {
+    current: ["Python (basics)", "Pandas", "Matplotlib", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "SEO Writing", "Content Strategy", "Figma (basic)", "MS Excel"],
+    learning: ["SQL", "Power BI / Tableau", "Google Analytics", "Advanced Pandas", "A/B Testing basics", "Product Metrics (DAU, MAU, Retention, LTV)"],
+    planned: ["dbt (data build tool)", "Looker / Metabase", "Amplitude / Mixpanel", "Python for Finance (yfinance)", "Cohort Analysis", "Statistical Hypothesis Testing"],
+  },
+};
+
+const roleRequirements = {
+  "Data Analyst": {
+    color: "#3B82F6",
+    must_have: ["SQL", "Python/Pandas", "Data Visualization", "Excel/Sheets", "Statistical Analysis", "Dashboard tools (Tableau/Power BI)"],
+    good_to_have: ["dbt", "BigQuery/Snowflake", "A/B Testing", "Cohort Analysis"],
+    ats_keywords: ["SQL", "Python", "data analysis", "visualization", "dashboard", "metrics", "KPI", "Excel", "Tableau", "Power BI", "statistical analysis", "cohort", "funnel"],
+  },
+  "Product Analyst": {
+    color: "#8B5CF6",
+    must_have: ["SQL", "Product Metrics (DAU/MAU/Retention)", "A/B Testing", "Python or Excel", "User Journey Mapping", "Funnel Analysis"],
+    good_to_have: ["Amplitude/Mixpanel", "Figma", "Market Research", "PRD writing"],
+    ats_keywords: ["product analytics", "user retention", "A/B testing", "funnel", "DAU", "MAU", "churn", "feature adoption", "product metrics", "user journey", "SQL", "Python"],
+  },
+  "Business Analyst": {
+    color: "#10B981",
+    must_have: ["SQL", "Excel", "Business Problem Framing", "Stakeholder Communication", "Data Storytelling", "Process Mapping"],
+    good_to_have: ["Power BI", "Python", "Financial Modeling basics", "Case Study frameworks"],
+    ats_keywords: ["business analysis", "stakeholder", "process improvement", "data-driven", "SQL", "Excel", "reporting", "KPI", "insights", "requirement gathering", "documentation"],
+  },
+  "Growth Analyst": {
+    color: "#F59E0B",
+    must_have: ["SEO", "Content Strategy", "Google Analytics", "Social Media Analytics", "A/B Testing (copy)", "Excel/Sheets"],
+    good_to_have: ["HubSpot/similar", "Email marketing tools", "Canva/Figma", "Cohort tracking"],
+    ats_keywords: ["content strategy", "SEO", "growth", "GTM", "organic", "engagement", "retention", "funnel", "conversion", "analytics", "social media", "community"],
+  },
+  "Sports Analyst": {
+    color: "#EF4444",
+    must_have: ["Python/Pandas", "Sports Domain Knowledge (IPL/PKL)", "Data Visualization", "Statistical Thinking", "SQL"],
+    good_to_have: ["R", "Tableau/Power BI", "Web Scraping (BeautifulSoup)", "Expected Value modeling"],
+    ats_keywords: ["sports analytics", "cricket", "IPL", "player performance", "Python", "data modeling", "visualizations", "statistical analysis", "sports data", "Kaggle"],
+  },
+  "Financial Analyst": {
+    color: "#6366F1",
+    must_have: ["Excel (Advanced)", "Financial Modeling", "Accounting basics", "Python (yfinance)", "SQL", "Data Interpretation"],
+    good_to_have: ["Bloomberg Terminal familiarity", "DCF", "Ratio Analysis", "Power BI"],
+    ats_keywords: ["financial modeling", "Excel", "valuation", "DCF", "ratio analysis", "P&L", "forecasting", "financial analysis", "Python", "SQL", "investment analysis"],
+  },
+  "Content Strategist": {
+    color: "#EC4899",
+    must_have: ["Content Strategy", "SEO", "Analytics Tools", "Audience Research", "Campaign Planning"],
+    good_to_have: ["HubSpot", "SEMrush", "A/B Testing", "CMS (WordPress/Notion)"],
+    ats_keywords: ["content strategy", "SEO", "audience research", "campaign planning", "content calendar", "analytics", "engagement", "brand messaging"],
+  },
+  "SEO Analyst": {
+    color: "#14B8A6",
+    must_have: ["SEO", "Google Analytics", "Keyword Research", "On-page Optimization", "Technical SEO"],
+    good_to_have: ["SEMrush/Ahrefs", "Search Console", "Content Strategy", "Link Building"],
+    ats_keywords: ["SEO", "keyword research", "on-page", "technical SEO", "Google Analytics", "search console", "organic traffic", "rankings", "backlinks"],
+  },
+};
+
 // ─── ProjectCard Component ────────────────────────────────────────────────────
 function ProjectCard({ proj }) {
   const [expanded, setExpanded] = React.useState(null);
@@ -936,12 +1004,12 @@ function ProjectCard({ proj }) {
 
 function Roadmap() {
   const [activeTab, setActiveTab] = useState("overview");
-  const [selectedWeek, setSelectedWeek] = useState(0);
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [selectedMonth, setSelectedMonth] = useState(0);
+  const [expandedMonthTask, setExpandedMonthTask] = useState(null);
   const [checklist, setChecklist] = useState(finalChecklist.map(i => ({ ...i })));
   const [expandedSkill, setExpandedSkill] = useState(null);
   const [domainFilter, setDomainFilter] = useState("All");
-  const [expandedDayTask, setExpandedDayTask] = useState(null);
+  
 
   const [completedTasks, setCompletedTasks] = React.useState(() => {
     try {
@@ -965,7 +1033,7 @@ function Roadmap() {
     }));
   };
 
-  const allTasksCount = weeks.reduce((sum, w) => sum + w.days.reduce((dSum, d) => dSum + d.tasks.length, 0), 0);
+  const allTasksCount = months.reduce((sum, m) => sum + m.tasks.length, 0);
   const completedTasksCount = Object.values(completedTasks).filter(Boolean).length;
   const tasksProgress = allTasksCount > 0 ? Math.round((completedTasksCount / allTasksCount) * 100) : 0;
 
@@ -978,13 +1046,16 @@ function Roadmap() {
 
 
 
-  const tabs = [
+const tabs = [
     { id: "overview", label: "🗺️ Overview" },
+    { id: "resume", label: "📄 Resume Builder" },
+    { id: "ats", label: "🎯 ATS Gap Analyzer" },
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
-    { id: "daily", label: "📅 Daily Plan" },
-    { id: "skills", label: "🛠️ Skills" },
+    { id: "monthly", label: "📅 6-Month Plan" },
+    { id: "roadmap", label: "🛠️ Skills Roadmap" },
+    { id: "mastery", label: "Mastery Plan", href: "mastery.html" },
     { id: "checklist", label: "✅ Checklist" },
   ];
 
@@ -995,10 +1066,7 @@ function Roadmap() {
   const completedCount = checklist.filter(i => i.done).length;
   const progress = Math.round((completedCount / checklist.length) * 100);
 
-  const currentWeekData = weeks[selectedWeek];
-  const currentDayData = selectedDay !== null
-    ? currentWeekData?.days?.find(d => d.day === selectedDay)
-    : null;
+  const currentMonthData = months[selectedMonth];
 
   const checklistCategories = [...new Set(finalChecklist.map(i => i.category))];
 
@@ -1038,21 +1106,31 @@ function Roadmap() {
       {/* Tabs */}
       <div style={{ borderBottom: `1px solid ${BORDER}`, background: CARD, position: "sticky", top: 89, zIndex: 99 }}>
         <div style={{ maxWidth: 900, margin: "0 auto", display: "flex", gap: 0 }}>
-          {tabs.map(tab => (
-            <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{
+          {tabs.map(tab => {
+            const isExternal = Boolean(tab.href);
+            const isActive = !isExternal && activeTab === tab.id;
+            const tabStyle = {
               background: "none",
               border: "none",
-              color: activeTab === tab.id ? ACCENT : MUTED,
+              color: isActive ? ACCENT : MUTED,
               padding: "14px 20px",
               cursor: "pointer",
               fontSize: 12,
               fontWeight: 700,
               fontFamily: "inherit",
               letterSpacing: 0.5,
-              borderBottom: activeTab === tab.id ? `2px solid ${ACCENT}` : "2px solid transparent",
+              borderBottom: isActive ? `2px solid ${ACCENT}` : "2px solid transparent",
               transition: "all 0.2s",
-            }}>{tab.label}</button>
-          ))}
+            };
+
+            return isExternal ? (
+              <a key={tab.id} href={tab.href} style={{ ...tabStyle, textDecoration: "none", display: "inline-flex", alignItems: "center" }}>
+                {tab.label}
+              </a>
+            ) : (
+              <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={tabStyle}>{tab.label}</button>
+            );
+          })}
         </div>
       </div>
 
@@ -1116,40 +1194,40 @@ function Roadmap() {
 
             {/* Weekly timeline */}
             <h2 style={{ fontSize: 13, letterSpacing: 2, color: MUTED, textTransform: "uppercase", marginBottom: 16 }}>
-              8-Week Master Timeline
+              6-Month Master Timeline
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {weeks.map((week, idx) => (
+              {months.map((m, idx) => (
                 <div key={idx} style={{
                   background: CARD,
                   border: `1px solid ${BORDER}`,
-                  borderLeft: `3px solid ${week.color}`,
+                  borderLeft: `3px solid ${m.color}`,
                   borderRadius: 8,
                   padding: "14px 16px",
                   cursor: "pointer",
                   transition: "border-color 0.2s",
-                }} onClick={() => { setActiveTab("daily"); setSelectedWeek(idx); setSelectedDay(null); }}
-                  onMouseEnter={e => e.currentTarget.style.borderColor = week.color}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = BORDER; e.currentTarget.style.borderLeftColor = week.color; }}
+                }} onClick={() => { setActiveTab("monthly"); setSelectedMonth(idx); }}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = m.color}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = BORDER; e.currentTarget.style.borderLeftColor = m.color; }}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
-                      <span style={{ color: week.color, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>
-                        WEEK {week.week} ·
+                      <span style={{ color: m.color, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>
+                        MONTH {m.month} ·
                       </span>
-                      <span style={{ marginLeft: 8, fontWeight: 700, fontSize: 14 }}>{week.label}</span>
+                      <span style={{ marginLeft: 8, fontWeight: 700, fontSize: 14 }}>{m.title}</span>
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                       <span style={{
-                        background: `${week.color}20`,
-                        color: week.color,
+                        background: `${m.color}20`,
+                        color: m.color,
                         padding: "3px 10px",
                         borderRadius: 4,
                         fontSize: 11,
                         fontWeight: 700,
-                      }}>{week.theme}</span>
+                      }}>{m.theme}</span>
                       <span style={{ fontSize: 11, color: MUTED }}>
-                        {week.days.length} days →
+                        {m.tasks.length} tasks →
                       </span>
                     </div>
                   </div>
@@ -1235,7 +1313,7 @@ function Roadmap() {
         )}
 
         {/* DAILY TAB */}
-        {activeTab === "daily" && (
+        {activeTab === "monthly" && (
           <div>
             {/* Segregation Strategy */}
             <div style={{
@@ -1245,32 +1323,10 @@ function Roadmap() {
               padding: 20,
               marginBottom: 24,
             }}>
-              <h3 style={{ fontSize: 16, fontWeight: 800, color: ACCENT, margin: "0 0 12px 0" }}>⏱️ The 4-Block Daily Segregation System</h3>
+              <h3 style={{ fontSize: 16, fontWeight: 800, color: ACCENT, margin: "0 0 12px 0" }}>⏱️ 6-Month Execution Planner</h3>
               <p style={{ fontSize: 13, color: TEXT, margin: "0 0 16px 0", lineHeight: 1.5 }}>
-                Do not mix tasks. Stick to these 4 strict time blocks to balance Interview Prep, Analytics, Web Dev, and Creativity:
+                Monthly focus areas to master the 4 projects and 7 roles. Track your high-level progression below.
               </p>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12 }}>
-                <div style={{ background: CARD, border: `1px solid ${RED}`, padding: 12, borderRadius: 6 }}>
-                  <div style={{ color: RED, fontSize: 11, fontWeight: 700, marginBottom: 4 }}>BLOCK 0: EARLY (7 AM - 9 AM)</div>
-                  <div style={{ fontSize: 14, fontWeight: 800, marginBottom: 4 }}>Interview Prep</div>
-                  <div style={{ fontSize: 12, color: MUTED }}>Focus: DSA & Aptitude.<br/>Rule: Pass the written test.</div>
-                </div>
-                <div style={{ background: CARD, border: `1px solid ${BLUE}`, padding: 12, borderRadius: 6 }}>
-                  <div style={{ color: BLUE, fontSize: 11, fontWeight: 700, marginBottom: 4 }}>BLOCK 1: CORE (9 AM - 1 PM)</div>
-                  <div style={{ fontSize: 14, fontWeight: 800, marginBottom: 4 }}>The Logical Block</div>
-                  <div style={{ fontSize: 12, color: MUTED }}>Focus: Analytics, SQL, Python, Tableau.<br/>Rule: Hard logic & data only (Project 3).</div>
-                </div>
-                <div style={{ background: CARD, border: `1px solid ${PURPLE}`, padding: 12, borderRadius: 6 }}>
-                  <div style={{ color: PURPLE, fontSize: 11, fontWeight: 700, marginBottom: 4 }}>BLOCK 2: AFTERNOON (2 PM - 5 PM)</div>
-                  <div style={{ fontSize: 14, fontWeight: 800, marginBottom: 4 }}>The Building Block</div>
-                  <div style={{ fontSize: 12, color: MUTED }}>Focus: React, Next.js, Figma, UI/UX.<br/>Rule: Visual feedback & dev only (Project 1).</div>
-                </div>
-                <div style={{ background: CARD, border: `1px solid ${GREEN}`, padding: 12, borderRadius: 6 }}>
-                  <div style={{ color: GREEN, fontSize: 11, fontWeight: 700, marginBottom: 4 }}>BLOCK 3: EVENING (6 PM - 8 PM)</div>
-                  <div style={{ fontSize: 14, fontWeight: 800, marginBottom: 4 }}>The Creative Block</div>
-                  <div style={{ fontSize: 12, color: MUTED }}>Focus: Writing, Presentations, Reading.<br/>Rule: Free-flowing creativity (Project 2).</div>
-                </div>
-              </div>
             </div>
 
             {/* Progress Bar */}
@@ -1282,7 +1338,7 @@ function Roadmap() {
               marginBottom: 20,
             }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}>
-                <span style={{ fontSize: 13, fontWeight: 700 }}>Overall Task Progress</span>
+                <span style={{ fontSize: 13, fontWeight: 700 }}>Overall Planner Progress</span>
                 <span style={{ color: GREEN, fontWeight: 800, fontSize: 14 }}>{tasksProgress}%</span>
               </div>
               <div style={{ background: "#1a1a2e", borderRadius: 4, height: 6, overflow: "hidden" }}>
@@ -1294,365 +1350,106 @@ function Roadmap() {
                 }}></div>
               </div>
               <div style={{ fontSize: 11, color: MUTED, marginTop: 8 }}>
-                {completedTasksCount} / {allTasksCount} daily tasks completed
+                {completedTasksCount} / {allTasksCount} monthly tasks completed
               </div>
             </div>
 
-            {/* Domain Filter */}
-            <div style={{ marginBottom: 20 }}>
-              <select 
-                value={domainFilter} 
-                onChange={e => { setDomainFilter(e.target.value); setSelectedDay(null); }}
-                style={{
-                  background: CARD,
-                  color: TEXT,
-                  border: `1px solid ${BORDER}`,
-                  padding: "8px 12px",
+            {/* Month selector */}
+            <div style={{ display: "flex", gap: 8, marginBottom: 20, flexWrap: "wrap" }}>
+              {months.map((m, idx) => (
+                <button key={idx} onClick={() => setSelectedMonth(idx)} style={{
+                  background: selectedMonth === idx ? m.color : CARD,
+                  border: `1px solid ${selectedMonth === idx ? m.color : BORDER}`,
+                  color: selectedMonth === idx ? "#000" : MUTED,
+                  padding: "8px 16px",
                   borderRadius: 6,
-                  fontSize: 13,
-                  fontFamily: "inherit",
                   cursor: "pointer",
-                  width: "100%",
-                  maxWidth: 300,
-                }}
-              >
-                {domains.map(d => <option key={d.id} value={d.id}>{d.label}</option>)}
-              </select>
+                  fontSize: 12,
+                  fontWeight: 700,
+                  fontFamily: "inherit",
+                }}>M{m.month}</button>
+              ))}
             </div>
 
-            {domainFilter === "All" ? (
-              <>
-                {/* Week selector */}
-                <div style={{ display: "flex", gap: 8, marginBottom: 20, flexWrap: "wrap" }}>
-                  {weeks.map((week, idx) => (
-                    <button key={idx} onClick={() => { setSelectedWeek(idx); setSelectedDay(null); }} style={{
-                      background: selectedWeek === idx ? week.color : CARD,
-                      border: `1px solid ${selectedWeek === idx ? week.color : BORDER}`,
-                      color: selectedWeek === idx ? "#000" : MUTED,
-                      padding: "6px 12px",
-                      borderRadius: 6,
-                      cursor: "pointer",
-                      fontSize: 11,
+            {/* Month header */}
+            <div style={{
+              background: CARD,
+              border: `1px solid ${BORDER}`,
+              borderLeft: `4px solid ${currentMonthData.color}`,
+              borderRadius: 8,
+              padding: "16px 20px",
+              marginBottom: 20,
+            }}>
+              <div style={{ color: currentMonthData.color, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>
+                MONTH {currentMonthData.month}
+              </div>
+              <div style={{ fontSize: 18, fontWeight: 800, marginTop: 4 }}>{currentMonthData.title}</div>
+              <div style={{ fontSize: 12, color: MUTED, marginTop: 4 }}>{currentMonthData.theme}</div>
+              
+              <div style={{ display: "flex", gap: 16, marginTop: 12, flexWrap: "wrap" }}>
+                <div style={{ fontSize: 11, color: TEXT }}>
+                  <strong style={{ color: currentMonthData.color }}>Projects:</strong> {currentMonthData.projects.join(", ")}
+                </div>
+                <div style={{ fontSize: 11, color: TEXT }}>
+                  <strong style={{ color: currentMonthData.color }}>Skills:</strong> {currentMonthData.skills.join(", ")}
+                </div>
+                <div style={{ fontSize: 11, color: TEXT }}>
+                  <strong style={{ color: currentMonthData.color }}>Roles:</strong> {currentMonthData.focusRoles.join(", ")}
+                </div>
+              </div>
+            </div>
+
+            {/* Tasks list */}
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {currentMonthData.tasks.map((task, i) => {
+                const taskId = `m${currentMonthData.month}-t${i}`;
+                const isDone = !!completedTasks[taskId];
+                const isExpanded = expandedMonthTask === taskId;
+                return (
+                  <div key={i} style={{
+                    background: isDone ? "#0d2e1a" : CARD,
+                    border: `1px solid ${isDone ? GREEN + "60" : BORDER}`,
+                    borderLeft: `4px solid ${isDone ? GREEN : (taskTypeColors[task.type] || ACCENT)}`,
+                    borderRadius: 8,
+                    padding: "14px 16px",
+                    display: "flex",
+                    gap: 14,
+                    alignItems: "center",
+                    cursor: "pointer",
+                    transition: "all 0.2s"
+                  }} onClick={() => setExpandedMonthTask(isExpanded ? null : taskId)}>
+                    <div 
+                      onClick={(e) => { e.stopPropagation(); toggleTask(taskId); }}
+                      style={{
+                        width: 18, height: 18, borderRadius: 4, flexShrink: 0,
+                        border: `2px solid ${isDone ? GREEN : BORDER}`,
+                        background: isDone ? GREEN : "transparent",
+                        cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+                        color: "#000", fontSize: 11, fontWeight: 900
+                      }}>
+                      {isDone ? "✓" : ""}
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ 
+                        fontSize: 14, fontWeight: 700, lineHeight: 1.4,
+                        color: isDone ? GREEN : TEXT,
+                        textDecoration: isDone ? "line-through" : "none",
+                        opacity: isDone ? 0.7 : 1
+                      }}>{task.task}</div>
+                    </div>
+                    <div style={{
+                      background: `${taskTypeColors[task.type] || MUTED}20`,
+                      color: taskTypeColors[task.type] || MUTED,
+                      padding: "4px 10px",
+                      borderRadius: 4,
+                      fontSize: 10,
                       fontWeight: 700,
-                      fontFamily: "inherit",
-                    }}>W{week.week}</button>
-                  ))}
-                </div>
-
-                {/* Week header */}
-                <div style={{
-                  background: CARD,
-                  border: `1px solid ${BORDER}`,
-                  borderLeft: `4px solid ${currentWeekData.color}`,
-                  borderRadius: 8,
-                  padding: "16px 20px",
-                  marginBottom: 20,
-                }}>
-                  <div style={{ color: currentWeekData.color, fontSize: 11, fontWeight: 700, letterSpacing: 1 }}>
-                    WEEK {currentWeekData.week}
+                      textTransform: "uppercase",
+                    }}>{task.type}</div>
                   </div>
-                  <div style={{ fontSize: 18, fontWeight: 800, marginTop: 4 }}>{currentWeekData.label}</div>
-                  <div style={{ fontSize: 12, color: MUTED, marginTop: 2 }}>{currentWeekData.theme}</div>
-                </div>
-
-                {/* Day grid */}
-                {!currentDayData && (
-                  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 12, marginBottom: 20 }}>
-                    {currentWeekData.days.map(day => (
-                      <div key={day.day} onClick={() => setSelectedDay(day.day)} style={{
-                        background: CARD,
-                        border: `1px solid ${BORDER}`,
-                        borderRadius: 8,
-                        padding: 16,
-                        cursor: "pointer",
-                        transition: "border-color 0.2s, transform 0.1s",
-                      }}
-                        onMouseEnter={e => e.currentTarget.style.borderColor = currentWeekData.color}
-                        onMouseLeave={e => e.currentTarget.style.borderColor = BORDER}
-                      >
-                        <div style={{ fontSize: 11, color: currentWeekData.color, fontWeight: 700 }}>DAY {day.day}</div>
-                        <div style={{ fontSize: 14, fontWeight: 700, marginTop: 4, marginBottom: 8 }}>{day.title}</div>
-                        <div style={{ fontSize: 11, color: MUTED, marginBottom: 10 }}>
-                          {day.tasks.length} tasks
-                        </div>
-                        <div style={{
-                          background: "#1a1a2e",
-                          borderRadius: 4,
-                          padding: "8px 10px",
-                          fontSize: 11,
-                          color: GREEN,
-                          lineHeight: 1.4,
-                        }}>
-                          ✓ {day.outcome}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </>
-            ) : (
-              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                <h3 style={{ margin: "0 0 12px 0", color: ACCENT }}>Tracking: {domains.find(d => d.id === domainFilter)?.label}</h3>
-                {weeks.flatMap(w => w.days).flatMap(d => 
-                  d.tasks.filter(t => domains.find(dom => dom.id === domainFilter)?.match.some(m => t.task.includes(m) || d.title.includes(m)))
-                  .map((t, i) => {
-                    const originalTaskIndex = d.tasks.findIndex(orig => orig.task === t.task && orig.time === t.time);
-                    const taskId = `d${d.day}-t${originalTaskIndex}`;
-                    const isDone = !!completedTasks[taskId];
-                    const isExpanded = expandedDayTask === taskId;
-                    return (
-                      <div key={`${d.day}-${i}`} style={{
-                        background: isDone ? "#0d2e1a" : CARD,
-                        border: `1px solid ${isDone ? GREEN + "60" : BORDER}`,
-                        borderLeft: `4px solid ${isDone ? GREEN : (taskTypeColors[t.type] || ACCENT)}`,
-                        borderRadius: 8,
-                        padding: "14px 16px",
-                        display: "flex",
-                        gap: 14,
-                        alignItems: "flex-start",
-                        cursor: "pointer",
-                        transition: "all 0.2s"
-                      }} onClick={() => setExpandedDayTask(isExpanded ? null : taskId)}>
-                        <div 
-                          onClick={(e) => { e.stopPropagation(); toggleTask(taskId); }}
-                          style={{
-                            width: 18, height: 18, borderRadius: 4, flexShrink: 0, marginTop: 4,
-                            border: `2px solid ${isDone ? GREEN : BORDER}`,
-                            background: isDone ? GREEN : "transparent",
-                            cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
-                            color: "#000", fontSize: 11, fontWeight: 900
-                          }}>
-                          {isDone ? "✓" : ""}
-                        </div>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontSize: 10, color: MUTED, marginBottom: 2 }}>{t.time}</div>
-                          <div style={{ 
-                            fontSize: 14, fontWeight: 700, lineHeight: 1.4,
-                            color: isDone ? GREEN : TEXT,
-                            textDecoration: isDone ? "line-through" : "none",
-                            opacity: isDone ? 0.7 : 1 
-                          }}>{t.task}</div>
-                          
-                          {isExpanded && (
-                            <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
-                               {t.desc && (
-                                <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
-                                  <div style={{ fontWeight: 800, color: ACCENT, marginBottom: 4 }}>💡 TASK DETAILS:</div>
-                                  {t.desc.split(' | ').map((part, idx) => (
-                                    <div key={idx} style={{ display: 'flex', gap: 6, marginTop: 4 }}>
-                                      <span style={{ color: MUTED }}>•</span>
-                                      <span>{part.replace('Goal: ', '')}</span>
-                                    </div>
-                                  ))}
-                                </div>
-                              )}
-                              {(t.link || t.dataset || t.info) && (
-                                <div style={{ marginTop: 10, display: "flex", gap: 8, flexWrap: "wrap" }}>
-                                  {t.link && (
-                                    <a 
-                                      href={t.link} 
-                                      target="_blank" 
-                                      rel="noopener noreferrer"
-                                      onClick={e => e.stopPropagation()}
-                                      style={{ 
-                                        fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                      }}>
-                                      {t.type === "ibm" || t.type === "math" || t.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
-                                    </a>
-                                  )}
-                                  {t.dataset && (
-                                    <a 
-                                      href={t.dataset} 
-                                      target="_blank" 
-                                      rel="noopener noreferrer"
-                                      onClick={e => e.stopPropagation()}
-                                      style={{ 
-                                        fontSize: 10, background: "#FFD43B20", color: "#FFD43B", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                      }}>
-                                      DATASET ↗
-                                    </a>
-                                  )}
-                                  {t.info && (
-                                    <a 
-                                      href={t.info} 
-                                      target="_blank" 
-                                      rel="noopener noreferrer"
-                                      onClick={e => e.stopPropagation()}
-                                      style={{ 
-                                        fontSize: 10, background: "#4dabf720", color: "#4dabf7", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                      }}>
-                                      INFO ↗
-                                    </a>
-                                  )}
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                        <div style={{
-                          background: `${taskTypeColors[t.type] || MUTED}20`,
-                          color: taskTypeColors[t.type] || MUTED,
-                          padding: "2px 8px",
-                          borderRadius: 4,
-                          fontSize: 10,
-                          fontWeight: 700,
-                          textTransform: "uppercase",
-                        }}>{t.type}</div>
-                      </div>
-                    );
-                  })
-                )}
-              </div>
-            )}
-
-            {/* Day detail */}
-            {currentDayData && (
-              <div>
-                <button onClick={() => setSelectedDay(null)} style={{
-                  background: "none",
-                  border: `1px solid ${BORDER}`,
-                  color: MUTED,
-                  padding: "6px 12px",
-                  borderRadius: 6,
-                  cursor: "pointer",
-                  fontSize: 11,
-                  fontFamily: "inherit",
-                  marginBottom: 16,
-                }}>← Back to week</button>
-
-                <div style={{
-                  background: CARD,
-                  border: `1px solid ${BORDER}`,
-                  borderLeft: `4px solid ${currentWeekData.color}`,
-                  borderRadius: 8,
-                  padding: "20px",
-                  marginBottom: 16,
-                }}>
-                  <div style={{ fontSize: 11, color: currentWeekData.color, fontWeight: 700 }}>DAY {currentDayData.day}</div>
-                  <div style={{ fontSize: 20, fontWeight: 800, margin: "4px 0 8px" }}>{currentDayData.title}</div>
-                  <div style={{
-                    background: "#0d2e1a",
-                    border: `1px solid ${GREEN}40`,
-                    borderRadius: 6,
-                    padding: "10px 14px",
-                    fontSize: 12,
-                    color: GREEN,
-                  }}>
-                    🎯 End Goal: {currentDayData.outcome}
-                  </div>
-                </div>
-
-                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                  {currentDayData.tasks.filter(t => 
-                    domainFilter === "All" || domains.find(dom => dom.id === domainFilter)?.match.some(m => t.task.includes(m) || currentDayData.title.includes(m))
-                  ).map((task, i) => {
-                    const taskId = `d${currentDayData.day}-t${i}`;
-                    const isDone = !!completedTasks[taskId];
-                    const isExpanded = expandedDayTask === taskId;
-                    return (
-                      <div key={i} style={{
-                        background: isDone ? "#0d2e1a" : CARD,
-                        border: `1px solid ${isDone ? GREEN + "60" : BORDER}`,
-                        borderLeft: `4px solid ${isDone ? GREEN : (taskTypeColors[task.type] || ACCENT)}`,
-                        borderRadius: 8,
-                        padding: "14px 16px",
-                        display: "flex",
-                        gap: 14,
-                        alignItems: "flex-start",
-                        cursor: "pointer",
-                        transition: "all 0.2s"
-                      }} onClick={() => setExpandedDayTask(isExpanded ? null : taskId)}>
-                        <div 
-                          onClick={(e) => { e.stopPropagation(); toggleTask(taskId); }}
-                          style={{
-                            width: 18, height: 18, borderRadius: 4, flexShrink: 0, marginTop: 4,
-                            border: `2px solid ${isDone ? GREEN : BORDER}`,
-                            background: isDone ? GREEN : "transparent",
-                            cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
-                            color: "#000", fontSize: 11, fontWeight: 900
-                          }}>
-                          {isDone ? "✓" : ""}
-                        </div>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontSize: 10, color: MUTED, marginBottom: 2 }}>{task.time}</div>
-                          <div style={{ 
-                            fontSize: 14, fontWeight: 700, lineHeight: 1.4,
-                            color: isDone ? GREEN : TEXT,
-                            textDecoration: isDone ? "line-through" : "none",
-                            opacity: isDone ? 0.7 : 1
-                          }}>{task.task}</div>
-                          
-                          {isExpanded && (
-                            <div style={{ marginTop: 12, padding: "10px", background: "#1a1a2e", borderRadius: 6, border: `1px solid ${BORDER}` }}>
-                               {task.desc && (
-                                <div style={{ fontSize: 11, color: TEXT, lineHeight: 1.5, marginBottom: 10 }}>
-                                  <div style={{ fontWeight: 800, color: ACCENT, marginBottom: 4 }}>💡 TASK DETAILS:</div>
-                                  {task.desc.split(' | ').map((part, idx) => (
-                                    <div key={idx} style={{ display: 'flex', gap: 6, marginTop: 4 }}>
-                                      <span style={{ color: MUTED }}>•</span>
-                                      <span>{part.replace('Goal: ', '')}</span>
-                                    </div>
-                                  ))}
-                                </div>
-                              )}
-                              {(task.link || task.dataset || task.info) && (
-                                <div style={{ marginTop: 10, display: "flex", gap: 8, flexWrap: "wrap" }}>
-                                  {task.link && (
-                                    <a 
-                                      href={task.link} 
-                                      target="_blank" 
-                                      rel="noopener noreferrer"
-                                      onClick={e => e.stopPropagation()}
-                                      style={{ 
-                                        fontSize: 10, background: ACCENT + "20", color: ACCENT, padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                      }}>
-                                      {task.type === "ibm" || task.type === "math" || task.type === "watch" ? "WATCH ↗" : "PRACTICE ↗"}
-                                    </a>
-                                  )}
-                                  {task.dataset && (
-                                    <a 
-                                      href={task.dataset} 
-                                      target="_blank" 
-                                      rel="noopener noreferrer"
-                                      onClick={e => e.stopPropagation()}
-                                      style={{ 
-                                        fontSize: 10, background: "#FFD43B20", color: "#FFD43B", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                      }}>
-                                      DATASET ↗
-                                    </a>
-                                  )}
-                                  {task.info && (
-                                    <a 
-                                      href={task.info} 
-                                      target="_blank" 
-                                      rel="noopener noreferrer"
-                                      onClick={e => e.stopPropagation()}
-                                      style={{ 
-                                        fontSize: 10, background: "#4dabf720", color: "#4dabf7", padding: "4px 10px", borderRadius: 4, textDecoration: "none", fontWeight: 800
-                                      }}>
-                                      INFO ↗
-                                    </a>
-                                  )}
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                        <div style={{
-                          background: `${taskTypeColors[task.type] || MUTED}20`,
-                          color: taskTypeColors[task.type] || MUTED,
-                          padding: "2px 8px",
-                          borderRadius: 4,
-                          fontSize: 10,
-                          fontWeight: 700,
-                          textTransform: "uppercase",
-                        }}>{task.type}</div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
+                );
+              })}
+            </div>
           </div>
         )}
 
@@ -2016,6 +1813,7 @@ function Roadmap() {
 
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         * { box-sizing: border-box; }
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: ${BG}; }
@@ -2025,10 +1823,303 @@ function Roadmap() {
   );
 }
 
+function ResumeATSAnalyzer() {
+  const [activeRole, setActiveRole] = useState("Data Analyst");
+  const [activeTab, setActiveTab] = useState("resume");
+  const role = roleRequirements[activeRole];
+  const allCurrentSkills = new Set(resumeData.skills.current.map(s => s.toLowerCase()));
+  const allLearningSkills = new Set(resumeData.skills.learning.map(s => s.toLowerCase()));
+
+  const getSkillStatus = (skill, currentSet, learningSet) => {
+    const sl = skill.toLowerCase();
+    if ([...currentSet].some(s => sl.includes(s) || s.includes(sl.split(" ")[0]))) return "have";
+    if ([...learningSet].some(s => sl.includes(s) || s.includes(sl.split(" ")[0]))) return "learning";
+    return "gap";
+  };
+
+  const mustHaveAnalysis = role.must_have.map(skill => ({
+    skill,
+    status: getSkillStatus(skill, allCurrentSkills, allLearningSkills),
+  }));
+  const goodToHaveAnalysis = role.good_to_have.map(skill => ({
+    skill,
+    status: getSkillStatus(skill, allCurrentSkills, allLearningSkills),
+  }));
+
+  const haveCount = mustHaveAnalysis.filter(s => s.status === "have").length;
+  const learningCount = mustHaveAnalysis.filter(s => s.status === "learning").length;
+  const gapCount = mustHaveAnalysis.filter(s => s.status === "gap").length;
+  const atsScore = Math.round(((haveCount + learningCount * 0.5) / role.must_have.length) * 100);
+
+  return (
+    <div style={{ fontFamily: "'IBM Plex Mono', 'Courier New', monospace", background: "#0A0A0F", minHeight: "100vh", color: "#E2E8F0", padding: "0" }}>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        ::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: #0A0A0F; } ::-webkit-scrollbar-thumb { background: #334155; }
+        .tab-btn { background: none; border: none; cursor: pointer; font-family: inherit; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; padding: 10px 20px; transition: all 0.2s; }
+        .tab-btn.active { color: #F8FAFC; border-bottom: 2px solid #F8FAFC; }
+        .tab-btn.inactive { color: #475569; border-bottom: 2px solid transparent; }
+        .role-chip { border: none; cursor: pointer; font-family: inherit; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 14px; border-radius: 2px; transition: all 0.2s; }
+        .tag { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; padding: 3px 8px; background: #1E293B; color: #64748B; border-radius: 2px; }
+        .section-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #475569; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #1E293B; }
+        .skill-badge { font-size: 9px; letter-spacing: 1px; padding: 4px 10px; border-radius: 2px; display: inline-block; }
+        .project-card { background: #0F1724; border: 1px solid #1E293B; border-radius: 4px; padding: 20px; margin-bottom: 12px; transition: border-color 0.2s; }
+        .project-card:hover { border-color: #334155; }
+        .ats-bar-bg { background: #1E293B; border-radius: 2px; height: 6px; width: 100%; }
+        .ats-bar-fill { height: 6px; border-radius: 2px; transition: width 0.8s ease; }
+        .status-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 8px; flex-shrink: 0; }
+      `}</style>
+
+      <div style={{ background: "#050508", borderBottom: "1px solid #1E293B", padding: "32px 40px 0" }}>
+        <div style={{ maxWidth: 900, margin: "0 auto" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 20, marginBottom: 24 }}>
+            <div>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 42, letterSpacing: 4, color: "#F8FAFC", lineHeight: 1 }}>{resumeData.name}</div>
+              <div style={{ fontSize: 11, letterSpacing: 3, color: "#64748B", textTransform: "uppercase", marginTop: 6 }}>{resumeData.title}</div>
+              <div style={{ display: "flex", gap: 16, marginTop: 12, flexWrap: "wrap" }}>
+                {Object.entries(resumeData.contact).map(([k, v]) => (
+                  <span key={k} style={{ fontSize: 10, color: "#475569", letterSpacing: 1 }}>
+                    <span style={{ color: "#334155" }}>{k.toUpperCase()} // </span>{v}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div style={{ textAlign: "right" }}>
+              <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 4 }}>ATS Readiness</div>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 48, color: role.color, lineHeight: 1 }}>{atsScore}%</div>
+              <div style={{ fontSize: 9, color: "#475569", letterSpacing: 1 }}>for {activeRole}</div>
+            </div>
+          </div>
+          <div style={{ display: "flex", gap: 0, borderBottom: "1px solid #1E293B" }}>
+            {["resume", "ats-gap", "roadmap"].map(tab => (
+              <button key={tab} onClick={() => setActiveTab(tab)} className={`tab-btn ${activeTab === tab ? "active" : "inactive"}`}>
+                {tab === "resume" ? "📄 Resume" : tab === "ats-gap" ? "🎯 ATS Gap Analysis" : "🗺 Skill Roadmap"}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div style={{ maxWidth: 900, margin: "0 auto", padding: "32px 40px" }}>
+
+        <div style={{ marginBottom: 28 }}>
+          <div className="section-label">Target Role</div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {Object.entries(roleRequirements).map(([name, data]) => (
+              <button
+                key={name}
+                onClick={() => setActiveRole(name)}
+                className="role-chip"
+                style={{
+                  background: activeRole === name ? data.color + "22" : "#0F1724",
+                  color: activeRole === name ? data.color : "#475569",
+                  border: `1px solid ${activeRole === name ? data.color : "#1E293B"}`,
+                }}
+              >
+                {name}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {activeTab === "resume" && (
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 32 }}>
+            <div>
+              <div style={{ marginBottom: 32 }}>
+                <div className="section-label">Profile</div>
+                <p style={{ fontSize: 12, lineHeight: 1.8, color: "#94A3B8" }}>{resumeData.summary}</p>
+              </div>
+
+              <div>
+                <div className="section-label">Projects</div>
+                {resumeData.projects.map(p => (
+                  <div key={p.id} className="project-card">
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8, flexWrap: "wrap", gap: 8 }}>
+                      <div>
+                        <div style={{ fontSize: 13, fontWeight: 600, color: "#F1F5F9", letterSpacing: 0.5 }}>{p.title}</div>
+                        <div style={{ fontSize: 10, color: "#475569", marginTop: 2, letterSpacing: 1 }}>{p.status}</div>
+                      </div>
+                      <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+                        {p.tags.slice(0, 3).map(t => <span key={t} className="tag">{t}</span>)}
+                      </div>
+                    </div>
+                    <ul style={{ paddingLeft: 0, listStyle: "none" }}>
+                      {p.bullets.map((b, i) => (
+                        <li key={i} style={{ fontSize: 11, color: "#64748B", lineHeight: 1.7, paddingLeft: 14, position: "relative" }}>
+                          <span style={{ position: "absolute", left: 0, color: "#334155" }}>›</span>{b}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div style={{ marginBottom: 28 }}>
+                <div className="section-label">Education</div>
+                <div style={{ fontSize: 12, color: "#F1F5F9", fontWeight: 600, marginBottom: 4 }}>{resumeData.education.degree}</div>
+                <div style={{ fontSize: 11, color: "#64748B", lineHeight: 1.8 }}>
+                  {resumeData.education.college}<br />
+                  {resumeData.education.year}<br />
+                  <span style={{ color: "#475569" }}>CGPA: </span>{resumeData.education.cgpa}
+                </div>
+              </div>
+
+              <div style={{ marginBottom: 28 }}>
+                <div className="section-label">Current Skills</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  {resumeData.skills.current.map(s => (
+                    <span key={s} className="skill-badge" style={{ background: "#0F2A1F", color: "#34D399", border: "1px solid #064E3B" }}>{s}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ marginBottom: 28 }}>
+                <div className="section-label">Currently Learning</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  {resumeData.skills.learning.map(s => (
+                    <span key={s} className="skill-badge" style={{ background: "#1C1A0A", color: "#FCD34D", border: "1px solid #713F12" }}>{s}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <div className="section-label">Planned to Learn</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  {resumeData.skills.planned.map(s => (
+                    <span key={s} className="skill-badge" style={{ background: "#0F1724", color: "#475569", border: "1px solid #1E293B" }}>{s}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "ats-gap" && (
+          <div>
+            <div style={{ background: "#0F1724", border: `1px solid ${role.color}33`, borderRadius: 4, padding: 24, marginBottom: 28 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16, flexWrap: "wrap", gap: 12 }}>
+                <div>
+                  <div style={{ fontSize: 9, letterSpacing: 3, color: "#475569", textTransform: "uppercase", marginBottom: 4 }}>ATS Score for {activeRole}</div>
+                  <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 52, color: role.color, lineHeight: 1 }}>{atsScore}<span style={{ fontSize: 20, color: "#475569" }}>%</span></div>
+                </div>
+                <div style={{ display: "flex", gap: 20 }}>
+                  {[{ label: "Have", count: haveCount, color: "#34D399" }, { label: "Learning", count: learningCount, color: "#FCD34D" }, { label: "Gap", count: gapCount, color: "#F87171" }].map(item => (
+                    <div key={item.label} style={{ textAlign: "center" }}>
+                      <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 32, color: item.color, lineHeight: 1 }}>{item.count}</div>
+                      <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase" }}>{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="ats-bar-bg">
+                <div className="ats-bar-fill" style={{ width: `${atsScore}%`, background: role.color }} />
+              </div>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+              <div>
+                <div className="section-label">Must-Have Skills</div>
+                {mustHaveAnalysis.map(({ skill, status }) => (
+                  <div key={skill} style={{ display: "flex", alignItems: "center", padding: "10px 0", borderBottom: "1px solid #0F1724" }}>
+                    <span className="status-dot" style={{ background: status === "have" ? "#34D399" : status === "learning" ? "#FCD34D" : "#F87171" }} />
+                    <span style={{ fontSize: 11, color: status === "have" ? "#94A3B8" : status === "learning" ? "#FCD34D" : "#F87171", flex: 1 }}>{skill}</span>
+                    <span style={{ fontSize: 9, letterSpacing: 1, color: status === "have" ? "#34D399" : status === "learning" ? "#F59E0B" : "#EF4444", textTransform: "uppercase" }}>
+                      {status === "have" ? "✓ Have" : status === "learning" ? "⟳ Learning" : "✗ Gap"}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <div className="section-label">Good-to-Have Skills</div>
+                {goodToHaveAnalysis.map(({ skill, status }) => (
+                  <div key={skill} style={{ display: "flex", alignItems: "center", padding: "10px 0", borderBottom: "1px solid #0F1724" }}>
+                    <span className="status-dot" style={{ background: status === "have" ? "#34D399" : status === "learning" ? "#FCD34D" : "#475569" }} />
+                    <span style={{ fontSize: 11, color: status === "have" ? "#94A3B8" : status === "learning" ? "#FCD34D" : "#475569", flex: 1 }}>{skill}</span>
+                    <span style={{ fontSize: 9, letterSpacing: 1, color: status === "have" ? "#34D399" : status === "learning" ? "#F59E0B" : "#334155", textTransform: "uppercase" }}>
+                      {status === "have" ? "✓ Have" : status === "learning" ? "⟳ Learning" : "· Planned"}
+                    </span>
+                  </div>
+                ))}
+
+                <div style={{ marginTop: 24 }}>
+                  <div className="section-label">ATS Keywords to Use</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                    {role.ats_keywords.map(kw => (
+                      <span key={kw} className="skill-badge" style={{ background: role.color + "15", color: role.color, border: `1px solid ${role.color}30` }}>{kw}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "roadmap" && (
+          <div>
+            <div style={{ marginBottom: 28 }}>
+              <div className="section-label">Project Timeline & Skill Build</div>
+              {[
+                { month: "Now → Jul 2025", project: "IPL Analytics Dashboard", skills: ["Python/Pandas", "Matplotlib/Seaborn", "Kaggle", "Data Storytelling"], color: "#3B82F6", status: "active" },
+                { month: "Jul → Aug 2025", project: "BPL Analytics", skills: ["Cross-dataset joins", "Player benchmarking", "Aggregations", "Notebook narrative"], color: "#8B5CF6", status: "next" },
+                { month: "Sep → Oct 2025", project: "E-Commerce Analytics", skills: ["SQL (must!)", "Funnel analysis", "Cohort retention", "Business KPIs", "Power BI/Tableau"], color: "#10B981", status: "planned" },
+                { month: "Nov → Dec 2025", project: "OTT Platform Analytics", skills: ["Content analytics", "Churn modeling", "Feature adoption", "Mixpanel-style metrics"], color: "#F59E0B", status: "planned" },
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", gap: 20, marginBottom: 20 }}>
+                  <div style={{ width: 130, flexShrink: 0, paddingTop: 4 }}>
+                    <div style={{ fontSize: 9, color: item.color, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 600 }}>{item.month}</div>
+                    <div style={{ width: 2, height: 60, background: item.color + "30", margin: "8px 0 0 4px" }} />
+                  </div>
+                  <div style={{ background: "#0F1724", border: `1px solid ${item.color}22`, borderRadius: 4, padding: 16, flex: 1 }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+                      <div>
+                        <div style={{ fontSize: 12, fontWeight: 600, color: "#F1F5F9" }}>{item.project}</div>
+                      </div>
+                      <span style={{ fontSize: 9, letterSpacing: 1, textTransform: "uppercase", color: item.color, background: item.color + "15", padding: "2px 8px", borderRadius: 2 }}>{item.status}</span>
+                    </div>
+                    <div style={{ fontSize: 10, color: "#475569", marginBottom: 8 }}>Skills you'll build:</div>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                      {item.skills.map(s => <span key={s} className="tag">{s}</span>)}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ background: "#0F0A1F", border: "1px solid #3B0764", borderRadius: 4, padding: 20 }}>
+              <div style={{ fontSize: 9, letterSpacing: 3, color: "#7C3AED", textTransform: "uppercase", marginBottom: 12 }}>⚡ Priority Action: Learn SQL Now</div>
+              <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.8 }}>
+                SQL is the single most impactful skill to learn immediately. It appears as a must-have in <strong style={{ color: "#C4B5FD" }}>5 out of 6</strong> analyst roles you're targeting. Use Mode Analytics or SQLZoo — 30 min/day for 30 days will get you interview-ready.
+              </p>
+              <div style={{ marginTop: 12, display: "flex", flexWrap: "wrap", gap: 8 }}>
+                {["SQLZoo (free)", "Mode Analytics SQL Tutorial", "StrataScratch (practice)", "LeetCode Easy SQL (50 Qs)"].map(r => (
+                  <span key={r} className="skill-badge" style={{ background: "#2E1065", color: "#A78BFA", border: "1px solid #4C1D95" }}>{r}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function CombinedApp() {
+  const [activeView, setActiveView] = useState("roadmap");
+  
+  return (
+    <ErrorBoundary>
+      {activeView === "roadmap" ? <Roadmap /> : <ResumeATSAnalyzer />}
+    </ErrorBoundary>
+  );
+}
+
 </script>
   <script type="text/babel">
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(React.createElement(Roadmap));
+    root.render(React.createElement(CombinedApp));
   </script>
 </body>
 </html>
