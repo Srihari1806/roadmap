@@ -1218,7 +1218,7 @@ const projectsData = [
   }
 ];
 
-export default projectsData;
+
 
 
 const skillsRoadmap = [
