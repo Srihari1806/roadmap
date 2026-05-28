@@ -7,7 +7,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@babel/standalone@7/babel.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; padding: 0; background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; }
         #root { min-height: 100vh; }
@@ -60,16 +60,16 @@ class ErrorBoundary extends Component {
 }
 
 
-const ACCENT = "#F4A72A";
-const BG = "#0A0A0F";
-const CARD = "#111118";
-const BORDER = "#1E1E2E";
-const TEXT = "#E8E8F0";
-const MUTED = "#6B6B8A";
-const GREEN = "#2ECC71";
-const BLUE = "#4A9EFF";
-const PURPLE = "#A855F7";
-const RED = "#EF4444";
+const ACCENT = "#C9A96E";
+const BG = "#0C0C12";
+const CARD = "#121219";
+const BORDER = "#1E1E30";
+const TEXT = "#E6E4F0";
+const MUTED = "#64627A";
+const GREEN = "#10B981";
+const BLUE = "#6366F1";
+const PURPLE = "#8B5CF6";
+const RED = "#F43F5E";
 
 const weeks = [
   {
@@ -956,6 +956,7 @@ function Roadmap() {
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
     { id: "daily", label: "📅 Daily Plan" },
+    { id: "mastery", label: "🎯 Skill Mastery" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "checklist", label: "✅ Checklist" },
   ];
@@ -984,7 +985,7 @@ function Roadmap() {
     }}>
       {/* Header */}
       <div style={{
-        background: `linear-gradient(135deg, #0A0A0F 0%, #12121E 50%, #0A0A0F 100%)`,
+        background: `linear-gradient(135deg, #0C0C12 0%, #13131F 50%, #0C0C12 100%)`,
         borderBottom: `1px solid ${BORDER}`,
         padding: "24px 24px 20px",
         position: "sticky",
@@ -994,15 +995,15 @@ function Roadmap() {
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 4 }}>
             <span style={{ fontSize: 20 }}>🚀</span>
-            <span style={{ color: ACCENT, fontSize: 11, letterSpacing: 3, fontWeight: 700, textTransform: "uppercase" }}>
-              60-Day Execution Roadmap
+            <span style={{ color: ACCENT, fontSize: 10, letterSpacing: 3, fontWeight: 700, textTransform: "uppercase" }}>
+              Srihari · KIIT 2027 · Analyst Launch Plan
             </span>
           </div>
-          <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.5, fontFamily: "'DM Mono', monospace" }}>
-            Srihari's <span style={{ color: ACCENT }}>Analyst</span> Launch Plan
+          <h1 style={{ margin: 0, fontSize: 22, fontWeight: 900, letterSpacing: -0.5, fontFamily: "'Playfair Display', Georgia, serif", color: TEXT }}>
+            60-Day Execution + <span style={{ color: ACCENT }}>Jun–Dec Mastery</span>
           </h1>
-          <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
-            May 1 → June 30 · 4 Projects · 2 Platforms · 20+ Applications
+          <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 11, letterSpacing: 0.3 }}>
+            May–Jun 60-Day Sprint · 4 Projects · Jun→Dec 6-Level Skill Plan · Apply from Sep 2025
           </p>
         </div>
       </div>
@@ -1984,14 +1985,252 @@ function Roadmap() {
 
           </div>
         )}
+
+        {/* SKILL MASTERY TAB — Jun–Dec 2025 */}
+        {activeTab === "mastery" && (() => {
+          const ML = [
+            { id:"L0", label:"Level 0", title:"Foundation Sprint", sub:"SQL & Excel — non-negotiable prerequisites. Nothing else until these are solid.", months:"Jun 2025 · 4 wks", theme:"PREREQUISITE", col:"#F43F5E", project:{icon:"🏗️",lbl:"No project — foundation only",desc:"Download IPL dataset and start exploring it."},ap:false, stacks:[
+              {name:"SQL Foundations",cat:"Analytics",daily:"45 min/day",why:"Appears in 5/6 analyst roles — your single biggest gap.",skills:["SELECT, WHERE, GROUP BY, HAVING, ORDER BY","JOINs — INNER, LEFT, RIGHT, FULL","Subqueries and CTEs (WITH clause)","Aggregations — COUNT, SUM, AVG, MIN, MAX","Window Functions — ROW_NUMBER, RANK, LAG/LEAD","String & date functions"],res:["SQLZoo.net — free, interactive, start here","Mode Analytics SQL Tutorial — real business context","StrataScratch — easy problems with company tags","LeetCode Database — 50 easy problems target"],out:"Solve 30 easy SQL problems on StrataScratch. Screenshot each solution. Push to GitHub repo 'sql-practice'."},
+              {name:"Excel & Google Sheets",cat:"Analytics",daily:"20 min/day",why:"Listed in Business, Financial, Data, Content Analyst JDs as a must-have prerequisite.",skills:["VLOOKUP, INDEX-MATCH, XLOOKUP","Pivot Tables and Pivot Charts","IF, SUMIF, COUNTIF, AVERAGEIF","Data validation & conditional formatting","Basic dashboard layout with KPI cards","Named ranges and data tables"],res:["ExcelJet.net — formula reference (bookmark)","Chandoo.org — dashboards & charts","GFG Excel tutorials — quick concept coverage","Kaggle: any public CSV for practice"],out:"Build a mini dashboard from any public CSV. Must include 1 pivot table, 2 charts, 1 KPI card."},
+            ]},
+            { id:"L1", label:"Level 1", title:"Analyst Bootcamp — Core", sub:"Your IPL project lives here. Build skills directly alongside it — every concept goes into the project the same week.", months:"Jul 2025 · 4 wks", theme:"ANALYTICS CORE", col:"#6366F1", project:{icon:"🏏",lbl:"IPL Analytics Dashboard",desc:"Python + Pandas + Kaggle IPL dataset. Publish by end of July."},ap:true, apRoles:["Data Analyst (fresher / intern)","Content Analyst","SEO Analyst"], stacks:[
+              {name:"Python for Data Analysis",cat:"Analytics",daily:"1 hr/day",why:"Your IPL project already uses this — deepen it now, not start from scratch.",skills:["Advanced Pandas — groupby, merge, pivot_table, apply","Data cleaning — nulls, duplicates, type casting","Matplotlib + Seaborn — 7 chart types","Descriptive statistics — mean, median, std, skew","File I/O — CSV, JSON, Kaggle notebooks","lambda functions & list comprehensions"],res:["Kaggle Learn — Pandas (free, structured)","Real Python — Advanced Pandas tutorials","Your own IPL Kaggle notebook (build-as-you-learn)","Corey Schafer Python (YouTube)"],out:"IPL Analytics Dashboard on Kaggle with 5+ charts and written narrative. Public link ready for LinkedIn."},
+              {name:"Data Visualization & Storytelling",cat:"Analytics + Creative",daily:"30 min/day",why:"What separates good analysts from great ones. Storytelling is your edge — you already write well.",skills:["Chart selection logic — when to use what","Dashboard layout — hierarchy & white space","Annotation & context — 'so what' layer","Insight headline writing — lead with the finding","Datawrapper for publication-quality charts","Color theory basics for data"],res:["Storytelling with Data (Cole Nussbaumer) — chapter summaries","Tableau Public — free, browser-based","Datawrapper.de — free, beautiful output","Flourish.studio — animated charts for LinkedIn"],out:"1 clean visual story from IPL data — e.g. 'The 5 Most Undervalued Batsmen of IPL 2024'. Published on LinkedIn."},
+              {name:"KPI Thinking & Business Metrics",cat:"Strategy",daily:"20 min/day",why:"Every analyst interview asks 'what metrics matter here?'. You need a mental model, not just formulas.",skills:["DAU / MAU / WAU — engagement ratios","Retention vs Churn — calculate & interpret","CAC and LTV basics","Revenue metrics — MRR, ARR, ARPU","Funnel — Awareness to Activation to Revenue","North Star Metric concept per product type"],res:["Lenny's Newsletter — free, best product metrics writing","Reforge blog — growth metrics deep dives","Mixpanel blog — product analytics case studies","Ampere Analysis for media/OTT metrics"],out:"Write a 500-word 'metrics teardown' of any daily app (Swiggy, YouTube, CRED). Post on LinkedIn."},
+            ]},
+            { id:"L2", label:"Level 2", title:"Growth & Product Stack", sub:"BPL project + product and growth lens. Widens your application funnel from data into product and growth. Critical for Sep applications.", months:"Aug 2025 · 4 wks", theme:"GROWTH + PRODUCT", col:"#8B5CF6", project:{icon:"🎸",lbl:"BPL Analytics Project",desc:"Band Premier League — primary data + live music economy. Published by end of August."},ap:true, apRoles:["Growth Analyst","Product Analyst (fresher)","Business Analyst","Content Strategist"], stacks:[
+              {name:"Growth Analytics",cat:"Analytics + Strategy",daily:"45 min/day",why:"Growth roles are highest demand in startups. Your Sahitya community data is direct proof of work here.",skills:["Funnel Analysis — AARRR framework","Cohort Retention — build & read cohort tables","Conversion Rate Optimization basics","Campaign performance — CTR, CPC, ROAS","CAC and Payback Period calculation","Growth loops vs funnels — conceptual difference"],res:["Reforge Growth Series — free blog, extremely dense","CXL Institute — free growth courses","GrowthHackers.com — case studies library","Brian Balfour's essays — foundational growth thinking"],out:"Analyse Sahitya Rachanalu's own growth with data you have. Post: 'What worked and what didn't, with data.'"},
+              {name:"Product Thinking",cat:"Strategy",daily:"30 min/day",why:"Product Analyst roles expect you to connect data to decisions, not just report numbers. This is the mindset shift.",skills:["User journey mapping — awareness to habit","Feature adoption framing — how to measure if a feature works","A/B test interpretation — statistical significance basics","'So what?' habit — every data point needs a so-what","Prioritization frameworks — RICE, ICE basics","Product teardown method — 30 min structured review"],res:["Shreyas Doshi (X/Twitter threads) — mindset essays","Lenny's Podcast — product leaders thinking aloud","Product School free resources","Tear down 2 apps per week for 4 weeks"],out:"1 product teardown of Zomato or Swiggy on LinkedIn. Structure: What works → What's broken → What I'd change."},
+              {name:"Power BI / Tableau",cat:"Analytics",daily:"45 min/day",why:"Listed in 4/6 analyst roles. Visual dashboards are proof of work — a screenshot beats a paragraph every time.",skills:["Connect data sources — CSV, Excel, Sheets","Build interactive dashboards with slicers & filters","DAX basics for Power BI — calculated columns, measures","Tableau chart types and marks card","Publishing to Tableau Public / Power BI web","Dashboard design — layout, color, hierarchy"],res:["Microsoft Learn — Power BI learning path (free, official)","Tableau Public tutorial gallery — reverse-engineer good work","Guy in a Cube (YouTube) — Power BI tips","Chandoo.org — dashboard design principles"],out:"BPL Analytics dashboard in Power BI or Tableau Public. Published with a public link. Add to resume and LinkedIn."},
+            ]},
+            { id:"L3", label:"Level 3", title:"Strategy & Creative Stack", sub:"Your creative layer. This is what makes you different from pure data people. You already have instincts here — now formalise the vocabulary.", months:"Sep 2025 · 4 wks", theme:"CREATIVE + STRATEGY", col:"#10B981", project:{icon:"🛒",lbl:"E-Commerce Analytics Project",desc:"Funnel analysis, cohort retention, revenue attribution using public datasets."},ap:true, apRoles:["Content Strategist","Growth Marketer","Content Analyst","SEO Analyst"], stacks:[
+              {name:"Content Strategy",cat:"Creative",daily:"30 min/day",why:"You already do this with Sahitya. Now formalise the vocabulary so you can talk about it in interviews.",skills:["Content calendar planning — themes, cadence, formats","Audience segmentation — personas by platform & intent","Platform-native formats — what works where","Content KPIs — engagement rate, reach, CTR, saves","Content brief writing","Distribution — organic amplification tactics"],res:["Ann Handley 'Everybody Writes' — read summary at minimum","Content Marketing Institute — cmicontent.com","Buffer blog — platform-specific strategy guides","Creator Economy newsletter by Kajabi"],out:"Build a 30-day content calendar for any brand. Include themes, formats, KPIs, platform split. Add to portfolio as PDF."},
+              {name:"SEO & Search Strategy",cat:"Digital",daily:"30 min/day",why:"You have SEO freelance experience. Formalise it. Listed in growth and content analyst JDs as a specific requirement.",skills:["Keyword clustering — group by intent, not volume","Search intent mapping — informational vs transactional","On-page SEO audit — title, H1, meta, internal links","Content brief from keyword research","Google Search Console interpretation","Core Web Vitals basics"],res:["Ahrefs Academy — free SEO course (best free resource)","Backlinko.com blog — Brian Dean's guides","Google Search Central documentation","Semrush blog — technical SEO & content strategy"],out:"Full SEO audit of any website. Document findings as a 2-page case study with screenshots. Add to portfolio."},
+              {name:"Consumer Psychology & Persuasion",cat:"Strategy",daily:"20 min/day",why:"Makes your data stories better and opens copywriting, brand storytelling, and growth marketer doors.",skills:["Cialdini's 6 principles — reciprocity, scarcity, social proof, authority, liking, commitment","Hook writing — first 3 seconds of any content","Loss aversion vs gain framing in copy","Brand voice consistency — tone, persona, vocabulary","CTA logic — why some CTAs convert and others don't","Cognitive bias catalogue for UX & content"],res:["'Influence' by Cialdini — chapter summaries on YouTube","Copyhackers.com blog — conversion copywriting deep dives","Ogilvy on Advertising — free PDF available","GoodUI.org — A/B test patterns library"],out:"Write 5 ad copies for a brand you admire — same product, 5 different psychological levers. Post on LinkedIn with reasoning."},
+              {name:"Market Research Fundamentals",cat:"Strategy",daily:"20 min/day",why:"Business Analyst, Content Strategist, and Brand roles all test this. Competitive analysis is a core BA skill.",skills:["Primary vs secondary research — when to use each","Competitive analysis — SWOT, Porter's Five Forces","TAM / SAM / SOM basics — market sizing","Persona building — demographic + psychographic","Trend identification using Google Trends, Statista","Research synthesis — summarising to actionable insights"],res:["Statista.com — free tier for charts & data","Think with Google — thinkwithgoogle.com","Nielsen blog — consumer insights","Exploding Topics — trend identification tool"],out:"2-page market research document for one IPL franchise or OTT player. Include competitor analysis and 3 strategic recommendations."},
+            ]},
+            { id:"L4", label:"Level 4", title:"AI & Digital Edge", sub:"The differentiator layer. Most freshers skip this entirely. This is where you build a credential that zero competitors have.", months:"Oct 2025 · 4 wks", theme:"AI + DIGITAL EDGE", col:"#F59E0B", project:{icon:"🛒",lbl:"E-Commerce Analytics (continued)",desc:"AI-assisted funnel analysis and automated reporting pipeline."},ap:true, apRoles:["AI Content Roles","Growth Content Analyst","Brand Storyteller","Digital Strategy Analyst"], stacks:[
+              {name:"Prompt Engineering & AI Research",cat:"AI / Modern",daily:"30 min/day",why:"Instant credibility differentiator. Almost zero freshers can do structured prompt engineering.",skills:["Chain-of-thought prompting — step-by-step reasoning","Persona + context framing for consistent output","AI for research synthesis — summarising papers & reports","Building AI workflows for content creation","AI for data analysis — Claude or ChatGPT with CSV","Prompt templating — reusable prompt library"],res:["Anthropic Prompt Engineering Guide — free, official, best","Learnprompting.org — free structured course","Build 1 AI tool or workflow per week using Claude","OpenAI Cookbook on GitHub — practical examples"],out:"Document 10 prompts you use regularly. Post as 'My AI Analyst Toolkit' on LinkedIn with before/after examples."},
+              {name:"Workflow Automation",cat:"AI / Modern",daily:"30 min/day",why:"Zapier, n8n, and Make.com are now in growth analyst and ops analyst JDs. This separates tool-aware candidates.",skills:["Trigger-action logic — event to condition to action","API basics without code — webhooks, REST concepts","Automate reporting — Sheets to email or Slack","Connect tools — Google Sheets + Slack + Airtable","Zapier multi-step Zaps","n8n basics — self-hosted automation"],res:["Zapier University — free, official, comprehensive","n8n.io documentation — free self-hosted alternative","Make.com academy — scenarios and modules","YouTube: 'automate with Make' playlists"],out:"Build 1 working automation: e.g. auto-log LinkedIn posts to a Google Sheet. Document with screenshots."},
+              {name:"Platform & Trend Intelligence",cat:"Digital",daily:"20 min/day",why:"Social Media Strategist and Digital Creator roles require native platform fluency — knowing how algorithms think.",skills:["Platform algorithm thinking — reach mechanics per platform","Virality mechanics — what makes content spread","Trend identification — early signal spotting","Audience psychology by platform — LinkedIn vs Instagram vs X","Creator economy — monetization models","Content distribution — organic amplification"],res:["Social Blade — analytics for any creator","Exploding Topics — trend database","SparkToro — audience research (free tier)","Creator Economy newsletters — Lenny's, The Publish Press"],out:"Write a trend report: '5 Content Trends for Sports/OTT in 2026'. Use real Google Trends & Social Blade data. Post publicly."},
+            ]},
+            { id:"L5", label:"Level 5", title:"Domain Depth — Sports & Finance", sub:"Your long game. Sports is your passion and clearest differentiator. Finance opens more doors than any other domain.", months:"Nov-Dec 2025 · 8 wks", theme:"DOMAIN DEPTH", col:"#EC4899", project:{icon:"📺",lbl:"OTT Platform Analytics",desc:"Content engagement, churn prediction, genre/language preference analysis. Nov-Dec."},ap:true, apRoles:["Sports Analyst","Financial Analyst","Senior Content / Strategy Analyst","Any off-campus analyst role"], stacks:[
+              {name:"Sports Analytics Deep Dive",cat:"Sports",daily:"1 hr/day",why:"PKL franchise to IPL franchise is your long-game career path. Build the credibility now while no one else is doing it.",skills:["Performance indexing — normalised comparison across players","Player comparison models — multi-metric composite scores","Probability thinking — win %, form index, expected value","Sports storytelling with data — narrative structure","Expected value in sport — xG equivalent for cricket","Web scraping sports data — BeautifulSoup basics"],res:["Cricsheet.org — ball-by-ball cricket data (free)","StatsBomb open data — football analytics gold standard","The Athletic — read sports analytics journalism","Kaggle sports datasets — IPL, football, PKL"],out:"OTT Analytics + PKL or cricket data mini-project published. Case study: 'How I'd build a player valuation model for an IPL franchise.'"},
+              {name:"Financial Literacy for Analysts",cat:"Finance",daily:"30 min/day",why:"Financial Analyst roles need this. Also makes you significantly better at business cases.",skills:["P&L reading — Revenue, COGS, Gross Margin, EBITDA","Balance sheet basics — Assets, Liabilities, Equity","Ratio analysis — P/E, ROE, EBITDA margin, D/E","DCF intuition — time value of money concept","Excel financial model template","Reading a 10-K or Annual Report — what to look for"],res:["Investopedia — start here for all definitions","CFI free courses — corporatefinanceinstitute.com","Prof. Aswath Damodaran YouTube lectures (free, NYU)","Varsity by Zerodha — India-context financial literacy"],out:"Build a simple 3-statement model in Excel for any Indian public company. Screenshot the model. Push to GitHub."},
+              {name:"Stakeholder Communication",cat:"Strategy",daily:"20 min/day",why:"Business Analyst and any senior role — you need to present insights, not just find them. This closes the last mile.",skills:["Slide structure — Situation, Complication, Resolution","Executive summary writing — BLUF (Bottom Line Up Front)","Requirement documentation basics — BRD skeleton","Verbal walkthrough of dashboards — 3 minutes","Pyramid Principle — structured thinking on paper","Storytelling framework — What, So What, Now What"],res:["Cole Nussbaumer Knaflic — data viz communication essays","McKinsey presentation principles (search: McKinsey slide design)","Pyramid Principle by Barbara Minto — read a summary","Loom.com — free video recording for walkthroughs"],out:"Record a 3-minute Loom walkthrough of one dashboard. Talk through the key insight, why it matters, and your recommendation. Post on LinkedIn."},
+            ]},
+          ];
+          const APPLY_WINDOWS = [
+            { month:"Sep 2025", roles:["Data Analyst (fresher / intern)","Content Analyst","SEO Analyst","Research Analyst"], col:"#6366F1", lvl:"L1 + L2 done" },
+            { month:"Oct 2025", roles:["Growth Analyst","Product Analyst (fresher)","Business Analyst","Content Strategist"], col:"#8B5CF6", lvl:"L3 done" },
+            { month:"Nov 2025", roles:["Brand Storyteller","Growth Marketer","AI Content roles","Digital Strategy Analyst"], col:"#F59E0B", lvl:"L4 done" },
+            { month:"Dec 2025", roles:["Sports Analyst","Financial Analyst","Senior Content / Strategy","Any off-campus analyst role"], col:"#EC4899", lvl:"L5 done — Full Ready" },
+          ];
+          const [mActiveL, setMActiveL] = React.useState("L1");
+          const [mOpenStack, setMOpenStack] = React.useState(null);
+          const [mSubTab, setMSubTab] = React.useState("roadmap");
+          const curLvl = ML.find(l => l.id === mActiveL);
+          const mGetChecked = (lid, si, ki) => { try { return localStorage.getItem("ms_"+lid+"_"+si+"_"+ki) === "1"; } catch(e) { return false; } };
+          const mSetChecked = (lid, si, ki, v) => { try { localStorage.setItem("ms_"+lid+"_"+si+"_"+ki, v ? "1" : "0"); } catch(e) {} };
+          const [, mForceUpdate] = React.useState(0);
+          const mToggle = (lid, si, ki) => { mSetChecked(lid, si, ki, !mGetChecked(lid, si, ki)); mForceUpdate(n => n+1); };
+          let mTotal=0, mChecked=0;
+          ML.forEach(l => l.stacks.forEach((s,si) => s.skills.forEach((_,ki) => { mTotal++; if(mGetChecked(l.id,si,ki)) mChecked++; })));
+          const mPct = mTotal > 0 ? Math.round((mChecked/mTotal)*100) : 0;
+          return (
+            <div style={{ fontFamily: "'DM Mono', 'Courier New', monospace" }}>
+              <div style={{ marginBottom: 24 }}>
+                <div style={{ fontSize: 9, letterSpacing: 3, color: MUTED, textTransform: "uppercase", marginBottom: 4 }}>Jun to Dec 2025 · 6 Levels · Apply after every level</div>
+                <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 26, fontWeight: 900, color: TEXT, marginBottom: 8, lineHeight: 1.2 }}>From Zero Gaps<br/>to Full Ready</div>
+                <div style={{ display: "flex", alignItems: "center", gap: 16, background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: "12px 16px" }}>
+                  <span style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: MUTED, whiteSpace: "nowrap" }}>Skill Progress</span>
+                  <div style={{ flex: 1, background: "#1a1a2e", borderRadius: 3, height: 5 }}><div style={{ height: 5, borderRadius: 3, background: ACCENT, width: mPct+"%", transition: "width .4s" }}></div></div>
+                  <span style={{ fontSize: 14, color: ACCENT, fontWeight: 700, whiteSpace: "nowrap" }}>{mPct}%</span>
+                  <span style={{ fontSize: 9, color: MUTED, whiteSpace: "nowrap" }}>{mChecked}/{mTotal} skills</span>
+                </div>
+              </div>
+              <div style={{ display: "flex", borderBottom: "1px solid "+BORDER, marginBottom: 24 }}>
+                {[["roadmap","📚 Skill Levels"],["apply","🎯 Apply Windows"],["plan","📅 Daily Budget"]].map(function(t) { return (
+                  <button key={t[0]} onClick={() => setMSubTab(t[0])} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: 10, letterSpacing: 2, textTransform: "uppercase", padding: "10px 18px", color: mSubTab === t[0] ? ACCENT : MUTED, borderBottom: mSubTab === t[0] ? "2px solid "+ACCENT : "2px solid transparent", transition: "all .2s" }}>{t[1]}</button>
+                ); })}
+              </div>
+
+              {mSubTab === "roadmap" && (
+                <div style={{ display: "grid", gridTemplateColumns: "200px 1fr", gap: 24 }}>
+                  <div>
+                    <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 10 }}>Levels</div>
+                    {ML.map(lvl => (
+                      <button key={lvl.id} className="lvl-btn-m" onClick={() => { setMActiveL(lvl.id); setMOpenStack(null); }} style={{ borderLeftColor: mActiveL === lvl.id ? lvl.col : "transparent", background: mActiveL === lvl.id ? lvl.col+"14" : "transparent" }}>
+                        <div style={{ fontSize: 8, letterSpacing: 2, color: lvl.col, textTransform: "uppercase", marginBottom: 2 }}>{lvl.id} · {lvl.theme}</div>
+                        <div style={{ fontSize: 11, color: TEXT, fontWeight: 500, marginBottom: 2 }}>{lvl.title}</div>
+                        <div style={{ fontSize: 9, color: MUTED }}>{lvl.months}</div>
+                        {lvl.ap && <span style={{ display:"inline-block", fontSize:8, letterSpacing:1, padding:"2px 8px", borderRadius:20, background: lvl.col+"20", color: lvl.col, marginTop:4 }}>✓ APPLY</span>}
+                      </button>
+                    ))}
+                  </div>
+                  {curLvl && (
+                    <div className="mastery-fade" key={mActiveL}>
+                      <div style={{ marginBottom: 20 }}>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 8 }}>
+                          <span style={{ fontSize: 8, letterSpacing: 1.5, padding: "3px 10px", borderRadius: 20, background: curLvl.col+"20", color: curLvl.col }}>{curLvl.id}</span>
+                          <span style={{ fontSize: 8, letterSpacing: 1.5, padding: "3px 10px", borderRadius: 20, background: ACCENT+"18", color: ACCENT }}>{curLvl.theme}</span>
+                          <span style={{ fontSize: 9, color: MUTED }}>{curLvl.months}</span>
+                        </div>
+                        <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: TEXT, marginBottom: 6 }}>{curLvl.title}</div>
+                        <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.8 }}>{curLvl.sub}</div>
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", gap: 12, background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: "12px 16px", marginBottom: 20, fontSize: 10, color: MUTED }}>
+                        <span style={{ fontSize: 16 }}>{curLvl.project.icon}</span>
+                        <div><span style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: MUTED }}>Project Alignment · </span><strong style={{ color: TEXT }}>{curLvl.project.lbl}</strong><span style={{ display: "block", marginTop: 2 }}>{curLvl.project.desc}</span></div>
+                      </div>
+                      {curLvl.stacks.map((stack, si) => {
+                        const cardKey = mActiveL+"-"+si;
+                        const isOpen = mOpenStack === cardKey;
+                        return (
+                          <div key={si} className="stack-card-m" style={{ borderColor: isOpen ? curLvl.col : BORDER }}>
+                            <div className="stack-hdr" onClick={() => setMOpenStack(isOpen ? null : cardKey)}>
+                              <div style={{ flex: 1 }}>
+                                <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 8, marginBottom: 6 }}>
+                                  <span style={{ fontSize: 13, fontWeight: 500, color: TEXT }}>{stack.name}</span>
+                                  <span style={{ fontSize: 8, letterSpacing: 1.5, padding: "2px 8px", borderRadius: 20, background: curLvl.col+"18", color: curLvl.col }}>{stack.cat}</span>
+                                  <span style={{ fontSize: 9, color: MUTED }}>· {stack.daily}</span>
+                                </div>
+                                <div style={{ fontSize: 10, color: MUTED, lineHeight: 1.7 }}><span style={{ color: "#4A4860" }}>Why: </span>{stack.why}</div>
+                              </div>
+                              <span style={{ fontSize: 11, color: MUTED, flexShrink: 0, marginTop: 2, transform: isOpen ? "rotate(180deg)" : "none", transition: "transform .2s" }}>▼</span>
+                            </div>
+                            {isOpen && (
+                              <div className="stack-body-m open">
+                                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginTop: 16, marginBottom: 16 }}>
+                                  <div>
+                                    <div style={{ fontSize: 8, letterSpacing: 2.5, textTransform: "uppercase", color: MUTED, marginBottom: 10 }}>Skills to Learn</div>
+                                    {stack.skills.map((skill, ki) => {
+                                      const checked = mGetChecked(curLvl.id, si, ki);
+                                      return (
+                                        <div key={ki} style={{ display: "flex", alignItems: "center", gap: 10, padding: "7px 0", borderBottom: "1px solid "+BORDER, fontSize: 10, color: TEXT, lineHeight: 1.5 }}>
+                                          <span className="skill-chk" style={{ background: checked ? curLvl.col : "transparent", borderColor: checked ? curLvl.col : BORDER, color: "#000" }} onClick={(e) => { e.stopPropagation(); mToggle(curLvl.id, si, ki); }}>{checked ? "✓" : ""}</span>
+                                          {skill}
+                                        </div>
+                                      );
+                                    })}
+                                  </div>
+                                  <div>
+                                    <div style={{ fontSize: 8, letterSpacing: 2.5, textTransform: "uppercase", color: MUTED, marginBottom: 10 }}>Resources</div>
+                                    {stack.res.map((r, ri) => (
+                                      <div key={ri} style={{ padding: "6px 0", borderBottom: "1px solid "+BORDER, fontSize: 10, color: MUTED, lineHeight: 1.6, display: "flex", gap: 8 }}>
+                                        <span style={{ color: ACCENT, flexShrink: 0 }}>▪</span><span>{r}</span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                                <div style={{ background: curLvl.col+"12", border: "1px solid "+curLvl.col+"30", borderRadius: 5, padding: "14px 16px" }}>
+                                  <div style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: curLvl.col, marginBottom: 6 }}>📦 Deliverable / Proof of Work</div>
+                                  <div style={{ fontSize: 10, color: TEXT, lineHeight: 1.7 }}>{stack.out}</div>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                      {curLvl.ap && (
+                        <div style={{ background: curLvl.col+"12", borderLeft: "3px solid "+curLvl.col, borderRight: "1px solid "+curLvl.col+"25", borderTop: "1px solid "+curLvl.col+"25", borderBottom: "1px solid "+curLvl.col+"25", borderRadius: 6, padding: "16px 18px", marginTop: 16 }}>
+                          <div style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: curLvl.col, marginBottom: 6 }}>✓ Apply Checkpoint — Roles Unlocked After This Level</div>
+                          <div style={{ fontSize: 10, color: MUTED, marginBottom: 10 }}>Complete this level's deliverables, then start applying to these role types.</div>
+                          <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                            {curLvl.apRoles.map(r => (<span key={r} style={{ fontSize: 9, padding: "3px 10px", borderRadius: 20, background: "rgba(255,255,255,0.07)", color: TEXT }}>{r}</span>))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {mSubTab === "apply" && (
+                <div>
+                  <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 22, fontWeight: 700, color: TEXT, marginBottom: 6 }}>When to Apply for What</div>
+                  <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.8, marginBottom: 28 }}>Apply in waves — not all at once. Each level unlocks new role categories. Don't wait until Dec to start.</div>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
+                    {APPLY_WINDOWS.map((w, i) => (
+                      <div key={i} style={{ background: CARD, borderRadius: 6, borderTop: "3px solid "+w.col, border: "1px solid "+BORDER, padding: 20 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
+                          <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 700, color: TEXT }}>{w.month}</div>
+                          <span style={{ fontSize: 8, letterSpacing: 1.5, padding: "3px 10px", borderRadius: 20, background: w.col+"20", color: w.col }}>After {w.lvl}</span>
+                        </div>
+                        <div style={{ fontSize: 8, letterSpacing: 2.5, textTransform: "uppercase", color: MUTED, marginBottom: 10 }}>Roles to Target</div>
+                        {w.roles.map((r, j) => (<div key={j} style={{ display: "flex", alignItems: "center", gap: 10, padding: "8px 0", borderBottom: "1px solid "+BORDER, fontSize: 11, color: TEXT }}><span style={{ color: w.col, fontSize: 10 }}>→</span>{r}</div>))}
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 24 }}>
+                    <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 700, color: ACCENT, marginBottom: 20 }}>The September Offer Strategy</div>
+                    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
+                      {[{step:"01",title:"Volume",body:"Apply to 30-50 startups in Aug-Sep. Not big companies yet. Target 0-2 yr experience roles only. Use LinkedIn Easy Apply + startup job boards."},{step:"02",title:"Proof Pack",body:"IPL Kaggle notebook + Power BI dashboard + 1 LinkedIn post = your Sep portfolio. That combination is enough. Don't wait for the perfect project."},{step:"03",title:"Your Angle",body:"Position as 'The analyst who can communicate.' Most data freshers can't write. You can. Sahitya + SEO + storytelling is your differentiator. Lead with it."}].map(item => (
+                        <div key={item.step}>
+                          <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 36, color: ACCENT, opacity: 0.3, lineHeight: 1, marginBottom: 8 }}>{item.step}</div>
+                          <div style={{ fontSize: 12, fontWeight: 500, color: TEXT, marginBottom: 6 }}>{item.title}</div>
+                          <div style={{ fontSize: 10, color: MUTED, lineHeight: 1.8 }}>{item.body}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {mSubTab === "plan" && (
+                <div>
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: TEXT, marginBottom: 6 }}>Daily Time Budget</div>
+                  <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.8, marginBottom: 24 }}>You don't need 8 hours a day. You need 2.5 hours — consistently.</div>
+                  <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 24, marginBottom: 20 }}>
+                    <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 20 }}>Daily Schedule — 2.5 Hours</div>
+                    {[{time:"Block 1 · 45 min",task:"SQL / Python / Core Skill Learning",notes:"Structured learning only. A course module, tutorial, or problem-solving. No passive YouTube rabbit holes.",col:"#6366F1"},{time:"Block 2 · 45 min",task:"Active Project Work",notes:"IPL to BPL to E-Commerce to OTT. Build the deliverable. Write code. Build the dashboard. This is where proof of work gets made.",col:"#8B5CF6"},{time:"Block 3 · 30 min",task:"Reading / Strategy / Writing",notes:"Blogs, teardowns, case studies. Lenny's Newsletter, Reforge, Mixpanel blog. Read then summarise in 3 lines.",col:"#10B981"},{time:"Block 4 · 30 min",task:"LinkedIn + Portfolio Output",notes:"1 post per week minimum. Screenshot your work. Write 3 lines of analysis. Post it. Your LinkedIn is your live, compounding portfolio.",col:"#F59E0B"}].map((b, i) => (
+                      <div key={i} style={{ display: "flex", gap: 16, padding: "14px 0", borderBottom: "1px solid "+BORDER, alignItems: "flex-start" }}>
+                        <span style={{ fontSize: 8, letterSpacing: 1, textTransform: "uppercase", padding: "4px 10px", borderRadius: 20, background: b.col+"18", color: b.col, whiteSpace: "nowrap", marginTop: 1, flexShrink: 0 }}>{b.time}</span>
+                        <div><div style={{ fontSize: 12, fontWeight: 500, color: TEXT, marginBottom: 3 }}>{b.task}</div><div style={{ fontSize: 10, color: MUTED, lineHeight: 1.7 }}>{b.notes}</div></div>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 20 }}>
+                    <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 20 }}>
+                      <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 16 }}>Weekly Output Targets</div>
+                      {["1 SQL problem solved (easy / medium)","1 notebook or dashboard update pushed to GitHub","1 LinkedIn post — analysis, teardown, or insight","1 blog or article read + 3-line summary written","1 job application sent (from Aug onwards)"].map((t, i) => (
+                        <div key={i} style={{ display: "flex", gap: 10, padding: "6px 0", fontSize: 10, color: TEXT, borderBottom: "1px solid "+BORDER, lineHeight: 1.6 }}><span style={{ color: ACCENT, flexShrink: 0 }}>□</span><span>{t}</span></div>
+                      ))}
+                    </div>
+                    <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 20 }}>
+                      <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 16 }}>What NOT to Do</div>
+                      {["Don't learn everything before applying","Don't do 10 courses without 1 finished project","Don't skip LinkedIn — it's your live portfolio","Don't apply to MNCs in the first wave","Don't wait for 'the perfect project' to post"].map((t, i) => (
+                        <div key={i} style={{ display: "flex", gap: 10, padding: "6px 0", fontSize: 10, color: TEXT, borderBottom: "1px solid "+BORDER, lineHeight: 1.6 }}><span style={{ color: RED, flexShrink: 0 }}>✗</span><span>{t}</span></div>
+                      ))}
+                    </div>
+                  </div>
+                  <div style={{ background: CARD, borderLeft: "3px solid "+ACCENT, border: "1px solid "+BORDER, borderRadius: 6, padding: "22px 24px" }}>
+                    <div style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: ACCENT, marginBottom: 10 }}>Your Unfair Advantage</div>
+                    <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.9 }}>You write well (SEO + Sahitya). You think in systems (community building). You love sports (genuine domain knowledge). Most data freshers are <strong style={{ color: TEXT }}>pure data people with zero communication skills</strong>. You are building both. That combination — <strong style={{ color: TEXT }}>analytics + storytelling</strong> — is rare and highly hireable. The goal isn't to become a data scientist. It's to become <strong style={{ color: TEXT }}>the analyst who tells the best story with data</strong>.</div>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
       </div>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
         * { box-sizing: border-box; }
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: ${BG}; }
         ::-webkit-scrollbar-thumb { background: ${BORDER}; border-radius: 2px; }
+        @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+        .mastery-fade { animation: fadeUp 0.28s ease forwards; }
+        .lvl-btn-m { display:block; width:100%; background:none; border:none; cursor:pointer; font-family:inherit; text-align:left; padding:12px 14px; margin-bottom:3px; border-left:2px solid transparent; border-radius:0 4px 4px 0; transition:background .18s, border-color .18s; }
+        .lvl-btn-m:hover { background: rgba(255,255,255,0.04); }
+        .stack-card-m { background:${CARD}; border:1px solid ${BORDER}; border-radius:6px; margin-bottom:10px; overflow:hidden; transition:border-color .2s; }
+        .stack-hdr { padding:18px 20px; cursor:pointer; display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+        .stack-hdr:hover { background: rgba(255,255,255,0.02); }
+        .stack-body-m { display:none; padding:0 20px 20px; border-top:1px solid ${BORDER}; }
+        .stack-body-m.open { display:block; animation: fadeUp 0.2s ease; }
+        .skill-chk { width:15px; height:15px; flex-shrink:0; border-radius:3px; border:1px solid ${BORDER}; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; transition:background .15s,border-color .15s; font-size:9px; }
       `}</style>
     </div>
   );
