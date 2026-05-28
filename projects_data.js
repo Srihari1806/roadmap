@@ -127,6 +127,28 @@ const projectsData = [
       { section: "Business + Revenue", role: "Business Analyst" },
       { section: "Strategy + Economics", role: "Strategy Analyst" },
       { section: "AI Intelligence", role: "AI Analyst" },
+    ],
+    resolvedBugs: [
+      {
+        title: "Franchise Abbreviation Mismatch (teamShort Bug)",
+        cause: "Inside the telemetry aggregation path, getPlayerTeam() returned abbreviated franchise names (e.g. 'RCB'). The teamShort() helper only mapped full names, which caused it to fall back to space-splitting, returning 'R' instead of 'RCB'. This resulted in zero match slices and scaled all player statistics to '0 runs · SR 0'.",
+        fix: "Updated the teamShort() function inside lib/aggregates.ts to immediately validate and return already abbreviated franchise keys."
+      },
+      {
+        title: "Michael Hussey Nationality Classification Bug",
+        cause: "Michael Hussey (Australian) was misclassified as an Indian player because his name was missing from the isIndianPlayer helper's overseasNames exclusion array in stats.tsx.",
+        fix: "Added 'hussey' to the overseasNames array in stats.tsx to correctly filter by nationality."
+      },
+      {
+        title: "MS Dhoni Scorecard Discrepancy (33 vs 28 runs)",
+        cause: "During the 2013 CSK vs RCB Chidambaram Match, Dhoni's runs mis-aggregated to 28 runs instead of 33. This was caused by React Query cache key mismatches which failed to load accurate ball-by-ball queries from Match 598012.",
+        fix: "Synchronized frontend query cache keys with backend route parameters to ensure accurate on-demand calculations."
+      },
+      {
+        title: "Smart Slicing UI Consolidation",
+        cause: "Independent tabs for 'Scoring Areas' and 'Phases' were redundant and cluttered the CricViz-style telemetry layout.",
+        fix: "Removed standalone tabs and converted them into top-level drop-down filter slices. Added a dedicated 'Balls faced' sorting column and 'Innings' (Chasing vs Defending) context filter."
+      }
     ]
   },
   {

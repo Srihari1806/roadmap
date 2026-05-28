@@ -729,6 +729,498 @@ const projectsData = [
 ];
 
 
+// ─── PROJECT DATA ────────────────────────────────────────────────────────────
+// This file defines the deep-dive layers for the three core projects.
+// Each layer is mapped to one of the 7 Analyst Roles and one of the 7 Core Analytics Types.
+
+const projectsData = [
+  {
+    id: "ipl",
+    emoji: "🏏",
+    title: "IPL Analytics Engine",
+    subtitle: "Sports · Product · Business · Growth · Strategy",
+    accentColor: "#F4A72A",
+    deliverable: "Interactive website hosted on Vercel — all dashboards, reports and blogs redirect from portfolio",
+    metaInsight: '"IPL is not a cricket tournament. It is an interconnected attention economy."',
+    layers: [
+      {
+        num: "1", icon: "📊", title: "Sports Intelligence Layer",
+        role: "Sports Analyst",
+        analyticsType: "Descriptive & Exploratory",
+        color: "#4A9EFF",
+        what: "On-field decision intelligence & clutch performance",
+        analyze: ["Player impact vs salary (ROI per crore)", "Pressure performance — death overs, chase vs defend", "Venue bias — spin vs pace dominance", "Toss vs win probability correlation"],
+        metrics: ["Clutch Index (Pressure Runs + Death Impact)", "ROI = Runs+Wickets / Salary", "Strike Rate under pressure", "Win % by toss decision"],
+        outputs: ["Clutch Index Leaderboard", "Heatmaps — player scoring zones", "'The Undervalued XI' report", "Win probability graph — over by over"],
+      },
+      {
+        num: "2", icon: "🎭", title: "Fan Psychology Layer",
+        role: "Behavioral Analyst",
+        analyticsType: "Psychographic & Sentiment",
+        color: "#EC4899",
+        what: "Analyze emotional spikes and hero dependency",
+        analyze: ["Hero dependency — Dhoni/Kohli engagement pull", "Rivalry intensity (MI vs CSK) sentiment spikes", "Nostalgia effect — veteran player retention", "Crowd energy impact on home advantage"],
+        metrics: ["Star Dependency Index", "Emotional Spike Index", "Fan Loyalty Score", "Sentiment Velocity"],
+        outputs: ["Fan Sentiment Heatmap", "Star vs Team engagement ratio", "Rivalry Impact Case Study"],
+      },
+      {
+        num: "3", icon: "📱", title: "Product & Gamification Engine",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Behavioral",
+        color: "#A855F7",
+        what: "Retention engineering and dopamine loops",
+        analyze: ["User participation mechanics — polls, contests", "Prediction psychology — 'Watch & Win' loops", "Retention curves per match phase", "Drop-off points — when viewers leave"],
+        metrics: ["Avg watch time per match", "Prediction accuracy vs retention", "Dopamine Loop Score", "Fantasy team creation rate"],
+        outputs: ["Engagement Funnel (Awareness→Dopamine→Retention)", "Retention graphs per match phase", "Gamification mechanics report"],
+      },
+      {
+        num: "4", icon: "📺", title: "Second-Screen Economy",
+        role: "Platform Analyst",
+        analyticsType: "Causal & Engagement",
+        color: "#F4A72A",
+        what: "Parallel app behavior and meme velocity",
+        analyze: ["Fantasy app engagement during live overs", "Meme velocity — social reaction timing", "Parallel app behavior (Twitter/Reddit discussions)", "Reel virality of match moments"],
+        metrics: ["Hype Index (Search + Mentions + Views)", "Parallel App usage ratio", "Meme Velocity Score", "Social Spike Timing"],
+        outputs: ["Hype Index Timeline", "Second-Screen Engagement Map", "Viral Moment attribution model"],
+      },
+      {
+        num: "5", icon: "🎯", title: "Attention Economy Engine",
+        role: "Attention Analyst",
+        analyticsType: "Diagnostic & Timing",
+        color: "#2ECC71",
+        what: "Monetizing peaks in viewer attention",
+        analyze: ["Ad placement timing vs match intensity", "Strategic timeout engagement levels", "Celebrity spikes — camera focus on stars", "Final-over attention peaks"],
+        metrics: ["Peak Attention Index", "Ad Recall Score Proxy", "Timeout Engagement %", "Celebrity Spike Score"],
+        outputs: ["Attention Intensity Graph", "Ad Timing Optimization Map", "Peak Attention breakdown report"],
+      },
+      {
+        num: "6", icon: "📈", title: "Broadcast & Media Intelligence",
+        role: "Media Analyst",
+        analyticsType: "Retention Engineering",
+        color: "#14B8A6",
+        what: "Storytelling and retention through broadcasting",
+        analyze: ["Commentator hype moments — volume/tone impact", "Camera timing — focusing on emotions vs action", "Media rights splits (Digital vs TV)", "Replay probability of viral moments"],
+        metrics: ["Retention Engineering Score", "Commentary Hype Index", "Camera Focus Efficiency", "Replay Probability"],
+        outputs: ["Broadcast Storytelling Map", "Media Rights revenue waterfall", "'Why Dhoni reactions are replayed' analysis"],
+      },
+      {
+        num: "7", icon: "💰", title: "Business & Revenue Intelligence",
+        role: "Business Analyst",
+        analyticsType: "Financial & ROI",
+        color: "#F97316",
+        what: "Franchise valuation and sponsorship ROI",
+        analyze: ["Media rights value splits", "Sponsorship layers — title, jersey, digital", "Franchise valuation growth 2010→2024", "Revenue per viewer (ARPV)"],
+        metrics: ["Brand Pull Score", "Revenue per match", "Franchise Valuation CAGR", "Sponsorship ROI per category"],
+        outputs: ["Franchise Valuation Timeline", "Revenue breakdown waterfall", "Brand Pull vs Win Rate matrix"],
+      },
+      {
+        num: "8", icon: "📦", title: "Player Brand Economy",
+        role: "Brand Analyst",
+        analyticsType: "Influencer & Growth",
+        color: "#EC4899",
+        what: "Monetizing individual player brands",
+        analyze: ["Instagram growth vs on-field performance", "Endorsement pull of emerging stars", "Social conversion score — follower to fan", "Brand pull of specific franchises"],
+        metrics: ["Brand Pull Index", "Social Conversion Score", "Sponsorship Attractiveness", "Engagement Growth Rate"],
+        outputs: ["Player Brand Power Ranking", "Performance vs Social Growth scatter", "Emerging Star Brand Potential report"],
+      },
+      {
+        num: "9", icon: "🏟️", title: "Strategy & Economic Intelligence",
+        role: "Strategy Analyst",
+        analyticsType: "Macro & Impact",
+        color: "#EF4444",
+        what: "Venue economics and tourism impact",
+        analyze: ["Stadium occupancy vs local economy impact", "Tourism effect — travel/hotel spikes in match cities", "IPL vs Movie Industry revenue cannibalization", "Impact on OTT release calendars"],
+        metrics: ["Tourism Impact Index", "Seasonal GMV Shift", "Movie Box Office Depression %", "Local Business Spike Score"],
+        outputs: ["Economic Ecosystem Map", "Industry comparison charts", "Seasonal economy timeline"],
+      },
+      {
+        num: "10", icon: "🤖", title: "AI Intelligence Layer",
+        role: "AI Analyst",
+        analyticsType: "Predictive & Prescriptive",
+        color: "#6366F1",
+        what: "Match hype and engagement forecasting",
+        analyze: ["Match recommendation loops (Netflix style)", "Match hype prediction for upcoming fixtures", "Highlight virality forecasting", "Retention mechanics optimization"],
+        metrics: ["Match Recommendation Score", "Replay Probability", "Highlight Virality Score", "Engagement Forecast Accuracy"],
+        outputs: ["Match Hype Prediction Engine", "Highlight Virality Heatmap", "AI-driven retention strategy"],
+      },
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Live Website", desc: "Vercel-hosted interactive site — all 10 layers as separate pages with charts + filters" },
+      { icon: "📊", label: "Power BI Dashboard", desc: "Multi-role intelligence dashboard with 10 detailed slicers" },
+      { icon: "📝", label: "Blog Series", desc: "'IPL: The Attention Economy' · 'Why Dhoni is a Retention Engineer' · 'The Clutch Index'" },
+      { icon: "📄", label: "Deep Report (PDF)", desc: "15-page McKinsey-style 'IPL Intelligence Ecosystem' report" },
+      { icon: "📱", label: "LinkedIn Series", desc: "10-part visual breakdown of each intelligence layer" },
+    ],
+    roleMap: [
+      { section: "Sports Intelligence", role: "Sports Analyst" },
+      { section: "Product + Attention", role: "Product Analyst" },
+      { section: "Growth + Virality", role: "Growth Analyst" },
+      { section: "Business + Revenue", role: "Business Analyst" },
+      { section: "Strategy + Economics", role: "Strategy Analyst" },
+      { section: "AI Intelligence", role: "AI Analyst" },
+    ],
+    resolvedBugs: [
+      {
+        title: "Franchise Abbreviation Mismatch (teamShort Bug)",
+        cause: "Inside the telemetry aggregation path, getPlayerTeam() returned abbreviated franchise names (e.g. 'RCB'). The teamShort() helper only mapped full names, which caused it to fall back to space-splitting, returning 'R' instead of 'RCB'. This resulted in zero match slices and scaled all player statistics to '0 runs · SR 0'.",
+        fix: "Updated the teamShort() function inside lib/aggregates.ts to immediately validate and return already abbreviated franchise keys."
+      },
+      {
+        title: "Michael Hussey Nationality Classification Bug",
+        cause: "Michael Hussey (Australian) was misclassified as an Indian player because his name was missing from the isIndianPlayer helper's overseasNames exclusion array in stats.tsx.",
+        fix: "Added 'hussey' to the overseasNames array in stats.tsx to correctly filter by nationality."
+      },
+      {
+        title: "MS Dhoni Scorecard Discrepancy (33 vs 28 runs)",
+        cause: "During the 2013 CSK vs RCB Chidambaram Match, Dhoni's runs mis-aggregated to 28 runs instead of 33. This was caused by React Query cache key mismatches which failed to load accurate ball-by-ball queries from Match 598012.",
+        fix: "Synchronized frontend query cache keys with backend route parameters to ensure accurate on-demand calculations."
+      },
+      {
+        title: "Smart Slicing UI Consolidation",
+        cause: "Independent tabs for 'Scoring Areas' and 'Phases' were redundant and cluttered the CricViz-style telemetry layout.",
+        fix: "Removed standalone tabs and converted them into top-level drop-down filter slices. Added a dedicated 'Balls faced' sorting column and 'Innings' (Chasing vs Defending) context filter."
+      }
+    ]
+  },
+  {
+    id: "ott",
+    emoji: "🎬",
+    title: "OTT vs Theatre Intelligence",
+    subtitle: "Content · Audience · Distribution · Business · COVID Impact",
+    accentColor: "#A855F7",
+    deliverable: "Interactive website with 9 analysis modules — linked from portfolio",
+    metaInsight: '"Theatres capture the peak. OTT captures the memory."',
+    layers: [
+      {
+        num: "1", icon: "🎭", title: "Content Performance + Genre Analysis",
+        role: "Data Analyst",
+        analyticsType: "Descriptive & Exploratory",
+        color: "#4A9EFF",
+        what: "What genres actually win — theatres vs OTT",
+        analyze: ["Genre vs revenue — Action, Romance, Thriller, Comedy", "Pan-India vs niche regional content", "Telugu, Tamil rise vs Hindi dominance"],
+        metrics: ["Revenue per genre", "OTT completion rate proxy (ratings count)", "Regional vs national opening ratio"],
+        outputs: ["Genre vs revenue bar chart", "OTT completion rate by genre", "Insight: 'Mass content wins theatres, niche thrives on OTT'"],
+      },
+      {
+        num: "2", icon: "⭐", title: "Reviews & Sentiment Impact",
+        role: "Product Analyst",
+        analyticsType: "Causal & Diagnostic",
+        color: "#EC4899",
+        what: "Reviews don't just rate films — they decide revenue",
+        analyze: ["IMDb ratings vs box office trajectory", "Critics vs audience score gap", "Social media sentiment vs occupancy"],
+        metrics: ["Day 1 vs Day 3 revenue drop %", "Rating vs revenue correlation coefficient", "Sentiment score (VADER) per film"],
+        outputs: ["Rating vs revenue scatter plot", "Sentiment vs box office trend line", "Insight: 'Hype opens, reviews sustain'"],
+      },
+      {
+        num: "3", icon: "🎟️", title: "Distribution — Multiplex vs Single Screen",
+        role: "Business Analyst",
+        analyticsType: "Exploratory & Market",
+        color: "#F4A72A",
+        what: "Urban watches content, rural celebrates cinema",
+        analyze: ["Urban (PVR/INOX) vs Rural (single screen) occupancy", "Price sensitivity — premium vs budget seats", "Content type preference by screen tier"],
+        metrics: ["ATP (Avg Ticket Price) by tier", "Occupancy % — Multiplex vs Single Screen", "Regional language share of screens"],
+        outputs: ["Urban vs rural revenue split chart", "Occupancy comparison bar chart", "Insight: 'Urban watches content, rural celebrates cinema'"],
+      },
+      {
+        num: "4", icon: "📱", title: "Booking Behavior Funnel",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Funnel",
+        color: "#2ECC71",
+        what: "Intent is high — pricing and timing decide conversion",
+        analyze: ["BookMyShow funnel: Search→Browse→Select→Book→Watch", "Weekend vs weekday booking patterns", "Group booking vs solo behavior"],
+        metrics: ["Funnel drop-off % at each stage", "Booking-to-show time gap", "Advance booking % vs walk-in %"],
+        outputs: ["Booking heatmap — time vs demand", "Funnel drop-off diagram", "Insight: 'Intent is high, but pricing decides conversion'"],
+      },
+      {
+        num: "5", icon: "🔗", title: "Full Content Lifecycle",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Inferential & Trends",
+        color: "#14B8A6",
+        what: "Theatre window to OTT gap has collapsed 60→8 weeks",
+        analyze: ["Pre→Release→Reviews→OTT→Re-watch timeline", "Theatre window shrinkage 2019 vs 2024", "Re-watch patterns on OTT"],
+        metrics: ["Days from release to OTT", "Revenue % earned in Week 1 vs Week 2+", "OTT views spike timing post-theatre"],
+        outputs: ["Revenue lifecycle curve", "Engagement-over-time chart", "Insight: 'Theatres capture peak, OTT captures memory'"],
+      },
+      {
+        num: "6", icon: "📈", title: "Marketing & Promotion Strategies",
+        role: "Growth / Marketing Analyst",
+        analyticsType: "Causal & Attribution",
+        color: "#F97316",
+        what: "Promotion doesn't just inform — it creates cultural moments",
+        analyze: ["Trailer launch vs opening weekend correlation", "College tours, fan events, viral reel challenges", "Meme marketing — pre-release to post-release"],
+        metrics: ["YouTube trailer views vs Day 1 BO", "Engagement spike on promo events", "Hashtag reach vs opening collection"],
+        outputs: ["Promotion vs engagement spike graph", "Campaign type vs success matrix", "Insight: 'Promotion creates cultural moments, not just awareness'"],
+      },
+      {
+        num: "7", icon: "🧠", title: "Demographics Analysis",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Segmentation",
+        color: "#A855F7",
+        what: "Different age groups consume same content for different reasons",
+        analyze: ["15–25: reels, hype, action | 25–40: story, realism | 40+: drama, emotion", "Genre preference by age group", "OTT vs theatre usage by demographic"],
+        metrics: ["Age-segment revenue share", "Platform preference % by age group", "Genre completion rate by segment"],
+        outputs: ["Age vs content preference chart", "Platform vs age usage heatmap", "Insight: 'Same film, different consumption reasons by age'"],
+      },
+      {
+        num: "8", icon: "🦠", title: "COVID Impact & Recovery",
+        role: "Business Analyst",
+        analyticsType: "Causal & Macro",
+        color: "#EF4444",
+        what: "COVID didn't kill theatres — it forced evolution",
+        analyze: ["Pre-COVID: theatre dominant | During: OTT boom | Post: hybrid", "OTT subscriber growth 2019→2024", "Theatre footfall recovery curve"],
+        metrics: ["YoY OTT subscriber growth %", "Theatre recovery footfall index", "Hybrid content release % post-COVID"],
+        outputs: ["Year vs OTT growth line chart", "Theatre recovery curve", "Insight: 'COVID forced the evolution of distribution'"],
+      },
+      {
+        num: "9", icon: "💰", title: "Business Model Comparison",
+        role: "Financial Analyst",
+        analyticsType: "Prescriptive & Financial",
+        color: "#2ECC71",
+        what: "OTT optimizes lifetime value — theatres maximize moment value",
+        analyze: ["OTT: subscription tiers, ad revenue, content spend", "Theatre: ticket revenue, F&B margin 40–50%, real estate costs", "Risk vs reward per model"],
+        metrics: ["Revenue per subscriber (OTT)", "Revenue per screen per show (Theatre)", "Content spend as % of revenue"],
+        outputs: ["Revenue model comparison chart", "Risk vs reward matrix", "Insight: 'OTT optimizes LTV, theatres optimize moments'"],
+      },
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Live Website", desc: "9-module interactive site with all charts — Vercel hosted, linked from portfolio" },
+      { icon: "📊", label: "Tableau Dashboard", desc: "Genre trends, sentiment vs revenue, COVID timeline, demographic breakdown" },
+      { icon: "🎯", label: "Case Study (MANDATORY)", desc: "Pick 1 film: Pre-release hype → Opening → Reviews impact → OTT shift timeline" },
+      { icon: "📄", label: "Reports (PDF)", desc: "'Why theatres survive OTT era' · 'Reviews vs Revenue' · 'COVID reshaped entertainment'" },
+      { icon: "📱", label: "LinkedIn Series", desc: "5-slide carousels per insight — 9 posts total" },
+    ],
+    roleMap: [
+      { section: "Content + Reviews", role: "Data Analyst" },
+      { section: "Booking Funnel", role: "Product Analyst" },
+      { section: "Demographics", role: "Product Analyst" },
+      { section: "Marketing ROI", role: "Growth Analyst" },
+      { section: "Business Models", role: "Financial Analyst" },
+    ]
+  },
+  {
+    id: "ecom",
+    emoji: "🛒",
+    title: "E-Commerce + Ads System",
+    subtitle: "Sales · Psychology · Quick Commerce · Offline Impact · Conglomerates",
+    accentColor: "#2ECC71",
+    deliverable: "Interactive website with 9 analysis modules — redirects from portfolio",
+    metaInsight: '"E-commerce is not selling products. It is controlling attention, behavior, logistics, and ecosystems."',
+    layers: [
+      {
+        num: "1", icon: "🛍️", title: "Seasonal Sales Analysis",
+        role: "Data Analyst",
+        analyticsType: "Descriptive & Exploratory",
+        color: "#F4A72A",
+        what: "Festivals are engineered demand spikes, not organic ones",
+        analyze: ["Diwali / Big Billion Days / Great Indian Sale spikes", "Category performance: mobiles > fashion > appliances", "Normal vs festival day GMV delta"],
+        metrics: ["GMV spike % vs normal week", "Order volume by category", "AOV (Avg Order Value) during sale vs normal"],
+        outputs: ["Festival sales heatmap by category", "GMV spike timeline chart", "Insight: 'Urgency is manufactured, not accidental'"],
+      },
+      {
+        num: "2", icon: "💸", title: "Pricing & Anchoring Strategy",
+        role: "Business Analyst",
+        analyticsType: "Diagnostic & Behavioral",
+        color: "#4A9EFF",
+        what: "Anchoring psychology drives more sales than actual discounts",
+        analyze: ["Fake vs real discount detection in dataset", "Anchor pricing: ₹50,000 → ₹29,999 psychology", "Limited-time urgency mechanics"],
+        metrics: ["Discount % offered vs actual price change", "Conversion rate lift with countdown timers", "Price elasticity by category"],
+        outputs: ["Fake vs real discount scatter", "'Psychology of ₹29,999' analysis", "Insight: 'Price anchoring > actual savings in conversion'"],
+      },
+      {
+        num: "3", icon: "📱", title: "Ads Impact & Conversion",
+        role: "Growth / Marketing Analyst",
+        analyticsType: "Causal & Attribution",
+        color: "#EC4899",
+        what: "Reels ads are the highest converting format in e-commerce",
+        analyze: ["Ad impressions → clicks → purchases funnel", "Influencer vs brand ads conversion", "Reels ads vs Story ads performance"],
+        metrics: ["CTR (Click-Through Rate) by ad format", "CAC (Customer Acquisition Cost)", "ROAS (Return on Ad Spend)"],
+        outputs: ["Ad funnel conversion chart", "Format vs conversion comparison", "Insight: 'Reels ads outperform every format in discovery-to-purchase'"],
+      },
+      {
+        num: "4", icon: "🧠", title: "Consumer Psychology Funnel",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Funnel",
+        color: "#A855F7",
+        what: "FOMO and urgency are engineered — not felt",
+        analyze: ["Cart abandonment patterns (industry: 70%+ abandonment)", "FOMO effect — stock alerts, countdown timers", "Subscription model stickiness (Prime, Flipkart Plus)"],
+        metrics: ["Cart abandonment rate by category", "Conversion lift from urgency triggers", "Subscription retention rate proxy"],
+        outputs: ["Conversion funnel chart", "Cart abandonment analysis", "Insight: 'Urgency drives conversion more than discount'"],
+      },
+      {
+        num: "5", icon: "💰", title: "Unit Economics & LTV",
+        role: "Financial Analyst",
+        analyticsType: "Predictive & Financial",
+        color: "#2ECC71",
+        what: "LTV and retention, not just first sale, determine profitability",
+        analyze: ["AOV, Conversion Rate, Repeat customer %", "Subscription model revenue vs transactional", "LTV by customer segment"],
+        metrics: ["LTV / CAC ratio", "Repeat purchase rate", "Subscription ARPU (Avg Revenue Per User)"],
+        outputs: ["LTV vs CAC comparison chart", "Revenue model breakdown", "Insight: 'Subscriptions convert buyers into ecosystems'"],
+      },
+      {
+        num: "6", icon: "⚡", title: "Quick Commerce Market Shift",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Exploratory & Market",
+        color: "#14B8A6",
+        what: "Time is replacing price as the #1 purchase decision factor",
+        analyze: ["Blinkit vs Instamart vs BigBasket — speed, UI, trust", "10–20 min delivery: convenience over price shift", "Planned buying → instant buying behavior change"],
+        metrics: ["AOV per platform", "Delivery SLA vs industry avg", "Category strength per platform"],
+        outputs: ["Platform comparison matrix", "Time vs price consumer decision chart", "Insight: 'Quick commerce increases frequency, not basket size'"],
+      },
+      {
+        num: "7", icon: "🏪", title: "Impact on Offline Market",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Causal & Macro",
+        color: "#F97316",
+        what: "Offline is not dying — it is being absorbed into online ecosystems",
+        analyze: ["Kirana store footfall loss — data points", "Price competition from e-commerce platforms", "JioMart model — kirana onboarding"],
+        metrics: ["Kirana store count change YoY", "Average footfall decline %", "Platform-onboarded kirana % growth"],
+        outputs: ["Offline vs online market share chart", "Kirana absorption model", "Insight: 'Offline is not dying, it is becoming a delivery node'"],
+      },
+      {
+        num: "8", icon: "🏢", title: "Conglomerate Ecosystem Game",
+        role: "Business Analyst",
+        analyticsType: "Diagnostic & Strategic",
+        color: "#EF4444",
+        what: "This is not apps vs apps — it's ecosystems vs ecosystems",
+        analyze: ["Reliance: Jio+JioMart+retail ecosystem", "Tata: BigBasket+Tata Neu+trust brand", "DMart: low-cost offline efficiency", "Adani: backend supply chain control"],
+        metrics: ["Market share % by segment", "Ecosystem reach (services bundled)", "Revenue per ecosystem user"],
+        outputs: ["Conglomerate strategy comparison matrix", "Ecosystem map visualization", "Insight: 'The battle is won in logistics and data, not UI'"],
+      },
+      {
+        num: "9", icon: "🧬", title: "Prescriptive Strategy",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Prescriptive & Final",
+        color: "#A855F7",
+        what: "Connect all 8 layers into one unified narrative",
+        analyze: ["How attention → behavior → logistics → ecosystem forms a loop", "Which companies own each layer", "What breaks the loop (regulation, trust, competition)"],
+        metrics: ["Customer journey touchpoints controlled per platform", "Lock-in index (how many services bundle together)", "Switching cost proxy"],
+        outputs: ["Ecosystem control map", "Full system narrative report", "Insight: 'E-commerce is attention + behavior + logistics + ecosystem control'"],
+      },
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Live Website", desc: "9-module site with all analysis, charts and insights — Vercel hosted, portfolio linked" },
+      { icon: "📊", label: "Power BI Dashboard", desc: "Festival sales heatmaps, funnel drop-offs, CAC analysis, platform comparison" },
+      { icon: "📝", label: "Insights (5–7 must)", desc: "Urgency drives conversion · Quick commerce = frequency not size · Anchoring > discount" },
+      { icon: "💡", label: "Recommendations", desc: "Optimize for reels ads · Push urgency-based UI · Target subscription for LTV" },
+      { icon: "📄", label: "Deep Report (PDF)", desc: "'The Psychology of Big Billion Days' — 10 pages consulting style" },
+    ],
+    roleMap: [
+      { section: "Sales + Pricing", role: "Data Analyst" },
+      { section: "Ads Funnel", role: "Growth Analyst" },
+      { section: "Consumer Psych", role: "Product Analyst" },
+      { section: "Quick Commerce", role: "Strategy Analyst" },
+      { section: "Conglomerates", role: "Business Analyst" },
+    ]
+  },
+  {
+    id: "bpl",
+    emoji: "🎸",
+    title: "Band Premier League (BPL)",
+    subtitle: "Music · Market · Product · Revenue · Ecosystem",
+    accentColor: "#F4A72A",
+    deliverable: "Primary data collection project — Venue & Band Matchmaking System",
+    metaInsight: '"Live music is not just entertainment. It is a repeatable business model and a cultural economy."',
+    layers: [
+      {
+        num: "1", icon: "🟢", title: "Market & Supply Foundation",
+        role: "Data Analyst",
+        analyticsType: "Descriptive & Exploratory",
+        color: "#2ECC71",
+        what: "Ground reality of the Hyderabad live music scene",
+        analyze: ["Venue density by area", "Show frequency per venue type (Pub/Cafe)", "Live music vs non-music venue ratio"],
+        metrics: ["Venues per sq km", "% shows per week", "Avg gigs per month"],
+        outputs: ["Venue density map", "Shows per week trend graph"]
+      },
+      {
+        num: "2", icon: "🔵", title: "Demand & Audience Behavior",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Behavioral",
+        color: "#4A9EFF",
+        what: "Why people attend live music",
+        analyze: ["Footfall per venue (Weekend vs Weekday)", "Audience segmentation (Student/Professional)", "Motivation: Vibe vs Price vs Artist"],
+        metrics: ["Avg attendance per show", "Peak time traffic", "Customer Lifetime Value (CLV) proxy"],
+        outputs: ["Footfall heatmap", "Time vs Attendance trendline"]
+      },
+      {
+        num: "3", icon: "🟡", title: "Supply Side (Bands & Artists)",
+        role: "Data Analyst",
+        analyticsType: "Exploratory & Supply",
+        color: "#F4A72A",
+        what: "The artist economy and gig sourcing",
+        analyze: ["Active bands per genre", "Band pricing vs gig frequency", "Primary gig sourcing channels"],
+        metrics: ["Gig-to-band ratio", "Avg earnings per genre", "Band churn rate"],
+        outputs: ["Genre availability matrix", "Band income distribution"]
+      },
+      {
+        num: "4", icon: "🟣", title: "Matchmaking & Optimization",
+        role: "Product Analyst",
+        analyticsType: "Predictive & Prescriptive",
+        color: "#A855F7",
+        what: "The 'IPL System' layer — slot optimization",
+        analyze: ["Optimal band-venue pairing", "Scheduling to avoid clashing", "Slot utilization efficiency"],
+        metrics: ["Slot fill rate", "Match score (Band-Venue fit)", "Predicted attendance per slot"],
+        outputs: ["Optimal show calendar", "Scheduling model"]
+      },
+      {
+        num: "5", icon: "🔴", title: "Revenue & Business Model",
+        role: "Business Analyst",
+        analyticsType: "Descriptive & Financial",
+        color: "#EF4444",
+        what: "The money behind the music",
+        analyze: ["Break-even per show", "Revenue streams: Tickets, F&B share, Sponsorship", "Pricing strategy vs venue capacity"],
+        metrics: ["Revenue per match", "Profit margin per venue tier", "ROI on sponsorship"],
+        outputs: ["Revenue waterfall chart", "Profit/Show scenario analysis"]
+      },
+      {
+        num: "6", icon: "🟠", title: "Funnel & Product Analytics",
+        role: "Product Analyst",
+        analyticsType: "Diagnostic & Funnel",
+        color: "#F97316",
+        what: "The booking journey (BookMyShow style)",
+        analyze: ["Awareness → Interest → Booking → Attendance", "Drop-off points in the booking journey", "Conversion lift from promo triggers"],
+        metrics: ["Funnel conversion %", "Booking-to-show lead time", "Repeat booking rate"],
+        outputs: ["Conversion funnel diagram", "Drop-off heatmaps"]
+      },
+      {
+        num: "7", icon: "🟤", title: "Growth & Marketing Strategy",
+        role: "Growth Analyst",
+        analyticsType: "Causal & Attribution",
+        color: "#78350F",
+        what: "Driving virality through reels and influencers",
+        analyze: ["Social media engagement vs attendance", "Meme marketing impact on ticket sales", "Campaign ROI per channel"],
+        metrics: ["Engagement velocity", "Influencer reach-to-booking ratio", "CAC (Customer Acquisition Cost)"],
+        outputs: ["Campaign ROI comparison", "Engagement vs Attendance scatter plot"]
+      },
+      {
+        num: "8", icon: "⚫", title: "Ecosystem Impact",
+        role: "Strategy / Market Analyst",
+        analyticsType: "Prescriptive & Macro",
+        color: "#1F2937",
+        what: "Your edge — the big picture economic impact",
+        analyze: ["Venue revenue uplift during shows", "Artist income growth over time", "Local economy (F&B) impact"],
+        metrics: ["Revenue uplift %", "Artist income CAGR", "Market share growth"],
+        outputs: ["Economic impact report", "System growth curves"]
+      }
+    ],
+    deliverables: [
+      { icon: "📊", label: "Primary Dataset", desc: "Real-world survey & ground-zero data from 50+ venues" },
+      { icon: "🌐", label: "BPL Matchmaking Site", desc: "Live portal for venue/band scheduling & analytics" },
+      { icon: "📄", label: "Economic Report", desc: "'The Live Music Economy of Hyderabad' — 15-page deep-dive" },
+      { icon: "📱", label: "LinkedIn Series", desc: "Primary data insights sharing — 'Why venue X beats venue Y'" }
+    ],
+    roleMap: [
+      { section: "Market & Supply", role: "Data Analyst" },
+      { section: "Demand & Funnel", role: "Product Analyst" },
+      { section: "Revenue Model", role: "Business Analyst" },
+      { section: "Campaign ROI", role: "Growth Analyst" },
+      { section: "Macro Impact", role: "Strategy Analyst" }
+    ]
+  }
+];
+
+export default projectsData;
+
+
 const skillsRoadmap = [
   {
     role: "Data Analyst",
@@ -1820,7 +2312,7 @@ function Roadmap() {
                   <div style={{ color: MUTED, fontSize: 11, fontWeight: 700, letterSpacing: 1, marginBottom: 8 }}>PAGES</div>
                   <ul style={{ paddingLeft: 18, fontSize: 12, lineHeight: 1.8, color: TEXT }}>
                     <li><strong>Hero:</strong> "Data Analyst & Product Thinker — turning data into decisions"</li>
-                    <li><strong>Projects:</strong> 4 live website links (IPL, OTT, E-Commerce, BPL) with STAR summaries</li>
+                    <li><strong>Projects:</strong> 3 live website links (IPL, OTT, E-Commerce) with STAR summaries</li>
                     <li><strong>Skills:</strong> SQL · Python · Power BI · Tableau · Excel — with proof links</li>
                     <li><strong>Creative:</strong> Sahitya Rachanalu as "Founder" project</li>
                     <li><strong>Resume:</strong> 2 versions — Data Analyst + Product Analyst focus</li>
@@ -1830,7 +2322,7 @@ function Roadmap() {
                 <div style={{ background: "#1a1a2e", padding: 16, borderRadius: 8 }}>
                   <div style={{ color: BLUE, fontSize: 11, fontWeight: 700, marginBottom: 12 }}>ARCHITECTURE PLAN</div>
                   {[
-                    { label: "4 Project Sub-Sites", desc: "Each project is a separate Vercel site — ipl.yourdomain.com, bpl.yourdomain.com etc." },
+                    { label: "3 Project Sub-Sites", desc: "Each project is a separate Vercel site — ipl.yourdomain.com etc." },
                     { label: "Portfolio Hub", desc: "Central site with cards linking to each project site + Sahitya" },
                     { label: "Analytics Tracking", desc: "Vercel Analytics to track which project recruiters visit most" },
                     { label: "Dark Theme + Glassmorphism", desc: "Cinematic scroll-reveal, micro-animations, premium feel" },
@@ -1972,10 +2464,3 @@ function Roadmap() {
     </div>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <ErrorBoundary>
-    <Roadmap />
-  </ErrorBoundary>
-);
