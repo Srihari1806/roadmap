@@ -914,6 +914,10 @@ function Roadmap() {
   const [expandedSkill, setExpandedSkill] = useState(null);
   const [domainFilter, setDomainFilter] = useState("All");
   const [expandedDayTask, setExpandedDayTask] = useState(null);
+  const [mActiveL, setMActiveL] = React.useState("L1");
+  const [mOpenStack, setMOpenStack] = React.useState(null);
+  const [mSubTab, setMSubTab] = React.useState("roadmap");
+  const [mTick, setMTick] = React.useState(0);
 
   const [completedTasks, setCompletedTasks] = React.useState(() => {
     try {
@@ -1988,6 +1992,9 @@ function Roadmap() {
 
         {/* SKILL MASTERY TAB — Jun–Dec 2025 */}
         {activeTab === "mastery" && (() => {
+          const mGetChecked = (lid, si, ki) => { try { return localStorage.getItem("ms_"+lid+"_"+si+"_"+ki) === "1"; } catch(e) { return false; } };
+          const mSetChecked = (lid, si, ki, v) => { try { localStorage.setItem("ms_"+lid+"_"+si+"_"+ki, v ? "1" : "0"); } catch(e) {} };
+          const mToggle = (lid, si, ki) => { mSetChecked(lid, si, ki, !mGetChecked(lid, si, ki)); setMTick(n => n+1); };
           const ML = [
             { id:"L0", label:"Level 0", title:"Foundation Sprint", sub:"SQL & Excel — non-negotiable prerequisites. Nothing else until these are solid.", months:"Jun 2025 · 4 wks", theme:"PREREQUISITE", col:"#F43F5E", project:{icon:"🏗️",lbl:"No project — foundation only",desc:"Download IPL dataset and start exploring it."},ap:false, stacks:[
               {name:"SQL Foundations",cat:"Analytics",daily:"45 min/day",why:"Appears in 5/6 analyst roles — your single biggest gap.",skills:["SELECT, WHERE, GROUP BY, HAVING, ORDER BY","JOINs — INNER, LEFT, RIGHT, FULL","Subqueries and CTEs (WITH clause)","Aggregations — COUNT, SUM, AVG, MIN, MAX","Window Functions — ROW_NUMBER, RANK, LAG/LEAD","String & date functions"],res:["SQLZoo.net — free, interactive, start here","Mode Analytics SQL Tutorial — real business context","StrataScratch — easy problems with company tags","LeetCode Database — 50 easy problems target"],out:"Solve 30 easy SQL problems on StrataScratch. Screenshot each solution. Push to GitHub repo 'sql-practice'."},
@@ -2026,14 +2033,7 @@ function Roadmap() {
             { month:"Nov 2025", roles:["Brand Storyteller","Growth Marketer","AI Content roles","Digital Strategy Analyst"], col:"#F59E0B", lvl:"L4 done" },
             { month:"Dec 2025", roles:["Sports Analyst","Financial Analyst","Senior Content / Strategy","Any off-campus analyst role"], col:"#EC4899", lvl:"L5 done — Full Ready" },
           ];
-          const [mActiveL, setMActiveL] = React.useState("L1");
-          const [mOpenStack, setMOpenStack] = React.useState(null);
-          const [mSubTab, setMSubTab] = React.useState("roadmap");
           const curLvl = ML.find(l => l.id === mActiveL);
-          const mGetChecked = (lid, si, ki) => { try { return localStorage.getItem("ms_"+lid+"_"+si+"_"+ki) === "1"; } catch(e) { return false; } };
-          const mSetChecked = (lid, si, ki, v) => { try { localStorage.setItem("ms_"+lid+"_"+si+"_"+ki, v ? "1" : "0"); } catch(e) {} };
-          const [, mForceUpdate] = React.useState(0);
-          const mToggle = (lid, si, ki) => { mSetChecked(lid, si, ki, !mGetChecked(lid, si, ki)); mForceUpdate(n => n+1); };
           let mTotal=0, mChecked=0;
           ML.forEach(l => l.stacks.forEach((s,si) => s.skills.forEach((_,ki) => { mTotal++; if(mGetChecked(l.id,si,ki)) mChecked++; })));
           const mPct = mTotal > 0 ? Math.round((mChecked/mTotal)*100) : 0;
