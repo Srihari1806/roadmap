@@ -253,7 +253,201 @@ const weeks = [
     ]
   }
 ];
+
+const certificationsList = [
+  { id: "hr-sql", name: "Advanced SQL Skill Certificate", provider: "HackerRank", cost: "Free", target: "June 2025", link: "https://www.hackerrank.com/skills-verification/sql_advanced", type: "Data Core" },
+  { id: "forage-ac", name: "Data Analytics & Visualization Virtual Experience", provider: "Accenture (via Forage)", cost: "Free", target: "July 2025", link: "https://www.theforage.com/virtual-internships/theme/5NsK5xcc79R7wHgvt/Accenture-Data-Analytics-Visualization-Virtual-Experience", type: "Virtual Internship" },
+  { id: "pl300", name: "PL-300: Microsoft Power BI Data Analyst Associate", provider: "Microsoft (Official Exam)", cost: "Paid (Exam Fee)", target: "August 2025", link: "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/", type: "Data Core" },
+  { id: "amplitude", name: "Amplitude User Certification", provider: "Amplitude Academy", cost: "Free", target: "September 2025", link: "https://academy.amplitude.com/", type: "Product Analytics" },
+  { id: "ga4", name: "Google Analytics 4 (GA4) Individual Qualification", provider: "Google Skillshop", cost: "Free", target: "September 2025", link: "https://skillshop.exceedlms.com/student/path/2938-google-analytics-individual-qualification", type: "Growth & Web" },
+  { id: "hubspot-content", name: "HubSpot Content Marketing Certification", provider: "HubSpot Academy", cost: "Free", target: "October 2025", link: "https://academy.hubspot.com/courses/content-marketing", type: "Strategy & Content" },
+  { id: "hubspot-inbound", name: "HubSpot Inbound Marketing Certification", provider: "HubSpot Academy", cost: "Free", target: "October 2025", link: "https://academy.hubspot.com/courses/inbound-marketing", type: "Strategy & Content" },
+  { id: "forage-bcg", name: "Strategy Consulting Virtual Experience", provider: "BCG (via Forage)", cost: "Free", target: "November 2025", link: "https://www.theforage.com/virtual-internships/theme/a5jSn276h7R8wHgvt/BCG-Strategy-Consulting-Virtual-Experience", type: "Virtual Internship" },
+  { id: "google-adv", name: "Google Advanced Data Analytics Professional", provider: "Google via Coursera", cost: "Coursera Sub", target: "December 2025", link: "https://www.coursera.org/professional-certificates/google-advanced-data-analytics", type: "Advanced Data" }
+];
+
+const resumeTemplates = {
+  data: {
+    title: "📊 Data / Sports Analyst",
+    atsScore: "95%",
+    summary: "Electronics & Computer Science student with a strong analytical foundation. Proficient in SQL, Python (Pandas, Matplotlib), and Power BI dashboard development. Proven experience applying data analytics to domain-specific datasets (IPL, BPL sports databases) to extract actionable performance insights and trend metrics. Founder of a growing digital community with strong storytelling and communication skills.",
+    keywords: ["SQL Queries", "Python Data Science", "Pandas", "Power BI", "Data Cleaning", "Tableau", "EDA", "Descriptive Statistics", "Data Storytelling"],
+    skills: {
+      languages: ["Python (Pandas, Matplotlib, Seaborn, NumPy)", "SQL (PostgreSQL, SQLite)", "HTML/CSS", "JavaScript/TypeScript"],
+      tools: ["Power BI", "Tableau Public", "Git/GitHub", "Excel (Advanced Formulas, Pivot Tables)", "Jupyter Notebooks", "VS Code"],
+      competencies: ["Exploratory Data Analysis (EDA)", "Data Visualization", "Data Wrangling & Cleaning", "Sports Analytics", "Quantitative Research"]
+    },
+    projects: [
+      {
+        name: "IPL Sports Analytics Intelligence Ecosystem (10-Layer System)",
+        date: "June – July 2025",
+        tech: "Python, Pandas, Matplotlib, Jupyter Notebook, Kaggle",
+        bullets: [
+          "Developed a comprehensive 10-layer analytical pipeline processing ball-by-ball IPL match data (over 200,000 records).",
+          "Calculated advanced player metrics including the 'Clutch Index' (performance in high-pressure situations) and dynamic player comparison radar charts.",
+          "Created recommendation loops using regression and clustering analysis to identify undervalued batsmen based on contextual performance markers.",
+          "Published full exploratory analysis and data visualizations on Kaggle, receiving peer engagement and showcasing data storytelling."
+        ]
+      },
+      {
+        name: "BPL Analytics Dashboard & Ecosystem Integration",
+        date: "July – August 2025",
+        tech: "Power BI, Tableau, Excel, CSV Data Sources",
+        bullets: [
+          "Sourced primary datasets and designed interactive Power BI and Tableau dashboards containing 10+ dynamic slicers and filters.",
+          "Wrote calculated DAX measures for dynamic cohort analytics, retention rates, and player value matrices.",
+          "Published interactive visualization panels publicly on Tableau Public, linked directly from personal portfolio website."
+        ]
+      }
+    ],
+    experience: [
+      "Founded and scaled a Telugu literary community from scratch, managing digital channels and utilizing content metrics to optimize audience reach.",
+      "Analyzed engagement data and traffic trends to design growth strategies, resulting in consistent user retention and positive audience feedback.",
+      "Created data-driven content calendars based on Google Trends and historical post performance to optimize weekly reach."
+    ],
+    certifications: [
+      "Microsoft Certified: Power BI Data Analyst Associate (PL-300) — Expected August 2025",
+      "Google Advanced Data Analytics Professional Certification — Expected December 2025",
+      "Accenture Data Analytics & Visualization Virtual Experience (Forage) — Completed July 2025",
+      "HackerRank Advanced SQL Skill Certificate — Completed June 2025"
+    ]
+  },
+  product: {
+    title: "🎯 Product / Business Analyst",
+    atsScore: "92%",
+    summary: "B.Tech candidate in Electronics & Computer Science combining strong quantitative engineering skills with a user-centric product mindset. Skilled in SQL, data visualization, A/B testing frameworks, and product metric design (LTV, CAC, Retention cohorts). Experience building analytical projects that dissect user conversion, feature engagement, and platform retention curves.",
+    keywords: ["SQL CTEs", "A/B Testing", "Cohort Retention", "AARRR Funnel", "Product Metrics", "User Journey", "Excel Modeling", "Power BI", "Amplitude"],
+    skills: {
+      languages: ["Python (Pandas, NumPy, Scikit-learn)", "SQL", "JavaScript/TypeScript", "React"],
+      tools: ["Amplitude Academy", "Power BI", "Excel (Solver, What-If Analysis)", "Mixpanel", "Jupyter Notebooks", "Git/GitHub"],
+      competencies: ["A/B Test Analysis", "Cohort Analysis", "Retention Cohorts", "User Segmentation", "Product Teardowns", "Systems Thinking"]
+    },
+    projects: [
+      {
+        name: "E-Commerce User Conversion & Ads Analytics Pipeline",
+        date: "September – October 2025",
+        tech: "Python, Pandas, Power BI, SQL",
+        bullets: [
+          "Mapped customer conversion funnels using the AARRR framework, identifying a 12% bottleneck drop-off in checkout flow.",
+          "Analyzed digital ad campaign performance across CPC, CTR, CAC, and ROAS, modeling payback periods in Excel.",
+          "Built a dynamic marketing attribution dashboard in Power BI, enabling marketers to slice attribution by traffic channel."
+        ]
+      },
+      {
+        name: "OTT Platform Engagement & Retention Deep-Dive",
+        date: "November – December 2025",
+        tech: "Python, Pandas, Seaborn, Mixpanel/Amplitude",
+        bullets: [
+          "Calculated dynamic retention cohorts and lifetime value (LTV) curves for subscription models based on historical user login and streaming hours.",
+          "Designed a statistical analysis framework to measure recovery trends and digital platform adoption post-COVID.",
+          "Conducted detailed user demographic segmentation, finding statistically significant variances in content completing rates by age."
+        ]
+      }
+    ],
+    experience: [
+      "Applied structured systems thinking and user journey mapping to design and scale a regional Telugu literary platform.",
+      "Designed regional onboarding flow, optimizing community signup conversions through simple UI improvements.",
+      "Created metrics dashboards tracking monthly active contributors (MAC) and article completion metrics."
+    ],
+    certifications: [
+      "Amplitude User Certification — Expected September 2025",
+      "BCG Strategy Consulting Virtual Experience (Forage) — Expected November 2025",
+      "Accenture Data Analytics & Visualization Virtual Experience (Forage) — Completed July 2025",
+      "HackerRank Advanced SQL Skill Certificate — Completed June 2025"
+    ]
+  },
+  growth: {
+    title: "📈 Growth Analyst / Marketer",
+    atsScore: "91%",
+    summary: "Electronics & Computer Science student with a deep interest in digital acquisition, platform algorithms, and growth analytics. Proficient in web metrics tracking (GA4), marketing analytics, A/B testing, and automation workflows. Combines a data-driven approach to traffic metrics with active experience scaling communities and writing search-optimized copy.",
+    keywords: ["Google Analytics 4", "Growth Loops", "A/B Testing", "Zapier Automation", "SEO Analytics", "HubSpot", "CPC / ROAS / CAC", "Cohort Analysis"],
+    skills: {
+      languages: ["Python (Pandas, Matplotlib)", "SQL", "HTML/CSS", "JavaScript"],
+      tools: ["Google Analytics 4 (GA4)", "Google Search Console", "HubSpot Academy", "Zapier / n8n", "Excel", "Power BI"],
+      competencies: ["Growth Hacking", "SEO Strategy", "Marketing Automation", "A/B Test Analysis", "Content Marketing", "Funnel Optimization"]
+    },
+    projects: [
+      {
+        name: "E-Commerce Growth & Attribution Engine",
+        date: "September – October 2025",
+        tech: "Google Analytics 4, Python, Power BI",
+        bullets: [
+          "Engineered marketing attribution models (first-touch, last-touch, linear) to evaluate campaign ROI across multiple paid channels.",
+          "Created n8n automation workflows that pull real-time campaign metrics into a centralized team slack dashboard.",
+          "Designed and optimized landing pages using on-page SEO techniques, increasing organic search visibility."
+        ]
+      },
+      {
+        name: "IPL Attention Economy Content Analysis",
+        date: "June – July 2025",
+        tech: "Python, Pandas, Pytrends (Google Trends API)",
+        bullets: [
+          "Built a search-trend correlation script using Google Trends API, identifying post-match viral content opportunities.",
+          "Constructed virality models based on social media engagement, mapping highlight share rates against match performance metrics.",
+          "Authored a viral 3-part blog series titled 'IPL: The Attention Economy' analyzing digital retention loops."
+        ]
+      }
+    ],
+    experience: [
+      "Founded a regional literary platform, driving user acquisition solely through organic content strategy, search indexing, and social growth loops.",
+      "Achieved consistent organic growth by building structured SEO keyword clusters and publishing weekly optimized content guides.",
+      "Configured Google Analytics tracking to monitor bounce rates, scroll depth, and reader engagement across the platform."
+    ],
+    certifications: [
+      "Google Analytics 4 (GA4) Individual Qualification — Expected September 2025",
+      "HubSpot Inbound Marketing & Content Marketing Certifications — Expected October 2025",
+      "Accenture Data Analytics & Visualization Virtual Experience (Forage) — Completed July 2025",
+      "HackerRank Advanced SQL Skill Certificate — Completed June 2025"
+    ]
+  },
+  content: {
+    title: "✍️ Content Strategist",
+    atsScore: "94%",
+    summary: "Electronics & Computer Science student with a strong command of SEO, copywriting, narrative design, and platform analytics. Founder of a growing Telugu literary community with practical experience building content calendars, analyzing readability metrics, and designing content funnels. Expert at translating data insights into compelling brand narratives.",
+    keywords: ["SEO Writing", "Content Strategy", "Narrative Design", "Copywriting", "Audience Insights", "Google Search Console", "Medium Blog Analytics"],
+    skills: {
+      languages: ["Python (NLP text analysis basics)", "HTML/CSS", "Markdown"],
+      tools: ["Google Search Console", "HubSpot Content Academy", "WordPress/MDX", "Canva / Figma", "Excel", "Git/GitHub"],
+      competencies: ["Content Strategy", "SEO Copywriting", "Audience Understanding", "Community Building", "Visual Storytelling", "Brand Positioning"]
+    },
+    projects: [
+      {
+        name: "Founder & Creative Lead — Sahitya Rachanalu (Telugu Literary Hub)",
+        date: "June 2024 – Present",
+        tech: "Next.js, Markdown (MDX), Vercel, Google Analytics",
+        bullets: [
+          "Coded and deployed an interactive publishing platform for regional writers, implementing MDX for lightweight styling.",
+          "Orchestrated content strategies that grew monthly reader engagement and optimized social media traffic redirects.",
+          "Designed clear onboarding guidelines for fresh contributors, standardizing copy formatting and publishing benchmarks."
+        ]
+      },
+      {
+        name: "Sports Intelligence Analysis & Storytelling Series",
+        date: "June – July 2025",
+        tech: "Python, Pandas, Medium / Substack Publishing",
+        bullets: [
+          "Developed data-backed storytelling series examining the attention economy behind major franchise sports leagues.",
+          "Translated complex player clustering datasets into engaging, non-technical player profile case studies.",
+          "Created graphical assets and charts optimized for readability on professional platforms like LinkedIn and Medium."
+        ]
+      }
+    ],
+    experience: [
+      "Defined complete brand voice, design tokens, and editorial guidelines for a scaling Telugu writer community.",
+      "Spearheaded multi-channel distribution networks, establishing newsletter triggers and organic social hooks.",
+      "Analyzed reader drop-off points using page-scroll data, restructuring visual layouts to increase avg read time."
+    ],
+    certifications: [
+      "HubSpot Content Marketing Certification — Expected October 2025",
+      "HubSpot Inbound Marketing Certification — Expected October 2025",
+      "Accenture Data Analytics & Visualization Virtual Experience (Forage) — Completed July 2025",
+      "HackerRank Advanced SQL Skill Certificate — Completed June 2025"
+    ]
+  }
+};
+
 const finalChecklist = [
+
   { item: "IPL Analytics Project (10 layers)", category: "Projects", done: false },
   { item: "OTT vs Theatre Project (9 layers)", category: "Projects", done: false },
   { item: "E-Commerce + Ads Project (9 layers)", category: "Projects", done: false },
@@ -915,6 +1109,7 @@ function Roadmap() {
   const [domainFilter, setDomainFilter] = useState("All");
   const [expandedDayTask, setExpandedDayTask] = useState(null);
   const [mActiveL, setMActiveL] = React.useState("L1");
+  const [resumeRole, setResumeRole] = React.useState("data");
   const [mOpenStack, setMOpenStack] = React.useState(null);
   const [mSubTab, setMSubTab] = React.useState("roadmap");
   const [mTick, setMTick] = React.useState(0);
@@ -959,8 +1154,8 @@ function Roadmap() {
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
-    { id: "daily", label: "📅 Daily Plan" },
     { id: "mastery", label: "🎯 Skill Mastery" },
+    { id: "resume", label: "📄 Mock Resume" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "checklist", label: "✅ Checklist" },
   ];
@@ -1211,8 +1406,7 @@ function Roadmap() {
           </div>
         )}
 
-        {/* DAILY TAB */}
-        {activeTab === "daily" && (
+
           <div>
             {/* Segregation Strategy */}
             <div style={{
@@ -2050,7 +2244,7 @@ function Roadmap() {
                 </div>
               </div>
               <div style={{ display: "flex", borderBottom: "1px solid "+BORDER, marginBottom: 24 }}>
-                {[["roadmap","📚 Skill Levels"],["apply","🎯 Apply Windows"],["plan","📅 Daily Budget"]].map(function(t) { return (
+                {[["roadmap","📚 Skill Levels"],["apply","🎯 Apply Windows"],["plan","📅 Daily Budget"],["certs","🎓 Certifications"]].map(function(t) { return (
                   <button key={t[0]} onClick={() => setMSubTab(t[0])} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: 10, letterSpacing: 2, textTransform: "uppercase", padding: "10px 18px", color: mSubTab === t[0] ? ACCENT : MUTED, borderBottom: mSubTab === t[0] ? "2px solid "+ACCENT : "2px solid transparent", transition: "all .2s" }}>{t[1]}</button>
                 ); })}
               </div>
@@ -2179,40 +2373,259 @@ function Roadmap() {
 
               {mSubTab === "plan" && (
                 <div>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: TEXT, marginBottom: 6 }}>Daily Time Budget</div>
-                  <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.8, marginBottom: 24 }}>You don't need 8 hours a day. You need 2.5 hours — consistently.</div>
-                  <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 24, marginBottom: 20 }}>
-                    <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 20 }}>Daily Schedule — 2.5 Hours</div>
-                    {[{time:"Block 1 · 45 min",task:"SQL / Python / Core Skill Learning",notes:"Structured learning only. A course module, tutorial, or problem-solving. No passive YouTube rabbit holes.",col:"#6366F1"},{time:"Block 2 · 45 min",task:"Active Project Work",notes:"IPL to BPL to E-Commerce to OTT. Build the deliverable. Write code. Build the dashboard. This is where proof of work gets made.",col:"#8B5CF6"},{time:"Block 3 · 30 min",task:"Reading / Strategy / Writing",notes:"Blogs, teardowns, case studies. Lenny's Newsletter, Reforge, Mixpanel blog. Read then summarise in 3 lines.",col:"#10B981"},{time:"Block 4 · 30 min",task:"LinkedIn + Portfolio Output",notes:"1 post per week minimum. Screenshot your work. Write 3 lines of analysis. Post it. Your LinkedIn is your live, compounding portfolio.",col:"#F59E0B"}].map((b, i) => (
-                      <div key={i} style={{ display: "flex", gap: 16, padding: "14px 0", borderBottom: "1px solid "+BORDER, alignItems: "flex-start" }}>
-                        <span style={{ fontSize: 8, letterSpacing: 1, textTransform: "uppercase", padding: "4px 10px", borderRadius: 20, background: b.col+"18", color: b.col, whiteSpace: "nowrap", marginTop: 1, flexShrink: 0 }}>{b.time}</span>
-                        <div><div style={{ fontSize: 12, fontWeight: 500, color: TEXT, marginBottom: 3 }}>{b.task}</div><div style={{ fontSize: 10, color: MUTED, lineHeight: 1.7 }}>{b.notes}</div></div>
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: TEXT, marginBottom: 6 }}>Month-by-Month Milestones</div>
+                  <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.8, marginBottom: 24 }}>By the end of each month, you must have these specific skills done and deliverables shipped. Not started — <strong style={{color:TEXT}}>shipped</strong>.</div>
+                  {[
+                    { month:"Jun 2025", theme:"L0 · Foundation", col:"#F43F5E", status:"current",
+                      skills:["SQL: SELECT, WHERE, GROUP BY, JOINs (all 4 types), Subqueries, CTEs","SQL: Window Functions — ROW_NUMBER, RANK, LAG, LEAD","SQL: 30 problems solved on StrataScratch (screenshot each)","Excel: VLOOKUP/XLOOKUP, SUMIF/COUNTIF, Pivot Tables","Excel: 1 mini dashboard built from any public CSV"],
+                      deliverables:["GitHub repo 'sql-practice' with 30 screenshots","Excel dashboard file (pivot + 2 charts + KPI card)","IPL dataset downloaded, explored, know the columns"],
+                      dont:["Don't start Python yet","Don't touch Power BI yet","Don't jump to IPL project code yet — SQL first"] },
+                    { month:"Jul 2025", theme:"L1 · Analyst Core", col:"#6366F1", status:"upcoming",
+                      skills:["Python: Pandas groupby, merge, pivot_table, fillna, apply","Python: Matplotlib + Seaborn — 7 chart types with confidence","Descriptive stats: mean, median, std, skew, correlation matrix","Data storytelling: chart selection logic, annotation, 'so what'","KPIs: DAU/MAU, retention, funnel, LTV/CAC — define + calculate"],
+                      deliverables:["IPL Analytics Dashboard on Kaggle — 5+ charts, public link","1 LinkedIn post: 'The 5 Most Undervalued Batsmen of IPL 2024'","1 metrics teardown of any daily app posted on LinkedIn","IPL already partially done — complete remaining layers this month"],
+                      dont:["Don't wait for perfect code before publishing","Don't skip the LinkedIn post — it's the deliverable that matters"] },
+                    { month:"Aug 2025", theme:"L2 · Growth + Product", col:"#8B5CF6", status:"upcoming",
+                      skills:["Growth: AARRR funnel, cohort retention table, CRO basics","Growth: CTR, CPC, ROAS, CAC, Payback Period — calculate + explain","Product: User journey mapping, A/B test interpretation, RICE/ICE","Power BI: interactive dashboard with slicers, DAX measures","Tableau: 3 chart types published on Tableau Public"],
+                      deliverables:["BPL Analytics dashboard in Power BI or Tableau — public link","Sahitya growth analysis post on LinkedIn (use real your data)","1 product teardown of Zomato or Swiggy posted on LinkedIn","Resume updated with IPL + BPL projects + Power BI skill"],
+                      dont:["Don't skip BPL — primary data is your differentiator","Don't ignore Tableau Public link — recruiters check it"] },
+                    { month:"Sep 2025", theme:"L3 · Strategy + Creative · START APPLYING", col:"#10B981", status:"apply",
+                      skills:["Content strategy: content calendar, content brief, platform KPIs","SEO: keyword clustering, search intent, on-page audit, GSC basics","Consumer psychology: Cialdini's 6 principles, CTA logic, hook writing","Market research: SWOT, TAM/SAM/SOM, persona building, Statista"],
+                      deliverables:["30-day content calendar PDF (any brand) — add to portfolio","Full SEO audit of any website — 2-page case study with screenshots","5 ad copies for 1 brand (5 psychological levers) — LinkedIn post","E-Commerce Analytics project started (data sourced, EDA done)","30–50 startup job applications sent (Data/Content/SEO/BA roles)"],
+                      dont:["Don't wait for Dec to apply","Don't apply to MNCs yet — target startups only","Don't send a generic resume — use role-specific versions from Mock Resume tab"] },
+                    { month:"Oct 2025", theme:"L4 · AI + Digital Edge", col:"#F59E0B", status:"upcoming",
+                      skills:["Prompt engineering: CoT, persona framing, prompt templates","AI workflows: Claude/ChatGPT for research synthesis and content","Automation: 1 working Zapier or n8n workflow built and documented","Platform intelligence: algorithm logic per platform, trend identification"],
+                      deliverables:["E-Commerce Analytics project completed — Kaggle + dashboard live","'My AI Analyst Toolkit' — 10 prompts post on LinkedIn","1 automation documented with screenshots","Trend report: '5 Content Trends for Sports/OTT in 2026' published","Resume updated with AI/automation skills — next wave of applications"],
+                      dont:["Don't spend more than 2 days on any single AI tool","Don't skip the automation — it's what no one else has"] },
+                    { month:"Nov 2025", theme:"L5a · Sports Domain", col:"#EC4899", status:"upcoming",
+                      skills:["Sports: performance indexing, composite player score, win probability","Sports: web scraping with BeautifulSoup (Cricsheet data)","Sports: visualising player comparison data (radar/scatter plots)","Finance: P&L, balance sheet, ratio analysis (P/E, ROE, D/E)"],
+                      deliverables:["OTT Analytics project — 60% complete by Nov end","PKL or cricket data mini-project published on Kaggle","Sports Analyst resume version ready","Financial literacy: 3-statement Excel model for 1 Indian company"],
+                      dont:["Don't neglect OTT project — it closes L5","Don't skip reading BCCI / IPL franchise annual reports"] },
+                    { month:"Dec 2025", theme:"L5b · Full Ready · FINAL APPLICATION WAVE", col:"#C9A96E", status:"final",
+                      skills:["Finance: DCF intuition, reading a 10-K/annual report","Stakeholder comm: BLUF writing, slide structure (Situation/Complication/Resolution)","Loom walkthrough: 3-min dashboard explanation recorded + posted","All L0–L5 skill gaps closed"],
+                      deliverables:["OTT Analytics project — fully live, linked from portfolio","All 4 projects live on Kaggle/Vercel: IPL, BPL, E-Commerce, OTT","8 role-specific resume versions ready (see Mock Resume tab)","LinkedIn: 20+ posts published across 6 months","Final application wave: MNCs + analyst programs + off-campus roles"],
+                      dont:["Don't wait for a 10/10 portfolio","Don't ignore referrals — LinkedIn is warm outreach"] },
+                  ].map((m, mi) => (
+                    <div key={mi} style={{ background: CARD, border: "1px solid "+(m.status==="apply" ? m.col : m.status==="final" ? ACCENT : BORDER), borderRadius: 8, marginBottom: 14, overflow: "hidden" }}>
+                      <div style={{ padding: "16px 20px", borderLeft: "4px solid "+m.col, display:"flex", justifyContent:"space-between", alignItems:"center" }}>
+                        <div>
+                          <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 16, fontWeight: 700, color: TEXT }}>{m.month}</div>
+                          <div style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: m.col, marginTop: 2 }}>{m.theme}</div>
+                        </div>
+                        {(m.status==="apply" || m.status==="final") && <span style={{ fontSize: 9, letterSpacing: 1.5, padding: "4px 12px", borderRadius: 20, background: m.col+"20", color: m.col }}>{m.status==="apply" ? "▶ START APPLYING" : "▶ FINAL WAVE"}</span>}
                       </div>
-                    ))}
-                  </div>
-                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 20 }}>
-                    <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 20 }}>
-                      <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 16 }}>Weekly Output Targets</div>
-                      {["1 SQL problem solved (easy / medium)","1 notebook or dashboard update pushed to GitHub","1 LinkedIn post — analysis, teardown, or insight","1 blog or article read + 3-line summary written","1 job application sent (from Aug onwards)"].map((t, i) => (
-                        <div key={i} style={{ display: "flex", gap: 10, padding: "6px 0", fontSize: 10, color: TEXT, borderBottom: "1px solid "+BORDER, lineHeight: 1.6 }}><span style={{ color: ACCENT, flexShrink: 0 }}>□</span><span>{t}</span></div>
-                      ))}
+                      <div style={{ padding: "0 20px 20px", display:"grid", gridTemplateColumns:"1fr 1fr", gap: 20 }}>
+                        <div>
+                          <div style={{ fontSize: 8, letterSpacing: 2.5, textTransform: "uppercase", color: MUTED, margin: "16px 0 10px" }}>Skills to Complete by Month End</div>
+                          {m.skills.map((s, i) => <div key={i} style={{ display:"flex", gap:8, padding:"6px 0", borderBottom:"1px solid "+BORDER, fontSize:10, color:TEXT, lineHeight:1.6 }}><span style={{color:m.col, flexShrink:0}}>▸</span>{s}</div>)}
+                          <div style={{ fontSize: 8, letterSpacing: 2.5, textTransform: "uppercase", color: MUTED, margin: "14px 0 10px" }}>What NOT to Do</div>
+                          {m.dont.map((s, i) => <div key={i} style={{ display:"flex", gap:8, padding:"5px 0", borderBottom:"1px solid "+BORDER, fontSize:10, color:MUTED, lineHeight:1.6 }}><span style={{color:RED, flexShrink:0}}>✗</span>{s}</div>)}
+                        </div>
+                        <div>
+                          <div style={{ fontSize: 8, letterSpacing: 2.5, textTransform: "uppercase", color: MUTED, margin: "16px 0 10px" }}>Must Ship by Month End</div>
+                          {m.deliverables.map((s, i) => <div key={i} style={{ display:"flex", gap:8, padding:"6px 0", borderBottom:"1px solid "+BORDER, fontSize:10, color:TEXT, lineHeight:1.6 }}><span style={{color:GREEN, flexShrink:0}}>✓</span>{s}</div>)}
+                        </div>
+                      </div>
                     </div>
-                    <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 20 }}>
-                      <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 16 }}>What NOT to Do</div>
-                      {["Don't learn everything before applying","Don't do 10 courses without 1 finished project","Don't skip LinkedIn — it's your live portfolio","Don't apply to MNCs in the first wave","Don't wait for 'the perfect project' to post"].map((t, i) => (
-                        <div key={i} style={{ display: "flex", gap: 10, padding: "6px 0", fontSize: 10, color: TEXT, borderBottom: "1px solid "+BORDER, lineHeight: 1.6 }}><span style={{ color: RED, flexShrink: 0 }}>✗</span><span>{t}</span></div>
-                      ))}
+                  ))}
+                </div>
+              )}
+
+              {mSubTab === "certs" && (
+                <div className="mastery-fade">
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 700, color: TEXT, marginBottom: 6 }}>🎓 Certifications & Credentials Tracker</div>
+                  <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.8, marginBottom: 24 }}>Official certifications and virtual internships to build authority and pass ATS filters. Check them off as you complete them.</div>
+                  
+                  {/* Progress Stats */}
+                  <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 20, marginBottom: 20, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: TEXT }}>Credentials Grind Progress</div>
+                      <div style={{ fontSize: 10, color: MUTED, marginTop: 4 }}>Complete these 9 key industry markers by December.</div>
+                    </div>
+                    <div style={{ textAlign: "right" }}>
+                      <div style={{ fontSize: 24, fontWeight: 800, color: ACCENT }}>
+                        {certificationsList.filter(c => localStorage.getItem("cert_"+c.id) === "1").length} / {certificationsList.length}
+                      </div>
+                      <div style={{ fontSize: 9, color: MUTED, letterSpacing: 1, textTransform: "uppercase" }}>Completed</div>
                     </div>
                   </div>
-                  <div style={{ background: CARD, borderLeft: "3px solid "+ACCENT, border: "1px solid "+BORDER, borderRadius: 6, padding: "22px 24px" }}>
-                    <div style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: ACCENT, marginBottom: 10 }}>Your Unfair Advantage</div>
-                    <div style={{ fontSize: 11, color: MUTED, lineHeight: 1.9 }}>You write well (SEO + Sahitya). You think in systems (community building). You love sports (genuine domain knowledge). Most data freshers are <strong style={{ color: TEXT }}>pure data people with zero communication skills</strong>. You are building both. That combination — <strong style={{ color: TEXT }}>analytics + storytelling</strong> — is rare and highly hireable. The goal isn't to become a data scientist. It's to become <strong style={{ color: TEXT }}>the analyst who tells the best story with data</strong>.</div>
+
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 12 }}>
+                    {certificationsList.map(cert => {
+                      const isDone = localStorage.getItem("cert_"+cert.id) === "1";
+                      return (
+                        <div key={cert.id} style={{ background: CARD, border: "1px solid "+(isDone ? ACCENT : BORDER), borderRadius: 6, padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", transition: "border-color .2s" }}>
+                          <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
+                            <div onClick={() => {
+                              localStorage.setItem("cert_"+cert.id, isDone ? "0" : "1");
+                              setMTick(n => n + 1); // trigger state update to refresh UI
+                            }} style={{
+                              width: 18, height: 18, border: "1px solid "+(isDone ? ACCENT : MUTED),
+                              borderRadius: 4, cursor: "pointer", display: "flex", alignItems: "center",
+                              justifyContent: "center", background: isDone ? ACCENT+"15" : "none", color: ACCENT
+                            }}>
+                              {isDone && "✓"}
+                            </div>
+                            <div>
+                              <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+                                <span style={{ fontSize: 13, fontWeight: 700, color: TEXT }}>{cert.name}</span>
+                                <span style={{ fontSize: 9, background: "#1a1a2e", border: "1px solid "+BORDER, padding: "2px 6px", borderRadius: 4, color: MUTED }}>{cert.type}</span>
+                              </div>
+                              <div style={{ fontSize: 11, color: MUTED, marginTop: 4 }}>
+                                Provider: <strong style={{color: TEXT}}>{cert.provider}</strong> · Cost: <span style={{color: cert.cost === "Free" ? GREEN : "#E5A93C"}}>{cert.cost}</span> · Target: <strong style={{color: TEXT}}>{cert.target}</strong>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <a href={cert.link} target="_blank" rel="noopener noreferrer" style={{
+                              background: "none", border: "1px solid "+ACCENT, color: ACCENT,
+                              padding: "6px 12px", borderRadius: 4, fontSize: 10, cursor: "pointer",
+                              textDecoration: "none", display: "inline-block", fontWeight: 700, letterSpacing: 0.5
+                            }}>LAUNCH ↗</a>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               )}
+
             </div>
           );
         })()}
+
+        {/* MOCK RESUME TAB */}
+        {activeTab === "resume" && (
+          <div className="mastery-fade" style={{ display: "grid", gridTemplateColumns: "240px 1fr", gap: 24 }}>
+            {/* Sidebar Controls */}
+            <div>
+              <div style={{ fontSize: 8, letterSpacing: 3, textTransform: "uppercase", color: MUTED, marginBottom: 12 }}>Target Resume Roles</div>
+              {Object.entries(resumeTemplates).map(([key, template]) => (
+                <button
+                  key={key}
+                  onClick={() => setResumeRole(key)}
+                  style={{
+                    display: "block",
+                    width: "100%",
+                    background: resumeRole === key ? "#1A1A2E" : "none",
+                    border: "none",
+                    borderLeft: "2px solid " + (resumeRole === key ? ACCENT : "transparent"),
+                    padding: "12px 14px",
+                    textAlign: "left",
+                    color: resumeRole === key ? ACCENT : TEXT,
+                    cursor: "pointer",
+                    fontFamily: "inherit",
+                    fontSize: 12,
+                    fontWeight: 700,
+                    borderRadius: "0 4px 4px 0",
+                    transition: "all 0.15s",
+                    marginBottom: 4
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <span>{template.title}</span>
+                    <span style={{ fontSize: 10, background: resumeRole === key ? ACCENT+"20" : BORDER, color: resumeRole === key ? ACCENT : MUTED, padding: "1px 5px", borderRadius: 3 }}>{template.atsScore}</span>
+                  </div>
+                </button>
+              ))}
+
+              <div style={{ background: CARD, border: "1px solid "+BORDER, borderRadius: 6, padding: 16, marginTop: 24 }}>
+                <div style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: ACCENT, marginBottom: 8 }}>ATS Strategy Guide</div>
+                <div style={{ fontSize: 10, color: MUTED, lineHeight: 1.6 }}>
+                  These resumes are structured for <strong style={{color: TEXT}}>ATS parser optimization</strong>. 
+                  They highlight your Electronics & Computer Science engineering analytical skills combined with real projects.
+                </div>
+                <div style={{ fontSize: 8, letterSpacing: 2, textTransform: "uppercase", color: MUTED, marginTop: 16, marginBottom: 8 }}>Target Keywords to Include</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+                  {resumeTemplates[resumeRole].keywords.map(kw => (
+                    <span key={kw} style={{ fontSize: 9, background: "#1a1a2e", border: "1px solid "+BORDER, color: TEXT, padding: "2px 6px", borderRadius: 4 }}>{kw}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Resume Sheet */}
+            <div style={{ background: "#ffffff", color: "#000000", borderRadius: 8, padding: "40px", fontFamily: "Arial, sans-serif", boxShadow: "0 10px 30px rgba(0,0,0,0.5)", overflow: "hidden" }}>
+              <div style={{ textAlign: "center", borderBottom: "2px solid #000000", paddingBottom: 12, marginBottom: 20 }}>
+                <h1 style={{ margin: 0, fontSize: 24, fontWeight: "bold", letterSpacing: 0.5 }}>SRIHARI BEESETTI</h1>
+                <p style={{ margin: "6px 0 0", fontSize: 10, color: "#444444" }}>
+                  B.Tech, Electronics & Computer Science | Bhubaneswar, India
+                </p>
+                <p style={{ margin: "4px 0 0", fontSize: 10, color: "#444444", fontWeight: "bold" }}>
+                  Email: beesettisrihari@gmail.com | Phone: +91-XXXXXXXXXX | GitHub: github.com/Srihari1806 | Portfolio: srihari1806.github.io
+                </p>
+              </div>
+
+              {/* Summary */}
+              <div style={{ marginBottom: 18 }}>
+                <div style={{ fontSize: 11, fontWeight: "bold", borderBottom: "1px solid #777", paddingBottom: 2, marginBottom: 6, textTransform: "uppercase", letterSpacing: 0.5 }}>Professional Summary</div>
+                <p style={{ margin: 0, fontSize: 10.5, lineHeight: 1.5, color: "#222" }}>
+                  {resumeTemplates[resumeRole].summary}
+                </p>
+              </div>
+
+              {/* Education */}
+              <div style={{ marginBottom: 18 }}>
+                <div style={{ fontSize: 11, fontWeight: "bold", borderBottom: "1px solid #777", paddingBottom: 2, marginBottom: 6, textTransform: "uppercase", letterSpacing: 0.5 }}>Education</div>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10.5, fontWeight: "bold" }}>
+                  <span>Kalinga Institute of Industrial Technology (KIIT)</span>
+                  <span>Bhubaneswar, India</span>
+                </div>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10, color: "#444", marginTop: 2 }}>
+                  <span>Bachelor of Technology in Electronics & Computer Science</span>
+                  <span>CGPA: X.XX/10 | Expected May 2027</span>
+                </div>
+              </div>
+
+              {/* Skills */}
+              <div style={{ marginBottom: 18 }}>
+                <div style={{ fontSize: 11, fontWeight: "bold", borderBottom: "1px solid #777", paddingBottom: 2, marginBottom: 6, textTransform: "uppercase", letterSpacing: 0.5 }}>Skills & Tooling</div>
+                {Object.entries(resumeTemplates[resumeRole].skills).map(([cat, skillList]) => (
+                  <div key={cat} style={{ fontSize: 10, margin: "3px 0", lineHeight: 1.4 }}>
+                    <strong style={{ textTransform: "capitalize" }}>{cat}:</strong> {skillList.join(", ")}
+                  </div>
+                ))}
+              </div>
+
+              {/* Projects */}
+              <div style={{ marginBottom: 18 }}>
+                <div style={{ fontSize: 11, fontWeight: "bold", borderBottom: "1px solid #777", paddingBottom: 2, marginBottom: 8, textTransform: "uppercase", letterSpacing: 0.5 }}>Academic & Analytics Projects</div>
+                {resumeTemplates[resumeRole].projects.map(proj => (
+                  <div key={proj.name} style={{ marginBottom: 10 }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10.5, fontWeight: "bold" }}>
+                      <span>{proj.name}</span>
+                      <span>{proj.date}</span>
+                    </div>
+                    <div style={{ fontSize: 9.5, color: "#555", fontStyle: "italic", margin: "2px 0" }}>{proj.tech}</div>
+                    <ul style={{ margin: "2px 0 0", paddingLeft: 16, fontSize: 10, color: "#222", lineHeight: 1.4 }}>
+                      {proj.bullets.map((b, bi) => <li key={bi} style={{ marginBottom: 2 }}>{b}</li>)}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+
+              {/* Leadership & Founding */}
+              <div style={{ marginBottom: 18 }}>
+                <div style={{ fontSize: 11, fontWeight: "bold", borderBottom: "1px solid #777", paddingBottom: 2, marginBottom: 8, textTransform: "uppercase", letterSpacing: 0.5 }}>Leadership & Experience</div>
+                <div style={{ display: "flex", justifyContent: "space-between", fontSize: 10.5, fontWeight: "bold" }}>
+                  <span>Founder & Lead Content Strategist — Sahitya Rachanalu (Telugu Literary Community)</span>
+                  <span>June 2024 – Present</span>
+                </div>
+                <ul style={{ margin: "4px 0 0", paddingLeft: 16, fontSize: 10, color: "#222", lineHeight: 1.4 }}>
+                  {resumeTemplates[resumeRole].experience.map((b, bi) => <li key={bi} style={{ marginBottom: 2 }}>{b}</li>)}
+                </ul>
+              </div>
+
+              {/* Certifications */}
+              <div>
+                <div style={{ fontSize: 11, fontWeight: "bold", borderBottom: "1px solid #777", paddingBottom: 2, marginBottom: 6, textTransform: "uppercase", letterSpacing: 0.5 }}>Certifications & Credentials</div>
+                <ul style={{ margin: 0, paddingLeft: 16, fontSize: 10, color: "#222", lineHeight: 1.4 }}>
+                  {resumeTemplates[resumeRole].certifications.map((cert, ci) => <li key={ci}>{cert}</li>)}
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        )}
 
       </div>
 
