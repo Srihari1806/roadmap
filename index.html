@@ -1675,100 +1675,241 @@ const tabs = [
   );
 }
 
-const resumeData = {
-  name: "Srihari [Last Name]",
-  title: "Analyst | Product & Growth | Sports Data",
-  contact: {
-    email: "srihari@email.com",
-    linkedin: "linkedin.com/in/srihari",
-    github: "github.com/srihari",
-    location: "Bhubaneswar / Mumbai",
-  },
-  summary: "Pre-final year Electronics & Computer Science student at KIIT (2027) with a track record in content strategy, community growth, and data storytelling. Founder of Sahitya Rachanalu — a Telugu literary community built from scratch. Passionate about sports analytics with hands-on projects in IPL and cricket data.",
-  education: {
-    degree: "B.Tech — Electronics & Computer Science",
-    college: "KIIT University, Bhubaneswar",
-    year: "2023 – 2027",
-    cgpa: "7.3",
-  },
-  projects: [
-    {
-      id: "ipl",
-      title: "IPL Analytics Dashboard",
-      status: "In Progress (Jun 2026)",
-      tags: ["Python", "Pandas", "Matplotlib", "Kaggle", "Sports Analytics"],
-      bullets: [
-        "Analyzed 2008–2026 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
-        "Built interactive visualizations: top scorers, wicket-takers, team win rates, and season-wise run trends",
-        "Identified partnership patterns and powerplay impact using aggregated match-level data",
-        "Publishing findings as a public Kaggle notebook with storytelling commentary",
-      ],
-      skills_demonstrated: ["SQL-style data wrangling", "Python/Pandas", "Data Visualization", "Sports Domain Knowledge"],
-    },
-    {
-      id: "bpl",
-      title: "BPL (Bangladesh Premier League) Analytics",
-      status: "Planned: Jun–Jul 2026",
-      tags: ["Python", "Sports Analytics", "Cricket"],
-      bullets: [
-        "Will extend IPL methodology to BPL — cross-league performance benchmarking",
-        "Focus: player valuation, form analysis, overseas vs local player impact",
-      ],
-      skills_demonstrated: ["Cross-dataset analysis", "Benchmarking", "Sports domain depth"],
-    },
-    {
-      id: "ecom",
-      title: "E-Commerce Analytics Project",
-      status: "Planned: Aug–Sep 2026",
-      tags: ["SQL", "Python", "Business Analysis", "Funnel Analytics"],
-      bullets: [
-        "Will analyze user funnel, cart abandonment, and revenue attribution using mock or public datasets",
-        "Focus: cohort retention, growth metrics, and product performance KPIs",
-      ],
-      skills_demonstrated: ["Funnel Analysis", "SQL", "Growth Metrics", "Business Analyst thinking"],
-    },
-    {
-      id: "ott",
-      title: "OTT Platform Analytics",
-      status: "Planned: Oct–Nov 2026",
-      tags: ["Python", "Content Analytics", "Product Analytics", "Recommendation Systems"],
-      bullets: [
-        "Will analyze content engagement, churn prediction, and genre/language preferences",
-        "Product lens: feature adoption, user journey mapping, retention KPIs",
-      ],
-      skills_demonstrated: ["Content Analytics", "Product Thinking", "Retention Metrics", "Churn Modeling"],
-    },
-    {
-      id: "hiremap",
-      title: "HireMap — Placement Web App",
-      status: "Completed",
-      tags: ["React 19", "TypeScript", "Firebase", "Vite", "Framer Motion"],
-      bullets: [
-        "Built frontend of a placement-focused web app for students — live at hiremap-eight.vercel.app",
-        "Implemented role-based auth, dynamic dashboards, and smooth UI transitions with Framer Motion",
-        "Contributed to product thinking: user flow, onboarding design, and feature prioritization",
-      ],
-      skills_demonstrated: ["Frontend Dev", "Product Thinking", "Deployment (Vercel)", "Collaboration"],
-    },
-    {
-      id: "sahitya",
-      title: "Sahitya Rachanalu — Telugu Literary Community",
-      status: "Founder | Ongoing",
-      tags: ["Content Strategy", "Community Building", "Growth", "Telugu"],
-      bullets: [
-        "Founded and scaled a Telugu literary content community from scratch",
-        "Curated and published original literary content; drove organic growth through consistent programming",
-        "Demonstrated: content calendar management, audience engagement, and creator community strategy",
-      ],
-      skills_demonstrated: ["Content Strategy", "Community Growth", "Brand Building", "Organic Distribution"],
-    },
-  ],
-  skills: {
-    current: ["Python (basics)", "Pandas", "Matplotlib", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "SEO Writing", "Content Strategy", "Figma (basic)", "MS Excel"],
-    learning: ["SQL", "Power BI / Tableau", "Google Analytics", "Advanced Pandas", "A/B Testing basics", "Product Metrics (DAU, MAU, Retention, LTV)"],
-    planned: ["dbt (data build tool)", "Looker / Metabase", "Amplitude / Mixpanel", "Python for Finance (yfinance)", "Cohort Analysis", "Statistical Hypothesis Testing"],
-  },
+const BASE_SKILLS = ["Python (basics)", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "MS Excel", "SEO Writing", "Content Strategy"];
+
+const MONTH_SKILLS = {
+  june: ["Logical Reasoning", "Advanced SQL", "Excel Power Query", "Schema Design", "Complexity Analysis", "OOPs"],
+  july: ["Quantitative Aptitude", "Python (Pandas/Seaborn)", "EDA", "KPI Design", "JavaScript (Core & DOM)", "DBMS"],
+  august: ["Verbal Ability", "Power BI", "DAX", "Funnel & Retention Analytics", "React hooks", "Operating Systems"],
+  september: ["Google Analytics", "SEO Architecture", "A/B Testing", "LTV/CAC", "Node.js", "Express", "MongoDB", "Computer Networks"],
+  october: ["NLP", "Prompt Engineering", "Make/Zapier Automations", "REST APIs", "PostgreSQL", "Greedy/DP Algorithms", "LLD"],
+  november: ["Predictive Modeling", "Financial Literacy", "Data Storytelling", "Time Series Forecasting", "Advanced Trees/Trie", "HLD"],
+  december: ["Consolidation & Case Studies", "System Design Mock Interviews", "Backtracking", "Divide and Conquer", "Mock Aptitude Tests"]
 };
+
+function getDynamicSkills(monthIndex) {
+  let current = [...BASE_SKILLS];
+  if (monthIndex >= 1) current = [...current, ...MONTH_SKILLS.june];
+  if (monthIndex >= 2) current = [...current, ...MONTH_SKILLS.july];
+  if (monthIndex >= 3) current = [...current, ...MONTH_SKILLS.august];
+  if (monthIndex >= 4) current = [...current, ...MONTH_SKILLS.september];
+  if (monthIndex >= 5) current = [...current, ...MONTH_SKILLS.october];
+  if (monthIndex >= 6) current = [...current, ...MONTH_SKILLS.november];
+  if (monthIndex >= 7) current = [...current, ...MONTH_SKILLS.december];
+
+  let learning = [];
+  if (monthIndex === 0) learning = MONTH_SKILLS.june;
+  else if (monthIndex === 1) learning = MONTH_SKILLS.july;
+  else if (monthIndex === 2) learning = MONTH_SKILLS.august;
+  else if (monthIndex === 3) learning = MONTH_SKILLS.september;
+  else if (monthIndex === 4) learning = MONTH_SKILLS.october;
+  else if (monthIndex === 5) learning = MONTH_SKILLS.november;
+  else if (monthIndex === 6) learning = MONTH_SKILLS.december;
+
+  const currentSet = new Set(current.map(s => s.toLowerCase()));
+  const learningSet = new Set(learning.map(s => s.toLowerCase()));
+
+  let allFuture = [];
+  if (monthIndex < 1) allFuture = [...allFuture, ...MONTH_SKILLS.june];
+  if (monthIndex < 2) allFuture = [...allFuture, ...MONTH_SKILLS.july];
+  if (monthIndex < 3) allFuture = [...allFuture, ...MONTH_SKILLS.august];
+  if (monthIndex < 4) allFuture = [...allFuture, ...MONTH_SKILLS.september];
+  if (monthIndex < 5) allFuture = [...allFuture, ...MONTH_SKILLS.october];
+  if (monthIndex < 6) allFuture = [...allFuture, ...MONTH_SKILLS.november];
+  if (monthIndex < 7) allFuture = [...allFuture, ...MONTH_SKILLS.december];
+
+  const planned = allFuture.filter(s => !currentSet.has(s.toLowerCase()) && !learningSet.has(s.toLowerCase()));
+
+  return { current, learning, planned };
+}
+
+function getDynamicProjects(monthIndex) {
+  const list = [];
+  
+  const hiremap = {
+    id: "hiremap",
+    title: "HireMap — Placement Web App",
+    status: "Completed",
+    tags: ["React 19", "TypeScript", "Firebase", "Vite", "Framer Motion"],
+    bullets: [
+      "Built frontend of a placement-focused web app for students — live at hiremap-eight.vercel.app",
+      "Implemented role-based auth, dynamic dashboards, and smooth UI transitions with Framer Motion",
+      "Contributed to product thinking: user flow, onboarding design, and feature prioritization",
+    ],
+    skills_demonstrated: ["Frontend Dev", "Product Thinking", "Deployment (Vercel)"],
+  };
+
+  const sahitya = {
+    id: "sahitya",
+    title: "Sahitya Rachanalu — Telugu Literary Community",
+    status: "Founder | Ongoing",
+    tags: ["Content Strategy", "Community Building", "Growth", "Telugu"],
+    bullets: [
+      "Founded and scaled a Telugu literary content community from scratch",
+      "Curated and published original literary content; drove organic growth through consistent programming",
+      "Demonstrated: content calendar management, audience engagement, and creator community strategy",
+    ],
+    skills_demonstrated: ["Content Strategy", "Community Growth", "Brand Building", "Organic Distribution"],
+  };
+
+  // IPL
+  let iplStatus = "";
+  let iplBullets = [];
+  if (monthIndex === 0) {
+    iplStatus = "Planned (Start: June 2026)";
+    iplBullets = [
+      "Planned: Analyze 2008–2026 IPL dataset to surface trends in batting, bowling, and season performance",
+      "Planned: Build interactive visualizations of player performance and team metrics in Streamlit"
+    ];
+  } else if (monthIndex === 1) {
+    iplStatus = "In Progress (June 2026)";
+    iplBullets = [
+      "Gathered and cleaned historical IPL match data and salary lists using Python",
+      "Designed star schema database model for matches, deliveries, and players",
+      "Building performance indicators to evaluate value-for-money metrics"
+    ];
+  } else {
+    iplStatus = "Completed";
+    iplBullets = [
+      "Analyzed 2008–2026 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
+      "Built interactive visualizations: top scorers, wicket-takers, team win rates, and season-wise run trends",
+      "Identified partnership patterns and powerplay impact using aggregated match-level data",
+      "Published findings as a public Kaggle notebook with storytelling commentary"
+    ];
+  }
+  
+  const ipl = {
+    id: "ipl",
+    title: "IPL Analytics Dashboard",
+    status: iplStatus,
+    tags: ["Python", "Pandas", "Matplotlib", "Kaggle", "Sports Analytics"],
+    bullets: iplBullets,
+    skills_demonstrated: ["SQL-style wrangling", "Python/Pandas", "Data Visualization", "Sports Domain Knowledge"]
+  };
+
+  // BPL
+  let bplStatus = "";
+  let bplBullets = [];
+  if (monthIndex === 0) {
+    bplStatus = "Planned";
+    bplBullets = ["Planned: Build matchmaking scheduling system for live entertainment and local bands"];
+  } else if (monthIndex === 1) {
+    bplStatus = "In Progress (June 2026)";
+    bplBullets = [
+      "Mapped live music density, pub locations, and capacity sizes across Hyderabad",
+      "Drafted primary schema relationships mapping bands to available slots"
+    ];
+  } else if (monthIndex === 2) {
+    bplStatus = "In Progress (July 2026)";
+    bplBullets = [
+      "Conducted surveys of 100+ crowd attendees on event preferences and pricing constraints",
+      "Visualized crowd motivation patterns and peak occupancy curves for venues"
+    ];
+  } else if (monthIndex === 3) {
+    bplStatus = "In Progress (August 2026)";
+    bplBullets = [
+      "Compiled Musician catalog indexing active bands, pricing tiers, and genre competencies",
+      "Formulated venue-band fit coefficients to optimize venue lineups"
+    ];
+  } else if (monthIndex === 4) {
+    bplStatus = "In Progress (September 2026)";
+    bplBullets = [
+      "Developed allocation algorithm to solve venue calendar booking conflicts",
+      "Integrated matching algorithms prioritizing venue capacity limitations and target margins"
+    ];
+  } else if (monthIndex === 5) {
+    bplStatus = "In Progress (October 2026)";
+    bplBullets = [
+      "Calculated break-even ticket targets under tiered pricing structures",
+      "Constructed venue F&B profit share vs fixed hiring fee models"
+    ];
+  } else if (monthIndex === 6) {
+    bplStatus = "In Progress (November 2026)";
+    bplBullets = [
+      "Built booking funnel user tracking (BookMyShow style) to map cart drop-offs",
+      "Attributed booking conversion gains during marketing campaigns and promo activations"
+    ];
+  } else {
+    bplStatus = "Completed (December 2026)";
+    bplBullets = [
+      "Built venue & band matchmaking system combining audience demand and supply models",
+      "Published Hyderabad Live Music Economic Impact Report containing pricing tier simulations",
+      "Live portal facilitates slot scheduling and automated conflict resolution for booking agents"
+    ];
+  }
+
+  const bpl = {
+    id: "bpl",
+    title: "BPL (Band Premier League) Analytics",
+    status: bplStatus,
+    tags: ["Music Analytics", "Product Analytics", "Market Matchmaking"],
+    bullets: bplBullets,
+    skills_demonstrated: ["Market Modeling", "Survey Design", "Allocation Algorithms", "Scheduling Optimization"]
+  };
+
+  // E-Commerce
+  let ecomStatus = "";
+  let ecomBullets = [];
+  if (monthIndex < 3) {
+    ecomStatus = "Planned (Starts August 2026)";
+    ecomBullets = ["Planned: Formulate transaction funnel optimization models and pricing elasticity dashboards"];
+  } else if (monthIndex === 3) {
+    ecomStatus = "In Progress (August 2026)";
+    ecomBullets = [
+      "Scraped Flipkart and Amazon product review catalogs for sentiment tracking",
+      "Mapped user transaction funnels from impression to purchase stages"
+    ];
+  } else {
+    ecomStatus = "Completed";
+    ecomBullets = [
+      "Analyzed Big Billion Days sales datasets to identify price anchoring and consumer biases",
+      "Built interactive funnel conversion dashboards mapping cart abandonments across categories",
+      "Optimized CAC allocation recommendations based on attribution channel ROAS analysis"
+    ];
+  }
+
+  const ecom = {
+    id: "ecom",
+    title: "E-Commerce Analytics Project",
+    status: ecomStatus,
+    tags: ["SQL", "Power BI", "Funnel Analytics", "Attribution"],
+    bullets: ecomBullets,
+    skills_demonstrated: ["Funnel Diagnostics", "DAX Modeling", "Customer Acquisition Cost", "Marketing ROI"]
+  };
+
+  // OTT
+  let ottStatus = "";
+  let ottBullets = [];
+  if (monthIndex < 5) {
+    ottStatus = "Planned (Starts October 2026)";
+    ottBullets = ["Planned: Build OTT streaming retention predictions and theatrical revenue correlations"];
+  } else if (monthIndex === 5) {
+    ottStatus = "In Progress (October 2026)";
+    ottBullets = [
+      "Parsed IMDb and Netflix title databases for genre/language distributions",
+      "Aggregated box office statistics for theatrical releases and streaming release window gaps"
+    ];
+  } else {
+    ottStatus = "Completed";
+    ottBullets = [
+      "Correlated youtube movie trailer sentiment scores with opening box office collections",
+      "Designed churn prediction model based on user engagement metrics and billing periods",
+      "Built final recommendation system engine based on user preference vectors"
+    ];
+  }
+
+  const ott = {
+    id: "ott",
+    title: "OTT vs Theatre Platform Analytics",
+    status: ottStatus,
+    tags: ["NLP", "Recommendation System", "Content Strategy", "Churn Modeling"],
+    bullets: ottBullets,
+    skills_demonstrated: ["Sentiment Mining", "Product Retention", "Predictive Analytics", "Collaborative Filtering"]
+  };
+
+  list.push(ipl, bpl, ecom, ott, hiremap, sahitya);
+  return list;
+}
 
 const roleRequirements = {
   "Data Analyst": {
@@ -1824,9 +1965,33 @@ const roleRequirements = {
 function ResumeATSAnalyzer() {
   const [activeRole, setActiveRole] = useState("Data Analyst");
   const [activeTab, setActiveTab] = useState("resume");
+  const [monthProgress, setMonthProgress] = useState(7); // Default to December (Full)
+  
+  const dynamicResume = {
+    name: "Srihari [Last Name]",
+    title: "Analyst | Product & Growth | Sports Data",
+    contact: {
+      email: "srihari@email.com",
+      linkedin: "linkedin.com/in/srihari",
+      github: "github.com/srihari",
+      location: "Bhubaneswar / Mumbai",
+    },
+    summary: monthProgress < 4 
+      ? "Pre-final year Electronics & Computer Science student at KIIT (2027) with a track record in content strategy and community growth. Founder of Sahitya Rachanalu. Passionate about sports analytics with projects in cricket data."
+      : "Pre-final year Electronics & Computer Science student at KIIT (2027) with a track record in content strategy, data modeling, and web analytics. Founder of Sahitya Rachanalu. Experienced in sports analytics (IPL & BPL) and marketing funnel diagnostic metrics.",
+    education: {
+      degree: "B.Tech — Electronics & Computer Science",
+      college: "KIIT University, Bhubaneswar",
+      year: "2023 – 2027",
+      cgpa: "7.3",
+    },
+    projects: getDynamicProjects(monthProgress),
+    skills: getDynamicSkills(monthProgress)
+  };
+
   const role = roleRequirements[activeRole];
-  const allCurrentSkills = new Set(resumeData.skills.current.map(s => s.toLowerCase()));
-  const allLearningSkills = new Set(resumeData.skills.learning.map(s => s.toLowerCase()));
+  const allCurrentSkills = new Set(dynamicResume.skills.current.map(s => s.toLowerCase()));
+  const allLearningSkills = new Set(dynamicResume.skills.learning.map(s => s.toLowerCase()));
 
   const getSkillStatus = (skill, currentSet, learningSet) => {
     const sl = skill.toLowerCase();
@@ -1873,10 +2038,10 @@ function ResumeATSAnalyzer() {
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 20, marginBottom: 24 }}>
             <div>
-              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 42, letterSpacing: 4, color: "#F8FAFC", lineHeight: 1 }}>{resumeData.name}</div>
-              <div style={{ fontSize: 11, letterSpacing: 3, color: "#64748B", textTransform: "uppercase", marginTop: 6 }}>{resumeData.title}</div>
+              <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 42, letterSpacing: 4, color: "#F8FAFC", lineHeight: 1 }}>{dynamicResume.name}</div>
+              <div style={{ fontSize: 11, letterSpacing: 3, color: "#64748B", textTransform: "uppercase", marginTop: 6 }}>{dynamicResume.title}</div>
               <div style={{ display: "flex", gap: 16, marginTop: 12, flexWrap: "wrap" }}>
-                {Object.entries(resumeData.contact).map(([k, v]) => (
+                {Object.entries(dynamicResume.contact).map(([k, v]) => (
                   <span key={k} style={{ fontSize: 10, color: "#475569", letterSpacing: 1 }}>
                     <span style={{ color: "#334155" }}>{k.toUpperCase()} // </span>{v}
                   </span>
@@ -1900,6 +2065,34 @@ function ResumeATSAnalyzer() {
       </div>
 
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "32px 40px" }}>
+
+        {/* Month Progress Selector */}
+        <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: "16px 20px", marginBottom: 28 }}>
+          <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 12 }}>
+            Simulate Resume Progress (Month-by-Month Skills & Projects)
+          </div>
+          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+            {["June (Beg)", "End of June", "End of July", "End of August", "End of September", "End of October", "End of November", "End of December"].map((label, idx) => (
+              <button
+                key={idx}
+                onClick={() => setMonthProgress(idx)}
+                style={{
+                  background: monthProgress === idx ? "#F4A72A" : "#1A202C",
+                  color: monthProgress === idx ? "#000" : "#94A3B8",
+                  border: "none",
+                  cursor: "pointer",
+                  fontSize: 10,
+                  fontWeight: 700,
+                  padding: "8px 14px",
+                  borderRadius: 2,
+                  transition: "all 0.2s"
+                }}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
 
         <div style={{ marginBottom: 28 }}>
           <div className="section-label">Target Role</div>
@@ -1926,12 +2119,12 @@ function ResumeATSAnalyzer() {
             <div>
               <div style={{ marginBottom: 32 }}>
                 <div className="section-label">Profile</div>
-                <p style={{ fontSize: 12, lineHeight: 1.8, color: "#94A3B8" }}>{resumeData.summary}</p>
+                <p style={{ fontSize: 12, lineHeight: 1.8, color: "#94A3B8" }}>{dynamicResume.summary}</p>
               </div>
 
               <div>
                 <div className="section-label">Projects</div>
-                {resumeData.projects.map(p => (
+                {dynamicResume.projects.map(p => (
                   <div key={p.id} className="project-card">
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8, flexWrap: "wrap", gap: 8 }}>
                       <div>
@@ -1957,18 +2150,18 @@ function ResumeATSAnalyzer() {
             <div>
               <div style={{ marginBottom: 28 }}>
                 <div className="section-label">Education</div>
-                <div style={{ fontSize: 12, color: "#F1F5F9", fontWeight: 600, marginBottom: 4 }}>{resumeData.education.degree}</div>
+                <div style={{ fontSize: 12, color: "#F1F5F9", fontWeight: 600, marginBottom: 4 }}>{dynamicResume.education.degree}</div>
                 <div style={{ fontSize: 11, color: "#64748B", lineHeight: 1.8 }}>
-                  {resumeData.education.college}<br />
-                  {resumeData.education.year}<br />
-                  <span style={{ color: "#475569" }}>CGPA: </span>{resumeData.education.cgpa}
+                  {dynamicResume.education.college}<br />
+                  {dynamicResume.education.year}<br />
+                  <span style={{ color: "#475569" }}>CGPA: </span>{dynamicResume.education.cgpa}
                 </div>
               </div>
 
               <div style={{ marginBottom: 28 }}>
                 <div className="section-label">Current Skills</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {resumeData.skills.current.map(s => (
+                  {dynamicResume.skills.current.map(s => (
                     <span key={s} className="skill-badge" style={{ background: "#0F2A1F", color: "#34D399", border: "1px solid #064E3B" }}>{s}</span>
                   ))}
                 </div>
@@ -1977,7 +2170,7 @@ function ResumeATSAnalyzer() {
               <div style={{ marginBottom: 28 }}>
                 <div className="section-label">Currently Learning</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {resumeData.skills.learning.map(s => (
+                  {dynamicResume.skills.learning.map(s => (
                     <span key={s} className="skill-badge" style={{ background: "#1C1A0A", color: "#FCD34D", border: "1px solid #713F12" }}>{s}</span>
                   ))}
                 </div>
@@ -1986,7 +2179,7 @@ function ResumeATSAnalyzer() {
               <div>
                 <div className="section-label">Planned to Learn</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {resumeData.skills.planned.map(s => (
+                  {dynamicResume.skills.planned.map(s => (
                     <span key={s} className="skill-badge" style={{ background: "#0F1724", color: "#475569", border: "1px solid #1E293B" }}>{s}</span>
                   ))}
                 </div>
