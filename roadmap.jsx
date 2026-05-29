@@ -2072,6 +2072,21 @@ function CombinedApp() {
   
   return (
     <ErrorBoundary>
+      <div style={{ position: "fixed", top: 12, right: 12, zIndex: 1000 }}>
+        <button onClick={() => setActiveView(activeView === "roadmap" ? "ats" : "roadmap")} style={{
+          background: activeView === "roadmap" ? "#1a1a2e" : "#F4A72A",
+          color: activeView === "roadmap" ? "#F4A72A" : "#000",
+          border: `1px solid ${activeView === "roadmap" ? "#F4A72A" : "#F4A72A"}`,
+          padding: "8px 16px",
+          borderRadius: 6,
+          cursor: "pointer",
+          fontSize: 12,
+          fontWeight: 700,
+          fontFamily: "inherit"
+        }}>
+          {activeView === "roadmap" ? "📄 Resume/ATS" : "🗺 Roadmap"}
+        </button>
+      </div>
       {activeView === "roadmap" ? <Roadmap /> : <ResumeATSAnalyzer />}
     </ErrorBoundary>
   );
