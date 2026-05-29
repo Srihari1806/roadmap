@@ -1683,56 +1683,32 @@ const tabs = [
             </h2>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 20, display: "flex", flexDirection: "column", gap: 16 }}>
-                <div>
-                  <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>✍️ CREATIVE PORTFOLIO ROADMAP</div>
-                  <div style={{ fontSize: 11, color: MUTED, marginBottom: 12, lineHeight: 1.5 }}>
-                    Select a target creative role to view certifications and month-by-month portfolio deliverables from June to December.
-                  </div>
-                  <select 
-                    value={selectedCreativeRole} 
-                    onChange={(e) => setSelectedCreativeRole(e.target.value)}
-                    style={{
-                      width: "100%",
-                      padding: "8px 12px",
-                      background: "#0F172A",
-                      border: `1px solid ${BORDER}`,
-                      borderRadius: 4,
-                      color: TEXT,
-                      fontSize: 12,
-                      fontFamily: "inherit",
-                      outline: "none",
-                      cursor: "pointer"
-                    }}
-                  >
-                    {Object.keys(CREATIVE_ROLES_DATA).map(role => (
-                      <option key={role} value={role}>{role} ({CREATIVE_ROLES_DATA[role].desc})</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <div style={{ fontSize: 10, color: ACCENT, letterSpacing: 1, textTransform: "uppercase", fontWeight: 700, marginBottom: 8 }}>🏅 Credentials / Certifications</div>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                    {CREATIVE_ROLES_DATA[selectedCreativeRole].certs.map(cert => (
-                      <span key={cert} className="skill-badge" style={{ background: "#2E1065", color: "#A78BFA", border: "1px solid #4C1D95", padding: "4px 8px", borderRadius: 2, fontSize: 10 }}>{cert}</span>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <div style={{ fontSize: 10, color: ACCENT, letterSpacing: 1, textTransform: "uppercase", fontWeight: 700, marginBottom: 12 }}>📅 Portfolio Deliverables Timeline</div>
-                  <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "250px", overflowY: "auto", paddingRight: 8 }}>
-                    {CREATIVE_ROLES_DATA[selectedCreativeRole].milestones.map((m, i) => (
-                      <div key={i} style={{ paddingBottom: 10, borderBottom: i === 6 ? "none" : `1px solid ${BORDER}20` }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-                          <span style={{ fontSize: 11, fontWeight: 700, color: "#FFF" }}>{m.month} Milestone</span>
-                          <span style={{ fontSize: 9, background: "#1E293B", color: MUTED, padding: "2px 6px", borderRadius: 2 }}>Demo / Work</span>
-                        </div>
-                        <p style={{ fontSize: 11, color: MUTED, lineHeight: 1.5 }}>{m.work}</p>
+              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 18 }}>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>WRITING ROLES & CERTIFICATIONS</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "420px", overflowY: "auto", paddingRight: 6 }}>
+                  {[
+                    { role: "Content Writer", desc: "Blogs, posts, LinkedIn articles", cert: "HubSpot Content Marketing, Google SEO Fundamentals" },
+                    { role: "Creative Writer", desc: "Stories, scripts, reel concepts", cert: "Sahitya Rachanalu Writer Certificate" },
+                    { role: "Copywriter", desc: "Captions, ads, punchlines, marketing lines", cert: "Adweek Copywriting, Google Ads Search" },
+                    { role: "Script Writer", desc: "YouTube, reels, short films, ads", cert: "YouTube Creator Academy Certification" },
+                    { role: "Screenplay / Story Writer", desc: "Films, web series (long term)", cert: "Sundance Screenplay Formatting Certificate" },
+                    { role: "Lyricist", desc: "Songs, indie music, reels", cert: "Berklee College: Songwriting Online" },
+                    { role: "Sports Content Writer", desc: "Cricket pages, apps, sites", cert: "Kaggle Sports Contributor Badge" },
+                    { role: "Film Critic / Reviewer", desc: "YouTube, blogs, pages, analytics overlay", cert: "Film Criticism Cert, IMDb Reviewer" },
+                    { role: "Social Media Strategist", desc: "Ideas, captions, content calendars", cert: "HubSpot Social Media Certification" },
+                    { role: "Content Strategist", desc: "Brand growth, content mapping, editorial plans", cert: "HubSpot Inbound Marketing, GA4 Certificate" }
+                  ].map(r => (
+                    <div key={r.role} style={{ paddingBottom: 10, borderBottom: `1px solid ${BORDER}40` }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: 4 }}>
+                        <span style={{ fontSize: 12, fontWeight: 700, color: "#FFF" }}>{r.role}</span>
+                        <span style={{ fontSize: 11, color: MUTED }}>{r.desc}</span>
                       </div>
-                    ))}
-                  </div>
+                      <div style={{ fontSize: 10, color: ACCENT, marginTop: 4, display: "flex", alignItems: "center", gap: 6 }}>
+                        <span style={{ color: "#475569", textTransform: "uppercase", fontSize: 8, letterSpacing: 0.5 }}>Certificates:</span>
+                        <span style={{ background: ACCENT + "15", padding: "1px 6px", borderRadius: 2, border: `1px solid ${ACCENT}30` }}>{r.cert}</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
 
