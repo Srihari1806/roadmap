@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Srihari's 6-Month Analyst Launch Plan | Execution Roadmap</title>
-  <meta name="description" content="6-month brutally practical execution roadmap: 3 analytics projects, portfolio website, Sahitya Rachanalu platform, and skill mastery for Data/Product/Business/Growth Analyst roles." />
+  <title>Srihari's 60-Day Analyst Launch Plan | Execution Roadmap</title>
+  <meta name="description" content="60-day brutally practical execution roadmap: 4+ analytics projects, portfolio website, Sahitya Rachanalu platform, and skill mastery for 4 target Analyst roles." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -1028,9 +1028,8 @@ const tabs = [
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
-    { id: "monthly", label: "📅 6-Month Plan" },
-    { id: "skills", label: "🛠️ Skills" },
-    { id: "checklist", label: "✅ Checklist" },
+    { id: "monthly", label: "📅 60-Day Plan" },
+    { id: "skills", label: "🛠️ Skills" }
   ];
 
   const toggleCheck = (idx) => {
@@ -1065,15 +1064,15 @@ const tabs = [
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 4 }}>
             <span style={{ fontSize: 20 }}>🚀</span>
             <span style={{ color: ACCENT, fontSize: 11, letterSpacing: 3, fontWeight: 700, textTransform: "uppercase" }}>
-              6-Month Execution Roadmap
+              60-Day Execution Roadmap
             </span>
           </div>
           <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.5, fontFamily: "'DM Mono', monospace" }}>
             Srihari's <span style={{ color: ACCENT }}>Analyst</span> Launch Plan
           </h1>
-<p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
-             Jun 2026 → Nov-Dec 2026 · 4 Projects · 2 Platforms · 20+ Applications
-           </p>
+          <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
+             60 Days · 4+ Projects · 2 Platforms · 4 Target Roles
+          </p>
         </div>
       </div>
 
@@ -1522,95 +1521,7 @@ const tabs = [
           </div>
         )}
 
-        {/* CHECKLIST TAB */}
-        {activeTab === "checklist" && (
-          <div>
-            {/* Progress */}
-            <div style={{
-              background: CARD,
-              border: `1px solid ${BORDER}`,
-              borderRadius: 8,
-              padding: 20,
-              marginBottom: 24,
-            }}>
-              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
-                <span style={{ fontSize: 13, fontWeight: 700 }}>Day 60 Completion Progress</span>
-                <span style={{ color: ACCENT, fontWeight: 800, fontSize: 16 }}>{progress}%</span>
-              </div>
-              <div style={{ background: "#1a1a2e", borderRadius: 4, height: 8, overflow: "hidden" }}>
-                <div style={{
-                  background: `linear-gradient(90deg, ${ACCENT}, ${GREEN})`,
-                  height: "100%",
-                  width: `${progress}%`,
-                  borderRadius: 4,
-                  transition: "width 0.3s",
-                }}></div>
-              </div>
-              <div style={{ fontSize: 11, color: MUTED, marginTop: 8 }}>
-                {completedCount} / {checklist.length} deliverables completed
-              </div>
-            </div>
 
-            {checklistCategories.map(category => (
-              <div key={category} style={{ marginBottom: 20 }}>
-                <h3 style={{ fontSize: 11, letterSpacing: 2, color: MUTED, textTransform: "uppercase", marginBottom: 10 }}>
-                  {category}
-                </h3>
-                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                  {checklist.map((item, i) => item.category === category && (
-                    <div key={i} onClick={() => toggleCheck(i)} style={{
-                      background: item.done ? "#0d2e1a" : CARD,
-                      border: `1px solid ${item.done ? GREEN + "60" : BORDER}`,
-                      borderRadius: 6,
-                      padding: "12px 16px",
-                      cursor: "pointer",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 12,
-                      transition: "all 0.2s",
-                    }}>
-                      <div style={{
-                        width: 18,
-                        height: 18,
-                        borderRadius: 4,
-                        border: `2px solid ${item.done ? GREEN : BORDER}`,
-                        background: item.done ? GREEN : "transparent",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        flexShrink: 0,
-                        fontSize: 11,
-                        color: "#000",
-                        fontWeight: 900,
-                      }}>{item.done ? "✓" : ""}</div>
-                      <span style={{
-                        fontSize: 13,
-                        color: item.done ? GREEN : TEXT,
-                        textDecoration: item.done ? "line-through" : "none",
-                        opacity: item.done ? 0.7 : 1,
-                      }}>{item.item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-
-            {progress === 100 && (
-              <div style={{
-                background: "linear-gradient(135deg, #0d2e1a, #1a3a0a)",
-                border: `1px solid ${GREEN}`,
-                borderRadius: 8,
-                padding: 24,
-                textAlign: "center",
-                marginTop: 24,
-              }}>
-                <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
-                <div style={{ color: GREEN, fontSize: 16, fontWeight: 800 }}>Day 60 Complete!</div>
-                <div style={{ color: MUTED, fontSize: 12, marginTop: 4 }}>You're application-ready. Go get hired.</div>
-              </div>
-            )}
-          </div>
-        )}
         
         {/* PROJECTS TAB */}
         {activeTab === "projects" && (
