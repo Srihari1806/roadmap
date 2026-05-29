@@ -1665,14 +1665,17 @@ const tabs = [
         )}
       </div>
 
-      <style>{`
+<style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
         * { box-sizing: border-box; }
         ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: ${BG}; ];
- 
- 
- 
+        ::-webkit-scrollbar-track { background: ${BG}; }
+        ::-webkit-scrollbar-thumb { background: ${BORDER}; border-radius: 2px; }
+      `}</style>
+    </div>
+  );
+}
+
 const resumeData = {
   name: "Srihari [Last Name]",
   title: "Analyst | Product & Growth | Sports Data",
