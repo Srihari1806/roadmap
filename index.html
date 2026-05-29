@@ -766,152 +766,6 @@ const skillsRoadmap = [
   },
 ];
 
-const resumeData = {
-  name: "Srihari [Last Name]",
-  title: "Analyst | Product & Growth | Sports Data",
-  contact: {
-    email: "srihari@email.com",
-    linkedin: "linkedin.com/in/srihari",
-    github: "github.com/srihari",
-    location: "Bhubaneswar / Mumbai",
-  },
-  summary: "Pre-final year Electronics & Computer Science student at KIIT (2027) with a track record in content strategy, community growth, and data storytelling. Founder of Sahitya Rachanalu — a Telugu literary community built from scratch. Passionate about sports analytics with hands-on projects in IPL and cricket data.",
-  education: {
-    degree: "B.Tech — Electronics & Computer Science",
-    college: "KIIT University, Bhubaneswar",
-    year: "2023 – 2027",
-    cgpa: "7.3",
-  },
-  projects: [
-    {
-      id: "ipl",
-      title: "IPL Analytics Dashboard",
-      status: "In Progress (Jul 2025)",
-      tags: ["Python", "Pandas", "Matplotlib", "Kaggle", "Sports Analytics"],
-      bullets: [
-        "Analyzed 2008–2025 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
-        "Built interactive visualizations: top scorers, wicket-takers, team win rates, and season-wise run trends",
-        "Identified partnership patterns and powerplay impact using aggregated match-level data",
-        "Publishing findings as a public Kaggle notebook with storytelling commentary",
-      ],
-      skills_demonstrated: ["SQL-style data wrangling", "Python/Pandas", "Data Visualization", "Sports Domain Knowledge"],
-    },
-    {
-      id: "bpl",
-      title: "BPL (Bangladesh Premier League) Analytics",
-      status: "Planned: Jul–Aug 2025",
-      tags: ["Python", "Sports Analytics", "Cricket"],
-      bullets: [
-        "Will extend IPL methodology to BPL — cross-league performance benchmarking",
-        "Focus: player valuation, form analysis, overseas vs local player impact",
-      ],
-      skills_demonstrated: ["Cross-dataset analysis", "Benchmarking", "Sports domain depth"],
-    },
-    {
-      id: "ecom",
-      title: "E-Commerce Analytics Project",
-      status: "Planned: Sep–Oct 2025",
-      tags: ["SQL", "Python", "Business Analysis", "Funnel Analytics"],
-      bullets: [
-        "Will analyze user funnel, cart abandonment, and revenue attribution using mock or public datasets",
-        "Focus: cohort retention, growth metrics, and product performance KPIs",
-      ],
-      skills_demonstrated: ["Funnel Analysis", "SQL", "Growth Metrics", "Business Analyst thinking"],
-    },
-    {
-      id: "ott",
-      title: "OTT Platform Analytics",
-      status: "Planned: Nov–Dec 2025",
-      tags: ["Python", "Content Analytics", "Product Analytics", "Recommendation Systems"],
-      bullets: [
-        "Will analyze content engagement, churn prediction, and genre/language preferences",
-        "Product lens: feature adoption, user journey mapping, retention KPIs",
-      ],
-      skills_demonstrated: ["Content Analytics", "Product Thinking", "Retention Metrics", "Churn Modeling"],
-    },
-    {
-      id: "hiremap",
-      title: "HireMap — Placement Web App",
-      status: "Completed",
-      tags: ["React 19", "TypeScript", "Firebase", "Vite", "Framer Motion"],
-      bullets: [
-        "Built frontend of a placement-focused web app for students — live at hiremap-eight.vercel.app",
-        "Implemented role-based auth, dynamic dashboards, and smooth UI transitions with Framer Motion",
-        "Contributed to product thinking: user flow, onboarding design, and feature prioritization",
-      ],
-      skills_demonstrated: ["Frontend Dev", "Product Thinking", "Deployment (Vercel)", "Collaboration"],
-    },
-    {
-      id: "sahitya",
-      title: "Sahitya Rachanalu — Telugu Literary Community",
-      status: "Founder | Ongoing",
-      tags: ["Content Strategy", "Community Building", "Growth", "Telugu"],
-      bullets: [
-        "Founded and scaled a Telugu literary content community from scratch",
-        "Curated and published original literary content; drove organic growth through consistent programming",
-        "Demonstrated: content calendar management, audience engagement, and creator community strategy",
-      ],
-      skills_demonstrated: ["Content Strategy", "Community Growth", "Brand Building", "Organic Distribution"],
-    },
-  ],
-  skills: {
-    current: ["Python (basics)", "Pandas", "Matplotlib", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "SEO Writing", "Content Strategy", "Figma (basic)", "MS Excel"],
-    learning: ["SQL", "Power BI / Tableau", "Google Analytics", "Advanced Pandas", "A/B Testing basics", "Product Metrics (DAU, MAU, Retention, LTV)"],
-    planned: ["dbt (data build tool)", "Looker / Metabase", "Amplitude / Mixpanel", "Python for Finance (yfinance)", "Cohort Analysis", "Statistical Hypothesis Testing"],
-  },
-};
-
-const roleRequirements = {
-  "Data Analyst": {
-    color: "#3B82F6",
-    must_have: ["SQL", "Python/Pandas", "Data Visualization", "Excel/Sheets", "Statistical Analysis", "Dashboard tools (Tableau/Power BI)"],
-    good_to_have: ["dbt", "BigQuery/Snowflake", "A/B Testing", "Cohort Analysis"],
-    ats_keywords: ["SQL", "Python", "data analysis", "visualization", "dashboard", "metrics", "KPI", "Excel", "Tableau", "Power BI", "statistical analysis", "cohort", "funnel"],
-  },
-  "Product Analyst": {
-    color: "#8B5CF6",
-    must_have: ["SQL", "Product Metrics (DAU/MAU/Retention)", "A/B Testing", "Python or Excel", "User Journey Mapping", "Funnel Analysis"],
-    good_to_have: ["Amplitude/Mixpanel", "Figma", "Market Research", "PRD writing"],
-    ats_keywords: ["product analytics", "user retention", "A/B testing", "funnel", "DAU", "MAU", "churn", "feature adoption", "product metrics", "user journey", "SQL", "Python"],
-  },
-  "Business Analyst": {
-    color: "#10B981",
-    must_have: ["SQL", "Excel", "Business Problem Framing", "Stakeholder Communication", "Data Storytelling", "Process Mapping"],
-    good_to_have: ["Power BI", "Python", "Financial Modeling basics", "Case Study frameworks"],
-    ats_keywords: ["business analysis", "stakeholder", "process improvement", "data-driven", "SQL", "Excel", "reporting", "KPI", "insights", "requirement gathering", "documentation"],
-  },
-  "Growth Analyst": {
-    color: "#F59E0B",
-    must_have: ["SEO", "Content Strategy", "Google Analytics", "Social Media Analytics", "A/B Testing (copy)", "Excel/Sheets"],
-    good_to_have: ["HubSpot/similar", "Email marketing tools", "Canva/Figma", "Cohort tracking"],
-    ats_keywords: ["content strategy", "SEO", "growth", "GTM", "organic", "engagement", "retention", "funnel", "conversion", "analytics", "social media", "community"],
-  },
-  "Sports Analyst": {
-    color: "#EF4444",
-    must_have: ["Python/Pandas", "Sports Domain Knowledge (IPL/PKL)", "Data Visualization", "Statistical Thinking", "SQL"],
-    good_to_have: ["R", "Tableau/Power BI", "Web Scraping (BeautifulSoup)", "Expected Value modeling"],
-    ats_keywords: ["sports analytics", "cricket", "IPL", "player performance", "Python", "data modeling", "visualizations", "statistical analysis", "sports data", "Kaggle"],
-  },
-  "Financial Analyst": {
-    color: "#6366F1",
-    must_have: ["Excel (Advanced)", "Financial Modeling", "Accounting basics", "Python (yfinance)", "SQL", "Data Interpretation"],
-    good_to_have: ["Bloomberg Terminal familiarity", "DCF", "Ratio Analysis", "Power BI"],
-    ats_keywords: ["financial modeling", "Excel", "valuation", "DCF", "ratio analysis", "P&L", "forecasting", "financial analysis", "Python", "SQL", "investment analysis"],
-  },
-  "Content Strategist": {
-    color: "#EC4899",
-    must_have: ["Content Strategy", "SEO", "Analytics Tools", "Audience Research", "Campaign Planning"],
-    good_to_have: ["HubSpot", "SEMrush", "A/B Testing", "CMS (WordPress/Notion)"],
-    ats_keywords: ["content strategy", "SEO", "audience research", "campaign planning", "content calendar", "analytics", "engagement", "brand messaging"],
-  },
-  "SEO Analyst": {
-    color: "#14B8A6",
-    must_have: ["SEO", "Google Analytics", "Keyword Research", "On-page Optimization", "Technical SEO"],
-    good_to_have: ["SEMrush/Ahrefs", "Search Console", "Content Strategy", "Link Building"],
-    ats_keywords: ["SEO", "keyword research", "on-page", "technical SEO", "Google Analytics", "search console", "organic traffic", "rankings", "backlinks"],
-  },
-};
-
 // ─── ProjectCard Component ────────────────────────────────────────────────────
 function ProjectCard({ proj }) {
   const [expanded, setExpanded] = React.useState(null);
@@ -1813,15 +1667,157 @@ const tabs = [
 
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         * { box-sizing: border-box; }
         ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: ${BG}; }
-        ::-webkit-scrollbar-thumb { background: ${BORDER}; border-radius: 2px; }
-      `}</style>
-    </div>
-  );
-}
+        ::-webkit-scrollbar-track { background: ${BG}; ];
+ 
+ 
+ 
+const resumeData = {
+  name: "Srihari [Last Name]",
+  title: "Analyst | Product & Growth | Sports Data",
+  contact: {
+    email: "srihari@email.com",
+    linkedin: "linkedin.com/in/srihari",
+    github: "github.com/srihari",
+    location: "Bhubaneswar / Mumbai",
+  },
+  summary: "Pre-final year Electronics & Computer Science student at KIIT (2027) with a track record in content strategy, community growth, and data storytelling. Founder of Sahitya Rachanalu — a Telugu literary community built from scratch. Passionate about sports analytics with hands-on projects in IPL and cricket data.",
+  education: {
+    degree: "B.Tech — Electronics & Computer Science",
+    college: "KIIT University, Bhubaneswar",
+    year: "2023 – 2027",
+    cgpa: "7.3",
+  },
+  projects: [
+    {
+      id: "ipl",
+      title: "IPL Analytics Dashboard",
+      status: "In Progress (Jul 2025)",
+      tags: ["Python", "Pandas", "Matplotlib", "Kaggle", "Sports Analytics"],
+      bullets: [
+        "Analyzed 2008–2025 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
+        "Built interactive visualizations: top scorers, wicket-takers, team win rates, and season-wise run trends",
+        "Identified partnership patterns and powerplay impact using aggregated match-level data",
+        "Publishing findings as a public Kaggle notebook with storytelling commentary",
+      ],
+      skills_demonstrated: ["SQL-style data wrangling", "Python/Pandas", "Data Visualization", "Sports Domain Knowledge"],
+    },
+    {
+      id: "bpl",
+      title: "BPL (Bangladesh Premier League) Analytics",
+      status: "Planned: Jul–Aug 2025",
+      tags: ["Python", "Sports Analytics", "Cricket"],
+      bullets: [
+        "Will extend IPL methodology to BPL — cross-league performance benchmarking",
+        "Focus: player valuation, form analysis, overseas vs local player impact",
+      ],
+      skills_demonstrated: ["Cross-dataset analysis", "Benchmarking", "Sports domain depth"],
+    },
+    {
+      id: "ecom",
+      title: "E-Commerce Analytics Project",
+      status: "Planned: Sep–Oct 2025",
+      tags: ["SQL", "Python", "Business Analysis", "Funnel Analytics"],
+      bullets: [
+        "Will analyze user funnel, cart abandonment, and revenue attribution using mock or public datasets",
+        "Focus: cohort retention, growth metrics, and product performance KPIs",
+      ],
+      skills_demonstrated: ["Funnel Analysis", "SQL", "Growth Metrics", "Business Analyst thinking"],
+    },
+    {
+      id: "ott",
+      title: "OTT Platform Analytics",
+      status: "Planned: Nov–Dec 2025",
+      tags: ["Python", "Content Analytics", "Product Analytics", "Recommendation Systems"],
+      bullets: [
+        "Will analyze content engagement, churn prediction, and genre/language preferences",
+        "Product lens: feature adoption, user journey mapping, retention KPIs",
+      ],
+      skills_demonstrated: ["Content Analytics", "Product Thinking", "Retention Metrics", "Churn Modeling"],
+    },
+    {
+      id: "hiremap",
+      title: "HireMap — Placement Web App",
+      status: "Completed",
+      tags: ["React 19", "TypeScript", "Firebase", "Vite", "Framer Motion"],
+      bullets: [
+        "Built frontend of a placement-focused web app for students — live at hiremap-eight.vercel.app",
+        "Implemented role-based auth, dynamic dashboards, and smooth UI transitions with Framer Motion",
+        "Contributed to product thinking: user flow, onboarding design, and feature prioritization",
+      ],
+      skills_demonstrated: ["Frontend Dev", "Product Thinking", "Deployment (Vercel)", "Collaboration"],
+    },
+    {
+      id: "sahitya",
+      title: "Sahitya Rachanalu — Telugu Literary Community",
+      status: "Founder | Ongoing",
+      tags: ["Content Strategy", "Community Building", "Growth", "Telugu"],
+      bullets: [
+        "Founded and scaled a Telugu literary content community from scratch",
+        "Curated and published original literary content; drove organic growth through consistent programming",
+        "Demonstrated: content calendar management, audience engagement, and creator community strategy",
+      ],
+      skills_demonstrated: ["Content Strategy", "Community Growth", "Brand Building", "Organic Distribution"],
+    },
+  ],
+  skills: {
+    current: ["Python (basics)", "Pandas", "Matplotlib", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "SEO Writing", "Content Strategy", "Figma (basic)", "MS Excel"],
+    learning: ["SQL", "Power BI / Tableau", "Google Analytics", "Advanced Pandas", "A/B Testing basics", "Product Metrics (DAU, MAU, Retention, LTV)"],
+    planned: ["dbt (data build tool)", "Looker / Metabase", "Amplitude / Mixpanel", "Python for Finance (yfinance)", "Cohort Analysis", "Statistical Hypothesis Testing"],
+  },
+};
+
+const roleRequirements = {
+  "Data Analyst": {
+    color: "#3B82F6",
+    must_have: ["SQL", "Python/Pandas", "Data Visualization", "Excel/Sheets", "Statistical Analysis", "Dashboard tools (Tableau/Power BI)"],
+    good_to_have: ["dbt", "BigQuery/Snowflake", "A/B Testing", "Cohort Analysis"],
+    ats_keywords: ["SQL", "Python", "data analysis", "visualization", "dashboard", "metrics", "KPI", "Excel", "Tableau", "Power BI", "statistical analysis", "cohort", "funnel"],
+  },
+  "Product Analyst": {
+    color: "#8B5CF6",
+    must_have: ["SQL", "Product Metrics (DAU/MAU/Retention)", "A/B Testing", "Python or Excel", "User Journey Mapping", "Funnel Analysis"],
+    good_to_have: ["Amplitude/Mixpanel", "Figma", "Market Research", "PRD writing"],
+    ats_keywords: ["product analytics", "user retention", "A/B testing", "funnel", "DAU", "MAU", "churn", "feature adoption", "product metrics", "user journey", "SQL", "Python"],
+  },
+  "Business Analyst": {
+    color: "#10B981",
+    must_have: ["SQL", "Excel", "Business Problem Framing", "Stakeholder Communication", "Data Storytelling", "Process Mapping"],
+    good_to_have: ["Power BI", "Python", "Financial Modeling basics", "Case Study frameworks"],
+    ats_keywords: ["business analysis", "stakeholder", "process improvement", "data-driven", "SQL", "Excel", "reporting", "KPI", "insights", "requirement gathering", "documentation"],
+  },
+  "Growth Analyst": {
+    color: "#F59E0B",
+    must_have: ["SEO", "Content Strategy", "Google Analytics", "Social Media Analytics", "A/B Testing (copy)", "Excel/Sheets"],
+    good_to_have: ["HubSpot/similar", "Email marketing tools", "Canva/Figma", "Cohort tracking"],
+    ats_keywords: ["content strategy", "SEO", "growth", "GTM", "organic", "engagement", "retention", "funnel", "conversion", "analytics", "social media", "community"],
+  },
+  "Sports Analyst": {
+    color: "#EF4444",
+    must_have: ["Python/Pandas", "Sports Domain Knowledge (IPL/PKL)", "Data Visualization", "Statistical Thinking", "SQL"],
+    good_to_have: ["R", "Tableau/Power BI", "Web Scraping (BeautifulSoup)", "Expected Value modeling"],
+    ats_keywords: ["sports analytics", "cricket", "IPL", "player performance", "Python", "data modeling", "visualizations", "statistical analysis", "sports data", "Kaggle"],
+  },
+  "Financial Analyst": {
+    color: "#6366F1",
+    must_have: ["Excel (Advanced)", "Financial Modeling", "Accounting basics", "Python (yfinance)", "SQL", "Data Interpretation"],
+    good_to_have: ["Bloomberg Terminal familiarity", "DCF", "Ratio Analysis", "Power BI"],
+    ats_keywords: ["financial modeling", "Excel", "valuation", "DCF", "ratio analysis", "P&L", "forecasting", "financial analysis", "Python", "SQL", "investment analysis"],
+  },
+  "Content Strategist": {
+    color: "#EC4899",
+    must_have: ["Content Strategy", "SEO", "Analytics Tools", "Audience Research", "Campaign Planning"],
+    good_to_have: ["HubSpot", "SEMrush", "A/B Testing", "CMS (WordPress/Notion)"],
+    ats_keywords: ["content strategy", "SEO", "audience research", "campaign planning", "content calendar", "analytics", "engagement", "brand messaging"],
+  },
+  "SEO Analyst": {
+    color: "#14B8A6",
+    must_have: ["SEO", "Google Analytics", "Keyword Research", "On-page Optimization", "Technical SEO"],
+    good_to_have: ["SEMrush/Ahrefs", "Search Console", "Content Strategy", "Link Building"],
+    ats_keywords: ["SEO", "keyword research", "on-page", "technical SEO", "Google Analytics", "search console", "organic traffic", "rankings", "backlinks"],
+  },
+};
 
 function ResumeATSAnalyzer() {
   const [activeRole, setActiveRole] = useState("Data Analyst");
@@ -2119,7 +2115,7 @@ function CombinedApp() {
 </script>
   <script type="text/babel">
     const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(React.createElement(CombinedApp));
+    root.render(React.createElement(ErrorBoundary, null, React.createElement(CombinedApp)));
   </script>
 </body>
 </html>
