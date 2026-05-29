@@ -871,7 +871,7 @@ const tabs = [
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
     { id: "monthly", label: "📅 6-Month Plan" },
-    { id: "mastery", label: "Mastery Plan", href: "mastery.html" },
+    { id: "mastery", label: "📚 Mastery Plan", href: "mastery.html" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "checklist", label: "✅ Checklist" },
   ];
@@ -908,14 +908,14 @@ const tabs = [
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 4 }}>
             <span style={{ fontSize: 20 }}>🚀</span>
             <span style={{ color: ACCENT, fontSize: 11, letterSpacing: 3, fontWeight: 700, textTransform: "uppercase" }}>
-              60-Day Execution Roadmap
+              6-Month Execution Roadmap
             </span>
           </div>
           <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.5, fontFamily: "'DM Mono', monospace" }}>
             Srihari's <span style={{ color: ACCENT }}>Analyst</span> Launch Plan
           </h1>
           <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
-            May 1 → June 30 · 4 Projects · 2 Platforms · 20+ Applications
+            Jul 2025 → Dec 2025 · 4 Projects · 2 Platforms · 20+ Applications
           </p>
         </div>
       </div>
