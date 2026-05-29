@@ -101,11 +101,11 @@ ibm_daily = []
 for course in ibm_schedule:
     for _ in range(course['days']): ibm_daily.append(course)
 
-for w in range(1, 10):
+for w in range(1, 27):
     days = []
     for d in range(1, 8):
         day_num = day_idx + 1
-        if day_num > 60: break
+        if day_num > 180: break
         
         dsa = tuf_dsa_topics[day_idx % len(tuf_dsa_topics)]
         sql_sub = tuf_sql_topics[day_idx % len(tuf_sql_topics)]
