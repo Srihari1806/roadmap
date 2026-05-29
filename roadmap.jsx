@@ -822,6 +822,126 @@ function ProjectCard({ proj }) {
   );
 }
 
+const CREATIVE_ROLES_DATA = {
+  "Content Writer": {
+    desc: "Blogs, posts, LinkedIn articles",
+    certs: ["HubSpot Content Marketing", "Google Analytics (GA4)"],
+    milestones: [
+      { month: "June", work: "Setup Medium & LinkedIn. Write 2 data-driven SEO articles on career search techniques." },
+      { month: "July", work: "Write 3 blog posts on Telugu literature growth trends using Sahitya Rachanalu data." },
+      { month: "August", work: "Publish 2 long-form case studies on E-Commerce user conversion rates." },
+      { month: "September", work: "Write 4 technical blogs explaining DBMS schemas and SQL window functions." },
+      { month: "October", work: "Publish 3 articles on Prompt Engineering applications for content creation." },
+      { month: "November", work: "Draft an e-book outline on 'ECS Student Guide to Analytics Landing Roles'." },
+      { month: "December", work: "Publish full content portfolio with 10+ live article links on personal website." }
+    ]
+  },
+  "Creative Writer": {
+    desc: "Stories, scripts, reel concepts",
+    certs: ["Sahitya Rachanalu Writer Badge", "Fountain Scriptwriting Academy Certificate"],
+    milestones: [
+      { month: "June", work: "Publish 2 short stories in Telugu on Sahitya Rachanalu community page." },
+      { month: "July", work: "Draft a 5-minute dialogue-only script outlining subtext and visual pacing." },
+      { month: "August", work: "Create 3 viral video/reel scripts with hooks, visual cues, and CTA lines." },
+      { month: "September", work: "Write a complete narrative short-story based on Hyderabad local musicians (BPL)." },
+      { month: "October", work: "Design character bible and episode breakdown for a 5-part web series." },
+      { month: "November", work: "Draft full pilot episode script (15-20 pages) formatted using Fountain." },
+      { month: "December", work: "Compile a digital anthology of Telugu/English stories for portfolio launch." }
+    ]
+  },
+  "Copywriter": {
+    desc: "Captions, ads, punchlines, marketing lines",
+    certs: ["Adweek Copywriting Masterclass", "Google Ads Search Certification"],
+    milestones: [
+      { month: "June", work: "Write 5 alternative landing page headlines and CTA copy variations for HireMap." },
+      { month: "July", work: "Create a copy spreadsheet with 15 ad hooks for student recruitment portals." },
+      { month: "August", work: "Draft e-commerce push notification copies and cart recovery email swipes." },
+      { month: "September", work: "Analyze and document CTR improvements from 3 different caption styles." },
+      { month: "October", work: "Write promotional taglines for local music events (BPL) targeting Gen-Z." },
+      { month: "November", work: "Create copy strategy guide for 3 hypothetical SaaS product launches." },
+      { month: "December", work: "Assemble copy swipe file with 50+ conversion copy templates and ads." }
+    ]
+  },
+  "Script Writer": {
+    desc: "YouTube, reels, short films, ads",
+    certs: ["YouTube Creator Academy Cert", "LinkedIn Video Scripting Specialist"],
+    milestones: [
+      { month: "June", work: "Write 2 YouTube script outlines using hook-body-transition-CTA formats." },
+      { month: "July", work: "Draft script for 5-minute video detailing player metrics for IPL datasets." },
+      { month: "August", work: "Create 6 short-form video (Reel/TikTok) script templates with audio/visual cues." },
+      { month: "September", work: "Script a technical explainer video for databases (PostgreSQL vs MongoDB)." },
+      { month: "October", work: "Write script for a collaborative podcast episode focusing on creator economy." },
+      { month: "November", work: "Draft script for a 3-part educational mini-series on data analytics." },
+      { month: "December", work: "Launch script repository containing 10 production-ready video scripts." }
+    ]
+  },
+  "Screenplay / Story Writer": {
+    desc: "Films, web series (long term)",
+    certs: ["Sundance Collab Screenwriting Certificate", "Final Draft Certified User"],
+    milestones: [
+      { month: "June", work: "Draft a 1-page logline and structural beat-sheet for a web series concept." },
+      { month: "July", work: "Write Act I (10 pages) of web series pilot in Fountain script format." },
+      { month: "August", work: "Outline Act II subplots and tension graphs for the web series." },
+      { month: "September", work: "Complete detailed character arcs and relationship charts." },
+      { month: "October", work: "Write Act III and finalize the first draft of the pilot episode (25 pages)." },
+      { month: "November", work: "Format and polish the pilot script; seek peer reviews on Sahitya Rachanalu." },
+      { month: "December", work: "Assemble web series Bible (Character sheets, Season Arc, Pilot Script) for pitching." }
+    ]
+  },
+  "Lyricist": {
+    desc: "Songs, indie music, reels",
+    certs: ["Berklee College: Songwriting Certificate", "Sahitya Rachanalu Lyrics Contributor"],
+    milestones: [
+      { month: "June", work: "Write 2 song concepts (theme, structure, rhyming scheme) in Telugu/English." },
+      { month: "July", work: "Draft lyrics for a Telugu indie song and publish on Sahitya Rachanalu." },
+      { month: "August", work: "Create 3 viral musical hook lines for Instagram Reels/TikTok audio trends." },
+      { month: "September", work: "Write complete lyrics for a song themed around Hyderabad's local band scene." },
+      { month: "October", work: "Build Spotify-style interactive lyric-card visual layouts (React components)." },
+      { month: "November", work: "Collaborate with a local band to write lyrics for a live performance." },
+      { month: "December", work: "Publish digital Lyric Book PDF containing 10 original compositions." }
+    ]
+  },
+  "Sports Content Writer": {
+    desc: "Cricket pages, apps, sites",
+    certs: ["Kaggle Sports Contributor Badge", "Sports Journalism Basics"],
+    milestones: [
+      { month: "June", work: "Write 3 statistical match previews comparing bowler econ rates in powerplays." },
+      { month: "July", work: "Publish mid-season IPL auction performance reviews on Kaggle/Substack." },
+      { month: "August", work: "Write player profile deep-dives focusing on strike rates against spin." },
+      { month: "September", work: "Create interactive match analysis reports with graphs (Streamlit links)." },
+      { month: "October", work: "Write 2 Substack newsletter issues analyzing team qualification scenarios." },
+      { month: "November", work: "Create interactive quiz content and trivia copy for sports pages." },
+      { month: "December", work: "Compile Sports Content Portfolio containing 5 analytical articles and a Substack page." }
+    ]
+  },
+  "Film Critic / Reviewer": {
+    desc: "YouTube, blogs, pages, analytics overlay",
+    certs: ["IMDb Top Reviewer Badge", "Film Criticism & Studies Certification"],
+    milestones: [
+      { month: "June", work: "Write 2 film reviews focusing on screenplay structure and character arcs." },
+      { month: "July", work: "Draft a director profile deep-dive analyzing recurring visual motifs." },
+      { month: "August", work: "Design graphic overlays and analysis slides for video essays." },
+      { month: "September", work: "Build interactive cinematic watch-list database in Notion/HTML." },
+      { month: "October", work: "Write a script for a 10-minute video essay on color theory in cinema." },
+      { month: "November", work: "Publish 4 Telugu film reviews on Sahitya Rachanalu." },
+      { month: "December", work: "Compile film critic portfolio featuring 10+ reviews and 2 video scripts." }
+    ]
+  },
+  "Social Media Strategist": {
+    desc: "Ideas + captions + content calendars",
+    certs: ["HubSpot Social Media Certification", "Google Analytics (GA4) Certification"],
+    milestones: [
+      { month: "June", work: "Conduct social media audit report for Sahitya Rachanalu profile." },
+      { month: "July", work: "Create a 1-month content calendar (15 posts) in Google Sheets." },
+      { month: "August", work: "Design analytics dashboards tracking engagement rates and reach." },
+      { month: "September", work: "Pitch growth strategy plan containing user-generated content ideas." },
+      { month: "October", work: "Setup automated cross-posting workflows using Make/Zapier." },
+      { month: "November", work: "Design 30-day Reels growth strategy doc with conversion tracking." },
+      { month: "December", work: "Launch full brand social media kit including templates and guides." }
+    ]
+  }
+};
+
 function Roadmap() {
   const [activeTab, setActiveTab] = useState("overview");
   const [selectedMonth, setSelectedMonth] = useState(0);
@@ -829,6 +949,7 @@ function Roadmap() {
   const [checklist, setChecklist] = useState(finalChecklist.map(i => ({ ...i })));
   const [expandedSkill, setExpandedSkill] = useState(null);
   const [domainFilter, setDomainFilter] = useState("All");
+  const [selectedCreativeRole, setSelectedCreativeRole] = useState("Content Writer");
   
 
   const [completedTasks, setCompletedTasks] = React.useState(() => {
@@ -1562,24 +1683,57 @@ const tabs = [
             </h2>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
-                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>WRITING ROLES TO TARGET</div>
-                {[
-                  { role: "Content Writer", desc: "Blogs, posts, LinkedIn articles" },
-                  { role: "Creative Writer", desc: "Stories, scripts, reel concepts" },
-                  { role: "Copywriter", desc: "Captions, ads, punchlines, marketing lines" },
-                  { role: "Script Writer", desc: "YouTube, reels, short films, ads" },
-                  { role: "Screenplay / Story Writer", desc: "Films, web series (long term)" },
-                  { role: "Lyricist", desc: "Songs, indie music, reels" },
-                  { role: "Sports Content Writer", desc: "Cricket pages, apps, sites" },
-                  { role: "Film Critic / Reviewer", desc: "YouTube, blogs, pages, analytics overlay" },
-                  { role: "Social Media Strategist", desc: "Ideas + captions + content calendars" },
-                ].map(r => (
-                  <div key={r.role} style={{ display: "flex", justifyContent: "space-between", padding: "6px 0", borderBottom: `1px solid ${BORDER}` }}>
-                    <span style={{ fontSize: 12, fontWeight: 700 }}>{r.role}</span>
-                    <span style={{ fontSize: 11, color: MUTED, maxWidth: 160, textAlign: "right" }}>{r.desc}</span>
+              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 20, display: "flex", flexDirection: "column", gap: 16 }}>
+                <div>
+                  <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>✍️ CREATIVE PORTFOLIO ROADMAP</div>
+                  <div style={{ fontSize: 11, color: MUTED, marginBottom: 12, lineHeight: 1.5 }}>
+                    Select a target creative role to view certifications and month-by-month portfolio deliverables from June to December.
                   </div>
-                ))}
+                  <select 
+                    value={selectedCreativeRole} 
+                    onChange={(e) => setSelectedCreativeRole(e.target.value)}
+                    style={{
+                      width: "100%",
+                      padding: "8px 12px",
+                      background: "#0F172A",
+                      border: `1px solid ${BORDER}`,
+                      borderRadius: 4,
+                      color: TEXT,
+                      fontSize: 12,
+                      fontFamily: "inherit",
+                      outline: "none",
+                      cursor: "pointer"
+                    }}
+                  >
+                    {Object.keys(CREATIVE_ROLES_DATA).map(role => (
+                      <option key={role} value={role}>{role} ({CREATIVE_ROLES_DATA[role].desc})</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div>
+                  <div style={{ fontSize: 10, color: ACCENT, letterSpacing: 1, textTransform: "uppercase", fontWeight: 700, marginBottom: 8 }}>🏅 Credentials / Certifications</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                    {CREATIVE_ROLES_DATA[selectedCreativeRole].certs.map(cert => (
+                      <span key={cert} className="skill-badge" style={{ background: "#2E1065", color: "#A78BFA", border: "1px solid #4C1D95", padding: "4px 8px", borderRadius: 2, fontSize: 10 }}>{cert}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ fontSize: 10, color: ACCENT, letterSpacing: 1, textTransform: "uppercase", fontWeight: 700, marginBottom: 12 }}>📅 Portfolio Deliverables Timeline</div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "250px", overflowY: "auto", paddingRight: 8 }}>
+                    {CREATIVE_ROLES_DATA[selectedCreativeRole].milestones.map((m, i) => (
+                      <div key={i} style={{ paddingBottom: 10, borderBottom: i === 6 ? "none" : `1px solid ${BORDER}20` }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+                          <span style={{ fontSize: 11, fontWeight: 700, color: "#FFF" }}>{m.month} Milestone</span>
+                          <span style={{ fontSize: 9, background: "#1E293B", color: MUTED, padding: "2px 6px", borderRadius: 2 }}>Demo / Work</span>
+                        </div>
+                        <p style={{ fontSize: 11, color: MUTED, lineHeight: 1.5 }}>{m.work}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
 
               <div>
@@ -1643,13 +1797,13 @@ const tabs = [
 const BASE_SKILLS = ["Python (basics)", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "MS Excel", "SEO Writing", "Content Strategy"];
 
 const MONTH_SKILLS = {
-  june: ["Logical Reasoning", "Advanced SQL", "Excel Power Query", "Schema Design", "Complexity Analysis", "OOPs"],
-  july: ["Quantitative Aptitude", "Python (Pandas/Seaborn)", "EDA", "KPI Design", "JavaScript (Core & DOM)", "DBMS"],
-  august: ["Verbal Ability", "Power BI", "DAX", "Funnel & Retention Analytics", "React hooks", "Operating Systems"],
-  september: ["Google Analytics", "SEO Architecture", "A/B Testing", "LTV/CAC", "Node.js", "Express", "MongoDB", "Computer Networks"],
-  october: ["NLP", "Prompt Engineering", "Make/Zapier Automations", "REST APIs", "PostgreSQL", "Greedy/DP Algorithms", "LLD"],
-  november: ["Predictive Modeling", "Financial Literacy", "Data Storytelling", "Time Series Forecasting", "Advanced Trees/Trie", "HLD"],
-  december: ["Consolidation & Case Studies", "System Design Mock Interviews", "Backtracking", "Divide and Conquer", "Mock Aptitude Tests"]
+  june: ["Logical Reasoning", "Advanced SQL", "Excel Power Query", "Schema Design (Process Mapping)", "Complexity Analysis", "OOPs"],
+  july: ["Quantitative Aptitude", "Python (Pandas/Seaborn)", "EDA & Data Interpretation", "KPI Design (Product Metrics)", "JavaScript (Core & DOM)", "DBMS"],
+  august: ["Verbal Ability", "Power BI & Data Visualization", "DAX Modeling", "Funnel & Retention Analytics", "React hooks", "Operating Systems"],
+  september: ["Google Analytics & GA4", "SEO Architecture & Keyword Research", "A/B Testing", "LTV/CAC Metrics", "Node.js", "Express", "MongoDB", "Computer Networks"],
+  october: ["NLP & Text Analytics", "Prompt Engineering", "Make/Zapier Automations", "REST APIs & PostgreSQL", "Audience Research & Campaign Planning", "Greedy/DP Algorithms", "LLD"],
+  november: ["Predictive Modeling", "Financial Literacy & Accounting basics", "Data Storytelling & Stakeholder Communication", "Financial Modeling & Time Series Forecasting", "Advanced Trees/Trie", "HLD"],
+  december: ["Consolidation & Case Studies (Business Problem Framing)", "System Design Mock Interviews", "Backtracking", "Divide and Conquer", "Mock Aptitude Tests"]
 };
 
 function getDynamicSummary(role, monthIndex) {
@@ -2090,10 +2244,78 @@ function ResumeATSAnalyzer() {
   const allCurrentSkills = new Set(dynamicResume.skills.current.map(s => s.toLowerCase()));
   const allLearningSkills = new Set(dynamicResume.skills.learning.map(s => s.toLowerCase()));
 
+  const matchSkill = (mustHaveSkill, learnedSet) => {
+    const sl = mustHaveSkill.toLowerCase();
+    return [...learnedSet].some(s => {
+      const sLower = s.toLowerCase();
+      
+      // Direct / Substring matches
+      if (sLower === sl) return true;
+      if (sLower.includes(sl) || sl.includes(sLower)) return true;
+      
+      // SQL
+      if (sl === "sql" && sLower.includes("sql")) return true;
+      
+      // Python & Pandas
+      if (sl.includes("python") && sLower.includes("python")) return true;
+      if (sl.includes("pandas") && sLower.includes("pandas")) return true;
+      
+      // Excel & Sheets
+      if ((sl.includes("excel") || sl.includes("sheets")) && (sLower.includes("excel") || sLower.includes("sheets"))) return true;
+      
+      // Dashboards / Viz
+      if (sl.includes("dashboard") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("dashboard") || sLower.includes("visualization"))) return true;
+      if (sl.includes("visualization") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("seaborn") || sLower.includes("matplotlib") || sLower.includes("visualization"))) return true;
+      
+      // Stats / Analysis / Thinking
+      if (sl.includes("statistical") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
+      if (sl.includes("statistics") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning"))) return true;
+      if (sl.includes("interpretation") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("interpretation"))) return true;
+      if (sl.includes("thinking") && (sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
+      
+      // Product metrics / Funnel / Cohort / Analytics
+      if (sl.includes("product metrics") && (sLower.includes("kpi") || sLower.includes("funnel") || sLower.includes("ltv/cac") || sLower.includes("analytics") || sLower.includes("metrics") || sLower.includes("retention"))) return true;
+      if (sl.includes("funnel") && sLower.includes("funnel")) return true;
+      if (sl.includes("retention") && sLower.includes("retention")) return true;
+      
+      // A/B Testing
+      if (sl.includes("a/b testing") && sLower.includes("a/b testing")) return true;
+      
+      // User Journey / Process Mapping
+      if (sl.includes("user journey") && (sLower.includes("funnel") || sLower.includes("process") || sLower.includes("schema design"))) return true;
+      if (sl.includes("process mapping") && (sLower.includes("schema design") || sLower.includes("process") || sLower.includes("workflow") || sLower.includes("design"))) return true;
+      
+      // Business Framing / Stakeholder / Storytelling
+      if (sl.includes("business problem") && (sLower.includes("case study") || sLower.includes("case studies") || sLower.includes("storytelling") || sLower.includes("framing") || sLower.includes("consolidation"))) return true;
+      if (sl.includes("stakeholder") && (sLower.includes("storytelling") || sLower.includes("communication"))) return true;
+      if (sl.includes("storytelling") && sLower.includes("storytelling")) return true;
+      
+      // SEO & Content Strategy
+      if (sl.includes("seo") && sLower.includes("seo")) return true;
+      if (sl.includes("content strategy") && sLower.includes("content strategy")) return true;
+      if (sl.includes("social media") && (sLower.includes("content strategy") || sLower.includes("growth") || sLower.includes("social media"))) return true;
+      
+      // Sports Domain
+      if (sl.includes("sports domain") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
+      if (sl.includes("sports") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
+      
+      // Financial
+      if (sl.includes("financial modeling") && (sLower.includes("financial") || sLower.includes("forecasting") || sLower.includes("modeling"))) return true;
+      if (sl.includes("accounting") && (sLower.includes("financial literacy") || sLower.includes("accounting"))) return true;
+
+      // Audience / Campaign / Keyword / Technical SEO
+      if (sl.includes("audience research") && (sLower.includes("analytics") || sLower.includes("seo") || sLower.includes("audience") || sLower.includes("campaign"))) return true;
+      if (sl.includes("campaign planning") && (sLower.includes("content strategy") || sLower.includes("seo") || sLower.includes("campaign"))) return true;
+      if (sl.includes("keyword research") && (sLower.includes("seo") || sLower.includes("keyword"))) return true;
+      if (sl.includes("optimization") && (sLower.includes("seo") || sLower.includes("optimization"))) return true;
+      
+      return false;
+    });
+  };
+
   const getSkillStatus = (skill, currentSet, learningSet) => {
-    const sl = skill.toLowerCase();
-    if ([...currentSet].some(s => sl.includes(s) || s.includes(sl.split(" ")[0]))) return "have";
-    if ([...learningSet].some(s => sl.includes(s) || s.includes(sl.split(" ")[0]))) return "learning";
+    if (matchSkill(skill, currentSet)) return "have";
+    if (matchSkill(skill, learningSet)) return "learning";
     return "gap";
   };
 
@@ -2110,6 +2332,14 @@ function ResumeATSAnalyzer() {
   const learningCount = mustHaveAnalysis.filter(s => s.status === "learning").length;
   const gapCount = mustHaveAnalysis.filter(s => s.status === "gap").length;
   const atsScore = Math.round(((haveCount + learningCount * 0.5) / role.must_have.length) * 100);
+
+  const calculateAtsScore = (roleName) => {
+    const roleReq = roleRequirements[roleName];
+    if (!roleReq) return 0;
+    const have = roleReq.must_have.filter(skill => matchSkill(skill, allCurrentSkills)).length;
+    const learning = roleReq.must_have.filter(skill => matchSkill(skill, allLearningSkills)).length;
+    return Math.round(((have + learning * 0.5) / roleReq.must_have.length) * 100);
+  };
 
   return (
     <div style={{ fontFamily: "'IBM Plex Mono', 'Courier New', monospace", background: "#0A0A0F", minHeight: "100vh", color: "#E2E8F0", padding: "0" }}>
@@ -2347,6 +2577,55 @@ function ResumeATSAnalyzer() {
 
         {activeTab === "roadmap" && (
           <div>
+            {/* Role Eligibility Grid */}
+            <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20, marginBottom: 28 }}>
+              <div style={{ fontSize: 9, letterSpacing: 3, color: "#94A3B8", textTransform: "uppercase", marginBottom: 16 }}>
+                💼 Role Eligibility Overview (At Selected Milestone)
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 12 }}>
+                {Object.keys(roleRequirements).map(rName => {
+                  const score = calculateAtsScore(rName);
+                  let statusLabel = "";
+                  let statusColor = "";
+                  if (score >= 75) {
+                    statusLabel = "✓ Eligible & Match Ready";
+                    statusColor = "#34D399"; // Green
+                  } else if (score >= 50) {
+                    statusLabel = "⟳ Partially Match (Learning)";
+                    statusColor = "#FCD34D"; // Yellow
+                  } else {
+                    statusLabel = "✗ Gap / In Training";
+                    statusColor = "#EF4444"; // Red
+                  }
+                  
+                  const isCurrentTarget = activeRole === rName;
+
+                  return (
+                    <div 
+                      key={rName} 
+                      onClick={() => setActiveRole(rName)}
+                      style={{ 
+                        display: "flex", 
+                        justifyContent: "space-between", 
+                        alignItems: "center", 
+                        padding: "12px 16px", 
+                        background: isCurrentTarget ? "#1E293B" : "#090D16", 
+                        border: isCurrentTarget ? `1px solid ${roleRequirements[rName].color}` : "1px solid #1E293B",
+                        borderRadius: 4,
+                        cursor: "pointer",
+                        transition: "all 0.2s"
+                      }}
+                    >
+                      <div>
+                        <div style={{ fontSize: 11, fontWeight: 700, color: isCurrentTarget ? "#FFF" : "#94A3B8" }}>{rName}</div>
+                        <div style={{ fontSize: 9, color: statusColor, marginTop: 4, fontWeight: 600 }}>{statusLabel}</div>
+                      </div>
+                      <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 28, color: statusColor, marginLeft: 12 }}>{score}%</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
             <div style={{ marginBottom: 28 }}>
               <div className="section-label">Project Timeline & Skill Build</div>
               {[
