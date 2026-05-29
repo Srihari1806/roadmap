@@ -867,14 +867,12 @@ function Roadmap() {
 
 const tabs = [
     { id: "overview", label: "🗺️ Overview" },
-    { id: "resume", label: "📄 Resume Builder" },
-    { id: "ats", label: "🎯 ATS Gap Analyzer" },
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
     { id: "monthly", label: "📅 6-Month Plan" },
-    { id: "roadmap", label: "🛠️ Skills Roadmap" },
     { id: "mastery", label: "Mastery Plan", href: "mastery.html" },
+    { id: "skills", label: "🛠️ Skills" },
     { id: "checklist", label: "✅ Checklist" },
   ];
 
