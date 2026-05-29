@@ -50,7 +50,7 @@ const RED = "#EF4444";
 const months = [
   {
     month: 1,
-    title: "Jul 2025: Foundations & IPL Data Analytics",
+    title: "Jun 2026: Foundations & IPL Data Analytics",
     theme: "Data Collection & Exploratory Analysis",
     color: BLUE,
     focusRoles: ["Data Analyst", "Sports Analyst"],
@@ -59,14 +59,14 @@ const months = [
     tasks: [
       { task: "Learn SQL basics (SELECT, JOINs, Group By)", type: "sql" },
       { task: "Learn Python Pandas & Matplotlib basics", type: "analytics" },
-      { task: "Clean & Prep IPL dataset (2008-2025)", type: "project" },
+      { task: "Clean & Prep IPL dataset (2008-2026)", type: "project" },
       { task: "Build Sports Intelligence & Fan Psychology Layers", type: "project" },
       { task: "Publish 1st Kaggle Notebook with commentary", type: "portfolio" }
     ]
   },
   {
     month: 2,
-    title: "Aug 2025: Advanced Sports Analytics & BPL",
+    title: "Jul 2026: Advanced Sports Analytics & BPL",
     theme: "Benchmarking & Storytelling",
     color: PURPLE,
     focusRoles: ["Sports Analyst", "Product Analyst"],
@@ -82,7 +82,7 @@ const months = [
   },
   {
     month: 3,
-    title: "Sep 2025: E-Commerce & Business KPIs",
+    title: "Aug 2026: E-Commerce & Business KPIs",
     theme: "Funnel Analysis & Revenue Metrics",
     color: GREEN,
     focusRoles: ["Business Analyst", "Data Analyst"],
@@ -98,7 +98,7 @@ const months = [
   },
   {
     month: 4,
-    title: "Oct 2025: Growth & Financial Modeling",
+    title: "Sep 2026: Growth & Financial Modeling",
     theme: "LTV, CAC & Conglomerate Strategy",
     color: ACCENT,
     focusRoles: ["Growth Analyst", "Financial Analyst", "Strategy Analyst"],
@@ -113,7 +113,7 @@ const months = [
   },
   {
     month: 5,
-    title: "Nov 2025: OTT Content & Product Analytics",
+    title: "Oct 2026: OTT Content & Product Analytics",
     theme: "Retention & Churn Modeling",
     color: RED,
     focusRoles: ["Product Analyst", "Data Analyst"],
@@ -128,7 +128,7 @@ const months = [
   },
   {
     month: 6,
-    title: "Dec 2025: OTT Strategy & Launch",
+    title: "Nov-Dec 2026: OTT Strategy & Launch",
     theme: "Macro Economics & Interview Prep",
     color: BLUE,
     focusRoles: ["Strategy Analyst", "Business Analyst"],
@@ -292,11 +292,12 @@ const projectsData = [
       },
     ],
     deliverables: [
-      { icon: "🌐", label: "Live Website", desc: "Vercel-hosted interactive site — all 10 layers as separate pages with charts + filters" },
-      { icon: "📊", label: "Power BI Dashboard", desc: "Multi-role intelligence dashboard with 10 detailed slicers" },
-      { icon: "📝", label: "Blog Series", desc: "'IPL: The Attention Economy' · 'Why Dhoni is a Retention Engineer' · 'The Clutch Index'" },
-      { icon: "📄", label: "Deep Report (PDF)", desc: "15-page McKinsey-style 'IPL Intelligence Ecosystem' report" },
-      { icon: "📱", label: "LinkedIn Series", desc: "10-part visual breakdown of each intelligence layer" },
+{
+    label: "Live Website", desc: "Vercel-hosted interactive site — all 10 layers as separate pages with charts + filters" },
+    { icon: "📊", label: "Power BI Dashboard", desc: "Multi-role intelligence dashboard with 10 detailed slicers" },
+    { icon: "📝", label: "Blog Series", desc: "'IPL: The Attention Economy' · 'Why Dhoni is a Retention Engineer' · 'The Clutch Index'" },
+    { icon: "📄", label: "Deep Report (PDF)", desc: "15-page McKinsey-style 'IPL Intelligence Ecosystem' report" },
+    { icon: "📱", label: "LinkedIn Series", desc: "10-part visual breakdown of each intelligence layer" },
     ],
     roleMap: [
       { section: "Sports Intelligence", role: "Sports Analyst" },
@@ -450,7 +451,7 @@ const projectsData = [
     title: "E-Commerce + Ads System",
     subtitle: "Sales · Psychology · Quick Commerce · Offline Impact · Conglomerates",
     accentColor: "#2ECC71",
-    deliverable: "Interactive website with 9 analysis modules — redirects from portfolio",
+    deliverable: "Interactive website with 9 analysis modules — embedded in portfolio",
     metaInsight: '"E-commerce is not selling products. It is controlling attention, behavior, logistics, and ecosystems."',
     layers: [
       {
@@ -914,9 +915,9 @@ const tabs = [
           <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.5, fontFamily: "'DM Mono', monospace" }}>
             Srihari's <span style={{ color: ACCENT }}>Analyst</span> Launch Plan
           </h1>
-          <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
-            Jul 2025 → Dec 2025 · 4 Projects · 2 Platforms · 20+ Applications
-          </p>
+<p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
+             Jun 2026 → Nov-Dec 2026 · 4 Projects · 2 Platforms · 20+ Applications
+           </p>
         </div>
       </div>
 
@@ -1659,10 +1660,10 @@ const resumeData = {
     {
       id: "ipl",
       title: "IPL Analytics Dashboard",
-      status: "In Progress (Jul 2025)",
+      status: "In Progress (Jun 2026)",
       tags: ["Python", "Pandas", "Matplotlib", "Kaggle", "Sports Analytics"],
       bullets: [
-        "Analyzed 2008–2025 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
+        "Analyzed 2008–2026 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
         "Built interactive visualizations: top scorers, wicket-takers, team win rates, and season-wise run trends",
         "Identified partnership patterns and powerplay impact using aggregated match-level data",
         "Publishing findings as a public Kaggle notebook with storytelling commentary",
@@ -1672,7 +1673,7 @@ const resumeData = {
     {
       id: "bpl",
       title: "BPL (Bangladesh Premier League) Analytics",
-      status: "Planned: Jul–Aug 2025",
+      status: "Planned: Jun–Jul 2026",
       tags: ["Python", "Sports Analytics", "Cricket"],
       bullets: [
         "Will extend IPL methodology to BPL — cross-league performance benchmarking",
@@ -1683,7 +1684,7 @@ const resumeData = {
     {
       id: "ecom",
       title: "E-Commerce Analytics Project",
-      status: "Planned: Sep–Oct 2025",
+      status: "Planned: Aug–Sep 2026",
       tags: ["SQL", "Python", "Business Analysis", "Funnel Analytics"],
       bullets: [
         "Will analyze user funnel, cart abandonment, and revenue attribution using mock or public datasets",
@@ -1694,7 +1695,7 @@ const resumeData = {
     {
       id: "ott",
       title: "OTT Platform Analytics",
-      status: "Planned: Nov–Dec 2025",
+      status: "Planned: Oct–Nov 2026",
       tags: ["Python", "Content Analytics", "Product Analytics", "Recommendation Systems"],
       bullets: [
         "Will analyze content engagement, churn prediction, and genre/language preferences",
@@ -2024,10 +2025,10 @@ function ResumeATSAnalyzer() {
             <div style={{ marginBottom: 28 }}>
               <div className="section-label">Project Timeline & Skill Build</div>
               {[
-                { month: "Now → Jul 2025", project: "IPL Analytics Dashboard", skills: ["Python/Pandas", "Matplotlib/Seaborn", "Kaggle", "Data Storytelling"], color: "#3B82F6", status: "active" },
-                { month: "Jul → Aug 2025", project: "BPL Analytics", skills: ["Cross-dataset joins", "Player benchmarking", "Aggregations", "Notebook narrative"], color: "#8B5CF6", status: "next" },
-                { month: "Sep → Oct 2025", project: "E-Commerce Analytics", skills: ["SQL (must!)", "Funnel analysis", "Cohort retention", "Business KPIs", "Power BI/Tableau"], color: "#10B981", status: "planned" },
-                { month: "Nov → Dec 2025", project: "OTT Platform Analytics", skills: ["Content analytics", "Churn modeling", "Feature adoption", "Mixpanel-style metrics"], color: "#F59E0B", status: "planned" },
+                { month: "Now → Jun 2026", project: "IPL Analytics Dashboard", skills: ["Python/Pandas", "Matplotlib/Seaborn", "Kaggle", "Data Storytelling"], color: "#3B82F6", status: "active" },
+                { month: "Jun → Jul 2026", project: "BPL Analytics", skills: ["Cross-dataset joins", "Player benchmarking", "Aggregations", "Notebook narrative"], color: "#8B5CF6", status: "next" },
+                { month: "Aug → Sep 2026", project: "E-Commerce Analytics", skills: ["SQL (must!)", "Funnel analysis", "Cohort retention", "Business KPIs", "Power BI/Tableau"], color: "#10B981", status: "planned" },
+                { month: "Oct → Nov 2026", project: "OTT Platform Analytics", skills: ["Content analytics", "Churn modeling", "Feature adoption", "Mixpanel-style metrics"], color: "#F59E0B", status: "planned" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 20, marginBottom: 20 }}>
                   <div style={{ width: 130, flexShrink: 0, paddingTop: 4 }}>
