@@ -25,7 +25,7 @@
       <div style="max-width:520px;line-height:1.6;">
         <h1 style="font-size:22px;margin:0 0 8px;color:#F4A72A;">Roadmap is loading...</h1>
         <p style="margin:0 0 16px;color:#9A9AB3;">If this message stays visible, the React/Babel CDN script did not finish loading.</p>
-        <a href="mastery.html" style="color:#F4A72A;font-weight:700;">Open the Skill Mastery Plan</a>
+    <button onclick="window.dispatchEvent(new CustomEvent('openMasteryInternal'))" style="color:#F4A72A;font-weight:700;background:none;border:none;cursor:pointer;">Open the Skill Mastery Plan</button>
       </div>
     </div>
   </div>
@@ -906,7 +906,7 @@ const tabs = [
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
     { id: "monthly", label: "📅 6-Month Plan" },
-    { id: "mastery", label: "📚 Mastery Plan", href: "mastery.html" },
+    { id: "mastery", label: "📚 Mastery Plan" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "checklist", label: "✅ Checklist" },
   ];
