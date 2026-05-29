@@ -993,7 +993,7 @@ const tabs = [
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
-    { id: "monthly", label: "📅 60-Day Plan" },
+    { id: "monthly", label: "📅 6-Month Plan" },
     { id: "skills", label: "🛠️ Skills" }
   ];
 
@@ -1029,14 +1029,14 @@ const tabs = [
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 4 }}>
             <span style={{ fontSize: 20 }}>🚀</span>
             <span style={{ color: ACCENT, fontSize: 11, letterSpacing: 3, fontWeight: 700, textTransform: "uppercase" }}>
-              60-Day Execution Roadmap
+              6-Month Execution Roadmap
             </span>
           </div>
           <h1 style={{ margin: 0, fontSize: 22, fontWeight: 800, letterSpacing: -0.5, fontFamily: "'DM Mono', monospace" }}>
             Srihari's <span style={{ color: ACCENT }}>Analyst</span> Launch Plan
           </h1>
           <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
-             60 Days · 4+ Projects · 2 Platforms · 4 Target Roles
+             180 Days · 4+ Projects · 2 Platforms · 4 Target Roles
           </p>
         </div>
       </div>
@@ -1080,7 +1080,7 @@ const tabs = [
             {/* Stats bar */}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 24 }}>
               {[
-                { label: "Days", value: "60", color: ACCENT },
+                { label: "Days", value: "180", color: ACCENT },
                 { label: "Projects", value: "4+", color: BLUE },
                 { label: "Platforms", value: "2", color: PURPLE },
                 { label: "Target Roles", value: "4", color: GREEN },
