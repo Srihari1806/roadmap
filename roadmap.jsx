@@ -868,11 +868,11 @@ function Roadmap() {
 
 const tabs = [
     { id: "overview", label: "🗺️ Overview" },
+    { id: "skillmap", label: "🗺️ Skill Map", href: "./skill-map.html" },
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
     { id: "monthly", label: "📅 6-Month Plan" },
-    { id: "mastery", label: "📚 Mastery Plan", href: "mastery.html" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "checklist", label: "✅ Checklist" },
   ];

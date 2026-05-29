@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srihari's Interactive Skill Map | Execution Roadmap</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #0A0A0F;
+      --card: #111118;
+      --border: #1E1E2E;
+      --text: #E8E8F0;
+      --muted: #6B6B8A;
+      --accent: #F4A72A;
+      --green: #2ECC71;
+      
+      --color-aptitude: #F59E0B;
+      --color-analyst: #3B82F6;
+      --color-project: #10B981;
+      --color-dsa: #8B5CF6;
+      --color-fullstack: #EC4899;
+      --color-cscore: #EF4444;
+      --color-personal: #F4A72A;
+
+      --rgb-aptitude: 245, 158, 11;
+      --rgb-analyst: 59, 130, 246;
+      --rgb-project: 16, 185, 129;
+      --rgb-dsa: 139, 92, 246;
+      --rgb-fullstack: 236, 72, 153;
+      --rgb-cscore: 239, 68, 68;
+      --rgb-personal: 244, 167, 42;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--muted);
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #0A0A0F 0%, #12121E 50%, #0A0A0F 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 24px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'DM Mono', monospace;
+      transition: all 0.2s ease;
+    }
+    .back-btn:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      transform: translateX(-2px);
+    }
+    .header-title-area {
+      flex: 1;
+      min-width: 280px;
+    }
+    .header-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .header-tag {
+      color: var(--accent);
+      font-size: 10px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: 'DM Mono', monospace;
+    }
+    .header-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .header-title span {
+      color: var(--accent);
+    }
+    .header-desc {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    /* Controls: Search & Filters */
+    .controls-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.03);
+      padding-top: 16px;
+    }
+    .search-wrapper {
+      position: relative;
+      flex: 1;
+      min-width: 250px;
+      max-width: 400px;
+    }
+    .search-input {
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      padding: 10px 16px 10px 38px;
+      font-size: 13px;
+      outline: none;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 10px rgba(244, 167, 42, 0.1);
+    }
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+      font-size: 14px;
+    }
+    .filters-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-label {
+      font-size: 11px;
+      color: var(--muted);
+      font-family: 'DM Mono', monospace;
+      text-transform: uppercase;
+      margin-right: 4px;
+    }
+    .filter-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: 'DM Mono', monospace;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+
+    /* Overall Progress Bar */
+    .progress-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 320px;
+    }
+    .progress-info {
+      flex: 1;
+    }
+    .progress-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .progress-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-family: 'DM Mono', monospace;
+    }
+    .progress-percentage {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--green);
+    }
+    .progress-bar-bg {
+      background: rgba(255,255,255,0.05);
+      border-radius: 3px;
+      height: 6px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      background: linear-gradient(90deg, var(--accent), var(--green));
+      height: 100%;
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+
+    /* Main Container & Board Grid */
+    main {
+      max-width: 1400px;
+      margin: 32px auto;
+      padding: 0 24px 60px;
+    }
+
+    .grid-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 24px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.01);
+      border: 1px solid var(--border);
+    }
+
+    .board-grid {
+      display: grid;
+      /* Month Title Column + 7 Track Columns */
+      grid-template-columns: 140px repeat(7, minmax(190px, 1fr));
+      min-width: 1500px; /* Forces horizontal scroll on lower viewports */
+    }
+
+    /* Column Headers */
+    .grid-header-cell {
+      padding: 20px 16px;
+      border-bottom: 2px solid var(--border);
+      background: #0d0d14;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .grid-header-cell:not(:last-child) {
+      border-right: 1px solid var(--border);
+    }
+    .grid-header-cell.month-col {
+      background: #09090e;
+      color: var(--muted);
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+    }
+
+    /* Row Cells */
+    .grid-cell {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .grid-cell:not(:last-child) {
+      border-right: 1px solid var(--border);
+    }
+    
+    .grid-cell.month-label-cell {
+      background: rgba(255,255,255,0.01);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-right: 2px solid var(--border);
+    }
+    .month-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -0.5px;
+    }
+    .month-theme {
+      font-size: 10px;
+      color: var(--muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      font-family: 'DM Mono', monospace;
+      line-height: 1.3;
+    }
+
+    /* Skill Card style */
+    .skill-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      min-height: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 1;
+    }
+    .skill-card::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      bottom: 12px;
+      width: 3px;
+      border-radius: 0 4px 4px 0;
+      background: var(--track-color);
+      transition: width 0.2s ease;
+    }
+    .skill-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--track-color);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .skill-card:hover::before {
+      width: 5px;
+    }
+    .skill-card.active {
+      border-color: var(--track-color) !important;
+      background: rgba(255, 255, 255, 0.02) !important;
+    }
+    .skill-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 8px;
+      word-break: break-word;
+    }
+    .skill-card-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+    }
+    .skill-type-pill {
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--track-color);
+      background: rgba(var(--track-color-rgb), 0.1);
+      border: 1px solid rgba(var(--track-color-rgb), 0.2);
+      padding: 1px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-family: 'DM Mono', monospace;
+    }
+    .skill-status-icon {
+      font-size: 12px;
+      color: var(--green);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .skill-card.mastered {
+      background: rgba(46, 204, 113, 0.03);
+      border-color: rgba(46, 204, 113, 0.2);
+    }
+    .skill-card.mastered .skill-status-icon {
+      opacity: 1;
+    }
+
+    /* Dimmed columns for focus filtering */
+    .grid-cell.dimmed {
+      opacity: 0.15;
+    }
+
+    /* Right Side Drawer Panel */
+    .drawer-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(5, 5, 8, 0.85);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 999;
+    }
+    .drawer-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 500px;
+      height: 100vh;
+      background: #111118;
+      border-left: 1px solid var(--border);
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.6);
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+    }
+    .drawer.open {
+      transform: translateX(0);
+    }
+
+    .drawer-header {
+      padding: 24px 24px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+    }
+    .drawer-badges {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .drawer-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'DM Mono', monospace;
+      text-transform: uppercase;
+    }
+    .drawer-badge.track {
+      background: rgba(var(--track-badge-rgb, 255,255,255), 0.1);
+      color: var(--track-badge-color, var(--text));
+      border: 1px solid rgba(var(--track-badge-rgb, 255,255,255), 0.2);
+    }
+    .drawer-badge.month {
+      background: rgba(244, 167, 42, 0.1);
+      color: var(--accent);
+      border: 1px solid rgba(244, 167, 42, 0.2);
+    }
+    .drawer-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      padding-right: 32px;
+      line-height: 1.3;
+    }
+    .drawer-close {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      transition: color 0.2s ease;
+      line-height: 1;
+    }
+    .drawer-close:hover {
+      color: var(--text);
+    }
+
+    .drawer-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* Mastered Action Switch */
+    .mastery-toggle-box {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .mastery-toggle-box:hover {
+      background: rgba(46, 204, 113, 0.05);
+      border-color: rgba(46, 204, 113, 0.3);
+    }
+    .mastery-toggle-label {
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .mastery-checkbox {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-size: 11px;
+      font-weight: 900;
+      transition: all 0.2s ease;
+    }
+    .mastery-toggle-box.active {
+      border-color: var(--green);
+    }
+    .mastery-toggle-box.active .mastery-checkbox {
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    /* Drawer sections styling */
+    .drawer-section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-family: 'DM Mono', monospace;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      padding-bottom: 6px;
+    }
+    
+    .why-content {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text);
+      font-style: italic;
+      border-left: 2px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    /* Subtopics list */
+    .subtopics-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .subtopic-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .subtopic-bullet {
+      color: var(--accent);
+      margin-top: 2px;
+      font-size: 14px;
+    }
+    .subtopic-text strong {
+      color: var(--accent);
+    }
+
+    /* Resources Links */
+    .resources-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .resource-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .resource-link:hover {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.02);
+      transform: translateX(2px);
+    }
+    .resource-link-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: lowercase;
+    }
+    
+    @media (max-width: 600px) {
+      .drawer {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-top">
+        <div class="header-title-area">
+          <div class="header-subtitle">
+            <span class="header-tag">Interactive Skill Map</span>
+          </div>
+          <h1 class="header-title">Srihari's <span>Skill Map</span></h1>
+          <p class="header-desc">
+            7 Tracks × 7 Months comprehensive curriculum. Click any skill node to reveal topics, details, and free curated learning resources.
+          </p>
+        </div>
+        <div class="progress-box">
+          <div class="progress-info">
+            <div class="progress-title-row">
+              <span class="progress-title">Mastery Progress</span>
+              <span class="progress-percentage" id="mastery-percent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="mastery-fill"></div>
+            </div>
+          </div>
+        </div>
+        <a href="./index.html" class="back-btn">← Back to Roadmap</a>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls-row">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Search skills or subtopics (e.g. SQL, Recursion)..." />
+        </div>
+        <div class="filters-wrapper">
+          <span class="filter-label">Highlight Track:</span>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="aptitude" style="border-bottom: 2px solid var(--color-aptitude)">Aptitude</button>
+          <button class="filter-btn" data-filter="analyst" style="border-bottom: 2px solid var(--color-analyst)">Analyst</button>
+          <button class="filter-btn" data-filter="project" style="border-bottom: 2px solid var(--color-project)">Project</button>
+          <button class="filter-btn" data-filter="dsa" style="border-bottom: 2px solid var(--color-dsa)">DSA</button>
+          <button class="filter-btn" data-filter="fullstack" style="border-bottom: 2px solid var(--color-fullstack)">Full Stack</button>
+          <button class="filter-btn" data-filter="cscore" style="border-bottom: 2px solid var(--color-cscore)">CS Core</button>
+          <button class="filter-btn" data-filter="personal" style="border-bottom: 2px solid var(--color-personal)">Personal/BPL</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Board Grid -->
+  <main>
+    <div class="grid-wrapper">
+      <div class="board-grid" id="board-grid">
+        <!-- Will be dynamically populated via JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Backdrop for Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Detail Drawer -->
+  <div class="drawer" id="drawer">
+    <div class="drawer-header">
+      <div class="drawer-badges">
+        <span class="drawer-badge track" id="drawer-badge-track">Track</span>
+        <span class="drawer-badge month" id="drawer-badge-month">Month</span>
+      </div>
+      <h2 class="drawer-title" id="drawer-title">Skill Title</h2>
+      <button class="drawer-close" id="drawer-close">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <!-- Mastery Checker -->
+      <div class="mastery-toggle-box" id="mastery-toggle-box">
+        <span class="mastery-toggle-label">
+          <span class="mastery-checkbox" id="mastery-checkbox"></span>
+          Mark as Mastered
+        </span>
+      </div>
+
+      <!-- Why It Matters -->
+      <div>
+        <h3 class="drawer-section-title">Why This Matters</h3>
+        <p class="why-content" id="drawer-why">Reason for learning this skill.</p>
+      </div>
+
+      <!-- Key Subtopics -->
+      <div>
+        <h3 class="drawer-section-title" id="drawer-subtopics-header">Detailed Subtopics</h3>
+        <ul class="subtopics-list" id="drawer-subtopics">
+          <!-- Dynamic topics -->
+        </ul>
+      </div>
+
+      <!-- Curated Resources -->
+      <div>
+        <h3 class="drawer-section-title">Curated Learning Resources</h3>
+        <div class="resources-container" id="drawer-resources">
+          <!-- Dynamic links -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data & Logic -->
+  <script>
+    // Config values matching CSS track variables
+    const trackConfig = {
+      aptitude: { label: 'Aptitude', color: 'var(--color-aptitude)', rgb: 'var(--rgb-aptitude)' },
+      analyst: { label: 'Analyst', color: 'var(--color-analyst)', rgb: 'var(--rgb-analyst)' },
+      project: { label: 'Project', color: 'var(--color-project)', rgb: 'var(--rgb-project)' },
+      dsa: { label: 'DSA', color: 'var(--color-dsa)', rgb: 'var(--rgb-dsa)' },
+      fullstack: { label: 'Full Stack', color: 'var(--color-fullstack)', rgb: 'var(--rgb-fullstack)' },
+      cscore: { label: 'CS Core', color: 'var(--color-cscore)', rgb: 'var(--rgb-cscore)' },
+      personal: { label: 'Personal/BPL', color: 'var(--color-personal)', rgb: 'var(--rgb-personal)' }
+    };
+
+    const monthsInfo = [
+      { name: 'JUNE', theme: 'Foundation' },
+      { name: 'JULY', theme: 'Core Tools' },
+      { name: 'AUGUST', theme: 'Intermediate' },
+      { name: 'SEPTEMBER', theme: 'Advanced' },
+      { name: 'OCTOBER', theme: 'Complex' },
+      { name: 'NOVEMBER', theme: 'Specialization' },
+      { name: 'DECEMBER', theme: 'Final Consolid.' }
+    ];
+
+    // Rich detailed database for all 49 skills
+    const skillsData = {
+      // --- JUNE ---
+      'june-aptitude': {
+        title: 'Logical Reasoning Foundation',
+        track: 'aptitude',
+        month: 'JUNE',
+        why: 'Crucial for passing the first screening test at top companies.',
+        subtopics: [
+          '**Syllogism**: All/some statements, Venn diagram mapping, deductive logic.',
+          '**Blood Relations**: Relation trees, coded relationships, direct statements.',
+          '**Coding-Decoding**: Letter shifts, numerical encodings, conditional codes.',
+          '**Seating Arrangements**: Linear, circular, face-inward/outward configurations.',
+          '**Directions & Distances**: Pythagorean theorem layout, shadow problems, turn angles.',
+          '**Clock & Calendar**: Angle between hands, calendar day calculations, leap year logics.'
+        ],
+        resources: [
+          { name: 'IndiaBIX Logical Reasoning', url: 'https://www.indiabix.com/logical-reasoning/questions-and-answers/' },
+          { name: 'GeeksforGeeks Logical Practice', url: 'https://www.geeksforgeeks.org/logical-reasoning/' }
+        ]
+      },
+      'june-analyst': {
+        title: 'Advanced SQL, Excel Power Query & Schema Design',
+        track: 'analyst',
+        month: 'JUNE',
+        why: 'SQL is the single most critical technical skill, appearing in 80%+ of Analyst job descriptions. Excel Power Query automates raw data loading & parsing.',
+        subtopics: [
+          '**Window Functions**: ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, NTILE, SUM/AVG OVER partitions.',
+          '**Subqueries & CTEs**: Standard subqueries, recursive CTEs, correlated subqueries, memory footprint optimization.',
+          '**Advanced Joins & Aggregations**: INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF joins, and GROUP BY/HAVING filtering.',
+          '**Database Schema Design**: 1NF, 2NF, 3NF Normalization, Star vs Snowflake models, Fact and Dimension tables.',
+          '**Power Query & M-Language**: File merging, column unpivoting, conditional transformations, automated refreshes.',
+          '**SQL Query Optimization**: Indexing (B-tree, Clustered/Non-clustered), query execution plans (EXPLAIN), partition tuning.'
+        ],
+        resources: [
+          { name: 'StrataScratch SQL Interview Questions', url: 'https://www.stratascratch.com/' },
+          { name: 'Mode Analytics SQL Tutorial', url: 'https://mode.com/sql-tutorial/' },
+          { name: 'SQLZoo Interactive Exercises', url: 'https://sqlzoo.net/' },
+          { name: 'LeetCode Database Practice Sheet', url: 'https://leetcode.com/studyplan/30-days-of-sql/' }
+        ]
+      },
+      'june-project': {
+        title: 'IPL Project: Phase 1 Data Prep',
+        track: 'project',
+        month: 'JUNE',
+        why: 'Builds analytical baseline on actual real-world sports data.',
+        subtopics: [
+          '**Data Scraping & Sourcing**: Gathering historical IPL match tables, player listings, auction prices.',
+          '**Data Cleaning**: Aligning historical records, matching spelling mismatches, deduplicating records.',
+          '**Data Model Construction**: Structuring matches, deliveries, and player salaries in fact/dimension tables.'
+        ],
+        resources: [
+          { name: 'Kaggle IPL Dataset', url: 'https://www.kaggle.com/datasets' },
+          { name: 'BeautifulSoup Scraper Tutorial', url: 'https://beautiful-soup-4.readthedocs.io/en/latest/' }
+        ]
+      },
+      'june-dsa': {
+        title: 'Complexity & Math Basics',
+        track: 'dsa',
+        month: 'JUNE',
+        why: 'Teaches you how algorithms behave at scale and bounds your mathematical logic.',
+        subtopics: [
+          '**Time & Space Complexity**: Big O, Big Omega, Big Theta notations, recurrence relations.',
+          '**Mathematics for Coding**: Greatest Common Divisor (GCD), LCM, Sieve of Eratosthenes (prime numbers).',
+          '**Recursion Fundamentals**: Stack trace diagrams, base case definition, divide & conquer fundamentals.',
+          '**Bit Manipulation**: Bitwise AND, OR, XOR, NOT, shifts, mask operations.'
+        ],
+        resources: [
+          { name: 'Striver A2Z DSA Sheet: Basics', url: 'https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-detailed-sheet-course/' },
+          { name: 'GeeksforGeeks Algorithmic Analysis', url: 'https://www.geeksforgeeks.org/analysis-of-algorithms/' }
+        ]
+      },
+      'june-fullstack': {
+        title: 'Web Development Fundamentals',
+        track: 'fullstack',
+        month: 'JUNE',
+        why: 'Crucial for rendering analytical interfaces on the web.',
+        subtopics: [
+          '**Semantic HTML5**: Sectional, navigation, main, footer elements for structured page representation.',
+          '**CSS Layouts**: Flexbox grid control, CSS Grid layouts, centering, positioning, margins.',
+          '**Responsive Layout Design**: Media queries, viewport scaling, mobile-first design strategy.',
+          '**CSS Variables**: Predefined themes, dark mode variables setup, reusable design tokens.'
+        ],
+        resources: [
+          { name: 'MDN Web Docs: HTML/CSS', url: 'https://developer.mozilla.org/en-US/' },
+          { name: 'freeCodeCamp Responsive Web Course', url: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/' }
+        ]
+      },
+      'june-cscore': {
+        title: 'Object-Oriented Programming (OOPs)',
+        track: 'cscore',
+        month: 'JUNE',
+        why: 'Core coding structural paradigm tested in every technical interview.',
+        subtopics: [
+          '**Four Pillars**: Encapsulation, Inheritance, Polymorphism (Overloading vs Overriding), Abstraction.',
+          '**Abstract classes vs Interfaces**: Implementation differences, multi-inheritance logic.',
+          '**SOLID Principles**: Single responsibility, open-closed, Liskov substitution, interface segregation, dependency inversion.',
+          '**Memory Allocation**: Heap vs Stack storage for instances, garbage collection basics.'
+        ],
+        resources: [
+          { name: 'GeeksforGeeks OOPs Concepts', url: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/' },
+          { name: 'Refactoring.Guru: OOP Refactoring', url: 'https://refactoring.guru/' }
+        ]
+      },
+      'june-personal': {
+        title: 'BPL Phase 1: Venue/Band Matchmaking System',
+        track: 'personal',
+        month: 'JUNE',
+        why: 'Begins the custom gig economy analytics dashboard.',
+        subtopics: [
+          '**Venue Supply Mapping**: Collecting Hyderabad pub/cafe gig spots, capacities, locations.',
+          '**System Concept Model**: Designing relationships between venue capacities, dates, genres, and bands.',
+          '**Initial Schema design**: Formatting basic database variables for music data tracker.'
+        ],
+        resources: [
+          { name: 'Google Sheets Data Scraping tricks', url: 'https://support.google.com/' }
+        ]
+      },
+
+      // --- JULY ---
+      'july-aptitude': {
+        title: 'Quantitative Aptitude Core',
+        track: 'aptitude',
+        month: 'JULY',
+        why: 'Math logic and speed calculations are tested extensively in aptitude tests.',
+        subtopics: [
+          '**Time and Work**: Pipe capacities, alternate hour works, work-wage distributions.',
+          '**Time, Speed & Distance**: Trains crossing, relative speed, boat upstream/downstream, average speed.',
+          '**Percentages, Profit & Loss**: Discounts, successive marks, faulty weights calculations.',
+          '**Ratios & Averages**: Mixture & alligation, age calculations, weighted average formulas.',
+          '**Interest Math**: Simple interest (SI) vs Compound Interest (CI), annual/semi-annual growth cycles.'
+        ],
+        resources: [
+          { name: 'IndiaBIX Quantitative Aptitude', url: 'https://www.indiabix.com/quantitative-aptitude/questions-and-answers/' },
+          { name: 'GFG Quantitative Questions', url: 'https://www.geeksforgeeks.org/quantitative-aptitude/' }
+        ]
+      },
+      'july-analyst': {
+        title: 'Python Pandas, Seaborn & KPI Design',
+        track: 'analyst',
+        month: 'JULY',
+        why: 'Python handles complex workflows and statistical visualization beyond BI limits.',
+        subtopics: [
+          '**Pandas DataFrames**: Groupby aggregations, merge/join/concat, filtering rows, handling missing values.',
+          '**Exploratory Data Analysis (EDA)**: Statistical distributions, outlier detection, correlations.',
+          '**Seaborn & Matplotlib**: Pairplots, correlation heatmaps, box plots, styling plots.',
+          '**KPI Design & Framework**: North Star Metric definition, lagging vs leading indicators, cohort setups.',
+          '**Feature Engineering**: Numeric scaling, log transformations, dummy variables, date-time parsing.'
+        ],
+        resources: [
+          { name: 'Corey Schafer Pandas Series', url: 'https://youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS' },
+          { name: 'Kaggle Pandas Tutorial', url: 'https://www.kaggle.com/learn/pandas' },
+          { name: 'Google Data Analytics Certificate: Data Prep', url: 'https://www.coursera.org/professional-certificates/google-data-analytics' }
+        ]
+      },
+      'july-project': {
+        title: 'IPL Project: Phase 2 Analytical Modeling',
+        track: 'project',
+        month: 'JULY',
+        why: 'Combines multiple analytical outputs into a logical sport narrative.',
+        subtopics: [
+          '**Player valuation metric**: Building custom equations weighting strike rate, consistency, and auction value.',
+          '**Team analytics modeling**: Visualizing run rates, wicket trends, batting depth.',
+          '**Dashboard Architecture**: Mocking layout wireframes for dashboard presentation.'
+        ],
+        resources: [
+          { name: 'Streamlit Layout Guides', url: 'https://docs.streamlit.io/' },
+          { name: 'Plotly Express Reference', url: 'https://plotly.com/python/plotly-express/' }
+        ]
+      },
+      'july-dsa': {
+        title: 'Arrays, Hashing, Strings & Matrices',
+        track: 'dsa',
+        month: 'JULY',
+        why: 'The absolute core data structures representing 70% of array-based interview problems.',
+        subtopics: [
+          '**Array Manipulations**: Reverse, rotate, sub-array sums, Dutch National Flag algorithm.',
+          '**HashMaps & HashSets**: Collision management, load factor, checking duplicates, O(1) searches.',
+          '**String Algorithms**: Substrings, anagrams, palindrome verification, KMP string matching.',
+          '**Matrix Traversals**: Spiral order, transpose, diagonal traversals, matrix rotations.'
+        ],
+        resources: [
+          { name: 'LeetCode Top Interview 150 - Arrays', url: 'https://leetcode.com/studyplan/top-interview-150/' },
+          { name: 'NeetCode 150: Arrays & Hashing', url: 'https://neetcode.io/practice' }
+        ]
+      },
+      'july-fullstack': {
+        title: 'Core JavaScript & DOM',
+        track: 'fullstack',
+        month: 'JULY',
+        why: 'Provides dynamic functionality and network requests in client interfaces.',
+        subtopics: [
+          '**ES6+ Javascript**: Arrow functions, destructuring, rest/spread operators, template literals.',
+          '**DOM API**: Query selectors, event bubblings, modifying styles, creating nodes dynamically.',
+          '**Asynchronous JS**: Callbacks, Promises, Async/Await syntax, handling errors.',
+          '**Fetch API**: GET/POST requests, HTTP status codes, JSON payload processing.'
+        ],
+        resources: [
+          { name: 'Javascript.info - Interactive Guide', url: 'https://javascript.info/' },
+          { name: 'Eloquent JavaScript Book', url: 'https://eloquentjavascript.net/' }
+        ]
+      },
+      'july-cscore': {
+        title: 'Database Management Systems (DBMS)',
+        track: 'cscore',
+        month: 'JULY',
+        why: 'Critical for data durability, transaction execution, and backend queries.',
+        subtopics: [
+          '**ER Models**: Relationship cardinality, entity attributes, primary/foreign keys.',
+          '**Relational Algebra**: Projection, selection, Cartesian product, division.',
+          '**ACID Transactions**: Atomicity, consistency, isolation, durability levels.',
+          '**Concurrency Control**: Lock-based protocols, two-phase locking, deadlocks.'
+        ],
+        resources: [
+          { name: 'Gate Smashers DBMS Playlist', url: 'https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I81CJCgPvS17v6xpR_' },
+          { name: 'GFG DBMS Tutorials', url: 'https://www.geeksforgeeks.org/dbms/' }
+        ]
+      },
+      'july-personal': {
+        title: 'BPL Phase 2: Demand & Audience Behavior',
+        track: 'personal',
+        month: 'JULY',
+        why: 'Gathers audience telemetry to optimize venue scheduling.',
+        subtopics: [
+          '**Audience Surveys**: Gathering data on crowd vibe choices, entry price tolerances, and show timings.',
+          '**Descriptive statistics**: Grouping crowd preferences by age demographics and areas.',
+          '**Visualizing demand**: Establishing curves for peak venue occupancy hours.'
+        ],
+        resources: [
+          { name: 'Google Forms Integration hacks', url: 'https://forms.google.com' }
+        ]
+      },
+
+      // --- AUGUST ---
+      'august-aptitude': {
+        title: 'Verbal Ability Foundation',
+        track: 'aptitude',
+        month: 'AUGUST',
+        why: 'Tests readability, comprehension, and grammar checks under timer limits.',
+        subtopics: [
+          '**Reading Comprehension**: Main idea extraction, tone identification, inference drawing.',
+          '**Sentence Corrections**: Subject-verb agreement, pronoun references, tense checks.',
+          '**Vocabulary & Idioms**: Direct meanings, analogy, context mapping.',
+          '**Fill-in-the-blanks**: Double blanks, grammar-based preposition fits.'
+        ],
+        resources: [
+          { name: 'IndiaBIX Verbal Tests', url: 'https://www.indiabix.com/verbal-ability/' },
+          { name: 'GRE Verbal Prep Guides', url: 'https://www.ets.org/' }
+        ]
+      },
+      'august-analyst': {
+        title: 'Power BI, DAX & Cohort/Funnel Analytics',
+        track: 'analyst',
+        month: 'AUGUST',
+        why: 'Enterprise BI tools like Power BI are industry-standard for automated dashboard generation.',
+        subtopics: [
+          '**Power BI Modeling**: Creating relations, managing cross-filtering directions, configuring star schemas.',
+          '**DAX Language**: CALCULATE, FILTER, ALL, RELATED, divide, sumx iterators.',
+          '**Time Intelligence (DAX)**: SAMEPERIODLASTYEAR, YTD, MTD, DATEADD comparisons.',
+          '**Cohort Analysis**: Building retention matrices over months, customer drop-off curves.',
+          '**Funnel Analytics**: Visualization of ad-to-purchase steps, leakage diagnostics.'
+        ],
+        resources: [
+          { name: 'SQLBI - Alberto Ferrari & Marco Russo', url: 'https://www.sqlbi.com/' },
+          { name: 'Avi Singh Power BI channel', url: 'https://www.youtube.com/@PowerBIPro' },
+          { name: 'Microsoft Learn: Power BI track', url: 'https://learn.microsoft.com/en-us/power-bi/' }
+        ]
+      },
+      'august-project': {
+        title: 'E-Commerce Analytics: Phase 1 Data Parsing',
+        track: 'project',
+        month: 'AUGUST',
+        why: 'Analyzing transaction funnels mimics high-volume retail analytics environments.',
+        subtopics: [
+          '**Flipkart/Amazon Review Scraping**: Parsing reviews, dates, ratings, products.',
+          '**Sentiment Analysis Setup**: Scoring textual reviews using text analyzers.',
+          '**SQL Funnel Creation**: Joining marketing impressions with actual shopping cart checkouts.'
+        ],
+        resources: [
+          { name: 'Baymard Institute UX & Funnel data', url: 'https://baymard.com/' },
+          { name: 'Kaggle Review Datasets', url: 'https://www.kaggle.com/' }
+        ]
+      },
+      'august-dsa': {
+        title: 'Linear & Basic Tree structures',
+        track: 'dsa',
+        month: 'AUGUST',
+        why: 'Builds logic for memory node connections and abstract hierarchical tracking.',
+        subtopics: [
+          '**Linked Lists**: Singly, doubly, circular, Floyd cycle detection, pointer updates.',
+          '**Stacks & Queues**: FIFO/LIFO representations, monotonic stacks, priority queues.',
+          '**Tree Traversals**: Inorder, Preorder, Postorder, Level order, recursive tree searches.',
+          '**Heaps**: Min-heap, max-heap insertions, heapify operations.'
+        ],
+        resources: [
+          { name: 'Striver Trees Playlist', url: 'https://takeuforward.org/binary-tree/binary-tree-traversal-inorder-preorder-postorder/' },
+          { name: 'NeetCode practice: Trees', url: 'https://neetcode.io/' }
+        ]
+      },
+      'august-fullstack': {
+        title: 'React.js Core & Tailwind CSS',
+        track: 'fullstack',
+        month: 'AUGUST',
+        why: 'Component systems optimize frontend development and styling structures.',
+        subtopics: [
+          '**JSX & Functional Components**: Custom components, props passing, mapping lists.',
+          '**React Hooks**: useState, useEffect, useRef lifecycle state updates.',
+          '**Tailwind CSS**: Responsive grid utility classes, hover state classes, animations.',
+          '**Component State Management**: Prop drilling mitigations, context API basics.'
+        ],
+        resources: [
+          { name: 'React official documentation', url: 'https://react.dev/' },
+          { name: 'Tailwind CSS utility documentation', url: 'https://tailwindcss.com/' }
+        ]
+      },
+      'august-cscore': {
+        title: 'Operating Systems (OS)',
+        track: 'cscore',
+        month: 'AUGUST',
+        why: 'Explains underlying machine executions, multi-threading, and system resources.',
+        subtopics: [
+          '**Process & Threads**: Context switching, process state transitions, multi-threading.',
+          '**CPU Scheduling**: FCFS, SJF, Round Robin, priority preemption.',
+          '**Memory Allocation**: Paging, segmentation, page faults, virtual memory calculations.',
+          '**Synchronization & Deadlocks**: Mutex, semaphores, producer-consumer problem, banker\'s algorithm.'
+        ],
+        resources: [
+          { name: 'Gate Smashers OS playlist', url: 'https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3MwnCoXHPg' },
+          { name: 'Operating System Concepts Book', url: 'https://codex.cs.yale.edu/avi/os-book/' }
+        ]
+      },
+      'august-personal': {
+        title: 'BPL Phase 3: Artist Supply Mapping',
+        track: 'personal',
+        month: 'AUGUST',
+        why: 'Indexes the musician catalog to balance venue requirements.',
+        subtopics: [
+          '**Musician Indexing**: Collecting artist names, genre proficiencies, fee bands, and availability.',
+          '**Genre mapping**: Classifying artists into categories (Rock, Bollywood, Pop, Indie).',
+          '**Database modeling**: Writing artist relation profiles for matchmaking.'
+        ],
+        resources: [
+          { name: 'Google Sheets Query functions', url: 'https://support.google.com/' }
+        ]
+      },
+
+      // --- SEPTEMBER ---
+      'september-aptitude': {
+        title: 'Logical Reasoning Advanced',
+        track: 'aptitude',
+        month: 'SEPTEMBER',
+        why: 'Prepares for complex puzzle rounds in consultancy and product roles.',
+        subtopics: [
+          '**Data Sufficiency**: Determining if statements are enough to solve complex problems.',
+          '**Critical Reasoning**: Strengths/weaknesses of arguments, logical gaps.',
+          '**Complex Arrangements**: Double-variable scheduling, linear puzzles with color variables.',
+          '**Mathematical Puzzles**: Logic-based games, cryptarithms.'
+        ],
+        resources: [
+          { name: 'GMAT Club Reasoning questions', url: 'https://gmatclub.com/' },
+          { name: 'IndiaBIX Advanced Logical Tests', url: 'https://www.indiabix.com/' }
+        ]
+      },
+      'september-analyst': {
+        title: 'Google Analytics 4 (GA4), SEO & A/B Testing',
+        track: 'analyst',
+        month: 'SEPTEMBER',
+        why: 'Web traffic and conversion experiments are standard requirements in growth analytics.',
+        subtopics: [
+          '**GA4 Event Tracking**: Custom tags, user ID tracking, conversion events.',
+          '**SEO Metrics & Core Web Vitals**: Site speeds, LCP, CLS, indexing issues, crawls.',
+          '**A/B Test Design**: Null hypothesis formulation, sample sizes, selection biases.',
+          '**A/B Significance Tests**: Chi-squared tests, t-tests, calculating p-values.',
+          '**Growth Marketing KPIs**: Customer Acquisition Cost (CAC), LTV/CAC ratios, payback cycles.'
+        ],
+        resources: [
+          { name: 'Google Analytics Academy', url: 'https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431' },
+          { name: 'Evan Miller A/B Testing Calculators', url: 'https://www.evanmiller.org/ab-testing/' },
+          { name: 'Moz SEO Core Guide', url: 'https://moz.com/beginners-guide-to-seo' }
+        ]
+      },
+      'september-project': {
+        title: 'E-Commerce Analytics: Phase 2 Analysis',
+        track: 'project',
+        month: 'SEPTEMBER',
+        why: 'Combines data pipelines with behavioral insights and economics analysis.',
+        subtopics: [
+          '**Pricing Elasticity**: Analyzing purchase shifts during Big Billion Days discounts.',
+          '**Urgency/Anchor Bias validation**: Graphing conversions against discount sizes.',
+          '**Deployment**: Creating clean visual dashboards hosted online.'
+        ],
+        resources: [
+          { name: 'Streamlit Deployment instructions', url: 'https://docs.streamlit.io/' },
+          { name: 'Vercel Deployment guide', url: 'https://vercel.com/' }
+        ]
+      },
+      'september-dsa': {
+        title: 'Search, Sort, Two Pointers & Sliding Window',
+        track: 'dsa',
+        month: 'SEPTEMBER',
+        why: 'Optimizes search speeds and subarray iterations from brute-force O(N^2) to linear profiles.',
+        subtopics: [
+          '**Binary Search**: Custom bounds, search on answer space, peak elements.',
+          '**Sorting Algorithms**: Merge Sort, Quick Sort partitions, bubble/selection.',
+          '**Two Pointer Techniques**: Target sums, container with most water, sorting arrays of 0/1/2.',
+          '**Sliding Window**: Subarray sum constraints, longest unique substring length.'
+        ],
+        resources: [
+          { name: 'Striver Binary Search playlist', url: 'https://takeuforward.org/' },
+          { name: 'LeetCode Sliding Window playlist', url: 'https://leetcode.com/' }
+        ]
+      },
+      'september-fullstack': {
+        title: 'Node.js, Express & MongoDB (MERN Backend)',
+        track: 'fullstack',
+        month: 'SEPTEMBER',
+        why: 'MERN backend infrastructure handles routing, servers, and database integration.',
+        subtopics: [
+          '**Node.js Runtime**: Event loop, asynchronous file lookups, common modules.',
+          '**Express.js Routing**: Server setup, custom middleware, POST body handling, routes.',
+          '**NoSQL Schema Design**: Document hierarchies in MongoDB, sub-documents, Mongoose.',
+          '**API Integrations**: Handling CORS, JSON request-responses, route validation.'
+        ],
+        resources: [
+          { name: 'Traversy Media Node/Express course', url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4' },
+          { name: 'MongoDB University', url: 'https://university.mongodb.com/' }
+        ]
+      },
+      'september-cscore': {
+        title: 'Computer Networks (CN)',
+        track: 'cscore',
+        month: 'SEPTEMBER',
+        why: 'Explains data transfers across the web and standard backend connection paths.',
+        subtopics: [
+          '**OSI & TCP/IP Model**: Layer functions, packet routing, header wrappers.',
+          '**Protocols**: HTTP/HTTPS structures, DNS lookups, TCP vs UDP handshakes.',
+          '**IP Addressing**: IPv4 subnet masks, CIDR blocks, private vs public routing.',
+          '**Security Layer**: SSL/TLS handshakes, certificates, cryptographic keys.'
+        ],
+        resources: [
+          { name: 'Computer Networking: A Top-Down Approach Book', url: 'https://jimiles.github.io/files/Computer-Networking-A-Top-Down-Approach.pdf' },
+          { name: 'Gate Smashers Network Playlist', url: 'https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_' }
+        ]
+      },
+      'september-personal': {
+        title: 'BPL Phase 4: Matchmaking Engine',
+        track: 'personal',
+        month: 'SEPTEMBER',
+        why: 'Builds allocation algorithms to prevent calendar conflicts.',
+        subtopics: [
+          '**Conflict Solver**: Writing schedule rules to prevent bands booking multiple venues on same date.',
+          '**Matching Optimization**: Weighing venue genre preferences against band profiles.',
+          '**Capacity matching**: Linking audience size estimates with venue capacities.'
+        ],
+        resources: [
+          { name: 'Python Schedule library guides', url: 'https://schedule.readthedocs.io/' }
+        ]
+      },
+
+      // --- OCTOBER ---
+      'october-aptitude': {
+        title: 'Quantitative Aptitude Advanced',
+        track: 'aptitude',
+        month: 'OCTOBER',
+        why: 'Essential for clearance rounds in finance, banking, and core analytics profiles.',
+        subtopics: [
+          '**Permutations & Combinations**: Grid problems, arrangements with restrictions, circular loops.',
+          '**Probability**: Independent trials, Bayes\' theorem, conditional probability matrices.',
+          '**Geometry & Mensuration**: Regular polygons, volume transformations, coordinates.',
+          '**Advanced Algebra**: Quadratic equations, arithmetic/geometric progressions (AP/GP).'
+        ],
+        resources: [
+          { name: 'IndiaBIX Advanced Quant', url: 'https://www.indiabix.com/' },
+          { name: 'GMAT Club Quant Forum', url: 'https://gmatclub.com/forum/' }
+        ]
+      },
+      'october-analyst': {
+        title: 'NLP, Prompt Engineering & API Automations',
+        track: 'analyst',
+        month: 'OCTOBER',
+        why: 'Integrating generative AI workflows accelerates analytics work productivity.',
+        subtopics: [
+          '**Prompt Engineering**: Zero-shot, few-shot prompts, chain-of-thought system prompts.',
+          '**NLP Sentiment Analysis**: Text parsing, tokenizations, VADER polarity scoring.',
+          '**Make/Zapier Automations**: Creating Webhook triggers, automating data saves.',
+          '**API Integrations**: Authentication headers, POST requests, managing rate limits.'
+        ],
+        resources: [
+          { name: 'DeepLearning.AI Prompt Engineering Course', url: 'https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/' },
+          { name: 'Zapier Learning Guides', url: 'https://zapier.com/learn/' }
+        ]
+      },
+      'october-project': {
+        title: 'OTT Analytics: Phase 1 Sourcing',
+        track: 'project',
+        month: 'OCTOBER',
+        why: 'Analyzes consumer choice shifts in entertainment mediums.',
+        subtopics: [
+          '**IMDb/Netflix Data Merging**: Connecting title catalogs, popularity, genres, release years.',
+          '**Box Office Data Scraping**: Scraping theater revenues from public databases.',
+          '**Scoping Survey**: Structuring customer survey on streaming behaviors.'
+        ],
+        resources: [
+          { name: 'Box Office Mojo database', url: 'https://www.boxofficemojo.com/' },
+          { name: 'IMDb Datasets Archive', url: 'https://www.imdb.com/interfaces/' }
+        ]
+      },
+      'october-dsa': {
+        title: 'Prefix Sums, Greedy & Dynamic Programming (DP)',
+        track: 'dsa',
+        month: 'OCTOBER',
+        why: 'Tests algorithmic optimization and complex problem solving in technical interviews.',
+        subtopics: [
+          '**Prefix Sums**: Range queries, subarray sum comparisons.',
+          '**Greedy Choice**: Fractional Knapsack, activity selection, scheduling patterns.',
+          '**DP 1D**: Fibonacci loops, climbing stairs, house robbing optimizations.',
+          '**DP 2D**: Longest Common Subsequence (LCS), Knapsack 0/1, grid paths.'
+        ],
+        resources: [
+          { name: 'Striver Dynamic Programming Playlist', url: 'https://takeuforward.org/dynamic-programming/strivers-dp-series-contents/' },
+          { name: 'Aditya Verma DP series', url: 'https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqHD8YkyyEAlqyd7950WZ' }
+        ]
+      },
+      'october-fullstack': {
+        title: 'Databases Integration & Security',
+        track: 'fullstack',
+        month: 'OCTOBER',
+        why: 'Secures web transactions and connects front-to-back databases.',
+        subtopics: [
+          '**SQL vs NoSQL Integration**: Building APIs that query PostgreSQL and MongoDB.',
+          '**Authentication (JWT)**: Token signing, authorization checks in routes, securely hashing passwords.',
+          '**Database Indexing**: SQL column indexes vs MongoDB index configurations.',
+          '**API Documentation**: Writing Swagger APIs, testing routes with Postman.'
+        ],
+        resources: [
+          { name: 'JWT.io guides', url: 'https://jwt.io/' },
+          { name: 'Postman Learning Platform', url: 'https://learning.postman.com/' }
+        ]
+      },
+      'october-cscore': {
+        title: 'Low Level Design (LLD)',
+        track: 'cscore',
+        month: 'OCTOBER',
+        why: 'Structures modular, extensible, and clean codebases.',
+        subtopics: [
+          '**Design Patterns**: Singleton, Factory, Observer, Strategy, Decorator classes.',
+          '**UML Diagrams**: Class relations, flow charts, activity sequences.',
+          '**Schema Mapping**: Class properties to database records.',
+          '**Object Oriented Principles**: Loose coupling, high cohesion.'
+        ],
+        resources: [
+          { name: 'Refactoring.Guru: Design Patterns', url: 'https://refactoring.guru/design-patterns' },
+          { name: 'LLD Course by Keerti Purswani', url: 'https://www.youtube.com/@KeertiPurswani' }
+        ]
+      },
+      'october-personal': {
+        title: 'BPL Phase 5: Financial Feasibility model',
+        track: 'personal',
+        month: 'OCTOBER',
+        why: 'Analyzes event monetization models.',
+        subtopics: [
+          '**Break-Even Equations**: Calculating entry ticket targets based on booking fees and band costs.',
+          '**Revenue Split Models**: Structuring F&B revenue splits vs fixed hiring fees.',
+          '**Scenario projections**: Modeling revenue outcomes based on ticket tiers.'
+        ],
+        resources: [
+          { name: 'Investopedia Break-Even calculation', url: 'https://www.investopedia.com/' }
+        ]
+      },
+
+      // --- NOVEMBER ---
+      'november-aptitude': {
+        title: 'Verbal Ability Advanced',
+        track: 'aptitude',
+        month: 'NOVEMBER',
+        why: 'Prepares for communication tests in management consulting placements.',
+        subtopics: [
+          '**Para-jumbles**: Paragraph arrangements, identifying first/last sentences, transition cues.',
+          '**Logical Consistencies**: Premise identification, evaluating strengths of logical statements.',
+          '**Reading Speed Drills**: Speed read strategies, keyword skimming.',
+          '**Critical Reasoning Advanced**: Finding hidden assumptions, resolving paradoxes.'
+        ],
+        resources: [
+          { name: 'GMAT Club Verbal Practice', url: 'https://gmatclub.com/' },
+          { name: 'IndiaBIX Advanced English', url: 'https://www.indiabix.com/' }
+        ]
+      },
+      'november-analyst': {
+        title: 'Regression, Forecasting & Storytelling',
+        track: 'analyst',
+        month: 'NOVEMBER',
+        why: 'Analysts must predict trends and communicate insights effectively to executives.',
+        subtopics: [
+          '**Regression Modeling**: Linear/Logistic regression, feature significance, R-squared analysis.',
+          '**Time Series Forecasting**: ARIMA, Prophet library baseline setups, seasonality checks.',
+          '**Corporate Financial metrics**: GMV, AOV, Net Revenue margins, CAC calculations.',
+          '**McKinsey-style Slide structures**: SCQA frameworks, MECE, vertical and horizontal flow logics.',
+          '**Data Storytelling**: Contrast visualizations, decluttering, focusing user attention.'
+        ],
+        resources: [
+          { name: 'Storytelling with Data Book', url: 'https://www.storytellingwithdata.com/' },
+          { name: 'Introduction to Statistical Learning (ISLR)', url: 'https://www.statlearning.com/' },
+          { name: 'McKinsey Slide Structuring tutorials', url: 'https://www.caseinterview.com/' }
+        ]
+      },
+      'november-project': {
+        title: 'OTT Analytics: Phase 2 Modeling',
+        track: 'project',
+        month: 'NOVEMBER',
+        why: 'Concludes analytical insights and correlation checks on media patterns.',
+        subtopics: [
+          '**Trailer Sentiment Correlation**: Matching review sentiment with first-day collections.',
+          '**Predictive Modeling**: Designing simple models to estimate box office margins.',
+          '**Dashboard Build**: Publishing interactive analysis charts.'
+        ],
+        resources: [
+          { name: 'Streamlit Deployment Cloud', url: 'https://streamlit.io/cloud' }
+        ]
+      },
+      'november-dsa': {
+        title: 'Advanced Tree structures',
+        track: 'dsa',
+        month: 'NOVEMBER',
+        why: 'Tests optimization of search query speeds in specialized database indexing cases.',
+        subtopics: [
+          '**Trie structures**: Word insertions, lookup optimizations, autocomplete systems.',
+          '**Segment Trees**: Range queries, point updates, memory arrays.',
+          '**Binary Indexed Trees**: Cumulative frequency tables, prefix sums calculations.',
+          '**Red-Black Trees**: Self-balancing search trees, balancing rotations.'
+        ],
+        resources: [
+          { name: 'GFG Advanced Tree Tutorials', url: 'https://www.geeksforgeeks.org/advanced-data-structures/' },
+          { name: 'Striver Trie Playlist', url: 'https://takeuforward.org/' }
+        ]
+      },
+      'november-fullstack': {
+        title: 'Developer Portfolios & Deployments',
+        track: 'fullstack',
+        month: 'NOVEMBER',
+        why: 'Recruiters inspect live sites to verify deployment proficiency.',
+        subtopics: [
+          '**Developer Portfolios**: HTML/CSS grid structure, links, project directories.',
+          '**Vercel/Netlify hosting**: Deploying frontend code with continuous pipelines.',
+          '**Render/Railway backend hosting**: Deploying Node APIs with database setups.',
+          '**GitHub Readme Optimization**: Writing setup directions, project summaries.'
+        ],
+        resources: [
+          { name: 'Vercel Deployment guide', url: 'https://vercel.com/docs' },
+          { name: 'Render Web Services Deployment', url: 'https://render.com/docs' }
+        ]
+      },
+      'november-cscore': {
+        title: 'High Level Design (HLD)',
+        track: 'cscore',
+        month: 'NOVEMBER',
+        why: 'System architecture planning for handling scale and durability.',
+        subtopics: [
+          '**Microservices Architecture**: Monolith decomps, gateway routes, API routing.',
+          '**Caching**: Redis integrations, caching policies (LRU/LFU), CDNs.',
+          '**Database Sharding**: Vertical/Horizontal sharding, master-slave replication.',
+          '**Message Queues**: Decoupling systems with Kafka, RabbitMQ brokers.'
+        ],
+        resources: [
+          { name: 'ByteByteGo - System Design by Alex Xu', url: 'https://bytebytego.com/' },
+          { name: 'System Design Primer (GitHub Repo)', url: 'https://github.com/donnemartin/system-design-primer' }
+        ]
+      },
+      'november-personal': {
+        title: 'BPL Phase 6: Booking Funnel Optimization',
+        track: 'personal',
+        month: 'NOVEMBER',
+        why: 'Optimizes event ticket purchases and minimizes friction points.',
+        subtopics: [
+          '**Checkout Funnel tracking**: Mapping page loads to ticket buys.',
+          '**Friction analysis**: Identifying form fields that cause drop-offs.',
+          '**Promo tracking**: Measuring conversion changes during coupon activations.'
+        ],
+        resources: [
+          { name: 'Mixpanel Analytics concepts', url: 'https://mixpanel.com/' }
+        ]
+      },
+
+      // --- DECEMBER ---
+      'december-aptitude': {
+        title: 'Final Lap Practice & Mocks',
+        track: 'aptitude',
+        month: 'DECEMBER',
+        why: 'Simulating exam constraints is the final step to secure top scores.',
+        subtopics: [
+          '**Full Length Mocks**: Section timers, raw scoring metrics.',
+          '**Wrong-answer logs**: Reviewing miscalculations and errors.',
+          '**Time optimization drills**: Pacing strategies for mock tests.'
+        ],
+        resources: [
+          { name: 'Testbook Mock Test Series', url: 'https://testbook.com/mock-tests' },
+          { name: 'Oliveboard Mock Tests', url: 'https://www.oliveboard.in/' }
+        ]
+      },
+      'december-analyst': {
+        title: 'Case Studies & Portfolio Synthesis',
+        track: 'analyst',
+        month: 'DECEMBER',
+        why: 'Organizing your analysis outputs secures roles at top agencies.',
+        subtopics: [
+          '**Analytics Portfolio**: Combining SQL, Power BI, and Python code on GitHub.',
+          '**Technical Case Studies**: Documenting project pipelines.',
+          '**Interview prep**: Practicing analytical case questions.'
+        ],
+        resources: [
+          { name: 'Case Interview prep tools', url: 'https://www.caseinterview.com/' }
+        ]
+      },
+      'december-project': {
+        title: 'Portfolio Mapping & Demos',
+        track: 'project',
+        month: 'DECEMBER',
+        why: 'Demos and portfolio projects show your skills to hiring teams.',
+        subtopics: [
+          '**Portfolio mappings**: Connecting projects to job descriptions.',
+          '**Recording demos**: Short video demos explaining project layouts.',
+          '**LinkedIn profile sync**: Linking projects to resume profiles.'
+        ],
+        resources: [
+          { name: 'Loom Video Recorder', url: 'https://www.loom.com/' }
+        ]
+      },
+      'december-dsa': {
+        title: 'Bitwise, Backtracking & Advanced Algorithms',
+        track: 'dsa',
+        month: 'DECEMBER',
+        why: 'Prepares for complex puzzle coding questions in interview pools.',
+        subtopics: [
+          '**Backtracking**: Sudoku solvers, N-queens constraints.',
+          '**Divide & Conquer**: Fast multiply routines, closest coordinate pairs.',
+          '**Branch & Bound**: Optimization searches, traveling salesperson problems.'
+        ],
+        resources: [
+          { name: 'GFG Backtracking questions', url: 'https://www.geeksforgeeks.org/backtracking-algorithms/' }
+        ]
+      },
+      'december-fullstack': {
+        title: 'MERN Stack Mock Projects & Reviews',
+        track: 'fullstack',
+        month: 'DECEMBER',
+        why: 'Mock interviews prepare you for system architecture rounds.',
+        subtopics: [
+          '**Mock interviews**: Front-to-back reviews, API coding drills.',
+          '**Portfolio checks**: Code optimizations, responsive layouts updates.',
+          '**System architecture reviews**: Code patterns reviews.'
+        ],
+        resources: [
+          { name: 'Pramp Mock Interviews', url: 'https://www.pramp.com/' }
+        ]
+      },
+      'december-cscore': {
+        title: 'Core Interview prep',
+        track: 'cscore',
+        month: 'DECEMBER',
+        why: 'Ensures quick recall of computer science foundations.',
+        subtopics: [
+          '**DBMS review**: Normalizations, ACID parameters, SQL joins.',
+          '**OOPs reviews**: Polymorphism definitions, design patterns.',
+          '**OS concepts**: Virtual memory checks, thread synchronizations.'
+        ],
+        resources: [
+          { name: 'GFG CS Interview Corner', url: 'https://www.geeksforgeeks.org/' }
+        ]
+      },
+      'december-personal': {
+        title: 'BPL Phase 7: Macro growth analysis',
+        track: 'personal',
+        month: 'DECEMBER',
+        why: 'Calculates the long-term business potential of the music platform.',
+        subtopics: [
+          '**Marketing ROI**: Measuring ad spending vs ticket revenues.',
+          '**Growth curves**: Graphing venue registrations and gig additions.',
+          '**Ecosystem impact**: Calculating artist revenues.'
+        ],
+        resources: [
+          { name: 'Meta Ads Manager guides', url: 'https://www.facebook.com/business/tools/ads-manager' }
+        ]
+      }
+    };
+
+    // Tracks array definitions
+    const tracksList = ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal'];
+
+    let activeSkillId = null;
+    let completedSkills = {};
+
+    // Load completed states from localStorage
+    function loadCompletedStates() {
+      try {
+        const saved = localStorage.getItem('mastered_skills_v2');
+        if (saved) {
+          completedSkills = JSON.parse(saved);
+        }
+      } catch (e) {
+        completedSkills = {};
+      }
+      updateOverallProgress();
+    }
+
+    // Save completed states to localStorage
+    function saveCompletedStates() {
+      try {
+        localStorage.setItem('mastered_skills_v2', JSON.stringify(completedSkills));
+      } catch(e) {}
+      updateOverallProgress();
+    }
+
+    // Progress Bar Calculator
+    function updateOverallProgress() {
+      const total = Object.keys(skillsData).length;
+      const completed = Object.values(completedSkills).filter(Boolean).length;
+      const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+      
+      document.getElementById('mastery-percent').innerText = percent + '%';
+      document.getElementById('mastery-fill').style.width = percent + '%';
+    }
+
+    // Build the grid UI dynamically
+    function renderBoard() {
+      const grid = document.getElementById('board-grid');
+      grid.innerHTML = '';
+
+      // 1. Column headers
+      // Add month header placeholder
+      const monthColHeader = document.createElement('div');
+      monthColHeader.className = 'grid-header-cell month-col';
+      monthColHeader.innerText = 'Month';
+      grid.appendChild(monthColHeader);
+
+      // Add track headers
+      tracksList.forEach(trackKey => {
+        const trackCell = document.createElement('div');
+        trackCell.className = 'grid-header-cell';
+        trackCell.style.borderBottomColor = trackConfig[trackKey].color;
+        trackCell.innerHTML = `
+          <div style="color: ${trackConfig[trackKey].color}; margin-bottom: 2px;">${trackConfig[trackKey].label}</div>
+        `;
+        grid.appendChild(trackCell);
+      });
+
+      // 2. Grid Rows
+      monthsInfo.forEach(month => {
+        // Month Label cell
+        const monthLabelCell = document.createElement('div');
+        monthLabelCell.className = 'grid-cell month-label-cell';
+        monthLabelCell.innerHTML = `
+          <div class="month-name">${month.name}</div>
+          <div class="month-theme">${month.theme}</div>
+        `;
+        grid.appendChild(monthLabelCell);
+
+        // Track cells for the row
+        tracksList.forEach(trackKey => {
+          const cell = document.createElement('div');
+          cell.className = 'grid-cell';
+          cell.dataset.track = trackKey;
+
+          const skillId = `${month.name.toLowerCase()}-${trackKey}`;
+          const skill = skillsData[skillId];
+
+          if (skill) {
+            const card = document.createElement('div');
+            card.className = 'skill-card';
+            if (completedSkills[skillId]) {
+              card.classList.add('mastered');
+            }
+            card.style.setProperty('--track-color', trackConfig[trackKey].color);
+            card.style.setProperty('--track-color-rgb', trackConfig[trackKey].rgb);
+            card.dataset.id = skillId;
+            
+            card.innerHTML = `
+              <div class="skill-title">${skill.title}</div>
+              <div class="skill-card-bottom">
+                <span class="skill-type-pill">${trackConfig[trackKey].label}</span>
+                <span class="skill-status-icon">✓</span>
+              </div>
+            `;
+
+            card.addEventListener('click', () => openDetail(skillId));
+            cell.appendChild(card);
+          }
+
+          grid.appendChild(cell);
+        });
+      });
+    }
+
+    // Detail Panel View Drawer
+    function openDetail(skillId) {
+      activeSkillId = skillId;
+      const skill = skillsData[skillId];
+      if (!skill) return;
+
+      const track = trackConfig[skill.track];
+
+      // Badges
+      const trackBadge = document.getElementById('drawer-badge-track');
+      trackBadge.innerText = track.label;
+      trackBadge.style.setProperty('--track-badge-color', track.color);
+      trackBadge.style.setProperty('--track-badge-rgb', track.rgb);
+
+      document.getElementById('drawer-badge-month').innerText = skill.month;
+      
+      // Title
+      document.getElementById('drawer-title').innerText = skill.title;
+
+      // Why it matters
+      document.getElementById('drawer-why').innerText = skill.why;
+
+      // Checkbox state
+      const toggleBox = document.getElementById('mastery-toggle-box');
+      const checkVal = document.getElementById('mastery-checkbox');
+      if (completedSkills[skillId]) {
+        toggleBox.classList.add('active');
+        checkVal.innerText = '✓';
+      } else {
+        toggleBox.classList.remove('active');
+        checkVal.innerText = '';
+      }
+
+      // Populate Subtopics
+      const subtopicsContainer = document.getElementById('drawer-subtopics');
+      subtopicsContainer.innerHTML = '';
+      skill.subtopics.forEach(topic => {
+        const li = document.createElement('li');
+        li.className = 'subtopic-item';
+
+        // Parse simple markdown-like bold syntax (**text**)
+        const parsedText = topic.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+        li.innerHTML = `
+          <span class="subtopic-bullet">•</span>
+          <span class="subtopic-text">${parsedText}</span>
+        `;
+        subtopicsContainer.appendChild(li);
+      });
+
+      // Populate Resources
+      const resourcesContainer = document.getElementById('drawer-resources');
+      resourcesContainer.innerHTML = '';
+      skill.resources.forEach(res => {
+        const domain = new URL(res.url).hostname.replace('www.', '');
+        const a = document.createElement('a');
+        a.className = 'resource-link';
+        a.href = res.url;
+        a.target = '_blank';
+        a.innerHTML = `
+          <span>${res.name}</span>
+          <span class="resource-link-meta">${domain} ↗</span>
+        `;
+        resourcesContainer.appendChild(a);
+      });
+
+      // Open Drawer & Backdrop
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawer-backdrop').classList.add('open');
+
+      // Highlight active card
+      document.querySelectorAll('.skill-card').forEach(c => c.classList.remove('active'));
+      const activeCard = document.querySelector(`.skill-card[data-id="${skillId}"]`);
+      if (activeCard) activeCard.classList.add('active');
+    }
+
+    // Close Detail Drawer
+    function closeDetail() {
+      activeSkillId = null;
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawer-backdrop').classList.remove('open');
+      document.querySelectorAll('.skill-card').forEach(c => c.classList.remove('active'));
+    }
+
+    // Toggle Mastered Checkbox logic
+    document.getElementById('mastery-toggle-box').addEventListener('click', () => {
+      if (!activeSkillId) return;
+
+      const toggleBox = document.getElementById('mastery-toggle-box');
+      const checkVal = document.getElementById('mastery-checkbox');
+      const card = document.querySelector(`.skill-card[data-id="${activeSkillId}"]`);
+
+      if (completedSkills[activeSkillId]) {
+        // Unmark
+        completedSkills[activeSkillId] = false;
+        toggleBox.classList.remove('active');
+        checkVal.innerText = '';
+        if (card) card.classList.remove('mastered');
+      } else {
+        // Mark as Mastered
+        completedSkills[activeSkillId] = true;
+        toggleBox.classList.add('active');
+        checkVal.innerText = '✓';
+        if (card) card.classList.add('mastered');
+      }
+
+      saveCompletedStates();
+    });
+
+    // Close events listeners
+    document.getElementById('drawer-close').addEventListener('click', closeDetail);
+    document.getElementById('drawer-backdrop').addEventListener('click', closeDetail);
+
+    // Track Filter logic
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+
+        const filter = e.target.dataset.filter;
+        const cells = document.querySelectorAll('.grid-cell[data-track]');
+
+        cells.forEach(cell => {
+          if (filter === 'all' || cell.dataset.track === filter) {
+            cell.classList.remove('dimmed');
+          } else {
+            cell.classList.add('dimmed');
+          }
+        });
+      });
+    });
+
+    // Search logic
+    document.getElementById('search-input').addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.skill-card');
+
+      cards.forEach(card => {
+        const id = card.dataset.id;
+        const skill = skillsData[id];
+        
+        if (!skill) return;
+
+        const titleMatch = skill.title.toLowerCase().includes(query);
+        const subtopicMatch = skill.subtopics.some(sub => sub.toLowerCase().includes(query));
+        const whyMatch = skill.why.toLowerCase().includes(query);
+
+        if (query === '' || titleMatch || subtopicMatch || whyMatch) {
+          card.style.opacity = '1';
+          card.style.pointerEvents = 'auto';
+        } else {
+          card.style.opacity = '0.15';
+          card.style.pointerEvents = 'none';
+        }
+      });
+    });
+
+    // Initialize Page
+    window.addEventListener('DOMContentLoaded', () => {
+      loadCompletedStates();
+      renderBoard();
+    });
+  </script>
+</body>
+</html>
