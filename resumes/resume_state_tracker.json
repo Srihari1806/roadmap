@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0",
+  "last_updated": "2026-06-01",
+  "current_stage": "June End 2026",
+  "next_update": "July End 2026",
+
+  "project_reality": {
+    "hiremap": "Frontend only (React 19 + TS + Framer Motion + Vercel) — no backend",
+    "sahitya_rachanalu": "Planning stage — targeting December 2026 launch",
+    "ipl_analytics": "In Progress — targeting July 2026 completion",
+    "bpl_analytics": "Planned — July/Aug 2026",
+    "ecommerce_analytics": "Planned — Aug/Sep 2026",
+    "ott_analytics": "Planned — Oct/Nov 2026"
+  },
+
+  "skills_completed": {
+    "base": ["Python (basics)", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "MS Excel", "SEO Writing", "Content Strategy"],
+    "june": ["Logical Reasoning", "Advanced SQL", "Excel Power Query", "Schema Design (Process Mapping)", "Complexity Analysis", "OOPs"]
+  },
+
+  "skills_learning_next": {
+    "july": ["Quantitative Aptitude", "Python (Pandas/Seaborn)", "EDA & Data Interpretation", "KPI Design (Product Metrics)", "JavaScript (Core & DOM)", "DBMS"]
+  },
+
+  "certifications_completed": [
+    "Google Analytics (GA4) Certification",
+    "HubSpot Social Media Certification",
+    "Google Ads Search Certification"
+  ],
+
+  "scores": {
+    "technical_readiness": 48,
+    "analytics_readiness": 40,
+    "creative_readiness": 55,
+    "interview_readiness": 30,
+    "portfolio_strength": 28,
+    "hiring_competitiveness": 44,
+    "overall_confidence": 62,
+    "ats_readiness": 58
+  },
+
+  "role_readiness": {
+    "Creative Strategist": "🟩 Apply Aggressively",
+    "Growth Analyst": "🟨 Apply Selectively",
+    "Content Analyst": "🟨 Apply Selectively",
+    "Data Analyst": "🟧 Early Ready (Internships only)",
+    "Sports Analyst": "🟧 Early Ready (Internships only)",
+    "Business Analyst": "🟧 Early Ready (Internships only)",
+    "Product Analyst": "🟥 Not Ready",
+    "Financial Analyst": "🟥 Not Ready"
+  },
+
+  "resumes_generated": [
+    "Growth Analyst / Content Strategist",
+    "Data Analyst / Sports Analyst",
+    "Business Analyst / Junior BA"
+  ],
+
+  "history": [
+    {
+      "stage": "June Beg 2026",
+      "date": "2026-06-01",
+      "confidence": 65,
+      "ats_readiness": 55,
+      "portfolio_maturity": 40,
+      "top_ready_role": "Growth Analyst"
+    },
+    {
+      "stage": "June End 2026",
+      "date": "2026-06-30",
+      "confidence": 62,
+      "ats_readiness": 58,
+      "portfolio_maturity": 28,
+      "top_ready_role": "Creative Strategist"
+    }
+  ]
+}
