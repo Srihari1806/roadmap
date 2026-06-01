@@ -994,7 +994,8 @@ const tabs = [
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
     { id: "monthly", label: "📅 6-Month Plan" },
-    { id: "skills", label: "🛠️ Skills" }
+    { id: "skills", label: "🛠️ Skills" },
+    { id: "resume", label: "📄 Resume System" },
   ];
 
   const toggleCheck = (idx) => {
@@ -1587,6 +1588,12 @@ const tabs = [
         )}
 
                 {/* CREATIVE TAB */}
+        {activeTab === "resume" && (
+          <div style={{ marginTop: 8 }}>
+            <ResumeATSAnalyzer />
+          </div>
+        )}
+
         {activeTab === "creative" && (
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
             <h2 style={{ fontSize: 20, fontWeight: 800, borderBottom: `1px solid ${BORDER}`, paddingBottom: 12 }}>
@@ -2561,26 +2568,9 @@ function ResumeATSAnalyzer() {
 }
 
 function CombinedApp() {
-  const [activeView, setActiveView] = useState("roadmap");
-  
   return (
     <ErrorBoundary>
-      <div style={{ position: "fixed", top: 12, right: 12, zIndex: 1000 }}>
-        <button onClick={() => setActiveView(activeView === "roadmap" ? "ats" : "roadmap")} style={{
-          background: activeView === "roadmap" ? "#1a1a2e" : "#F4A72A",
-          color: activeView === "roadmap" ? "#F4A72A" : "#000",
-          border: `1px solid ${activeView === "roadmap" ? "#F4A72A" : "#F4A72A"}`,
-          padding: "8px 16px",
-          borderRadius: 6,
-          cursor: "pointer",
-          fontSize: 12,
-          fontWeight: 700,
-          fontFamily: "inherit"
-        }}>
-          {activeView === "roadmap" ? "📄 Resume/ATS" : "🗺 Roadmap"}
-        </button>
-      </div>
-      {activeView === "roadmap" ? <Roadmap /> : <ResumeATSAnalyzer />}
+      <Roadmap />
     </ErrorBoundary>
   );
 }
