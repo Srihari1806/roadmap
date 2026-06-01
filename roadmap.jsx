@@ -1688,13 +1688,13 @@ const tabs = [
   );
 }
 
-const BASE_SKILLS = ["Python (basics)", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "MS Excel", "SEO Writing", "Content Strategy"];
+const BASE_SKILLS = ["Python (basics)", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "MS Excel", "SEO Writing", "Content Strategy", "Content Calendar Management"];
 
 const MONTH_SKILLS = {
-  june: ["Logical Reasoning", "Advanced SQL", "Excel Power Query", "Schema Design (Process Mapping)", "Complexity Analysis", "OOPs"],
+  june: ["Logical Reasoning", "Advanced SQL", "Excel Power Query", "Schema Design (Process Mapping)", "Complexity Analysis", "OOPs", "Brand Messaging & Copywriting"],
   july: ["Quantitative Aptitude", "Python (Pandas/Seaborn)", "EDA & Data Interpretation", "KPI Design (Product Metrics)", "JavaScript (Core & DOM)", "DBMS"],
   august: ["Verbal Ability", "Power BI & Data Visualization", "DAX Modeling", "Funnel & Retention Analytics", "React hooks", "Operating Systems"],
-  september: ["Google Analytics & GA4", "SEO Architecture & Keyword Research", "A/B Testing", "LTV/CAC Metrics", "Node.js", "Express", "MongoDB", "Computer Networks"],
+  september: ["Google Analytics & GA4", "SEO Architecture & Keyword Research", "A/B Testing", "LTV/CAC Metrics", "HubSpot Marketing Automation", "Node.js", "Express", "MongoDB", "Computer Networks"],
   october: ["NLP & Text Analytics", "Prompt Engineering", "Make/Zapier Automations", "REST APIs & PostgreSQL", "Audience Research & Campaign Planning", "Greedy/DP Algorithms", "LLD"],
   november: ["Predictive Modeling", "Financial Literacy & Accounting basics", "Data Storytelling & Stakeholder Communication", "Financial Modeling & Time Series Forecasting", "Advanced Trees/Trie", "HLD"],
   december: ["Consolidation & Case Studies (Business Problem Framing)", "System Design Mock Interviews", "Backtracking", "Divide and Conquer", "Mock Aptitude Tests"]
@@ -2097,9 +2097,9 @@ const roleRequirements = {
   },
   "Content Strategist": {
     color: "#EC4899",
-    must_have: ["Content Strategy", "SEO", "Analytics Tools", "Audience Research", "Campaign Planning"],
-    good_to_have: ["HubSpot", "SEMrush", "A/B Testing", "CMS (WordPress/Notion)"],
-    ats_keywords: ["content strategy", "SEO", "audience research", "campaign planning", "content calendar", "analytics", "engagement", "brand messaging"],
+    must_have: ["Content Strategy", "Google Analytics (GA4)", "HubSpot Marketing Automation", "SEO", "Content Calendar Management", "Brand Messaging"],
+    good_to_have: ["HubSpot Marketing", "SEMrush", "A/B Testing", "Audience Research & Campaign Planning"],
+    ats_keywords: ["content strategy", "SEO", "audience research", "campaign planning", "content calendar", "analytics", "engagement", "brand messaging", "HubSpot"],
   },
   "SEO Analyst": {
     color: "#14B8A6",
@@ -2175,20 +2175,32 @@ function ResumeATSAnalyzer() {
       // A/B Testing
       if (sl.includes("a/b testing") && sLower.includes("a/b testing")) return true;
       
-      // User Journey / Process Mapping
-      if (sl.includes("user journey") && (sLower.includes("funnel") || sLower.includes("process") || sLower.includes("schema design"))) return true;
-      if (sl.includes("process mapping") && (sLower.includes("schema design") || sLower.includes("process") || sLower.includes("workflow") || sLower.includes("design"))) return true;
-      
-      // Business Framing / Stakeholder / Storytelling
-      if (sl.includes("business problem") && (sLower.includes("case study") || sLower.includes("case studies") || sLower.includes("storytelling") || sLower.includes("framing") || sLower.includes("consolidation"))) return true;
-      if (sl.includes("stakeholder") && (sLower.includes("storytelling") || sLower.includes("communication"))) return true;
-      if (sl.includes("storytelling") && sLower.includes("storytelling")) return true;
       
       // SEO & Content Strategy
       if (sl.includes("seo") && sLower.includes("seo")) return true;
       if (sl.includes("content strategy") && sLower.includes("content strategy")) return true;
       if (sl.includes("social media") && (sLower.includes("content strategy") || sLower.includes("growth") || sLower.includes("social media"))) return true;
-      
+
+      // Content Calendar & Brand Messaging
+      if (sl.includes("content calendar") && (sLower.includes("content calendar") || sLower.includes("content strategy") || sLower.includes("editorial"))) return true;
+      if (sl.includes("brand messaging") && (sLower.includes("brand messaging") || sLower.includes("copywriting") || sLower.includes("brand"))) return true;
+
+      // Analytics Tools (GA4, Power BI, Tableau)
+      if (sl.includes("analytics tools") && (sLower.includes("analytics") || sLower.includes("ga4") || sLower.includes("power bi") || sLower.includes("tableau"))) return true;
+      if (sl.includes("google analytics") && (sLower.includes("google analytics") || sLower.includes("ga4"))) return true;
+
+      // HubSpot
+      if (sl.includes("hubspot") && (sLower.includes("hubspot") || sLower.includes("marketing automation"))) return true;
+
+      // User Journey / Process Mapping
+      if (sl.includes("user journey") && (sLower.includes("funnel") || sLower.includes("process") || sLower.includes("schema design"))) return true;
+      if (sl.includes("process mapping") && (sLower.includes("schema design") || sLower.includes("process") || sLower.includes("workflow") || sLower.includes("design"))) return true;
+
+      // Business Framing / Stakeholder / Storytelling
+      if (sl.includes("business problem") && (sLower.includes("case study") || sLower.includes("case studies") || sLower.includes("storytelling") || sLower.includes("framing") || sLower.includes("consolidation"))) return true;
+      if (sl.includes("stakeholder") && (sLower.includes("storytelling") || sLower.includes("communication"))) return true;
+      if (sl.includes("storytelling") && sLower.includes("storytelling")) return true;
+
       // Sports Domain
       if (sl.includes("sports domain") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
       if (sl.includes("sports") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
