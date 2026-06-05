@@ -1301,18 +1301,16 @@ const tabs = [
         </div>
       </div>
 
-      <div style={{ maxWidth: 900, margin: "0 auto", padding: "24px 16px" }}>
-
-        {/* SKILL MAP TAB */}
-        {activeTab === "skillmap" && (
-          <div style={{ width: "100%", height: "85vh", background: "#0A0A0F", borderRadius: 8, overflow: "hidden", border: `1px solid ${BORDER}`, marginBottom: 28 }}>
-            <iframe 
-              src="./skill-map.html" 
-              title="Interactive Skill Map" 
-              style={{ width: "100%", height: "100%", border: "none" }}
-            />
-          </div>
-        )}
+      {activeTab === "skillmap" ? (
+        <div style={{ width: "100%", height: "calc(100vh - 140px)", background: "#0A0A0F", overflow: "hidden", border: "none" }}>
+          <iframe 
+            src="./skill-map.html" 
+            title="Interactive Skill Map" 
+            style={{ width: "100%", height: "100%", border: "none" }}
+          />
+        </div>
+      ) : (
+        <div style={{ maxWidth: 900, margin: "0 auto", padding: "24px 16px" }}>
 
         {/* OVERVIEW TAB */}
         {activeTab === "overview" && (
@@ -3550,7 +3548,8 @@ function ResumeATSAnalyzer() {
           </div>
         );
       })()}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
