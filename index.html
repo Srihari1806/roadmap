@@ -698,6 +698,108 @@ const projectsData = [
       { section: "Campaign ROI", role: "Growth Analyst" },
       { section: "Macro Impact", role: "Strategy Analyst" }
     ]
+  },
+  {
+    id: "hiremap",
+    emoji: "💼",
+    title: "Hiremap Placement Portal",
+    subtitle: "Recruitment · Algorithms · Database · UI/UX",
+    accentColor: "#10B981",
+    deliverable: "React 19 + TypeScript web app live on Vercel — placement tracking portal",
+    metaInsight: '"Recruitment is not a resume matching problem. It is a skill graph optimization problem."',
+    layers: [
+      {
+        num: "1", icon: "📊", title: "Recruitment Intelligence & Matching",
+        role: "Data Analyst",
+        analyticsType: "Matching & Scoring",
+        color: "#4A9EFF",
+        what: "Match score calculations and search relevance",
+        analyze: ["Skill arrays mapping to job roles", "Keyword match frequencies", "Profile completeness score weightings"],
+        metrics: ["Skill Match %", "Relevance Score", "Profile Completeness Index"],
+        outputs: ["Matching algorithm schema", "Candidate ranking scoreboard"]
+      },
+      {
+        num: "2", icon: "🧠", title: "Onboarding & UX Psychology",
+        role: "Product Analyst",
+        analyticsType: "UX Analysis",
+        color: "#EC4899",
+        what: "Simplifying student signups and conversion optimization",
+        analyze: ["7-step onboarding reduction to 4 screens", "User drop-offs per screen", "Role-based navigation flows"],
+        metrics: ["Signup completion rate", "Screen drop-off rates", "Time-to-onboard"],
+        outputs: ["User journey flow diagram", "CTA conversion mapping"]
+      },
+      {
+        num: "3", icon: "🛡️", title: "Database & Auth Architecture",
+        role: "Business Analyst",
+        analyticsType: "Schema & Telemetry",
+        color: "#A855F7",
+        what: "Schema normalization and role-based data synchronization",
+        analyze: ["Firebase Authentication role splits", "Firestore normalization", "Schema parameters"],
+        metrics: ["Database query latency", "Session concurrency", "Authentication token renewals"],
+        outputs: ["Database normalization matrix", "Auth state-machine diagram"]
+      }
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Live Web App", desc: "Deployed on Vercel: hiremap-eight.vercel.app" },
+      { icon: "📊", label: "Product Backlog", desc: "Detailed requirements gathered from 50+ students" },
+      { icon: "📄", label: "UX Case Study", desc: "Analysis of 7-to-4 screen onboarding optimization" }
+    ],
+    roleMap: [
+      { section: "Matching & Relevance", role: "Data Analyst" },
+      { section: "Onboarding Funnel", role: "Product Analyst" },
+      { section: "Database Schema", role: "Business Analyst" }
+    ]
+  },
+  {
+    id: "sahitya",
+    emoji: "✍️",
+    title: "Sahitya Rachanalu Platform",
+    subtitle: "Multilingual · Creative Platform · Content Systems · World-Building",
+    accentColor: "#F4A72A",
+    deliverable: "Next.js platform with Cinepedia, Lyrics Engine, and Story Universe — live in Dec",
+    metaInsight: '"Content is not text. It is a multi-dimensional storytelling and cultural engagement ecosystem."',
+    layers: [
+      {
+        num: "1", icon: "📊", title: "Multilingual Content Architecture",
+        role: "Content Strategist",
+        analyticsType: "SEO & Content Strategy",
+        color: "#4A9EFF",
+        what: "Structural planning for Cinepedia, Lyrics Engine, and Dialogue Fictionary",
+        analyze: ["Semantic search parameters", "Search volumes for Telugu cinema keywords", "Editorial calendar pacing"],
+        metrics: ["Page Speed Index", "SEO Visibility score", "Crawl rate"],
+        outputs: ["Cinepedia schema design", "Keywords priority map"]
+      },
+      {
+        num: "2", icon: "🧠", title: "World-Building & Lore Timelines",
+        role: "Narrative Designer",
+        analyticsType: "Storytelling & Segmentation",
+        color: "#EC4899",
+        what: "Timelines, maps, factions, and interactive character bibles",
+        analyze: ["Character arcs structures", "Lore coherence indexes", "Interactive timeline engagement metrics"],
+        metrics: ["Story engagement index", "Character page click-throughs", "Time-on-page"],
+        outputs: ["Character psychology bible", "Lore timelines flow"]
+      },
+      {
+        num: "3", icon: "🎮", title: "Interaction & Gamification",
+        role: "Product Analyst",
+        analyticsType: "Behavioral Analytics",
+        color: "#A855F7",
+        what: "Telugu meme keyboard shares, dialogue card flips, and audio player retention",
+        analyze: ["Card flip interaction rates", "Audio player drop-off curves", "Share click loops"],
+        metrics: ["Interactive share rate", "Card-flip interaction frequency", "Audio completion rate"],
+        outputs: ["Gamified interactions loop", "Share velocity map"]
+      }
+    ],
+    deliverables: [
+      { icon: "🌐", label: "Next.js Web App", desc: "Next.js + MDX + Tailwind + GSAP animation platform" },
+      { icon: "📊", label: "8-Pillar Calendar", desc: "6-month content calendar containing 80-100 pieces" },
+      { icon: "📄", label: "Founder Journal", desc: "Process documentation tracking growth from pre-launch to scale" }
+    ],
+    roleMap: [
+      { section: "SEO & Content", role: "Content Strategist" },
+      { section: "Story Universe", role: "Narrative Designer" },
+      { section: "Gamification", role: "Product Analyst" }
+    ]
   }
 ];
 
@@ -1029,7 +1131,6 @@ const tabs = [
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
     { id: "content-os", label: "✍️ Content OS" },
-    { id: "monthly", label: "📅 6-Month Plan" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "resume", label: "📄 Resume System" },
   ];
@@ -1644,11 +1745,11 @@ const tabs = [
             { month: "Dec", theme: "Authority", count: 8, color: "#E879F9", types: ["2 Research Essays", "2 Film Deep Dives", "2 IPL Deep Dives", "1 Vision Document"] },
           ];
           const certs = [
-            { name: "Google Data Analytics Professional", platform: "Coursera", by: "Aug", track: "Analytics", color: "#4ADE80" },
-            { name: "HubSpot Digital Marketing", platform: "HubSpot Academy", by: "Aug", track: "Creative/Growth", color: "#FB923C" },
-            { name: "Google Project Management Professional", platform: "Coursera", by: "Sep", track: "Product/BA", color: "#38BDF8" },
-            { name: "Microsoft/LinkedIn Generative AI", platform: "LinkedIn Learning", by: "Oct", track: "Tech/Analytics", color: "#A78BFA" },
-            { name: "Deloitte Data Analytics (Forage)", platform: "Forage", by: "Dec", track: "Analytics", color: "#F4A72A" },
+            { name: "Google Data Analytics Professional", platform: "Coursera", by: "Aug", track: "Analytics", color: "#4ADE80", url: "https://www.coursera.org/professional-certificates/google-data-analytics" },
+            { name: "HubSpot Digital Marketing", platform: "HubSpot Academy", by: "Aug", track: "Creative/Growth", color: "#FB923C", url: "https://academy.hubspot.com/courses/digital-marketing" },
+            { name: "Google Project Management Professional", platform: "Coursera", by: "Sep", track: "Product/BA", color: "#38BDF8", url: "https://www.coursera.org/professional-certificates/google-project-management" },
+            { name: "Microsoft/LinkedIn Generative AI", platform: "LinkedIn Learning", by: "Oct", track: "Tech/Analytics", color: "#A78BFA", url: "https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin" },
+            { name: "Deloitte Data Analytics (Forage)", platform: "Forage", by: "Dec", track: "Analytics", color: "#F4A72A", url: "https://www.theforage.com/virtual-experience-jobs/deloitte/data-analytics-virtual-experience" },
           ];
           const weekly = [
             { day: "MON", action: "Research", detail: "Films · Sports · Marketing · Save to Notion", color: "#38BDF8" },
@@ -1743,7 +1844,9 @@ const tabs = [
                         <div style={{ fontSize: 9, color: MUTED }}>target</div>
                       </div>
                       <div style={{ flex: 1 }}>
-                        <div style={{ fontSize: 12, fontWeight: 700 }}>{c.name}</div>
+                        <a href={c.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 700, color: "#fff", textDecoration: "none", transition: "color 0.2s" }} onMouseOver={(e) => e.target.style.color = c.color} onMouseOut={(e) => e.target.style.color = "#fff"}>
+                          {c.name} ↗
+                        </a>
                         <div style={{ fontSize: 10, color: MUTED, marginTop: 2 }}>{c.platform} · Track: {c.track}</div>
                       </div>
                       <span style={{ fontSize: 9, background: c.color + "20", color: c.color, padding: "2px 8px", borderRadius: 3, border: `1px solid ${c.color}30`, whiteSpace: "nowrap" }}>{c.track}</span>
@@ -2475,9 +2578,9 @@ function ResumeATSAnalyzer() {
             </div>
           </div>
           <div style={{ display: "flex", gap: 0, borderBottom: "1px solid #1E293B" }}>
-            {["resume", "ats-gap", "roadmap"].map(tab => (
+            {["resume", "ats-gap", "roadmap", "assessment"].map(tab => (
               <button key={tab} onClick={() => setActiveTab(tab)} className={`tab-btn ${activeTab === tab ? "active" : "inactive"}`}>
-                {tab === "resume" ? "📄 Resume" : tab === "ats-gap" ? "🎯 ATS Gap Analysis" : "🗺 Skill Roadmap"}
+                {tab === "resume" ? "📄 Resume" : tab === "ats-gap" ? "🎯 ATS Gap Analysis" : tab === "roadmap" ? "🗺 Skill Roadmap" : "📋 Role Assessment"}
               </button>
             ))}
           </div>
@@ -2757,6 +2860,117 @@ function ResumeATSAnalyzer() {
                 {["SQLZoo (free)", "Mode Analytics SQL Tutorial", "StrataScratch (practice)", "LeetCode Easy SQL (50 Qs)"].map(r => (
                   <span key={r} className="skill-badge" style={{ background: "#2E1065", color: "#A78BFA", border: "1px solid #4C1D95" }}>{r}</span>
                 ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {activeTab === "assessment" && (
+          <div>
+            <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 24, marginBottom: 28 }}>
+              <div style={{ fontSize: 9, letterSpacing: 3, color: "#F4A72A", textTransform: "uppercase", marginBottom: 6 }}>Srihari's Role Suitability & Readiness Assessment Report</div>
+              <h3 style={{ margin: "0 0 8px", fontSize: 18, fontWeight: 700, color: "#fff" }}>Monthly Fit & Apply Progression</h3>
+              <p style={{ margin: 0, color: "#64748B", fontSize: 11, lineHeight: 1.6 }}>
+                This report analyzes which months you are fit to apply for each role based on your planned learning roadmap and skill mastery. Target apply windows are dynamically adjusted based on the current timeline selector.
+              </p>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+              {/* Left Side: Creative & Writing Roles */}
+              <div>
+                <div className="section-label">✍️ Creative & Writing Roles (25 Roles OS)</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                  {[
+                    { role: "Content Writer", fitMonth: "June", targetFit: "90%", keySkills: ["MDX Blog System", "SEO Strategy", "Research & Curation"], description: "Ready immediately with Sahitya planning foundation and portfolio folder setups." },
+                    { role: "Copywriter", fitMonth: "August", targetFit: "85%", keySkills: ["Zomato/Swiggy Teardowns", "CTA Copy", "Conversion optimization"], description: "Unlocked after August Brand and Product Teardowns series launch." },
+                    { role: "SEO Writer", fitMonth: "August", targetFit: "90%", keySkills: ["Keyword Research", "On-page optimization", "Crawl index logic"], description: "Ready to apply after August HubSpot Digital Marketing and SEO Article publishes." },
+                    { role: "Lyricist", fitMonth: "July", targetFit: "80%", keySkills: ["Lyrics Vault", "Folk lyrics decode", "Srivalli analysis"], description: "Optimal in July after Srivalli Decoded analysis and Month 1-2 lyrics publishes." },
+                    { role: "Film Analyst / Critic", fitMonth: "October", targetFit: "85%", keySkills: ["Cinepedia Wiki", "Thematic essays", "Color grammar studies"], description: "Unlocked in October after writing Mani Ratnam & Vikram Vedha breakdowns." },
+                    { role: "Narrative Designer", fitMonth: "October", targetFit: "85%", keySkills: ["Story Universe map", "Character bibles", "Lore coherence"], description: "Fit to apply after October Original Web Series Universe Design document launches." },
+                    { role: "Creative Director", fitMonth: "November", targetFit: "85%", keySkills: ["Founder Journal", "Platform vision", "Content ecosystems"], description: "Peak fit in November after launching Sahitya Rachanalu's 5 core platform modules." },
+                    { role: "Creative Producer", fitMonth: "November", targetFit: "85%", keySkills: ["Screenplay breakdowns", "ZNMD roadmap", "Production docs"], description: "Optimal in November after finishing 8 detailed screenplay breakdowns." },
+                    { role: "Sports Writer", fitMonth: "July", targetFit: "95%", keySkills: ["IPL Analytics Hub", "Dhoni Nostalgia Premium", "Stat stories"], description: "Apply aggressively in July as the IPL Analytics Engine Kaggle notebook goes live." },
+                  ].map((r, i) => {
+                    const targetMapping = { "June": 1, "July": 2, "August": 3, "September": 4, "October": 5, "November": 6, "December": 7 };
+                    const targetIdx = targetMapping[r.fitMonth];
+                    let currentFitVal = 0;
+                    if (monthProgress >= targetIdx) {
+                      currentFitVal = parseInt(r.targetFit);
+                    } else {
+                      const diff = targetIdx - monthProgress;
+                      currentFitVal = Math.max(20, parseInt(r.targetFit) - diff * 15);
+                    }
+
+                    return (
+                      <div key={i} style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 12 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{r.role}</div>
+                          <span style={{ fontSize: 10, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B", fontWeight: 700 }}>
+                            {monthProgress >= targetIdx ? "Ready to Apply" : `Target: ${r.fitMonth}`}
+                          </span>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "6px 0" }}>
+                          <div className="ats-bar-bg" style={{ flex: 1 }}>
+                            <div className="ats-bar-fill" style={{ width: `${currentFitVal}%`, background: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }} />
+                          </div>
+                          <span style={{ fontSize: 11, fontWeight: 700, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }}>{currentFitVal}%</span>
+                        </div>
+                        <p style={{ fontSize: 10, color: "#64748B", margin: "4px 0", lineHeight: 1.4 }}>{r.description}</p>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 6 }}>
+                          {r.keySkills.map(s => <span key={s} className="tag" style={{ fontSize: 8 }}>{s}</span>)}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Right Side: Growth & Media Strategy Roles */}
+              <div>
+                <div className="section-label">📈 Growth & Media Strategy Roles</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                  {[
+                    { role: "Growth Marketer", fitMonth: "September", targetFit: "90%", keySkills: ["A/B Copy Testing", "Attribution Models", "GA4 Analytics"], description: "Apply in September after completing the Google PM and HubSpot automation certs." },
+                    { role: "Social Media Strategist", fitMonth: "September", targetFit: "85%", keySkills: ["Reel Concepts", "LinkedIn series", "Campaign Planning"], description: "Unlocked after launching the 10-part IPL attention economy series." },
+                    { role: "Community Builder", fitMonth: "November", targetFit: "90%", keySkills: ["Organic Distribution", "Founder Journals", "Creator systems"], description: "Peak fit in November after launching Sahitya Rachanalu pre-launch growth tracks." },
+                    { role: "Communications Specialist", fitMonth: "September", targetFit: "85%", keySkills: ["Stakeholder reports", "Brand voice", "Copywriting"], description: "Apply in September after completing the HireMap product case studies." },
+                    { role: "Podcast Script Writer", fitMonth: "September", targetFit: "80%", keySkills: ["Script writing", "IPL Audio scripts", "Story structuring"], description: "Optimal in September after publishing the attention economy audio series." },
+                    { role: "Reel Concept Creator", fitMonth: "September", targetFit: "90%", keySkills: ["10 Reel concepts", "Visual storytelling", "TikTok/Reel hooks"], description: "Ready in September after launching the reels and visual metrics campaign." },
+                    { role: "SEO Analyst", fitMonth: "August", targetFit: "90%", keySkills: ["Keyword Maps", "On-page structure", "SEO Audits"], description: "Ready to apply after August Google Analytics and SEO modules are completed." },
+                    { role: "Content Strategist", fitMonth: "September", targetFit: "90%", keySkills: ["GA4 Tracking", "Editorial timelines", "Copywriting plays"], description: "Unlocked in September after completing GA4 + HubSpot certifications." }
+                  ].map((r, i) => {
+                    const targetMapping = { "June": 1, "July": 2, "August": 3, "September": 4, "October": 5, "November": 6, "December": 7 };
+                    const targetIdx = targetMapping[r.fitMonth];
+                    let currentFitVal = 0;
+                    if (monthProgress >= targetIdx) {
+                      currentFitVal = parseInt(r.targetFit);
+                    } else {
+                      const diff = targetIdx - monthProgress;
+                      currentFitVal = Math.max(20, parseInt(r.targetFit) - diff * 15);
+                    }
+
+                    return (
+                      <div key={i} style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 12 }}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{r.role}</div>
+                          <span style={{ fontSize: 10, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B", fontWeight: 700 }}>
+                            {monthProgress >= targetIdx ? "Ready to Apply" : `Target: ${r.fitMonth}`}
+                          </span>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "6px 0" }}>
+                          <div className="ats-bar-bg" style={{ flex: 1 }}>
+                            <div className="ats-bar-fill" style={{ width: `${currentFitVal}%`, background: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }} />
+                          </div>
+                          <span style={{ fontSize: 11, fontWeight: 700, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }}>{currentFitVal}%</span>
+                        </div>
+                        <p style={{ fontSize: 10, color: "#64748B", margin: "4px 0", lineHeight: 1.4 }}>{r.description}</p>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 6 }}>
+                          {r.keySkills.map(s => <span key={s} className="tag" style={{ fontSize: 8 }}>{s}</span>)}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
