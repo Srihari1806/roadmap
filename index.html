@@ -2624,10 +2624,60 @@ const roleRequirements = {
   },
 };
 
+const core16Skills = [
+  // Month 1 - June
+  { id: "sql", name: "Advanced SQL", month: "June", desc: "CTEs, Window functions, Joins, subqueries, and database schema design." },
+  { id: "excel", name: "Excel Power Query", month: "June", desc: "Data transformation pipelines, pivot tables, and sheets reporting." },
+  { id: "schema", name: "Schema Design (Process Mapping)", month: "June", desc: "Relational database modeling, Firestore document structures, and process mapping." },
+  { id: "complexity", name: "Complexity Analysis", month: "June", desc: "Big-O notation, runtime efficiency optimizations, and algorithmic scaling." },
+  // Month 2 - July
+  { id: "pandas", name: "Python (Pandas/Seaborn)", month: "July", desc: "DataFrames, data cleaning, exploratory data analysis (EDA), and plotting." },
+  { id: "eda", name: "EDA & Data Interpretation", month: "July", desc: "Hypothesis generation, outlier detection, and statistical reporting." },
+  { id: "kpi", name: "KPI Design (Product Metrics)", month: "July", desc: "DAU/MAU ratios, user retention curves, churn modeling, and funnel metrics." },
+  { id: "js", name: "JavaScript (Core & DOM)", month: "July", desc: "Asynchronous coding, DOM manipulation, and dynamic client-side scripting." },
+  // Month 3 - August
+  { id: "powerbi", name: "Power BI & Data Visualization", month: "August", desc: "DAX formulas, interactive dashboard reporting, and data storytelling." },
+  { id: "funnel", name: "Funnel & Retention Analytics", month: "August", desc: "Cohort retention analysis, conversion leakage checks, and drop-off graphs." },
+  { id: "react", name: "React hooks", month: "August", desc: "State management, component hooks, and building responsive frontends." },
+  { id: "os", name: "Operating Systems", month: "August", desc: "Concurrency, scheduling policies, memory allocation, and basic processes." },
+  // Month 4 - September
+  { id: "ga4", name: "Google Analytics", month: "September", desc: "Event tracking setup, user acquisitions analytics, and conversion triggers." },
+  { id: "seo", name: "SEO Writing", month: "September", desc: "Multilingual search optimization, page crawl indices, and keyword mapping." },
+  { id: "abtest", name: "A/B Testing", month: "September", desc: "Null hypothesis, sample sizes, and p-value statistical significance tests." },
+  { id: "mern", name: "MongoDB", month: "September", desc: "MERN backend APIs, routing with Express, and document databases schemas." }
+];
+
+const getSkillSuitability = (skillName, roleName) => {
+  const req = roleRequirements[roleName];
+  if (!req) return "none";
+  
+  const matches = (list, item) => {
+    return list.some(l => {
+      const lLower = l.toLowerCase();
+      const iLower = item.toLowerCase();
+      return lLower === iLower || lLower.includes(iLower) || iLower.includes(lLower);
+    });
+  };
+
+  if (matches(req.must_have, skillName)) return "high";
+  if (matches(req.good_to_have, skillName)) return "medium";
+  if (req.ats_keywords && matches(req.ats_keywords, skillName)) return "low";
+  return "none";
+};
+
+const getCoreSkillStatus = (skillMonth, currentProgress) => {
+  const monthMap = { "June": 1, "July": 2, "August": 3, "September": 4 };
+  const targetIndex = monthMap[skillMonth];
+  if (currentProgress >= targetIndex) return "have";
+  if (currentProgress === targetIndex - 1) return "learning";
+  return "gap";
+};
+
 function ResumeATSAnalyzer() {
   const [activeRole, setActiveRole] = useState("Data Analyst");
   const [activeTab, setActiveTab] = useState("resume");
   const [monthProgress, setMonthProgress] = useState(7); // Default to December (Full)
+  const [selectedSkillId, setSelectedSkillId] = useState("sql");
   
   const dynamicResume = {
     name: "Srihari [Last Name]",
@@ -2805,7 +2855,7 @@ function ResumeATSAnalyzer() {
           <div style={{ display: "flex", gap: 0, borderBottom: "1px solid #1E293B" }}>
             {["resume", "ats-gap", "roadmap", "assessment"].map(tab => (
               <button key={tab} onClick={() => setActiveTab(tab)} className={`tab-btn ${activeTab === tab ? "active" : "inactive"}`}>
-                {tab === "resume" ? "📄 Resume" : tab === "ats-gap" ? "🎯 ATS Gap Analysis" : tab === "roadmap" ? "🗺 Skill Roadmap" : "📋 Role Assessment"}
+                {tab === "resume" ? "📄 Resume" : tab === "ats-gap" ? "🎯 Eligibility & Skill Gap" : tab === "roadmap" ? "🗺 Skill Roadmap" : "📋 Role Assessment"}
               </button>
             ))}
           </div>
@@ -2936,65 +2986,237 @@ function ResumeATSAnalyzer() {
           </div>
         )}
 
-        {activeTab === "ats-gap" && (
-          <div>
-            <div style={{ background: "#0F1724", border: `1px solid ${role.color}33`, borderRadius: 4, padding: 24, marginBottom: 28 }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16, flexWrap: "wrap", gap: 12 }}>
-                <div>
-                  <div style={{ fontSize: 9, letterSpacing: 3, color: "#475569", textTransform: "uppercase", marginBottom: 4 }}>ATS Score for {activeRole}</div>
-                  <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 52, color: role.color, lineHeight: 1 }}>{atsScore}<span style={{ fontSize: 20, color: "#475569" }}>%</span></div>
+        {activeTab === "ats-gap" && (() => {
+          const selectedSkillObj = core16Skills.find(s => s.id === selectedSkillId) || core16Skills[0];
+          const skillStatus = getCoreSkillStatus(selectedSkillObj.month, monthProgress);
+          
+          let havePercent = 0;
+          let lackPercent = 100;
+          let statusText = "Gap (0% Competency)";
+          let statusColor = "#F87171"; // Red
+
+          if (skillStatus === "have") {
+            havePercent = 100;
+            lackPercent = 0;
+            statusText = "Mastered (100% Competency)";
+            statusColor = "#34D399"; // Green
+          } else if (skillStatus === "learning") {
+            havePercent = 50;
+            lackPercent = 50;
+            statusText = "Learning (50% Competency)";
+            statusColor = "#FCD34D"; // Yellow
+          }
+
+          const suitability = getSkillSuitability(selectedSkillObj.name, activeRole);
+          let suitabilityLabel = "Not Required";
+          let suitabilityColor = "#64748B"; // Muted
+          let suitabilityDesc = "This skill is not directly required or mentioned in the core requirements for this role, but serves as a solid general technical/analytical foundation.";
+
+          if (suitability === "high") {
+            suitabilityLabel = "High (Must-Have)";
+            suitabilityColor = "#EF4444"; // Red (Critical)
+            suitabilityDesc = "Critical must-have skill. Absolutely required to be prominently demonstrated on your resume to pass ATS screening and technical rounds.";
+          } else if (suitability === "medium") {
+            suitabilityLabel = "Medium (Good-to-Have)";
+            suitabilityColor = "#F59E0B"; // Orange/Yellow
+            suitabilityDesc = "Highly recommended secondary skill that differentiates you from other candidates and adds depth to your project portfolio.";
+          } else if (suitability === "low") {
+            suitabilityLabel = "Low (ATS Keyword)";
+            suitabilityColor = "#3B82F6"; // Blue
+            suitabilityDesc = "Recommended ATS keyword to weave into your bullet points or summary to optimize automated resume screening scores.";
+          }
+
+          let eligibilityRating = "Early Learning Stage";
+          let eligibilityColor = "#EF4444"; // Red
+          if (atsScore >= 75) {
+            eligibilityRating = "Match Ready / Fit to Apply";
+            eligibilityColor = "#34D399"; // Green
+          } else if (atsScore >= 50) {
+            eligibilityRating = "Developing Fit (Learning)";
+            eligibilityColor = "#FCD34D"; // Yellow
+          }
+
+          return (
+            <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 28 }}>
+              {/* Left Panel: 4x4 Core Skills Matrix */}
+              <div>
+                <div className="section-label" style={{ marginBottom: 16 }}>
+                  16 Core Skills Matrix (4 Skills/Month × 4 Months)
                 </div>
-                <div style={{ display: "flex", gap: 20 }}>
-                  {[{ label: "Have", count: haveCount, color: "#34D399" }, { label: "Learning", count: learningCount, color: "#FCD34D" }, { label: "Gap", count: gapCount, color: "#F87171" }].map(item => (
-                    <div key={item.label} style={{ textAlign: "center" }}>
-                      <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 32, color: item.color, lineHeight: 1 }}>{item.count}</div>
-                      <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase" }}>{item.label}</div>
+                
+                {["June", "July", "August", "September"].map((mName, idx) => {
+                  const monthSkills = core16Skills.filter(s => s.month === mName);
+                  return (
+                    <div key={mName} style={{ marginBottom: 20 }}>
+                      <div style={{ fontSize: 9, letterSpacing: 2, color: "#64748B", textTransform: "uppercase", marginBottom: 10, fontWeight: 700, display: "flex", alignItems: "center", gap: 8 }}>
+                        <span style={{ width: 6, height: 6, borderRadius: "50%", background: role.color }} />
+                        Month {idx + 1} — {mName}
+                      </div>
+                      <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 12 }}>
+                        {monthSkills.map(skill => {
+                          const status = getCoreSkillStatus(skill.month, monthProgress);
+                          const isSelected = selectedSkillId === skill.id;
+                          
+                          let cardBorder = "#1E293B";
+                          let statusBg = "#1A202C";
+                          let statusColor = "#64748B";
+                          let statusLabel = "Gap";
+                          
+                          if (status === "have") {
+                            statusBg = "#0F2A1F";
+                            statusColor = "#34D399";
+                            statusLabel = "Mastered";
+                          } else if (status === "learning") {
+                            statusBg = "#1C1A0A";
+                            statusColor = "#FCD34D";
+                            statusLabel = "Learning";
+                          }
+                          
+                          if (isSelected) {
+                            cardBorder = role.color;
+                          }
+
+                          return (
+                            <div 
+                              key={skill.id}
+                              onClick={() => setSelectedSkillId(skill.id)}
+                              style={{
+                                background: isSelected ? "#0F172A" : "#050811",
+                                border: `1px solid ${cardBorder}`,
+                                borderRadius: 4,
+                                padding: "12px 14px",
+                                cursor: "pointer",
+                                transition: "all 0.2s",
+                                boxShadow: isSelected ? `0 0 12px ${role.color}15` : "none",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "space-between",
+                                minHeight: 80
+                              }}
+                            >
+                              <div style={{ fontSize: 11, fontWeight: 700, color: isSelected ? "#FFF" : "#94A3B8", lineHeight: 1.3 }}>
+                                {skill.name}
+                              </div>
+                              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 8 }}>
+                                <span style={{ fontSize: 8, color: "#475569", textTransform: "uppercase" }}>{skill.month}</span>
+                                <span style={{ 
+                                  fontSize: 8, 
+                                  background: statusBg, 
+                                  color: statusColor, 
+                                  padding: "2px 6px", 
+                                  borderRadius: 2, 
+                                  fontWeight: 700, 
+                                  textTransform: "uppercase" 
+                                }}>
+                                  {statusLabel}
+                                </span>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
-                  ))}
-                </div>
+                  );
+                })}
               </div>
-              <div className="ats-bar-bg">
-                <div className="ats-bar-fill" style={{ width: `${atsScore}%`, background: role.color }} />
-              </div>
-            </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+              {/* Right Panel: Selected Skill Scorecard & Overall Eligibility */}
               <div>
-                <div className="section-label">Must-Have Skills</div>
-                {mustHaveAnalysis.map(({ skill, status }) => (
-                  <div key={skill} style={{ display: "flex", alignItems: "center", padding: "10px 0", borderBottom: "1px solid #0F1724" }}>
-                    <span className="status-dot" style={{ background: status === "have" ? "#34D399" : status === "learning" ? "#FCD34D" : "#F87171" }} />
-                    <span style={{ fontSize: 11, color: status === "have" ? "#94A3B8" : status === "learning" ? "#FCD34D" : "#F87171", flex: 1 }}>{skill}</span>
-                    <span style={{ fontSize: 9, letterSpacing: 1, color: status === "have" ? "#34D399" : status === "learning" ? "#F59E0B" : "#EF4444", textTransform: "uppercase" }}>
-                      {status === "have" ? "✓ Have" : status === "learning" ? "⟳ Learning" : "✗ Gap"}
+                {/* Active Skill Detail */}
+                <div style={{ background: "#0F1724", border: `1px solid ${selectedSkillId ? role.color : "#1E293B"}33`, borderRadius: 4, padding: 20, marginBottom: 20 }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+                    <span style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase" }}>Selected Skill Analysis</span>
+                    <span style={{ fontSize: 9, color: role.color, letterSpacing: 1, textTransform: "uppercase", fontWeight: 700 }}>{selectedSkillObj.month} Skill</span>
+                  </div>
+                  <h3 style={{ fontSize: 16, fontWeight: 700, color: "#fff", marginBottom: 6 }}>{selectedSkillObj.name}</h3>
+                  <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.6 }}>{selectedSkillObj.desc}</p>
+                </div>
+
+                {/* Skill Mastery Metrics */}
+                <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20, marginBottom: 20 }}>
+                  <div className="section-label" style={{ marginBottom: 14 }}>Skill Gap & Competency</div>
+                  
+                  {/* Competency Level (Have) */}
+                  <div style={{ marginBottom: 18 }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+                      <span style={{ fontSize: 10, color: "#94A3B8", textTransform: "uppercase", letterSpacing: 1 }}>What I Have (Competency)</span>
+                      <span style={{ fontSize: 11, fontWeight: 700, color: statusColor }}>{havePercent}%</span>
+                    </div>
+                    <div className="ats-bar-bg" style={{ height: 8 }}>
+                      <div className="ats-bar-fill" style={{ height: 8, width: `${havePercent}%`, background: "linear-gradient(90deg, #059669, #34D399)", borderRadius: 2 }} />
+                    </div>
+                  </div>
+
+                  {/* Skill Deficit (Lack) */}
+                  <div>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+                      <span style={{ fontSize: 10, color: "#94A3B8", textTransform: "uppercase", letterSpacing: 1 }}>What I Lack (Deficit)</span>
+                      <span style={{ fontSize: 11, fontWeight: 700, color: lackPercent > 0 ? "#F87171" : "#64748B" }}>{lackPercent}%</span>
+                    </div>
+                    <div className="ats-bar-bg" style={{ height: 8 }}>
+                      <div className="ats-bar-fill" style={{ height: 8, width: `${lackPercent}%`, background: "linear-gradient(90deg, #DC2626, #F87171)", borderRadius: 2 }} />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Role Relevance */}
+                <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20, marginBottom: 20 }}>
+                  <div className="section-label" style={{ marginBottom: 12 }}>Role Suitability for {activeRole}</div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+                    <span style={{ 
+                      fontSize: 10, 
+                      background: suitabilityColor + "20", 
+                      color: suitabilityColor, 
+                      border: `1px solid ${suitabilityColor}40`,
+                      padding: "4px 10px", 
+                      borderRadius: 2, 
+                      fontWeight: 700, 
+                      textTransform: "uppercase" 
+                    }}>
+                      {suitabilityLabel}
                     </span>
                   </div>
-                ))}
-              </div>
-              <div>
-                <div className="section-label">Good-to-Have Skills</div>
-                {goodToHaveAnalysis.map(({ skill, status }) => (
-                  <div key={skill} style={{ display: "flex", alignItems: "center", padding: "10px 0", borderBottom: "1px solid #0F1724" }}>
-                    <span className="status-dot" style={{ background: status === "have" ? "#34D399" : status === "learning" ? "#FCD34D" : "#475569" }} />
-                    <span style={{ fontSize: 11, color: status === "have" ? "#94A3B8" : status === "learning" ? "#FCD34D" : "#475569", flex: 1 }}>{skill}</span>
-                    <span style={{ fontSize: 9, letterSpacing: 1, color: status === "have" ? "#34D399" : status === "learning" ? "#F59E0B" : "#334155", textTransform: "uppercase" }}>
-                      {status === "have" ? "✓ Have" : status === "learning" ? "⟳ Learning" : "· Planned"}
-                    </span>
-                  </div>
-                ))}
+                  <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.6 }}>{suitabilityDesc}</p>
+                </div>
 
-                <div style={{ marginTop: 24 }}>
-                  <div className="section-label">ATS Keywords to Use</div>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                    {role.ats_keywords.map(kw => (
-                      <span key={kw} className="skill-badge" style={{ background: role.color + "15", color: role.color, border: `1px solid ${role.color}30` }}>{kw}</span>
-                    ))}
+                {/* Overall Eligibility */}
+                <div style={{ background: "#0F1724", border: `1px solid ${eligibilityColor}33`, borderRadius: 4, padding: 20 }}>
+                  <div className="section-label" style={{ marginBottom: 12, borderBottomColor: `${eligibilityColor}22` }}>Overall Role Eligibility</div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <div>
+                      <div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{activeRole} Fit</div>
+                      <div style={{ fontSize: 9, color: eligibilityColor, marginTop: 4, fontWeight: 600, textTransform: "uppercase" }}>{eligibilityRating}</div>
+                    </div>
+                    <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 42, color: eligibilityColor, lineHeight: 1 }}>
+                      {atsScore}%
+                    </div>
+                  </div>
+                  <div className="ats-bar-bg" style={{ marginTop: 12 }}>
+                    <div className="ats-bar-fill" style={{ width: `${atsScore}%`, background: eligibilityColor }} />
+                  </div>
+                  
+                  {/* Must-have skills list matching */}
+                  <div style={{ marginTop: 20 }}>
+                    <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 10 }}>Role must-haves checklist</div>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 6, maxHeight: 180, overflowY: "auto", paddingRight: 4 }}>
+                      {mustHaveAnalysis.map(({ skill, status }) => (
+                        <div key={skill} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 10, padding: "6px 10px", background: "#0A0D14", border: "1px solid #1E293B", borderRadius: 2 }}>
+                          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                            <span className="status-dot" style={{ background: status === "have" ? "#34D399" : status === "learning" ? "#FCD34D" : "#EF4444", margin: 0 }} />
+                            <span style={{ color: "#94A3B8" }}>{skill}</span>
+                          </div>
+                          <span style={{ fontSize: 8, color: status === "have" ? "#34D399" : status === "learning" ? "#F59E0B" : "#EF4444", fontWeight: 700, textTransform: "uppercase" }}>
+                            {status === "have" ? "✓ Have" : status === "learning" ? "⟳ Learning" : "✗ Gap"}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {activeTab === "roadmap" && (
           <div>
