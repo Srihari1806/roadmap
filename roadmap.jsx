@@ -1217,6 +1217,7 @@ function Roadmap() {
 
 const tabs = [
     { id: "overview", label: "🗺️ Overview" },
+    { id: "monthly", label: "⏱️ Execution Planner" },
     { id: "skillmap", label: "🗺️ Skill Map" },
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
