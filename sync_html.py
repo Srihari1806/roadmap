@@ -6,21 +6,52 @@ html_path = 'c:\\Users\\KIIT0001\\Downloads\\PERSONAL PROJECTS\\ROADMAP\\index.h
 with open(jsx_path, 'r', encoding='utf-8') as f:
     jsx_content = f.read()
 
-with open(html_path, 'r', encoding='utf-8') as f:
-    html_content = f.read()
+TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srihari's 6-Month Analyst Launch Plan | Execution Roadmap</title>
+  <meta name="description" content="6-month brutally practical execution roadmap: 4+ analytics projects, portfolio website, Sahitya Rachanalu platform, and skill mastery for 4 target Analyst roles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: #080810; color: #E8E8F0; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #080810; }
+    ::-webkit-scrollbar-thumb { background: #252540; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #F4A72A; }
+    #root { min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#080810;color:#E8E8F0;font-family:Inter,Arial,sans-serif;">
+      <div style="max-width:520px;line-height:1.6;">
+        <h1 style="font-size:22px;margin:0 0 8px;color:#F4A72A;">Roadmap is loading...</h1>
+        <p style="margin:0 0 16px;color:#9A9AB3;">If this message stays visible, the React/Babel CDN script did not finish loading.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+{JSX_CONTENT}
 
-start_marker = '<script type="text/babel">'
-end_marker = '</script>'
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(React.createElement(ErrorBoundary, null, React.createElement(CombinedApp)));
+  </script>
+</body>
+</html>
+"""
 
-s_idx = html_content.find(start_marker)
-if s_idx != -1:
-    e_idx = html_content.find(end_marker, s_idx)
-    if e_idx != -1:
-        new_html = html_content[:s_idx + len(start_marker)] + '\n' + jsx_content + '\n' + html_content[e_idx:]
-        with open(html_path, 'w', encoding='utf-8') as f:
-            f.write(new_html)
-        print("Successfully synced roadmap.jsx into index.html")
-    else:
-        print("Could not find closing script tag.")
-else:
-    print("Could not find opening script tag.")
+new_html = TEMPLATE.replace('{JSX_CONTENT}', jsx_content)
+
+with open(html_path, 'w', encoding='utf-8') as f:
+    f.write(new_html)
+
+print("Successfully synced roadmap.jsx into index.html")
