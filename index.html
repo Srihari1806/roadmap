@@ -2746,6 +2746,40 @@ function SkillMapTab() {
       borderBottom: '1px solid rgba(255,255,255,0.04)',
       paddingBottom: 6
     }
+  }, "ATS Keywords Unlocked"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: 6
+    }
+  }, getMatchedKeywords(activeSkill.title).length > 0 ? getMatchedKeywords(activeSkill.title).map((kw, i) => /*#__PURE__*/React.createElement("span", {
+    key: i,
+    style: {
+      fontSize: 10,
+      color: '#34D399',
+      border: '1px solid rgba(52,211,153,0.3)',
+      background: 'rgba(52,211,153,0.08)',
+      padding: '4px 8px',
+      borderRadius: 4,
+      fontWeight: 700
+    }
+  }, kw)) : /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: '#6B6B8A'
+    }
+  }, "General conceptual foundation."))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      fontWeight: 700,
+      color: '#6B6B8A',
+      textTransform: 'uppercase',
+      letterSpacing: 1,
+      marginBottom: 10,
+      fontFamily: "'DM Mono',monospace",
+      borderBottom: '1px solid rgba(255,255,255,0.04)',
+      paddingBottom: 6
+    }
   }, "Roles This Skill Helps"), /*#__PURE__*/React.createElement("div", {
     style: {
       display: 'flex',
@@ -4994,6 +5028,68 @@ const roleRequirements = {
     ats_keywords: ["growth marketer", "digital marketing", "GA4", "analytics", "HubSpot", "A/B testing", "acquisition", "retention", "CAC", "ROAS", "social media", "SEO"]
   }
 };
+function getMatchedKeywords(skillTitle) {
+  if (!skillTitle) return [];
+  const allKeywords = new Set();
+  Object.values(roleRequirements).forEach(req => {
+    if (req.must_have) req.must_have.forEach(k => allKeywords.add(k));
+    if (req.good_to_have) req.good_to_have.forEach(k => allKeywords.add(k));
+    if (req.ats_keywords) req.ats_keywords.forEach(k => allKeywords.add(k));
+  });
+  const matched = [];
+  const learnedSet = new Set([skillTitle.toLowerCase()]);
+  const parts = skillTitle.split(/·|,|\+/).map(p => p.trim().toLowerCase());
+  parts.forEach(p => learnedSet.add(p));
+  allKeywords.forEach(kw => {
+    const sl = kw.toLowerCase();
+    const isMatch = [...learnedSet].some(s => {
+      const sLower = s.toLowerCase();
+      if (sLower === sl) return true;
+      if (sLower.includes(sl) || sl.includes(sLower)) return true;
+      if (sl === "sql" && sLower.includes("sql")) return true;
+      if (sl.includes("python") && sLower.includes("python")) return true;
+      if (sl.includes("pandas") && sLower.includes("pandas")) return true;
+      if ((sl.includes("excel") || sl.includes("sheets")) && (sLower.includes("excel") || sLower.includes("sheets"))) return true;
+      if (sl.includes("dashboard") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("dashboard") || sLower.includes("visualization"))) return true;
+      if (sl.includes("visualization") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("seaborn") || sLower.includes("matplotlib") || sLower.includes("visualization"))) return true;
+      if (sl.includes("statistical") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
+      if (sl.includes("statistics") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning"))) return true;
+      if (sl.includes("interpretation") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("interpretation"))) return true;
+      if (sl.includes("thinking") && (sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
+      if (sl.includes("product metrics") && (sLower.includes("kpi") || sLower.includes("funnel") || sLower.includes("ltv/cac") || sLower.includes("analytics") || sLower.includes("metrics") || sLower.includes("retention"))) return true;
+      if (sl.includes("funnel") && sLower.includes("funnel")) return true;
+      if (sl.includes("retention") && sLower.includes("retention")) return true;
+      if (sl.includes("a/b testing") && sLower.includes("a/b testing")) return true;
+      if (sl.includes("seo") && sLower.includes("seo")) return true;
+      if (sl.includes("content strategy") && sLower.includes("content strategy")) return true;
+      if (sl.includes("social media") && (sLower.includes("content strategy") || sLower.includes("growth") || sLower.includes("social media"))) return true;
+      if (sl.includes("content calendar") && (sLower.includes("content calendar") || sLower.includes("content strategy") || sLower.includes("editorial"))) return true;
+      if (sl.includes("brand messaging") && (sLower.includes("brand messaging") || sLower.includes("copywriting") || sLower.includes("brand"))) return true;
+      if (sl.includes("analytics tools") && (sLower.includes("analytics") || sLower.includes("ga4") || sLower.includes("power bi") || sLower.includes("tableau"))) return true;
+      if (sl.includes("google analytics") && (sLower.includes("google analytics") || sLower.includes("ga4"))) return true;
+      if (sl.includes("hubspot") && (sLower.includes("hubspot") || sLower.includes("marketing automation"))) return true;
+      if (sl.includes("user journey") && (sLower.includes("funnel") || sLower.includes("process") || sLower.includes("schema design"))) return true;
+      if (sl.includes("process mapping") && (sLower.includes("schema design") || sLower.includes("process") || sLower.includes("workflow") || sLower.includes("design"))) return true;
+      if (sl.includes("business problem") && (sLower.includes("case study") || sLower.includes("case studies") || sLower.includes("storytelling") || sLower.includes("framing") || sLower.includes("consolidation"))) return true;
+      if (sl.includes("stakeholder") && (sLower.includes("storytelling") || sLower.includes("communication"))) return true;
+      if (sl.includes("storytelling") && sLower.includes("storytelling")) return true;
+      if (sl.includes("sports domain") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
+      if (sl.includes("sports") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
+      if (sl.includes("financial modeling") && (sLower.includes("financial") || sLower.includes("forecasting") || sLower.includes("modeling"))) return true;
+      if (sl.includes("accounting") && (sLower.includes("financial literacy") || sLower.includes("accounting"))) return true;
+      if (sl.includes("audience research") && (sLower.includes("analytics") || sLower.includes("seo") || sLower.includes("audience") || sLower.includes("campaign"))) return true;
+      if (sl.includes("campaign planning") && (sLower.includes("content strategy") || sLower.includes("seo") || sLower.includes("campaign"))) return true;
+      if (sl.includes("keyword research") && (sLower.includes("seo") || sLower.includes("keyword"))) return true;
+      if (sl.includes("optimization") && (sLower.includes("seo") || sLower.includes("optimization"))) return true;
+      return false;
+    });
+    if (isMatch) {
+      const capKw = kw.split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+      matched.push(capKw);
+    }
+  });
+  return Array.from(new Set(matched));
+}
 const core16Skills = [
 // Month 1 - June
 {
