@@ -712,7 +712,7 @@ const projectsData = [
         num: "1", icon: "📊", title: "Recruitment Intelligence & Matching",
         role: "Data Analyst",
         analyticsType: "Matching & Scoring",
-        color: "#4A9EFF",
+        color: "#3B82F6",
         what: "Match score calculations and search relevance",
         analyze: ["Skill arrays mapping to job roles", "Keyword match frequencies", "Profile completeness score weightings"],
         metrics: ["Skill Match %", "Relevance Score", "Profile Completeness Index"],
@@ -722,7 +722,7 @@ const projectsData = [
         num: "2", icon: "🧠", title: "Onboarding & UX Psychology",
         role: "Product Analyst",
         analyticsType: "UX Analysis",
-        color: "#EC4899",
+        color: "#8B5CF6",
         what: "Simplifying student signups and conversion optimization",
         analyze: ["7-step onboarding reduction to 4 screens", "User drop-offs per screen", "Role-based navigation flows"],
         metrics: ["Signup completion rate", "Screen drop-off rates", "Time-to-onboard"],
@@ -732,11 +732,71 @@ const projectsData = [
         num: "3", icon: "🛡️", title: "Database & Auth Architecture",
         role: "Business Analyst",
         analyticsType: "Schema & Telemetry",
-        color: "#A855F7",
+        color: "#10B981",
         what: "Schema normalization and role-based data synchronization",
         analyze: ["Firebase Authentication role splits", "Firestore normalization", "Schema parameters"],
         metrics: ["Database query latency", "Session concurrency", "Authentication token renewals"],
         outputs: ["Database normalization matrix", "Auth state-machine diagram"]
+      },
+      {
+        num: "4", icon: "📈", title: "Candidate Acquisition & Funnel",
+        role: "Growth Analyst",
+        analyticsType: "Growth Strategy & Funnel",
+        color: "#F59E0B",
+        what: "Student user acquisition campaign and referral loops",
+        analyze: ["Referral program share rates", "Email open rates", "Landing page signups from campaigns"],
+        metrics: ["Viral K-factor", "Referral signup rate", "Customer Acquisition Cost (CAC)"],
+        outputs: ["Campus referral flow map", "Email campaign performance funnel"]
+      },
+      {
+        num: "5", icon: "🏃", title: "Draft-Style Placement Matchmaking",
+        role: "Sports Analyst",
+        analyticsType: "Matchmaking & Performance",
+        color: "#EF4444",
+        what: "Applying sports player-drafting and player ranking (ELO) frameworks to student hiring",
+        analyze: ["Candidate competitive scoring", "Mock interview win-rates", "Skills-based rank progression"],
+        metrics: ["Student ELO rating", "Interview win-rate %", "Draft pick efficiency"],
+        outputs: ["Student draft leaderboard", "Placement match scorecard"]
+      },
+      {
+        num: "6", icon: "💰", title: "Placement Economics & Monetization",
+        role: "Financial Analyst",
+        analyticsType: "Financial Modeling & ROI",
+        color: "#6366F1",
+        what: "Cost of placement vs hiring commission and university pricing tiers",
+        analyze: ["Subscription revenue from companies", "Cost per active hire", "University onboarding ROI"],
+        metrics: ["Cost Per Hire (CPH)", "Customer Lifetime Value (LTV)", "Subscription Gross Margins"],
+        outputs: ["Revenue projections model", "University ROI calculator"]
+      },
+      {
+        num: "7", icon: "✍️", title: "Employer Brand Storytelling",
+        role: "Content Strategist",
+        analyticsType: "Employer Branding",
+        color: "#EC4899",
+        what: "Structuring company profile pages, job descriptions, and newsletter campaigns",
+        analyze: ["Content engagement metrics", "Read rates on employer spotlights", "Brand video completion rates"],
+        metrics: ["Brand page view-through rate", "Newsletter open rate %", "Content share velocity"],
+        outputs: ["Employer brand content guidelines", "Editorial calendar for campus updates"]
+      },
+      {
+        num: "8", icon: "🔍", title: "Job Posting SEO & Discovery",
+        role: "SEO Analyst",
+        analyticsType: "Search Engine Optimization",
+        color: "#14B8A6",
+        what: "Maximizing job posting rankings on Google Jobs and external search engines",
+        analyze: ["Job board keyword volumes", "Schema markup validation for jobs", "Organic search CTR"],
+        metrics: ["Google Jobs rank position", "Organic click-through rate", "Crawl frequency"],
+        outputs: ["Job schema markup template", "Keyword mapping sheet"]
+      },
+      {
+        num: "9", icon: "🚀", title: "Placement Portal Expansion Strategy",
+        role: "Strategy Analyst",
+        analyticsType: "Strategic Expansion",
+        color: "#A855F7",
+        what: "Expanding the placement network to 10+ colleges and building predictive AI hiring engines",
+        analyze: ["Market sizing (TAM/SAM) for engineering colleges", "Resource constraints", "System bottlenecks"],
+        metrics: ["Platform expansion velocity", "Student placement rate %", "Platform lock-in index"],
+        outputs: ["3-year growth roadmap", "Strategic partnerships matrix"]
       }
     ],
     deliverables: [
@@ -745,9 +805,12 @@ const projectsData = [
       { icon: "📄", label: "UX Case Study", desc: "Analysis of 7-to-4 screen onboarding optimization" }
     ],
     roleMap: [
-      { section: "Matching & Relevance", role: "Data Analyst" },
-      { section: "Onboarding Funnel", role: "Product Analyst" },
-      { section: "Database Schema", role: "Business Analyst" }
+      { section: "Matching Relevance", role: "Data Analyst" },
+      { section: "UX Onboarding Funnel", role: "Product Analyst" },
+      { section: "Database & Schema", role: "Business Analyst" },
+      { section: "Competitive Matchmaking", role: "Sports Analyst" },
+      { section: "Monetization Models", role: "Financial Analyst" },
+      { section: "Employer Brand", role: "Content Strategist" }
     ]
   },
   {
@@ -763,7 +826,7 @@ const projectsData = [
         num: "1", icon: "📊", title: "Multilingual Content Architecture",
         role: "Content Strategist",
         analyticsType: "SEO & Content Strategy",
-        color: "#4A9EFF",
+        color: "#EC4899",
         what: "Structural planning for Cinepedia, Lyrics Engine, and Dialogue Fictionary",
         analyze: ["Semantic search parameters", "Search volumes for Telugu cinema keywords", "Editorial calendar pacing"],
         metrics: ["Page Speed Index", "SEO Visibility score", "Crawl rate"],
@@ -771,23 +834,83 @@ const projectsData = [
       },
       {
         num: "2", icon: "🧠", title: "World-Building & Lore Timelines",
-        role: "Narrative Designer",
+        role: "Product Analyst",
         analyticsType: "Storytelling & Segmentation",
-        color: "#EC4899",
+        color: "#8B5CF6",
         what: "Timelines, maps, factions, and interactive character bibles",
         analyze: ["Character arcs structures", "Lore coherence indexes", "Interactive timeline engagement metrics"],
         metrics: ["Story engagement index", "Character page click-throughs", "Time-on-page"],
         outputs: ["Character psychology bible", "Lore timelines flow"]
       },
       {
-        num: "3", icon: "🎮", title: "Interaction & Gamification",
-        role: "Product Analyst",
+        num: "3", icon: "🎮", title: "Interaction & Gamification Loops",
+        role: "Growth Analyst",
         analyticsType: "Behavioral Analytics",
-        color: "#A855F7",
+        color: "#F59E0B",
         what: "Telugu meme keyboard shares, dialogue card flips, and audio player retention",
         analyze: ["Card flip interaction rates", "Audio player drop-off curves", "Share click loops"],
         metrics: ["Interactive share rate", "Card-flip interaction frequency", "Audio completion rate"],
         outputs: ["Gamified interactions loop", "Share velocity map"]
+      },
+      {
+        num: "4", icon: "📈", title: "Content Performance & Attribution",
+        role: "Data Analyst",
+        analyticsType: "Traffic & Engagement Analysis",
+        color: "#3B82F6",
+        what: "Tracking visitor patterns across platform modules",
+        analyze: ["Monthly active users", "session durations", "organic vs referral traffic splits"],
+        metrics: ["Bounce rate", "Conversion from blog to keyboard app", "Daily Active Users (DAU)"],
+        outputs: ["Traffic source analysis", "User activity heatmap"]
+      },
+      {
+        num: "5", icon: "📋", title: "Operations & Editorial Lifecycle",
+        role: "Business Analyst",
+        analyticsType: "Operations & Process Flow",
+        color: "#10B981",
+        what: "Content pipeline management and translation workflows",
+        analyze: ["Time from draft to publish", "translator workload splits", "content bottlenecks"],
+        metrics: ["Article release cycle time", "Editing error rate", "Production efficiency index"],
+        outputs: ["Content pipeline flowchart", "Workload optimization report"]
+      },
+      {
+        num: "6", icon: "🏏", title: "Sports Literature & Narrative Analytics",
+        role: "Sports Analyst",
+        analyticsType: "Sports Domain Narrative & Analytics",
+        color: "#EF4444",
+        what: "Analytical breakdowns of sports folklore, IPL culture, and sports movies (e.g. Jersey, Bheemili Kabaddi)",
+        analyze: ["Reader engagement with sports culture essays", "Telugu cinema sports tropes popularity"],
+        metrics: ["Time-on-page for sports essays", "Bounce rate on culture columns", "Sentiment score of commentaries"],
+        outputs: ["Sports-culture content theme map", "Telugu sports-movie analysis series"]
+      },
+      {
+        num: "7", icon: "🔍", title: "Search Intent & Multilingual SEO",
+        role: "SEO Analyst",
+        analyticsType: "Multilingual SEO Auditing",
+        color: "#14B8A6",
+        what: "Optimizing English-Telugu bilingual search results",
+        analyze: ["Search volumes for English and Telugu keywords", "meta tags effectiveness", "backlink profiles"],
+        metrics: ["Multilingual search impressions", "Average position for core keywords", "Indexation rate"],
+        outputs: ["Multilingual keyword map", "Schema markup structure for Cinepedia"]
+      },
+      {
+        num: "8", icon: "💰", title: "Platform Economics & Premium Model",
+        role: "Financial Analyst",
+        analyticsType: "Monetization & Unit Economics",
+        color: "#6366F1",
+        what: "Subscription models, ad networks, and premium ebook sales",
+        analyze: ["Subscription pricing tiers", "ad revenue per mille (RPM)", "payment gateway fees"],
+        metrics: ["Average Revenue Per User (ARPU)", "Customer Acquisition Cost (CAC)", "Gross Margin %"],
+        outputs: ["Monetization scenario modeling", "Pricing sheet"]
+      },
+      {
+        num: "9", icon: "🚀", title: "Platform Expansion & Vision",
+        role: "Strategy Analyst",
+        analyticsType: "Strategic Expansion",
+        color: "#A855F7",
+        what: "Scaling reach, building regional translation networks, and launching a mobile app",
+        analyze: ["Total Addressable Market (TAM) for vernacular content", "competitor analysis", "cross-platform growth models"],
+        metrics: ["Ecosystem growth velocity", "User retention index", "Referral coefficient"],
+        outputs: ["3-year launch-to-scale roadmap", "Vernacular translation pipeline model"]
       }
     ],
     deliverables: [
@@ -796,9 +919,12 @@ const projectsData = [
       { icon: "📄", label: "Founder Journal", desc: "Process documentation tracking growth from pre-launch to scale" }
     ],
     roleMap: [
-      { section: "SEO & Content", role: "Content Strategist" },
-      { section: "Story Universe", role: "Narrative Designer" },
-      { section: "Gamification", role: "Product Analyst" }
+      { section: "Content Architecture", role: "Content Strategist" },
+      { section: "Search Optimization", role: "SEO Analyst" },
+      { section: "World-Building Lore", role: "Product Analyst" },
+      { section: "Gamification & Shares", role: "Growth Analyst" },
+      { section: "Culture Commentary", role: "Sports Analyst" },
+      { section: "Platform Economics", role: "Financial Analyst" }
     ]
   }
 ];
@@ -873,7 +999,7 @@ const skillsRoadmap = [
 function ProjectCard({ proj }) {
   const [expanded, setExpanded] = React.useState(null);
   return (
-    <div style={{ background: CARD, border: `2px solid ${proj.accentColor}`, borderRadius: 12, padding: 24 }}>
+    <div id={proj.id} style={{ background: CARD, border: `2px solid ${proj.accentColor}`, borderRadius: 12, padding: 24 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
         <span style={{ fontSize: 32 }}>{proj.emoji}</span>
         <div>
@@ -1317,18 +1443,31 @@ const tabs = [
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
               {[
-                { emoji: "🏏", title: "IPL Analytics", week: "Weeks 1–2+8", layers: "7 layers", output: "Dashboard + Report + 3 blogs", color: ACCENT },
-                { emoji: "🎬", title: "OTT vs Theatre", week: "Weeks 3+8", layers: "9 layers", output: "Dashboard + Report + 2 blogs", color: PURPLE },
-                { emoji: "🛒", title: "E-Commerce", week: "Weeks 4+8", layers: "9 layers", output: "Dashboard + Report + 2 blogs", color: GREEN },
-                { emoji: "🎸", title: "BPL Ecosystem", week: "Weeks 5+8", layers: "8 layers", output: "Dashboard + Dataset + Report", color: "#F4A72A" },
+                { id: "ipl", emoji: "🏏", title: "IPL Analytics", week: "Weeks 1–2+8", layers: "7 layers", output: "Dashboard + Report + 3 blogs", color: ACCENT },
+                { id: "ott", emoji: "🎬", title: "OTT vs Theatre", week: "Weeks 3+8", layers: "9 layers", output: "Dashboard + Report + 2 blogs", color: PURPLE },
+                { id: "ecom", emoji: "🛒", title: "E-Commerce", week: "Weeks 4+8", layers: "9 layers", output: "Dashboard + Report + 2 blogs", color: GREEN },
+                { id: "bpl", emoji: "🎸", title: "BPL Ecosystem", week: "Weeks 5+8", layers: "8 layers", output: "Dashboard + Dataset + Report", color: "#F4A72A" },
+                { id: "hiremap", emoji: "💼", title: "Hiremap Portal", week: "Weeks 6+8", layers: "9 layers", output: "Vercel Web App + Backlog + Case Study", color: "#10B981" },
+                { id: "sahitya", emoji: "✍️", title: "Sahitya Rachanalu", week: "Weeks 7+8", layers: "9 layers", output: "Next.js Web App + 8-Pillar Calendar", color: "#F4A72A" },
               ].map(p => (
-                <div key={p.title} style={{
+                <div key={p.title} onClick={() => {
+                  setActiveTab("projects");
+                  setTimeout(() => {
+                    const el = document.getElementById(p.id);
+                    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }, 100);
+                }} style={{
                   background: CARD,
                   border: `1px solid ${BORDER}`,
                   borderTop: `2px solid ${p.color}`,
                   borderRadius: 8,
                   padding: 16,
-                }}>
+                  cursor: "pointer",
+                  transition: "all 0.2s",
+                }}
+                onMouseEnter={e => e.currentTarget.style.borderColor = p.color}
+                onMouseLeave={e => e.currentTarget.style.borderColor = BORDER}
+                >
                   <div style={{ fontSize: 24, marginBottom: 8 }}>{p.emoji}</div>
                   <div style={{ fontWeight: 800, fontSize: 13, marginBottom: 4 }}>{p.title}</div>
                   <div style={{ fontSize: 11, color: p.color, marginBottom: 8 }}>{p.week} · {p.layers}</div>
@@ -1347,6 +1486,8 @@ const tabs = [
                 { project: "OTT", sources: "Kaggle (IMDb, Netflix), Box Office Mojo, PVR INOX annual reports, BARC data, cinemagoer" },
                 { project: "E-Commerce", sources: "Kaggle (Amazon reviews, Flipkart catalog), company press releases, Baymard Institute, public funding data" },
                 { project: "BPL", sources: "Primary Data (Survey Monkey / Google Forms), Local Venue Listings, Artist pricing reports, Field interviews" },
+                { project: "Hiremap", sources: "Student placement records, university placement requirements, recruiter surveys, external job boards" },
+                { project: "Sahitya Rachanalu", sources: "Telugu classic literature, Cinepedia film databases, movie reviews, Spotify lyrics, Telugu meme archives" },
               ].map(s => (
                 <div key={s.project} style={{
                   background: CARD,
