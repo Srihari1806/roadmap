@@ -993,6 +993,7 @@ const tabs = [
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
+    { id: "content-os", label: "✍️ Content OS" },
     { id: "monthly", label: "📅 6-Month Plan" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "resume", label: "📄 Resume System" },
@@ -1587,7 +1588,158 @@ const tabs = [
           </div>
         )}
 
-                {/* CREATIVE TAB */}
+        {/* CONTENT OS TAB */}
+        {activeTab === "content-os" && (() => {
+          const pillars = [
+            { id: 1, emoji: "🎬", name: "Film Analysis Essays", color: "#F4A72A", roles: ["Writer", "Critic", "Research Writer", "Story Editor"], count: "10–12", topics: ["Arjun Reddy: Tragedy of Self-Destruction", "Baahubali's World-Building", "KGF: Mythology of a Self-Made God", "Pushpa: Working-Class Hero", "Dil Chahta Hai at 25", "Mani Ratnam's Visual Language"] },
+            { id: 2, emoji: "🧠", name: "Character Psychology", color: "#A78BFA", roles: ["Creative Writer", "Screenplay Writer", "Narrative Designer"], count: "8", topics: ["Dhoni: Psychology of Stillness", "Arjun Reddy: Narcissistic Genius?", "Walter White: Moral Collapse", "Kabir Singh vs Arjun Reddy"] },
+            { id: 3, emoji: "📜", name: "Screenplay Breakdowns", color: "#34D399", roles: ["Script Writer", "Screenplay Writer", "Creative Producer"], count: "8", topics: ["3 Idiots: Hook Writing Masterclass", "Dil Chahta Hai: Ensemble Dynamics", "ZNMD: Road Trip as Pressure Cooker", "Ala Vaikunthapurramuloo Decoded"] },
+            { id: 4, emoji: "🎵", name: "Lyrics Vault", color: "#FB7185", roles: ["Lyricist", "Creative Writer"], count: "12–15", topics: ["Srivalli Decoded", "Saranga Dariya Analysis", "Original: Loss/Nostalgia", "Original: Ambition/Longing", "Kesariya: Romantic Ambiguity"] },
+            { id: 5, emoji: "🏑", name: "IPL Analytics Hub", color: "#38BDF8", roles: ["Sports Writer", "Research Writer", "Content Strategist"], count: "10", topics: ["Dhoni Nostalgia Premium", "MI vs CSK Data Story", "RCB Tragedy in Numbers", "IPL Revenue Model Decoded", "What Makes a Viral Match Moment?"] },
+            { id: 6, emoji: "🎯", name: "Brand/Product Teardowns", color: "#FB923C", roles: ["Copywriter", "SEO Writer", "Brand Storyteller"], count: "8", topics: ["Zomato Copywriting Playbook", "Swiggy vs Zomato Brand War", "boAt's D2C Rise", "Cred Exclusivity Strategy", "Duolingo Viral Strategy"] },
+            { id: 7, emoji: "📈", name: "Creator Economy Essays", color: "#4ADE80", roles: ["Content Strategist", "Social Media Strategist", "Growth Marketer"], count: "8", topics: ["1000 True Fans 2026", "Why Instagram Reach is Dead", "Second Screen Economy", "LinkedIn's Creator Moment", "Regional Creator Wave"] },
+            { id: 8, emoji: "📖", name: "Sahitya Founder Journal", color: "#E879F9", roles: ["Creative Director", "Producer", "Community Builder"], count: "6", topics: ["Why I'm Building Sahitya", "Content Architecture First", "The Language Problem", "Growing Before Launch", "6 Months In: What Changed"] },
+          ];
+          const monthly = [
+            { month: "Jun", theme: "Foundation", count: 7, color: "#F4A72A", types: ["2 Film Essays", "1 Brand Teardown", "1 IPL Article", "1 Founder Journal", "2 Lyrics"] },
+            { month: "Jul", theme: "Storytelling", count: 8, color: "#A78BFA", types: ["2 Character Studies", "2 Screenplay Breakdowns", "1 Short Story", "2 Lyrics", "1 Founder Journal"] },
+            { month: "Aug", theme: "Marketing", count: 7, color: "#34D399", types: ["2 Brand Teardowns", "2 UX Teardowns", "1 SEO Article", "2 Creator Essays"] },
+            { month: "Sep", theme: "Media & Creator", count: 8, color: "#38BDF8", types: ["1 Content Calendar", "2 Campaign Breakdowns", "10 Reel Concepts", "2 Podcast Scripts"] },
+            { month: "Oct–Nov", theme: "Leadership", count: 5, color: "#FB923C", types: ["1 Web Series Universe", "1 Character Bible", "1 Story World Doc", "1 Production Plan"] },
+            { month: "Dec", theme: "Authority", count: 8, color: "#E879F9", types: ["2 Research Essays", "2 Film Deep Dives", "2 IPL Deep Dives", "1 Vision Document"] },
+          ];
+          const certs = [
+            { name: "Google Data Analytics Professional", platform: "Coursera", by: "Aug", track: "Analytics", color: "#4ADE80" },
+            { name: "HubSpot Digital Marketing", platform: "HubSpot Academy", by: "Aug", track: "Creative/Growth", color: "#FB923C" },
+            { name: "Google Project Management Professional", platform: "Coursera", by: "Sep", track: "Product/BA", color: "#38BDF8" },
+            { name: "Microsoft/LinkedIn Generative AI", platform: "LinkedIn Learning", by: "Oct", track: "Tech/Analytics", color: "#A78BFA" },
+            { name: "Deloitte Data Analytics (Forage)", platform: "Forage", by: "Dec", track: "Analytics", color: "#F4A72A" },
+          ];
+          const weekly = [
+            { day: "MON", action: "Research", detail: "Films · Sports · Marketing · Save to Notion", color: "#38BDF8" },
+            { day: "TUE", action: "Insights", detail: "Observation → Insight → Article Idea pipeline", color: "#A78BFA" },
+            { day: "WED", action: "Write Analytics", detail: "Film essay OR IPL article OR Brand teardown (600–900w)", color: "#F4A72A" },
+            { day: "THU", action: "Write Creative", detail: "Character study OR Screenplay OR Lyrics (400–600w)", color: "#FB7185" },
+            { day: "FRI", action: "Write Strategy", detail: "Creator essay OR Founder journal OR UX teardown", color: "#34D399" },
+            { day: "SAT", action: "Curate & Archive", detail: "Edit + Store in Notion + LinkedIn carousel outline", color: "#FB923C" },
+            { day: "SUN", action: "Publish", detail: "Sahitya Rachanalu primary → LinkedIn/Medium cross-post", color: "#E879F9" },
+          ];
+          return (
+            <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
+              {/* Header */}
+              <div style={{ background: "linear-gradient(135deg, #1a0a2e, #0A0A0F)", border: `1px solid ${BORDER}`, borderRadius: 10, padding: 20 }}>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 6 }}>CREATIVE PORTFOLIO OPERATING SYSTEM</div>
+                <h2 style={{ margin: "0 0 8px", fontSize: 22, fontWeight: 800 }}>8 Pillars · 25 Roles · 80–100 Artifacts</h2>
+                <p style={{ margin: 0, color: MUTED, fontSize: 12, lineHeight: 1.6 }}>Every piece of content does double or triple role duty. One system, all 25 creative/content roles covered by December 2026.</p>
+                <div style={{ display: "flex", gap: 16, marginTop: 14, flexWrap: "wrap" }}>
+                  {[{v:"8",l:"Content Pillars"},{v:"25",l:"Roles Covered"},{v:"80–100",l:"Total Artifacts"},{v:"5",l:"Certifications"},{v:"6",l:"Months"}].map(s => (
+                    <div key={s.l} style={{ textAlign: "center" }}>
+                      <div style={{ fontSize: 20, fontWeight: 800, color: ACCENT }}>{s.v}</div>
+                      <div style={{ fontSize: 10, color: MUTED, letterSpacing: 0.5 }}>{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 8 Pillars Grid */}
+              <div>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>THE 8 PORTFOLIO PILLARS</div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+                  {pillars.map(p => (
+                    <div key={p.id} style={{ background: CARD, border: `1px solid ${p.color}40`, borderRadius: 8, padding: 14, borderLeft: `3px solid ${p.color}` }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+                        <span style={{ fontSize: 18 }}>{p.emoji}</span>
+                        <div>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: p.color }}>{p.name}</div>
+                          <div style={{ fontSize: 10, color: MUTED }}>Target: {p.count} pieces</div>
+                        </div>
+                      </div>
+                      <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginBottom: 8 }}>
+                        {p.roles.map(r => <span key={r} style={{ fontSize: 9, background: p.color + "20", color: p.color, padding: "2px 6px", borderRadius: 3, border: `1px solid ${p.color}30` }}>{r}</span>)}
+                      </div>
+                      <div style={{ fontSize: 10, color: MUTED, lineHeight: 1.6 }}>
+                        {p.topics.slice(0,3).map((t,i) => <div key={i} style={{ paddingLeft: 6, borderLeft: `1px solid ${BORDER}` }}>↳ {t}</div>)}
+                        {p.topics.length > 3 && <div style={{ color: p.color, fontSize: 9, marginTop: 2 }}>+{p.topics.length - 3} more topics planned</div>}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 6-Month Content Calendar */}
+              <div>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>6-MONTH CONTENT CALENDAR</div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 10 }}>
+                  {monthly.map(m => (
+                    <div key={m.month} style={{ background: CARD, border: `1px solid ${m.color}40`, borderRadius: 8, padding: 14 }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 8 }}>
+                        <div style={{ fontSize: 14, fontWeight: 800, color: m.color }}>{m.month}</div>
+                        <div style={{ fontSize: 10, background: m.color + "20", color: m.color, padding: "2px 6px", borderRadius: 3 }}>{m.count} pieces</div>
+                      </div>
+                      <div style={{ fontSize: 11, fontWeight: 700, marginBottom: 8 }}>{m.theme}</div>
+                      {m.types.map((t,i) => <div key={i} style={{ fontSize: 10, color: MUTED, padding: "2px 0" }}>· {t}</div>)}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Weekly OS */}
+              <div>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>WEEKLY CONTENT OPERATING SYSTEM</div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: 8 }}>
+                  {weekly.map(w => (
+                    <div key={w.day} style={{ background: CARD, border: `1px solid ${w.color}40`, borderRadius: 8, padding: 10, textAlign: "center" }}>
+                      <div style={{ fontSize: 11, fontWeight: 800, color: w.color, marginBottom: 4 }}>{w.day}</div>
+                      <div style={{ fontSize: 10, fontWeight: 700, marginBottom: 4, lineHeight: 1.3 }}>{w.action}</div>
+                      <div style={{ fontSize: 9, color: MUTED, lineHeight: 1.4 }}>{w.detail}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Certification Timeline */}
+              <div>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>CERTIFICATION TIMELINE (Curated — No Redundancy)</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {certs.map(c => (
+                    <div key={c.name} style={{ background: CARD, border: `1px solid ${c.color}40`, borderRadius: 8, padding: 14, display: "flex", alignItems: "center", gap: 14 }}>
+                      <div style={{ minWidth: 44, textAlign: "center" }}>
+                        <div style={{ fontSize: 12, fontWeight: 800, color: c.color }}>{c.by}</div>
+                        <div style={{ fontSize: 9, color: MUTED }}>target</div>
+                      </div>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontSize: 12, fontWeight: 700 }}>{c.name}</div>
+                        <div style={{ fontSize: 10, color: MUTED, marginTop: 2 }}>{c.platform} · Track: {c.track}</div>
+                      </div>
+                      <span style={{ fontSize: 9, background: c.color + "20", color: c.color, padding: "2px 8px", borderRadius: 3, border: `1px solid ${c.color}30`, whiteSpace: "nowrap" }}>{c.track}</span>
+                    </div>
+                  ))}
+                  <div style={{ padding: "10px 14px", background: "#0A0A0F", border: `1px solid ${BORDER}`, borderRadius: 8, fontSize: 11, color: MUTED }}>
+                    ⛔ <strong style={{ color: "#FFF" }}>Skip:</strong> IBM SQL (redundant with Google DA), Microsoft 365 Fundamentals (too basic), AWS Prompt Engineering (use LinkedIn AI badge instead)
+                  </div>
+                </div>
+              </div>
+
+              {/* End-state tracker */}
+              <div style={{ background: "linear-gradient(135deg, #1a2e0a, #0A0A0F)", border: `1px solid #34D39940`, borderRadius: 10, padding: 20 }}>
+                <div style={{ color: "#34D399", fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>END-STATE PORTFOLIO — DECEMBER 2026</div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 8 }}>
+                  {[["Film Analyses","10–12"],["Character Studies","8"],["Screenplay Breakdowns","8"],["Brand Teardowns","8"],["IPL Articles","10"],["Creator Economy Essays","8"],["Founder Journals","6"],["Lyrics","12–15"],["Story/Script Concepts","5–10"],["Universe/World Docs","2–3"]].map(([k,v]) => (
+                    <div key={k} style={{ display: "flex", justifyContent: "space-between", padding: "6px 10px", background: CARD, borderRadius: 4, fontSize: 11 }}>
+                      <span style={{ color: MUTED }}>{k}</span>
+                      <span style={{ color: "#34D399", fontWeight: 700 }}>{v}</span>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ marginTop: 14, padding: "10px 14px", background: "#34D39910", border: `1px solid #34D39940`, borderRadius: 6, fontSize: 12, fontWeight: 700, textAlign: "center", color: "#34D399" }}>
+                  Total: 80–100 portfolio artifacts · All 25 creative/content roles credibly covered
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* CREATIVE TAB */}
         {activeTab === "resume" && (
           <div style={{ marginTop: 8 }}>
             <ResumeATSAnalyzer />
@@ -1605,16 +1757,16 @@ const tabs = [
                 <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>WRITING ROLES & CERTIFICATIONS</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "420px", overflowY: "auto", paddingRight: 6 }}>
                   {[
-                    { role: "Content Writer", desc: "Blogs, posts, LinkedIn articles", cert: "HubSpot Content Marketing, Google SEO Fundamentals" },
-                    { role: "Creative Writer", desc: "Stories, scripts, reel concepts", cert: "Sahitya Rachanalu Writer Certificate" },
-                    { role: "Copywriter", desc: "Captions, ads, punchlines, marketing lines", cert: "Adweek Copywriting, Google Ads Search" },
-                    { role: "Script Writer", desc: "YouTube, reels, short films, ads", cert: "YouTube Creator Academy Certification" },
-                    { role: "Screenplay / Story Writer", desc: "Films, web series (long term)", cert: "Sundance Screenplay Formatting Certificate" },
-                    { role: "Lyricist", desc: "Songs, indie music, reels", cert: "Berklee College: Songwriting Online" },
-                    { role: "Sports Content Writer", desc: "Cricket pages, apps, sites", cert: "Kaggle Sports Contributor Badge" },
-                    { role: "Film Critic / Reviewer", desc: "YouTube, blogs, pages, analytics overlay", cert: "Film Criticism Cert, IMDb Reviewer" },
-                    { role: "Social Media Strategist", desc: "Ideas, captions, content calendars", cert: "HubSpot Social Media Certification" },
-                    { role: "Content Strategist", desc: "Brand growth, content mapping, editorial plans", cert: "HubSpot Inbound Marketing, GA4 Certificate" }
+                    { role: "Content Writer", desc: "Blogs, posts, LinkedIn articles", cert: "Google DA Professional + HubSpot Digital Marketing" },
+                    { role: "Creative Writer", desc: "Stories, scripts, reel concepts", cert: "Sahitya Rachanalu + Berklee Songwriting (planned)" },
+                    { role: "Copywriter", desc: "Captions, ads, punchlines, marketing lines", cert: "Adweek Copywriting + Google Ads Search ✅" },
+                    { role: "Script Writer", desc: "YouTube, reels, short films, ads", cert: "YouTube Creator Academy (planned)" },
+                    { role: "Screenplay / Story Writer", desc: "Films, web series (long term)", cert: "Screenplay breakdown portfolio" },
+                    { role: "Lyricist", desc: "Songs, indie music, reels", cert: "Lyrics Vault — original songs" },
+                    { role: "Sports Content Writer", desc: "Cricket pages, apps, sites", cert: "Kaggle IPL Notebook + Sports Portfolio" },
+                    { role: "Film Critic / Reviewer", desc: "YouTube, blogs, pages, analytics overlay", cert: "Film Analysis Essay Portfolio (10–12 pieces)" },
+                    { role: "Social Media Strategist", desc: "Ideas, captions, content calendars", cert: "HubSpot Social Media ✅ + HubSpot Digital Marketing" },
+                    { role: "Content Strategist", desc: "Brand growth, content mapping, editorial plans", cert: "Google Analytics GA4 ✅ + HubSpot Digital Marketing" }
                   ].map(r => (
                     <div key={r.role} style={{ paddingBottom: 10, borderBottom: `1px solid ${BORDER}40` }}>
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: 4 }}>
