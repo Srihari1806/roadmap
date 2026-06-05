@@ -1182,26 +1182,79 @@ const SM_TRACK_CONFIG = {
 };
 
 const SM_MONTHS_INFO = [
-  { name: 'BASE',     theme: 'Prerequisites' },
-  { name: 'JUNE',     theme: 'IPL Analytics' },
-  { name: 'JULY',     theme: 'BPL Analytics' },
-  { name: 'AUGUST',   theme: 'E-Commerce Analytics' },
-  { name: 'SEPTEMBER',theme: 'Hiremap Platform' },
-  { name: 'OCTOBER',  theme: 'OTT Analysis' },
-  { name: 'NOV-DEC',  theme: 'Sahitya & Portfolio' }
+  { name: 'JUNE',      theme: 'IPL Analytics' },
+  { name: 'JULY',      theme: 'BPL Analytics' },
+  { name: 'AUGUST',    theme: 'E-Commerce' },
+  { name: 'SEPTEMBER', theme: 'OTT Analytics' },
+  { name: 'OCTOBER',   theme: 'Sahitya Rachanalu' },
+  { name: 'NOVEMBER',  theme: 'Hiremap Platform' },
+  { name: 'DECEMBER',  theme: 'Consolidation' }
 ];
 
-const SM_BASE_SKILLS = ['Python (basics)','React','TypeScript','HTML/CSS','Git/GitHub','MS Excel','SEO Writing','Content Strategy','Content Calendar Management','Vite','Vercel'];
-const SM_MONTH_SKILLS = {
-  june: ['Logical Reasoning','Advanced SQL','Excel Power Query','Schema Design (Process Mapping)','Complexity Analysis','OOPs','Brand Messaging & Copywriting','Database normalization','Relational Databases','Star Schema','Binary Search','Sorting Algorithms','Blog writing','Creative Writing'],
-  july: ['Quantitative Aptitude','Python (Pandas/Seaborn)','EDA & Data Interpretation','KPI Design (Product Metrics)','JavaScript (Core & DOM)','DBMS','Two Pointers','Sliding Window','Recursion','Query Optimization','Sports Domain Knowledge (IPL/PKL)','Statistical Thinking'],
-  august: ['Verbal Ability','Power BI & Data Visualization','DAX Modeling','Funnel & Retention Analytics','React hooks','Operating Systems','On-page Optimization'],
-  september: ['Google Analytics & GA4','SEO Architecture & Keyword Research','A/B Testing','LTV/CAC Metrics','HubSpot Marketing Automation','Node.js','Express','MongoDB','Computer Networks','Firebase Admin','Google Ads Search','Technical SEO','Customer Acquisition Cost (CAC)','Social Media Analytics','Firestore/NoSQL Schema'],
-  october: ['NLP & Text Analytics','Prompt Engineering','Make/Zapier Automations','REST APIs & PostgreSQL','Audience Research & Campaign Planning','Greedy/DP Algorithms','LLD','Lore Timelines','Character Bibles'],
-  "nov-dec": [
-    'Predictive Modeling','Financial Literacy & Accounting basics','Data Storytelling & Stakeholder Communication','Financial Modeling & Time Series Forecasting','Advanced Trees/Trie','HLD','Python (yfinance)',
-    'Consolidation & Case Studies (Business Problem Framing)','System Design Mock Interviews','Backtracking','Divide and Conquer','Mock Aptitude Tests'
-  ]
+const SM_GRID_DATA = {
+  JUNE: {
+    aptitude: "Logical Reasoning",
+    analyst: "Advanced SQL · Excel Power Query · Schema Design",
+    project: "IPL Analytics",
+    dsa: "Fundamentals: Maths · Complexity Analysis",
+    fullstack: "Web Development Fundamentals",
+    cscore: "OOPS",
+    personal: "Observe: Consume, research, collect ideas, analyze films/brands/sports/creators"
+  },
+  JULY: {
+    aptitude: "Quantitative Aptitude",
+    analyst: "Python (pandas/seaborn) · EDA · KPI Design",
+    project: "BPL Analytics",
+    dsa: "Data Structures: Array · Hashing · Strings · Matrix",
+    fullstack: "JavaScript",
+    cscore: "DBMS",
+    personal: "Write: Articles, lyrics, stories, analyses, reviews"
+  },
+  AUGUST: {
+    aptitude: "Verbal Ability",
+    analyst: "Power BI · DAX · Funnel & Retention Analytics",
+    project: "E-Commerce",
+    dsa: "Linked List · Stack · Queue · Deque · Tree · Heap · Graph",
+    fullstack: "Frontend Framework",
+    cscore: "OS",
+    personal: "Strategize: Content plans, SEO thinking, brand storytelling, creator economy"
+  },
+  SEPTEMBER: {
+    aptitude: "Logical Reasoning",
+    analyst: "GA4 · SEO Architecture · A/B Testing · LTV/CAC",
+    project: "OTT Platform",
+    dsa: "Algorithms: Searching · Sorting · Two Pointer · Window Sliding",
+    fullstack: "Node.js + Express + MongoDB",
+    cscore: "CN",
+    personal: "Create: Reels, scripts, podcasts, social content, multimedia concepts"
+  },
+  OCTOBER: {
+    aptitude: "Quantitative Aptitude",
+    analyst: "Prompt Engineering · NLP · Make/Zapier · API Calls",
+    project: "Sahitya Rachanalu",
+    dsa: "Prefix Sum · Recursion · Greedy Algorithms · Dynamic Programming",
+    fullstack: "Databases + API",
+    cscore: "LLD",
+    personal: "Direct: Story universes, character bibles, creative leadership, production"
+  },
+  NOVEMBER: {
+    aptitude: "Verbal Ability",
+    analyst: "Predictive Modeling · Financial Literacy · Storytelling",
+    project: "Hiremap",
+    dsa: "Trie · Segment Tree · Red-Black Tree & Binary Indexed Tree",
+    fullstack: "Project (portfolios)",
+    cscore: "HLD",
+    personal: "Publish: Portfolio curation, LinkedIn, Twitter, website, community building"
+  },
+  DECEMBER: {
+    aptitude: "Final Lap",
+    analyst: "Portfolio Consolidation",
+    project: "Portfolio Mapping",
+    dsa: "Bitwise Algorithms · Backtracking · Divide & Conquer · Branch & Bound · Geometric & Randomized",
+    fullstack: "Interview Ready...",
+    cscore: "Interview Ready..",
+    personal: "Interview Ready (Creative Curation)"
+  }
 };
 
 const SM_ROLE_REQS = {
@@ -1225,16 +1278,6 @@ const SM_ROLE_REQS = {
 
 function smSlugify(t) { return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)+/g,''); }
 
-function smGetTrack(n) {
-  const x = n.toLowerCase();
-  if(x.includes('aptitude')||x.includes('logical reasoning')||x.includes('quantitative')||x.includes('verbal ability')||x.includes('mock aptitude')) return 'aptitude';
-  if(x.includes('complexity')||x.includes('oops')||x.includes('binary search')||x.includes('sorting')||x.includes('pointer')||x.includes('sliding window')||x.includes('recursion')||x.includes('algorithm')||x.includes('lld')||x.includes('hld')||x.includes('tree')||x.includes('trie')||x.includes('backtracking')||x.includes('divide')||x.includes('system design')||x.includes('greedy')||x.includes('dp algorithm')) return 'dsa';
-  if(x.includes('react')||x.includes('typescript')||x.includes('html')||x.includes('css')||x.includes('vite')||x.includes('vercel')||x.includes('javascript')||x.includes('dom')||x.includes('node.js')||x.includes('express')||x.includes('mongodb')||x.includes('firebase')||x.includes('rest api')||x.includes('postgresql')) return 'fullstack';
-  if(x.includes('dbms')||x.includes('operating system')||x.includes('computer network')||x.includes('query optimization')||x.includes('nosql schema')) return 'cscore';
-  if(x.includes('writing')||x.includes('content strategy')||x.includes('calendar')||x.includes('messaging')||x.includes('copywriting')||x.includes('timeline')||x.includes('character')||x.includes('bible')||x.includes('seo')||x.includes('hubspot')||x.includes('ads search')||x.includes('social media')||x.includes('prompt engineering')||x.includes('make/zapier')||x.includes('campaign planning')||x.includes('lore')) return 'personal';
-  return 'analyst';
-}
-
 function smGetDetails(n) {
   const x = n.toLowerCase();
   if(x.includes('sql')||x.includes('dbms')||x.includes('normalization')||x.includes('relational')||x.includes('schema')||x.includes('postgresql'))
@@ -1249,31 +1292,28 @@ function smGetDetails(n) {
     return { category:'Data Structures & Algorithms', impact:'Core algorithmic thinking required for writing optimized code and passing SDE interviews.', pros:['Optimizes runtime & memory','Improves logical problem-solving'], cons:['Can lead to over-engineering','High conceptual learning curve'] };
   if(x.includes('seo')||x.includes('a/b testing')||x.includes('hubspot')||x.includes('ads')||x.includes('campaign')||x.includes('social media')||x.includes('growth'))
     return { category:'Growth & Digital Strategy', impact:'Drives organic discovery, measures acquisition channels and optimizes conversion rates.', pros:['Builds sustainable compounding traffic','Allows rapid experimentation'], cons:['Search algorithms change frequently','Paid ads can have high CAC'] };
-  if(x.includes('writing')||x.includes('content strategy')||x.includes('calendar')||x.includes('messaging')||x.includes('copywriting')||x.includes('timeline')||x.includes('character')||x.includes('storytelling'))
+  if(x.includes('writing')||x.includes('content strategy')||x.includes('calendar')||x.includes('messaging')||x.includes('copywriting')||x.includes('timeline')||x.includes('character')||x.includes('storytelling')||x.includes('observe')||x.includes('write')||x.includes('articles')||x.includes('reviews')||x.includes('strategize')||x.includes('reels')||x.includes('scripts')||x.includes('podcasts')||x.includes('direct')||x.includes('publish')||x.includes('curation'))
     return { category:'Creative & Content Strategy', impact:'Establishes unique brand identity, community engagement and lore timelines.', pros:['Creates strong emotional connection','Highly differentiating in copy and messaging'], cons:['Hard to directly measure qualitative impact','Creative burnouts can disrupt publishing'] };
   return { category:'Logical Aptitude & Problem Solving', impact:'Sharpens core reasoning, quantitative and logical abilities tested in initial screening rounds.', pros:['Builds high mental speed','Helps clear initial filters at top recruitment drives'], cons:['Requires repetitive practice','Does not directly build code artifacts'] };
 }
 
 function smGetRoles(skillName) {
+  const subSkills = skillName.split(/·|&|,|\+/).map(s => s.trim());
   return Object.entries(SM_ROLE_REQS).filter(([,req]) => {
-    const matches = (list) => list.some(l => l.toLowerCase().includes(skillName.toLowerCase()) || skillName.toLowerCase().includes(l.toLowerCase()));
+    const matches = (list) => list.some(l => 
+      subSkills.some(s => s.toLowerCase().includes(l.toLowerCase()) || l.toLowerCase().includes(s.toLowerCase()))
+    );
     return matches(req.must) || matches(req.gth);
   }).map(([name, req]) => ({ name, color: req.color }));
 }
 
 function buildSkillsData() {
   const data = {};
-  SM_BASE_SKILLS.forEach(s => {
-    const id = smSlugify(s);
-    const det = smGetDetails(s);
-    data[id] = { id, title:s, track:smGetTrack(s), month:'BASE', why:det.impact, pros:det.pros, cons:det.cons, roles:smGetRoles(s) };
-  });
-  Object.entries(SM_MONTH_SKILLS).forEach(([mon, list]) => {
-    list.forEach(s => {
-      const id = smSlugify(s);
-      if(data[id]) return;
-      const det = smGetDetails(s);
-      data[id] = { id, title:s, track:smGetTrack(s), month:mon.toUpperCase(), why:det.impact, pros:det.pros, cons:det.cons, roles:smGetRoles(s) };
+  Object.entries(SM_GRID_DATA).forEach(([monthName, trackData]) => {
+    Object.entries(trackData).forEach(([trackKey, skillTitle]) => {
+      const id = smSlugify(monthName + '-' + trackKey);
+      const det = smGetDetails(skillTitle);
+      data[id] = { id, title:skillTitle, track:trackKey, month:monthName, why:det.impact, pros:det.pros, cons:det.cons, roles:smGetRoles(skillTitle) };
     });
   });
   return data;
@@ -1292,7 +1332,7 @@ function SkillMapTab() {
   const [trackFilter, setTrackFilter] = useSt('all');
   const [searchQuery, setSearchQuery] = useSt('');
   const [compactGrid, setCompactGrid] = useSt(() => {
-    try { return localStorage.getItem('compact_grid_v1')==='1'; } catch(e){ return false; }
+    try { return localStorage.getItem('compact_grid_v1') !== '0'; } catch(e){ return true; }
   });
 
   useEff(() => {
@@ -1324,14 +1364,14 @@ function SkillMapTab() {
     return skill.title.toLowerCase().includes(q) || skill.why.toLowerCase().includes(q) || (skill.pros||[]).some(p=>p.toLowerCase().includes(q)) || (skill.cons||[]).some(c=>c.toLowerCase().includes(q));
   };
 
-  const cellMinH = compactGrid ? 76 : 110;
-  const gridTplCols = compactGrid ? '115px repeat(7, minmax(150px,1fr))' : '140px repeat(7, minmax(180px,1fr))';
+  const cellMinH = compactGrid ? 54 : 110;
+  const gridTplCols = compactGrid ? '90px repeat(7, minmax(120px,1fr))' : '140px repeat(7, minmax(180px,1fr))';
 
   return (
     <div style={{ background:'#0A0A0F', color:'#E8E8F0', fontFamily:"'Inter',sans-serif", minHeight:'100%' }}>
       <style>{`
-        .sm-skill-card { background:#111118; border:1px solid #1E1E2E; border-radius:8px; padding:12px 14px; min-height:${cellMinH}px; display:flex; flex-direction:column; justify-content:space-between; cursor:pointer; position:relative; transition:all 0.2s cubic-bezier(0.4,0,0.2,1); }
-        .sm-skill-card::before { content:''; position:absolute; left:0; top:12px; bottom:12px; width:3px; border-radius:0 4px 4px 0; background:var(--sm-tc); transition:width 0.2s ease; }
+        .sm-skill-card { background:#111118; border:1px solid #1E1E2E; border-radius:6px; padding:${compactGrid?'6px 8px':'12px 14px'}; min-height:${cellMinH}px; display:flex; flex-direction:column; justify-content:space-between; cursor:pointer; position:relative; transition:all 0.2s cubic-bezier(0.4,0,0.2,1); }
+        .sm-skill-card::before { content:''; position:absolute; left:0; top:${compactGrid?'8px':'12px'}; bottom:${compactGrid?'8px':'12px'}; width:3px; border-radius:0 4px 4px 0; background:var(--sm-tc); transition:width 0.2s ease; }
         .sm-skill-card:hover { transform:translateY(-2px); border-color:var(--sm-tc); box-shadow:0 4px 20px rgba(0,0,0,0.4); }
         .sm-skill-card:hover::before { width:5px; }
         .sm-skill-card.sm-active { border-color:var(--sm-tc) !important; background:rgba(255,255,255,0.02) !important; }
@@ -1360,8 +1400,8 @@ function SkillMapTab() {
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:16, flexWrap:'wrap', marginBottom:14 }}>
           <div>
             <div style={{ color:'#F4A72A', fontSize:10, letterSpacing:2, fontWeight:700, textTransform:'uppercase', fontFamily:"'DM Mono',monospace", marginBottom:2 }}>Interactive Skill Map</div>
-            <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontSize:20, fontWeight:700 }}>7 Tracks × 6 Months</div>
-            <div style={{ color:'#6B6B8A', fontSize:12, marginTop:2 }}>IPL → BPL → E-Commerce → Hiremap → OTT → Sahitya → Portfolio. Click any skill to explore.</div>
+            <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontSize:20, fontWeight:700 }}>7 Tracks × 7 Months</div>
+            <div style={{ color:'#6B6B8A', fontSize:12, marginTop:2 }}>IPL → BPL → E-Commerce → OTT → Sahitya → Hiremap → Portfolio. Click any cell to explore.</div>
           </div>
           <div style={{ background:'rgba(255,255,255,0.02)', border:'1px solid #1E1E2E', borderRadius:8, padding:'10px 16px', minWidth:260 }}>
             <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:6 }}>
@@ -1400,26 +1440,26 @@ function SkillMapTab() {
 
       {/* Board Grid */}
       <div style={{ width:'100%', overflowX:'auto', borderRadius:0, background:'rgba(255,255,255,0.005)', borderTop:'none', paddingBottom:8 }}>
-        <div style={{ display:'grid', gridTemplateColumns:gridTplCols, minWidth: compactGrid?1100:1300 }}>
+        <div style={{ display:'grid', gridTemplateColumns:gridTplCols, minWidth: compactGrid?930:1300 }}>
           {/* Header row */}
-          <div style={{ padding:'18px 14px', borderBottom:'2px solid #1E1E2E', background:'#09090e', color:'#6B6B8A', fontFamily:"'DM Mono',monospace", fontSize:10, textTransform:'uppercase', letterSpacing:1, display:'flex', alignItems:'center', justifyContent:'center', position:'sticky', top:0, zIndex:10 }}>Month</div>
+          <div style={{ padding:compactGrid?'10px 6px':'18px 14px', borderBottom:'2px solid #1E1E2E', background:'#09090e', color:'#6B6B8A', fontFamily:"'DM Mono',monospace", fontSize:compactGrid?9:10, textTransform:'uppercase', letterSpacing:1, display:'flex', alignItems:'center', justifyContent:'center', position:'sticky', top:0, zIndex:10 }}>Month</div>
           {SM_TRACKS_LIST.map(tk => (
-            <div key={tk} style={{ padding:'18px 14px', borderBottom:'2px solid '+SM_TRACK_CONFIG[tk].color, background:'#0d0d14', fontFamily:"'Space Grotesk',sans-serif", fontSize:12, fontWeight:700, textTransform:'uppercase', letterSpacing:1, display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center', position:'sticky', top:0, zIndex:10, borderRight:'1px solid #1E1E2E' }}>
+            <div key={tk} style={{ padding:compactGrid?'10px 6px':'18px 14px', borderBottom:'2px solid '+SM_TRACK_CONFIG[tk].color, background:'#0d0d14', fontFamily:"'Space Grotesk',sans-serif", fontSize:compactGrid?10.5:12, fontWeight:700, textTransform:'uppercase', letterSpacing:1, display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', textAlign:'center', position:'sticky', top:0, zIndex:10, borderRight:'1px solid #1E1E2E' }}>
               <div style={{ color:SM_TRACK_CONFIG[tk].color }}>{SM_TRACK_CONFIG[tk].label}</div>
             </div>
           ))}
           {/* Data rows */}
           {SM_MONTHS_INFO.map((mon, mIdx) => (
              <React.Fragment key={mon.name}>
-              <div id={'sm-row-' + mon.name.toLowerCase()} style={{ padding:compactGrid?'10px 8px':'16px 10px', borderBottom:'1px solid #1E1E2E', background:'rgba(255,255,255,0.01)', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', textAlign:'center', borderRight:'2px solid #1E1E2E' }}>
-                <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontSize:compactGrid?14:17, fontWeight:700, color:'#F4A72A', letterSpacing:-0.5 }}>{mon.name}</div>
-                <div style={{ fontSize:compactGrid?8:10, color:'#6B6B8A', marginTop:3, textTransform:'uppercase', fontFamily:"'DM Mono',monospace", lineHeight:1.3 }}>{mon.theme}</div>
+              <div id={'sm-row-' + mon.name.toLowerCase()} style={{ padding:compactGrid?'6px 4px':'16px 10px', borderBottom:'1px solid #1E1E2E', background:'rgba(255,255,255,0.01)', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', textAlign:'center', borderRight:'2px solid #1E1E2E' }}>
+                <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontSize:compactGrid?12:17, fontWeight:700, color:'#F4A72A', letterSpacing:-0.5 }}>{mon.name}</div>
+                <div style={{ fontSize:compactGrid?7.5:10, color:'#6B6B8A', marginTop:2, textTransform:'uppercase', fontFamily:"'DM Mono',monospace", lineHeight:1.2 }}>{mon.theme}</div>
               </div>
               {SM_TRACKS_LIST.map(tk => {
                 const cellSkills = Object.values(SM_SKILLS_DATA).filter(s => s.month===mon.name && s.track===tk);
                 const isDimmed = trackFilter !== 'all' && trackFilter !== tk;
                 return (
-                  <div key={tk} style={{ padding:compactGrid?'8px':'12px', borderBottom:'1px solid #1E1E2E', borderRight:'1px solid #1E1E2E', display:'flex', flexDirection:'column', gap:6, opacity:isDimmed?0.12:1, transition:'opacity 0.2s' }}>
+                  <div key={tk} style={{ padding:compactGrid?'4px 6px':'12px', borderBottom:'1px solid #1E1E2E', borderRight:'1px solid #1E1E2E', display:'flex', flexDirection:'column', gap:4, opacity:isDimmed?0.12:1, transition:'opacity 0.2s', justifyContent:'center' }}>
                     {cellSkills.map(skill => {
                       const vis = isVisible(skill);
                       const isMastered = masteredSkills[skill.id];
@@ -1431,10 +1471,12 @@ function SkillMapTab() {
                           style={{ '--sm-tc': SM_TRACK_CONFIG[tk].color }}
                           onClick={() => openDrawer(skill.id)}
                         >
-                          <div style={{ fontSize:compactGrid?11:12, fontWeight:700, color:'#E8E8F0', lineHeight:1.4, marginBottom:6, wordBreak:'break-word' }}>{skill.title}</div>
+                          <div style={{ fontSize:compactGrid?10.5:12, fontWeight:700, color:'#E8E8F0', lineHeight:1.3, marginBottom:compactGrid?2:6, wordBreak:'break-word' }}>{skill.title}</div>
                           <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
-                            <span style={{ fontSize:8, fontWeight:700, color:SM_TRACK_CONFIG[tk].color, background:`rgba(${SM_TRACK_CONFIG[tk].rgb},0.1)`, border:`1px solid rgba(${SM_TRACK_CONFIG[tk].rgb},0.2)`, padding:'1px 5px', borderRadius:3, textTransform:'uppercase', fontFamily:"'DM Mono',monospace" }}>{SM_TRACK_CONFIG[tk].label}</span>
-                            {isMastered && <span style={{ fontSize:12, color:'#2ECC71' }}>✓</span>}
+                            {!compactGrid && (
+                              <span style={{ fontSize:8, fontWeight:700, color:SM_TRACK_CONFIG[tk].color, background:`rgba(${SM_TRACK_CONFIG[tk].rgb},0.1)`, border:`1px solid rgba(${SM_TRACK_CONFIG[tk].rgb},0.2)`, padding:'1px 5px', borderRadius:3, textTransform:'uppercase', fontFamily:"'DM Mono',monospace" }}>{SM_TRACK_CONFIG[tk].label}</span>
+                            )}
+                            {isMastered && <span style={{ fontSize:compactGrid?10:12, color:'#2ECC71', marginLeft:'auto', fontWeight:'bold' }}>✓ {compactGrid ? '' : 'Done'}</span>}
                           </div>
                         </div>
                       );
@@ -1742,7 +1784,7 @@ const tabs = [
                   onClick={() => {
                     setActiveTab("skillmap");
                     const targetMonth = m.title.split(":")[0].split(" ")[0].toUpperCase();
-                    const mapping = { JUN: 'june', JUL: 'july', AUG: 'august', SEP: 'september', OCT: 'october', NOV: 'nov-dec', DEC: 'nov-dec' };
+                    const mapping = { JUN: 'june', JUL: 'july', AUG: 'august', SEP: 'september', OCT: 'october', NOV: 'november', DEC: 'december', 'NOV-DEC': 'november' };
                     const monName = mapping[targetMonth] || 'june';
                     setTimeout(() => {
                       const el = document.getElementById('sm-row-' + monName.toLowerCase());
