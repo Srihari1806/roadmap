@@ -1217,7 +1217,7 @@ function Roadmap() {
 
 const tabs = [
     { id: "overview", label: "🗺️ Overview" },
-    { id: "skillmap", label: "🗺️ Skill Map", href: "./skill-map.html" },
+    { id: "skillmap", label: "🗺️ Skill Map" },
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
@@ -1302,6 +1302,17 @@ const tabs = [
       </div>
 
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "24px 16px" }}>
+
+        {/* SKILL MAP TAB */}
+        {activeTab === "skillmap" && (
+          <div style={{ width: "100%", height: "85vh", background: "#0A0A0F", borderRadius: 8, overflow: "hidden", border: `1px solid ${BORDER}`, marginBottom: 28 }}>
+            <iframe 
+              src="./skill-map.html" 
+              title="Interactive Skill Map" 
+              style={{ width: "100%", height: "100%", border: "none" }}
+            />
+          </div>
+        )}
 
         {/* OVERVIEW TAB */}
         {activeTab === "overview" && (
@@ -3059,27 +3070,33 @@ function ResumeATSAnalyzer() {
               <div style={{ marginBottom: 28 }}>
                 <div className="section-label">Current Skills</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {dynamicResume.skills.current.map(s => (
-                    <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F2A1F", color: "#34D399", border: "1px solid #064E3B", cursor: "pointer" }}>{s}</span>
-                  ))}
+                  {dynamicResume.skills.current
+                    .filter(s => getSkillSuitability(s, activeRole) !== "none")
+                    .map(s => (
+                      <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F2A1F", color: "#34D399", border: "1px solid #064E3B", cursor: "pointer" }}>{s}</span>
+                    ))}
                 </div>
               </div>
 
               <div style={{ marginBottom: 28 }}>
                 <div className="section-label">Currently Learning</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {dynamicResume.skills.learning.map(s => (
-                    <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#1C1A0A", color: "#FCD34D", border: "1px solid #713F12", cursor: "pointer" }}>{s}</span>
-                  ))}
+                  {dynamicResume.skills.learning
+                    .filter(s => getSkillSuitability(s, activeRole) !== "none")
+                    .map(s => (
+                      <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#1C1A0A", color: "#FCD34D", border: "1px solid #713F12", cursor: "pointer" }}>{s}</span>
+                    ))}
                 </div>
               </div>
 
               <div>
                 <div className="section-label">Planned to Learn</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {dynamicResume.skills.planned.map(s => (
-                    <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F1724", color: "#475569", border: "1px solid #1E293B", cursor: "pointer" }}>{s}</span>
-                  ))}
+                  {dynamicResume.skills.planned
+                    .filter(s => getSkillSuitability(s, activeRole) !== "none")
+                    .map(s => (
+                      <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F1724", color: "#475569", border: "1px solid #1E293B", cursor: "pointer" }}>{s}</span>
+                    ))}
                 </div>
               </div>
             </div>

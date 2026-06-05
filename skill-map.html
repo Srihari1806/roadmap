@@ -1969,6 +1969,12 @@
     window.addEventListener('DOMContentLoaded', () => {
       loadCompletedStates();
       renderBoard();
+      
+      // Hide back button if loaded inside an iframe (inside the roadmap app)
+      if (window.self !== window.top) {
+        const backBtn = document.querySelector('.back-btn');
+        if (backBtn) backBtn.style.display = 'none';
+      }
     });
   </script>
 </body>
