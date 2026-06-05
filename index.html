@@ -2124,20 +2124,270 @@ function smGetRoles(skillName) {
     color: req.color
   }));
 }
+const SM_GRID_DETAILS = {
+  "june-aptitude": {
+    why: "Critical initial filter to clear fast-track screening rounds for top MNCs and startups.",
+    topics: ["Linear and circular seating arrangements", "Syllogisms and Venn diagram deductions", "Blood relations and direction sense puzzles", "Coding-decoding and series completion logic"],
+    focus: ["Solving high-difficulty puzzles within 90 seconds", "Identifying and skipping time-trap questions during tests", "Drawing efficient diagrams to represent groupings"]
+  },
+  "june-analyst": {
+    why: "Establishing the database and ETL foundation needed to handle massive raw cricket data streams for the IPL project.",
+    topics: ["Complex Joins, Window functions, and Subqueries", "Power Query M language and data ingestion techniques", "Relational databases, Normal forms (1NF to 3NF), and Schema design"],
+    focus: ["Optimizing slow-running nested queries in large datasets", "Handling Null values and duplicate rows in Power Query", "Designing entity-relationship diagrams for cricket matches"]
+  },
+  "june-project": {
+    why: "Hands-on application of data manipulation to build a comprehensive analytics dashboard mapping IPL match details.",
+    topics: ["Ingesting historical ball-by-ball cricket datasets", "Feature engineering (strike rates, economy rates, partnership stats)", "Interactive dashboards illustrating team performance vs player matchups"],
+    focus: ["Handling structural shifts in tournament formats across seasons", "Designing intuitive KPIs for non-technical stakeholders", "Deploying dashboard on sharing platforms for recruiter view"]
+  },
+  "june-dsa": {
+    why: "Building the rigorous mathematical logic and execution efficiency metrics needed for all subsequent DSA tracks.",
+    topics: ["Big-O, Big-Theta, and Big-Omega asymptotic notations", "Time and space complexity of iterative loops and recursion", "Number theory, GCD (Euclidean algorithm), prime factorization, and modular arithmetic"],
+    focus: ["Avoiding Sieve of Eratosthenes memory overheads in large ranges", "Accurately analyzing nested loop bounds under changing variables", "Mastering bit-wise math operations for basic calculations"]
+  },
+  "june-fullstack": {
+    why: "Mastering modern web structure and presentation before moving to deep logical client-side rendering.",
+    topics: ["Semantic HTML5 layouts and accessibility guidelines (ARIA)", "CSS flexbox, grid layouts, and custom properties (variables)", "Responsive web design, media queries, and viewport adaptation"],
+    focus: ["Eliminating cross-browser rendering inconsistencies", "Structuring clean, reusable, and modular CSS rules", "Ensuring mobile-first responsiveness on low-end devices"]
+  },
+  "june-cscore": {
+    why: "Understanding the object-oriented paradigm required for modern software architecture and system design interviews.",
+    topics: ["Encapsulation, inheritance, polymorphism, and abstraction principles", "Classes, objects, constructors, destructors, and access modifiers", "Interfaces, abstract classes, and method overriding vs overloading"],
+    focus: ["Differentiating deep copy vs shallow copy operations in memory", "Resolving the diamond problem inheritance ambiguity", "Applying SOLID principles to simple class hierarchies"]
+  },
+  "june-personal": {
+    why: "Developing a sharp editorial eye for trending narrative arcs and creative structures by auditing successful media formats.",
+    topics: ["Deconstructing viral YouTube hooks and script pacing structures", "Auditing brand identity campaigns and visual storytelling hooks", "Tracking creator monetization frameworks and audience engagement trends"],
+    focus: ["Translating abstract artistic observations into structured outlines", "Maintaining analytical notes instead of passive consumption", "Identifying target audience segments for creative outputs"]
+  },
+  "july-aptitude": {
+    why: "Sharpening arithmetic and algebraic skills heavily tested in screening rounds of banking and consulting roles.",
+    topics: ["Ratio and proportion, percentages, and profit & loss", "Time, speed, distance, and work-rate equations", "Simple & compound interest formulas and mixture calculations"],
+    focus: ["Learning short-cut formulas vs analytical derivation", "Avoiding calculation fatigue during multi-step word problems", "Approximation strategies for multiple-choice options"]
+  },
+  "july-analyst": {
+    why: "Transitioning from structured SQL querying to programmatic data cleaning and statistical visualization.",
+    topics: ["Pandas DataFrame manipulation and grouping functions", "Data cleaning (imputing missing values, outlier detection)", "Visualizing distributions, correlations, and heatmaps with Seaborn", "Designing customer health and engagement KPIs"],
+    focus: ["Avoiding SettingWithCopyWarning in pandas operations", "Ensuring color choices in graphs represent data neutrally", "Documenting data preparation pipelines cleanly"]
+  },
+  "july-project": {
+    why: "Expanding analytics workflows to overseas league datasets (Bangladesh Premier League) to prove model generalization.",
+    topics: ["Web scraping Cricinfo or importing API datasets", "Analyzing spin-vs-pace metrics on subcontinental pitches", "Building predictive models for second-innings chases"],
+    focus: ["Cleaning dirty or missing foreign league statistics", "Tuning models for low-scoring match behaviors", "Documenting insights in GitHub readme files"]
+  },
+  "july-dsa": {
+    why: "Mastering the foundational memory layouts and fast lookup structures crucial for 60% of all screening code challenges.",
+    topics: ["Dynamic arrays, two-pointer techniques, and sliding window checks", "Hash maps, collision resolution, and frequency count hashing", "String manipulation, pattern matching, and rotation analysis", "2D matrix operations, traversal (spiral, diagonal), and transformations"],
+    focus: ["Handling index boundary errors and edge cases (empty arrays)", "Avoiding high space overheads in hash maps", "Optimizing string copy operations to save memory"]
+  },
+  "july-fullstack": {
+    why: "Learning the core programming language of the web, focusing on asynchronous paradigms and DOM interactions.",
+    topics: ["Closures, scopes, lexical binding, and 'this' context", "Promises, async/await, error handling, and event loop architecture", "DOM manipulation, event delegation, bubbling, and capturing"],
+    focus: ["Handling memory leaks in event listeners", "Avoiding callback hell through async chaining", "Debugging asynchronous execution order issues"]
+  },
+  "july-cscore": {
+    why: "Learning how database engines organize, cache, retrieve, and lock data to support high concurrent transactions.",
+    topics: ["ACID properties, transaction states, and isolation levels", "Indexing mechanics (B-Trees, B+ Trees, hashing)", "Concurrency control (locks, timestamps, deadlocks) and recovery schemes"],
+    focus: ["Differentiating clustered vs non-clustered indexing", "Identifying and resolving deadlock conditions", "Writing queries that hit indexes instead of full tables"]
+  },
+  "july-personal": {
+    why: "Honing written expression and storytelling structure by publishing long-form written pieces regularly.",
+    topics: ["Drafting technical analyses and descriptive product case studies", "Structuring logical essay outlines with engaging hooks", "Polishing rhythm, pacing, and emotional resonance in creative copy"],
+    focus: ["Overcoming blank-page anxiety with structured drafts", "Maintaining a consistent writing schedule", "Developing a unique voice while keeping language concise"]
+  },
+  "august-aptitude": {
+    why: "Ensuring strong communication and reading comprehension capabilities needed for leadership and global client calls.",
+    topics: ["Reading comprehension and main-idea extraction", "Sentence correction, grammar rules, and syntax structures", "Para-jumbles and contextual vocabulary application"],
+    focus: ["Answering ambiguous comprehension questions objectively", "Improving reading speed under tight time limits", "Recognizing subtle grammatical errors (modifier placement)"]
+  },
+  "august-analyst": {
+    why: "Creating production-ready data pipelines and customer journey reports utilizing advanced business intelligence features.",
+    topics: ["Data modeling (star schemas, relationships, cardinality)", "DAX expressions (CALCULATE, FILTER, time intelligence functions)", "Funnel analysis (conversion tracking) and user retention cohorts"],
+    focus: ["Avoiding recursive relationships in data models", "Optimizing heavy DAX formulas to prevent report slowdowns", "Designing clean dashboards that highlight key actionable insights"]
+  },
+  "august-project": {
+    why: "Building an end-to-end simulated transaction system to master user flows, carts, and analytics tracking.",
+    topics: ["Designing database schema for products, orders, and users", "Implementing cart state management and checkout logic", "Tracking conversion rates, drop-offs, and popular product categories"],
+    focus: ["Ensuring secure payment flow mocks and clean transaction states", "Handling stock counts concurrently to prevent double-selling", "Structuring database relationships for efficient order history queries"]
+  },
+  "august-dsa": {
+    why: "Mastering non-linear references and hierarchical data structures required for product ranking and traversal tasks.",
+    topics: ["Singly, doubly, and circular linked lists with pointer swaps", "Stacks & Queues (implementations, dynamic resizing, applications)", "Binary Trees, Binary Search Trees, traversals (BFS, DFS)", "Heaps (Min/Max heaps, heap sort) and Graph representation (adjacency lists)"],
+    focus: ["Handling null pointer exceptions in list operations", "Recognizing DFS vs BFS tradeoffs in hierarchical structures", "Optimizing heap index calculations manually"]
+  },
+  "august-fullstack": {
+    why: "Utilizing component-based architectures to build modular, state-driven, and lightning-fast user interfaces.",
+    topics: ["React functional components, JSX syntax, and props", "State hook (useState), side effects (useEffect), and custom hooks", "Component lifecycle, virtual DOM reconciliation, and list keys"],
+    focus: ["Preventing unnecessary component re-renders", "Managing complex state across deeply nested components", "Handling component clean-up in useEffect hooks"]
+  },
+  "august-cscore": {
+    why: "Understanding processor scheduling, memory allocation, and concurrency controls at the operating system level.",
+    topics: ["Process scheduling algorithms (FIFO, SJF, Round Robin)", "Memory management (paging, segmentation, virtual memory, thrashing)", "Process synchronization, semaphores, mutexes, and critical sections"],
+    focus: ["Calculating CPU scheduling execution times", "Avoiding page fault bottlenecks in virtual memory systems", "Resolving race conditions in concurrent process scenarios"]
+  },
+  "august-personal": {
+    why: "Learning the business and distribution channels behind creative content to design viable marketing plans.",
+    topics: ["Keyword research and mapping search intents", "Building content calendars with consistent thematic hooks", "Analyzing creator distribution channels and audience acquisition loops"],
+    focus: ["Balancing SEO keyword density with genuine reader value", "Formulating realistic distribution schedules for busy timelines", "Mapping analytics to qualitative storytelling improvements"]
+  },
+  "september-aptitude": {
+    why: "Polishing advanced deduction and puzzle solving skills for final-stage behavioral and logic rounds.",
+    topics: ["Matrix grids, ordering puzzles, and schedule assignments", "Input-output routing, machine logic, and sequence operations", "Logical deductions, assumptions, and critical reasoning paths"],
+    focus: ["Breaking down highly complex, multi-variable logic puzzles", "Managing time limits on lengthy case-style setups", "Eliminating incorrect answer choices systematically"]
+  },
+  "september-analyst": {
+    why: "Optimizing marketing funnels and tracking organic growth metrics to drive customer acquisition loops.",
+    topics: ["Google Analytics 4 event tracking and custom tag triggers", "Technical SEO architecture (sitemaps, indexing, page speeds)", "A/B test design (sample sizes, significance, p-values)", "Calculating Customer Lifetime Value (LTV) and Acquisition Cost (CAC)"],
+    focus: ["Configuring GA4 cross-domain tracking accurately", "Interpreting A/B test results without p-hacking", "Aligning marketing budgets based on LTV/CAC ratios"]
+  },
+  "september-project": {
+    why: "Simulating a subscription media delivery platform to master video cataloging, recommendations, and user behavior analytics.",
+    topics: ["Schema design for movies, genres, profiles, and watches", "Implementing recommendation algorithms based on viewing patterns", "Designing admin dashboards for media uploads and subscription counts"],
+    focus: ["Optimizing media listing page load speeds", "Structuring relational tables for rapid profile switching", "Implementing mock subscriptions and user session updates"]
+  },
+  "september-dsa": {
+    why: "Transitioning from static data containers to optimized runtime execution techniques for data filtering.",
+    topics: ["Binary search variants (upper/lower bounds, rotated arrays)", "Sorting implementations (Quick Sort, Merge Sort, Radix Sort)", "Two-pointer traversals (pairs, triplets, partition checks)", "Sliding window applications (substring tracking, subarray sums)"],
+    focus: ["Handling infinite loops in custom binary search code", "Managing recursion stack limit flags in quicksort routines", "Designing sliding window boundary conditions without off-by-one bugs"]
+  },
+  "september-fullstack": {
+    why: "Building robust server-side APIs, routing systems, and database handlers to connect client actions to persist data.",
+    topics: ["Node.js event-driven architecture and file system actions", "Express framework routing, middleware, and request/response flow", "MongoDB schema design, index configurations, and Mongoose aggregation pipelines"],
+    focus: ["Implementing secure JSON Web Token (JWT) user authorization", "Handling API error states and edge cases cleanly", "Designing scalable database document schemas"]
+  },
+  "september-cscore": {
+    why: "Understanding network protocol stacks, routing architectures, and data transmission rules across the internet.",
+    topics: ["OSI reference model layers and TCP/IP stack protocols", "IP addressing (subnets, routing algorithms, DNS resolution)", "Transport protocols (TCP handshakes, congestion control vs UDP)"],
+    focus: ["Analyzing packet routing through subnet boundaries", "Diagnosing packet drop scenarios in heavy traffic models", "Choosing UDP vs TCP based on app latency needs"]
+  },
+  "september-personal": {
+    why: "Applying structural storytelling concepts to physical multimedia asset generation for personal branding.",
+    topics: ["Scriptwriting for short-form video formats (retention hooks)", "Audio editing and recording setup for podcasts", "Designing visual assets and thumb-stopping thumbnail layouts"],
+    focus: ["Focusing on core hooks in the first 3 seconds of scripts", "Maintaining high audio quality under limited recording setups", "Structuring video overlays to match vocal pacing"]
+  },
+  "october-aptitude": {
+    why: "Mastering probability, statistics, and advanced equations for data-centric screening profiles.",
+    topics: ["Permutations, combinations, and probability models", "Algebra, quadratic equations, and coordinate geometry basics", "Data interpretation (line charts, radar graphs, caselet tables)"],
+    focus: ["Calculating complex probability models quickly", "Drawing clean insights from dense data tables", "Applying short cuts to algebraic expressions"]
+  },
+  "october-analyst": {
+    why: "Harnessing LLM APIs and workflow automation tools to scale data aggregation and analysis workflows.",
+    topics: ["Few-shot prompt design, system guidelines, and model temperature", "Natural Language Processing (tokenization, sentiment analysis, NER)", "API integrations (REST, OAuth authentication schemes)", "No-code automation workflows using Make and Zapier"],
+    focus: ["Preventing LLM hallucination in automated data extraction", "Handling rate limits and error responses on third-party APIs", "Securing API tokens within environment variable vaults"]
+  },
+  "october-project": {
+    why: "Building a localized Telugu literature platform to showcase multilingual search, rich fonts, and character tracking.",
+    topics: ["Designing character maps and historical timeline databases", "Implementing multilingual fuzzy search models for regional scripts", "Writing rich metadata trees for poems, authors, and eras"],
+    focus: ["Ensuring non-Latin font assets load cleanly without layout shifts", "Tuning search engines to recognize regional grammar variants", "Structuring timeline databases for dynamic navigation"]
+  },
+  "october-dsa": {
+    why: "Mastering dynamic state tracking and memoization strategies required for complex algorithmic optimization.",
+    topics: ["Prefix sums, difference arrays, and range query models", "Recursion trees, backtracking flows, and state transitions", "Greedy algorithms (scheduling, optimal choice paths)", "Dynamic programming (memoization, tabulation, knapsack, LCS)"],
+    focus: ["Formulating subproblem transitions for dynamic programming cases", "Handling recursive stack limit limits on deep recursion paths", "Identifying greedy choice properties before implementation"]
+  },
+  "october-fullstack": {
+    why: "Connecting relational or document store databases to external REST/GraphQL API boundaries securely.",
+    topics: ["Relational schema design vs NoSQL collections", "Query optimization (indexing, aggregate metrics, pagination)", "REST API design specifications and Swagger documentation"],
+    focus: ["Securing API endpoints from SQL/NoSQL injection paths", "Implementing rate limiting rules on server interfaces", "Normalizing database structures to prevent update anomalies"]
+  },
+  "october-cscore": {
+    why: "Mastering class-level system design patterns to write clean, reusable, and maintainable software architectures.",
+    topics: ["Creational, structural, and behavioral design patterns", "Unified Modeling Language (UML) class diagram design", "Coding system simulations (parking lot, movie booking)"],
+    focus: ["Selecting the appropriate design pattern without over-engineering", "Ensuring weak coupling between modular interfaces", "Writing testable class structures"]
+  },
+  "october-personal": {
+    why: "Synthesizing individual creative assets into expansive intellectual property structures and storylines.",
+    topics: ["Authoring lore timelines and multi-character world bibles", "Drafting dialogue guides and styling rules for voice actors", "Directing content collaboration pipelines across platforms"],
+    focus: ["Maintaining consistency across massive plot/world timelines", "Providing constructive feedback to creative collaborators", "Aligning creative releases with clear metrics"]
+  },
+  "november-aptitude": {
+    why: "Finalizing communication skills for recruiter screening and executive interviews.",
+    topics: ["Critical reasoning (assumptions, strengthening/weakening points)", "Advanced comprehension passages with logical abstractions", "Sentence completion and logical connectors"],
+    focus: ["Deciding between two closely matching options objectively", "Synthesizing complex paragraphs under limited time frames", "Presenting clear communication cues in verbal answers"]
+  },
+  "november-analyst": {
+    why: "Combining statistical forecasts with financial fundamentals to deliver compelling business recommendations.",
+    topics: ["Linear & logistic regressions, time-series forecasting", "Financial statement structure (P&L, Balance Sheet, cash flows)", "Data storytelling (pitch decks, business case writing)"],
+    focus: ["Avoiding overfitting in predictive modeling pipelines", "Translating complex statistical models for non-technical leaders", "Building realistic business cases using financial ratios"]
+  },
+  "november-project": {
+    why: "Developing a platform to match candidates with job postings based on skills, resume parsing, and role metrics.",
+    topics: ["Parsing resume files and extracting candidate skill sets", "Implementing keyword scoring algorithms for ATS matching", "Building dashboards for hiring managers to filter profiles"],
+    focus: ["Handling unstructured PDF/text data formats during parsing", "Tuning matching algorithms to avoid bias or search blindspots", "Securing candidate profile records and search queries"]
+  },
+  "november-dsa": {
+    why: "Mastering advanced tree structures for rapid search completions and dynamic range queries.",
+    topics: ["Tries (insert, search, prefix suggestions, autocomplete design)", "Segment Trees (range queries, point updates, lazy propagation)", "Binary Indexed Trees (Fenwick trees) for prefix sums and updates"],
+    focus: ["Optimizing memory usage in trie node pointers", "Debugging lazy propagation logic in segment trees", "Converting indexing coordinates between trees and arrays"]
+  },
+  "november-fullstack": {
+    why: "Consolidating all projects into a single portfolio website to showcase developers' skills to hiring managers.",
+    topics: ["Creating a unified, responsive developer portfolio layout", "Integrating projects via live links, descriptions, and source code", "Deploying site on high-speed static networks (Vercel/GitHub pages)"],
+    focus: ["Optimizing image and asset loading to pass lighthouse tests", "Ensuring layout displays correctly on mobile screens", "Configuring custom domain records and SSL certificates"]
+  },
+  "november-cscore": {
+    why: "Designing scalable, distributed system architectures capable of handling millions of requests per second.",
+    topics: ["Load balancing, vertical/horizontal scaling, reverse proxies", "Caching strategies (CDN, Redis cache, cache invalidation)", "System components (queues, message brokers, distributed storage)"],
+    focus: ["Handling single-points-of-failure in system designs", "Designing partition models to prevent database load bottlenecks", "Choosing between SQL and NoSQL based on scale profiles"]
+  },
+  "november-personal": {
+    why: "Presenting personal projects, insights, and portfolios to networks to attract direct inbound job opportunities.",
+    topics: ["Writing engaging project launch articles for LinkedIn", "Sharing coding insights regularly on Twitter", "Building an email subscriber base or online community"],
+    focus: ["Formatting technical posts for maximum readability", "Maintaining positive engagement with professional networks", "Measuring post analytics to optimize content delivery"]
+  },
+  "december-aptitude": {
+    why: "Simulating timed screening tests to ensure peak speed, accuracy, and confidence.",
+    topics: ["Full-length mock tests matching major company patterns", "Speed-solving strategies for arithmetic and logical reasoning", "Time allocation schedules based on section weightings"],
+    focus: ["Maintaining composure under strict test time limits", "Recognizing when to skip questions to maximize scores", "Analyzing errors from mock feedback profiles"]
+  },
+  "december-analyst": {
+    why: "Polishing project code, documentation, and dashboards to present a cohesive analyst profile.",
+    topics: ["Refining dashboard layouts for clean styling", "Writing data project readmes containing clear business outcomes", "Building a master analyst case study slide deck"],
+    focus: ["Verifying all data links and public dashboards work", "Ensuring code files on GitHub are clean and commented", "Simplifying project descriptions for quick recruiter reviews"]
+  },
+  "december-project": {
+    why: "Linking completed projects to target job listings to show specific requirement alignments.",
+    topics: ["Mapping portfolio features directly to role descriptions", "Creating custom project demo videos for hiring teams", "Aligning resume highlight lists with actual code features"],
+    focus: ["Ensuring all links in resumes work perfectly", "Refining project descriptions to match ATS keywords", "Verifying mobile and web performance on portfolios"]
+  },
+  "december-dsa": {
+    why: "Mastering specialized interview algorithms to solve edge-case and optimization problems during technical interviews.",
+    topics: ["Bitwise operations (masking, count set bits, single numbers)", "Backtracking (Sudoku, N-Queens, subset generation)", "Divide & Conquer (closest pair, FFT) and Branch & Bound", "Randomized algorithms (Quickselect) and geometric checks"],
+    focus: ["Handling base recursion cases in complex backtracking logic", "Optimizing dynamic bit masks to save computation cycles", "Proving time complexities for randomized code blocks"]
+  },
+  "december-fullstack": {
+    why: "Simulating live coding interviews and system design walk-throughs to build confidence.",
+    topics: ["Mock technical interviews with peer feedback loops", "Explaining coding choices clearly while writing solutions", "System design whiteboard layouts and explanations"],
+    focus: ["Keeping clean communication lines open during problems", "Answering unexpected programming or system design edge cases", "Translating code ideas into working logic under pressure"]
+  },
+  "december-cscore": {
+    why: "Reviewing computer science core topics (OS, DBMS, CN, LLD/HLD) for quick recall during technical reviews.",
+    topics: ["Core concept cheat sheets and quick reference review lists", "Answering standard database, OS, and network queries", "Whiteboard class layout exercises"],
+    focus: ["Explaining core concepts (e.g., paging, TCP) concisely", "Avoiding rambling answers to simple technical questions", "Synthesizing CS theory into real engineering choices"]
+  },
+  "december-personal": {
+    why: "Structuring creative portfolios to highlight storytelling, scripting, and narrative design skills for creative roles.",
+    topics: ["Consolidating scripts, videos, and articles into a creative portfolio", "Building a presentation deck detailing content campaign metrics", "Formulating a personal brand statement for interview introductions"],
+    focus: ["Aligning creative works with clear, measurable business metrics", "Highlighting visual layout and typography choices in portfolios", "Presenting creative ideas clearly in professional contexts"]
+  }
+};
 function buildSkillsData() {
   const data = {};
   Object.entries(SM_GRID_DATA).forEach(([monthName, trackData]) => {
     Object.entries(trackData).forEach(([trackKey, skillTitle]) => {
       const id = smSlugify(monthName + '-' + trackKey);
-      const det = smGetDetails(skillTitle);
+      const det = SM_GRID_DETAILS[id] || smGetDetails(skillTitle);
+      const why = det.why || det.impact || "";
+      const pros = det.topics || det.pros || [];
+      const cons = det.focus || det.cons || [];
       data[id] = {
         id,
         title: skillTitle,
         track: trackKey,
         month: monthName,
-        why: det.impact,
-        pros: det.pros,
-        cons: det.cons,
+        why: why,
+        pros: pros,
+        cons: cons,
         roles: smGetRoles(skillTitle)
       };
     });
@@ -2661,7 +2911,7 @@ function SkillMapTab() {
       borderBottom: '1px solid rgba(255,255,255,0.04)',
       paddingBottom: 6
     }
-  }, "Why This Matters"), /*#__PURE__*/React.createElement("p", {
+  }, "Why This Month"), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 13.5,
       lineHeight: 1.6,
@@ -2671,6 +2921,12 @@ function SkillMapTab() {
       paddingLeft: 14
     }
   }, activeSkill.why)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gap: 14
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: 11,
       fontWeight: 700,
@@ -2682,21 +2938,7 @@ function SkillMapTab() {
       borderBottom: '1px solid rgba(255,255,255,0.04)',
       paddingBottom: 6
     }
-  }, "Pros & Cons"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gap: 14
-    }
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10,
-      fontWeight: 700,
-      color: '#2ECC71',
-      textTransform: 'uppercase',
-      marginBottom: 8
-    }
-  }, "Pros"), (activeSkill.pros || []).map((p, i) => /*#__PURE__*/React.createElement("div", {
+  }, "What You Need to Learn / Master"), (activeSkill.pros || []).map((p, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
     style: {
       fontSize: 12.5,
@@ -2713,17 +2955,21 @@ function SkillMapTab() {
     }
   }, "\u2713"), /*#__PURE__*/React.createElement("span", null, p)))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     style: {
-      fontSize: 10,
+      fontSize: 11,
       fontWeight: 700,
-      color: '#EF4444',
+      color: '#6B6B8A',
       textTransform: 'uppercase',
-      marginBottom: 8
+      letterSpacing: 1,
+      marginBottom: 10,
+      fontFamily: "'DM Mono',monospace",
+      borderBottom: '1px solid rgba(255,255,255,0.04)',
+      paddingBottom: 6
     }
-  }, "Cons"), (activeSkill.cons || []).map((c, i) => /*#__PURE__*/React.createElement("div", {
+  }, "Key Placement / Role Focus"), (activeSkill.cons || []).map((c, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
     style: {
       fontSize: 12.5,
-      color: '#FECACA',
+      color: '#93C5FD',
       display: 'flex',
       gap: 6,
       alignItems: 'flex-start',
@@ -2731,10 +2977,10 @@ function SkillMapTab() {
     }
   }, /*#__PURE__*/React.createElement("span", {
     style: {
-      color: '#EF4444',
+      color: '#3B82F6',
       flexShrink: 0
     }
-  }, "\u2717"), /*#__PURE__*/React.createElement("span", null, c)))))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+  }, "\u2713"), /*#__PURE__*/React.createElement("span", null, c)))))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: 11,
       fontWeight: 700,
