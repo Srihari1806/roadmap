@@ -669,6 +669,204 @@
         width: 100%;
       }
     }
+
+    /* Project Timeline Styles */
+    .timeline-section {
+      max-width: 1400px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+    .timeline-container {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      position: relative;
+    }
+    .timeline-main-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+    .timeline-subtitle {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+    .timeline-track {
+      position: relative;
+      padding-top: 20px;
+    }
+    .timeline-track::before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: 6px;
+      right: 6px;
+      height: 2px;
+      background: var(--border);
+      z-index: 1;
+    }
+    .timeline-items {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(220px, 1fr));
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 16px;
+    }
+    .timeline-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .timeline-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--border);
+      border: 2px solid var(--bg);
+      margin-bottom: 12px;
+      z-index: 2;
+      transition: all 0.3s ease;
+    }
+    .timeline-item.active .timeline-dot {
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+    }
+    .timeline-item.complete .timeline-dot {
+      background: var(--green);
+      box-shadow: 0 0 10px var(--green);
+    }
+    .timeline-item.portfolio .timeline-dot {
+      background: #8B5CF6;
+      box-shadow: 0 0 10px #8B5CF6;
+    }
+    .timeline-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .timeline-item.active .timeline-date {
+      color: var(--accent);
+    }
+    .timeline-item.complete .timeline-date {
+      color: var(--green);
+    }
+    .timeline-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+    .timeline-card:hover {
+      border-color: rgba(244, 167, 42, 0.3);
+      background: rgba(255, 255, 255, 0.04);
+      transform: translateY(-2px);
+    }
+    .timeline-project-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .timeline-project-type {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-family: 'DM Mono', monospace;
+    }
+    .timeline-project-status {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--muted);
+      align-self: flex-start;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .timeline-project-status.status-ongoing {
+      background: rgba(244, 167, 42, 0.1);
+      color: var(--accent);
+      border-color: rgba(244, 167, 42, 0.2);
+    }
+    .timeline-project-status.status-completed {
+      background: rgba(46, 204, 113, 0.1);
+      color: var(--green);
+      border-color: rgba(46, 204, 113, 0.2);
+    }
+    .timeline-project-status.status-launch {
+      background: rgba(139, 92, 246, 0.1);
+      color: #A78BFA;
+      border-color: rgba(139, 92, 246, 0.2);
+    }
+    .timeline-project-desc {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    .timeline-project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+    .timeline-project-tags span {
+      font-size: 9px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--text);
+    }
+    .timeline-live-link {
+      font-size: 10px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      margin-top: auto;
+      transition: color 0.2s ease;
+    }
+    .timeline-live-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .timeline-items {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .timeline-item {
+        padding-left: 24px;
+      }
+      .timeline-dot {
+        position: absolute;
+        left: 0;
+        top: 4px;
+      }
+      .timeline-track::before {
+        left: 5px;
+        top: 6px;
+        bottom: 6px;
+        width: 2px;
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -682,9 +880,9 @@
             <span class="header-tag">Interactive Skill Map</span>
           </div>
           <h1 class="header-title">Srihari's <span>Skill Map</span></h1>
-          <p class="header-desc">
-            7 Tracks × 7 Months comprehensive curriculum. Click any skill node to reveal topics, details, and free curated learning resources.
-          </p>
+<p class="header-desc">
+             7 Tracks × 6 Months: IPL → BPL → E-commerce → Hiremap → OTT → Sahitya → Portfolio. Click any skill node to reveal project deep-dives, content assets, and curated resources.
+           </p>
         </div>
         <div class="progress-box">
           <div class="progress-info">
@@ -729,6 +927,143 @@
       </div>
     </div>
   </main>
+
+  <!-- Project Timeline Section -->
+  <section class="timeline-section">
+    <div class="timeline-container">
+      <h2 class="timeline-main-title">6-Month Project Roadmap & Portfolio Timeline</h2>
+      <p class="timeline-subtitle">A visual progression of the key analytics tools, creative platforms, and portfolio launch objectives from June through December.</p>
+      
+      <div class="timeline-track">
+        <div class="timeline-items">
+          
+          <!-- June -->
+          <div class="timeline-item active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">June</div>
+            <div class="timeline-card">
+              <div class="timeline-project-title">IPL Analytics Hub</div>
+              <div class="timeline-project-type">Sports Intelligence</div>
+              <div class="timeline-project-status status-ongoing">Ongoing (July End)</div>
+              <p class="timeline-project-desc">Advanced sports analytics dashboard analyzing 5 years of player consistency, match-ups, and toss dynamics. Unlocks Sports Analyst & Writer roles.</p>
+              <div class="timeline-project-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Seaborn</span>
+                <span>PowerBI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- July -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">July</div>
+            <div class="timeline-card">
+              <div class="timeline-project-title">BPL Analytics</div>
+              <div class="timeline-project-type">Music Economy</div>
+              <div class="timeline-project-status">Planned (Dec End)</div>
+              <p class="timeline-project-desc">Analyzing the economics and creator trends of music platforms. Unlocks Business Analytics & Audience telemetry roles.</p>
+              <div class="timeline-project-tags">
+                <span>SQL</span>
+                <span>Tableau</span>
+                <span>Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- August -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">August</div>
+            <div class="timeline-card">
+              <div class="timeline-project-title">E-Commerce Analytics</div>
+              <div class="timeline-project-type">Business Intelligence</div>
+              <div class="timeline-project-status">Planned (Dec End)</div>
+              <p class="timeline-project-desc">Customer segmentation, churn funnel prediction, and sales analytics pipelines. Unlocks Financial & Growth Analyst roles.</p>
+              <div class="timeline-project-tags">
+                <span>Python</span>
+                <span>Scikit-Learn</span>
+                <span>RFM Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- September -->
+          <div class="timeline-item complete">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">September</div>
+            <div class="timeline-card">
+              <div class="timeline-project-title">Hiremap Platform</div>
+              <div class="timeline-project-type">Recruitment Intelligence</div>
+              <div class="timeline-project-status status-completed">Frontend Complete</div>
+              <p class="timeline-project-desc">Student placement portal mapping skills to job listings. Unlocks Product Analyst & Fullstack roles.</p>
+              <div class="timeline-project-tags">
+                <span>React</span>
+                <span>Vite</span>
+                <span>Node.js</span>
+                <span>Vercel</span>
+              </div>
+              <a href="https://hiremap-eight.vercel.app/" target="_blank" class="timeline-live-link">🌐 View Live App</a>
+            </div>
+          </div>
+
+          <!-- October -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">October</div>
+            <div class="timeline-card">
+              <div class="timeline-project-title">OTT Analysis</div>
+              <div class="timeline-project-type">Content Intelligence</div>
+              <div class="timeline-project-status">Planned (Dec End)</div>
+              <p class="timeline-project-desc">Audience telemetry analysis and content optimization framework. Unlocks Media Strategy & Audience Analytics roles.</p>
+              <div class="timeline-project-tags">
+                <span>SQL</span>
+                <span>Python</span>
+                <span>GA4 Telemetry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- November -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">November</div>
+            <div class="timeline-card">
+              <div class="timeline-project-title">Sahitya Rachanalu</div>
+              <div class="timeline-project-type">Creative Platform</div>
+              <div class="timeline-project-status">Planned (Dec End)</div>
+              <p class="timeline-project-desc">A Telugu literary portal with Cinepedia, Lyrics Engine, and Story Universe. Unlocks Creative Director, Lyricist, & Writer roles.</p>
+              <div class="timeline-project-tags">
+                <span>Next.js</span>
+                <span>Tailwind CSS</span>
+                <span>MDX</span>
+                <span>GSAP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- December -->
+          <div class="timeline-item portfolio">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">December</div>
+            <div class="timeline-card">
+              <div class="timeline-project-title">Portfolio Showcase</div>
+              <div class="timeline-project-type">Unified Launch</div>
+              <div class="timeline-project-status status-launch">Unified Launch</div>
+              <p class="timeline-project-desc">Integrating all 6 projects (IPL, BPL, E-commerce, Hiremap, OTT, Sahitya) into a single master showcase. Covers all target roles.</p>
+              <div class="timeline-project-tags">
+                <span>Vercel Showcase</span>
+                <span>LinkedIn Sync</span>
+                <span>25 Target Roles</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Backdrop for Drawer -->
   <div class="drawer-backdrop" id="drawer-backdrop"></div>
@@ -790,13 +1125,13 @@
     };
 
     const monthsInfo = [
-      { name: 'JUNE', theme: 'Foundation' },
-      { name: 'JULY', theme: 'Core Tools' },
-      { name: 'AUGUST', theme: 'Intermediate' },
-      { name: 'SEPTEMBER', theme: 'Advanced' },
-      { name: 'OCTOBER', theme: 'Complex' },
-      { name: 'NOVEMBER', theme: 'Specialization' },
-      { name: 'DECEMBER', theme: 'Final Consolid.' }
+      { name: 'JUNE', theme: 'IPL Analytics' },
+      { name: 'JULY', theme: 'BPL Analytics' },
+      { name: 'AUGUST', theme: 'E-Commerce Analytics' },
+      { name: 'SEPTEMBER', theme: 'Hiremap Platform' },
+      { name: 'OCTOBER', theme: 'OTT Analysis' },
+      { name: 'NOVEMBER', theme: 'Sahitya Rachanalu' },
+      { name: 'DECEMBER', theme: 'Portfolio Launch' }
     ];
 
     // Rich detailed database for all 49 skills
@@ -840,21 +1175,32 @@
           { name: 'LeetCode Database Practice Sheet', url: 'https://leetcode.com/studyplan/30-days-of-sql/' }
         ]
       },
-      'june-project': {
-        title: 'IPL Project: Phase 1 Data Prep',
-        track: 'project',
-        month: 'JUNE',
-        why: 'Builds analytical baseline on actual real-world sports data.',
-        subtopics: [
-          '**Data Scraping & Sourcing**: Gathering historical IPL match tables, player listings, auction prices.',
-          '**Data Cleaning**: Aligning historical records, matching spelling mismatches, deduplicating records.',
-          '**Data Model Construction**: Structuring matches, deliveries, and player salaries in fact/dimension tables.'
-        ],
-        resources: [
-          { name: 'Kaggle IPL Dataset', url: 'https://www.kaggle.com/datasets' },
-          { name: 'BeautifulSoup Scraper Tutorial', url: 'https://beautiful-soup-4.readthedocs.io/en/latest/' }
-        ]
-      },
+'june-project': {
+         title: 'IPL Analytics: Phase 1 Data Prep',
+         track: 'project',
+         month: 'JUNE',
+         why: 'Build analytical baseline on actual real-world sports data — the foundation for demonstrating sports analytics skills.',
+         subtopics: [
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--accent);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+             <div style="line-height:1.6;font-size:12px;">
+               <strong>Goal:</strong> Create a world-class sports analytics platform showcasing 10 distinct analytical layers.<br/><br/>
+               <strong>Deliverables:</strong><br/>
+               • Live Vercel-hosted website with interactive charts<br/>
+               • Power BI interactive dashboard<br/>
+               • 15-page PDF report (McKinsey-style)<br/>
+               • LinkedIn article series (10 posts)<br/><br/>
+               <strong>Layers Covered:</strong> Sports Intelligence → Fan Psychology → Product → Second-Screen → Attention Economy → Broadcast → Business → Player Brand → Strategy → AI Intelligence<br/><br/>
+               <strong>Key Insight:</strong> "IPL is not a cricket tournament. It is an interconnected attention economy."
+             </div>
+           </div>`
+         ],
+         resources: [
+           { name: 'IPL Dataset on Kaggle', url: 'https://www.kaggle.com/datasets' },
+           { name: 'Streamlit Interactive Dashboards', url: 'https://streamlit.io/' },
+           { name: 'Power BI Dashboard Guide', url: 'https://learn.microsoft.com/en-us/power-bi/' }
+         ]
+       },
       'june-dsa': {
         title: 'Complexity & Math Basics',
         track: 'dsa',
@@ -904,18 +1250,43 @@
         ]
       },
       'june-personal': {
-        title: 'Content & Creative Foundation',
+        title: 'Sahitya Rachanalu — Month 1 (Research & Curation)',
         track: 'personal',
         month: 'JUNE',
-        why: 'Establishing the basics of high-impact writing, online distribution channels, and organic traffic growth.',
+        why: 'Build portfolio evidence by researching the best creative websites and writing a foundation of content architecture for the next 6 months.',
         subtopics: [
-          '**SEO Content Writing**: Keyword intent discovery, page metadata configurations, and structural hierarchy (H1/H2/H3).',
-          '**LinkedIn Article Formatting**: Writing punchy hooks, line-breaks for readability, and CTAs that drive organic comments.',
-          '**Medium Publication Basics**: Setting up self-publishing profiles, parsing writer guides, and formatting text blocks.'
+          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 1 Deliverables</div>
+              <div style="margin-top:8px;line-height:1.6;">
+                • Research & architecture: Sitemap + user flows + content categories
+                <br/>• Collect 100 inspirations from portfolio/movie/agency/storytelling sites
+                <br/>• Create content folders: Animations, Typography, Movie Posters, Page Layouts, Storytelling, Landing Pages
+              </div>
+            </div>
+            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 1 (Foundation)</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">7 pieces · Prove writing ability · 5 Pillars active</div>
+              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
+                <div style="color:#F4A72A;font-weight:700;margin-bottom:3px;">🎬 Film Analysis Essays ×2</div>
+                ↳ "Arjun Reddy: Why We Root for Someone We Shouldn't"<br/>↳ "Baahubali's World-Building Masterclass"<br/>
+                <div style="color:#FB7185;font-weight:700;margin:6px 0 3px;">🎵 Lyrics Vault ×2</div>
+                ↳ Srivalli Decoded (Analysis) · Original: Loss/Nostalgia theme<br/>
+                <div style="color:#38BDF8;font-weight:700;margin:6px 0 3px;">🏑 IPL Analytics Hub ×1</div>
+                ↳ "Dhoni: The Nostalgia Premium" — Series opener<br/>
+                <div style="color:#FB923C;font-weight:700;margin:6px 0 3px;">🎯 Brand/Product Teardown ×1</div>
+                ↳ "Zomato's Copywriting Playbook"<br/>
+                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Sahitya Founder Journal ×1</div>
+                ↳ "Why I'm Building Sahitya Rachanalu in 2026"
+              </div>
+            </div>
+          </div>`
         ],
         resources: [
-          { name: 'HubSpot Content Marketing Academy', url: 'https://academy.hubspot.com/courses/content-marketing' },
-          { name: 'Google SEO Starter Guide', url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide' }
+          { name: 'HubSpot Content Marketing (Academy)', url: 'https://academy.hubspot.com/courses/content-marketing' },
+          { name: 'Google SEO Starter Guide', url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide' },
+          { name: 'Storytelling (Frameworks)', url: 'https://storytellingwithdata.com/' }
         ]
       },
 
@@ -955,21 +1326,32 @@
           { name: 'Google Data Analytics Certificate: Data Prep', url: 'https://www.coursera.org/professional-certificates/google-data-analytics' }
         ]
       },
-      'july-project': {
-        title: 'IPL Project: Phase 2 Analytical Modeling',
-        track: 'project',
-        month: 'JULY',
-        why: 'Combines multiple analytical outputs into a logical sport narrative.',
-        subtopics: [
-          '**Player valuation metric**: Building custom equations weighting strike rate, consistency, and auction value.',
-          '**Team analytics modeling**: Visualizing run rates, wicket trends, batting depth.',
-          '**Dashboard Architecture**: Mocking layout wireframes for dashboard presentation.'
-        ],
-        resources: [
-          { name: 'Streamlit Layout Guides', url: 'https://docs.streamlit.io/' },
-          { name: 'Plotly Express Reference', url: 'https://plotly.com/python/plotly-express/' }
-        ]
-      },
+'july-project': {
+         title: 'BPL Analytics: Primary Research & Ground Truth',
+         track: 'project',
+         month: 'JULY',
+         why: 'Primary data collection project on Hyderabad live music ecosystem — unique dataset for product/analytics demonstration.',
+         subtopics: [
+           `<div style="background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:#A855F7;display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+             <div style="line-height:1.6;font-size:12px;">
+               <strong>Goal:</strong> Map the Hyderabad live music economy with primary data collection and build a venue-band matchmaking system.<br/><br/>
+               <strong>Deliverables:</strong><br/>
+               • Primary dataset from 50+ venues<br/>
+               • Live BPL matchmaking portal<br/>
+               • 15-page economic report<br/>
+               • LinkedIn series (venue comparisons)<br/><br/>
+               <strong>Layers:</strong> Market Foundation → Demand Behavior → Supply Side → Matchmaking → Revenue Model → Funnel Analytics → Growth Strategy → Ecosystem Impact<br/><br/>
+               <strong>Key Insight:</strong> "Live music is not just entertainment. It is a repeatable business model and a cultural economy."
+             </div>
+           </div>`
+         ],
+         resources: [
+           { name: 'Google Forms Survey Tool', url: 'https://forms.google.com' },
+           { name: 'BookMyShow API Insights', url: 'https://developer.bookmyshow.com/' },
+           { name: 'Hyderabad Venue Research', url: 'https://www.hyderabad.club' }
+         ]
+       },
       'july-dsa': {
         title: 'Arrays, Hashing, Strings & Matrices',
         track: 'dsa',
@@ -1019,17 +1401,41 @@
         ]
       },
       'july-personal': {
-        title: 'Narrative Design & Storytelling',
+        title: 'Sahitya Rachanalu — Month 2 (UI/UX Design)',
         track: 'personal',
         month: 'JULY',
-        why: 'Mastering narrative arcs and screenplay rhythm to capture and retain reader interest.',
+        why: 'Design the creative experience in Figma: layout clarity, fast navigation, and page systems that scale.',
         subtopics: [
-          '**Three-Act Structure**: Mapping setup, confrontation (inciting incident, midpoint, climax), and resolution.',
-          '**Dialogue Construction**: Subtext design, character voices variation, and pacing dialogue rhythms.',
-          '**Reel/Short Video Scripting**: Hook-body-CTA formats, writing visual cues, and coordinating sound effects.'
+          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 2 Deliverables</div>
+              <div style="margin-top:8px;line-height:1.6;">
+                • Design pages in Figma:
+                <br/>Home, Articles, Cinepedia, Lyrics, Profile, Universe
+                <br/>• Create component library + dark-mode ready tokens
+              </div>
+            </div>
+            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 2 (Storytelling)</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">8 pieces · Show narrative intelligence · 5 Pillars active</div>
+              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
+                <div style="color:#A78BFA;font-weight:700;margin-bottom:3px;">🧠 Character Psychology ×2</div>
+                ↳ "Dhoni: Psychology of Stillness Under Pressure"<br/>↳ "Arjun Reddy: Narcissistic Genius or Wounded Child?"<br/>
+                <div style="color:#34D399;font-weight:700;margin:6px 0 3px;">📜 Screenplay Breakdowns ×2</div>
+                ↳ "3 Idiots: Hook Writing Masterclass" · "Dil Chahta Hai: Ensemble Dynamics"<br/>
+                <div style="color:#FB7185;font-weight:700;margin:6px 0 3px;">🎵 Lyrics Vault ×2</div>
+                ↳ Saranga Dariya Analysis · Original: Ambition/Longing theme<br/>
+                <div style="color:#38BDF8;font-weight:700;margin:6px 0 3px;">🏑 IPL Analytics Hub ×1</div>
+                ↳ "MI vs CSK: What the Rivalry Data Says Fans Don't"<br/>
+                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
+                ↳ "Content Architecture Before Content: Month 2 Lesson"
+              </div>
+            </div>
+          </div>`
         ],
         resources: [
-          { name: 'Sundance Co/Lab: Screenwriting Basics', url: 'https://colab.sundance.org/' },
+          { name: 'Figma Design Systems', url: 'https://www.figma.com/resources/learn-design/' },
           { name: 'Fountain Scriptwriting Format Guide', url: 'https://fountain.io/' }
         ]
       },
@@ -1069,21 +1475,32 @@
           { name: 'Microsoft Learn: Power BI track', url: 'https://learn.microsoft.com/en-us/power-bi/' }
         ]
       },
-      'august-project': {
-        title: 'E-Commerce Analytics: Phase 1 Data Parsing',
-        track: 'project',
-        month: 'AUGUST',
-        why: 'Analyzing transaction funnels mimics high-volume retail analytics environments.',
-        subtopics: [
-          '**Flipkart/Amazon Review Scraping**: Parsing reviews, dates, ratings, products.',
-          '**Sentiment Analysis Setup**: Scoring textual reviews using text analyzers.',
-          '**SQL Funnel Creation**: Joining marketing impressions with actual shopping cart checkouts.'
-        ],
-        resources: [
-          { name: 'Baymard Institute UX & Funnel data', url: 'https://baymard.com/' },
-          { name: 'Kaggle Review Datasets', url: 'https://www.kaggle.com/' }
-        ]
-      },
+'august-project': {
+         title: 'E-Commerce Analytics: Funnel & Revenue Intelligence',
+         track: 'project',
+         month: 'AUGUST',
+         why: 'Demonstrates business analytics, consumer psychology, and growth strategy through real e-commerce data.',
+         subtopics: [
+           `<div style="background:rgba(46,204,113,0.06);border:1px solid rgba(46,204,113,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--green);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+             <div style="line-height:1.6;font-size:12px;">
+               <strong>Goal:</strong> Analyze e-commerce as attention + behavior + logistics + ecosystem control through 9 analytical layers.<br/><br/>
+               <strong>Deliverables:</strong><br/>
+               • Interactive website with all 9 analysis modules<br/>
+               • Power BI dashboard<br/>
+               • 10-page PDF consulting report<br/>
+               • LinkedIn case studies (3 posts)<br/><br/>
+               <strong>Layers:</strong> Seasonal Sales → Pricing Psychology → Ads Impact → Consumer Psychology → Unit Economics → Quick Commerce → Offline Impact → Conglomerate Strategy → Prescriptive Strategy<br/><br/>
+               <strong>Key Insight:</strong> "E-commerce is not selling products. It is controlling attention, behavior, logistics, and ecosystems."
+             </div>
+           </div>`
+         ],
+         resources: [
+           { name: 'Flipkart Dataset Kaggle', url: 'https://www.kaggle.com/datasets' },
+           { name: 'Power BI E-commerce Templates', url: 'https://learn.microsoft.com/en-us/power-bi/' },
+           { name: 'Google Analytics 4', url: 'https://analytics.google.com/' }
+         ]
+       },
       'august-dsa': {
         title: 'Linear & Basic Tree structures',
         track: 'dsa',
@@ -1133,18 +1550,43 @@
         ]
       },
       'august-personal': {
-        title: 'Copywriting & Conversion Principles',
+        title: 'Sahitya Rachanalu — Month 3 (Core Development)',
         track: 'personal',
         month: 'AUGUST',
-        why: 'Writing targeted copy that prompts immediate actions and builds commercial value.',
+        why: 'Turn the design into production: build content engine, dark mode system, search, and responsive typography.',
         subtopics: [
-          '**AIDA Framework**: Crafting sequences targeting Attention, Interest, Desire, and Action.',
-          '**Headline Writing**: Using FOMO triggers, numbers, curiosity gaps, and value props.',
-          '**Email Swipe Files**: Structuring e-commerce carts reminders and launch sequence swipe copies.'
+          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 3 Deliverables</div>
+              <div style="margin-top:8px;line-height:1.6;">
+                • Next.js setup + Tailwind
+                <br/>• MDX blog system + dark mode
+                <br/>• Search + responsive performance baseline
+              </div>
+            </div>
+            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 3 (Marketing Thinking)</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">7 pieces · Show business understanding · 4 Pillars active</div>
+              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
+                <div style="color:#FB923C;font-weight:700;margin-bottom:3px;">🎯 Brand/Product Teardowns ×2</div>
+                ↳ "Swiggy vs Zomato: Brand War Decoded" · "boAt's D2C Rise"<br/>
+                <div style="color:#4ADE80;font-weight:700;margin:6px 0 3px;">📈 Creator Economy Essays ×2</div>
+                ↳ "The 1000 True Fans Theory in 2026" · "Why Instagram Reach is Dead"<br/>
+                <div style="color:#FB923C;font-weight:700;margin:6px 0 3px;">🎯 UX Teardown ×1</div>
+                ↳ "Duolingo's Viral Strategy: Fear, Shame &amp; a Green Owl"<br/>
+                <div style="color:#F4A72A;font-weight:700;margin:6px 0 3px;">🎬 Film Analysis ×1</div>
+                ↳ "KGF Chapter 2: The Mythology of a Self-Made God"<br/>
+                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
+                ↳ "The Language Problem: Writing for Telugu Readers"
+              </div>
+            </div>
+          </div>`
         ],
         resources: [
-          { name: 'Adweek Copywriting Masterclass', url: 'https://www.adweek.com/' },
-          { name: 'Google Ads Search Certification', url: 'https://skillshop.exceedlms.com/' }
+          { name: 'Next.js Documentation', url: 'https://nextjs.org/docs' },
+          { name: 'MDX Guide', url: 'https://mdxjs.com/' },
+          { name: 'Tailwind CSS Docs', url: 'https://tailwindcss.com/docs' }
         ]
       },
 
@@ -1183,21 +1625,41 @@
           { name: 'Moz SEO Core Guide', url: 'https://moz.com/beginners-guide-to-seo' }
         ]
       },
-      'september-project': {
-        title: 'E-Commerce Analytics: Phase 2 Analysis',
-        track: 'project',
-        month: 'SEPTEMBER',
-        why: 'Combines data pipelines with behavioral insights and economics analysis.',
-        subtopics: [
-          '**Pricing Elasticity**: Analyzing purchase shifts during Big Billion Days discounts.',
-          '**Urgency/Anchor Bias validation**: Graphing conversions against discount sizes.',
-          '**Deployment**: Creating clean visual dashboards hosted online.'
-        ],
-        resources: [
-          { name: 'Streamlit Deployment instructions', url: 'https://docs.streamlit.io/' },
-          { name: 'Vercel Deployment guide', url: 'https://vercel.com/' }
-        ]
-      },
+'september-project': {
+         title: 'Hiremap Platform: Recruitment Intelligence System',
+         track: 'project',
+         month: 'SEPTEMBER',
+         why: 'Build a recruitment platform showcasing product analytics and matching algorithms for talent acquisition.',
+         subtopics: [
+           `<div style="background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.18);border-radius:8px;padding:14px;">
+             <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+               <strong style="color:#A855F7;font-size:13px;">HireMap — Student Placement Portal</strong>
+               <a href="https://hiremap-eight.vercel.app/" target="_blank" style="font-size:9px;background:rgba(168,85,247,0.2);color:#A855F7;padding:2px 8px;border-radius:4px;text-decoration:none;border:1px solid rgba(168,85,247,0.4);">🌐 Live → hiremap-eight.vercel.app</a>
+             </div>
+             <div style="line-height:1.7;font-size:12px;">
+               <strong style="color:#A855F7;">Current Status:</strong> Frontend Complete · Backend In Progress<br/><br/>
+               <strong>Frontend Stack (Live):</strong><br/>
+               • React 19 + TypeScript · Framer Motion animations<br/>
+               • Firebase Auth: role-based (Student / Recruiter / Admin)<br/>
+               • Vite build + Vercel deployment pipeline<br/><br/>
+               <strong>What's Live Now:</strong><br/>
+               • Onboarding flow redesigned: 7 → 4 screens (reduced friction)<br/>
+               • Dynamic student dashboards with real-time Firebase sync<br/>
+               • Role-based auth UI + profile completion tracker<br/>
+               • Landing page with conversion-optimized CTA copy<br/><br/>
+               <strong>Backend (Planned):</strong><br/>
+               • Node.js + Express API · MongoDB: profiles, jobs, match scores<br/>
+               • Skill gap analysis + salary benchmarking endpoints<br/><br/>
+               <strong>Deliverables:</strong> Live MERN platform · Analytics dashboard · Case study · LinkedIn series on hiring trends
+             </div>
+           </div>`
+         ],
+         resources: [
+           { name: 'Next.js Documentation', url: 'https://nextjs.org/docs' },
+           { name: 'Node.js Backend', url: 'https://nodejs.org/' },
+           { name: 'MongoDB Atlas', url: 'https://www.mongodb.com/atlas' }
+         ]
+       },
       'september-dsa': {
         title: 'Search, Sort, Two Pointers & Sliding Window',
         track: 'dsa',
@@ -1247,18 +1709,43 @@
         ]
       },
       'september-personal': {
-        title: 'Scriptwriting & Video Production Design',
+        title: 'Sahitya Rachanalu — Month 4 (Creative Features)',
         track: 'personal',
         month: 'SEPTEMBER',
-        why: 'Translating written narratives into production-ready visual guides (YouTube scripts, explainers).',
+        why: 'Build the signature feature set: Cinepedia, Lyrics Engine, and Story Universe pages—so the site feels unique, not generic.',
         subtopics: [
-          '**Video Storyboarding**: Creating panel templates, adding frame descriptions, and pacing visual edits.',
-          '**Explainer Video Scripts**: Breaking down technical themes (e.g. database routing) into layman stories.',
-          '**Pacing and Transitions**: Integrating audio beats, screen-shares markers, and overlay timestamps.'
+          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 4 Deliverables</div>
+              <div style="margin-top:8px;line-height:1.6;">
+                • Cinepedia database (movie analysis)
+                <br/>• Lyrics Engine (lyrics + meanings)
+                <br/>• Story Universe pages (characters, timelines, maps, lore)
+              </div>
+            </div>
+            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 4 (Media &amp; Creator Economy)</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">8 pieces · Platform thinking at scale · 5 Pillars active</div>
+              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
+                <div style="color:#4ADE80;font-weight:700;margin-bottom:3px;">📈 Creator Economy Essays ×2</div>
+                ↳ "Second Screen Economy: IPL Made India's Creator Market"<br/>↳ "LinkedIn's Creator Moment: Why B2B Became Valuable"<br/>
+                <div style="color:#38BDF8;font-weight:700;margin:6px 0 3px;">🏑 IPL Analytics Hub ×2</div>
+                ↳ "RCB Tragedy in Numbers" · "Fantasy Cricket's Impact on Match Viewing"<br/>
+                <div style="color:#FB923C;font-weight:700;margin:6px 0 3px;">🎯 Campaign Breakdown ×1</div>
+                ↳ "Cred's Paradox: Exclusivity Marketing in Mass Market"<br/>
+                <div style="color:#4ADE80;font-weight:700;margin:6px 0 3px;">📱 Reel Concepts ×10</div>
+                ↳ IPL data viz · Brand voice takes · Telugu culture formats<br/>
+                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
+                ↳ "Distribution Before Launch: Growing Sahitya Audience"
+              </div>
+            </div>
+          </div>`
         ],
         resources: [
-          { name: 'YouTube Creator Academy: Production', url: 'https://creatoracademy.youtube.com/' },
-          { name: 'Celtx Screenwriting & Planning Suite', url: 'https://www.celtx.com/' }
+          { name: 'MDX (Content Patterns)', url: 'https://mdxjs.com/' },
+          { name: 'GSAP (Animation Library)', url: 'https://greensock.com/gsap/' },
+          { name: 'Creative Writing Structure', url: 'https://www.storytellingwithdata.com/' }
         ]
       },
 
@@ -1296,20 +1783,31 @@
         ]
       },
       'october-project': {
-        title: 'OTT Analytics: Phase 1 Sourcing',
-        track: 'project',
-        month: 'OCTOBER',
-        why: 'Analyzes consumer choice shifts in entertainment mediums.',
-        subtopics: [
-          '**IMDb/Netflix Data Merging**: Connecting title catalogs, popularity, genres, release years.',
-          '**Box Office Data Scraping**: Scraping theater revenues from public databases.',
-          '**Scoping Survey**: Structuring customer survey on streaming behaviors.'
-        ],
-        resources: [
-          { name: 'Box Office Mojo database', url: 'https://www.boxofficemojo.com/' },
-          { name: 'IMDb Datasets Archive', url: 'https://www.imdb.com/interfaces/' }
-        ]
-      },
+         title: 'OTT Analytics: Content Performance & Lifecycle',
+         track: 'project',
+         month: 'OCTOBER',
+         why: 'Demonstrates content analytics, audience segmentation, and business model comparison for streaming platforms.',
+         subtopics: [
+           `<div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:#EF4444;display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+             <div style="line-height:1.6;font-size:12px;">
+               <strong>Goal:</strong> Analyze OTT vs Theatre content performance across 9 analytical layers.<br/><br/>
+               <strong>Deliverables:</strong><br/>
+               • Interactive website with 9 modules<br/>
+               • Tableau dashboard<br/>
+               • 12-page PDF report<br/>
+               • LinkedIn carousel series (9 posts)<br/><br/>
+               <strong>Layers:</strong> Content Performance → Reviews Impact → Distribution → Booking Funnel → Content Lifecycle → Marketing → Demographics → COVID Impact → Business Model<br/><br/>
+               <strong>Key Insight:</strong> "Theatres capture the peak. OTT captures the memory."
+             </div>
+           </div>`
+         ],
+         resources: [
+           { name: 'IMDb Datasets', url: 'https://www.imdb.com/interfaces/' },
+           { name: 'Tableau Public', url: 'https://public.tableau.com/' },
+           { name: 'Box Office Mojo', url: 'https://www.boxofficemojo.com/' }
+         ]
+       },
       'october-dsa': {
         title: 'Prefix Sums, Greedy & Dynamic Programming (DP)',
         track: 'dsa',
@@ -1359,18 +1857,43 @@
         ]
       },
       'october-personal': {
-        title: 'Screenplay Structure & Show Bible Development',
+        title: 'Sahitya Rachanalu — Month 5 (Premium Experience)',
         track: 'personal',
         month: 'OCTOBER',
-        why: 'Planning long-form narrative frameworks to support collaborative movie/web-series projects.',
+        why: 'Make the platform feel like a trailer: motion, reveals, transitions, and narrative pacing that keeps users engaged.',
         subtopics: [
-          '**Show Bibles**: Formulating character matrices, world rules, and season arc breakdowns.',
-          '**Pilot Episode Construction**: Mapping scene beats, subplot conflicts, and cliffhanger hooks.',
-          '**Script Reader Reports**: Evaluating formatting accuracy, dialogue flow, and narrative consistency.'
+          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 5 Deliverables</div>
+              <div style="margin-top:8px;line-height:1.6;">
+                • GSAP animations + smooth scrolling
+                <br/>• Poster reveals + page transitions
+                <br/>• Timeline effects + loading screen polish
+              </div>
+            </div>
+            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 5 (Leadership Layer)</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">5 high-value pieces · Creative leadership docs · RARE content</div>
+              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
+                <div style="color:#A78BFA;font-weight:700;margin-bottom:3px;">🌍 Web Series Universe Design ×1</div>
+                ↳ Original story universe: setting, rules, factions, lore<br/>
+                <div style="color:#A78BFA;font-weight:700;margin:6px 0 3px;">🧠 Character Bible ×1</div>
+                ↳ Lead character: wound, mask, arc, voice, psychology<br/>
+                <div style="color:#34D399;font-weight:700;margin:6px 0 3px;">📜 Screenplay Breakdown ×1</div>
+                ↳ "Vikram Vedha: The Tamil Moral Universe Decoded"<br/>
+                <div style="color:#F4A72A;font-weight:700;margin:6px 0 3px;">🎬 Film Analysis ×1</div>
+                ↳ "Pushpa: Working-Class Hero as Brand Mythology"<br/>
+                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
+                ↳ "Building Feature Modules: Cinepedia + Lyrics + Meme Keyboard"<br/>
+                <div style="color:var(--muted);font-size:10px;margin-top:6px;font-style:italic;">⚡ Universe design + character bibles = irreplaceable positioning</div>
+              </div>
+            </div>
+          </div>`
         ],
         resources: [
-          { name: 'MasterClass: Shonda Rhimes teaches Teaser & Pilot Design', url: 'https://www.masterclass.com/' },
-          { name: 'Final Draft formatting benchmarks', url: 'https://www.finaldraft.com/' }
+          { name: 'GSAP Docs', url: 'https://greensock.com/docs/' },
+          { name: 'Smooth scroll inspiration (Apple-style UI)', url: 'https://developer.apple.com/' }
         ]
       },
 
@@ -1409,20 +1932,38 @@
           { name: 'McKinsey Slide Structuring tutorials', url: 'https://www.caseinterview.com/' }
         ]
       },
-      'november-project': {
-        title: 'OTT Analytics: Phase 2 Modeling',
-        track: 'project',
-        month: 'NOVEMBER',
-        why: 'Concludes analytical insights and correlation checks on media patterns.',
-        subtopics: [
-          '**Trailer Sentiment Correlation**: Matching review sentiment with first-day collections.',
-          '**Predictive Modeling**: Designing simple models to estimate box office margins.',
-          '**Dashboard Build**: Publishing interactive analysis charts.'
-        ],
-        resources: [
-          { name: 'Streamlit Deployment Cloud', url: 'https://streamlit.io/cloud' }
-        ]
-      },
+'november-project': {
+         title: 'Sahitya Rachanalu: Platform Launch & Content System',
+         track: 'project',
+         month: 'NOVEMBER',
+         why: 'Final creative writing platform with all content pillars and portfolio artifacts ready for launch.',
+         subtopics: [
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:14px;">
+             <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+               <strong style="color:var(--accent);font-size:13px;">Sahitya Rachanalu — Telugu Literary Platform</strong>
+               <span style="font-size:9px;background:rgba(244,167,42,0.2);color:var(--accent);padding:2px 8px;border-radius:4px;border:1px solid rgba(244,167,42,0.4);">📋 Founded · Dec 2026 Launch</span>
+             </div>
+             <div style="line-height:1.7;font-size:12px;">
+               <strong style="color:var(--accent);">Mission:</strong> The only Telugu platform combining cinema, music, storytelling and cultural content in one digital space.<br/><br/>
+               <strong>5 Platform Modules:</strong><br/>
+               🎬 <strong>Cinepedia</strong> — Film analysis wiki (thematic, cultural, director deep-dives)<br/>
+               🎵 <strong>Lyrics Engine</strong> — Spotify-style layout + original lyrics + meaning sidebar<br/>
+               📖 <strong>Fictionary</strong> — Famous Telugu dialogue card-flip UI<br/>
+               🌍 <strong>Story Universe</strong> — Original characters, worlds, lore timelines<br/>
+               😄 <strong>Meme/GIF Keyboard</strong> — Custom cultural expressions + shareable format<br/><br/>
+               <strong>Content Targets (Dec 2026):</strong><br/>
+               25+ Articles · 12+ Film analyses · 15+ Lyrics · 8+ Character studies · 8+ Screenplay breakdowns<br/><br/>
+               <strong>Stack:</strong> Next.js · MDX · Tailwind CSS · Vercel<br/>
+               <strong>Roles Unlocked:</strong> Content Writer · Lyricist · Film Analyst · Creative Director · Brand Storyteller · Narrative Designer · Community Builder
+             </div>
+           </div>`
+         ],
+         resources: [
+           { name: 'Next.js Production Deployment', url: 'https://nextjs.org/docs/app/building-your-application/deploying' },
+           { name: 'Vercel SEO Guide', url: 'https://vercel.com/docs' },
+           { name: 'GSAP Animations', url: 'https://greensock.com/gsap/' }
+         ]
+       },
       'november-dsa': {
         title: 'Advanced Tree structures',
         track: 'dsa',
@@ -1471,21 +2012,47 @@
           { name: 'System Design Primer (GitHub Repo)', url: 'https://github.com/donnemartin/system-design-primer' }
         ]
       },
-      'november-personal': {
-        title: 'Lyricism & Rhythmic Writing',
-        track: 'personal',
-        month: 'NOVEMBER',
-        why: 'Applying meter, rhyme, and word play to lyrical projects and viral audio hooks.',
-        subtopics: [
-          '**Rhyme & Rhythm Scheming**: Implementing internal rhymes, slant rhymes, and syllable meters.',
-          '**Vocal Cues Alignment**: Directing pacing pauses, emphasis, and pitch transitions in lyric sheets.',
-          '**Reels Audio Hooks**: Formulating catchy lines tailored to loop seamlessly.'
-        ],
-        resources: [
-          { name: 'Berklee Songwriting & Lyricism online tools', url: 'https://online.berklee.edu/' },
-          { name: 'Sahitya Rachanalu Writer Collaboration boards', url: 'https://github.com/Srihari1806/roadmap' }
-        ]
-      },
+'november-personal': {
+         title: 'Sahitya Rachanalu — Month 6 (Leadership Layer)',
+         track: 'personal',
+         month: 'NOVEMBER',
+         why: 'Show creative leadership through universe design, character architecture, and content ecosystem planning.',
+         subtopics: [
+           `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+             <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+               <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+               <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 5 Deliverables</div>
+               <div style="margin-top:8px;line-height:1.6;">
+                 • GSAP animations + smooth scrolling
+                 <br/>• Poster reveals + page transitions
+                 <br/>• Timeline effects + loading screen polish
+               </div>
+             </div>
+             <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+               <strong style="color:#60A5FA;">Track B — Creative Creator / Curator</strong>
+               <div style="margin-top:8px;font-style:italic;color:var(--muted);">Portfolio Assets (8 pillars)</div>
+               <div style="margin-top:8px;line-height:1.6;">
+                 <strong style="color:var(--accent);display:block;margin-bottom:6px;">Create content for 8 portfolio assets covering all 25 roles:</strong>
+                 <div style="font-size:11px;">
+                   <div style="margin:4px 0;"><strong>Film Analysis Essays (2)</strong> → Writer, Critic, Research Writer, Story Editor</div>
+                   <div style="margin:4px 0;"><strong>Character Psychology Series (2)</strong> → Creative Writer, Screenplay Writer, Narrative Designer</div>
+                   <div style="margin:4px 0;"><strong>Screenplay Breakdowns (2)</strong> → Script Writer, Screenplay Writer, Creative Producer</div>
+                   <div style="margin:4px 0;"><strong>Lyrics Vault (2)</strong> → Lyricist, Creative Writer</div>
+                   <div style="margin:4px 0;"><strong>IPL Analytics Hub (1)</strong> → Sports Writer, Research Writer, Content Strategist</div>
+                   <div style="margin:4px 0;"><strong>Brand/Product Teardowns (2)</strong> → Copywriter, SEO Writer, Brand Storyteller</div>
+                   <div style="margin:4px 0;"><strong>Creator Economy Essays (2)</strong> → Content Strategist, Social Media Strategist, Growth Marketer</div>
+                   <div style="margin:4px 0;"><strong>Sahitya Founder Journal (2)</strong> → Creative Director, Producer, Community Builder</div>
+                 </div>
+               </div>
+             </div>
+           </div>`
+         ],
+         resources: [
+           { name: 'GSAP Animation Library', url: 'https://greensock.com/gsap/' },
+           { name: 'Figma Design Systems', url: 'https://figma.com/' },
+           { name: 'Storytelling Framework', url: 'https://storytellingwithdata.com/' }
+         ]
+       },
 
       // --- DECEMBER ---
       'december-aptitude': {
@@ -1517,20 +2084,31 @@
           { name: 'Case Interview prep tools', url: 'https://www.caseinterview.com/' }
         ]
       },
-      'december-project': {
-        title: 'Portfolio Mapping & Demos',
-        track: 'project',
-        month: 'DECEMBER',
-        why: 'Demos and portfolio projects show your skills to hiring teams.',
-        subtopics: [
-          '**Portfolio mappings**: Connecting projects to job descriptions.',
-          '**Recording demos**: Short video demos explaining project layouts.',
-          '**LinkedIn profile sync**: Linking projects to resume profiles.'
-        ],
-        resources: [
-          { name: 'Loom Video Recorder', url: 'https://www.loom.com/' }
-        ]
-      },
+'december-project': {
+         title: 'Portfolio Consolidation & Final Launch',
+         track: 'project',
+         month: 'DECEMBER',
+         why: 'Combine all 6 projects (IPL, BPL, E-commerce, Hiremap, OTT, Sahitya) into unified portfolio showcase.',
+         subtopics: [
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--accent);display:block;margin-bottom:8px;">6-Month Project Consolidation</strong>
+             <div style="line-height:1.6;font-size:12px;">
+               <strong>June:</strong> IPL Analytics (Sports Intelligence)<br/>
+               <strong>July:</strong> BPL Analytics (Music Economy)<br/>
+               <strong>August:</strong> E-Commerce Analytics (Business Intelligence)<br/>
+               <strong>September:</strong> Hiremap Platform (Recruitment Intelligence)<br/>
+               <strong>October:</strong> OTT Analytics (Content Intelligence)<br/>
+               <strong>November:</strong> Sahitya Rachanalu (Creative Platform)<br/>
+               <strong>December:</strong> Portfolio Launch (All Projects Integrated)
+             </div>
+           </div>`
+         ],
+resources: [
+            { name: 'Portfolio Website Template', url: 'https://vercel.com/templates' },
+            { name: 'GitHub Portfolio Guide', url: 'https://docs.github.com/en/pages' },
+            { name: 'LinkedIn Optimization', url: 'https://linkedin.com' }
+          ]
+       },
       'december-dsa': {
         title: 'Bitwise, Backtracking & Advanced Algorithms',
         track: 'dsa',
@@ -1573,24 +2151,66 @@
           { name: 'GFG CS Interview Corner', url: 'https://www.geeksforgeeks.org/' }
         ]
       },
-      'december-personal': {
-        title: 'Content Strategy & Editorial Planning',
-        track: 'personal',
-        month: 'DECEMBER',
-        why: 'Integrating analytics, campaign plans, and editorial timelines into cohesive growth strategy plans.',
-        subtopics: [
-          '**Editorial Calendars**: Constructing monthly content plans in Google Sheets/Notion.',
-          '**Audience Telemetry Analysis**: Reviewing comments, shares, and watch-time ratios to refine campaigns.',
-          '**Automated Workflows**: Connecting content feeds to social hubs via Make/Zapier setups.'
-        ],
-        resources: [
-          { name: 'HubSpot Social Media Certification', url: 'https://academy.hubspot.com/courses/social-media' },
-          { name: 'Google Analytics (GA4) Certification', url: 'https://skillshop.google.com/' }
-        ]
-      }
+'december-personal': {
+         title: 'Sahitya Rachanalu — Final Portfolio Launch',
+         track: 'personal',
+         month: 'DECEMBER',
+         why: 'Ship the complete platform with all 8 content pillars, combining everything into a cohesive portfolio.',
+         subtopics: [
+           `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+             <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+               <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+               <div style="margin-top:8px;font-style:italic;color:var(--muted);">Final Deliverables</div>
+               <div style="margin-top:8px;line-height:1.6;">
+                 • sahityarachanalu.com — live website
+                 <br/>• Cinepedia MVP + Lyrics Engine MVP
+                 <br/>• Story Universe MVP + Founder Journal
+                 <br/>• SEO optimized + analytics integrated
+               </div>
+             </div>
+             <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+               <strong style="color:#60A5FA;">Track B — Creative Creator / Curator</strong>
+               <div style="margin-top:8px;font-style:italic;color:var(--muted);">End Result: 8 Portfolio Assets (80-100 artifacts)</div>
+               <div style="margin-top:8px;line-height:1.6;font-size:11px;">
+                 <div style="margin:3px 0;">• Film Analyses: 10-12</div>
+                 <div style="margin:3px 0;">• Character Studies: 8</div>
+                 <div style="margin:3px 0;">• Screenplay Breakdowns: 8</div>
+                 <div style="margin:3px 0;">• Product/Brand Teardowns: 8</div>
+                 <div style="margin:3px 0;">• IPL Articles: 8</div>
+                 <div style="margin:3px 0;">• Creator Economy Essays: 8</div>
+                 <div style="margin:3px 0;">• Founder Journals: 8</div>
+                 <div style="margin:3px 0;">• Lyrics: 12-15</div>
+                 <div style="margin:3px 0;">• Story Concepts: 10</div>
+                 <div style="margin:3px 0;">• Web Series Universe Docs: 2-3</div>
+               </div>
+             </div>
+</div>
+              </div>
+            </div>`
+          ],
+          resources: [
+            { name: 'Vercel Production Deployment', url: 'https://vercel.com/docs' },
+            { name: 'Google Analytics Setup', url: 'https://analytics.google.com/' },
+            { name: 'SEO Optimization Guide', url: 'https://developers.google.com/search' }
+          ]
+        },
+        'december-cscore': {
+         title: 'Core Interview prep',
+         track: 'cscore',
+         month: 'DECEMBER',
+         why: 'Ensures quick recall of computer science foundations.',
+         subtopics: [
+           '**DBMS review**: Normalizations, ACID parameters, SQL joins.',
+           '**OOPs reviews**: Polymorphism definitions, design patterns.',
+           '**OS concepts**: Virtual memory checks, thread synchronizations.'
+         ],
+         resources: [
+           { name: 'GFG CS Interview Corner', url: 'https://www.geeksforgeeks.org/' }
+         ]
+       }
     };
 
-    // Tracks array definitions
+// Tracks array definitions
     const tracksList = ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal'];
 
     let activeSkillId = null;
@@ -1862,3 +2482,4 @@
   </script>
 </body>
 </html>
+
