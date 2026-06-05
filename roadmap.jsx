@@ -2638,11 +2638,146 @@ const getCoreSkillStatus = (skillMonth, currentProgress) => {
   return "gap";
 };
 
+const SKILL_OVERRIDES = {
+  "advanced sql": {
+    category: "Database & SQL",
+    impact: "Enables retrieval of multi-million row datasets using complex analytical queries, partitioning, and optimizations.",
+    pros: ["Extremely fast execution on indexed databases", "Essential for any backend or data analysis role"],
+    cons: ["Window functions have steep learning curves", "Hard to debug nested subqueries and joins"]
+  },
+  "python (pandas/seaborn)": {
+    category: "Analytics & Data Science",
+    impact: "Enables programmatic data cleaning, statistical modeling, and exploratory plotting beyond Excel's capabilities.",
+    pros: ["Handles large datasets in memory efficiently", "Rich ecosystem of libraries for ML and modeling"],
+    cons: ["Syntax can be verbose for simple tasks", "Requires setting up Python runtimes and environments"]
+  },
+  "react": {
+    category: "Frontend Development",
+    impact: "Industry-standard library for building modular, component-driven reactive web user interfaces.",
+    pros: ["Highly reusable UI component paradigm", "Virtual DOM updates only changed nodes, keeping it fast"],
+    cons: ["State management in large apps can get complex", "Frequent updates in libraries can cause deprecation issues"]
+  },
+  "typescript": {
+    category: "Frontend Development",
+    impact: "Adds strict static typing to JavaScript, catching compilation errors before code runs in production.",
+    pros: ["Significantly reduces runtime crashes and bugs", "Self-documenting code with excellent IDE autocompletion"],
+    cons: ["Adds compilation overhead and setup complexity", "Requires writing extra boilerplate type definitions"]
+  },
+  "complexity analysis": {
+    category: "Computer Science Core",
+    impact: "Teaches you to calculate time and space complexity (Big-O) to write code that scales efficiently.",
+    pros: ["Prevents memory leaks and CPU bottlenecks", "Tested in every SDE interview globally"],
+    cons: ["Highly theoretical and math-heavy", "Can lead to over-engineering simple features"]
+  },
+  "brand messaging & copywriting": {
+    category: "Creative & Content Strategy",
+    impact: "Translates technical features into persuasive benefits that trigger user signups and engagement.",
+    pros: ["Drives direct-to-user conversion rate increases", "Creates strong emotional brand connection"],
+    cons: ["Highly subjective; requires constant copy testing", "Requires deep psychological alignment with users"]
+  }
+};
+
+const getSkillLearningMonth = (skillName) => {
+  if (BASE_SKILLS.includes(skillName)) return "Base (Pre-requisite)";
+  for (const [month, list] of Object.entries(MONTH_SKILLS)) {
+    if (list.includes(skillName)) {
+      return month.charAt(0).toUpperCase() + month.slice(1);
+    }
+  }
+  return "Planned";
+};
+
+const getSkillCategorizedDetails = (name) => {
+  const n = name.toLowerCase();
+  
+  if (n.includes("sql") || n.includes("dbms") || n.includes("normalization") || n.includes("relational") || n.includes("schema") || n.includes("postgresql")) {
+    return {
+      category: "Database & Backend Data",
+      impact: `Crucial for designing efficient, normalized relational tables and retrieving data at scale.`,
+      pros: ["Guarantees data consistency (ACID properties)", "Industry standard for structured enterprise data"],
+      cons: ["Schema changes can be difficult to deploy", "Needs query optimization for large datasets"]
+    };
+  }
+  
+  if (n.includes("python") || n.includes("pandas") || n.includes("seaborn") || n.includes("eda") || n.includes("statistics") || n.includes("visualization") || n.includes("power bi") || n.includes("excel") || n.includes("kpi") || n.includes("funnel") || n.includes("ltv/cac") || n.includes("metrics") || n.includes("predictive") || n.includes("forecasting") || n.includes("modeling")) {
+    return {
+      category: "Analytics & Business Intelligence",
+      impact: `Enables translating raw business metrics into actionable growth and product insights.`,
+      pros: ["Drives data-backed product decisions", "Highly visible to stakeholders and executives"],
+      cons: ["Correlation does not imply causation", "Dirty data can lead to misleading conclusions"]
+    };
+  }
+
+  if (n.includes("react") || n.includes("typescript") || n.includes("html") || n.includes("css") || n.includes("vite") || n.includes("vercel") || n.includes("javascript") || n.includes("dom")) {
+    return {
+      category: "Frontend Development",
+      impact: `Critical for building responsive, high-performance web applications and user interfaces.`,
+      pros: ["Rich ecosystem of libraries and UI components", "Component reuse speeds up development timelines"],
+      cons: ["Fast-paced ecosystem requires constant learning", "JavaScript client-side bugs can break UI experience"]
+    };
+  }
+
+  if (n.includes("node.js") || n.includes("express") || n.includes("mongodb") || n.includes("git") || n.includes("firebase") || n.includes("api") || n.includes("network")) {
+    return {
+      category: "Backend & Infrastructure",
+      impact: `Powers the server-side logic, API routing, database connections, and hosting pipelines.`,
+      pros: ["Asynchronous I/O handles high concurrent traffic", "NoSQL offers flexible, schema-less data structures"],
+      cons: ["Debugging asynchronous code can be complex", "NoSQL lacks standard ACID constraint checks"]
+    };
+  }
+
+  if (n.includes("complexity") || n.includes("oops") || n.includes("search") || n.includes("sorting") || n.includes("pointer") || n.includes("window") || n.includes("recursion") || n.includes("algorithm") || n.includes("lld") || n.includes("hld") || n.includes("tree") || n.includes("trie") || n.includes("backtracking") || n.includes("divide") || n.includes("system design")) {
+    return {
+      category: "Data Structures & Algorithms (DSA)",
+      impact: `Core algorithmic thinking required for writing optimized code and passing technical SDE interviews.`,
+      pros: ["Optimizes runtime complexity and memory footprint", "Improves general logical problem-solving ability"],
+      cons: ["Can lead to over-engineering simple features", "High conceptual learning curve for complex algorithms"]
+    };
+  }
+
+  if (n.includes("seo") || n.includes("analytics & ga4") || n.includes("a/b testing") || n.includes("hubspot") || n.includes("ads") || n.includes("campaign") || n.includes("social media") || n.includes("marketing") || n.includes("audience") || n.includes("growth")) {
+    return {
+      category: "Growth & Digital Strategy",
+      impact: `Drives organic discovery, measures acquisition channels, and optimizes customer conversion rates.`,
+      pros: ["Builds sustainable, compounding web traffic", "Allows rapid experimentation and funnel tuning"],
+      cons: ["Search algorithms change frequently", "Paid ads require budget and can have high CAC"]
+    };
+  }
+
+  if (n.includes("writing") || n.includes("content strategy") || n.includes("calendar") || n.includes("messaging") || n.includes("copywriting") || n.includes("timeline") || n.includes("character") || n.includes("bible") || n.includes("storytelling") || n.includes("literature")) {
+    return {
+      category: "Creative & Content Strategy",
+      impact: `Establishes unique brand identity, community engagement, and lore timelines for immersive products.`,
+      pros: ["Creates strong emotional connection with users", "Highly differentiating in copy and messaging"],
+      cons: ["Hard to directly measure qualitative impact", "Creative burnouts can disrupt publishing speed"]
+    };
+  }
+
+  return {
+    category: "Logical Aptitude & Problem Solving",
+    impact: `Sharpens the core reasoning, quantitative, and logical abilities tested in initial screening rounds.`,
+    pros: ["Builds high mental speed and cognitive flexibility", "Helps clear initial filters at top recruitment drives"],
+    cons: ["Requires repetitive practice to stay sharp", "Does not directly build code artifacts"]
+  };
+};
+
+const getRolesHelped = (skillName) => {
+  const helped = [];
+  Object.entries(roleRequirements).forEach(([rName, req]) => {
+    const suitability = getSkillSuitability(skillName, rName);
+    if (suitability !== "none") {
+      helped.push({ roleName: rName, suitability, color: req.color });
+    }
+  });
+  return helped;
+};
+
 function ResumeATSAnalyzer() {
   const [activeRole, setActiveRole] = useState("Data Analyst");
   const [activeTab, setActiveTab] = useState("resume");
   const [monthProgress, setMonthProgress] = useState(7); // Default to December (Full)
   const [selectedSkillId, setSelectedSkillId] = useState("sql");
+  const [selectedSkillDetail, setSelectedSkillDetail] = useState(null);
   
   const dynamicResume = {
     name: "Srihari [Last Name]",
@@ -2925,7 +3060,7 @@ function ResumeATSAnalyzer() {
                 <div className="section-label">Current Skills</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                   {dynamicResume.skills.current.map(s => (
-                    <span key={s} className="skill-badge" style={{ background: "#0F2A1F", color: "#34D399", border: "1px solid #064E3B" }}>{s}</span>
+                    <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F2A1F", color: "#34D399", border: "1px solid #064E3B", cursor: "pointer" }}>{s}</span>
                   ))}
                 </div>
               </div>
@@ -2934,7 +3069,7 @@ function ResumeATSAnalyzer() {
                 <div className="section-label">Currently Learning</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                   {dynamicResume.skills.learning.map(s => (
-                    <span key={s} className="skill-badge" style={{ background: "#1C1A0A", color: "#FCD34D", border: "1px solid #713F12" }}>{s}</span>
+                    <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#1C1A0A", color: "#FCD34D", border: "1px solid #713F12", cursor: "pointer" }}>{s}</span>
                   ))}
                 </div>
               </div>
@@ -2943,7 +3078,7 @@ function ResumeATSAnalyzer() {
                 <div className="section-label">Planned to Learn</div>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                   {dynamicResume.skills.planned.map(s => (
-                    <span key={s} className="skill-badge" style={{ background: "#0F1724", color: "#475569", border: "1px solid #1E293B" }}>{s}</span>
+                    <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F1724", color: "#475569", border: "1px solid #1E293B", cursor: "pointer" }}>{s}</span>
                   ))}
                 </div>
               </div>
@@ -3095,6 +3230,27 @@ function ResumeATSAnalyzer() {
                   </div>
                   <h3 style={{ fontSize: 16, fontWeight: 700, color: "#fff", marginBottom: 6 }}>{selectedSkillObj.name}</h3>
                   <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.6 }}>{selectedSkillObj.desc}</p>
+                  <button 
+                    onClick={() => setSelectedSkillDetail(selectedSkillObj.name)}
+                    style={{
+                      background: `${role.color}15`,
+                      color: role.color,
+                      border: `1px solid ${role.color}33`,
+                      borderRadius: 2,
+                      cursor: "pointer",
+                      fontSize: 9,
+                      fontWeight: 700,
+                      padding: "6px 12px",
+                      marginTop: 12,
+                      textTransform: "uppercase",
+                      fontFamily: "inherit",
+                      transition: "all 0.2s"
+                    }}
+                    onMouseEnter={e => { e.target.style.background = `${role.color}33`; }}
+                    onMouseLeave={e => { e.target.style.background = `${role.color}15`; }}
+                  >
+                    🔍 View Full Skill Card (Pros & Cons)
+                  </button>
                 </div>
 
                 {/* Skill Mastery Metrics */}
@@ -3165,7 +3321,7 @@ function ResumeATSAnalyzer() {
                     <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 10 }}>Role must-haves checklist</div>
                     <div style={{ display: "flex", flexDirection: "column", gap: 6, maxHeight: 180, overflowY: "auto", paddingRight: 4 }}>
                       {mustHaveAnalysis.map(({ skill, status }) => (
-                        <div key={skill} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 10, padding: "6px 10px", background: "#0A0D14", border: "1px solid #1E293B", borderRadius: 2 }}>
+                        <div key={skill} onClick={() => setSelectedSkillDetail(skill)} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 10, padding: "6px 10px", background: "#0A0D14", border: "1px solid #1E293B", borderRadius: 2, cursor: "pointer" }}>
                           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                             <span className="status-dot" style={{ background: status === "have" ? "#34D399" : status === "learning" ? "#FCD34D" : "#EF4444", margin: 0 }} />
                             <span style={{ color: "#94A3B8" }}>{skill}</span>
@@ -3256,7 +3412,7 @@ function ResumeATSAnalyzer() {
                     </div>
                     <div style={{ fontSize: 10, color: "#475569", marginBottom: 8 }}>Skills you'll build:</div>
                     <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                      {item.skills.map(s => <span key={s} className="tag">{s}</span>)}
+                      {item.skills.map(s => <span key={s} onClick={() => setSelectedSkillDetail(s)} className="tag" style={{ cursor: "pointer" }}>{s}</span>)}
                     </div>
                   </div>
                 </div>
@@ -3387,6 +3543,137 @@ function ResumeATSAnalyzer() {
             </div>
           </div>
         )}
+      {selectedSkillDetail && (() => {
+        const sName = selectedSkillDetail;
+        const month = getSkillLearningMonth(sName);
+        const details = getSkillCategorizedDetails(sName);
+        const rolesHelped = getRolesHelped(sName);
+        
+        const custom = SKILL_OVERRIDES[sName.toLowerCase()] || {};
+        const category = custom.category || details.category;
+        const impact = custom.impact || details.impact;
+        const pros = custom.pros || details.pros;
+        const cons = custom.cons || details.cons;
+
+        return (
+          <div 
+            onClick={() => setSelectedSkillDetail(null)}
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100vw",
+              height: "100vh",
+              background: "rgba(5, 5, 8, 0.85)",
+              backdropFilter: "blur(6px)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: 9999,
+              padding: 20
+            }}
+          >
+            <div 
+              onClick={e => e.stopPropagation()}
+              style={{
+                background: "#0F1724",
+                border: `1px solid ${role.color}`,
+                borderRadius: 8,
+                width: "100%",
+                maxWidth: 520,
+                padding: 24,
+                boxShadow: `0 10px 30px rgba(0,0,0,0.5), 0 0 20px ${role.color}15`,
+                position: "relative",
+                fontFamily: "'IBM Plex Mono', monospace"
+              }}
+            >
+              <button 
+                onClick={() => setSelectedSkillDetail(null)}
+                style={{
+                  position: "absolute",
+                  top: 16,
+                  right: 16,
+                  background: "none",
+                  border: "none",
+                  color: "#64748B",
+                  fontSize: 20,
+                  cursor: "pointer",
+                  outline: "none"
+                }}
+              >
+                ✕
+              </button>
+
+              <div style={{ marginBottom: 16 }}>
+                <span style={{ fontSize: 9, color: role.color, border: `1px solid ${role.color}44`, background: `${role.color}11`, padding: "2px 8px", borderRadius: 2, textTransform: "uppercase", fontWeight: 700 }}>
+                  {category}
+                </span>
+                <h3 style={{ fontSize: 18, color: "#FFF", fontWeight: 700, marginTop: 10, marginBottom: 4 }}>{sName}</h3>
+                <div style={{ fontSize: 10, color: "#64748B" }}>
+                  Learning Milestone: <strong style={{ color: "#FCD34D" }}>{month}</strong>
+                </div>
+              </div>
+
+              <div style={{ marginBottom: 16 }}>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 6 }}>How it Impacts</div>
+                <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.6, background: "#070B12", padding: 12, borderRadius: 4, borderLeft: `3px solid ${role.color}` }}>
+                  {impact}
+                </p>
+              </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 16 }}>
+                <div>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#34D399", textTransform: "uppercase", marginBottom: 8 }}>Pros</div>
+                  <ul style={{ listStyle: "none", padding: 0 }}>
+                    {pros.map((p, idx) => (
+                      <li key={idx} style={{ fontSize: 10, color: "#A7F3D0", marginBottom: 6, display: "flex", gap: 6, alignItems: "flex-start" }}>
+                        <span style={{ color: "#34D399" }}>✓</span> {p}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div style={{ fontSize: 9, letterSpacing: 2, color: "#F87171", textTransform: "uppercase", marginBottom: 8 }}>Cons</div>
+                  <ul style={{ listStyle: "none", padding: 0 }}>
+                    {cons.map((c, idx) => (
+                      <li key={idx} style={{ fontSize: 10, color: "#FECACA", marginBottom: 6, display: "flex", gap: 6, alignItems: "flex-start" }}>
+                        <span style={{ color: "#EF4444" }}>✗</span> {c}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 8 }}>Roles this Skill Helps</div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6, maxHeight: 100, overflowY: "auto", paddingRight: 4 }}>
+                  {rolesHelped.length > 0 ? (
+                    rolesHelped.map((rh, idx) => (
+                      <span 
+                        key={idx} 
+                        style={{ 
+                          fontSize: 8, 
+                          color: rh.color, 
+                          border: `1px solid ${rh.color}44`, 
+                          background: `${rh.color}11`, 
+                          padding: "3px 6px", 
+                          borderRadius: 2, 
+                          fontWeight: 700,
+                          textTransform: "uppercase"
+                        }}
+                      >
+                        {rh.roleName} ({rh.suitability})
+                      </span>
+                    ))
+                  ) : (
+                    <span style={{ fontSize: 9, color: "#64748B" }}>General logical foundation</span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
       </div>
     </div>
   );

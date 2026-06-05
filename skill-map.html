@@ -1125,6 +1125,7 @@
     };
 
     const monthsInfo = [
+      { name: 'BASE', theme: 'Prerequisites' },
       { name: 'JUNE', theme: 'IPL Analytics' },
       { name: 'JULY', theme: 'BPL Analytics' },
       { name: 'AUGUST', theme: 'E-Commerce Analytics' },
@@ -1134,48 +1135,287 @@
       { name: 'DECEMBER', theme: 'Portfolio Launch' }
     ];
 
-    // Rich detailed database for all 49 skills
-    const skillsData = {
-      // --- JUNE ---
-      'june-aptitude': {
-        title: 'Logical Reasoning Foundation',
-        track: 'aptitude',
-        month: 'JUNE',
-        why: 'Crucial for passing the first screening test at top companies.',
-        subtopics: [
-          '**Syllogism**: All/some statements, Venn diagram mapping, deductive logic.',
-          '**Blood Relations**: Relation trees, coded relationships, direct statements.',
-          '**Coding-Decoding**: Letter shifts, numerical encodings, conditional codes.',
-          '**Seating Arrangements**: Linear, circular, face-inward/outward configurations.',
-          '**Directions & Distances**: Pythagorean theorem layout, shadow problems, turn angles.',
-          '**Clock & Calendar**: Angle between hands, calendar day calculations, leap year logics.'
-        ],
-        resources: [
-          { name: 'IndiaBIX Logical Reasoning', url: 'https://www.indiabix.com/logical-reasoning/questions-and-answers/' },
-          { name: 'GeeksforGeeks Logical Practice', url: 'https://www.geeksforgeeks.org/logical-reasoning/' }
-        ]
+    const BASE_SKILLS = ["Python (basics)", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "MS Excel", "SEO Writing", "Content Strategy", "Content Calendar Management", "Vite", "Vercel"];
+
+    const MONTH_SKILLS = {
+      june: ["Logical Reasoning", "Advanced SQL", "Excel Power Query", "Schema Design (Process Mapping)", "Complexity Analysis", "OOPs", "Brand Messaging & Copywriting", "Database normalization", "Relational Databases", "Star Schema", "Binary Search", "Sorting Algorithms", "Blog writing", "Creative Writing"],
+      july: ["Quantitative Aptitude", "Python (Pandas/Seaborn)", "EDA & Data Interpretation", "KPI Design (Product Metrics)", "JavaScript (Core & DOM)", "DBMS", "Two Pointers", "Sliding Window", "Recursion", "Query Optimization", "Sports Domain Knowledge (IPL/PKL)", "Statistical Thinking"],
+      august: ["Verbal Ability", "Power BI & Data Visualization", "DAX Modeling", "Funnel & Retention Analytics", "React hooks", "Operating Systems", "On-page Optimization"],
+      september: ["Google Analytics & GA4", "SEO Architecture & Keyword Research", "A/B Testing", "LTV/CAC Metrics", "HubSpot Marketing Automation", "Node.js", "Express", "MongoDB", "Computer Networks", "Firebase Admin", "Google Ads Search", "Technical SEO", "Customer Acquisition Cost (CAC)", "Social Media Analytics", "Firestore/NoSQL Schema"],
+      october: ["NLP & Text Analytics", "Prompt Engineering", "Make/Zapier Automations", "REST APIs & PostgreSQL", "Audience Research & Campaign Planning", "Greedy/DP Algorithms", "LLD", "Lore Timelines", "Character Bibles"],
+      november: ["Predictive Modeling", "Financial Literacy & Accounting basics", "Data Storytelling & Stakeholder Communication", "Financial Modeling & Time Series Forecasting", "Advanced Trees/Trie", "HLD", "Python (yfinance)"],
+      december: ["Consolidation & Case Studies (Business Problem Framing)", "System Design Mock Interviews", "Backtracking", "Divide and Conquer", "Mock Aptitude Tests"]
+    };
+
+    const roleRequirements = {
+      "Data Analyst": {
+        color: "#3B82F6",
+        must_have: ["SQL", "Python/Pandas", "Data Visualization", "Excel/Sheets", "Statistical Analysis", "Dashboard tools (Tableau/Power BI)"],
+        good_to_have: ["dbt", "BigQuery/Snowflake", "A/B Testing", "Cohort Analysis"],
+        ats_keywords: ["SQL", "Python", "data analysis", "visualization", "dashboard", "metrics", "KPI", "Excel", "Tableau", "Power BI", "statistical analysis", "cohort", "funnel"]
       },
-      'june-analyst': {
-        title: 'Advanced SQL, Excel Power Query & Schema Design',
-        track: 'analyst',
-        month: 'JUNE',
-        why: 'SQL is the single most critical technical skill, appearing in 80%+ of Analyst job descriptions. Excel Power Query automates raw data loading & parsing.',
-        subtopics: [
-          '**Window Functions**: ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, NTILE, SUM/AVG OVER partitions.',
-          '**Subqueries & CTEs**: Standard subqueries, recursive CTEs, correlated subqueries, memory footprint optimization.',
-          '**Advanced Joins & Aggregations**: INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF joins, and GROUP BY/HAVING filtering.',
-          '**Database Schema Design**: 1NF, 2NF, 3NF Normalization, Star vs Snowflake models, Fact and Dimension tables.',
-          '**Power Query & M-Language**: File merging, column unpivoting, conditional transformations, automated refreshes.',
-          '**SQL Query Optimization**: Indexing (B-tree, Clustered/Non-clustered), query execution plans (EXPLAIN), partition tuning.'
-        ],
-        resources: [
-          { name: 'StrataScratch SQL Interview Questions', url: 'https://www.stratascratch.com/' },
-          { name: 'Mode Analytics SQL Tutorial', url: 'https://mode.com/sql-tutorial/' },
-          { name: 'SQLZoo Interactive Exercises', url: 'https://sqlzoo.net/' },
-          { name: 'LeetCode Database Practice Sheet', url: 'https://leetcode.com/studyplan/30-days-of-sql/' }
-        ]
+      "Product Analyst": {
+        color: "#8B5CF6",
+        must_have: ["SQL", "Product Metrics (DAU/MAU/Retention)", "A/B Testing", "Python or Excel", "User Journey Mapping", "Funnel Analysis"],
+        good_to_have: ["Amplitude/Mixpanel", "Figma", "Market Research", "PRD writing"],
+        ats_keywords: ["product analytics", "user retention", "A/B testing", "funnel", "DAU", "MAU", "churn", "feature adoption", "product metrics", "user journey", "SQL", "Python"]
       },
-'june-project': {
+      "Business Analyst": {
+        color: "#10B981",
+        must_have: ["SQL", "Excel", "Business Problem Framing", "Stakeholder Communication", "Data Storytelling", "Process Mapping"],
+        good_to_have: ["Power BI", "Python", "Financial Modeling basics", "Case Study frameworks"],
+        ats_keywords: ["business analysis", "stakeholder", "process improvement", "data-driven", "SQL", "Excel", "reporting", "KPI", "insights", "requirement gathering", "documentation"]
+      },
+      "Growth Analyst": {
+        color: "#F59E0B",
+        must_have: ["SEO", "Content Strategy", "Google Analytics", "Social Media Analytics", "A/B Testing (copy)", "Excel/Sheets"],
+        good_to_have: ["HubSpot/similar", "Email marketing tools", "Canva/Figma", "Cohort tracking"],
+        ats_keywords: ["content strategy", "SEO", "growth", "GTM", "organic", "engagement", "retention", "funnel", "conversion", "analytics", "social media", "community"]
+      },
+      "Sports Analyst": {
+        color: "#EF4444",
+        must_have: ["Python/Pandas", "Sports Domain Knowledge (IPL/PKL)", "Data Visualization", "Statistical Thinking", "SQL"],
+        good_to_have: ["R", "Tableau/Power BI", "Web Scraping (BeautifulSoup)", "Expected Value modeling"],
+        ats_keywords: ["sports analytics", "cricket", "IPL", "player performance", "Python", "data modeling", "visualizations", "statistical analysis", "sports data", "Kaggle"]
+      },
+      "Financial Analyst": {
+        color: "#6366F1",
+        must_have: ["Excel (Advanced)", "Financial Modeling", "Accounting basics", "Python (yfinance)", "SQL", "Data Interpretation"],
+        good_to_have: ["Bloomberg Terminal familiarity", "DCF", "Ratio Analysis", "Power BI"],
+        ats_keywords: ["financial modeling", "Excel", "valuation", "DCF", "ratio analysis", "P&L", "forecasting", "financial analysis", "Python", "SQL", "investment analysis"]
+      },
+      "Content Strategist": {
+        color: "#EC4899",
+        must_have: ["Content Strategy", "Google Analytics (GA4)", "HubSpot Marketing Automation", "SEO", "Content Calendar Management", "Brand Messaging"],
+        good_to_have: ["HubSpot Marketing", "SEMrush", "A/B Testing", "Audience Research & Campaign Planning"],
+        ats_keywords: ["content strategy", "SEO", "audience research", "campaign planning", "content calendar", "analytics", "engagement", "brand messaging", "HubSpot"]
+      },
+      "SEO Analyst": {
+        color: "#14B8A6",
+        must_have: ["SEO", "Google Analytics", "Keyword Research", "On-page Optimization", "Technical SEO"],
+        good_to_have: ["SEMrush/Ahrefs", "Search Console", "Content Strategy", "Link Building"],
+        ats_keywords: ["SEO", "keyword research", "on-page", "technical SEO", "Google Analytics", "search console", "organic traffic", "rankings", "backlinks"]
+      },
+      "Full Stack Developer": {
+        color: "#2ECC71",
+        must_have: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "HTML/CSS", "Vite", "Git/GitHub", "Vercel"],
+        good_to_have: ["Firebase", "REST APIs", "Tailwind CSS", "Framer Motion", "JWT/Auth"],
+        ats_keywords: ["Full Stack", "React", "TypeScript", "Node.js", "Express", "MongoDB", "REST API", "Vercel", "Vite", "Frontend", "Backend", "MERN", "database schema"]
+      },
+      "Backend Developer": {
+        color: "#38BDF8",
+        must_have: ["Node.js", "Express", "MongoDB", "SQL", "DBMS", "Database normalization", "Firebase Admin", "REST APIs"],
+        good_to_have: ["JWT/Auth", "Mongoose", "Postman", "Error Handling", "Query Optimization"],
+        ats_keywords: ["Backend", "Node.js", "Express", "MongoDB", "NoSQL", "SQL", "DBMS", "REST API", "authorization", "schema", "query optimization", "server"]
+      },
+      "SDE (Intern)": {
+        color: "#6366F1",
+        must_have: ["Complexity Analysis", "OOPs", "Binary Search", "Sorting Algorithms", "Two Pointers", "Sliding Window", "Recursion"],
+        good_to_have: ["Trees", "Advanced Trees/Trie", "Backtracking", "Divide and Conquer", "TypeScript"],
+        ats_keywords: ["SDE", "intern", "software engineer", "data structures", "algorithms", "DSA", "complexity", "OOPs", "sorting", "searching", "problem solving", "binary search", "sliding window"]
+      },
+      "Database Administrator": {
+        color: "#10B981",
+        must_have: ["SQL", "DBMS", "Database normalization", "Firestore/NoSQL Schema", "Query Optimization", "Relational Databases", "Star Schema"],
+        good_to_have: ["Indexes", "Firebase Auth", "PostgreSQL/SQLite", "Data warehousing"],
+        ats_keywords: ["database administrator", "DBA", "SQL", "DBMS", "normalization", "schema design", "NoSQL", "Firestore", "query optimization", "indexing", "relational database"]
+      },
+      "Content Writer": {
+        color: "#EC4899",
+        must_have: ["SEO Writing", "Content Strategy", "Keyword Research", "Blog writing", "Brand Messaging & Copywriting"],
+        good_to_have: ["Medium", "LinkedIn publishing", "Cinepedia columns", "Research writing"],
+        ats_keywords: ["content writer", "copywriting", "SEO writing", "blog", "multilingual", "editing", "research", "articles", "publishing", "storytelling", "audience engagement"]
+      },
+      "Copywriter": {
+        color: "#F59E0B",
+        must_have: ["Brand Messaging & Copywriting", "A/B Testing (copy)", "Google Ads Search", "Google Analytics", "HubSpot Marketing Automation"],
+        good_to_have: ["Ad Copy", "Social hooks", "Figma/Canva basics"],
+        ats_keywords: ["copywriter", "conversion", "CTA", "copywriting", "headlines", "advertising", "landing page", "persuasive", "audience psychology", "A/B testing", "brand copy"]
+      },
+      "Narrative Designer": {
+        color: "#A855F7",
+        must_have: ["Brand Messaging & Copywriting", "Content Strategy", "SEO Writing", "Creative Writing", "Lore Timelines", "Character Bibles"],
+        good_to_have: ["Storyboards", "Interactive story flow", "Creative writing", "Nostalgia triggers"],
+        ats_keywords: ["narrative designer", "creative writing", "world-building", "screenplay", "script writer", "dialogue", "storytelling", "lore", "character bible", "creative director"]
+      },
+      "Growth Marketer": {
+        color: "#FB923C",
+        must_have: ["Google Analytics", "HubSpot Marketing Automation", "A/B Testing", "SEO", "Customer Acquisition Cost (CAC)", "Social Media Analytics"],
+        good_to_have: ["Email marketing", "Conversion rate optimization (CRO)", "Google Ads Search", "Cohort retention"],
+        ats_keywords: ["growth marketer", "digital marketing", "GA4", "analytics", "HubSpot", "A/B testing", "acquisition", "retention", "CAC", "ROAS", "social media", "SEO"]
+      }
+    };
+
+    const roleColors = {};
+    Object.entries(roleRequirements).forEach(([rName, req]) => {
+      roleColors[rName] = req.color;
+    });
+
+    const SKILL_OVERRIDES = {
+      "advanced sql": {
+        category: "Database & SQL",
+        impact: "Enables retrieval of multi-million row datasets using complex analytical queries, partitioning, and optimizations.",
+        pros: ["Extremely fast execution on indexed databases", "Essential for any backend or data analysis role"],
+        cons: ["Window functions have steep learning curves", "Hard to debug nested subqueries and joins"]
+      },
+      "python (pandas/seaborn)": {
+        category: "Analytics & Data Science",
+        impact: "Enables programmatic data cleaning, statistical modeling, and exploratory plotting beyond Excel's capabilities.",
+        pros: ["Handles large datasets in memory efficiently", "Rich ecosystem of libraries for ML and modeling"],
+        cons: ["Syntax can be verbose for simple tasks", "Requires setting up Python runtimes and environments"]
+      },
+      "react": {
+        category: "Frontend Development",
+        impact: "Industry-standard library for building modular, component-driven reactive web user interfaces.",
+        pros: ["Highly reusable UI component paradigm", "Virtual DOM updates only changed nodes, keeping it fast"],
+        cons: ["State management in large apps can get complex", "Frequent updates in libraries can cause deprecation issues"]
+      },
+      "typescript": {
+        category: "Frontend Development",
+        impact: "Adds strict static typing to JavaScript, catching compilation errors before code runs in production.",
+        pros: ["Significantly reduces runtime crashes and bugs", "Self-documenting code with excellent IDE autocompletion"],
+        cons: ["Adds compilation overhead and setup complexity", "Requires writing extra boilerplate type definitions"]
+      },
+      "complexity analysis": {
+        category: "Computer Science Core",
+        impact: "Teaches you to calculate time and space complexity (Big-O) to write code that scales efficiently.",
+        pros: ["Prevents memory leaks and CPU bottlenecks", "Tested in every SDE interview globally"],
+        cons: ["Highly theoretical and math-heavy", "Can lead to over-engineering simple features"]
+      },
+      "brand messaging & copywriting": {
+        category: "Creative & Content Strategy",
+        impact: "Translates technical features into persuasive benefits that trigger user signups and engagement.",
+        pros: ["Drives direct-to-user conversion rate increases", "Creates strong emotional brand connection"],
+        cons: ["Highly subjective; requires constant copy testing", "Requires deep psychological alignment with users"]
+      }
+    };
+
+    const getSkillCategorizedDetails = (name) => {
+      const n = name.toLowerCase();
+      
+      if (n.includes("sql") || n.includes("dbms") || n.includes("normalization") || n.includes("relational") || n.includes("schema") || n.includes("postgresql")) {
+        return {
+          category: "Database & Backend Data",
+          impact: `Crucial for designing efficient, normalized relational tables and retrieving data at scale.`,
+          pros: ["Guarantees data consistency (ACID properties)", "Industry standard for structured enterprise data"],
+          cons: ["Schema changes can be difficult to deploy", "Needs query optimization for large datasets"]
+        };
+      }
+      
+      if (n.includes("python") || n.includes("pandas") || n.includes("seaborn") || n.includes("eda") || n.includes("statistics") || n.includes("visualization") || n.includes("power bi") || n.includes("excel") || n.includes("kpi") || n.includes("funnel") || n.includes("ltv/cac") || n.includes("metrics") || n.includes("predictive") || n.includes("forecasting") || n.includes("modeling")) {
+        return {
+          category: "Analytics & Business Intelligence",
+          impact: `Enables translating raw business metrics into actionable growth and product insights.`,
+          pros: ["Drives data-backed product decisions", "Highly visible to stakeholders and executives"],
+          cons: ["Correlation does not imply causation", "Dirty data can lead to misleading conclusions"]
+        };
+      }
+
+      if (n.includes("react") || n.includes("typescript") || n.includes("html") || n.includes("css") || n.includes("vite") || n.includes("vercel") || n.includes("javascript") || n.includes("dom")) {
+        return {
+          category: "Frontend Development",
+          impact: `Critical for building responsive, high-performance web applications and user interfaces.`,
+          pros: ["Rich ecosystem of libraries and UI components", "Component reuse speeds up development timelines"],
+          cons: ["Fast-paced ecosystem requires constant learning", "JavaScript client-side bugs can break UI experience"]
+        };
+      }
+
+      if (n.includes("node.js") || n.includes("express") || n.includes("mongodb") || n.includes("git") || n.includes("firebase") || n.includes("api") || n.includes("network")) {
+        return {
+          category: "Backend & Infrastructure",
+          impact: `Powers the server-side logic, API routing, database connections, and hosting pipelines.`,
+          pros: ["Asynchronous I/O handles high concurrent traffic", "NoSQL offers flexible, schema-less data structures"],
+          cons: ["Debugging asynchronous code can be complex", "NoSQL lacks standard ACID constraint checks"]
+        };
+      }
+
+      if (n.includes("complexity") || n.includes("oops") || n.includes("search") || n.includes("sorting") || n.includes("pointer") || n.includes("window") || n.includes("recursion") || n.includes("algorithm") || n.includes("lld") || n.includes("hld") || n.includes("tree") || n.includes("trie") || n.includes("backtracking") || n.includes("divide") || n.includes("system design")) {
+        return {
+          category: "Data Structures & Algorithms (DSA)",
+          impact: `Core algorithmic thinking required for writing optimized code and passing technical SDE interviews.`,
+          pros: ["Optimizes runtime complexity and memory footprint", "Improves general logical problem-solving ability"],
+          cons: ["Can lead to over-engineering simple features", "High conceptual learning curve for complex algorithms"]
+        };
+      }
+
+      if (n.includes("seo") || n.includes("analytics & ga4") || n.includes("a/b testing") || n.includes("hubspot") || n.includes("ads") || n.includes("campaign") || n.includes("social media") || n.includes("marketing") || n.includes("audience") || n.includes("growth")) {
+        return {
+          category: "Growth & Digital Strategy",
+          impact: `Drives organic discovery, measures acquisition channels, and optimizes customer conversion rates.`,
+          pros: ["Builds sustainable, compounding web traffic", "Allows rapid experimentation and funnel tuning"],
+          cons: ["Search algorithms change frequently", "Paid ads require budget and can have high CAC"]
+        };
+      }
+
+      if (n.includes("writing") || n.includes("content strategy") || n.includes("calendar") || n.includes("messaging") || n.includes("copywriting") || n.includes("timeline") || n.includes("character") || n.includes("bible") || n.includes("storytelling") || n.includes("literature")) {
+        return {
+          category: "Creative & Content Strategy",
+          impact: `Establishes unique brand identity, community engagement, and lore timelines for immersive products.`,
+          pros: ["Creates strong emotional connection with users", "Highly differentiating in copy and messaging"],
+          cons: ["Hard to directly measure qualitative impact", "Creative burnouts can disrupt publishing speed"]
+        };
+      }
+
+      return {
+        category: "Logical Aptitude & Problem Solving",
+        impact: `Sharpens the core reasoning, quantitative, and logical abilities tested in initial screening rounds.`,
+        pros: ["Builds high mental speed and cognitive flexibility", "Helps clear initial filters at top recruitment drives"],
+        cons: ["Requires repetitive practice to stay sharp", "Does not directly build code artifacts"]
+      };
+    };
+
+    const getSkillSuitability = (skillName, roleName) => {
+      const req = roleRequirements[roleName];
+      if (!req) return "none";
+      
+      const matches = (list, item) => {
+        return list.some(l => {
+          const lLower = l.toLowerCase();
+          const iLower = item.toLowerCase();
+          return lLower === iLower || lLower.includes(iLower) || iLower.includes(lLower);
+        });
+      };
+
+      if (matches(req.must_have, skillName)) return "high";
+      if (matches(req.good_to_have, skillName)) return "medium";
+      if (req.ats_keywords && matches(req.ats_keywords, skillName)) return "low";
+      return "none";
+    };
+
+    const getRolesHelpedNames = (skillName) => {
+      const helped = [];
+      Object.entries(roleRequirements).forEach(([rName, req]) => {
+        const suitability = getSkillSuitability(skillName, rName);
+        if (suitability !== "none") {
+          helped.push(rName);
+        }
+      });
+      return helped;
+    };
+
+    function getSkillTrack(skillName) {
+      const n = skillName.toLowerCase();
+      if (n.includes("aptitude") || n.includes("logical reasoning") || n.includes("quantitative") || n.includes("verbal ability") || n.includes("screening") || n.includes("mock aptitude")) {
+        return 'aptitude';
+      }
+      if (n.includes("complexity") || n.includes("oops") || n.includes("search") || n.includes("sorting") || n.includes("pointer") || n.includes("window") || n.includes("recursion") || n.includes("algorithm") || n.includes("lld") || n.includes("hld") || n.includes("tree") || n.includes("trie") || n.includes("backtracking") || n.includes("divide") || n.includes("system design")) {
+        return 'dsa';
+      }
+      if (n.includes("react") || n.includes("typescript") || n.includes("html") || n.includes("css") || n.includes("vite") || n.includes("vercel") || n.includes("javascript") || n.includes("dom") || n.includes("node.js") || n.includes("express") || n.includes("mongodb") || n.includes("firebase") || n.includes("api") || n.includes("postgresql")) {
+        return 'fullstack';
+      }
+      if (n.includes("dbms") || n.includes("operating system") || n.includes("computer network") || n.includes("query optimization") || n.includes("nosql schema")) {
+        return 'cscore';
+      }
+      if (n.includes("writing") || n.includes("content strategy") || n.includes("calendar") || n.includes("messaging") || n.includes("copywriting") || n.includes("timeline") || n.includes("character") || n.includes("bible") || n.includes("seo architecture") || n.includes("keyword research") || n.includes("hubspot") || n.includes("ads") || n.includes("social media") || n.includes("prompt engineering") || n.includes("make/zapier") || n.includes("campaign planning")) {
+        return 'personal';
+      }
+      return 'analyst';
+    }
+
+    const PROJECT_CARDS = {
+      'june-project': {
+         id: 'june-project',
          title: 'IPL Analytics: Phase 1 Data Prep',
          track: 'project',
          month: 'JUNE',
@@ -1198,913 +1438,137 @@
          resources: [
            { name: 'IPL Dataset on Kaggle', url: 'https://www.kaggle.com/datasets' },
            { name: 'Streamlit Interactive Dashboards', url: 'https://streamlit.io/' },
-           { name: 'Power BI Dashboard Guide', url: 'https://learn.microsoft.com/en-us/power-bi/' }
+           { name: 'Power BI Portfolio Publishing Guide', url: 'https://learn.microsoft.com/en-us/power-bi/' }
          ]
-       },
-      'june-dsa': {
-        title: 'Complexity & Math Basics',
-        track: 'dsa',
-        month: 'JUNE',
-        why: 'Teaches you how algorithms behave at scale and bounds your mathematical logic.',
-        subtopics: [
-          '**Time & Space Complexity**: Big O, Big Omega, Big Theta notations, recurrence relations.',
-          '**Mathematics for Coding**: Greatest Common Divisor (GCD), LCM, Sieve of Eratosthenes (prime numbers).',
-          '**Recursion Fundamentals**: Stack trace diagrams, base case definition, divide & conquer fundamentals.',
-          '**Bit Manipulation**: Bitwise AND, OR, XOR, NOT, shifts, mask operations.'
-        ],
-        resources: [
-          { name: 'Striver A2Z DSA Sheet: Basics', url: 'https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-detailed-sheet-course/' },
-          { name: 'GeeksforGeeks Algorithmic Analysis', url: 'https://www.geeksforgeeks.org/analysis-of-algorithms/' }
-        ]
       },
-      'june-fullstack': {
-        title: 'Web Development Fundamentals',
-        track: 'fullstack',
-        month: 'JUNE',
-        why: 'Crucial for rendering analytical interfaces on the web.',
-        subtopics: [
-          '**Semantic HTML5**: Sectional, navigation, main, footer elements for structured page representation.',
-          '**CSS Layouts**: Flexbox grid control, CSS Grid layouts, centering, positioning, margins.',
-          '**Responsive Layout Design**: Media queries, viewport scaling, mobile-first design strategy.',
-          '**CSS Variables**: Predefined themes, dark mode variables setup, reusable design tokens.'
-        ],
-        resources: [
-          { name: 'MDN Web Docs: HTML/CSS', url: 'https://developer.mozilla.org/en-US/' },
-          { name: 'freeCodeCamp Responsive Web Course', url: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/' }
-        ]
-      },
-      'june-cscore': {
-        title: 'Object-Oriented Programming (OOPs)',
-        track: 'cscore',
-        month: 'JUNE',
-        why: 'Core coding structural paradigm tested in every technical interview.',
-        subtopics: [
-          '**Four Pillars**: Encapsulation, Inheritance, Polymorphism (Overloading vs Overriding), Abstraction.',
-          '**Abstract classes vs Interfaces**: Implementation differences, multi-inheritance logic.',
-          '**SOLID Principles**: Single responsibility, open-closed, Liskov substitution, interface segregation, dependency inversion.',
-          '**Memory Allocation**: Heap vs Stack storage for instances, garbage collection basics.'
-        ],
-        resources: [
-          { name: 'GeeksforGeeks OOPs Concepts', url: 'https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/' },
-          { name: 'Refactoring.Guru: OOP Refactoring', url: 'https://refactoring.guru/' }
-        ]
-      },
-      'june-personal': {
-        title: 'Sahitya Rachanalu — Month 1 (Research & Curation)',
-        track: 'personal',
-        month: 'JUNE',
-        why: 'Build portfolio evidence by researching the best creative websites and writing a foundation of content architecture for the next 6 months.',
-        subtopics: [
-          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 1 Deliverables</div>
-              <div style="margin-top:8px;line-height:1.6;">
-                • Research & architecture: Sitemap + user flows + content categories
-                <br/>• Collect 100 inspirations from portfolio/movie/agency/storytelling sites
-                <br/>• Create content folders: Animations, Typography, Movie Posters, Page Layouts, Storytelling, Landing Pages
-              </div>
-            </div>
-            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 1 (Foundation)</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">7 pieces · Prove writing ability · 5 Pillars active</div>
-              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
-                <div style="color:#F4A72A;font-weight:700;margin-bottom:3px;">🎬 Film Analysis Essays ×2</div>
-                ↳ "Arjun Reddy: Why We Root for Someone We Shouldn't"<br/>↳ "Baahubali's World-Building Masterclass"<br/>
-                <div style="color:#FB7185;font-weight:700;margin:6px 0 3px;">🎵 Lyrics Vault ×2</div>
-                ↳ Srivalli Decoded (Analysis) · Original: Loss/Nostalgia theme<br/>
-                <div style="color:#38BDF8;font-weight:700;margin:6px 0 3px;">🏑 IPL Analytics Hub ×1</div>
-                ↳ "Dhoni: The Nostalgia Premium" — Series opener<br/>
-                <div style="color:#FB923C;font-weight:700;margin:6px 0 3px;">🎯 Brand/Product Teardown ×1</div>
-                ↳ "Zomato's Copywriting Playbook"<br/>
-                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Sahitya Founder Journal ×1</div>
-                ↳ "Why I'm Building Sahitya Rachanalu in 2026"
-              </div>
-            </div>
-          </div>`
-        ],
-        resources: [
-          { name: 'HubSpot Content Marketing (Academy)', url: 'https://academy.hubspot.com/courses/content-marketing' },
-          { name: 'Google SEO Starter Guide', url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide' },
-          { name: 'Storytelling (Frameworks)', url: 'https://storytellingwithdata.com/' }
-        ]
-      },
-
-      // --- JULY ---
-      'july-aptitude': {
-        title: 'Quantitative Aptitude Core',
-        track: 'aptitude',
-        month: 'JULY',
-        why: 'Math logic and speed calculations are tested extensively in aptitude tests.',
-        subtopics: [
-          '**Time and Work**: Pipe capacities, alternate hour works, work-wage distributions.',
-          '**Time, Speed & Distance**: Trains crossing, relative speed, boat upstream/downstream, average speed.',
-          '**Percentages, Profit & Loss**: Discounts, successive marks, faulty weights calculations.',
-          '**Ratios & Averages**: Mixture & alligation, age calculations, weighted average formulas.',
-          '**Interest Math**: Simple interest (SI) vs Compound Interest (CI), annual/semi-annual growth cycles.'
-        ],
-        resources: [
-          { name: 'IndiaBIX Quantitative Aptitude', url: 'https://www.indiabix.com/quantitative-aptitude/questions-and-answers/' },
-          { name: 'GFG Quantitative Questions', url: 'https://www.geeksforgeeks.org/quantitative-aptitude/' }
-        ]
-      },
-      'july-analyst': {
-        title: 'Python Pandas, Seaborn & KPI Design',
-        track: 'analyst',
-        month: 'JULY',
-        why: 'Python handles complex workflows and statistical visualization beyond BI limits.',
-        subtopics: [
-          '**Pandas DataFrames**: Groupby aggregations, merge/join/concat, filtering rows, handling missing values.',
-          '**Exploratory Data Analysis (EDA)**: Statistical distributions, outlier detection, correlations.',
-          '**Seaborn & Matplotlib**: Pairplots, correlation heatmaps, box plots, styling plots.',
-          '**KPI Design & Framework**: North Star Metric definition, lagging vs leading indicators, cohort setups.',
-          '**Feature Engineering**: Numeric scaling, log transformations, dummy variables, date-time parsing.'
-        ],
-        resources: [
-          { name: 'Corey Schafer Pandas Series', url: 'https://youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS' },
-          { name: 'Kaggle Pandas Tutorial', url: 'https://www.kaggle.com/learn/pandas' },
-          { name: 'Google Data Analytics Certificate: Data Prep', url: 'https://www.coursera.org/professional-certificates/google-data-analytics' }
-        ]
-      },
-'july-project': {
-         title: 'BPL Analytics: Primary Research & Ground Truth',
+      'july-project': {
+         id: 'july-project',
+         title: 'BPL Analytics: Phase 2 Real-Time Dashboards',
          track: 'project',
          month: 'JULY',
-         why: 'Primary data collection project on Hyderabad live music ecosystem — unique dataset for product/analytics demonstration.',
+         why: 'Demonstrates ability to design dashboards and calculate unit economics/LTV for a subscription music platform.',
          subtopics: [
-           `<div style="background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.18);border-radius:8px;padding:12px;">
-             <strong style="color:#A855F7;display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--accent);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
              <div style="line-height:1.6;font-size:12px;">
-               <strong>Goal:</strong> Map the Hyderabad live music economy with primary data collection and build a venue-band matchmaking system.<br/><br/>
+               <strong>Goal:</strong> Design a real-time subscription performance tracker for Bangladesh Premier League (Music Industry context).<br/><br/>
                <strong>Deliverables:</strong><br/>
-               • Primary dataset from 50+ venues<br/>
-               • Live BPL matchmaking portal<br/>
-               • 15-page economic report<br/>
-               • LinkedIn series (venue comparisons)<br/><br/>
-               <strong>Layers:</strong> Market Foundation → Demand Behavior → Supply Side → Matchmaking → Revenue Model → Funnel Analytics → Growth Strategy → Ecosystem Impact<br/><br/>
-               <strong>Key Insight:</strong> "Live music is not just entertainment. It is a repeatable business model and a cultural economy."
+               • Dynamic dashboard tracking monthly subscription metrics<br/>
+               • PDF business proposal on pricing tier models<br/>
+               • Technical article detailing metric definitions<br/>
+               • LTV forecasting models<br/><br/>
+               <strong>Layers Covered:</strong> Subscriptions → Fan Psychographics → Retention → Unit Economics → Multi-Tier Pricing → Distribution Channels → Financial Forecasts → Artist Brand Value → Content Strategy → Predictive Modeling
              </div>
            </div>`
          ],
          resources: [
-           { name: 'Google Forms Survey Tool', url: 'https://forms.google.com' },
-           { name: 'BookMyShow API Insights', url: 'https://developer.bookmyshow.com/' },
-           { name: 'Hyderabad Venue Research', url: 'https://www.hyderabad.club' }
+           { name: 'Spotify Web API Documentation', url: 'https://developer.spotify.com/documentation/web-api' },
+           { name: 'Chart.js Interactive Charts', url: 'https://www.chartjs.org/' }
          ]
-       },
-      'july-dsa': {
-        title: 'Arrays, Hashing, Strings & Matrices',
-        track: 'dsa',
-        month: 'JULY',
-        why: 'The absolute core data structures representing 70% of array-based interview problems.',
-        subtopics: [
-          '**Array Manipulations**: Reverse, rotate, sub-array sums, Dutch National Flag algorithm.',
-          '**HashMaps & HashSets**: Collision management, load factor, checking duplicates, O(1) searches.',
-          '**String Algorithms**: Substrings, anagrams, palindrome verification, KMP string matching.',
-          '**Matrix Traversals**: Spiral order, transpose, diagonal traversals, matrix rotations.'
-        ],
-        resources: [
-          { name: 'LeetCode Top Interview 150 - Arrays', url: 'https://leetcode.com/studyplan/top-interview-150/' },
-          { name: 'NeetCode 150: Arrays & Hashing', url: 'https://neetcode.io/practice' }
-        ]
       },
-      'july-fullstack': {
-        title: 'Core JavaScript & DOM',
-        track: 'fullstack',
-        month: 'JULY',
-        why: 'Provides dynamic functionality and network requests in client interfaces.',
-        subtopics: [
-          '**ES6+ Javascript**: Arrow functions, destructuring, rest/spread operators, template literals.',
-          '**DOM API**: Query selectors, event bubblings, modifying styles, creating nodes dynamically.',
-          '**Asynchronous JS**: Callbacks, Promises, Async/Await syntax, handling errors.',
-          '**Fetch API**: GET/POST requests, HTTP status codes, JSON payload processing.'
-        ],
-        resources: [
-          { name: 'Javascript.info - Interactive Guide', url: 'https://javascript.info/' },
-          { name: 'Eloquent JavaScript Book', url: 'https://eloquentjavascript.net/' }
-        ]
-      },
-      'july-cscore': {
-        title: 'Database Management Systems (DBMS)',
-        track: 'cscore',
-        month: 'JULY',
-        why: 'Critical for data durability, transaction execution, and backend queries.',
-        subtopics: [
-          '**ER Models**: Relationship cardinality, entity attributes, primary/foreign keys.',
-          '**Relational Algebra**: Projection, selection, Cartesian product, division.',
-          '**ACID Transactions**: Atomicity, consistency, isolation, durability levels.',
-          '**Concurrency Control**: Lock-based protocols, two-phase locking, deadlocks.'
-        ],
-        resources: [
-          { name: 'Gate Smashers DBMS Playlist', url: 'https://youtube.com/playlist?list=PLxCzCOWd7aiFAN6I81CJCgPvS17v6xpR_' },
-          { name: 'GFG DBMS Tutorials', url: 'https://www.geeksforgeeks.org/dbms/' }
-        ]
-      },
-      'july-personal': {
-        title: 'Sahitya Rachanalu — Month 2 (UI/UX Design)',
-        track: 'personal',
-        month: 'JULY',
-        why: 'Design the creative experience in Figma: layout clarity, fast navigation, and page systems that scale.',
-        subtopics: [
-          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 2 Deliverables</div>
-              <div style="margin-top:8px;line-height:1.6;">
-                • Design pages in Figma:
-                <br/>Home, Articles, Cinepedia, Lyrics, Profile, Universe
-                <br/>• Create component library + dark-mode ready tokens
-              </div>
-            </div>
-            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 2 (Storytelling)</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">8 pieces · Show narrative intelligence · 5 Pillars active</div>
-              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
-                <div style="color:#A78BFA;font-weight:700;margin-bottom:3px;">🧠 Character Psychology ×2</div>
-                ↳ "Dhoni: Psychology of Stillness Under Pressure"<br/>↳ "Arjun Reddy: Narcissistic Genius or Wounded Child?"<br/>
-                <div style="color:#34D399;font-weight:700;margin:6px 0 3px;">📜 Screenplay Breakdowns ×2</div>
-                ↳ "3 Idiots: Hook Writing Masterclass" · "Dil Chahta Hai: Ensemble Dynamics"<br/>
-                <div style="color:#FB7185;font-weight:700;margin:6px 0 3px;">🎵 Lyrics Vault ×2</div>
-                ↳ Saranga Dariya Analysis · Original: Ambition/Longing theme<br/>
-                <div style="color:#38BDF8;font-weight:700;margin:6px 0 3px;">🏑 IPL Analytics Hub ×1</div>
-                ↳ "MI vs CSK: What the Rivalry Data Says Fans Don't"<br/>
-                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
-                ↳ "Content Architecture Before Content: Month 2 Lesson"
-              </div>
-            </div>
-          </div>`
-        ],
-        resources: [
-          { name: 'Figma Design Systems', url: 'https://www.figma.com/resources/learn-design/' },
-          { name: 'Fountain Scriptwriting Format Guide', url: 'https://fountain.io/' }
-        ]
-      },
-
-      // --- AUGUST ---
-      'august-aptitude': {
-        title: 'Verbal Ability Foundation',
-        track: 'aptitude',
-        month: 'AUGUST',
-        why: 'Tests readability, comprehension, and grammar checks under timer limits.',
-        subtopics: [
-          '**Reading Comprehension**: Main idea extraction, tone identification, inference drawing.',
-          '**Sentence Corrections**: Subject-verb agreement, pronoun references, tense checks.',
-          '**Vocabulary & Idioms**: Direct meanings, analogy, context mapping.',
-          '**Fill-in-the-blanks**: Double blanks, grammar-based preposition fits.'
-        ],
-        resources: [
-          { name: 'IndiaBIX Verbal Tests', url: 'https://www.indiabix.com/verbal-ability/' },
-          { name: 'GRE Verbal Prep Guides', url: 'https://www.ets.org/' }
-        ]
-      },
-      'august-analyst': {
-        title: 'Power BI, DAX & Cohort/Funnel Analytics',
-        track: 'analyst',
-        month: 'AUGUST',
-        why: 'Enterprise BI tools like Power BI are industry-standard for automated dashboard generation.',
-        subtopics: [
-          '**Power BI Modeling**: Creating relations, managing cross-filtering directions, configuring star schemas.',
-          '**DAX Language**: CALCULATE, FILTER, ALL, RELATED, divide, sumx iterators.',
-          '**Time Intelligence (DAX)**: SAMEPERIODLASTYEAR, YTD, MTD, DATEADD comparisons.',
-          '**Cohort Analysis**: Building retention matrices over months, customer drop-off curves.',
-          '**Funnel Analytics**: Visualization of ad-to-purchase steps, leakage diagnostics.'
-        ],
-        resources: [
-          { name: 'SQLBI - Alberto Ferrari & Marco Russo', url: 'https://www.sqlbi.com/' },
-          { name: 'Avi Singh Power BI channel', url: 'https://www.youtube.com/@PowerBIPro' },
-          { name: 'Microsoft Learn: Power BI track', url: 'https://learn.microsoft.com/en-us/power-bi/' }
-        ]
-      },
-'august-project': {
-         title: 'E-Commerce Analytics: Funnel & Revenue Intelligence',
+      'august-project': {
+         id: 'august-project',
+         title: 'E-Commerce Analytics: Phase 3 Funnel Optimization',
          track: 'project',
          month: 'AUGUST',
-         why: 'Demonstrates business analytics, consumer psychology, and growth strategy through real e-commerce data.',
+         why: 'Showcases conversion rate tuning, customer acquisition cost metrics, and user journey analytics for a mock retail platform.',
          subtopics: [
-           `<div style="background:rgba(46,204,113,0.06);border:1px solid rgba(46,204,113,0.18);border-radius:8px;padding:12px;">
-             <strong style="color:var(--green);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--accent);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
              <div style="line-height:1.6;font-size:12px;">
-               <strong>Goal:</strong> Analyze e-commerce as attention + behavior + logistics + ecosystem control through 9 analytical layers.<br/><br/>
+               <strong>Goal:</strong> Optimize transaction checkout funnels and analyze digital advertising attribution.<br/><br/>
                <strong>Deliverables:</strong><br/>
-               • Interactive website with all 9 analysis modules<br/>
-               • Power BI dashboard<br/>
-               • 10-page PDF consulting report<br/>
-               • LinkedIn case studies (3 posts)<br/><br/>
-               <strong>Layers:</strong> Seasonal Sales → Pricing Psychology → Ads Impact → Consumer Psychology → Unit Economics → Quick Commerce → Offline Impact → Conglomerate Strategy → Prescriptive Strategy<br/><br/>
-               <strong>Key Insight:</strong> "E-commerce is not selling products. It is controlling attention, behavior, logistics, and ecosystems."
+               • Customer acquisition cost (CAC) cohort analysis spreadsheet<br/>
+               • Interactive Power BI funnel dashboard<br/>
+               • Landing page copy optimizations with A/B test results<br/>
+               • SEO page indexing checklist<br/><br/>
+               <strong>Layers Covered:</strong> Checkout Funnel → User Intent → Advertising Attribution → Cohort Analysis → Landing Page CRO → Channel Distribution → Unit Economics → Product Brand Positioning → Copywriting Strategy → Predictive LTV
              </div>
            </div>`
          ],
          resources: [
-           { name: 'Flipkart Dataset Kaggle', url: 'https://www.kaggle.com/datasets' },
-           { name: 'Power BI E-commerce Templates', url: 'https://learn.microsoft.com/en-us/power-bi/' },
-           { name: 'Google Analytics 4', url: 'https://analytics.google.com/' }
+           { name: 'Google Merchandise Store Analytics (Demo)', url: 'https://support.google.com/analytics/answer/6367342' },
+           { name: 'Optimizely A/B Testing Guide', url: 'https://www.optimizely.com/optimization-glossary/ab-testing/' }
          ]
-       },
-      'august-dsa': {
-        title: 'Linear & Basic Tree structures',
-        track: 'dsa',
-        month: 'AUGUST',
-        why: 'Builds logic for memory node connections and abstract hierarchical tracking.',
-        subtopics: [
-          '**Linked Lists**: Singly, doubly, circular, Floyd cycle detection, pointer updates.',
-          '**Stacks & Queues**: FIFO/LIFO representations, monotonic stacks, priority queues.',
-          '**Tree Traversals**: Inorder, Preorder, Postorder, Level order, recursive tree searches.',
-          '**Heaps**: Min-heap, max-heap insertions, heapify operations.'
-        ],
-        resources: [
-          { name: 'Striver Trees Playlist', url: 'https://takeuforward.org/binary-tree/binary-tree-traversal-inorder-preorder-postorder/' },
-          { name: 'NeetCode practice: Trees', url: 'https://neetcode.io/' }
-        ]
       },
-      'august-fullstack': {
-        title: 'React.js Core & Tailwind CSS',
-        track: 'fullstack',
-        month: 'AUGUST',
-        why: 'Component systems optimize frontend development and styling structures.',
-        subtopics: [
-          '**JSX & Functional Components**: Custom components, props passing, mapping lists.',
-          '**React Hooks**: useState, useEffect, useRef lifecycle state updates.',
-          '**Tailwind CSS**: Responsive grid utility classes, hover state classes, animations.',
-          '**Component State Management**: Prop drilling mitigations, context API basics.'
-        ],
-        resources: [
-          { name: 'React official documentation', url: 'https://react.dev/' },
-          { name: 'Tailwind CSS utility documentation', url: 'https://tailwindcss.com/' }
-        ]
-      },
-      'august-cscore': {
-        title: 'Operating Systems (OS)',
-        track: 'cscore',
-        month: 'AUGUST',
-        why: 'Explains underlying machine executions, multi-threading, and system resources.',
-        subtopics: [
-          '**Process & Threads**: Context switching, process state transitions, multi-threading.',
-          '**CPU Scheduling**: FCFS, SJF, Round Robin, priority preemption.',
-          '**Memory Allocation**: Paging, segmentation, page faults, virtual memory calculations.',
-          '**Synchronization & Deadlocks**: Mutex, semaphores, producer-consumer problem, banker\'s algorithm.'
-        ],
-        resources: [
-          { name: 'Gate Smashers OS playlist', url: 'https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3MwnCoXHPg' },
-          { name: 'Operating System Concepts Book', url: 'https://codex.cs.yale.edu/avi/os-book/' }
-        ]
-      },
-      'august-personal': {
-        title: 'Sahitya Rachanalu — Month 3 (Core Development)',
-        track: 'personal',
-        month: 'AUGUST',
-        why: 'Turn the design into production: build content engine, dark mode system, search, and responsive typography.',
-        subtopics: [
-          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 3 Deliverables</div>
-              <div style="margin-top:8px;line-height:1.6;">
-                • Next.js setup + Tailwind
-                <br/>• MDX blog system + dark mode
-                <br/>• Search + responsive performance baseline
-              </div>
-            </div>
-            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 3 (Marketing Thinking)</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">7 pieces · Show business understanding · 4 Pillars active</div>
-              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
-                <div style="color:#FB923C;font-weight:700;margin-bottom:3px;">🎯 Brand/Product Teardowns ×2</div>
-                ↳ "Swiggy vs Zomato: Brand War Decoded" · "boAt's D2C Rise"<br/>
-                <div style="color:#4ADE80;font-weight:700;margin:6px 0 3px;">📈 Creator Economy Essays ×2</div>
-                ↳ "The 1000 True Fans Theory in 2026" · "Why Instagram Reach is Dead"<br/>
-                <div style="color:#FB923C;font-weight:700;margin:6px 0 3px;">🎯 UX Teardown ×1</div>
-                ↳ "Duolingo's Viral Strategy: Fear, Shame &amp; a Green Owl"<br/>
-                <div style="color:#F4A72A;font-weight:700;margin:6px 0 3px;">🎬 Film Analysis ×1</div>
-                ↳ "KGF Chapter 2: The Mythology of a Self-Made God"<br/>
-                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
-                ↳ "The Language Problem: Writing for Telugu Readers"
-              </div>
-            </div>
-          </div>`
-        ],
-        resources: [
-          { name: 'Next.js Documentation', url: 'https://nextjs.org/docs' },
-          { name: 'MDX Guide', url: 'https://mdxjs.com/' },
-          { name: 'Tailwind CSS Docs', url: 'https://tailwindcss.com/docs' }
-        ]
-      },
-
-      // --- SEPTEMBER ---
-      'september-aptitude': {
-        title: 'Logical Reasoning Advanced',
-        track: 'aptitude',
-        month: 'SEPTEMBER',
-        why: 'Prepares for complex puzzle rounds in consultancy and product roles.',
-        subtopics: [
-          '**Data Sufficiency**: Determining if statements are enough to solve complex problems.',
-          '**Critical Reasoning**: Strengths/weaknesses of arguments, logical gaps.',
-          '**Complex Arrangements**: Double-variable scheduling, linear puzzles with color variables.',
-          '**Mathematical Puzzles**: Logic-based games, cryptarithms.'
-        ],
-        resources: [
-          { name: 'GMAT Club Reasoning questions', url: 'https://gmatclub.com/' },
-          { name: 'IndiaBIX Advanced Logical Tests', url: 'https://www.indiabix.com/' }
-        ]
-      },
-      'september-analyst': {
-        title: 'Google Analytics 4 (GA4), SEO & A/B Testing',
-        track: 'analyst',
-        month: 'SEPTEMBER',
-        why: 'Web traffic and conversion experiments are standard requirements in growth analytics.',
-        subtopics: [
-          '**GA4 Event Tracking**: Custom tags, user ID tracking, conversion events.',
-          '**SEO Metrics & Core Web Vitals**: Site speeds, LCP, CLS, indexing issues, crawls.',
-          '**A/B Test Design**: Null hypothesis formulation, sample sizes, selection biases.',
-          '**A/B Significance Tests**: Chi-squared tests, t-tests, calculating p-values.',
-          '**Growth Marketing KPIs**: Customer Acquisition Cost (CAC), LTV/CAC ratios, payback cycles.'
-        ],
-        resources: [
-          { name: 'Google Analytics Academy', url: 'https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431' },
-          { name: 'Evan Miller A/B Testing Calculators', url: 'https://www.evanmiller.org/ab-testing/' },
-          { name: 'Moz SEO Core Guide', url: 'https://moz.com/beginners-guide-to-seo' }
-        ]
-      },
-'september-project': {
-         title: 'Hiremap Platform: Recruitment Intelligence System',
+      'september-project': {
+         id: 'september-project',
+         title: 'Hiremap Platform: Phase 4 Full Stack Web Dev',
          track: 'project',
          month: 'SEPTEMBER',
-         why: 'Build a recruitment platform showcasing product analytics and matching algorithms for talent acquisition.',
+         why: 'The primary technical project showing MERN full-stack development, database schema design, and live deployment.',
          subtopics: [
-           `<div style="background:rgba(168,85,247,0.06);border:1px solid rgba(168,85,247,0.18);border-radius:8px;padding:14px;">
-             <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-               <strong style="color:#A855F7;font-size:13px;">HireMap — Student Placement Portal</strong>
-               <a href="https://hiremap-eight.vercel.app/" target="_blank" style="font-size:9px;background:rgba(168,85,247,0.2);color:#A855F7;padding:2px 8px;border-radius:4px;text-decoration:none;border:1px solid rgba(168,85,247,0.4);">🌐 Live → hiremap-eight.vercel.app</a>
-             </div>
-             <div style="line-height:1.7;font-size:12px;">
-               <strong style="color:#A855F7;">Current Status:</strong> Frontend Complete · Backend In Progress<br/><br/>
-               <strong>9-Layer Execution Breakdown:</strong><br/>
-               📊 <strong>Layer 1: Recruitment Intelligence (Data Analyst)</strong> — Skill arrays mapping, keyword matching, profile completeness indexes.<br/>
-               🧠 <strong>Layer 2: Onboarding & UX Psychology (Product Analyst)</strong> — 7-to-4 screen funnel onboarding optimization, drop-off analytics.<br/>
-               🛡️ <strong>Layer 3: Database & Auth Sync (Business Analyst)</strong> — Firebase Auth role splits, Firestore schema normalization, query latency.<br/>
-               📈 <strong>Layer 4: Candidate Acquisition (Growth Analyst)</strong> — Referral loops, campaign email CTRs, viral K-factor metrics.<br/>
-               🏃 <strong>Layer 5: Placement Matchmaking (Sports Analyst)</strong> — Sports player drafting algorithms, ELO student ranking leaderboard.<br/>
-               💰 <strong>Layer 6: Placement Economics (Financial Analyst)</strong> — Subscription revenue pricing models, university partner ROI calculators.<br/>
-               ✍️ <strong>Layer 7: Employer Brand Storytelling (Content Strategist)</strong> — Employer page setups, job description engagement, newsletter copy.<br/>
-               🔍 <strong>Layer 8: Job Posting SEO (SEO Analyst)</strong> — Google Jobs rank optimization, schema markup validation, organic click CTR.<br/>
-               🚀 <strong>Layer 9: Platform Expansion (Strategy Analyst)</strong> — TAM expansion roadmap, multi-college onboarding bottlenecks, partnership matrices.<br/><br/>
-               <strong>Frontend Stack (Live):</strong><br/>
-               • React 19 + TypeScript · Framer Motion animations<br/>
-               • Firebase Auth: role-based (Student / Recruiter / Admin)<br/>
-               • Vite build + Vercel deployment pipeline<br/><br/>
-               <strong>What's Live Now:</strong><br/>
-               • Onboarding flow redesigned: 7 → 4 screens (reduced friction)<br/>
-               • Dynamic student dashboards with real-time Firebase sync<br/>
-               • Role-based auth UI + profile completion tracker<br/>
-               • Landing page with conversion-optimized CTA copy<br/><br/>
-               <strong>Backend (Planned):</strong><br/>
-               • Node.js + Express API · MongoDB: profiles, jobs, match scores<br/>
-               • Skill gap analysis + salary benchmarking endpoints<br/><br/>
-               <strong>Deliverables:</strong> Live MERN platform · Analytics dashboard · Case study · LinkedIn series on hiring trends
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--accent);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+             <div style="line-height:1.6;font-size:12px;">
+               <strong>Goal:</strong> Build and host a functional recruitment portal showing live status telemetry.<br/><br/>
+               <strong>Deliverables:</strong><br/>
+               • Live Vite/React app hosted on Vercel with Node/Express/MongoDB API<br/>
+               • Database schema migration script and validation<br/>
+               • Firebase authentication system configuration<br/>
+               • Full REST API documentation on GitHub<br/><br/>
+               <strong>Layers Covered:</strong> Candidate UX → Recruiter Behavior → Database Schemas → Real-time Notifications → API Routes → Hosting Pipelines → Infrastructure Cost → Candidate Branding → Feature PRDs → Dynamic Filtering
              </div>
            </div>`
          ],
          resources: [
-           { name: 'Next.js Documentation', url: 'https://nextjs.org/docs' },
-           { name: 'Node.js Backend', url: 'https://nodejs.org/' },
-           { name: 'MongoDB Atlas', url: 'https://www.mongodb.com/atlas' }
+           { name: 'Vite Getting Started Guide', url: 'https://vitejs.dev/guide/' },
+           { name: 'MongoDB Atlas Free Tier Setup', url: 'https://www.mongodb.com/cloud/atlas/register' },
+           { name: 'Vercel Deployment Docs', url: 'https://vercel.com/docs' }
          ]
-       },
-      'september-dsa': {
-        title: 'Search, Sort, Two Pointers & Sliding Window',
-        track: 'dsa',
-        month: 'SEPTEMBER',
-        why: 'Optimizes search speeds and subarray iterations from brute-force O(N^2) to linear profiles.',
-        subtopics: [
-          '**Binary Search**: Custom bounds, search on answer space, peak elements.',
-          '**Sorting Algorithms**: Merge Sort, Quick Sort partitions, bubble/selection.',
-          '**Two Pointer Techniques**: Target sums, container with most water, sorting arrays of 0/1/2.',
-          '**Sliding Window**: Subarray sum constraints, longest unique substring length.'
-        ],
-        resources: [
-          { name: 'Striver Binary Search playlist', url: 'https://takeuforward.org/' },
-          { name: 'LeetCode Sliding Window playlist', url: 'https://leetcode.com/' }
-        ]
-      },
-      'september-fullstack': {
-        title: 'Node.js, Express & MongoDB (MERN Backend)',
-        track: 'fullstack',
-        month: 'SEPTEMBER',
-        why: 'MERN backend infrastructure handles routing, servers, and database integration.',
-        subtopics: [
-          '**Node.js Runtime**: Event loop, asynchronous file lookups, common modules.',
-          '**Express.js Routing**: Server setup, custom middleware, POST body handling, routes.',
-          '**NoSQL Schema Design**: Document hierarchies in MongoDB, sub-documents, Mongoose.',
-          '**API Integrations**: Handling CORS, JSON request-responses, route validation.'
-        ],
-        resources: [
-          { name: 'Traversy Media Node/Express course', url: 'https://www.youtube.com/watch?v=TlB_eWDSMt4' },
-          { name: 'MongoDB University', url: 'https://university.mongodb.com/' }
-        ]
-      },
-      'september-cscore': {
-        title: 'Computer Networks (CN)',
-        track: 'cscore',
-        month: 'SEPTEMBER',
-        why: 'Explains data transfers across the web and standard backend connection paths.',
-        subtopics: [
-          '**OSI & TCP/IP Model**: Layer functions, packet routing, header wrappers.',
-          '**Protocols**: HTTP/HTTPS structures, DNS lookups, TCP vs UDP handshakes.',
-          '**IP Addressing**: IPv4 subnet masks, CIDR blocks, private vs public routing.',
-          '**Security Layer**: SSL/TLS handshakes, certificates, cryptographic keys.'
-        ],
-        resources: [
-          { name: 'Computer Networking: A Top-Down Approach Book', url: 'https://jimiles.github.io/files/Computer-Networking-A-Top-Down-Approach.pdf' },
-          { name: 'Gate Smashers Network Playlist', url: 'https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_' }
-        ]
-      },
-      'september-personal': {
-        title: 'Sahitya Rachanalu — Month 4 (Creative Features)',
-        track: 'personal',
-        month: 'SEPTEMBER',
-        why: 'Build the signature feature set: Cinepedia, Lyrics Engine, and Story Universe pages—so the site feels unique, not generic.',
-        subtopics: [
-          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 4 Deliverables</div>
-              <div style="margin-top:8px;line-height:1.6;">
-                • Cinepedia database (movie analysis)
-                <br/>• Lyrics Engine (lyrics + meanings)
-                <br/>• Story Universe pages (characters, timelines, maps, lore)
-              </div>
-            </div>
-            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 4 (Media &amp; Creator Economy)</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">8 pieces · Platform thinking at scale · 5 Pillars active</div>
-              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
-                <div style="color:#4ADE80;font-weight:700;margin-bottom:3px;">📈 Creator Economy Essays ×2</div>
-                ↳ "Second Screen Economy: IPL Made India's Creator Market"<br/>↳ "LinkedIn's Creator Moment: Why B2B Became Valuable"<br/>
-                <div style="color:#38BDF8;font-weight:700;margin:6px 0 3px;">🏑 IPL Analytics Hub ×2</div>
-                ↳ "RCB Tragedy in Numbers" · "Fantasy Cricket's Impact on Match Viewing"<br/>
-                <div style="color:#FB923C;font-weight:700;margin:6px 0 3px;">🎯 Campaign Breakdown ×1</div>
-                ↳ "Cred's Paradox: Exclusivity Marketing in Mass Market"<br/>
-                <div style="color:#4ADE80;font-weight:700;margin:6px 0 3px;">📱 Reel Concepts ×10</div>
-                ↳ IPL data viz · Brand voice takes · Telugu culture formats<br/>
-                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
-                ↳ "Distribution Before Launch: Growing Sahitya Audience"
-              </div>
-            </div>
-          </div>`
-        ],
-        resources: [
-          { name: 'MDX (Content Patterns)', url: 'https://mdxjs.com/' },
-          { name: 'GSAP (Animation Library)', url: 'https://greensock.com/gsap/' },
-          { name: 'Creative Writing Structure', url: 'https://www.storytellingwithdata.com/' }
-        ]
-      },
-
-      // --- OCTOBER ---
-      'october-aptitude': {
-        title: 'Quantitative Aptitude Advanced',
-        track: 'aptitude',
-        month: 'OCTOBER',
-        why: 'Essential for clearance rounds in finance, banking, and core analytics profiles.',
-        subtopics: [
-          '**Permutations & Combinations**: Grid problems, arrangements with restrictions, circular loops.',
-          '**Probability**: Independent trials, Bayes\' theorem, conditional probability matrices.',
-          '**Geometry & Mensuration**: Regular polygons, volume transformations, coordinates.',
-          '**Advanced Algebra**: Quadratic equations, arithmetic/geometric progressions (AP/GP).'
-        ],
-        resources: [
-          { name: 'IndiaBIX Advanced Quant', url: 'https://www.indiabix.com/' },
-          { name: 'GMAT Club Quant Forum', url: 'https://gmatclub.com/forum/' }
-        ]
-      },
-      'october-analyst': {
-        title: 'NLP, Prompt Engineering & API Automations',
-        track: 'analyst',
-        month: 'OCTOBER',
-        why: 'Integrating generative AI workflows accelerates analytics work productivity.',
-        subtopics: [
-          '**Prompt Engineering**: Zero-shot, few-shot prompts, chain-of-thought system prompts.',
-          '**NLP Sentiment Analysis**: Text parsing, tokenizations, VADER polarity scoring.',
-          '**Make/Zapier Automations**: Creating Webhook triggers, automating data saves.',
-          '**API Integrations**: Authentication headers, POST requests, managing rate limits.'
-        ],
-        resources: [
-          { name: 'DeepLearning.AI Prompt Engineering Course', url: 'https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/' },
-          { name: 'Zapier Learning Guides', url: 'https://zapier.com/learn/' }
-        ]
       },
       'october-project': {
-         title: 'OTT Analytics: Content Performance & Lifecycle',
+         id: 'october-project',
+         title: 'OTT Analytics: Phase 5 Advanced Text NLP & Automation',
          track: 'project',
          month: 'OCTOBER',
-         why: 'Demonstrates content analytics, audience segmentation, and business model comparison for streaming platforms.',
+         why: 'Demonstrates how to process raw user feedback or text subtitles using natural language processing and automate workflows.',
          subtopics: [
-           `<div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.18);border-radius:8px;padding:12px;">
-             <strong style="color:#EF4444;display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--accent);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
              <div style="line-height:1.6;font-size:12px;">
-               <strong>Goal:</strong> Analyze OTT vs Theatre content performance across 9 analytical layers.<br/><br/>
+               <strong>Goal:</strong> Extract content themes and customer sentiment trends from mock streaming subtitles and feedback logs.<br/><br/>
                <strong>Deliverables:</strong><br/>
-               • Interactive website with 9 modules<br/>
-               • Tableau dashboard<br/>
-               • 12-page PDF report<br/>
-               • LinkedIn carousel series (9 posts)<br/><br/>
-               <strong>Layers:</strong> Content Performance → Reviews Impact → Distribution → Booking Funnel → Content Lifecycle → Marketing → Demographics → COVID Impact → Business Model<br/><br/>
-               <strong>Key Insight:</strong> "Theatres capture the peak. OTT captures the memory."
+               • Python subtitle parsing script (with text cleaning & tokenization)<br/>
+               • Subtitle NLP keyword extraction notebook<br/>
+               • Zapier content update workflow dashboard<br/>
+               • Dynamic API server mapping user sentiment metrics<br/><br/>
+               <strong>Layers Covered:</strong> Subtitle Processing → User Engagement → NLP Schema → Workflow Automation → Subtitle API → Cloud Hosting → Operation Costs → Content Brand Positioning → Story Arc Outlines → Sentiment Analytics
              </div>
            </div>`
          ],
          resources: [
-           { name: 'IMDb Datasets', url: 'https://www.imdb.com/interfaces/' },
-           { name: 'Tableau Public', url: 'https://public.tableau.com/' },
-           { name: 'Box Office Mojo', url: 'https://www.boxofficemojo.com/' }
+           { name: 'Zapier Webhooks Guide', url: 'https://zapier.com/features/webhooks' },
+           { name: 'Python NLTK subtitles processing tutorial', url: 'https://www.nltk.org/' }
          ]
-       },
-      'october-dsa': {
-        title: 'Prefix Sums, Greedy & Dynamic Programming (DP)',
-        track: 'dsa',
-        month: 'OCTOBER',
-        why: 'Tests algorithmic optimization and complex problem solving in technical interviews.',
-        subtopics: [
-          '**Prefix Sums**: Range queries, subarray sum comparisons.',
-          '**Greedy Choice**: Fractional Knapsack, activity selection, scheduling patterns.',
-          '**DP 1D**: Fibonacci loops, climbing stairs, house robbing optimizations.',
-          '**DP 2D**: Longest Common Subsequence (LCS), Knapsack 0/1, grid paths.'
-        ],
-        resources: [
-          { name: 'Striver Dynamic Programming Playlist', url: 'https://takeuforward.org/dynamic-programming/strivers-dp-series-contents/' },
-          { name: 'Aditya Verma DP series', url: 'https://www.youtube.com/playlist?list=PL_z_8CaSLPWekqHD8YkyyEAlqyd7950WZ' }
-        ]
       },
-      'october-fullstack': {
-        title: 'Databases Integration & Security',
-        track: 'fullstack',
-        month: 'OCTOBER',
-        why: 'Secures web transactions and connects front-to-back databases.',
-        subtopics: [
-          '**SQL vs NoSQL Integration**: Building APIs that query PostgreSQL and MongoDB.',
-          '**Authentication (JWT)**: Token signing, authorization checks in routes, securely hashing passwords.',
-          '**Database Indexing**: SQL column indexes vs MongoDB index configurations.',
-          '**API Documentation**: Writing Swagger APIs, testing routes with Postman.'
-        ],
-        resources: [
-          { name: 'JWT.io guides', url: 'https://jwt.io/' },
-          { name: 'Postman Learning Platform', url: 'https://learning.postman.com/' }
-        ]
-      },
-      'october-cscore': {
-        title: 'Low Level Design (LLD)',
-        track: 'cscore',
-        month: 'OCTOBER',
-        why: 'Structures modular, extensible, and clean codebases.',
-        subtopics: [
-          '**Design Patterns**: Singleton, Factory, Observer, Strategy, Decorator classes.',
-          '**UML Diagrams**: Class relations, flow charts, activity sequences.',
-          '**Schema Mapping**: Class properties to database records.',
-          '**Object Oriented Principles**: Loose coupling, high cohesion.'
-        ],
-        resources: [
-          { name: 'Refactoring.Guru: Design Patterns', url: 'https://refactoring.guru/design-patterns' },
-          { name: 'LLD Course by Keerti Purswani', url: 'https://www.youtube.com/@KeertiPurswani' }
-        ]
-      },
-      'october-personal': {
-        title: 'Sahitya Rachanalu — Month 5 (Premium Experience)',
-        track: 'personal',
-        month: 'OCTOBER',
-        why: 'Make the platform feel like a trailer: motion, reveals, transitions, and narrative pacing that keeps users engaged.',
-        subtopics: [
-          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 5 Deliverables</div>
-              <div style="margin-top:8px;line-height:1.6;">
-                • GSAP animations + smooth scrolling
-                <br/>• Poster reveals + page transitions
-                <br/>• Timeline effects + loading screen polish
-              </div>
-            </div>
-            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
-              <strong style="color:#60A5FA;">Track B — Portfolio Assets: Month 5 (Leadership Layer)</strong>
-              <div style="margin-top:8px;font-style:italic;color:var(--muted);">5 high-value pieces · Creative leadership docs · RARE content</div>
-              <div style="margin-top:8px;line-height:1.8;font-size:11px;">
-                <div style="color:#A78BFA;font-weight:700;margin-bottom:3px;">🌍 Web Series Universe Design ×1</div>
-                ↳ Original story universe: setting, rules, factions, lore<br/>
-                <div style="color:#A78BFA;font-weight:700;margin:6px 0 3px;">🧠 Character Bible ×1</div>
-                ↳ Lead character: wound, mask, arc, voice, psychology<br/>
-                <div style="color:#34D399;font-weight:700;margin:6px 0 3px;">📜 Screenplay Breakdown ×1</div>
-                ↳ "Vikram Vedha: The Tamil Moral Universe Decoded"<br/>
-                <div style="color:#F4A72A;font-weight:700;margin:6px 0 3px;">🎬 Film Analysis ×1</div>
-                ↳ "Pushpa: Working-Class Hero as Brand Mythology"<br/>
-                <div style="color:#E879F9;font-weight:700;margin:6px 0 3px;">📖 Founder Journal ×1</div>
-                ↳ "Building Feature Modules: Cinepedia + Lyrics + Meme Keyboard"<br/>
-                <div style="color:var(--muted);font-size:10px;margin-top:6px;font-style:italic;">⚡ Universe design + character bibles = irreplaceable positioning</div>
-              </div>
-            </div>
-          </div>`
-        ],
-        resources: [
-          { name: 'GSAP Docs', url: 'https://greensock.com/docs/' },
-          { name: 'Smooth scroll inspiration (Apple-style UI)', url: 'https://developer.apple.com/' }
-        ]
-      },
-
-      // --- NOVEMBER ---
-      'november-aptitude': {
-        title: 'Verbal Ability Advanced',
-        track: 'aptitude',
-        month: 'NOVEMBER',
-        why: 'Prepares for communication tests in management consulting placements.',
-        subtopics: [
-          '**Para-jumbles**: Paragraph arrangements, identifying first/last sentences, transition cues.',
-          '**Logical Consistencies**: Premise identification, evaluating strengths of logical statements.',
-          '**Reading Speed Drills**: Speed read strategies, keyword skimming.',
-          '**Critical Reasoning Advanced**: Finding hidden assumptions, resolving paradoxes.'
-        ],
-        resources: [
-          { name: 'GMAT Club Verbal Practice', url: 'https://gmatclub.com/' },
-          { name: 'IndiaBIX Advanced English', url: 'https://www.indiabix.com/' }
-        ]
-      },
-      'november-analyst': {
-        title: 'Regression, Forecasting & Storytelling',
-        track: 'analyst',
-        month: 'NOVEMBER',
-        why: 'Analysts must predict trends and communicate insights effectively to executives.',
-        subtopics: [
-          '**Regression Modeling**: Linear/Logistic regression, feature significance, R-squared analysis.',
-          '**Time Series Forecasting**: ARIMA, Prophet library baseline setups, seasonality checks.',
-          '**Corporate Financial metrics**: GMV, AOV, Net Revenue margins, CAC calculations.',
-          '**McKinsey-style Slide structures**: SCQA frameworks, MECE, vertical and horizontal flow logics.',
-          '**Data Storytelling**: Contrast visualizations, decluttering, focusing user attention.'
-        ],
-        resources: [
-          { name: 'Storytelling with Data Book', url: 'https://www.storytellingwithdata.com/' },
-          { name: 'Introduction to Statistical Learning (ISLR)', url: 'https://www.statlearning.com/' },
-          { name: 'McKinsey Slide Structuring tutorials', url: 'https://www.caseinterview.com/' }
-        ]
-      },
-'november-project': {
-         title: 'Sahitya Rachanalu: Platform Launch & Content System',
+      'november-project': {
+         id: 'november-project',
+         title: 'Sahitya Rachanalu: Phase 6 Data Storytelling & Visual Portfolios',
          track: 'project',
          month: 'NOVEMBER',
-         why: 'Final creative writing platform with all content pillars and portfolio artifacts ready for launch.',
+         why: 'Combines data dashboarding with narrative writing, launching Srihari’s creative essays and articles visual repository.',
          subtopics: [
-           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:14px;">
-             <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-               <strong style="color:var(--accent);font-size:13px;">Sahitya Rachanalu — Telugu Literary Platform</strong>
-               <span style="font-size:9px;background:rgba(244,167,42,0.2);color:var(--accent);padding:2px 8px;border-radius:4px;border:1px solid rgba(244,167,42,0.4);">📋 Founded · Dec 2026 Launch</span>
-             </div>
-             <div style="line-height:1.7;font-size:12px;">
-               <strong style="color:var(--accent);">Mission:</strong> The only Telugu platform combining cinema, music, storytelling and cultural content in one digital space.<br/><br/>
-               <strong>9-Layer Execution Breakdown:</strong><br/>
-               ✍️ <strong>Layer 1: Multilingual Content Architecture (Content Strategist)</strong> — Cinepedia film wiki, lyrics engine sidebar setup, keywords priority map.<br/>
-               🧠 <strong>Layer 2: World-Building & Lore (Product Analyst)</strong> — Timelines, character bibles, maps, story universe map.<br/>
-               🎮 <strong>Layer 3: Gamification Loops (Growth Analyst)</strong> — Custom meme keyboard shares, dialogue card-flips, audio player metrics.<br/>
-               📈 <strong>Layer 4: Content Performance & Traffic (Data Analyst)</strong> — User activity heatmaps, traffic sources, monthly active users tracker.<br/>
-               📋 <strong>Layer 5: Operations & Editorial (Business Analyst)</strong> — Content pipeline flow, editor workload, translation velocity tracking.<br/>
-               🏏 <strong>Layer 6: Sports Narrative Analytics (Sports Analyst)</strong> — Sports folklore, Telugu sports movie columns, commentary sentiment metrics.<br/>
-               🔍 <strong>Layer 7: Search Intent & SEO (SEO Analyst)</strong> — Bilingual Telugu-English SEO keyword maps, search impressions, crawl rate audits.<br/>
-               💰 <strong>Layer 8: Platform Economics (Financial Analyst)</strong> — Scenario monetization models, e-book sales margins, payment gateways pricing.<br/>
-               🚀 <strong>Layer 9: Platform Expansion & Vision (Strategy Analyst)</strong> — Vernacular translation pipelines, TAM calculations, launch-to-scale roadmap.<br/><br/>
-               <strong>5 Platform Modules:</strong><br/>
-               🎬 <strong>Cinepedia</strong> — Film analysis wiki (thematic, cultural, director deep-dives)<br/>
-               🎵 <strong>Lyrics Engine</strong> — Spotify-style layout + original lyrics + meaning sidebar<br/>
-               📖 <strong>Fictionary</strong> — Famous Telugu dialogue card-flip UI<br/>
-               🌍 <strong>Story Universe</strong> — Original characters, worlds, lore timelines<br/>
-               😄 <strong>Meme/GIF Keyboard</strong> — Custom cultural expressions + shareable format<br/><br/>
-               <strong>Content Targets (Dec 2026):</strong><br/>
-               25+ Articles · 12+ Film analyses · 15+ Lyrics · 8+ Character studies · 8+ Screenplay breakdowns<br/><br/>
-               <strong>Stack:</strong> Next.js · MDX · Tailwind CSS · Vercel<br/>
-               <strong>Roles Unlocked:</strong> Content Writer · Lyricist · Film Analyst · Creative Director · Brand Storyteller · Narrative Designer · Community Builder
+           `<div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:12px;">
+             <strong style="color:var(--accent);display:block;margin-bottom:8px;">Deep Dive Plan</strong>
+             <div style="line-height:1.6;font-size:12px;">
+               <strong>Goal:</strong> Build a custom portfolio platform showing content engagement telemetry.<br/><br/>
+               <strong>Deliverables:</strong><br/>
+               • Visual catalog site showing Srihari’s writing portfolio<br/>
+               • Real-time readership metrics dashboard (GA4 + custom DB)<br/>
+               • Script/Subtopics database schema mapping<br/>
+               • LinkedIn content scheduling system configuration<br/><br/>
+               <strong>Layers Covered:</strong> Reader Interface → Writer Creative Flow → Content DBMS Schema → Engagement Logs → Analytics API → Server Hosting → Platform Maintenance → Writer Persona → Publishing Schedule → Readership Retention
              </div>
            </div>`
          ],
          resources: [
-           { name: 'Next.js Production Deployment', url: 'https://nextjs.org/docs/app/building-your-application/deploying' },
-           { name: 'Vercel SEO Guide', url: 'https://vercel.com/docs' },
-           { name: 'GSAP Animations', url: 'https://greensock.com/gsap/' }
+           { name: 'Google Analytics 4 API Overview', url: 'https://developers.google.com/analytics/devguides/reporting/data/v1' },
+           { name: 'Medium Publishing API Guide', url: 'https://github.com/medium/medium-api-docs' }
          ]
-       },
-      'november-dsa': {
-        title: 'Advanced Tree structures',
-        track: 'dsa',
-        month: 'NOVEMBER',
-        why: 'Tests optimization of search query speeds in specialized database indexing cases.',
-        subtopics: [
-          '**Trie structures**: Word insertions, lookup optimizations, autocomplete systems.',
-          '**Segment Trees**: Range queries, point updates, memory arrays.',
-          '**Binary Indexed Trees**: Cumulative frequency tables, prefix sums calculations.',
-          '**Red-Black Trees**: Self-balancing search trees, balancing rotations.'
-        ],
-        resources: [
-          { name: 'GFG Advanced Tree Tutorials', url: 'https://www.geeksforgeeks.org/advanced-data-structures/' },
-          { name: 'Striver Trie Playlist', url: 'https://takeuforward.org/' }
-        ]
       },
-      'november-fullstack': {
-        title: 'Developer Portfolios & Deployments',
-        track: 'fullstack',
-        month: 'NOVEMBER',
-        why: 'Recruiters inspect live sites to verify deployment proficiency.',
-        subtopics: [
-          '**Developer Portfolios**: HTML/CSS grid structure, links, project directories.',
-          '**Vercel/Netlify hosting**: Deploying frontend code with continuous pipelines.',
-          '**Render/Railway backend hosting**: Deploying Node APIs with database setups.',
-          '**GitHub Readme Optimization**: Writing setup directions, project summaries.'
-        ],
-        resources: [
-          { name: 'Vercel Deployment guide', url: 'https://vercel.com/docs' },
-          { name: 'Render Web Services Deployment', url: 'https://render.com/docs' }
-        ]
-      },
-      'november-cscore': {
-        title: 'High Level Design (HLD)',
-        track: 'cscore',
-        month: 'NOVEMBER',
-        why: 'System architecture planning for handling scale and durability.',
-        subtopics: [
-          '**Microservices Architecture**: Monolith decomps, gateway routes, API routing.',
-          '**Caching**: Redis integrations, caching policies (LRU/LFU), CDNs.',
-          '**Database Sharding**: Vertical/Horizontal sharding, master-slave replication.',
-          '**Message Queues**: Decoupling systems with Kafka, RabbitMQ brokers.'
-        ],
-        resources: [
-          { name: 'ByteByteGo - System Design by Alex Xu', url: 'https://bytebytego.com/' },
-          { name: 'System Design Primer (GitHub Repo)', url: 'https://github.com/donnemartin/system-design-primer' }
-        ]
-      },
-'november-personal': {
-         title: 'Sahitya Rachanalu — Month 6 (Leadership Layer)',
-         track: 'personal',
-         month: 'NOVEMBER',
-         why: 'Show creative leadership through universe design, character architecture, and content ecosystem planning.',
-         subtopics: [
-           `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-             <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
-               <strong style="color:var(--accent);">Track A — Creative Builder</strong>
-               <div style="margin-top:8px;font-style:italic;color:var(--muted);">Month 5 Deliverables</div>
-               <div style="margin-top:8px;line-height:1.6;">
-                 • GSAP animations + smooth scrolling
-                 <br/>• Poster reveals + page transitions
-                 <br/>• Timeline effects + loading screen polish
-               </div>
-             </div>
-             <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
-               <strong style="color:#60A5FA;">Track B — Creative Creator / Curator</strong>
-               <div style="margin-top:8px;font-style:italic;color:var(--muted);">Portfolio Assets (8 pillars)</div>
-               <div style="margin-top:8px;line-height:1.6;">
-                 <strong style="color:var(--accent);display:block;margin-bottom:6px;">Create content for 8 portfolio assets covering all 25 roles:</strong>
-                 <div style="font-size:11px;">
-                   <div style="margin:4px 0;"><strong>Film Analysis Essays (2)</strong> → Writer, Critic, Research Writer, Story Editor</div>
-                   <div style="margin:4px 0;"><strong>Character Psychology Series (2)</strong> → Creative Writer, Screenplay Writer, Narrative Designer</div>
-                   <div style="margin:4px 0;"><strong>Screenplay Breakdowns (2)</strong> → Script Writer, Screenplay Writer, Creative Producer</div>
-                   <div style="margin:4px 0;"><strong>Lyrics Vault (2)</strong> → Lyricist, Creative Writer</div>
-                   <div style="margin:4px 0;"><strong>IPL Analytics Hub (1)</strong> → Sports Writer, Research Writer, Content Strategist</div>
-                   <div style="margin:4px 0;"><strong>Brand/Product Teardowns (2)</strong> → Copywriter, SEO Writer, Brand Storyteller</div>
-                   <div style="margin:4px 0;"><strong>Creator Economy Essays (2)</strong> → Content Strategist, Social Media Strategist, Growth Marketer</div>
-                   <div style="margin:4px 0;"><strong>Sahitya Founder Journal (2)</strong> → Creative Director, Producer, Community Builder</div>
-                 </div>
-               </div>
-             </div>
-           </div>`
-         ],
-         resources: [
-           { name: 'GSAP Animation Library', url: 'https://greensock.com/gsap/' },
-           { name: 'Figma Design Systems', url: 'https://figma.com/' },
-           { name: 'Storytelling Framework', url: 'https://storytellingwithdata.com/' }
-         ]
-       },
-
-      // --- DECEMBER ---
-      'december-aptitude': {
-        title: 'Final Lap Practice & Mocks',
-        track: 'aptitude',
-        month: 'DECEMBER',
-        why: 'Simulating exam constraints is the final step to secure top scores.',
-        subtopics: [
-          '**Full Length Mocks**: Section timers, raw scoring metrics.',
-          '**Wrong-answer logs**: Reviewing miscalculations and errors.',
-          '**Time optimization drills**: Pacing strategies for mock tests.'
-        ],
-        resources: [
-          { name: 'Testbook Mock Test Series', url: 'https://testbook.com/mock-tests' },
-          { name: 'Oliveboard Mock Tests', url: 'https://www.oliveboard.in/' }
-        ]
-      },
-      'december-analyst': {
-        title: 'Case Studies & Portfolio Synthesis',
-        track: 'analyst',
-        month: 'DECEMBER',
-        why: 'Organizing your analysis outputs secures roles at top agencies.',
-        subtopics: [
-          '**Analytics Portfolio**: Combining SQL, Power BI, and Python code on GitHub.',
-          '**Technical Case Studies**: Documenting project pipelines.',
-          '**Interview prep**: Practicing analytical case questions.'
-        ],
-        resources: [
-          { name: 'Case Interview prep tools', url: 'https://www.caseinterview.com/' }
-        ]
-      },
-'december-project': {
+      'december-project': {
+         id: 'december-project',
          title: 'Portfolio Consolidation & Final Launch',
          track: 'project',
          month: 'DECEMBER',
@@ -2123,120 +1587,109 @@
              </div>
            </div>`
          ],
-resources: [
+         resources: [
             { name: 'Portfolio Website Template', url: 'https://vercel.com/templates' },
             { name: 'GitHub Portfolio Guide', url: 'https://docs.github.com/en/pages' },
             { name: 'LinkedIn Optimization', url: 'https://linkedin.com' }
           ]
-       },
-      'december-dsa': {
-        title: 'Bitwise, Backtracking & Advanced Algorithms',
-        track: 'dsa',
-        month: 'DECEMBER',
-        why: 'Prepares for complex puzzle coding questions in interview pools.',
-        subtopics: [
-          '**Backtracking**: Sudoku solvers, N-queens constraints.',
-          '**Divide & Conquer**: Fast multiply routines, closest coordinate pairs.',
-          '**Branch & Bound**: Optimization searches, traveling salesperson problems.'
-        ],
-        resources: [
-          { name: 'GFG Backtracking questions', url: 'https://www.geeksforgeeks.org/backtracking-algorithms/' }
-        ]
       },
-      'december-fullstack': {
-        title: 'MERN Stack Mock Projects & Reviews',
-        track: 'fullstack',
+      'december-personal': {
+        id: 'december-personal',
+        title: 'Sahitya Rachanalu — Final Portfolio Launch',
+        track: 'personal',
         month: 'DECEMBER',
-        why: 'Mock interviews prepare you for system architecture rounds.',
+        why: 'Ship the complete platform with all 8 content pillars, combining everything into a cohesive portfolio.',
         subtopics: [
-          '**Mock interviews**: Front-to-back reviews, API coding drills.',
-          '**Portfolio checks**: Code optimizations, responsive layouts updates.',
-          '**System architecture reviews**: Code patterns reviews.'
-        ],
-        resources: [
-          { name: 'Pramp Mock Interviews', url: 'https://www.pramp.com/' }
-        ]
-      },
-      'december-cscore': {
-        title: 'Core Interview prep',
-        track: 'cscore',
-        month: 'DECEMBER',
-        why: 'Ensures quick recall of computer science foundations.',
-        subtopics: [
-          '**DBMS review**: Normalizations, ACID parameters, SQL joins.',
-          '**OOPs reviews**: Polymorphism definitions, design patterns.',
-          '**OS concepts**: Virtual memory checks, thread synchronizations.'
-        ],
-        resources: [
-          { name: 'GFG CS Interview Corner', url: 'https://www.geeksforgeeks.org/' }
-        ]
-      },
-'december-personal': {
-         title: 'Sahitya Rachanalu — Final Portfolio Launch',
-         track: 'personal',
-         month: 'DECEMBER',
-         why: 'Ship the complete platform with all 8 content pillars, combining everything into a cohesive portfolio.',
-         subtopics: [
-           `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-             <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
-               <strong style="color:var(--accent);">Track A — Creative Builder</strong>
-               <div style="margin-top:8px;font-style:italic;color:var(--muted);">Final Deliverables</div>
-               <div style="margin-top:8px;line-height:1.6;">
-                 • sahityarachanalu.com — live website
-                 <br/>• Cinepedia MVP + Lyrics Engine MVP
-                 <br/>• Story Universe MVP + Founder Journal
-                 <br/>• SEO optimized + analytics integrated
-               </div>
-             </div>
-             <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
-               <strong style="color:#60A5FA;">Track B — Creative Creator / Curator</strong>
-               <div style="margin-top:8px;font-style:italic;color:var(--muted);">End Result: 8 Portfolio Assets (80-100 artifacts)</div>
-               <div style="margin-top:8px;line-height:1.6;font-size:11px;">
-                 <div style="margin:3px 0;">• Film Analyses: 10-12</div>
-                 <div style="margin:3px 0;">• Character Studies: 8</div>
-                 <div style="margin:3px 0;">• Screenplay Breakdowns: 8</div>
-                 <div style="margin:3px 0;">• Product/Brand Teardowns: 8</div>
-                 <div style="margin:3px 0;">• IPL Articles: 8</div>
-                 <div style="margin:3px 0;">• Creator Economy Essays: 8</div>
-                 <div style="margin:3px 0;">• Founder Journals: 8</div>
-                 <div style="margin:3px 0;">• Lyrics: 12-15</div>
-                 <div style="margin:3px 0;">• Story Concepts: 10</div>
-                 <div style="margin:3px 0;">• Web Series Universe Docs: 2-3</div>
-               </div>
-             </div>
-</div>
+          `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:rgba(244,167,42,0.06);border:1px solid rgba(244,167,42,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:var(--accent);">Track A — Creative Builder</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">Final Deliverables</div>
+              <div style="margin-top:8px;line-height:1.6;">
+                • sahityarachanalu.com — live website
+                <br/>• Cinepedia MVP + Lyrics Engine MVP
+                <br/>• Story Universe MVP + Founder Journal
+                <br/>• SEO optimized + analytics integrated
               </div>
-            </div>`
-          ],
-          resources: [
-            { name: 'Vercel Production Deployment', url: 'https://vercel.com/docs' },
-            { name: 'Google Analytics Setup', url: 'https://analytics.google.com/' },
-            { name: 'SEO Optimization Guide', url: 'https://developers.google.com/search' }
-          ]
-        },
-        'december-cscore': {
-         title: 'Core Interview prep',
-         track: 'cscore',
-         month: 'DECEMBER',
-         why: 'Ensures quick recall of computer science foundations.',
-         subtopics: [
-           '**DBMS review**: Normalizations, ACID parameters, SQL joins.',
-           '**OOPs reviews**: Polymorphism definitions, design patterns.',
-           '**OS concepts**: Virtual memory checks, thread synchronizations.'
-         ],
-         resources: [
-           { name: 'GFG CS Interview Corner', url: 'https://www.geeksforgeeks.org/' }
-         ]
-       }
+            </div>
+            <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.18);border-radius:8px;padding:10px;">
+              <strong style="color:#60A5FA;">Track B — Creative Creator / Curator</strong>
+              <div style="margin-top:8px;font-style:italic;color:var(--muted);">End Result: 8 Portfolio Assets (80-100 artifacts)</div>
+              <div style="margin-top:8px;line-height:1.6;font-size:11px;">
+                <div style="margin:3px 0;">• Film Analyses: 10-12</div>
+                <div style="margin:3px 0;">• Character Studies: 8</div>
+                <div style="margin:3px 0;">• Screenplay Breakdowns: 8</div>
+                <div style="margin:3px 0;">• Product/Brand Teardowns: 8</div>
+                <div style="margin:3px 0;">• IPL Articles: 8</div>
+                <div style="margin:3px 0;">• Creator Economy Essays: 8</div>
+                <div style="margin:3px 0;">• Founder Journals: 8</div>
+                <div style="margin:3px 0;">• Lyrics: 12-15</div>
+                <div style="margin:3px 0;">• Story Concepts: 10</div>
+                <div style="margin:3px 0;">• Web Series Universe Docs: 2-3</div>
+              </div>
+            </div>
+          </div>`
+        ],
+        resources: [
+          { name: 'Vercel Production Deployment', url: 'https://vercel.com/docs' },
+          { name: 'Google Analytics Setup', url: 'https://analytics.google.com/' },
+          { name: 'SEO Optimization Guide', url: 'https://developers.google.com/search' }
+        ]
+      }
     };
 
-// Tracks array definitions
-    const tracksList = ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal'];
+    function slugify(text) {
+      return text.toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)+/g, '');
+    }
+
+    const skillsData = { ...PROJECT_CARDS };
+
+    // Dynamically build individual skill database entries
+    BASE_SKILLS.forEach(skillName => {
+      const id = slugify(skillName);
+      const track = getSkillTrack(skillName);
+      const details = getSkillCategorizedDetails(skillName);
+      const custom = SKILL_OVERRIDES[skillName.toLowerCase()] || {};
+      skillsData[id] = {
+        id: id,
+        title: skillName,
+        track: track,
+        month: 'BASE',
+        why: custom.impact || details.impact,
+        pros: custom.pros || details.pros,
+        cons: custom.cons || details.cons,
+        roles: getRolesHelpedNames(skillName)
+      };
+    });
+
+    Object.entries(MONTH_SKILLS).forEach(([month, list]) => {
+      const monthUpper = month.toUpperCase();
+      list.forEach(skillName => {
+        const id = slugify(skillName);
+        const track = getSkillTrack(skillName);
+        const details = getSkillCategorizedDetails(skillName);
+        const custom = SKILL_OVERRIDES[skillName.toLowerCase()] || {};
+        
+        // Preserve if already exists (e.g. december-personal which is a custom object)
+        if (skillsData[id]) return;
+
+        skillsData[id] = {
+          id: id,
+          title: skillName,
+          track: track,
+          month: monthUpper,
+          why: custom.impact || details.impact,
+          pros: custom.pros || details.pros,
+          cons: custom.cons || details.cons,
+          roles: getRolesHelpedNames(skillName)
+        };
+      });
+    });\n\n    const tracksList = ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal'];
 
     let activeSkillId = null;
     let completedSkills = {};
 
-    // Load completed states from localStorage
     function loadCompletedStates() {
       try {
         const saved = localStorage.getItem('mastered_skills_v2');
@@ -2249,7 +1702,6 @@ resources: [
       updateOverallProgress();
     }
 
-    // Save completed states to localStorage
     function saveCompletedStates() {
       try {
         localStorage.setItem('mastered_skills_v2', JSON.stringify(completedSkills));
@@ -2257,29 +1709,25 @@ resources: [
       updateOverallProgress();
     }
 
-    // Progress Bar Calculator
     function updateOverallProgress() {
-      const total = Object.keys(skillsData).length;
-      const completed = Object.values(completedSkills).filter(Boolean).length;
+      const skillsList = Object.values(skillsData).filter(s => s.track !== 'project');
+      const total = skillsList.length;
+      const completed = skillsList.filter(s => completedSkills[s.id]).length;
       const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
       
       document.getElementById('mastery-percent').innerText = percent + '%';
       document.getElementById('mastery-fill').style.width = percent + '%';
     }
 
-    // Build the grid UI dynamically
     function renderBoard() {
       const grid = document.getElementById('board-grid');
       grid.innerHTML = '';
 
-      // 1. Column headers
-      // Add month header placeholder
       const monthColHeader = document.createElement('div');
       monthColHeader.className = 'grid-header-cell month-col';
       monthColHeader.innerText = 'Month';
       grid.appendChild(monthColHeader);
 
-      // Add track headers
       tracksList.forEach(trackKey => {
         const trackCell = document.createElement('div');
         trackCell.className = 'grid-header-cell';
@@ -2290,9 +1738,7 @@ resources: [
         grid.appendChild(trackCell);
       });
 
-      // 2. Grid Rows
       monthsInfo.forEach(month => {
-        // Month Label cell
         const monthLabelCell = document.createElement('div');
         monthLabelCell.className = 'grid-cell month-label-cell';
         monthLabelCell.innerHTML = `
@@ -2301,16 +1747,18 @@ resources: [
         `;
         grid.appendChild(monthLabelCell);
 
-        // Track cells for the row
         tracksList.forEach(trackKey => {
           const cell = document.createElement('div');
           cell.className = 'grid-cell';
           cell.dataset.track = trackKey;
+          cell.style.display = 'flex';
+          cell.style.flexDirection = 'column';
+          cell.style.gap = '8px';
 
-          const skillId = `${month.name.toLowerCase()}-${trackKey}`;
-          const skill = skillsData[skillId];
+          const cellSkills = Object.values(skillsData).filter(s => s.month === month.name && s.track === trackKey);
 
-          if (skill) {
+          cellSkills.forEach(skill => {
+            const skillId = skill.id || `${month.name.toLowerCase()}-${trackKey}`;
             const card = document.createElement('div');
             card.className = 'skill-card';
             if (completedSkills[skillId]) {
@@ -2330,14 +1778,13 @@ resources: [
 
             card.addEventListener('click', () => openDetail(skillId));
             cell.appendChild(card);
-          }
+          });
 
           grid.appendChild(cell);
         });
       });
     }
 
-    // Detail Panel View Drawer
     function openDetail(skillId) {
       activeSkillId = skillId;
       const skill = skillsData[skillId];
@@ -2345,21 +1792,15 @@ resources: [
 
       const track = trackConfig[skill.track];
 
-      // Badges
       const trackBadge = document.getElementById('drawer-badge-track');
       trackBadge.innerText = track.label;
       trackBadge.style.setProperty('--track-badge-color', track.color);
       trackBadge.style.setProperty('--track-badge-rgb', track.rgb);
 
       document.getElementById('drawer-badge-month').innerText = skill.month;
-      
-      // Title
       document.getElementById('drawer-title').innerText = skill.title;
-
-      // Why it matters
       document.getElementById('drawer-why').innerText = skill.why;
 
-      // Checkbox state
       const toggleBox = document.getElementById('mastery-toggle-box');
       const checkVal = document.getElementById('mastery-checkbox');
       if (completedSkills[skillId]) {
@@ -2370,50 +1811,84 @@ resources: [
         checkVal.innerText = '';
       }
 
-      // Populate Subtopics
+      const isProjectCard = skill.track === 'project';
+      const subtopicsHeader = document.getElementById('drawer-subtopics-header');
       const subtopicsContainer = document.getElementById('drawer-subtopics');
-      subtopicsContainer.innerHTML = '';
-      skill.subtopics.forEach(topic => {
-        const li = document.createElement('li');
-        li.className = 'subtopic-item';
-
-        // Parse simple markdown-like bold syntax (**text**)
-        const parsedText = topic.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-
-        li.innerHTML = `
-          <span class="subtopic-bullet">•</span>
-          <span class="subtopic-text">${parsedText}</span>
-        `;
-        subtopicsContainer.appendChild(li);
-      });
-
-      // Populate Resources
+      const resourcesHeader = document.querySelector('#drawer-resources').previousElementSibling;
       const resourcesContainer = document.getElementById('drawer-resources');
-      resourcesContainer.innerHTML = '';
-      skill.resources.forEach(res => {
-        const domain = new URL(res.url).hostname.replace('www.', '');
-        const a = document.createElement('a');
-        a.className = 'resource-link';
-        a.href = res.url;
-        a.target = '_blank';
-        a.innerHTML = `
-          <span>${res.name}</span>
-          <span class="resource-link-meta">${domain} ↗</span>
-        `;
-        resourcesContainer.appendChild(a);
-      });
 
-      // Open Drawer & Backdrop
+      if (isProjectCard) {
+        subtopicsHeader.innerText = 'Detailed Subtopics';
+        subtopicsContainer.innerHTML = '';
+        const topics = skill.subtopics || [];
+        topics.forEach(topic => {
+          const li = document.createElement('li');
+          li.className = 'subtopic-item';
+          const parsedText = topic.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+          li.innerHTML = `
+            <span class="subtopic-bullet">•</span>
+            <span class="subtopic-text">${parsedText}</span>
+          `;
+          subtopicsContainer.appendChild(li);
+        });
+
+        resourcesHeader.innerText = 'Curated Learning Resources';
+        resourcesContainer.innerHTML = '';
+        const resList = skill.resources || [];
+        resList.forEach(res => {
+          const domain = new URL(res.url).hostname.replace('www.', '');
+          const a = document.createElement('a');
+          a.className = 'resource-link';
+          a.href = res.url;
+          a.target = '_blank';
+          a.innerHTML = `
+            <span>${res.name}</span>
+            <span class="resource-link-meta">${domain} ↗</span>
+          `;
+          resourcesContainer.appendChild(a);
+        });
+      } else {
+        subtopicsHeader.innerText = 'Pros & Cons';
+        const prosList = skill.pros || [];
+        const consList = skill.cons || [];
+        
+        subtopicsContainer.innerHTML = `
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 8px; width: 100%;">
+            <div>
+              <div style="font-size: 10px; font-weight: 700; color: var(--green); text-transform: uppercase; margin-bottom: 8px;">Pros</div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; padding-left: 0;">
+                ${prosList.map(p => `<li style="font-size: 12.5px; color: #A7F3D0; display: flex; gap: 6px; align-items: flex-start;"><span style="color: var(--green);">✓</span> <span>${p}</span></li>`).join('')}
+              </ul>
+            </div>
+            <div>
+              <div style="font-size: 10px; font-weight: 700; color: var(--color-cscore); text-transform: uppercase; margin-bottom: 8px;">Cons</div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; padding-left: 0;">
+                ${consList.map(c => `<li style="font-size: 12.5px; color: #FECACA; display: flex; gap: 6px; align-items: flex-start;"><span style="color: var(--color-cscore);">✗</span> <span>${c}</span></li>`).join('')}
+              </ul>
+            </div>
+          </div>
+        `;
+
+        resourcesHeader.innerText = 'Roles This Skill Helps';
+        const rolesList = skill.roles || [];
+        resourcesContainer.innerHTML = `
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; padding-top: 4px;">
+            ${rolesList.length > 0 ? rolesList.map(rName => {
+              const roleColor = roleColors[rName] || 'var(--accent)';
+              return `<span style="font-size: 10px; color: ${roleColor}; border: 1px solid ${roleColor}33; background: ${roleColor}11; padding: 4px 8px; border-radius: 4px; font-weight: 700; text-transform: uppercase;">${rName}</span>`;
+            }).join('') : `<span style="font-size: 11px; color: var(--muted);">General logical & analytical foundation.</span>`}
+          </div>
+        `;
+      }
+
       document.getElementById('drawer').classList.add('open');
       document.getElementById('drawer-backdrop').classList.add('open');
 
-      // Highlight active card
       document.querySelectorAll('.skill-card').forEach(c => c.classList.remove('active'));
       const activeCard = document.querySelector(`.skill-card[data-id="${skillId}"]`);
       if (activeCard) activeCard.classList.add('active');
     }
 
-    // Close Detail Drawer
     function closeDetail() {
       activeSkillId = null;
       document.getElementById('drawer').classList.remove('open');
@@ -2421,7 +1896,6 @@ resources: [
       document.querySelectorAll('.skill-card').forEach(c => c.classList.remove('active'));
     }
 
-    // Toggle Mastered Checkbox logic
     document.getElementById('mastery-toggle-box').addEventListener('click', () => {
       if (!activeSkillId) return;
 
@@ -2430,13 +1904,11 @@ resources: [
       const card = document.querySelector(`.skill-card[data-id="${activeSkillId}"]`);
 
       if (completedSkills[activeSkillId]) {
-        // Unmark
         completedSkills[activeSkillId] = false;
         toggleBox.classList.remove('active');
         checkVal.innerText = '';
         if (card) card.classList.remove('mastered');
       } else {
-        // Mark as Mastered
         completedSkills[activeSkillId] = true;
         toggleBox.classList.add('active');
         checkVal.innerText = '✓';
@@ -2446,11 +1918,9 @@ resources: [
       saveCompletedStates();
     });
 
-    // Close events listeners
     document.getElementById('drawer-close').addEventListener('click', closeDetail);
     document.getElementById('drawer-backdrop').addEventListener('click', closeDetail);
 
-    // Track Filter logic
     document.querySelectorAll('.filter-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -2469,7 +1939,6 @@ resources: [
       });
     });
 
-    // Search logic
     document.getElementById('search-input').addEventListener('input', (e) => {
       const query = e.target.value.toLowerCase().trim();
       const cards = document.querySelectorAll('.skill-card');
@@ -2481,10 +1950,12 @@ resources: [
         if (!skill) return;
 
         const titleMatch = skill.title.toLowerCase().includes(query);
-        const subtopicMatch = skill.subtopics.some(sub => sub.toLowerCase().includes(query));
+        const subtopicMatch = skill.subtopics ? skill.subtopics.some(sub => sub.toLowerCase().includes(query)) : false;
         const whyMatch = skill.why.toLowerCase().includes(query);
+        const prosMatch = skill.pros ? skill.pros.some(p => p.toLowerCase().includes(query)) : false;
+        const consMatch = skill.cons ? skill.cons.some(c => c.toLowerCase().includes(query)) : false;
 
-        if (query === '' || titleMatch || subtopicMatch || whyMatch) {
+        if (query === '' || titleMatch || subtopicMatch || whyMatch || prosMatch || consMatch) {
           card.style.opacity = '1';
           card.style.pointerEvents = 'auto';
         } else {
