@@ -5257,9 +5257,14 @@ function ResumeATSAnalyzer() {
       }
     }
   });
-  const rawSkills = getDynamicSkills(activeRole, monthProgress);
-  const currentSkillsList = Array.from(new Set([...rawSkills.current, ...masteredSubSkills]));
-  const learningSkillsList = rawSkills.learning.filter(s => !masteredSubSkills.some(ms => ms.toLowerCase() === s.toLowerCase() || s.toLowerCase().includes(ms.toLowerCase()) || ms.toLowerCase().includes(s.toLowerCase())));
+  const rawSkills = getDynamicSkills(activeRole, monthProgress) || {
+    current: [],
+    learning: [],
+    planned: []
+  };
+  const currentSkillsList = Array.from(new Set([...(rawSkills.current || []), ...masteredSubSkills]));
+  const learningSkillsList = (rawSkills.learning || []).filter(s => !masteredSubSkills.some(ms => ms.toLowerCase() === s.toLowerCase() || s.toLowerCase().includes(ms.toLowerCase()) || ms.toLowerCase().includes(s.toLowerCase())));
+  const plannedSkillsList = (rawSkills.planned || []).filter(s => !masteredSubSkills.some(ms => ms.toLowerCase() === s.toLowerCase() || s.toLowerCase().includes(ms.toLowerCase()) || ms.toLowerCase().includes(s.toLowerCase())));
   const dynamicResume = {
     name: "Srihari [Last Name]",
     title: getDynamicTitle(activeRole),
@@ -5279,7 +5284,8 @@ function ResumeATSAnalyzer() {
     projects: getDynamicProjects(activeRole, monthProgress),
     skills: {
       current: currentSkillsList,
-      learning: learningSkillsList
+      learning: learningSkillsList,
+      planned: plannedSkillsList
     }
   };
   const role = roleRequirements[activeRole];

@@ -3065,12 +3065,15 @@ function ResumeATSAnalyzer() {
     }
   });
 
-  const rawSkills = getDynamicSkills(activeRole, monthProgress);
+  const rawSkills = getDynamicSkills(activeRole, monthProgress) || { current: [], learning: [], planned: [] };
   const currentSkillsList = Array.from(new Set([
-    ...rawSkills.current,
+    ...(rawSkills.current || []),
     ...masteredSubSkills
   ]));
-  const learningSkillsList = rawSkills.learning.filter(
+  const learningSkillsList = (rawSkills.learning || []).filter(
+    s => !masteredSubSkills.some(ms => ms.toLowerCase() === s.toLowerCase() || s.toLowerCase().includes(ms.toLowerCase()) || ms.toLowerCase().includes(s.toLowerCase()))
+  );
+  const plannedSkillsList = (rawSkills.planned || []).filter(
     s => !masteredSubSkills.some(ms => ms.toLowerCase() === s.toLowerCase() || s.toLowerCase().includes(ms.toLowerCase()) || ms.toLowerCase().includes(s.toLowerCase()))
   );
 
@@ -3093,7 +3096,8 @@ function ResumeATSAnalyzer() {
     projects: getDynamicProjects(activeRole, monthProgress),
     skills: {
       current: currentSkillsList,
-      learning: learningSkillsList
+      learning: learningSkillsList,
+      planned: plannedSkillsList
     }
   };
 
