@@ -2105,7 +2105,15 @@ function getDynamicSummary(role, monthIndex) {
     "Sports Analyst": "KIIT ECS student (2027) passionate about sports data. Specialized in player performance benchmarking, expected value modeling, and processing large-scale cricket datasets using Python.",
     "Financial Analyst": "KIIT ECS student (2027) with strong foundations in unit economics, financial modeling, and scenario analysis. Experienced in building automated dashboards to track AOV and GMV metrics.",
     "Content Strategist": "KIIT ECS student (2027) and founder of Sahitya Rachanalu. Expert in creator community scaling, content calendars optimization, organic distribution, and audience engagement telemetry.",
-    "SEO Analyst": "KIIT ECS student (2027) specializing in search traffic growth. Experienced in keyword discovery, page indexing optimizations, technical SEO site audits, and ranking analysis."
+    "SEO Analyst": "KIIT ECS student (2027) specializing in search traffic growth. Experienced in keyword discovery, page indexing optimizations, technical SEO site audits, and ranking analysis.",
+    "Full Stack Developer": "KIIT ECS student (2027) specializing in building responsive, modern web applications. Skilled in the MERN stack (MongoDB, Express, React, Node.js), TypeScript, Vercel deployments, and Firebase integrations.",
+    "Backend Developer": "KIIT ECS student (2027) focused on server-side architecture, RESTful API design, database schema design, and secure authentication flows utilizing Node.js, Express, MongoDB, and Firebase.",
+    "SDE (Intern)": "KIIT ECS student (2027) with a strong foundation in Data Structures and Algorithms (DSA), complexity analysis, OOPs principles, sorting and search patterns, and clean code principles.",
+    "Database Administrator": "KIIT ECS student (2027) specializing in relational database schema design, advanced SQL querying (CTEs, Window Functions), normalization, NoSQL document modeling, and query execution optimizations.",
+    "Content Writer": "KIIT ECS student (2027) specializing in SEO content curation, copyediting, and high-impact digital articles. Experienced in creating structured long-form content and managing editorial pipelines.",
+    "Copywriter": "KIIT ECS student (2027) focused on conversion copywriting, landing page optimization, CTA copy, and audience psychology. Skilled in crafting persuasive messaging to improve customer signup rates.",
+    "Narrative Designer": "KIIT ECS student (2027) specializing in creative world-building, scriptwriting, character bible creation, and dialogue design. Experienced in structuring lore timelines and interactive storylines.",
+    "Growth Marketer": "KIIT ECS student (2027) specializing in digital marketing campaigns, Google Analytics (GA4), marketing automation via HubSpot, and conversion rate optimization (CRO) through data attribution."
   };
   
   const base = summaries[role] || summaries["Data Analyst"];
@@ -2127,7 +2135,15 @@ function getDynamicTitle(role) {
     "Sports Analyst": "Sports Analyst | Player Performance & Cricket Data",
     "Financial Analyst": "Financial Analyst | Unit Economics & Modeling",
     "Content Strategist": "Content Strategist | Brand Growth & Writing",
-    "SEO Analyst": "SEO Analyst | SEO Architecture & Web Traffic"
+    "SEO Analyst": "SEO Analyst | SEO Architecture & Web Traffic",
+    "Full Stack Developer": "Full Stack Developer | React, Node.js & TypeScript",
+    "Backend Developer": "Backend Developer | API Design & NoSQL Databases",
+    "SDE (Intern)": "SDE Intern | Data Structures & Algorithms (DSA) & OOPs",
+    "Database Administrator": "Database Administrator | Database Design & SQL",
+    "Content Writer": "Content Writer | SEO Writing & Content Curation",
+    "Copywriter": "Copywriter | Conversion Copy & Brand Strategy",
+    "Narrative Designer": "Narrative Designer | Scriptwriter & Creative World-Building",
+    "Growth Marketer": "Growth Marketer | GA4, HubSpot & Digital Campaigns"
   };
   return titles[role] || "Analyst | Product & Growth | Sports Data";
 }
@@ -2201,6 +2217,14 @@ function getDynamicProjects(role, monthIndex) {
   const isFA = role === "Financial Analyst";
   const isCS = role === "Content Strategist";
   const isSEO = role === "SEO Analyst";
+  const isFSD = role === "Full Stack Developer";
+  const isBackend = role === "Backend Developer";
+  const isSDE = role === "SDE (Intern)";
+  const isDBA = role === "Database Administrator";
+  const isWriter = role === "Content Writer";
+  const isCopywriter = role === "Copywriter";
+  const isNarrative = role === "Narrative Designer";
+  const isGrowth = role === "Growth Marketer";
 
   const hiremap = {
     id: "hiremap",
@@ -2213,9 +2237,15 @@ function getDynamicProjects(role, monthIndex) {
         ? "Contributed directly to product definition: user persona analysis, friction-free onboarding, and click tracking metrics"
         : isBA 
         ? "Gathered user requirements from 50+ students to define PRD and align feature scopes with technical timelines"
+        : isFSD || isBackend
+        ? "Implemented server-side API endpoints, role-based auth via Firebase, and Firestore schema rules to support recruitment pipelines"
+        : isSDE
+        ? "Designed O(N log N) student-job matching algorithms and complexity-optimized search indexes"
         : "Implemented role-based auth, dynamic dashboards, and smooth UI transitions with Framer Motion",
-      isDA 
+      isDA || isDBA
         ? "Connected Firebase database schema metrics, logging average registration counts and active session patterns"
+        : isCopywriter || isWriter || isCS || isSEO || isGrowth
+        ? "Designed landing page headlines, CTA copy, and tooltips optimized to reduce student registration drop-offs"
         : "Contributed to product thinking: user flow, onboarding design, and feature prioritization",
     ],
     skills_demonstrated: ["Frontend Dev", "Product Thinking", "Deployment (Vercel)"],
@@ -2228,11 +2258,17 @@ function getDynamicProjects(role, monthIndex) {
     tags: ["Content Strategy", "Community Building", "Growth", "Telugu"],
     bullets: [
       "Founded and scaled a Telugu literary content community from scratch",
-      isGA || isSEO || isCS
+      isGA || isSEO || isCS || isGrowth || isWriter || isCopywriter
         ? "Curated SEO-driven organic content calendar, driving 20%+ month-on-month growth in user engagement and community reach"
         : "Curated and published original literary content; drove organic growth through consistent programming",
-      isDA || isBA
+      isDA || isBA || isDBA || isFA
         ? "Monitored visitor demographics, peak traffic times, and retention indices using Google Sheets trackers"
+        : isNarrative || isWriter
+        ? "Developed character bibles, world-building lore timelines, and script analysis for the Cinepedia database module"
+        : isFSD || isBackend
+        ? "Designed Next.js + MDX routing, lyrics search endpoints, and customized dialogue card-flip CSS animations"
+        : isSDE
+        ? "Optimized search query routing algorithms and indexing performance for database-backed dialogue fictionary"
         : "Demonstrated: content calendar management, audience engagement, and creator community strategy",
     ],
     skills_demonstrated: ["Content Strategy", "Community Growth", "Brand Building", "Organic Distribution"],
@@ -2244,7 +2280,7 @@ function getDynamicProjects(role, monthIndex) {
   if (monthIndex === 0) {
     iplStatus = "Planned (Start: June 2026)";
     iplBullets = [
-      isSA 
+      isSA || isSDE
         ? "Planned: Process ball-by-ball IPL telemetry datasets to evaluate player efficiency models"
         : "Planned: Analyze 2008–2026 IPL dataset to surface trends in batting, bowling, and season performance",
       "Planned: Build interactive visualizations of player performance and team metrics in Streamlit"
@@ -2252,13 +2288,13 @@ function getDynamicProjects(role, monthIndex) {
   } else if (monthIndex === 1) {
     iplStatus = "In Progress (June 2026)";
     iplBullets = [
-      isDA || isSA
+      isDA || isSA || isSDE
         ? "Gathered and cleaned historical IPL match data and player auction rosters using Python (Pandas)"
         : "Gathered historical IPL match stats and player salary records",
-      isDA 
+      isDA || isDBA
         ? "Designed normalized star schema database models mapping matches to ball-by-ball delivery facts"
         : "Designed database tables mapping matches to players and team parameters",
-      isSA 
+      isSA || isFA
         ? "Formulating expected performance indicators (valuation index) to benchmark auction costs against output strike rates"
         : "Drafting metrics to evaluate player value-for-money trends"
     ];
@@ -2266,13 +2302,13 @@ function getDynamicProjects(role, monthIndex) {
     iplStatus = "Completed";
     iplBullets = [
       "Analyzed 2008–2026 IPL dataset (ipl.csv) to surface trends in batting, bowling, and season performance",
-      isDA 
+      isDA || isDBA
         ? "Built relational database schemas with optimized indexes, reducing query response times by 30%"
         : isPA 
         ? "Analyzed partnership durations and team batting orders to map event sequences and batting drop-offs"
-        : isBA 
+        : isBA || isFA
         ? "Formulated valuation equations to audit auction spending efficiencies, identifying 12+ overpriced assets"
-        : isGA 
+        : isGA || isCS || isSEO || isWriter || isCopywriter || isGrowth
         ? "Wrote high-traction analytical blog articles on player salaries, generating 4,000+ views in cricket communities"
         : isSA 
         ? "Benchmarked player value-for-money index using batting strike rates, bowling average partitions, and auction costs"
@@ -2302,14 +2338,14 @@ function getDynamicProjects(role, monthIndex) {
     bplStatus = "In Progress (June 2026)";
     bplBullets = [
       "Mapped live music density, pub locations, and capacity sizes across Hyderabad",
-      isDA 
+      isDA || isDBA || isSDE
         ? "Drafted primary SQL table schemas and mapping keys linking bands to available scheduling slots"
         : "Drafted primary schema relationships mapping bands to available slots"
     ];
   } else if (monthIndex === 2) {
     bplStatus = "In Progress (July 2026)";
     bplBullets = [
-      isPA || isBA || isCS
+      isPA || isBA || isCS || isWriter || isCopywriter || isGrowth
         ? "Conducted survey on 100+ crowd attendees to identify motivation factors (vibe vs price vs artist)"
         : "Conducted surveys of 100+ crowd attendees on event preferences and pricing constraints",
       "Visualized crowd motivation patterns and peak occupancy curves for venues"
@@ -2317,7 +2353,7 @@ function getDynamicProjects(role, monthIndex) {
   } else if (monthIndex === 3) {
     bplStatus = "In Progress (August 2026)";
     bplBullets = [
-      isDA || isBA || isFA
+      isDA || isBA || isFA || isDBA
         ? "Compiled Musician catalog indexing active bands, pricing tiers, and genre competencies in a normalized database"
         : "Compiled Musician catalog indexing active bands, pricing tiers, and genre competencies",
       "Formulated venue-band fit coefficients to optimize venue lineups"
@@ -2325,7 +2361,7 @@ function getDynamicProjects(role, monthIndex) {
   } else if (monthIndex === 4) {
     bplStatus = "In Progress (September 2026)";
     bplBullets = [
-      isPA || isDA
+      isPA || isDA || isSDE
         ? "Developed scheduling allocation algorithm (conflict solver) to prevent double-booking slots"
         : "Developed allocation algorithm to solve venue calendar booking conflicts",
       "Integrated matching algorithms prioritizing venue capacity limitations and target margins"
@@ -2341,7 +2377,7 @@ function getDynamicProjects(role, monthIndex) {
   } else if (monthIndex === 6) {
     bplStatus = "In Progress (November 2026)";
     bplBullets = [
-      isPA || isGA
+      isPA || isGA || isGrowth
         ? "Built booking funnel user tracking (BookMyShow style) to map cart drop-offs and attribute conversion lifts"
         : "Built booking funnel user tracking (BookMyShow style) to map cart drop-offs",
       "Attributed booking conversion gains during marketing campaigns and promo activations"
@@ -2353,7 +2389,7 @@ function getDynamicProjects(role, monthIndex) {
         ? "Optimized checkout booking funnel, reducing transaction friction points and boosting conversion rate by 14%"
         : isBA || isFA
         ? "Built financial projection solver forecasting break-even gig allocations for Tier 1 and Tier 2 local venues"
-        : isGA 
+        : isGA || isGrowth
         ? "Conducted attribution analysis on reels ad impressions, reducing CAC by 18% during weekend ticket promotions"
         : "Built venue & band matchmaking system combining audience demand and supply models",
       "Published Hyderabad Live Music Economic Impact Report containing pricing tier simulations",
@@ -2380,23 +2416,23 @@ function getDynamicProjects(role, monthIndex) {
     ecomStatus = "In Progress (August 2026)";
     ecomBullets = [
       "Scraped Flipkart and Amazon product review catalogs for sentiment tracking",
-      isDA || isPA
+      isDA || isPA || isFSD
         ? "Mapped user transaction funnels from ad impressions to cart adds and checkouts using SQL"
         : "Mapped user transaction funnels from ad impressions to cart adds and checkouts"
     ];
   } else {
     ecomStatus = "Completed";
     ecomBullets = [
-      isDA 
+      isDA || isDBA
         ? "Analyzed Big Billion Days sales datasets using window functions and CTEs to identify pricing elasticity"
         : isPA 
         ? "Identified key funnel leakage points where 15% of checkout additions dropped due to shipping transparent pricing"
         : isBA 
         ? "Demonstrated that urgency mechanics and price anchors drive conversions significantly over generic discounts"
-        : isGA 
+        : isGA || isGrowth || isSEO || isCS
         ? "Analyzed Reels ad attribution, revealing Reels CTR converts 2.5x higher than story ad formats"
         : "Analyzed Big Billion Days sales datasets to identify price anchoring and consumer biases",
-      isDA || isPA || isBA
+      isDA || isPA || isBA || isFSD || isBackend
         ? "Built interactive cohort retention and conversion dashboards mapping checkout abandonments across categories"
         : "Built interactive funnel conversion dashboards mapping cart abandonments across categories",
       isFA || isBA
@@ -2429,13 +2465,13 @@ function getDynamicProjects(role, monthIndex) {
   } else {
     ottStatus = "Completed";
     ottBullets = [
-      isDA || isSEO || isCS
+      isDA || isSEO || isCS || isWriter || isCopywriter
         ? "Correlated YouTube movie trailer search sentiment scores with opening box office collections using Python NLP libraries"
         : "Correlated YouTube movie trailer sentiment scores with opening box office collections",
-      isPA || isBA
+      isPA || isBA || isFSD || isBackend
         ? "Designed predictive user churn model mapping viewing metrics, account logins, and billing periods"
         : "Designed churn prediction model based on user engagement metrics and billing periods",
-      isPA 
+      isPA || isSDE
         ? "Built recommendation system engine with collaborative filtering vectors to optimize feature conversions"
         : "Built final recommendation system engine based on user preference vectors"
     ];
@@ -2502,6 +2538,54 @@ const roleRequirements = {
     must_have: ["SEO", "Google Analytics", "Keyword Research", "On-page Optimization", "Technical SEO"],
     good_to_have: ["SEMrush/Ahrefs", "Search Console", "Content Strategy", "Link Building"],
     ats_keywords: ["SEO", "keyword research", "on-page", "technical SEO", "Google Analytics", "search console", "organic traffic", "rankings", "backlinks"],
+  },
+  "Full Stack Developer": {
+    color: "#2ECC71",
+    must_have: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "HTML/CSS", "Vite", "Git/GitHub", "Vercel"],
+    good_to_have: ["Firebase", "REST APIs", "Tailwind CSS", "Framer Motion", "JWT/Auth"],
+    ats_keywords: ["Full Stack", "React", "TypeScript", "Node.js", "Express", "MongoDB", "REST API", "Vercel", "Vite", "Frontend", "Backend", "MERN", "database schema"],
+  },
+  "Backend Developer": {
+    color: "#38BDF8",
+    must_have: ["Node.js", "Express", "MongoDB", "SQL", "DBMS", "Database normalization", "Firebase Admin", "REST APIs"],
+    good_to_have: ["JWT/Auth", "Mongoose", "Postman", "Error Handling", "Query Optimization"],
+    ats_keywords: ["Backend", "Node.js", "Express", "MongoDB", "NoSQL", "SQL", "DBMS", "REST API", "authorization", "schema", "query optimization", "server"],
+  },
+  "SDE (Intern)": {
+    color: "#6366F1",
+    must_have: ["Complexity Analysis", "OOPs", "Binary Search", "Sorting Algorithms", "Two Pointers", "Sliding Window", "Recursion"],
+    good_to_have: ["Trees", "Advanced Trees/Trie", "Backtracking", "Divide and Conquer", "TypeScript"],
+    ats_keywords: ["SDE", "intern", "software engineer", "data structures", "algorithms", "DSA", "complexity", "OOPs", "sorting", "searching", "problem solving", "binary search", "sliding window"],
+  },
+  "Database Administrator": {
+    color: "#10B981",
+    must_have: ["SQL", "DBMS", "Database normalization", "Firestore/NoSQL Schema", "Query Optimization", "Relational Databases", "Star Schema"],
+    good_to_have: ["Indexes", "Firebase Auth", "PostgreSQL/SQLite", "Data warehousing"],
+    ats_keywords: ["database administrator", "DBA", "SQL", "DBMS", "normalization", "schema design", "NoSQL", "Firestore", "query optimization", "indexing", "relational database"],
+  },
+  "Content Writer": {
+    color: "#EC4899",
+    must_have: ["SEO Writing", "Content Strategy", "Keyword Research", "Blog writing", "Brand Messaging & Copywriting"],
+    good_to_have: ["Medium", "LinkedIn publishing", "Cinepedia columns", "Research writing"],
+    ats_keywords: ["content writer", "copywriting", "SEO writing", "blog", "multilingual", "editing", "research", "articles", "publishing", "storytelling", "audience engagement"],
+  },
+  "Copywriter": {
+    color: "#F59E0B",
+    must_have: ["Brand Messaging & Copywriting", "A/B Testing (copy)", "Google Ads Search", "Google Analytics", "HubSpot Marketing Automation"],
+    good_to_have: ["Ad Copy", "Social hooks", "Figma/Canva basics"],
+    ats_keywords: ["copywriter", "conversion", "CTA", "copywriting", "headlines", "advertising", "landing page", "persuasive", "audience psychology", "A/B testing", "brand copy"],
+  },
+  "Narrative Designer": {
+    color: "#A855F7",
+    must_have: ["Brand Messaging & Copywriting", "Content Strategy", "SEO Writing", "Creative Writing", "Lore Timelines", "Character Bibles"],
+    good_to_have: ["Storyboards", "Interactive story flow", "Creative writing", "Nostalgia triggers"],
+    ats_keywords: ["narrative designer", "creative writing", "world-building", "screenplay", "script writer", "dialogue", "storytelling", "lore", "character bible", "creative director"],
+  },
+  "Growth Marketer": {
+    color: "#FB923C",
+    must_have: ["Google Analytics", "HubSpot Marketing Automation", "A/B Testing", "SEO", "Customer Acquisition Cost (CAC)", "Social Media Analytics"],
+    good_to_have: ["Email marketing", "Conversion rate optimization (CRO)", "Google Ads Search", "Cohort retention"],
+    ats_keywords: ["growth marketer", "digital marketing", "GA4", "analytics", "HubSpot", "A/B testing", "acquisition", "retention", "CAC", "ROAS", "social media", "SEO"],
   },
 };
 
