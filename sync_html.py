@@ -1,57 +1,12 @@
 import os
+import subprocess
 
-jsx_path = 'c:\\Users\\KIIT0001\\Downloads\\PERSONAL PROJECTS\\ROADMAP\\roadmap.jsx'
-html_path = 'c:\\Users\\KIIT0001\\Downloads\\PERSONAL PROJECTS\\ROADMAP\\index.html'
-
-with open(jsx_path, 'r', encoding='utf-8') as f:
-    jsx_content = f.read()
-
-TEMPLATE = """<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Srihari's 6-Month Analyst Launch Plan | Execution Roadmap</title>
-  <meta name="description" content="6-month brutally practical execution roadmap: 4+ analytics projects, portfolio website, Sahitya Rachanalu platform, and skill mastery for 4 target Analyst roles." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { background: #080810; color: #E8E8F0; font-family: 'Inter', sans-serif; overflow-x: hidden; }
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: #080810; }
-    ::-webkit-scrollbar-thumb { background: #252540; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #F4A72A; }
-    #root { min-height: 100vh; }
-  </style>
-</head>
-<body>
-  <div id="root">
-    <div style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#080810;color:#E8E8F0;font-family:Inter,Arial,sans-serif;">
-      <div style="max-width:520px;line-height:1.6;">
-        <h1 style="font-size:22px;margin:0 0 8px;color:#F4A72A;">Roadmap is loading...</h1>
-        <p style="margin:0 0 16px;color:#9A9AB3;">If this message stays visible, the React/Babel CDN script did not finish loading.</p>
-      </div>
-    </div>
-  </div>
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <script type="text/babel">
-{JSX_CONTENT}
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(React.createElement(ErrorBoundary, null, React.createElement(CombinedApp)));
-  </script>
-</body>
-</html>
-"""
-
-new_html = TEMPLATE.replace('{JSX_CONTENT}', jsx_content)
-
-with open(html_path, 'w', encoding='utf-8') as f:
-    f.write(new_html)
-
-print("Successfully synced roadmap.jsx into index.html")
+print("Syncing HTML by running node build.js...")
+try:
+    result = subprocess.run(["node", "build.js"], check=True, capture_output=True, text=True)
+    print(result.stdout)
+    print("Successfully built index.html via pre-compiled JSX!")
+except Exception as e:
+    print("Error compiling via build.js:", e)
+    if hasattr(e, 'stderr') and e.stderr:
+        print(e.stderr)

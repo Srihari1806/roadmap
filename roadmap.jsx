@@ -1188,8 +1188,7 @@ const SM_MONTHS_INFO = [
   { name: 'AUGUST',   theme: 'E-Commerce Analytics' },
   { name: 'SEPTEMBER',theme: 'Hiremap Platform' },
   { name: 'OCTOBER',  theme: 'OTT Analysis' },
-  { name: 'NOVEMBER', theme: 'Sahitya Rachanalu' },
-  { name: 'DECEMBER', theme: 'Portfolio Launch' }
+  { name: 'NOV-DEC',  theme: 'Sahitya & Portfolio' }
 ];
 
 const SM_BASE_SKILLS = ['Python (basics)','React','TypeScript','HTML/CSS','Git/GitHub','MS Excel','SEO Writing','Content Strategy','Content Calendar Management','Vite','Vercel'];
@@ -1199,8 +1198,10 @@ const SM_MONTH_SKILLS = {
   august: ['Verbal Ability','Power BI & Data Visualization','DAX Modeling','Funnel & Retention Analytics','React hooks','Operating Systems','On-page Optimization'],
   september: ['Google Analytics & GA4','SEO Architecture & Keyword Research','A/B Testing','LTV/CAC Metrics','HubSpot Marketing Automation','Node.js','Express','MongoDB','Computer Networks','Firebase Admin','Google Ads Search','Technical SEO','Customer Acquisition Cost (CAC)','Social Media Analytics','Firestore/NoSQL Schema'],
   october: ['NLP & Text Analytics','Prompt Engineering','Make/Zapier Automations','REST APIs & PostgreSQL','Audience Research & Campaign Planning','Greedy/DP Algorithms','LLD','Lore Timelines','Character Bibles'],
-  november: ['Predictive Modeling','Financial Literacy & Accounting basics','Data Storytelling & Stakeholder Communication','Financial Modeling & Time Series Forecasting','Advanced Trees/Trie','HLD','Python (yfinance)'],
-  december: ['Consolidation & Case Studies (Business Problem Framing)','System Design Mock Interviews','Backtracking','Divide and Conquer','Mock Aptitude Tests']
+  "nov-dec": [
+    'Predictive Modeling','Financial Literacy & Accounting basics','Data Storytelling & Stakeholder Communication','Financial Modeling & Time Series Forecasting','Advanced Trees/Trie','HLD','Python (yfinance)',
+    'Consolidation & Case Studies (Business Problem Framing)','System Design Mock Interviews','Backtracking','Divide and Conquer','Mock Aptitude Tests'
+  ]
 };
 
 const SM_ROLE_REQS = {
@@ -1359,7 +1360,7 @@ function SkillMapTab() {
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:16, flexWrap:'wrap', marginBottom:14 }}>
           <div>
             <div style={{ color:'#F4A72A', fontSize:10, letterSpacing:2, fontWeight:700, textTransform:'uppercase', fontFamily:"'DM Mono',monospace", marginBottom:2 }}>Interactive Skill Map</div>
-            <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontSize:20, fontWeight:700 }}>7 Tracks × 8 Months</div>
+            <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontSize:20, fontWeight:700 }}>7 Tracks × 6 Months</div>
             <div style={{ color:'#6B6B8A', fontSize:12, marginTop:2 }}>IPL → BPL → E-Commerce → Hiremap → OTT → Sahitya → Portfolio. Click any skill to explore.</div>
           </div>
           <div style={{ background:'rgba(255,255,255,0.02)', border:'1px solid #1E1E2E', borderRadius:8, padding:'10px 16px', minWidth:260 }}>
@@ -1409,8 +1410,8 @@ function SkillMapTab() {
           ))}
           {/* Data rows */}
           {SM_MONTHS_INFO.map((mon, mIdx) => (
-            <React.Fragment key={mon.name}>
-              <div style={{ padding:compactGrid?'10px 8px':'16px 10px', borderBottom:'1px solid #1E1E2E', background:'rgba(255,255,255,0.01)', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', textAlign:'center', borderRight:'2px solid #1E1E2E' }}>
+             <React.Fragment key={mon.name}>
+              <div id={'sm-row-' + mon.name.toLowerCase()} style={{ padding:compactGrid?'10px 8px':'16px 10px', borderBottom:'1px solid #1E1E2E', background:'rgba(255,255,255,0.01)', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', textAlign:'center', borderRight:'2px solid #1E1E2E' }}>
                 <div style={{ fontFamily:"'Space Grotesk',sans-serif", fontSize:compactGrid?14:17, fontWeight:700, color:'#F4A72A', letterSpacing:-0.5 }}>{mon.name}</div>
                 <div style={{ fontSize:compactGrid?8:10, color:'#6B6B8A', marginTop:3, textTransform:'uppercase', fontFamily:"'DM Mono',monospace", lineHeight:1.3 }}>{mon.theme}</div>
               </div>
@@ -1515,7 +1516,20 @@ function SkillMapTab() {
 }
 
 function Roadmap() {
-  const [activeTab, setActiveTab] = useState("overview");
+  const [activeTab, setActiveTab] = useState(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get("tab");
+      if (tabParam && ["overview", "skillmap", "projects", "platforms", "creative", "content-os", "skills", "resume"].includes(tabParam)) {
+        return tabParam;
+      }
+      const hash = window.location.hash.replace("#", "");
+      if (hash && ["overview", "skillmap", "projects", "platforms", "creative", "content-os", "skills", "resume"].includes(hash)) {
+        return hash;
+      }
+    } catch(e) {}
+    return "overview";
+  });
   const [selectedMonth, setSelectedMonth] = useState(0);
   const [expandedMonthTask, setExpandedMonthTask] = useState(null);
   const [checklist, setChecklist] = useState(finalChecklist.map(i => ({ ...i })));
@@ -1721,9 +1735,20 @@ const tabs = [
                   borderRadius: 8,
                   padding: "14px 16px",
                   transition: "border-color 0.2s",
+                  cursor: "pointer",
                 }}
                   onMouseEnter={e => e.currentTarget.style.borderColor = m.color}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = BORDER; e.currentTarget.style.borderLeftColor = m.color; }}
+                  onClick={() => {
+                    setActiveTab("skillmap");
+                    const targetMonth = m.title.split(":")[0].split(" ")[0].toUpperCase();
+                    const mapping = { JUN: 'june', JUL: 'july', AUG: 'august', SEP: 'september', OCT: 'october', NOV: 'nov-dec', DEC: 'nov-dec' };
+                    const monName = mapping[targetMonth] || 'june';
+                    setTimeout(() => {
+                      const el = document.getElementById('sm-row-' + monName.toLowerCase());
+                      if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }, 100);
+                  }}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
@@ -2279,18 +2304,12 @@ const tabs = [
 
           </div>
         )}
-      </div>
-
-<style>{`
-        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
-        * { box-sizing: border-box; }
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-track { background: ${BG}; }
-        ::-webkit-scrollbar-thumb { background: ${BORDER}; border-radius: 2px; }
-      `}</style>
+        </div>
+      )}
     </div>
   );
 }
+
 
 const BASE_SKILLS = ["Python (basics)", "React", "TypeScript", "HTML/CSS", "Git/GitHub", "MS Excel", "SEO Writing", "Content Strategy", "Content Calendar Management", "Vite", "Vercel"];
 
