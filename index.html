@@ -1885,6 +1885,31 @@ const SM_TRACK_CONFIG = {
     color: '#EF4444',
     rgb: '239,68,68'
   },
+  embedded: {
+    label: 'Embedded/Robotics',
+    color: '#06B6D4',
+    rgb: '6,182,212'
+  },
+  cybersecurity: {
+    label: 'Cybersecurity',
+    color: '#F43F5E',
+    rgb: '244,63,94'
+  },
+  devops: {
+    label: 'DevOps/Cloud',
+    color: '#6366F1',
+    rgb: '99,102,241'
+  },
+  uiux: {
+    label: 'UI/UX Design',
+    color: '#D946EF',
+    rgb: '217,70,239'
+  },
+  aiml: {
+    label: 'AI/ML',
+    color: '#14B8A6',
+    rgb: '20,184,166'
+  },
   personal: {
     label: 'Creative/Writing',
     color: '#F4A72A',
@@ -1921,6 +1946,11 @@ const SM_GRID_DATA = {
     dsa: "Fundamentals: Maths · Complexity Analysis",
     fullstack: "Web Development Fundamentals",
     cscore: "OOPS",
+    embedded: "C Programming (Pointers, Memory, bitwise)",
+    cybersecurity: "Linux & Networking Foundations",
+    devops: "Linux + Networking (Shell scripting)",
+    uiux: "Design Basics (Figma, Typography, Layout)",
+    aiml: "Python & Data Foundations (OOP, NumPy, Pandas)",
     personal: "Observe: Consume, research, collect ideas, analyze films/brands/sports/creators"
   },
   JULY: {
@@ -1930,6 +1960,11 @@ const SM_GRID_DATA = {
     dsa: "Data Structures: Array · Hashing · Strings · Matrix",
     fullstack: "JavaScript",
     cscore: "DBMS",
+    embedded: "Digital Electronics & Computer Arch (Logic gates, FSMs)",
+    cybersecurity: "Web Security (OWASP Top 10, SQLi, XSS)",
+    devops: "Git & CI/CD (GitHub Actions)",
+    uiux: "UX Basics (User Flows, Wireframes, IA)",
+    aiml: "Stats & ML Foundations (Regressions, KNN)",
     personal: "Write: Articles, lyrics, stories, analyses, reviews"
   },
   AUGUST: {
@@ -1939,6 +1974,11 @@ const SM_GRID_DATA = {
     dsa: "Linked List · Stack · Queue · Deque · Tree · Heap · Graph",
     fullstack: "Frontend Framework",
     cscore: "OS",
+    embedded: "Microcontrollers & Embedded C (STM32/Arduino)",
+    cybersecurity: "Ethical Hacking Basics (Recon, nmap, Burp)",
+    devops: "Docker Containers (Images, Volumes, Networks)",
+    uiux: "Advanced Figma (Components, Auto-layout, Design systems)",
+    aiml: "Core ML (Trees, Random Forest, XGBoost, Evaluation)",
     personal: "Strategize: Content plans, SEO thinking, brand storytelling, creator economy"
   },
   SEPTEMBER: {
@@ -1948,6 +1988,11 @@ const SM_GRID_DATA = {
     dsa: "Algorithms: Searching · Sorting · Two Pointer · Window Sliding",
     fullstack: "Node.js + Express + MongoDB",
     cscore: "CN",
+    embedded: "Sensors & ESP32 IoT (WiFi, Bluetooth, MQTT)",
+    cybersecurity: "System Security (Windows/Linux Hardening, Logs)",
+    devops: "Cloud AWS (EC2, S3, IAM, VPC)",
+    uiux: "Research (Personas, User Journeys, Flows)",
+    aiml: "Deployment & MLOps (FastAPI, Vercel, MLflow)",
     personal: "Create: Reels, scripts, podcasts, social content, multimedia concepts"
   },
   OCTOBER: {
@@ -1957,6 +2002,11 @@ const SM_GRID_DATA = {
     dsa: "Prefix Sum · Recursion · Greedy Algorithms · Dynamic Programming",
     fullstack: "Databases + API",
     cscore: "LLD",
+    embedded: "RTOS & Advanced Networking (FreeRTOS tasks, Semaphores)",
+    cybersecurity: "Cloud Security (AWS IAM, S3, Secrets Mgmt)",
+    devops: "Kubernetes (Pods, Deployments, Ingress)",
+    uiux: "Responsive Design (Mobile + Desktop)",
+    aiml: "NLP & Generative AI (Embeddings, Vector Search, LLM APIs)",
     personal: "Direct: Story universes, character bibles, creative leadership, production"
   },
   NOVEMBER: {
@@ -1966,6 +2016,11 @@ const SM_GRID_DATA = {
     dsa: "Trie · Segment Tree · Red-Black Tree & Binary Indexed Tree",
     fullstack: "Project (portfolios)",
     cscore: "HLD",
+    embedded: "Specialization (Verilog/FPGA, ROS, or Computer Vision)",
+    cybersecurity: "Certifications (Security+, Google Cert)",
+    devops: "Monitoring & Logging (Prometheus, Grafana)",
+    uiux: "Portfolio Curation (Musicverse, CineHub)",
+    aiml: "RAG & Agentic AI (Vector DBs, LangChain/LangGraph)",
     personal: "Publish: Portfolio curation, LinkedIn, Twitter, website, community building"
   },
   DECEMBER: {
@@ -1975,6 +2030,11 @@ const SM_GRID_DATA = {
     dsa: "Bitwise Algorithms · Backtracking · Divide & Conquer · Branch & Bound · Geometric & Randomized",
     fullstack: "Interview Ready...",
     cscore: "Interview Ready..",
+    embedded: "Systems Portfolio & Integration",
+    cybersecurity: "Final Audit Projects & Dashboard",
+    devops: "Complete CI/CD & Cloud Launch",
+    uiux: "Design Presentation & Launch",
+    aiml: "RAG MVP & Campus Placement Assistant",
     personal: "Interview Ready (Creative Curation)"
   }
 };
@@ -2369,6 +2429,181 @@ const SM_GRID_DETAILS = {
     why: "Structuring creative portfolios to highlight storytelling, scripting, and narrative design skills for creative roles.",
     topics: ["Consolidating scripts, videos, and articles into a creative portfolio", "Building a presentation deck detailing content campaign metrics", "Formulating a personal brand statement for interview introductions"],
     focus: ["Aligning creative works with clear, measurable business metrics", "Highlighting visual layout and typography choices in portfolios", "Presenting creative ideas clearly in professional contexts"]
+  },
+  "june-embedded": {
+    why: "Establishing low-level programming foundations to understand hardware control, direct registers configuration, and memory efficiency.",
+    topics: ["Variables, Loops, and Functions in C", "Pointers, Addresses, and Dereferencing", "Structures, Unions, and Custom Types", "Bitwise Operators & Bitmasking"],
+    focus: ["Eliminating memory leaks in C dynamic arrays", "Using bitwise shifting to configure hardware registers", "File handling & basic data serialization"]
+  },
+  "july-embedded": {
+    why: "Moving from coding logic to hardware mechanics — mapping CPU instructions, physical gates, and finite state machines.",
+    topics: ["Logic Gates, Truth Tables, and K-Maps", "Flip-Flops, Counters, and Registers", "Finite State Machines (FSM) Design", "CPU Architecture & Registers Basics", "Assembly Code Instructions"],
+    focus: ["Designing state transitions for logic controllers", "Analyzing cache hierarchies and memory latencies", "Writing basic assembly commands for data movement"]
+  },
+  "august-embedded": {
+    why: "Programming microcontrollers directly to communicate with sensors and peripherals using industry standard buses.",
+    topics: ["GPIO Configuration & Digital I/O", "Timers, Counters, and Hardware Interrupts", "Serial Communication: UART, SPI, I2C", "Embedded C Bare-metal Drivers", "Arduino & STM32 Platforms"],
+    focus: ["Writing non-blocking delays using timers", "Handling race conditions in Interrupt Service Routines", "Debugging SPI/I2C protocol transactions with logic analyzers"]
+  },
+  "september-embedded": {
+    why: "Sensing physical changes and sending data to the cloud, forming the backbone of edge computing and IoT systems.",
+    topics: ["Ultrasonic & Temperature Sensors", "Accelerometers & Gyroscopes", "ESP32 Wi-Fi & Bluetooth Stack", "MQTT & HTTP IoT Protocols", "Data Serialization (JSON/CBOR)"],
+    focus: ["Optimizing sensor reading noise with filtering", "Implementing network reconnection logic under weak signals", "Designing battery-efficient low-power sleep modes"]
+  },
+  "october-embedded": {
+    why: "Managing concurrent hardware processes deterministically without crashing using real-time operating systems.",
+    topics: ["FreeRTOS Task Scheduling & Priorities", "Queues & Inter-task Communication", "Semaphores & Mutexes for resources", "TCP/IP & UDP Sockets Programming"],
+    focus: ["Avoiding priority inversion and deadlocks in RTOS", "Managing dynamic memory allocation in a deterministic way", "Optimizing socket latency for real-time telemetry"]
+  },
+  "november-embedded": {
+    why: "Deep diving into advanced hardware description or robot middleware to finalize specialized embedded skills.",
+    topics: ["Verilog HDL & RTL System Design", "FPGA Development & Logic Synthesis", "Robot Operating System (ROS Nodes, Topics, Messages)", "PID Control Loops & Motor Feedback", "OpenCV Image Processing on Edge Boards"],
+    focus: ["Solving timing constraints in FPGA RTL designs", "Debugging asynchronous ROS node communication networks", "Configuring PID coefficients to prevent motor overshoot"]
+  },
+  "december-embedded": {
+    why: "Packaging your hardware and firmware projects into a unified, professional systems engineering portfolio.",
+    topics: ["System Integration & Cloud Syncing", "Edge Device Security Hardening", "Hardware Schematics & BOM Documentation", "Technical System Interview Readiness"],
+    focus: ["Writing comprehensive Git READMEs for hardware builds", "Exhibiting edge-to-cloud telemetry in dashboards", "Simulating system failure cases and recovery logs"]
+  },
+  "june-cybersecurity": {
+    why: "Learning Linux command line mechanics and TCP/IP protocol foundations tested in security entry tests.",
+    topics: ["Linux Command Line & File Operations", "Permissions (chmod, chown) & Groups", "TCP/IP Protocols (IP, TCP, UDP)", "DNS, HTTP, HTTPS, and Core Ports", "Wireshark Packet Capture & Filters"],
+    focus: ["Setting up Ubuntu virtual machines securely", "Inspecting raw network traffic for cleartext passwords", "Writing network scanning scripts to map active hosts"]
+  },
+  "july-cybersecurity": {
+    why: "Identifying common web application attack vectors to audit code and deploy countermeasures.",
+    topics: ["OWASP Top 10 Vulnerabilities", "Cross-Site Scripting (XSS) Mechanics", "SQL Injection (SQLi) Extraction", "Cross-Site Request Forgery (CSRF)", "Broken Authentication & Session Flaws"],
+    focus: ["Exploiting and fixing vulnerabilities in DVWA", "Writing structured security audit reports", "Setting up local secure session configurations"]
+  },
+  "august-cybersecurity": {
+    why: "Learning ethical hacking methods to scan, test, and assess system vulnerabilities proactively.",
+    topics: ["Passive & Active Reconnaissance", "Network Scanning (Nmap configurations)", "Web Vulnerability Scanning (Nikto, Gobuster)", "Intercepting Proxies (Burp Suite Basics)", "Common Vulnerability Scoring System (CVSS)"],
+    focus: ["Compiling structured penetration testing logs", "Solving introductory labs on TryHackMe and HackTheBox", "Mapping vulnerabilities to CVSS severity scores"]
+  },
+  "september-cybersecurity": {
+    why: "Securing operating systems and aggregating logs to monitor active threats and unauthorized access.",
+    topics: ["Windows Security & Active Directory", "Linux System Hardening Procedures", "System Logs (Syslog, Event Viewer)", "SIEM Foundations (Splunk/ELK)", "Writing Custom Detection Rules"],
+    focus: ["Aggregating Windows/Linux logs into ELK stack", "Detecting simulated brute-force logins using Splunk dashboards", "Hardening default OS configurations against exploits"]
+  },
+  "october-cybersecurity": {
+    why: "Transitioning threat protection to cloud environments by mastering identity management and storage security.",
+    topics: ["AWS Identity & Access Management (IAM)", "S3 Bucket Security Policies & ACLs", "Network Security Groups & VPC Firewalls", "Secrets Management & API Key Vaults", "CloudTrail Security Logging"],
+    focus: ["Enforcing Principle of Least Privilege in IAM", "Locking down public S3 buckets from exposure", "Auditing network access logs for anomaly detection"]
+  },
+  "november-cybersecurity": {
+    why: "Validating your technical skillset by preparing for standard security certifications and complex projects.",
+    topics: ["CompTIA Security+ Exam Domains", "Google Cybersecurity Certification Prep", "Security Operations Center (SOC) Workflows", "Incident Response & Playbook Design"],
+    focus: ["Solving mock exams with scores above 85%", "Automating log audits via Python regex filters", "Building a secure network configuration architecture"]
+  },
+  "december-cybersecurity": {
+    why: "Consolidating security audit reports, VM setups, and SIEM dashboards into a credible portfolio.",
+    topics: ["Security Operations Portfolio Curation", "SOC Analyst Interview Scenarios", "Explaining Vulns to Non-Technical Staff", "Secure DevOps Integration (DevSecOps)"],
+    focus: ["Documenting 3 penetration testing write-ups", "Configuring live threat monitoring panels", "Answering incident response scenarios under pressure"]
+  },
+  "june-devops": {
+    why: "Setting up automated shell scripts on Linux servers to run web services smoothly.",
+    topics: ["Linux Server Administration", "Bash Shell Scripting & Variables", "Cron Jobs & Task Automation", "Basic Linux Firewalls (UFW/IPTables)", "Hosting Web Servers (Nginx/Apache)"],
+    focus: ["Writing automated log rotation bash scripts", "Deploying static website with HTTPS via Nginx", "Configuring SSH key authentication and disabling passwords"]
+  },
+  "july-devops": {
+    why: "Mastering version control and continuous integration pipelines to automate tests on code updates.",
+    topics: ["Git Advanced Branching & Rebase", "GitHub Pull Request & Code Reviews", "CI/CD Concepts & Pipelines", "GitHub Actions Workflows & Syntax", "Artifacts & Cache Optimization"],
+    focus: ["Building workflow that runs lint and tests on pull request", "Managing deployment secrets securely in GitHub repos", "Setting up cached dependencies to speed up builds"]
+  },
+  "august-devops": {
+    why: "Packaging apps with all system dependencies into lightweight, isolated containers.",
+    topics: ["Docker Engine & Architecture", "Writing Dockerfiles & Base Images", "Multi-stage Builds for smaller size", "Docker Compose Multi-container Orchestration", "Docker Networking & Volumes Storage"],
+    focus: ["Containerizing a MERN stack app with database storage", "Reducing production image sizes using alpine variants", "Configuring internal docker-compose secure networks"]
+  },
+  "september-devops": {
+    why: "Provisioning and deploying scalable web services using major cloud infrastructure providers.",
+    topics: ["AWS Core Services: EC2, S3, IAM", "Virtual Private Clouds (VPC) & Subnets", "Load Balancers & Auto-Scaling Groups", "CloudWatch Metrics & Billing Alarms", "AWS Cloud Practitioner Prep"],
+    focus: ["Configuring high availability server behind ALB", "Managing secure VPC route tables and gateways", "Deploying a REST API server pointing to AWS RDS database"]
+  },
+  "october-devops": {
+    why: "Orchestrating containerized services across clusters of servers for auto-healing and scaling.",
+    topics: ["Kubernetes Architecture (Control Plane vs Nodes)", "Pods, RepliSets, and Deployments", "K8s Networking: Services & Ingress Controllers", "ConfigMaps & Secrets Configuration", "Persistent Volumes (PV & PVC)"],
+    focus: ["Deploying multi-container app on local minikube", "Setting up ingress routing rule for public API endpoints", "Verifying zero-downtime rolling updates in Kubernetes"]
+  },
+  "november-devops": {
+    why: "Monitoring production servers using metrics and logs to catch errors before users do.",
+    topics: ["Prometheus Metrics Collection", "Grafana Dashboards & Visualizations", "Alertmanager Configurations", "Centralized Logging (Loki/Fluentd)", "Site Reliability Engineering (SRE) KPIs"],
+    focus: ["Building a Grafana dashboard for CPU/RAM metrics", "Configuring Slack alerts for critical server downtimes", "Tracing slow request paths using server logging metrics"]
+  },
+  "december-devops": {
+    why: "Consolidating CI/CD pipelines, K8s configs, and monitoring stacks into a professional portfolio.",
+    topics: ["Infrastructure as Code (IaC) Basics", "DevOps Engineer Technical Interviews", "System Design & Scaling Scenarios", "Portfolio Architecture Write-ups"],
+    focus: ["Publishing end-to-end automated deployment repo", "Explaining zero-downtime database migrations", "Answering high-concurrency architecture interview questions"]
+  },
+  "june-uiux": {
+    why: "Developing basic visual design skills (color, typography, spatial layout) using industry-standard tools.",
+    topics: ["Figma Interface, Canvas, and Vectors", "Color Theory: Harmonies, contrast, HSL", "Typography: Scale, hierarchy, readability", "Grids, Margins, and Alignment Rules", "Landing Page Component layouts"],
+    focus: ["Designing a dark-themed responsive landing page", "Ensuring color choices pass WCAG accessibility rules", "Creating typography stylesheets for web layouts"]
+  },
+  "july-uiux": {
+    why: "Shifting focus to user psychology, structuring data, and map navigation flow.",
+    topics: ["Information Architecture & Site Maps", "User Flows & Decision Points", "Low-Fidelity Sketching & Wireframes", "UX Research: Interviews & observations", "Interactive Paper Prototypes"],
+    focus: ["Drafting complete site map for a complex portal", "Creating mobile wireframes for a music player app", "Testing user navigation flow against common tasks"]
+  },
+  "august-uiux": {
+    why: "Applying structured system building in Figma to create reusable, interactive design systems.",
+    topics: ["Figma Components & Variants", "Auto-Layout Rules for responsive components", "Design System Variables & Styles", "Interactive High-Fidelity Prototyping", "Figma Smart Animate transitions"],
+    focus: ["Building dynamic navigation bar with auto-layout", "Designing reusable inputs, buttons, and state cards", "Linking high-fidelity screens for an interactive OTT prototype"]
+  },
+  "september-uiux": {
+    why: "Mapping user behavior, personas, and journeys to make product interfaces intuitive.",
+    topics: ["User Personas & Demographic Profiles", "Customer Journey Maps (CJM)", "Empathy Maps & Pain Points", "Usability Testing Methods", "Affinity Diagramming"],
+    focus: ["Drafting user journey maps for a job-search portal", "Writing usability test scripts for product validation", "Structuring feedback cards into thematic clusters"]
+  },
+  "october-uiux": {
+    why: "Adapting designs across multiple device sizes, aspect ratios, and touch targets.",
+    topics: ["Responsive Layout Grid Rules", "Mobile vs Desktop Interaction Patterns", "Touch Target Guidelines (min 48px)", "Design Handoff Documentation", "Redlining & Specifications for SDEs"],
+    focus: ["Designing mobile and desktop versions of a dashboard", "Creating spacing documentation for frontend handoffs", "Structuring asset export folders for developer use"]
+  },
+  "november-uiux": {
+    why: "Curating high-fidelity designs into a professional, cohesive case study portfolio.",
+    topics: ["Writing UX Case Studies (Context, Goal, Process)", "Designing Mockups & Interactive Demos", "UI Curation on Behance & Dribbble", "Portfolio Website Structure"],
+    focus: ["Structuring Bingoo Musicverse UX case study", "Creating animated mockups showcasing main interactions", "Polishing typography and grids across all pages"]
+  },
+  "december-uiux": {
+    why: "Polishing your design portfolio and practicing design pitches for recruitment presentations.",
+    topics: ["Design Portfolio Curation", "UI/UX Presentation Pitching", "Product Design Interview Prep", "Whiteboard Design Challenges"],
+    focus: ["Documenting 3 complete case studies", "Presenting design decisions based on research data", "Answering whiteboard product strategy challenges"]
+  },
+  "june-aiml": {
+    why: "Mastering Python and multi-dimensional array operations necessary for machine learning data feeds.",
+    topics: ["Python OOP, Classes, Inheritance", "File Operations & Handling Exceptions", "NumPy Arrays, Shapes, Reshaping", "Pandas Data Cleaning & Grouping", "Matplotlib & Seaborn Data Plots"],
+    focus: ["Parsing and cleaning messy CSV dataset files", "Running fast matrix operations without nested loops", "Plotting distributions of player strike rates (IPL)"]
+  },
+  "july-aiml": {
+    why: "Translating statistical mathematics into predictive algorithms using supervised learning.",
+    topics: ["Mean, Median, Standard Deviation", "Linear Regression (Continuous Outputs)", "Logistic Regression (Binary Outputs)", "K-Nearest Neighbors (KNN Classifier)", "Train-Test Splits & Validation"],
+    focus: ["Building house price prediction model from scratch", "Tuning classification thresholds for binary outputs", "Calculating evaluation metrics (MSE, Log Loss)"]
+  },
+  "august-aiml": {
+    why: "Learning non-linear decision tree models and ensemble techniques that win Kaggle tournaments.",
+    topics: ["Decision Trees & Information Gain", "Random Forest Ensemble Models", "XGBoost & Boosting Foundations", "Classification Metrics: Precision, Recall", "F1 Score & ROC-AUC curves"],
+    focus: ["Predicting customer churn based on history", "Tuning tree depth to prevent model overfitting", "Analyzing feature importance scores of credit risk models"]
+  },
+  "september-aiml": {
+    why: "Deploying trained ML model structures as REST APIs that web apps can query in real time.",
+    topics: ["FastAPI Routing & Input Schema", "Pydantic Data Validation Models", "Model Serialization (Joblib/Pickle)", "Render & Vercel Server Deployment", "MLflow Run & Parameter Tracking"],
+    focus: ["Creating endpoints to query prediction outputs", "Tracking model parameters and metrics across runs", "Building Docker containers to host prediction engines"]
+  },
+  "october-aiml": {
+    why: "Transitioning to unstructured text data using modern language models and prompt engineering.",
+    topics: ["Tokenization & Word Token Vocabularies", "Vector Embeddings & Cosine Similarity", "OpenAI & Gemini API Integrations", "Prompt Engineering: Few-shot, Chain-of-Thought", "Vector Databases & Search Basics"],
+    focus: ["Developing PDF text extraction and search", "Designing robust prompt templates for clean JSON outputs", "Interfacing LLM chat history logs with local memory"]
+  },
+  "november-aiml": {
+    why: "Building autonomous systems that combine information retrieval (RAG) with tool-calling capabilities.",
+    topics: ["Retrieval-Augmented Generation (RAG)", "Document Chunking & Indexing Pipelines", "Vector Databases (Pinecone/Chroma)", "AI Agent Task Planning & Actions", "Tool Calling & Functions Execution"],
+    focus: ["Constructing campus placement chatbot query pipeline", "Building multi-agent task workflow using LangGraph", "Implementing semantic caching to save LLM API costs"]
+  },
+  "december-aiml": {
+    why: "Polishing AI/ML codebases, API servers, and RAG prototypes into a robust portfolio.",
+    topics: ["AI Project Curation & GitHub Readmes", "Technical ML System Design Interviews", "AI Ethics & Latency Optimization", "Whiteboard ML Architecture Coding"],
+    focus: ["Documenting end-to-end RAG system deployment", "Measuring API request latency under high loads", "Answering deep learning optimization questions"]
   }
 };
 function buildSkillsData() {
@@ -2395,8 +2630,11 @@ function buildSkillsData() {
   return data;
 }
 const SM_SKILLS_DATA = buildSkillsData();
-const SM_TRACKS_LIST = ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal'];
-function SkillMapTab() {
+const SM_TRACKS_LIST = ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'embedded', 'cybersecurity', 'devops', 'uiux', 'aiml', 'personal'];
+function SkillMapTab({
+  activeTracks = ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal']
+}) {
+  const displayedTracks = SM_TRACKS_LIST.filter(tk => activeTracks.includes(tk));
   const {
     useState: useSt,
     useEffect: useEff,
@@ -2457,7 +2695,7 @@ function SkillMapTab() {
     return skill.title.toLowerCase().includes(q) || skill.why.toLowerCase().includes(q) || (skill.pros || []).some(p => p.toLowerCase().includes(q)) || (skill.cons || []).some(c => c.toLowerCase().includes(q));
   };
   const cellMinH = compactGrid ? 54 : 110;
-  const gridTplCols = compactGrid ? '90px repeat(7, minmax(120px,1fr))' : '140px repeat(7, minmax(180px,1fr))';
+  const gridTplCols = compactGrid ? `90px repeat(${displayedTracks.length}, minmax(120px,1fr))` : `140px repeat(${displayedTracks.length}, minmax(180px,1fr))`;
   return /*#__PURE__*/React.createElement("div", {
     style: {
       background: '#0A0A0F',
@@ -2647,7 +2885,7 @@ function SkillMapTab() {
     style: {
       display: 'grid',
       gridTemplateColumns: gridTplCols,
-      minWidth: compactGrid ? 930 : 1300
+      minWidth: compactGrid ? 90 + displayedTracks.length * 120 : 140 + displayedTracks.length * 180
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
@@ -2666,7 +2904,7 @@ function SkillMapTab() {
       top: 0,
       zIndex: 10
     }
-  }, "Month"), SM_TRACKS_LIST.map(tk => /*#__PURE__*/React.createElement("div", {
+  }, "Month"), displayedTracks.map(tk => /*#__PURE__*/React.createElement("div", {
     key: tk,
     style: {
       padding: compactGrid ? '10px 6px' : '18px 14px',
@@ -2723,7 +2961,7 @@ function SkillMapTab() {
       fontFamily: "'DM Mono',monospace",
       lineHeight: 1.2
     }
-  }, mon.theme)), SM_TRACKS_LIST.map(tk => {
+  }, mon.theme)), displayedTracks.map(tk => {
     const cellSkills = Object.values(SM_SKILLS_DATA).filter(s => s.month === mon.name && s.track === tk);
     const isDimmed = trackFilter !== 'all' && trackFilter !== tk;
     return /*#__PURE__*/React.createElement("div", {
@@ -3074,6 +3312,515 @@ function Roadmap() {
   const [expandedSkill, setExpandedSkill] = useState(null);
   const [domainFilter, setDomainFilter] = useState("All");
   const [selectedCreativeRole, setSelectedCreativeRole] = useState("Content Writer");
+  const [activeTracks, setActiveTracks] = useState(() => {
+    try {
+      const saved = localStorage.getItem("roadmap_active_tracks_v3");
+      return saved ? JSON.parse(saved) : ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal'];
+    } catch (e) {
+      return ['aptitude', 'analyst', 'project', 'dsa', 'fullstack', 'cscore', 'personal'];
+    }
+  });
+  useEffect(() => {
+    try {
+      localStorage.setItem("roadmap_active_tracks_v3", JSON.stringify(activeTracks));
+    } catch (e) {}
+  }, [activeTracks]);
+  const toggleTrackKey = trackKey => {
+    setActiveTracks(prev => {
+      if (prev.includes(trackKey)) {
+        if (prev.length <= 1) return prev;
+        return prev.filter(t => t !== trackKey);
+      } else {
+        return [...prev, trackKey];
+      }
+    });
+  };
+  const activeMonths = React.useMemo(() => {
+    const result = [];
+    const monthConfigs = [{
+      month: 1,
+      title: "Jun 2026: Foundations & Basics",
+      theme: "Basics & Foundations",
+      color: BLUE,
+      roles: ["Embedded Trainee", "Security Intern", "SOC Intern", "DevOps Intern", "UI Designer", "Data Analyst"],
+      baseTasks: [{
+        task: "Learn SQL basics (SELECT, JOINs, Group By)",
+        type: "sql",
+        reqTrack: "analyst"
+      }, {
+        task: "Learn Python Pandas & Matplotlib basics",
+        type: "analytics",
+        reqTrack: "analyst"
+      }, {
+        task: "Prep IPL Match dataset (2008-2026)",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "DSA: Solve dynamic array & logic puzzles in C/C++",
+        type: "dsa",
+        reqTrack: "embedded"
+      }, {
+        task: "C/C++: Write command shell/menu projects in C",
+        type: "project",
+        reqTrack: "embedded"
+      }, {
+        task: "Cyber: Learn Linux command line & network ports basics",
+        type: "cscore",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "Cyber Project: Set up an Ubuntu VM & simple network scanner",
+        type: "project",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "DevOps: Script server tasks using Shell/Bash scripting",
+        type: "cscore",
+        reqTrack: "devops"
+      }, {
+        task: "DevOps Project: Host a landing website on a local Linux server",
+        type: "project",
+        reqTrack: "devops"
+      }, {
+        task: "UI/UX: Master color theory, typography, layouts in Figma",
+        type: "creative",
+        reqTrack: "uiux"
+      }, {
+        task: "UI/UX Project: Design a responsive desktop landing page",
+        type: "project",
+        reqTrack: "uiux"
+      }, {
+        task: "AI/ML: Study OOP, NumPy & Pandas foundations in Python",
+        type: "analytics",
+        reqTrack: "aiml"
+      }, {
+        task: "AI/ML Project: Build a Student Marks Analyzer tool",
+        type: "project",
+        reqTrack: "aiml"
+      }, {
+        task: "Aptitude: Learn logical reasoning (Seating, blood relations)",
+        type: "aptitude",
+        reqTrack: "aptitude"
+      }, {
+        task: "DSA: Learn complexity analysis and Big-O notation",
+        type: "dsa",
+        reqTrack: "dsa"
+      }, {
+        task: "Full Stack: Learn HTML5 semantics, flexbox, CSS grid",
+        type: "fullstack",
+        reqTrack: "fullstack"
+      }, {
+        task: "CS Core: Learn Object-Oriented Programming (OOPS)",
+        type: "cscore",
+        reqTrack: "cscore"
+      }, {
+        task: "Creative: Review successful video formats & write outline",
+        type: "creative",
+        reqTrack: "personal"
+      }]
+    }, {
+      month: 2,
+      title: "Jul 2026: Advanced Data & Workflows",
+      theme: "Advanced Workflows",
+      color: PURPLE,
+      roles: ["Sports Analyst", "Product Analyst", "Hardware Tester", "Web Security Analyst"],
+      baseTasks: [{
+        task: "Learn Power BI/Tableau for basic dashboards",
+        type: "analytics",
+        reqTrack: "analyst"
+      }, {
+        task: "Complete IPL Business & AI Intelligence Layers",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "BPL Analysis: Cross-dataset benchmarking",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "Embedded: Study Digital Logic, K-Maps, FSM, and CPU registers",
+        type: "cscore",
+        reqTrack: "embedded"
+      }, {
+        task: "Embedded Project: Design a simulated Traffic Light Controller FSM",
+        type: "project",
+        reqTrack: "embedded"
+      }, {
+        task: "Cyber: Learn OWASP Top 10, XSS, SQLi, and CSRF flaws",
+        type: "cscore",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "Cyber Practice: Complete PortSwigger Web Security Academy modules",
+        type: "project",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "DevOps: Learn Git operations, pull requests, and branch workflows",
+        type: "cscore",
+        reqTrack: "devops"
+      }, {
+        task: "DevOps Project: Configure automated deploy via GitHub Actions",
+        type: "project",
+        reqTrack: "devops"
+      }, {
+        task: "UI/UX: Study user flows, wireframes, information architecture",
+        type: "creative",
+        reqTrack: "uiux"
+      }, {
+        task: "UI/UX Project: Design a custom Music Streaming App interface",
+        type: "project",
+        reqTrack: "uiux"
+      }, {
+        task: "AI/ML: Study arithmetic mean, median, variance & regressions",
+        type: "analytics",
+        reqTrack: "aiml"
+      }, {
+        task: "AI/ML Project: Build a House Price Prediction model",
+        type: "project",
+        reqTrack: "aiml"
+      }, {
+        task: "Aptitude: Solve quantitative word problems (Work, distance, rates)",
+        type: "aptitude",
+        reqTrack: "aptitude"
+      }, {
+        task: "DSA: Solve array traversals, strings, dynamic arrays",
+        type: "dsa",
+        reqTrack: "dsa"
+      }, {
+        task: "Full Stack: Learn JavaScript async loops, event loop, DOM",
+        type: "fullstack",
+        reqTrack: "fullstack"
+      }, {
+        task: "CS Core: Learn DBMS transaction isolation and B-trees indexing",
+        type: "cscore",
+        reqTrack: "cscore"
+      }, {
+        task: "Creative: Draft a 5-minute dialogue-only screenplay in Fountain",
+        type: "creative",
+        reqTrack: "personal"
+      }]
+    }, {
+      month: 3,
+      title: "Aug 2026: E-Commerce, Frameworks & Scaling",
+      theme: "Frameworks & Scaling",
+      color: GREEN,
+      roles: ["Business Analyst", "Embedded Intern", "SOC Intern", "Docker Engineer"],
+      baseTasks: [{
+        task: "Master Advanced SQL (CTEs, Window functions) & Excel Modeling",
+        type: "sql",
+        reqTrack: "analyst"
+      }, {
+        task: "E-Commerce: Seasonal Sales & Pricing Analysis",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "E-Commerce: Ads Impact & Funnel Drops",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "Embedded: Program STM32 bare-metal GPIO registers and interrupts",
+        type: "cscore",
+        reqTrack: "embedded"
+      }, {
+        task: "Embedded Project: Write an LED/Smart Fan sensor driver",
+        type: "project",
+        reqTrack: "embedded"
+      }, {
+        task: "Cyber: Learn reconnaissance, enumeration, and vuln scanner tools",
+        type: "cscore",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "Cyber Practice: Set up vulnerable app (DVWA) & audit local ports",
+        type: "project",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "DevOps: Learn Docker containerization, images, and networking",
+        type: "cscore",
+        reqTrack: "devops"
+      }, {
+        task: "DevOps Project: Containerize a MERN Full Stack application",
+        type: "project",
+        reqTrack: "devops"
+      }, {
+        task: "UI/UX: Master Figma Auto-Layout, Components, and Design Systems",
+        type: "creative",
+        reqTrack: "uiux"
+      }, {
+        task: "UI/UX Project: Design a premium OTT App video streaming dashboard",
+        type: "project",
+        reqTrack: "uiux"
+      }, {
+        task: "AI/ML: Study Decision Trees, Random Forests, and XGBoost models",
+        type: "analytics",
+        reqTrack: "aiml"
+      }, {
+        task: "AI/ML Project: Build a Customer Churn & Credit Risk Analyzer",
+        type: "project",
+        reqTrack: "aiml"
+      }, {
+        task: "Aptitude: Learn reading comprehension strategies & corrections",
+        type: "aptitude",
+        reqTrack: "aptitude"
+      }, {
+        task: "DSA: Solve linked lists, stacks, queues, heap operations",
+        type: "dsa",
+        reqTrack: "dsa"
+      }, {
+        task: "Full Stack: Learn React/Vite layout architectures and hooks",
+        type: "fullstack",
+        reqTrack: "fullstack"
+      }, {
+        task: "CS Core: Learn OS scheduling processes and thread synchronization",
+        type: "cscore",
+        reqTrack: "cscore"
+      }, {
+        task: "Creative: Draft push notification copies and cart email sequences",
+        type: "creative",
+        reqTrack: "personal"
+      }]
+    }, {
+      month: 4,
+      title: "Sep 2026: Cloud, APIs & System Integration",
+      theme: "APIs & System Integration",
+      color: ACCENT,
+      roles: ["Growth Analyst", "Financial Analyst", "IoT Developer", "Cloud Architect"],
+      baseTasks: [{
+        task: "Learn Cohort Analysis & A/B Testing foundations",
+        type: "analytics",
+        reqTrack: "analyst"
+      }, {
+        task: "E-Commerce: LTV vs CAC Unit Economics",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "Deploy E-Commerce Dashboard & Whitepaper",
+        type: "portfolio",
+        reqTrack: "analyst"
+      }, {
+        task: "Embedded: Interfacing Accel/Gyro sensors and ESP32 Wi-Fi stack",
+        type: "cscore",
+        reqTrack: "embedded"
+      }, {
+        task: "Embedded Project: Build a simulated IoT Smart Weather Station",
+        type: "project",
+        reqTrack: "embedded"
+      }, {
+        task: "Cyber: Study Windows OS Security, Linux hardening, Logs",
+        type: "cscore",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "Cyber Practice: Build a central log aggregator using Splunk/ELK",
+        type: "project",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "DevOps: Study AWS Cloud services (EC2, S3, IAM, VPC networks)",
+        type: "cscore",
+        reqTrack: "devops"
+      }, {
+        task: "DevOps Project: Deploy scalable API server on AWS EC2 & S3",
+        type: "project",
+        reqTrack: "devops"
+      }, {
+        task: "UI/UX: Create user personas, user journeys and maps",
+        type: "creative",
+        reqTrack: "uiux"
+      }, {
+        task: "UI/UX Project: Design a comprehensive user flow for Bingoo portal",
+        type: "project",
+        reqTrack: "uiux"
+      }, {
+        task: "AI/ML: Learn FastAPI, endpoints, and server hosting pipelines",
+        type: "analytics",
+        reqTrack: "aiml"
+      }, {
+        task: "AI/ML Project: Build and deploy a Placement Predictor API",
+        type: "project",
+        reqTrack: "aiml"
+      }, {
+        task: "Aptitude: Learn logical reasoning (Syllogisms, circular seating)",
+        type: "aptitude",
+        reqTrack: "aptitude"
+      }, {
+        task: "DSA: Solve searching, sorting, two pointers, sliding window",
+        type: "dsa",
+        reqTrack: "dsa"
+      }, {
+        task: "Full Stack: Learn Node.js, Express, REST APIs, and MongoDB",
+        type: "fullstack",
+        reqTrack: "fullstack"
+      }, {
+        task: "CS Core: Learn Computer Networks (TCP/IP protocols, subnetting)",
+        type: "cscore",
+        reqTrack: "cscore"
+      }, {
+        task: "Creative: Script 6 short educational explainer videos",
+        type: "creative",
+        reqTrack: "personal"
+      }]
+    }, {
+      month: 5,
+      title: "Oct 2026: NLP, AI Agents & Advanced Infrastructure",
+      theme: "Gen AI & Advanced Infra",
+      color: RED,
+      roles: ["Product Analyst", "AI Developer", "Cloud Security Analyst", "Kubernetes Admin"],
+      baseTasks: [{
+        task: "Study Retention, Churn & Engagement Metrics",
+        type: "analytics",
+        reqTrack: "analyst"
+      }, {
+        task: "OTT: Genre vs Revenue & Demographics",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "Embedded: Multi-task FreeRTOS task scheduling, queues, semaphores",
+        type: "cscore",
+        reqTrack: "embedded"
+      }, {
+        task: "Embedded Project: Build a real-time FreeRTOS multi-sensor hub",
+        type: "project",
+        reqTrack: "embedded"
+      }, {
+        task: "Cyber: AWS IAM, S3 bucket security, security groups configuration",
+        type: "cscore",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "Cyber Project: Implement secrets management & API keys vaults",
+        type: "project",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "DevOps: Learn Kubernetes deployments, pods, ingress, services",
+        type: "cscore",
+        reqTrack: "devops"
+      }, {
+        task: "DevOps Project: Deploy a containerized microservice on Kubernetes",
+        type: "project",
+        reqTrack: "devops"
+      }, {
+        task: "UI/UX: Study responsive grid layouts, breakpoints, mobile web",
+        type: "creative",
+        reqTrack: "uiux"
+      }, {
+        task: "UI/UX Project: Design Mobile & Desktop views for Bingoo platform",
+        type: "project",
+        reqTrack: "uiux"
+      }, {
+        task: "AI/ML: Study tokenization, text embeddings, LLM APIs, prompt engineering",
+        type: "analytics",
+        reqTrack: "aiml"
+      }, {
+        task: "AI/ML Project: Build notes summarizer & interview prep bots",
+        type: "project",
+        reqTrack: "aiml"
+      }, {
+        task: "Aptitude: Master quantitative time, speed, distance problems",
+        type: "aptitude",
+        reqTrack: "aptitude"
+      }, {
+        task: "DSA: Solve recursion, prefix sums, greedy choices",
+        type: "dsa",
+        reqTrack: "dsa"
+      }, {
+        task: "Full Stack: Integrate databases, token authentication, routing",
+        type: "fullstack",
+        reqTrack: "fullstack"
+      }, {
+        task: "CS Core: Learn Low-Level Design (LLD class hierarchies)",
+        type: "cscore",
+        reqTrack: "cscore"
+      }, {
+        task: "Creative: Draft character bibles for a 5-part web series",
+        type: "creative",
+        reqTrack: "personal"
+      }]
+    }, {
+      month: 6,
+      title: "Nov-Dec 2026: Specialization, Projects & Portfolio Launch",
+      theme: "Consolidation & Launch",
+      color: BLUE,
+      roles: ["Strategy Analyst", "Robotics Intern", "AI Engineer", "DevOps Engineer"],
+      baseTasks: [{
+        task: "OTT: COVID Impact & Business Model Comparison",
+        type: "project",
+        reqTrack: "analyst"
+      }, {
+        task: "Complete OTT 12-page Deep Report",
+        type: "creative",
+        reqTrack: "analyst"
+      }, {
+        task: "Embedded: Build ROS control nodes or OpenCV detection pipeline",
+        type: "project",
+        reqTrack: "embedded"
+      }, {
+        task: "Cyber Project: Deploy Security Monitoring Splunk Dashboard & Vuln scanner",
+        type: "project",
+        reqTrack: "cybersecurity"
+      }, {
+        task: "DevOps: Integrate Prometheus & Grafana logging/monitoring metrics",
+        type: "cscore",
+        reqTrack: "devops"
+      }, {
+        task: "DevOps Project: Deploy end-to-end automated CI/CD release pipeline",
+        type: "project",
+        reqTrack: "devops"
+      }, {
+        task: "UI/UX Project: Create visual portfolio for Musicverse, CineHub & Student Tribe",
+        type: "project",
+        reqTrack: "uiux"
+      }, {
+        task: "AI/ML: Master Vector DBs, LangChain/LangGraph, RAG chunking, agents",
+        type: "analytics",
+        reqTrack: "aiml"
+      }, {
+        task: "AI/ML Project: Build Placement AI Assistant & Bingoo Companion",
+        type: "project",
+        reqTrack: "aiml"
+      }, {
+        task: "Deploy Final Portfolio featuring all completed tracks codebases",
+        type: "portfolio",
+        reqTrack: "personal"
+      }, {
+        task: "Mock Interviews & Resume Polishing (Systems + Analyst)",
+        type: "aptitude",
+        reqTrack: "aptitude"
+      }, {
+        task: "Start applying to 20+ target roles in selected tracks",
+        type: "project",
+        reqTrack: "personal"
+      }]
+    }];
+    monthConfigs.forEach(mc => {
+      const activeTasks = mc.baseTasks.filter(t => !t.reqTrack || activeTracks.includes(t.reqTrack));
+      let titleSuffix = "";
+      const selectedSpecs = [];
+      if (activeTracks.includes("embedded")) selectedSpecs.push("Embedded");
+      if (activeTracks.includes("cybersecurity")) selectedSpecs.push("Cyber");
+      if (activeTracks.includes("devops")) selectedSpecs.push("DevOps");
+      if (activeTracks.includes("uiux")) selectedSpecs.push("UI/UX");
+      if (activeTracks.includes("aiml")) selectedSpecs.push("AI/ML");
+      if (selectedSpecs.length > 0) {
+        titleSuffix = ` (Fused with ${selectedSpecs.join(" & ")})`;
+      }
+      result.push({
+        month: mc.month,
+        title: mc.title + titleSuffix,
+        theme: mc.theme,
+        color: mc.color,
+        focusRoles: mc.roles.filter(r => {
+          if (r.includes("Embedded") && !activeTracks.includes("embedded")) return false;
+          if (r.includes("Hardware") && !activeTracks.includes("embedded")) return false;
+          if (r.includes("Security") && !activeTracks.includes("cybersecurity")) return false;
+          if (r.includes("SOC") && !activeTracks.includes("cybersecurity")) return false;
+          if (r.includes("DevOps") && !activeTracks.includes("devops")) return false;
+          if (r.includes("UI") && !activeTracks.includes("uiux")) return false;
+          if (r.includes("AI") && !activeTracks.includes("aiml")) return false;
+          return true;
+        }),
+        projects: [...activeTasks.filter(t => t.type === "project").map(t => t.task.split(":")[1]?.trim() || t.task)].slice(0, 3),
+        skills: [...new Set(activeTasks.map(t => t.type === "sql" || t.type === "analytics" ? t.task.split(":")[0]?.trim() || t.task : null).filter(Boolean))],
+        tasks: activeTasks.map(t => ({
+          task: t.task,
+          type: t.type
+        }))
+      });
+    });
+    return result;
+  }, [activeTracks]);
   const [completedTasks, setCompletedTasks] = React.useState(() => {
     try {
       const saved = localStorage.getItem("roadmap_tasks_v2");
@@ -3093,7 +3840,7 @@ function Roadmap() {
       [taskId]: !prev[taskId]
     }));
   };
-  const allTasksCount = months.reduce((sum, m) => sum + m.tasks.length, 0);
+  const allTasksCount = activeMonths.reduce((sum, m) => sum + m.tasks.length, 0);
   const completedTasksCount = Object.values(completedTasks).filter(Boolean).length;
   const tasksProgress = allTasksCount > 0 ? Math.round(completedTasksCount / allTasksCount * 100) : 0;
   const domains = [{
@@ -3145,7 +3892,7 @@ function Roadmap() {
   };
   const completedCount = checklist.filter(i => i.done).length;
   const progress = Math.round(completedCount / checklist.length * 100);
-  const currentMonthData = months[selectedMonth];
+  const currentMonthData = activeMonths[selectedMonth];
   const checklistCategories = [...new Set(finalChecklist.map(i => i.category))];
   return /*#__PURE__*/React.createElement("div", {
     style: {
@@ -3172,6 +3919,14 @@ function Roadmap() {
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+      flexWrap: "wrap",
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
       alignItems: "center",
       gap: 12,
       marginBottom: 4
@@ -3188,25 +3943,111 @@ function Roadmap() {
       fontWeight: 700,
       textTransform: "uppercase"
     }
-  }, "6-Month Execution Roadmap")), /*#__PURE__*/React.createElement("h1", {
+  }, "6-Month Execution Roadmap")), (() => {
+    const isMultiTrack = activeTracks.some(t => ['embedded', 'cybersecurity', 'devops', 'uiux', 'aiml'].includes(t));
+    let totalProjects = 4;
+    if (activeTracks.includes("embedded")) totalProjects += 2;
+    if (activeTracks.includes("cybersecurity")) totalProjects += 2;
+    if (activeTracks.includes("devops")) totalProjects += 2;
+    if (activeTracks.includes("uiux")) totalProjects += 3;
+    if (activeTracks.includes("aiml")) totalProjects += 5;
+    let targetRolesCount = 4;
+    if (activeTracks.includes("embedded")) targetRolesCount += 2;
+    if (activeTracks.includes("cybersecurity")) targetRolesCount += 2;
+    if (activeTracks.includes("devops")) targetRolesCount += 2;
+    if (activeTracks.includes("uiux")) targetRolesCount += 2;
+    if (activeTracks.includes("aiml")) targetRolesCount += 2;
+    return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", {
+      style: {
+        margin: 0,
+        fontSize: 22,
+        fontWeight: 800,
+        letterSpacing: -0.5,
+        fontFamily: "'Space Grotesk', sans-serif"
+      }
+    }, "Srihari's ", /*#__PURE__*/React.createElement("span", {
+      style: {
+        color: ACCENT
+      }
+    }, isMultiTrack ? "Multi-Discipline" : "Analyst"), " Plan"), /*#__PURE__*/React.createElement("p", {
+      style: {
+        margin: "6px 0 0",
+        color: MUTED,
+        fontSize: 12
+      }
+    }, "180 Days \xB7 ", totalProjects, "+ Projects \xB7 2 Platforms \xB7 ", targetRolesCount, " Target Roles"));
+  })()), /*#__PURE__*/React.createElement("div", {
     style: {
-      margin: 0,
-      fontSize: 22,
-      fontWeight: 800,
-      letterSpacing: -0.5,
-      fontFamily: "'DM Mono', monospace"
+      background: "rgba(255,255,255,0.02)",
+      border: `1px solid ${BORDER}`,
+      borderRadius: 12,
+      padding: "8px 12px",
+      maxWidth: 500
     }
-  }, "Srihari's ", /*#__PURE__*/React.createElement("span", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: {
-      color: ACCENT
+      fontSize: 9,
+      fontWeight: 700,
+      color: "#6B6B8A",
+      textTransform: "uppercase",
+      letterSpacing: 1,
+      marginBottom: 6
     }
-  }, "Analyst"), " Launch Plan"), /*#__PURE__*/React.createElement("p", {
+  }, "Custom Specialization Fusions"), /*#__PURE__*/React.createElement("div", {
     style: {
-      margin: "6px 0 0",
-      color: MUTED,
-      fontSize: 12
+      display: "flex",
+      gap: 6,
+      flexWrap: "wrap"
     }
-  }, "180 Days \xB7 4+ Projects \xB7 2 Platforms \xB7 4 Target Roles"))), /*#__PURE__*/React.createElement("div", {
+  }, [{
+    id: "analyst",
+    label: "📊 Analytics",
+    color: "#3B82F6"
+  }, {
+    id: "embedded",
+    label: "🔌 Embedded",
+    color: "#06B6D4"
+  }, {
+    id: "cybersecurity",
+    label: "🛡️ Cyber",
+    color: "#F43F5E"
+  }, {
+    id: "devops",
+    label: "☁️ DevOps",
+    color: "#6366F1"
+  }, {
+    id: "uiux",
+    label: "🎨 UI/UX",
+    color: "#D946EF"
+  }, {
+    id: "aiml",
+    label: "🎯 AI/ML",
+    color: "#14B8A6"
+  }].map(spec => {
+    const isActive = activeTracks.includes(spec.id);
+    return /*#__PURE__*/React.createElement("button", {
+      key: spec.id,
+      onClick: () => toggleTrackKey(spec.id),
+      style: {
+        background: isActive ? spec.color + "25" : "transparent",
+        color: isActive ? spec.color : "#6B6B8A",
+        border: `1px solid ${isActive ? spec.color : "#1E1E2E"}`,
+        borderRadius: 14,
+        padding: "4px 10px",
+        fontSize: 10,
+        fontWeight: 700,
+        cursor: "pointer",
+        transition: "all 0.2s",
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 4
+      }
+    }, /*#__PURE__*/React.createElement("span", null, spec.label), isActive && /*#__PURE__*/React.createElement("span", {
+      style: {
+        fontSize: 8
+      }
+    }, "\u2713"));
+  })))))), /*#__PURE__*/React.createElement("div", {
     style: {
       borderBottom: `1px solid ${BORDER}`,
       background: CARD,
@@ -3257,7 +4098,9 @@ function Roadmap() {
       background: "#0A0A0F",
       minHeight: "calc(100vh - 140px)"
     }
-  }, /*#__PURE__*/React.createElement(SkillMapTab, null)) : /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement(SkillMapTab, {
+    activeTracks: activeTracks
+  })) : /*#__PURE__*/React.createElement("div", {
     style: {
       maxWidth: 900,
       margin: "0 auto",
@@ -3387,7 +4230,144 @@ function Roadmap() {
       color: MUTED,
       lineHeight: 1.5
     }
-  }, rule.desc))))), /*#__PURE__*/React.createElement("h2", {
+  }, rule.desc))))), activeTracks.some(t => ['embedded', 'cybersecurity', 'devops', 'uiux', 'aiml'].includes(t)) && /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "linear-gradient(135deg, #161e2e, #0b0f19)",
+      border: "1px solid rgba(244,167,42,0.2)",
+      borderRadius: 12,
+      padding: 24,
+      marginBottom: 32,
+      position: "relative",
+      overflow: "hidden"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      position: "absolute",
+      top: -20,
+      right: -20,
+      fontSize: 100,
+      opacity: 0.08
+    }
+  }, "\u26A1"), /*#__PURE__*/React.createElement("h2", {
+    style: {
+      fontSize: 18,
+      fontWeight: 900,
+      color: ACCENT,
+      marginBottom: 8,
+      marginTop: 0
+    }
+  }, "\uD83D\uDD0C Multi-Track System Fusion Guide"), /*#__PURE__*/React.createElement("p", {
+    style: {
+      color: TEXT,
+      fontSize: 13,
+      lineHeight: 1.6,
+      marginBottom: 20
+    }
+  }, "You are combining multiple specialized paths. By targeting conceptual overlaps, you can study these topics in parallel without hitting burnout."), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+      gap: 16
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "rgba(255,255,255,0.02)",
+      padding: 16,
+      borderRadius: 8,
+      border: "1px solid rgba(255,255,255,0.05)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 800,
+      color: "#FFF",
+      marginBottom: 8
+    }
+  }, "\uD83D\uDD04 Fused Overlaps & Synergies"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 8,
+      fontSize: 11,
+      color: MUTED
+    }
+  }, activeTracks.includes("embedded") && /*#__PURE__*/React.createElement("div", null, "\u26A1 ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: TEXT
+    }
+  }, "Embedded:"), " Low-level memory pointers complement DSA math logic. Hardware FSMs map to software systems database schemas."), activeTracks.includes("cybersecurity") && /*#__PURE__*/React.createElement("div", null, "\uD83D\uDEE1\uFE0F ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: TEXT
+    }
+  }, "Cybersecurity:"), " Linux permission levels and TCP/IP networks form the infrastructure base for software deployment."), activeTracks.includes("devops") && /*#__PURE__*/React.createElement("div", null, "\u2601\uFE0F ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: TEXT
+    }
+  }, "DevOps & Cloud:"), " Docker containerization and AWS provisioning scale full-stack web servers dynamically."), activeTracks.includes("uiux") && /*#__PURE__*/React.createElement("div", null, "\uD83C\uDFA8 ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: TEXT
+    }
+  }, "UI/UX Design:"), " Creating high-fidelity Figma components guides frontend layouts and responsive web views."), activeTracks.includes("aiml") && /*#__PURE__*/React.createElement("div", null, "\uD83C\uDFAF ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: TEXT
+    }
+  }, "AI & ML:"), " NumPy/Pandas data cleanups match SQL analytical queries. RAG databases and API deployments round out your engineering capabilities."))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      background: "rgba(255,255,255,0.02)",
+      padding: 16,
+      borderRadius: 8,
+      border: "1px solid rgba(255,255,255,0.05)"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 12,
+      fontWeight: 800,
+      color: "#FFF",
+      marginBottom: 8
+    }
+  }, "\u23F1\uFE0F Daily Time Block Strategy (6h Total)"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 8,
+      fontSize: 11,
+      color: MUTED
+    }
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: "#3B82F6"
+    }
+  }, "1. Daily Routine Tracks (2 Hours):"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      paddingLeft: 10,
+      marginTop: 2
+    }
+  }, "\u2022 1 Hour: DSA / Aptitude / Logic puzzles (Using C/C++ or Python)"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      paddingLeft: 10
+    }
+  }, "\u2022 1 Hour: Creative / Storytelling Writing (essential mental break)")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: "#10B981"
+    }
+  }, "2. Alternating Deep Work Blocks (4 Hours):"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      paddingLeft: 10,
+      marginTop: 2
+    }
+  }, "\u2022 ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: TEXT
+    }
+  }, "Day A (Pure Software):"), " 2h Full Stack API + 2h Data Analytics dashboard work"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      paddingLeft: 10
+    }
+  }, "\u2022 ", /*#__PURE__*/React.createElement("strong", {
+    style: {
+      color: TEXT
+    }
+  }, "Day B (Systems & Specialization):"), " 2h Systems (OS/Logs/Hardening) + 2h Specialization projects (Embedded C/Figma/FastAPI/Wireshark)")))))), /*#__PURE__*/React.createElement("h2", {
     style: {
       fontSize: 13,
       letterSpacing: 2,
@@ -3401,7 +4381,7 @@ function Roadmap() {
       flexDirection: "column",
       gap: 12
     }
-  }, months.map((m, idx) => /*#__PURE__*/React.createElement("div", {
+  }, activeMonths.map((m, idx) => /*#__PURE__*/React.createElement("div", {
     key: idx,
     style: {
       background: CARD,
@@ -5183,6 +6163,36 @@ const roleRequirements = {
     good_to_have: ["dbt", "BigQuery/Snowflake", "A/B Testing", "Cohort Analysis"],
     ats_keywords: ["SQL", "Python", "data analysis", "visualization", "dashboard", "metrics", "KPI", "Excel", "Tableau", "Power BI", "statistical analysis", "cohort", "funnel"]
   },
+  "Embedded Systems & IoT Engineer": {
+    color: "#06B6D4",
+    must_have: ["C/C++ Programming", "Digital Electronics", "Microcontrollers (Arduino/STM32)", "ESP32 & IoT Sensors", "RTOS (FreeRTOS)"],
+    good_to_have: ["Verilog/FPGA", "ROS (Robot Operating System)", "OpenCV (Computer Vision)", "Bare-metal programming"],
+    ats_keywords: ["embedded systems", "firmware", "microcontrollers", "C programming", "ESP32", "STM32", "Arduino", "sensors", "RTOS", "FreeRTOS", "IoT", "MQTT", "SPI", "I2C", "UART", "hardware debugging"]
+  },
+  "Cybersecurity Analyst / SOC": {
+    color: "#F43F5E",
+    must_have: ["Linux & Networking", "OWASP Top 10", "Vulnerability Assessment", "SIEM (Splunk/ELK)", "Cloud Security (AWS IAM)"],
+    good_to_have: ["CompTIA Security+", "Google Cybersecurity", "Penetration Testing", "Wireshark Packet Analysis"],
+    ats_keywords: ["cybersecurity", "SOC analyst", "information security", "vulnerability assessment", "Splunk", "ELK", "Linux security", "network security", "OWASP Top 10", "firewalls", "SIEM", "incident response"]
+  },
+  "Cloud / DevOps Engineer": {
+    color: "#6366F1",
+    must_have: ["Linux Administration", "Git & CI/CD Pipelines", "Docker Containerization", "AWS Cloud Services", "Kubernetes Orchestration"],
+    good_to_have: ["Prometheus & Grafana", "Infrastructure as Code", "Terraform", "Shell scripting"],
+    ats_keywords: ["DevOps", "cloud engineer", "AWS", "CI/CD", "Docker", "Kubernetes", "Git", "GitHub Actions", "Prometheus", "Grafana", "Linux server", "automation", "system administration"]
+  },
+  "UI/UX Designer": {
+    color: "#D946EF",
+    must_have: ["Figma Basics & Design system", "User flow & wireframing", "Auto-layout & Figma components", "User research & CJM", "Responsive design"],
+    good_to_have: ["Design handoffs", "Interactive prototyping", "Typography stylesheet", "WCAG accessibility"],
+    ats_keywords: ["UI/UX designer", "product design", "Figma", "wireframing", "prototyping", "user research", "user journey", "design system", "auto-layout", "components", "responsive design", "accessibility"]
+  },
+  "AI / ML Engineer": {
+    color: "#14B8A6",
+    must_have: ["Python & Data foundations", "Supervised Learning (Regression/KNN)", "Ensemble Models (Random Forest/XGBoost)", "FastAPI Deployment", "RAG & LLM Agents"],
+    good_to_have: ["MLflow Tracking", "Vector Databases", "LangChain/LangGraph", "Fine-tuning"],
+    ats_keywords: ["machine learning", "ML engineer", "AI engineer", "Python", "NumPy", "Pandas", "regression", "classification", "random forest", "XGBoost", "FastAPI", "RAG", "LLM", "agentic AI", "Vector DB"]
+  },
   "Product Analyst": {
     color: "#8B5CF6",
     must_have: ["SQL", "Product Metrics (DAU/MAU/Retention)", "A/B Testing", "Python or Excel", "User Journey Mapping", "Funnel Analysis"],
@@ -5326,6 +6336,16 @@ function getMatchedKeywords(skillTitle) {
       if (sl.includes("audience research") && (sLower.includes("analytics") || sLower.includes("seo") || sLower.includes("audience") || sLower.includes("campaign"))) return true;
       if (sl.includes("campaign planning") && (sLower.includes("content strategy") || sLower.includes("seo") || sLower.includes("campaign"))) return true;
       if (sl.includes("keyword research") && (sLower.includes("seo") || sLower.includes("keyword"))) return true;
+      if (sl.includes("c programming") && (sLower.includes("c programming") || sLower.includes("c/c++") || sLower.includes("embedded c") || sLower.includes("c syntax"))) return true;
+      if (sl.includes("microcontrollers") && (sLower.includes("microcontrollers") || sLower.includes("stm32") || sLower.includes("arduino") || sLower.includes("gpio"))) return true;
+      if (sl.includes("rtos") && (sLower.includes("rtos") || sLower.includes("freertos") || sLower.includes("real-time"))) return true;
+      if (sl.includes("iot") && (sLower.includes("esp32") || sLower.includes("sensors") || sLower.includes("mqtt") || sLower.includes("iot"))) return true;
+      if (sl.includes("robotics") && (sLower.includes("ros") || sLower.includes("robot") || sLower.includes("automation"))) return true;
+      if (sl.includes("computer vision") && (sLower.includes("opencv") || sLower.includes("vision") || sLower.includes("image processing"))) return true;
+      if (sl.includes("cybersecurity") && (sLower.includes("cybersecurity") || sLower.includes("security") || sLower.includes("soc") || sLower.includes("owasp") || sLower.includes("wireshark") || sLower.includes("siem"))) return true;
+      if (sl.includes("devops") && (sLower.includes("devops") || sLower.includes("cloud") || sLower.includes("ci/cd") || sLower.includes("docker") || sLower.includes("kubernetes"))) return true;
+      if (sl.includes("ui/ux") && (sLower.includes("ui/ux") || sLower.includes("design") || sLower.includes("figma") || sLower.includes("wireframing") || sLower.includes("prototyping"))) return true;
+      if (sl.includes("machine learning") && (sLower.includes("ml") || sLower.includes("machine learning") || sLower.includes("regression") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("aiml") || sLower.includes("rag"))) return true;
       if (sl.includes("optimization") && (sLower.includes("seo") || sLower.includes("optimization"))) return true;
       return false;
     });
