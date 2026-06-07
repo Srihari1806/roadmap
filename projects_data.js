@@ -490,23 +490,23 @@ const projectsData = [
     ]
   },
   {
-    id: "telemetry",
-    emoji: "🔌",
-    title: "The Smart Telemetry Box",
-    subtitle: "Embedded · Signal Processing · Network Protocols · Time-Series DB · Real-Time Dashboard",
+    id: "musicbat",
+    emoji: "🏏🎹",
+    title: "The Musical Swing Analyst",
+    subtitle: "Cricket · Music · Electronics · CSE · Edge Computing · Machine Learning",
     accentColor: "#06B6D4",
-    deliverable: "Live Edge-Computing Sports Telemetry Tracker (ESP32/STM32 + IMU sensor + MQTT + real-time Canvas charts)",
-    metaInsight: '"Hardware is just the collector. The value is created in real-time signals, low-latency transmission, and edge analysis."',
+    deliverable: "Real-time cricket swing-to-audio feedback attachment (ESP32 + IMU + KNN edge classifier + Web Audio synth)",
+    metaInsight: '"A cricket swing is not just physics—it has an inherent rhythm. Edge computing translates kinetics into acoustics."',
     layers: [
       {
         num: "1", icon: "🔌", title: "Low-Level Hardware Layer",
         role: "Embedded Systems & IoT Engineer",
         analyticsType: "Register Configuration",
         color: "#06B6D4",
-        what: "Accessing raw physical IMU data directly via I2C/SPI protocols on STM32/ESP32 register levels.",
-        analyze: ["Clock configuration and register offsets", "I2C/SPI bus clock frequency timing", "Raw data output registers for acceleration and gyroscope vectors"],
-        metrics: ["Data acquisition rate (Hz)", "Bus communication latency (us)", "Register read success rate %"],
-        outputs: ["Working bare-metal I2C register driver in C", "Raw accelerometer x-y-z stream logs", "Timing verification graphs"]
+        what: "Accessing raw physical IMU sensor vectors (MPU6050) over I2C on ESP32 registers.",
+        analyze: ["I2C clock frequency configurations", "GPIO pin mappings and register offsets", "Direct buffer reads for accelerometer and gyroscope vectors"],
+        metrics: ["Sensor polling rate (Hz)", "I2C read latency (us)", "Register transmission success rate %"],
+        outputs: ["Working bare-metal MPU6050 I2C driver in C++", "Raw sensor streaming register logs", "Timing verification reports"]
       },
       {
         num: "2", icon: "⚙️", title: "Edge Filtering Layer",
@@ -514,94 +514,94 @@ const projectsData = [
         analyticsType: "Signal Processing",
         color: "#06B6D4",
         what: "Implementing low-footprint Kalman or Complementary filters at the hardware edge to eliminate sensor noise.",
-        analyze: ["IMU gyroscope drift over time", "High-frequency noise from motor vibrations", "Filter coefficients optimization for dynamic response"],
-        metrics: ["Signal-to-noise ratio (SNR) lift (dB)", "Mathematical operation execution time (us)", "Memory allocation overhead (bytes)"],
-        outputs: ["C implementation of Complementary/Kalman filter", "Filtered vs raw motion data overlay charts", "Optimized filter coefficient configurations"]
+        analyze: ["IMU gyroscope drift profiles over time", "High-frequency noise from bat contact vibrations", "Filter coefficients optimization for dynamic response"],
+        metrics: ["Signal-to-noise ratio (SNR) lift (dB)", "Mathematical execution time on ESP32 (us)", "Filter RAM overhead (bytes)"],
+        outputs: ["C++ Complementary/Kalman filter class code", "Filtered vs raw motion data overlay graphs", "Noise profile benchmarks"]
       },
       {
-        num: "3", icon: "📦", title: "Packet Compression Layer",
+        num: "3", icon: "🤖", title: "On-Device KNN Classifier",
+        role: "AI / ML Engineer",
+        analyticsType: "Edge Inference",
+        color: "#14B8A6",
+        what: "Running a low-footprint KNN classifier model on the ESP32 to recognize swing type.",
+        analyze: ["Feature vectors sizing (accel peaks, angular velocity integration)", "Fixed-point math optimizations for embedded CPU", "Classification boundary margins"],
+        metrics: ["Classification accuracy %", "Edge model inference delay (ms)", "Flash/RAM storage footprint (KB)"],
+        outputs: ["Trained KNN model header file in C++", "Feature extraction python script", "Model accuracy analysis charts"]
+      },
+      {
+        num: "4", icon: "📡", title: "Low-Power Telemetry Layer",
         role: "Embedded Systems & IoT Engineer",
-        analyticsType: "Data Optimization",
+        analyticsType: "Low-Power Telemetry",
         color: "#06B6D4",
-        what: "Serializing and compressing sensor streams to reduce wireless transmission payload sizes.",
-        analyze: ["Bitwise packing algorithms for sensor floats", "Protobuf vs JSON serialization size comparison", "Frequency of delta-compression vs full updates"],
-        metrics: ["Payload compression ratio", "Serialization/deserialization CPU cycles", "Packet drop rate under limited bandwidth"],
-        outputs: ["Custom C bit-packing function", "Protobuf message definitions", "Compression efficiency benchmark report"]
+        what: "Establishing low-latency WebSockets connections to stream motion datasets from ESP32 to server gateways.",
+        analyze: ["Wi-Fi RSSI signal strength impact on socket stability", "Protocol overhead of WebSocket frames vs raw TCP", "ESP32 deep sleep/low-power modes during idle"],
+        metrics: ["Socket uptime %", "Telemetry packet latency (ms)", "Active power consumption (mA)"],
+        outputs: ["C++ WebSockets client script", "Auto-reconnection logic module", "Network performance graphs"]
       },
       {
-        num: "4", icon: "📡", title: "Firmware Network Layer",
-        role: "Embedded Systems & IoT Engineer",
-        analyticsType: "Communication Protocols",
-        color: "#06B6D4",
-        what: "Establishing secure, lightweight MQTT network connections with the ESP32 Wi-Fi module.",
-        analyze: ["Wi-Fi RSSI signal strength impact on transmission stability", "MQTT Quality of Service (QoS 0 vs 1 vs 2) performance tradeoffs", "Reconnection handshake time and backoff loops"],
-        metrics: ["MQTT connection uptime %", "Average packet round-trip time (RTT)", "Power consumption during transmission (mA)"],
-        outputs: ["Robust ESP32 Wi-Fi auto-reconnect logic", "MQTT publish/subscribe script in C/Arduino", "Network latency profile graph"]
-      },
-      {
-        num: "5", icon: "🔀", title: "Broker & Ingestion Layer",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Infrastructure Routing",
-        color: "#6366F1",
-        what: "Setting up and scaling an MQTT Broker (Mosquitto) to route incoming device payloads to server streams.",
-        analyze: ["Broker CPU/Memory load under high topic counts", "Rate-limiting rules for misbehaving edge nodes", "Access Control List (ACL) security mappings"],
-        metrics: ["Concurrent device capacity", "Throughput rate (packets/sec)", "Broker queue size overflows"],
-        outputs: ["Secure Mosquitto broker configuration script", "TLS certificate generation commands", "Throughput performance metrics Dashboard"]
-      },
-      {
-        num: "6", icon: "⚡", title: "Backend Streaming Layer",
+        num: "5", icon: "🔀", title: "WebSocket Ingestion Layer",
         role: "Backend Developer",
-        analyticsType: "Event-Driven Processing",
+        analyticsType: "Real-Time Stream Ingestion",
         color: "#38BDF8",
-        what: "Designing a Node.js and Socket.io microservice to stream telemetry data from MQTT queues to client dashboards.",
-        analyze: ["Node.js event-loop blocking under high-frequency sockets", "Memory leakage across active socket connections", "Broker-to-Socket message propagation delay"],
-        metrics: ["Websocket message latency (ms)", "CPU utilization % per 1k clients", "Active socket count"],
-        outputs: ["Node.js server with integrated MQTT client & Websocket server", "Websocket message event payload schemas", "Latency profile reports"]
+        what: "Designing a Node.js server to ingest high-frequency telemetry data streams with minimum serialization overhead.",
+        analyze: ["Node.js event loop lag under concurrent streams", "Buffer pooling strategies for client data frames", "Memory usage profile under telemetry load"],
+        metrics: ["Broker message rate (packets/sec)", "Event loop delay (ms)", "Ingestion server uptime %"],
+        outputs: ["Node.js WebSocket server script", "API payload schemas", "Load test reports"]
       },
       {
-        num: "7", icon: "💾", title: "Time-Series Logging Layer",
+        num: "6", icon: "💾", title: "Time-Series Storage",
         role: "Database Administrator",
-        analyticsType: "Storage Optimization",
+        analyticsType: "Time-Series Logging",
         color: "#10B981",
-        what: "Configuring a time-series database (InfluxDB or TimescaleDB) to store high-frequency telemetry data efficiently.",
-        analyze: ["Database write performance under continuous streams", "Partitioning strategies for raw metrics by device", "Data retention policies and downsampling intervals"],
-        metrics: ["Write latency (ms)", "Disk compression ratio", "Index lookup query response times"],
-        outputs: ["TimescaleDB partition and schema DDL", "InfluxDB downsampling continuous queries", "Storage usage forecasts"]
+        what: "Configuring a database (TimescaleDB) to store high-frequency telemetry data efficiently.",
+        analyze: ["Database partition keys by device and session", "Write speed vs storage footprint compression ratios", "Downsampling algorithms for historic logs"],
+        metrics: ["Write latency (ms)", "TimescaleDB table compression ratio", "Index query lookups speed (ms)"],
+        outputs: ["SQL TimescaleDB table schemas & DDL", "Continuous downsampling SQL queries", "Disk usage forecast graphs"]
       },
       {
-        num: "8", icon: "📊", title: "Real-Time Dashboard Layer",
+        num: "7", icon: "🎵", title: "Web Audio Synth Engine",
         role: "Full Stack Developer",
-        analyticsType: "Descriptive Visualization",
+        analyticsType: "Audio DSP Synthesis",
         color: "#2ECC71",
-        what: "Building a React-based monitoring dashboard displaying real-time sports telemetry charts.",
-        analyze: ["React component re-render performance for high-frequency chart inputs", "Canvas-based (ChartJS/HTML5 Canvas) vs SVG rendering speeds", "State update throttling rules"],
-        metrics: ["Dashboard frame rate (FPS)", "Webpage memory utilization (MB)", "Dashboard loading speed (LCP)"],
-        outputs: ["React dashboard with real-time Canvas charts", "Responsive telemetry tracking UI components", "Interactive speed and angle widgets"]
+        what: "Designing the Web Audio API synthesis logic to map sensor parameters directly to synthesized chords and sound envelopes.",
+        analyze: ["Mapping bat speed to oscillator frequencies", "Mapping bat tilt angles to synthesizer audio filter cutoffs", "Dynamic sound envelope trigger logic based on swing impact peaks"],
+        metrics: ["Audio scheduler latency (ms)", "Synth oscillator count", "Dynamic frequency range (Hz)"],
+        outputs: ["JavaScript Web Audio synthesizer module", "Audio parameter mapping configuration sheet", "Audio wave visualization files"]
       },
       {
-        num: "9", icon: "🎯", title: "Sports Analytics Layer",
+        num: "8", icon: "📊", title: "3D Swing Path visualizer",
+        role: "Full Stack Developer",
+        analyticsType: "3D Kinematics Rendering",
+        color: "#2ECC71",
+        what: "Building a React-based monitoring dashboard using HTML5 Canvas/Three.js to render real-time swing vectors and audio waveforms.",
+        analyze: ["Three.js 3D trace rendering execution speeds", "Chart state update throttling parameters", "Device screen layout responsiveness"],
+        metrics: ["Dashboard rendering speed (FPS)", "Webpage memory utilization (MB)", "UI loading speed (LCP)"],
+        outputs: ["React dashboard component code", "HTML5 Canvas rendering scripts", "Waveform overlay UI widget code"]
+      },
+      {
+        num: "9", icon: "🏏", title: "Sports Analytics & Insights",
         role: "Sports Analyst",
         analyticsType: "Predictive Analytics",
         color: "#EF4444",
-        what: "Mapping accelerometer/gyroscope vector shapes to swing speeds and predicting athlete stroke types.",
-        analyze: ["Vector acceleration signatures for different swings", "Classification accuracy of KNN/Random Forest models", "Features correlation (peak acceleration vs hit velocity)"],
-        metrics: ["Model prediction accuracy %", "Inference delay on backend (ms)", "F1 score for swing classification"],
-        outputs: ["Scikit-learn swing classification model", "Feature engineering python script", "Sports swing efficiency analysis case study"]
+        what: "Building player swing efficiency models benchmarking bat speed against hit quality.",
+        analyze: ["Correlation between swing velocity and classification outcomes", "Impact of grip rotation on swing path consistency", "Identifying optimal swing paths for different bowlers"],
+        metrics: ["Swing efficiency score", "Grip consistency index", "Strike rate lift prediction %"],
+        outputs: ["Swing performance analysis notebook", "Interactive efficiency scatter plots", "Player recommendation reports"]
       }
     ],
     deliverables: [
-      { icon: "🔌", label: "Telemetry Device", desc: "ESP32 firmware code and custom register drivers (C/C++)" },
-      { icon: "🌐", label: "Real-time Site", desc: "Websocket streaming dashboard mapping bat motion vectors" },
-      { icon: "📊", label: "Timescale DB", desc: "Dockerized PostgreSQL database storing millions of coordinate values" },
-      { icon: "📄", label: "Analytical Case Study", desc: "'Edge Filtering and Kalman Drift Mitigation in Motion Tracking'" }
+      { icon: "🔌", label: "ESP32 firmware code", desc: "MPU6050 I2C register driver, Kalman filter, and WebSockets transmission client in C++" },
+      { icon: "🌐", label: "Real-time Web App", desc: "React dashboard showing 3D swing paths, real-time wave envelopes, and Web Audio synths" },
+      { icon: "📊", label: "TimescaleDB instance", desc: "Dockerized SQL database storing millions of high-frequency bat coordinate entries" },
+      { icon: "📄", label: "Case Study (PDF)", desc: "'Kinetic Synthesis: Edge Filtering and Real-Time Motion-to-Audio Translation in Sports'" }
     ],
     roleMap: [
-      { section: "Low-level / Firmware", role: "Embedded Systems & IoT Engineer" },
-      { section: "Broker / Routing", role: "Cloud / DevOps Engineer" },
-      { section: "Event Streaming", role: "Backend Developer" },
-      { section: "DB Logging", role: "Database Administrator" },
-      { section: "Frontend Dashboard", role: "Full Stack Developer" },
-      { section: "Prediction Models", role: "AI / ML Engineer" }
+      { section: "Low-level / DSP Firmware", role: "Embedded Systems & IoT Engineer" },
+      { section: "Edge ML Classification", role: "AI / ML Engineer" },
+      { section: "WebSocket Event Streaming", role: "Backend Developer" },
+      { section: "Time-Series Logging", role: "Database Administrator" },
+      { section: "Audio Synth & Dashboard", role: "Full Stack Developer" },
+      { section: "Performance Analytics", role: "Sports Analyst" }
     ]
   },
   {
@@ -708,243 +708,243 @@ const projectsData = [
       { icon: "🕸️", label: "Vulnerable App", desc: "React+Express web sandbox deliberately packed with 12 vulnerability ports" },
       { icon: "🐍", label: "Attack Simulator", desc: "Python automated attack scanner generating SQLi, XSS and directory traversals" },
       { icon: "🕵️", label: "Intrusion Agent", desc: "Live background log parsing agent written in Python with Discord integrations" },
-      { icon: "📊", label: "SIEM Console", desc: "Local Kibana configuration dashboard index mapping ongoing attack vectors" }
+      { icon: "📊", label: "ELK SIEM Dashboard", desc: "Dockerized Elasticsearch, Logstash and Kibana monitoring dynamic attack maps" }
     ],
     roleMap: [
-      { section: "Vulnerable App Design", role: "Backend Developer" },
+      { section: "Vulnerable Platform", role: "Cybersecurity Analyst / SOC" },
       { section: "Attack Scripts", role: "Cybersecurity Analyst / SOC" },
-      { section: "Structured Logging", role: "Database Administrator" },
-      { section: "Incident Monitoring", role: "Cybersecurity Analyst / SOC" },
-      { section: "Central Logging SIEM", role: "Cloud / DevOps Engineer" },
-      { section: "React Admin Shield", role: "Full Stack Developer" }
+      { section: "Ingestion Pipelines", role: "Cybersecurity Analyst / SOC" },
+      { section: "SIEM Infrastructure", role: "Cybersecurity Analyst / SOC" },
+      { section: "Threat Visualizations", role: "Cybersecurity Analyst / SOC" },
+      { section: "Mitigation Rules", role: "Cybersecurity Analyst / SOC" }
     ]
   },
   {
-    id: "pipeline",
-    emoji: "☁️",
-    title: "The Auto-Scaling Multi-Service Pipeline",
-    subtitle: "DevOps · multi-stage Docker · GitHub Actions CI/CD · AWS Architecture · Grafana Analytics",
+    id: "stagecontroller",
+    emoji: "🎸💡",
+    title: "Audience-Driven Stage Controller",
+    subtitle: "Music · Electronics · CSE · Distributed IoT · WebSockets · DMX lights",
     accentColor: "#6366F1",
-    deliverable: "Automated containerized GitOps pipeline deploying three microservices onto AWS with Prometheus monitoring",
-    metaInsight: '"Code that does not scale automatically is a liability. DevOps bridges raw code to robust, auto-scaling production infrastructure."',
+    deliverable: "Distributed decibel-sensing ESP32 venue nodes controlling DMX stage lighting and guitar pedal effects in real-time",
+    metaInsight: '"Live performances are a conversation between the band and the crowd. We make that conversation literal through hardware feedback loops."',
     layers: [
       {
-        num: "1", icon: "🐳", title: "Microservices Containerization",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Build Optimization",
+        num: "1", icon: "🔌", title: "Acoustic Sensor Node Array",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Acoustic Sensor Integration",
         color: "#6366F1",
-        what: "Writing optimized, secure multi-stage Dockerfiles for frontend web and backend API microservices.",
-        analyze: ["Docker image layers and cache invalidation order", "Alpine/Distroless base images security", "Multi-stage build outputs sizing"],
-        metrics: ["Docker image size (MB)", "Image build time (sec)", "Vulnerability scan count"],
-        outputs: ["Multi-stage Dockerfile for React/Vite", "Multi-stage Dockerfile for Node.js", "Docker image size optimization logs"]
+        what: "Interfacing MAX4466 sound sensors with ESP32 microcontrollers over ADC and internal sampling registers.",
+        analyze: ["ADC sampling frequencies configurations", "Microphone pre-amp gain calibration", "Raw sound voltage measurements"],
+        metrics: ["ADC sampling frequency (kHz)", "Voltage read latency (us)", "Sensor accuracy variance %"],
+        outputs: ["C++ ADC sampling driver script", "Sound pressure voltage logs", "Microphone calibration reports"]
       },
       {
-        num: "2", icon: "⛓️", title: "Multi-Service Orchestration",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Local Orchestration",
+        num: "2", icon: "⚙️", title: "Edge FFT & DSP Analysis",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Frequency Filtering",
         color: "#6366F1",
-        what: "Defining local multi-container environments using Docker Compose for developers.",
-        analyze: ["Service startup order dependencies (DB -> API -> UI)", "Network isolating rules for internal services", "Persistent data volumes mappings"],
-        metrics: ["Service launch boot time (sec)", "Network throughput (MB/sec)", "Disk mount latency"],
-        outputs: ["Docker Compose development configuration script", "Environment variables template", "Startup sequence test logs"]
+        what: "Running Fast Fourier Transforms on-device to isolate crowd cheering frequencies from guitar sound.",
+        analyze: ["FFT bin resolution optimization", "Cheering pitch frequency range filtering rules", "Digital bandpass filter configuration"],
+        metrics: ["FFT processing delay (ms)", "Frequency isolation accuracy %", "ESP32 CPU core utilization %"],
+        outputs: ["C++ FFT calculation class code", "Frequency distribution charts", "Bandpass filter configurations"]
       },
       {
-        num: "3", icon: "🔄", title: "CI Pipeline Quality Gates",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Quality Engineering",
+        num: "3", icon: "📡", title: "Mesh Telemetry Gateway",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Mesh Networking",
         color: "#6366F1",
-        what: "Designing GitHub Actions workflows to execute tests, audits, and formatting checks.",
-        analyze: ["Test suite parallelization strategies", "Linting & formatting checks rulesets", "Code coverage analytics metrics"],
-        metrics: ["Pipeline runtime (min)", "Test execution success rate %", "Code coverage %"],
-        outputs: ["GitHub Actions CI workflow YAML", "Jest test runner configurations", "SonarQube/code quality reports"]
+        what: "Configuring ESP-NOW wireless mesh networks to link distributed decibel nodes to a central receiver gateway.",
+        analyze: ["ESP-NOW payload structure design", "Packet collision avoidance protocols", "Mesh network latency vs node density"],
+        metrics: ["ESP-NOW packet loss %", "Average node-to-gateway latency (ms)", "Network recovery time (ms)"],
+        outputs: ["ESP-NOW mesh networking sender/receiver code", "Node topology layout diagrams", "Latency profiling reports"]
       },
       {
-        num: "4", icon: "📦", title: "Container Registry Distribution",
+        num: "4", icon: "🔀", title: "Telemetry Brokerage",
         role: "Cloud / DevOps Engineer",
-        analyticsType: "Image Management",
+        analyticsType: "Telemetry Routing",
         color: "#6366F1",
-        what: "Setting up secure container registries (Docker Hub/AWS ECR) to host build images.",
-        analyze: ["ECR IAM policies and credentials mapping", "Image tag numbering conventions (SHA vs SemVer)", "Image vulnerability lifecycle scanning"],
-        metrics: ["Registry upload bandwidth", "Vulnerability count in images", "Registry access latency (ms)"],
-        outputs: ["GitHub Actions push-to-ECR configuration", "AWS ECR registry configurations", "Image vulnerability scan metrics"]
+        what: "Configuring MQTT brokers (Mosquitto) and TLS certificates to route encrypted venue decibel telemetry to server clusters.",
+        analyze: ["MQTT broker configurations under TLS", "Topic routing naming schemas for zones", "Broker rate limits for edge clients"],
+        metrics: ["TLS handshake latency (ms)", "Broker message rate (packets/sec)", "Broker CPU and memory consumption"],
+        outputs: ["Mosquitto broker config files", "TLS certificates commands script", "Broker metrics dashboard"]
       },
       {
-        num: "5", icon: "☁️", title: "AWS Infrastructure Layer",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Cloud Architecture",
-        color: "#6366F1",
-        what: "Orchestrating virtual private networks, security groups, and cloud instances on AWS.",
-        analyze: ["Subnetting splits (public vs private subnets)", "Security group rules (port 80/443 ingress, egress rules)", "IAM role boundary maps"],
-        metrics: ["Provisioning runtime (min)", "AWS cost forecasts ($/month)", "Network latency between services (ms)"],
-        outputs: ["AWS VPC Network Architecture Diagram", "Security group mappings", "IAM policy configuration files"]
+        num: "5", icon: "⚡", title: "WebSockets Real-time Hub",
+        role: "Backend Developer",
+        analyticsType: "Real-Time Broadcast",
+        color: "#38BDF8",
+        what: "Developing WebSockets telemetry hubs in Node.js to broadcast real-time audio parameters to visualizers.",
+        analyze: ["Node.js socket connections pooling strategies", "Event-driven payload schemas layout", "Socket transmission performance profiles"],
+        metrics: ["Socket broadcast latency (ms)", "Concurrent client capacity", "Server connection memory (MB)"],
+        outputs: ["Node.js WebSockets server script", "Socket API schema JSON", "Network benchmark graphs"]
       },
       {
-        num: "6", icon: "🚢", title: "CD Rolling Deployments",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Release Management",
-        color: "#6366F1",
-        what: "Configuring GitOps automated deployment scripts for zero-downtime rolling updates.",
-        analyze: ["Rolling vs Blue-Green update patterns", "Health check probes and startup delay parameters", "Database migration version control scripts"],
-        metrics: ["Deployment cycle duration (sec)", "Deployment uptime during updates %", "Rollback execution speed (sec)"],
-        outputs: ["GitOps deployment automation script", "Health check route endpoints in backend", "Zero-downtime test reports"]
+        num: "6", icon: "🤖", title: "Zone Clustering Engine",
+        role: "AI / ML Engineer",
+        analyticsType: "Spatial Analysis",
+        color: "#14B8A6",
+        what: "Implementing spatial clustering models to map venue energy zones and categorize crowd vibes dynamically.",
+        analyze: ["K-Means clustering algorithms sizing", "Clustering convergence rates under live streams", "Venue zoning mappings configurations"],
+        metrics: ["Model execution time (ms)", "Clustering accuracy %", "Vibe classification confidence"],
+        outputs: ["Python spatial clustering module code", "Venue energy zoning scripts", "Model validation reports"]
       },
       {
-        num: "7", icon: "⚖️", title: "Auto-Scaling & Load Balancing",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Resiliency Architecture",
+        num: "7", icon: "💡", title: "DMX Stage Automation",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Hardware Controller Integration",
         color: "#6366F1",
-        what: "Setting up load balancers and auto-scaling rules to handle traffic spikes.",
-        analyze: ["Auto-scaling thresholds (CPU > 70%, Memory > 80%)", "Load balancer health check intervals", "Target group registration speeds"],
-        metrics: ["Auto-scaling response latency (sec)", "Server CPU/Memory load averages", "Load balancer response times (ms)"],
-        outputs: ["Auto-scaling rule definitions", "AWS ALB configuration details", "Traffic spike simulation logs"]
+        what: "Writing scripts interfacing with serial DMX light controllers to map crowd decibels to stage color schemes.",
+        analyze: ["DMX512 serial communication protocol offsets", "Light dimming and color transitions timing rules", "Light controller serial write command structures"],
+        metrics: ["DMX command latency (ms)", "Light transition speed (ms)", "Serial port command execution rates"],
+        outputs: ["C++ DMX controller driver code", "DMX channel mappings configuration", "Light show timing diagrams"]
       },
       {
-        num: "8", icon: "📈", title: "Metrics Harvesting Layer",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Infrastructure Metrics",
-        color: "#6366F1",
-        what: "Deploying Prometheus nodes and exporters to continuously harvest system metrics.",
-        analyze: ["Prometheus scraper intervals configuration", "Metrics cardinality constraints", "Storage requirements for historical metrics"],
-        metrics: ["Metrics collection latency (ms)", "Scraping success rate %", "Card cardinality indices"],
-        outputs: ["Prometheus configuration script", "Docker stats exporter configs", "Metrics extraction charts"]
+        num: "8", icon: "🎸", title: "Audio DSP Integration",
+        role: "Full Stack Developer",
+        analyticsType: "Audio Hardware Automation",
+        color: "#2ECC71",
+        what: "Interfacing guitar MIDI controllers over TCP/IP to automatically modulate delay times and reverb decays based on crowd volume.",
+        analyze: ["MIDI command structures mapping", "Modulation envelope rules mapping crowd decibels to MIDI CC", "Audio processor MIDI latency"],
+        metrics: ["MIDI transmission latency (ms)", "Modulation accuracy %", "Pedal response delay (ms)"],
+        outputs: ["Python MIDI mapping automation script", "MIDI CC channel mapping catalog", "Audio response profiling reports"]
       },
       {
-        num: "9", icon: "📊", title: "Grafana Dashboards",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Infrastructure Analytics",
-        color: "#6366F1",
-        what: "Building rich analytical Grafana panels graphing cluster resource consumption and traffic spikes.",
-        analyze: ["PromQL query efficiency for dashboard panels", "Alert manager routing thresholds", "Panel UI responsiveness layout"],
-        metrics: ["Dashboard load latency (ms)", "Active alert count", "Panel query execution speed (ms)"],
-        outputs: ["Grafana dashboard JSON exports", "PromQL alert definition files", "Infrastructure status reports"]
+        num: "9", icon: "🖥️", title: "Energy Visualization Dashboard",
+        role: "Full Stack Developer",
+        analyticsType: "Spatial Energy Mapping",
+        color: "#2ECC71",
+        what: "Building a React WebGL dashboard displaying a spatial heatmap of venue decibel levels and light status.",
+        analyze: ["WebGL heatmap rendering execution speeds", "React components re-renders optimization rules", "Responsive dashboard viewport scaling rules"],
+        metrics: ["Visualization frame rate (FPS)", "WebGL load latency (ms)", "Dashboard layout accessibility compliance %"],
+        outputs: ["React dashboard code with WebGL visualizer", "Responsive dashboard layout files", "Heatmap shaders files"]
       }
     ],
     deliverables: [
-      { icon: "🐳", label: "Docker Configs", desc: "Optimized Dockerfiles, multi-service Compose files, and network isolation setups" },
-      { icon: "🔄", label: "GitActions CI/CD", desc: "Automated pipelines pushing versions to container registries and triggering cloud updates" },
-      { icon: "☁️", label: "Terraform Specs", desc: "Declarative AWS cluster topology mapping VPCs, subnets, EC2 scales, and load balancers" },
-      { icon: "📊", label: "Grafana Panel", desc: "Central server monitoring system collecting CPU, RAM, traffic, and error metrics" }
+      { icon: "🔌", label: "ESP32 firmware code", desc: "ESP-NOW nodes, I2S microphone sampling and edge FFT calculations in C++" },
+      { icon: "🌐", label: "WebSockets Dashboard", desc: "Live web interface plotting crowd response peaks and mapping venue energy zones" },
+      { icon: "⚙️", label: "DMX & MIDI Serial Bridges", desc: "Hardware interface scripts controlling stage lights and guitar pedals based on decibels" },
+      { icon: "📄", label: "Economic Case Study", desc: "'Crowd-Driven Venues: Quantifying Crowd Engagement and Automated Hardware Feedback in BPL'" }
     ],
     roleMap: [
-      { section: "Container Builds", role: "Cloud / DevOps Engineer" },
-      { section: "Quality Testing CI", role: "Cloud / DevOps Engineer" },
-      { section: "AWS Infrastructure", role: "Cloud / DevOps Engineer" },
-      { section: "Scale Architecture", role: "Cloud / DevOps Engineer" },
-      { section: "Grafana Analytics", role: "Cloud / DevOps Engineer" }
+      { section: "Decibel Sensor Nodes", role: "Embedded Systems & IoT Engineer" },
+      { section: "Telemetry Brokerage", role: "Cloud / DevOps Engineer" },
+      { section: "Zone Clustering", role: "AI / ML Engineer" },
+      { section: "Light/MIDI Controller Bridge", role: "Embedded Systems & IoT Engineer" },
+      { section: "Real-time Visual Portal", role: "Full Stack Developer" }
     ]
   },
   {
-    id: "figma",
-    emoji: "🎨",
-    title: "High-Fidelity Interactive Figma Ecosystem",
-    subtitle: "UI/UX · component library · auto-layout variables · interactive prototype · developer handoff",
+    id: "foleystage",
+    emoji: "🎬👣",
+    title: "Automated Foley Sound Stage",
+    subtitle: "Cinema · Electronics · CSE · FSR Sensors · STM32 · Python Sound Engine",
     accentColor: "#D946EF",
-    deliverable: "Complete modular design system and clickable responsive prototype for digital community/streaming platform",
-    metaInsight: '"Design is not how it looks; it is how it behaves, scales across viewports, and maintains visual consistency across team handoffs."',
+    deliverable: "Smart Foley Stage with modular floor grids and ultrasonic sensors syncing live footsteps to video timelines",
+    metaInsight: '"Sound stages historically required manual recording. Automation brings spatial sensor matrices to dynamic cinematic audio synchronization."',
     layers: [
       {
-        num: "1", icon: "👥", title: "User Research & Personas",
-        role: "UI/UX Designer",
-        analyticsType: "Qualitative Research",
+        num: "1", icon: "🔌", title: "Sensor Matrix Grid",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Hardware Multiplexing",
         color: "#D946EF",
-        what: "Conducting user interviews and constructing empathy maps and detailed target persona cards.",
-        analyze: ["User pain points in current digital streaming apps", "Demographic variables (age, device familiarity)", "Core tasks and success criteria mapping"],
-        metrics: ["User interview completion count", "Persona representative validation %", "Friction points identified count"],
-        outputs: ["User Empathy Map templates", "3 detailed User Persona cards", "User Research Insights report"]
+        what: "Multi-sensor array of Force Sensitive Resistors (FSRs) mapping spatial grid pressure.",
+        analyze: ["Multiplexing row-column select lines", "GPIO configuration logic for matrix scanners", "Vulnerability to analog signal crosstalk"],
+        metrics: ["Sensor scan rate (Hz)", "Analogue read latency (us)", "Sensor crosstalk rejection (dB)"],
+        outputs: ["STM32 multiplexer driver in C", "Raw FSR raw voltage streams", "Hardware grid circuit diagram"]
       },
       {
-        num: "2", icon: "🗂️", title: "Information Architecture",
-        role: "UI/UX Designer",
-        analyticsType: "Navigational Architecture",
+        num: "2", icon: "⚙️", title: "ADC & Register Calibration",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Analog-to-Digital Calibration",
         color: "#D946EF",
-        what: "Mapping app structures, navigation systems, and workflows using card sorting.",
-        analyze: ["Navigation depth index tradeoffs", "Card sorting results and labeling hierarchies", "Search path efficiency models"],
-        metrics: ["Navigation path length", "Task completion route efficiency", "Card categorization consensus %"],
-        outputs: ["App Site Map Diagram", "Navigational Flow Chart layouts", "Card Sorting analysis matrix"]
+        what: "Register-level STM32 ADC setup to scan sensor nodes at high-frequency and calibrate thresholds.",
+        analyze: ["ADC sampling timing configurations", "Direct Memory Access (DMA) channel mappings", "ADC noise filters ruleset design"],
+        metrics: ["ADC resolution bits", "DMA buffer transfer speeds", "ADC read error rates %"],
+        outputs: ["STM32 ADC register configuration C code", "ADC DMA calibration profiles", "Register timing graphs"]
       },
       {
-        num: "3", icon: "✍️", title: "Low-Fidelity Wireframes",
-        role: "UI/UX Designer",
-        analyticsType: "Structural Ideation",
+        num: "3", icon: "📡", title: "Ultrasonic Distance Tracking",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Distance Telemetry",
         color: "#D946EF",
-        what: "Sketching quick mobile & desktop layouts to establish basic element spacing and visual hierarchy.",
-        analyze: ["Layout grids (12-column desktop vs 4-column mobile)", "Placement priorities for key CTAs", "White-space ratios and density comparisons"],
-        metrics: ["Wireframe iterations generated", "Validation session feedback count", "% area allocated to key actions"],
-        outputs: ["18 desktop + mobile paper sketches", "Digital Low-Fidelity layout templates", "Structure evaluation notes"]
+        what: "Interfacing ultrasonic sensors to track foot elevation and vertical velocity vectors.",
+        analyze: ["Echo pulse width timing configurations", "GPIO trigger-echo state transitions", "Ultrasonic noise filtering algorithms"],
+        metrics: ["Distance resolution (mm)", "Sensor readout delays (ms)", "Measurement accuracy tolerance %"],
+        outputs: ["STM32 ultrasonic sensor driver code", "Ultrasonic distance logs", "Sensor timing diagrams"]
       },
       {
-        num: "4", icon: "🎨", title: "Typography & Tokens stylesheet",
-        role: "UI/UX Designer",
-        analyticsType: "Design Standardization",
+        num: "4", icon: "📦", title: "Serial Payload Packaging",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Protocol Serialization",
         color: "#D946EF",
-        what: "Setting up a strict typography stylesheet, responsive spacing scales, and dark/light color variables.",
-        analyze: ["Typography scale readability (12px to 48px modular scales)", "Contrast ratios for accessibility (WCAG AAA standards)", "Semantic naming rules for token variables"],
-        metrics: ["WCAG contrast compliance %", "Figma variable count", "Style application consistency score %"],
-        outputs: ["Figma typographic scale sheet", "Light/Dark mode color variable library", "Responsive spacing documentation"]
+        what: "Custom binary packet serialization over serial ports to reduce transmission latency.",
+        analyze: ["Bit-level packet formatting for payload fields", "Checksum calculations rules (CRC8/CRC16)", "Serial baud rates configurations"],
+        metrics: ["Serialization processing overhead", "Serial bus utilization %", "Payload transmission checksum errors %"],
+        outputs: ["C binary packaging function script", "CRC checksum logic files", "Serial performance reports"]
       },
       {
-        num: "5", icon: "🧱", title: "Figma Component Library",
-        role: "UI/UX Designer",
-        analyticsType: "Component Engineering",
-        color: "#D946EF",
-        what: "Creating component libraries with state variants, auto-layout variables, and sizing constraints.",
-        analyze: ["Auto-layout nesting strategies for cards", "Component variant properties design", "Responsive resizing rule sets (fill container, hug contents)"],
-        metrics: ["Auto-layout usage rate %", "Dynamic component variant counts", "Library synchronization time (sec)"],
-        outputs: ["Synchronized Figma component library", "Dynamic responsive UI card variants", "Component property maps"]
+        num: "5", icon: "🔀", title: "Python Ingestion Daemon",
+        role: "Backend Developer",
+        analyticsType: "Event Routing Daemon",
+        color: "#38BDF8",
+        what: "Building a Python daemon to parse serial packets and bridge hardware events to a local WebSockets hub.",
+        analyze: ["Python serial port listener threads", "WebSocket frame packaging formats", "Telemetry queue buffering rules"],
+        metrics: ["Bridge latency (ms)", "CPU utilization % of bridge daemon", "Queue overflow packet drops %"],
+        outputs: ["Python serial parser script", "WebSocket interface module", "Performance testing logs"]
       },
       {
-        num: "6", icon: "⚡", title: "Micro-Interactions Design",
-        role: "UI/UX Designer",
-        analyticsType: "Behavioral Design",
-        color: "#D946EF",
-        what: "Designing and animating fine-grained component micro-interactions in Figma.",
-        analyze: ["Easing curves and duration timing (e.g. 200ms ease-out)", "Animated feedback on button clicks & inputs", "Hover state transitions and tooltip delays"],
-        metrics: ["Interaction duration (ms)", "User click verification rates %", "Component micro-animation frames count"],
-        outputs: ["Interactive Search Input components", "Figma prototype link showcasing transitions", "Micro-interaction timing sheet"]
+        num: "6", icon: "🤖", title: "AI Footstep Classifier",
+        role: "AI / ML Engineer",
+        analyticsType: "Pattern Classification",
+        color: "#14B8A6",
+        what: "Training Python classification models to map pressure profiles and foot timings to specific surface textures and gait speeds.",
+        analyze: ["Pressure wave features extraction rules", "SVM/Random Forest model optimization parameters", "Surface classification model margins"],
+        metrics: ["Classification accuracy %", "Classifier inference latency (ms)", "Model validation confidence"],
+        outputs: ["Trained Python classifier code", "Features extractor python script", "Model accuracy matrices"]
       },
       {
-        num: "7", icon: "📱", title: "Responsive Layout Mockups",
-        role: "UI/UX Designer",
-        analyticsType: "Viewport Adaptation",
-        color: "#D946EF",
-        what: "Adapting high-fidelity layout files across desktop (1440px), tablet (768px), and mobile (375px) breakpoints.",
-        analyze: ["Hamburger menu vs navigation bar responsive breakpoints", "Content wrapping and card scaling limits", "Font scaling behaviors by viewport"],
-        metrics: ["Breakpoints supported count", "Responsive grid compliance %", "Adaptability score %"],
-        outputs: ["High-fidelity mobile layout designs", "High-fidelity tablet layouts", "High-fidelity desktop layouts"]
+        num: "7", icon: "🔊", title: "Audio Sample Triggering",
+        role: "Backend Developer",
+        analyticsType: "Dynamic Audio Dispatch",
+        color: "#38BDF8",
+        what: "Deploying the Python audio player engine to load and trigger high-fidelity WAV foley samples dynamically.",
+        analyze: ["WAV playback latency optimization", "Dynamic audio volume/pitch scaling mapping", "Concurrency limits of player threads"],
+        metrics: ["Playback latency (ms)", "Concurrent sample trigger limits", "Sound buffer utilization %"],
+        outputs: ["Python Pygame/SoundDevice playback engine code", "Audio configuration JSON sheets", "Sound latency benchmarks"]
       },
       {
-        num: "8", icon: "🔗", title: "High-Fidelity Interactive Prototype",
-        role: "UI/UX Designer",
-        analyticsType: "Interactive Simulation",
-        color: "#D946EF",
-        what: "Linking design pages together using smart-animate in Figma to model end-to-end user journeys.",
-        analyze: ["Smart-animate transition flows", "Navigation link routing loops", "Prototype load speed optimizations"],
-        metrics: ["Prototype interaction steps count", "Task completion rates on prototype %", "Prototype loading latency (sec)"],
-        outputs: ["Fully clickable desktop user journey prototype link", "Fully clickable mobile prototype link", "User testing session log"]
+        num: "8", icon: "🖥️", title: "React Control Dashboard",
+        role: "Full Stack Developer",
+        analyticsType: "Cinematic Visualizations",
+        color: "#2ECC71",
+        what: "Building a React-based Foley dashboard displaying live pressure maps, step coordinate trails, and sound envelope overlays.",
+        analyze: ["React state rendering of coordinates trails", "WebGL pressure map overlay designs", "Video player timeline control sync hooks"],
+        metrics: ["Dashboard render frame rate (FPS)", "Video-sound sync offset (ms)", "LCP dashboard speed"],
+        outputs: ["React dashboard component code", "WebGL pressure grid shader files", "Timeline control widgets"]
       },
       {
-        num: "9", icon: "📐", title: "Developer Handoff Guide",
-        role: "UI/UX Designer",
-        analyticsType: "Handoff Specification",
+        num: "9", icon: "📐", title: "Media Workflow Analytics",
+        role: "Media Analyst",
+        analyticsType: "User Experience Optimization",
         color: "#D946EF",
-        what: "Creating developer handoff specs detailing CSS variables, layout behaviors, and assets exports.",
-        analyze: ["Figma Dev Mode annotations", "Assets exports formats (SVG, PNG)", "Accessibility guidelines check (WCAG)"],
-        metrics: ["Handoff checklist compliance %", "Handoff review sessions count", "Handoff assets count"],
-        outputs: ["Figma Handoff Specification notes", "Zip file of SVG/PNG assets", "WCAG compliance statement"]
+        what: "Designing developer handoff specifications and auditing workflow latencies.",
+        analyze: ["Recruiter portfolio presentation designs", "Foley artist click workflow friction points", "Handoff assets specifications layouts"],
+        metrics: ["Handoff accessibility ratings", "Foley artist task completion times (sec)", "Asset exports loading delays"],
+        outputs: ["Portfolio design specification guides", "Foley workflow case study reports", "Demos video rendering guides"]
       }
     ],
     deliverables: [
-      { icon: "🎨", label: "Component Library", desc: "Structured Figma file detailing text scales, mode variables, and modular grid tokens" },
-      { icon: "📱", label: "Interactive Prototype", desc: "End-to-end clickable flow mapping desktop streaming search and mobile filters" },
-      { icon: "📄", label: "Research map", desc: "'Empathy maps, user journeys, personas, and navigation depth analysis report'" }
+      { icon: "🔌", label: "STM32 firmware code", desc: "C/C++ code configuring multiplexed ADCs and serial communications loops" },
+      { icon: "🐍", label: "Python Sound Engine", desc: "Script parsing raw inputs, running step classifiers, and triggering dynamic WAV samples" },
+      { icon: "🌐", label: "React Video Dashboard", desc: "Web app showcasing video-foley sync timeline, pressure maps, and delay parameters" },
+      { icon: "📄", label: "Analytical Paper", desc: "'Automating Foley: Low-Latency Spatial Sensors and Step Profiling in Cinema Production'" }
     ],
     roleMap: [
-      { section: "Audience Profiling", role: "UI/UX Designer" },
-      { section: "App Structure Map", role: "UI/UX Designer" },
-      { section: "Visual Style Sheet", role: "UI/UX Designer" },
-      { section: "Library Architecture", role: "UI/UX Designer" },
-      { section: "Responsive Grids", role: "UI/UX Designer" },
-      { section: "Clickable Journeys", role: "UI/UX Designer" }
+      { section: "Multiplexed Sensors", role: "Embedded Systems & IoT Engineer" },
+      { section: "Serial Ingestion & Sound Engine", role: "Backend Developer" },
+      { section: "Step Weight Classification", role: "AI / ML Engineer" },
+      { section: "Visual Control Portal", role: "Full Stack Developer" },
+      { section: "Foley Workflow Design", role: "UI/UX Designer" }
     ]
   }
 ];

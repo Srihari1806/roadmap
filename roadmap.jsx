@@ -184,6 +184,18 @@ const taskTypeColors = {
 // This file defines the deep-dive layers for the core projects.
 // Each layer is mapped to one of the target roles and core analytics types.
 
+// ─── PROJECT DATA ────────────────────────────────────────────────────────────
+// This file defines the deep-dive layers for the core projects.
+// Each layer is mapped to one of the target roles and core analytics types.
+
+// ─── PROJECT DATA ────────────────────────────────────────────────────────────
+// This file defines the deep-dive layers for the core projects.
+// Each layer is mapped to one of the target roles and core analytics types.
+
+// ─── PROJECT DATA ────────────────────────────────────────────────────────────
+// This file defines the deep-dive layers for the core projects.
+// Each layer is mapped to one of the target roles and core analytics types.
+
 const projectsData = [
   {
     id: "ipl",
@@ -672,23 +684,23 @@ const projectsData = [
     ]
   },
   {
-    id: "telemetry",
-    emoji: "🔌",
-    title: "The Smart Telemetry Box",
-    subtitle: "Embedded · Signal Processing · Network Protocols · Time-Series DB · Real-Time Dashboard",
+    id: "musicbat",
+    emoji: "🏏🎹",
+    title: "The Musical Swing Analyst",
+    subtitle: "Cricket · Music · Electronics · CSE · Edge Computing · Machine Learning",
     accentColor: "#06B6D4",
-    deliverable: "Live Edge-Computing Sports Telemetry Tracker (ESP32/STM32 + IMU sensor + MQTT + real-time Canvas charts)",
-    metaInsight: '"Hardware is just the collector. The value is created in real-time signals, low-latency transmission, and edge analysis."',
+    deliverable: "Real-time cricket swing-to-audio feedback attachment (ESP32 + IMU + KNN edge classifier + Web Audio synth)",
+    metaInsight: '"A cricket swing is not just physics—it has an inherent rhythm. Edge computing translates kinetics into acoustics."',
     layers: [
       {
         num: "1", icon: "🔌", title: "Low-Level Hardware Layer",
         role: "Embedded Systems & IoT Engineer",
         analyticsType: "Register Configuration",
         color: "#06B6D4",
-        what: "Accessing raw physical IMU data directly via I2C/SPI protocols on STM32/ESP32 register levels.",
-        analyze: ["Clock configuration and register offsets", "I2C/SPI bus clock frequency timing", "Raw data output registers for acceleration and gyroscope vectors"],
-        metrics: ["Data acquisition rate (Hz)", "Bus communication latency (us)", "Register read success rate %"],
-        outputs: ["Working bare-metal I2C register driver in C", "Raw accelerometer x-y-z stream logs", "Timing verification graphs"]
+        what: "Accessing raw physical IMU sensor vectors (MPU6050) over I2C on ESP32 registers.",
+        analyze: ["I2C clock frequency configurations", "GPIO pin mappings and register offsets", "Direct buffer reads for accelerometer and gyroscope vectors"],
+        metrics: ["Sensor polling rate (Hz)", "I2C read latency (us)", "Register transmission success rate %"],
+        outputs: ["Working bare-metal MPU6050 I2C driver in C++", "Raw sensor streaming register logs", "Timing verification reports"]
       },
       {
         num: "2", icon: "⚙️", title: "Edge Filtering Layer",
@@ -696,94 +708,94 @@ const projectsData = [
         analyticsType: "Signal Processing",
         color: "#06B6D4",
         what: "Implementing low-footprint Kalman or Complementary filters at the hardware edge to eliminate sensor noise.",
-        analyze: ["IMU gyroscope drift over time", "High-frequency noise from motor vibrations", "Filter coefficients optimization for dynamic response"],
-        metrics: ["Signal-to-noise ratio (SNR) lift (dB)", "Mathematical operation execution time (us)", "Memory allocation overhead (bytes)"],
-        outputs: ["C implementation of Complementary/Kalman filter", "Filtered vs raw motion data overlay charts", "Optimized filter coefficient configurations"]
+        analyze: ["IMU gyroscope drift profiles over time", "High-frequency noise from bat contact vibrations", "Filter coefficients optimization for dynamic response"],
+        metrics: ["Signal-to-noise ratio (SNR) lift (dB)", "Mathematical execution time on ESP32 (us)", "Filter RAM overhead (bytes)"],
+        outputs: ["C++ Complementary/Kalman filter class code", "Filtered vs raw motion data overlay graphs", "Noise profile benchmarks"]
       },
       {
-        num: "3", icon: "📦", title: "Packet Compression Layer",
+        num: "3", icon: "🤖", title: "On-Device KNN Classifier",
+        role: "AI / ML Engineer",
+        analyticsType: "Edge Inference",
+        color: "#14B8A6",
+        what: "Running a low-footprint KNN classifier model on the ESP32 to recognize swing type.",
+        analyze: ["Feature vectors sizing (accel peaks, angular velocity integration)", "Fixed-point math optimizations for embedded CPU", "Classification boundary margins"],
+        metrics: ["Classification accuracy %", "Edge model inference delay (ms)", "Flash/RAM storage footprint (KB)"],
+        outputs: ["Trained KNN model header file in C++", "Feature extraction python script", "Model accuracy analysis charts"]
+      },
+      {
+        num: "4", icon: "📡", title: "Low-Power Telemetry Layer",
         role: "Embedded Systems & IoT Engineer",
-        analyticsType: "Data Optimization",
+        analyticsType: "Low-Power Telemetry",
         color: "#06B6D4",
-        what: "Serializing and compressing sensor streams to reduce wireless transmission payload sizes.",
-        analyze: ["Bitwise packing algorithms for sensor floats", "Protobuf vs JSON serialization size comparison", "Frequency of delta-compression vs full updates"],
-        metrics: ["Payload compression ratio", "Serialization/deserialization CPU cycles", "Packet drop rate under limited bandwidth"],
-        outputs: ["Custom C bit-packing function", "Protobuf message definitions", "Compression efficiency benchmark report"]
+        what: "Establishing low-latency WebSockets connections to stream motion datasets from ESP32 to server gateways.",
+        analyze: ["Wi-Fi RSSI signal strength impact on socket stability", "Protocol overhead of WebSocket frames vs raw TCP", "ESP32 deep sleep/low-power modes during idle"],
+        metrics: ["Socket uptime %", "Telemetry packet latency (ms)", "Active power consumption (mA)"],
+        outputs: ["C++ WebSockets client script", "Auto-reconnection logic module", "Network performance graphs"]
       },
       {
-        num: "4", icon: "📡", title: "Firmware Network Layer",
-        role: "Embedded Systems & IoT Engineer",
-        analyticsType: "Communication Protocols",
-        color: "#06B6D4",
-        what: "Establishing secure, lightweight MQTT network connections with the ESP32 Wi-Fi module.",
-        analyze: ["Wi-Fi RSSI signal strength impact on transmission stability", "MQTT Quality of Service (QoS 0 vs 1 vs 2) performance tradeoffs", "Reconnection handshake time and backoff loops"],
-        metrics: ["MQTT connection uptime %", "Average packet round-trip time (RTT)", "Power consumption during transmission (mA)"],
-        outputs: ["Robust ESP32 Wi-Fi auto-reconnect logic", "MQTT publish/subscribe script in C/Arduino", "Network latency profile graph"]
-      },
-      {
-        num: "5", icon: "🔀", title: "Broker & Ingestion Layer",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Infrastructure Routing",
-        color: "#6366F1",
-        what: "Setting up and scaling an MQTT Broker (Mosquitto) to route incoming device payloads to server streams.",
-        analyze: ["Broker CPU/Memory load under high topic counts", "Rate-limiting rules for misbehaving edge nodes", "Access Control List (ACL) security mappings"],
-        metrics: ["Concurrent device capacity", "Throughput rate (packets/sec)", "Broker queue size overflows"],
-        outputs: ["Secure Mosquitto broker configuration script", "TLS certificate generation commands", "Throughput performance metrics Dashboard"]
-      },
-      {
-        num: "6", icon: "⚡", title: "Backend Streaming Layer",
+        num: "5", icon: "🔀", title: "WebSocket Ingestion Layer",
         role: "Backend Developer",
-        analyticsType: "Event-Driven Processing",
+        analyticsType: "Real-Time Stream Ingestion",
         color: "#38BDF8",
-        what: "Designing a Node.js and Socket.io microservice to stream telemetry data from MQTT queues to client dashboards.",
-        analyze: ["Node.js event-loop blocking under high-frequency sockets", "Memory leakage across active socket connections", "Broker-to-Socket message propagation delay"],
-        metrics: ["Websocket message latency (ms)", "CPU utilization % per 1k clients", "Active socket count"],
-        outputs: ["Node.js server with integrated MQTT client & Websocket server", "Websocket message event payload schemas", "Latency profile reports"]
+        what: "Designing a Node.js server to ingest high-frequency telemetry data streams with minimum serialization overhead.",
+        analyze: ["Node.js event loop lag under concurrent streams", "Buffer pooling strategies for client data frames", "Memory usage profile under telemetry load"],
+        metrics: ["Broker message rate (packets/sec)", "Event loop delay (ms)", "Ingestion server uptime %"],
+        outputs: ["Node.js WebSocket server script", "API payload schemas", "Load test reports"]
       },
       {
-        num: "7", icon: "💾", title: "Time-Series Logging Layer",
+        num: "6", icon: "💾", title: "Time-Series Storage",
         role: "Database Administrator",
-        analyticsType: "Storage Optimization",
+        analyticsType: "Time-Series Logging",
         color: "#10B981",
-        what: "Configuring a time-series database (InfluxDB or TimescaleDB) to store high-frequency telemetry data efficiently.",
-        analyze: ["Database write performance under continuous streams", "Partitioning strategies for raw metrics by device", "Data retention policies and downsampling intervals"],
-        metrics: ["Write latency (ms)", "Disk compression ratio", "Index lookup query response times"],
-        outputs: ["TimescaleDB partition and schema DDL", "InfluxDB downsampling continuous queries", "Storage usage forecasts"]
+        what: "Configuring a database (TimescaleDB) to store high-frequency telemetry data efficiently.",
+        analyze: ["Database partition keys by device and session", "Write speed vs storage footprint compression ratios", "Downsampling algorithms for historic logs"],
+        metrics: ["Write latency (ms)", "TimescaleDB table compression ratio", "Index query lookups speed (ms)"],
+        outputs: ["SQL TimescaleDB table schemas & DDL", "Continuous downsampling SQL queries", "Disk usage forecast graphs"]
       },
       {
-        num: "8", icon: "📊", title: "Real-Time Dashboard Layer",
+        num: "7", icon: "🎵", title: "Web Audio Synth Engine",
         role: "Full Stack Developer",
-        analyticsType: "Descriptive Visualization",
+        analyticsType: "Audio DSP Synthesis",
         color: "#2ECC71",
-        what: "Building a React-based monitoring dashboard displaying real-time sports telemetry charts.",
-        analyze: ["React component re-render performance for high-frequency chart inputs", "Canvas-based (ChartJS/HTML5 Canvas) vs SVG rendering speeds", "State update throttling rules"],
-        metrics: ["Dashboard frame rate (FPS)", "Webpage memory utilization (MB)", "Dashboard loading speed (LCP)"],
-        outputs: ["React dashboard with real-time Canvas charts", "Responsive telemetry tracking UI components", "Interactive speed and angle widgets"]
+        what: "Designing the Web Audio API synthesis logic to map sensor parameters directly to synthesized chords and sound envelopes.",
+        analyze: ["Mapping bat speed to oscillator frequencies", "Mapping bat tilt angles to synthesizer audio filter cutoffs", "Dynamic sound envelope trigger logic based on swing impact peaks"],
+        metrics: ["Audio scheduler latency (ms)", "Synth oscillator count", "Dynamic frequency range (Hz)"],
+        outputs: ["JavaScript Web Audio synthesizer module", "Audio parameter mapping configuration sheet", "Audio wave visualization files"]
       },
       {
-        num: "9", icon: "🎯", title: "Sports Analytics Layer",
+        num: "8", icon: "📊", title: "3D Swing Path visualizer",
+        role: "Full Stack Developer",
+        analyticsType: "3D Kinematics Rendering",
+        color: "#2ECC71",
+        what: "Building a React-based monitoring dashboard using HTML5 Canvas/Three.js to render real-time swing vectors and audio waveforms.",
+        analyze: ["Three.js 3D trace rendering execution speeds", "Chart state update throttling parameters", "Device screen layout responsiveness"],
+        metrics: ["Dashboard rendering speed (FPS)", "Webpage memory utilization (MB)", "UI loading speed (LCP)"],
+        outputs: ["React dashboard component code", "HTML5 Canvas rendering scripts", "Waveform overlay UI widget code"]
+      },
+      {
+        num: "9", icon: "🏏", title: "Sports Analytics & Insights",
         role: "Sports Analyst",
         analyticsType: "Predictive Analytics",
         color: "#EF4444",
-        what: "Mapping accelerometer/gyroscope vector shapes to swing speeds and predicting athlete stroke types.",
-        analyze: ["Vector acceleration signatures for different swings", "Classification accuracy of KNN/Random Forest models", "Features correlation (peak acceleration vs hit velocity)"],
-        metrics: ["Model prediction accuracy %", "Inference delay on backend (ms)", "F1 score for swing classification"],
-        outputs: ["Scikit-learn swing classification model", "Feature engineering python script", "Sports swing efficiency analysis case study"]
+        what: "Building player swing efficiency models benchmarking bat speed against hit quality.",
+        analyze: ["Correlation between swing velocity and classification outcomes", "Impact of grip rotation on swing path consistency", "Identifying optimal swing paths for different bowlers"],
+        metrics: ["Swing efficiency score", "Grip consistency index", "Strike rate lift prediction %"],
+        outputs: ["Swing performance analysis notebook", "Interactive efficiency scatter plots", "Player recommendation reports"]
       }
     ],
     deliverables: [
-      { icon: "🔌", label: "Telemetry Device", desc: "ESP32 firmware code and custom register drivers (C/C++)" },
-      { icon: "🌐", label: "Real-time Site", desc: "Websocket streaming dashboard mapping bat motion vectors" },
-      { icon: "📊", label: "Timescale DB", desc: "Dockerized PostgreSQL database storing millions of coordinate values" },
-      { icon: "📄", label: "Analytical Case Study", desc: "'Edge Filtering and Kalman Drift Mitigation in Motion Tracking'" }
+      { icon: "🔌", label: "ESP32 firmware code", desc: "MPU6050 I2C register driver, Kalman filter, and WebSockets transmission client in C++" },
+      { icon: "🌐", label: "Real-time Web App", desc: "React dashboard showing 3D swing paths, real-time wave envelopes, and Web Audio synths" },
+      { icon: "📊", label: "TimescaleDB instance", desc: "Dockerized SQL database storing millions of high-frequency bat coordinate entries" },
+      { icon: "📄", label: "Case Study (PDF)", desc: "'Kinetic Synthesis: Edge Filtering and Real-Time Motion-to-Audio Translation in Sports'" }
     ],
     roleMap: [
-      { section: "Low-level / Firmware", role: "Embedded Systems & IoT Engineer" },
-      { section: "Broker / Routing", role: "Cloud / DevOps Engineer" },
-      { section: "Event Streaming", role: "Backend Developer" },
-      { section: "DB Logging", role: "Database Administrator" },
-      { section: "Frontend Dashboard", role: "Full Stack Developer" },
-      { section: "Prediction Models", role: "AI / ML Engineer" }
+      { section: "Low-level / DSP Firmware", role: "Embedded Systems & IoT Engineer" },
+      { section: "Edge ML Classification", role: "AI / ML Engineer" },
+      { section: "WebSocket Event Streaming", role: "Backend Developer" },
+      { section: "Time-Series Logging", role: "Database Administrator" },
+      { section: "Audio Synth & Dashboard", role: "Full Stack Developer" },
+      { section: "Performance Analytics", role: "Sports Analyst" }
     ]
   },
   {
@@ -890,243 +902,243 @@ const projectsData = [
       { icon: "🕸️", label: "Vulnerable App", desc: "React+Express web sandbox deliberately packed with 12 vulnerability ports" },
       { icon: "🐍", label: "Attack Simulator", desc: "Python automated attack scanner generating SQLi, XSS and directory traversals" },
       { icon: "🕵️", label: "Intrusion Agent", desc: "Live background log parsing agent written in Python with Discord integrations" },
-      { icon: "📊", label: "SIEM Console", desc: "Local Kibana configuration dashboard index mapping ongoing attack vectors" }
+      { icon: "📊", label: "ELK SIEM Dashboard", desc: "Dockerized Elasticsearch, Logstash and Kibana monitoring dynamic attack maps" }
     ],
     roleMap: [
-      { section: "Vulnerable App Design", role: "Backend Developer" },
+      { section: "Vulnerable Platform", role: "Cybersecurity Analyst / SOC" },
       { section: "Attack Scripts", role: "Cybersecurity Analyst / SOC" },
-      { section: "Structured Logging", role: "Database Administrator" },
-      { section: "Incident Monitoring", role: "Cybersecurity Analyst / SOC" },
-      { section: "Central Logging SIEM", role: "Cloud / DevOps Engineer" },
-      { section: "React Admin Shield", role: "Full Stack Developer" }
+      { section: "Ingestion Pipelines", role: "Cybersecurity Analyst / SOC" },
+      { section: "SIEM Infrastructure", role: "Cybersecurity Analyst / SOC" },
+      { section: "Threat Visualizations", role: "Cybersecurity Analyst / SOC" },
+      { section: "Mitigation Rules", role: "Cybersecurity Analyst / SOC" }
     ]
   },
   {
-    id: "pipeline",
-    emoji: "☁️",
-    title: "The Auto-Scaling Multi-Service Pipeline",
-    subtitle: "DevOps · multi-stage Docker · GitHub Actions CI/CD · AWS Architecture · Grafana Analytics",
+    id: "stagecontroller",
+    emoji: "🎸💡",
+    title: "Audience-Driven Stage Controller",
+    subtitle: "Music · Electronics · CSE · Distributed IoT · WebSockets · DMX lights",
     accentColor: "#6366F1",
-    deliverable: "Automated containerized GitOps pipeline deploying three microservices onto AWS with Prometheus monitoring",
-    metaInsight: '"Code that does not scale automatically is a liability. DevOps bridges raw code to robust, auto-scaling production infrastructure."',
+    deliverable: "Distributed decibel-sensing ESP32 venue nodes controlling DMX stage lighting and guitar pedal effects in real-time",
+    metaInsight: '"Live performances are a conversation between the band and the crowd. We make that conversation literal through hardware feedback loops."',
     layers: [
       {
-        num: "1", icon: "🐳", title: "Microservices Containerization",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Build Optimization",
+        num: "1", icon: "🔌", title: "Acoustic Sensor Node Array",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Acoustic Sensor Integration",
         color: "#6366F1",
-        what: "Writing optimized, secure multi-stage Dockerfiles for frontend web and backend API microservices.",
-        analyze: ["Docker image layers and cache invalidation order", "Alpine/Distroless base images security", "Multi-stage build outputs sizing"],
-        metrics: ["Docker image size (MB)", "Image build time (sec)", "Vulnerability scan count"],
-        outputs: ["Multi-stage Dockerfile for React/Vite", "Multi-stage Dockerfile for Node.js", "Docker image size optimization logs"]
+        what: "Interfacing MAX4466 sound sensors with ESP32 microcontrollers over ADC and internal sampling registers.",
+        analyze: ["ADC sampling frequencies configurations", "Microphone pre-amp gain calibration", "Raw sound voltage measurements"],
+        metrics: ["ADC sampling frequency (kHz)", "Voltage read latency (us)", "Sensor accuracy variance %"],
+        outputs: ["C++ ADC sampling driver script", "Sound pressure voltage logs", "Microphone calibration reports"]
       },
       {
-        num: "2", icon: "⛓️", title: "Multi-Service Orchestration",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Local Orchestration",
+        num: "2", icon: "⚙️", title: "Edge FFT & DSP Analysis",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Frequency Filtering",
         color: "#6366F1",
-        what: "Defining local multi-container environments using Docker Compose for developers.",
-        analyze: ["Service startup order dependencies (DB -> API -> UI)", "Network isolating rules for internal services", "Persistent data volumes mappings"],
-        metrics: ["Service launch boot time (sec)", "Network throughput (MB/sec)", "Disk mount latency"],
-        outputs: ["Docker Compose development configuration script", "Environment variables template", "Startup sequence test logs"]
+        what: "Running Fast Fourier Transforms on-device to isolate crowd cheering frequencies from guitar sound.",
+        analyze: ["FFT bin resolution optimization", "Cheering pitch frequency range filtering rules", "Digital bandpass filter configuration"],
+        metrics: ["FFT processing delay (ms)", "Frequency isolation accuracy %", "ESP32 CPU core utilization %"],
+        outputs: ["C++ FFT calculation class code", "Frequency distribution charts", "Bandpass filter configurations"]
       },
       {
-        num: "3", icon: "🔄", title: "CI Pipeline Quality Gates",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Quality Engineering",
+        num: "3", icon: "📡", title: "Mesh Telemetry Gateway",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Mesh Networking",
         color: "#6366F1",
-        what: "Designing GitHub Actions workflows to execute tests, audits, and formatting checks.",
-        analyze: ["Test suite parallelization strategies", "Linting & formatting checks rulesets", "Code coverage analytics metrics"],
-        metrics: ["Pipeline runtime (min)", "Test execution success rate %", "Code coverage %"],
-        outputs: ["GitHub Actions CI workflow YAML", "Jest test runner configurations", "SonarQube/code quality reports"]
+        what: "Configuring ESP-NOW wireless mesh networks to link distributed decibel nodes to a central receiver gateway.",
+        analyze: ["ESP-NOW payload structure design", "Packet collision avoidance protocols", "Mesh network latency vs node density"],
+        metrics: ["ESP-NOW packet loss %", "Average node-to-gateway latency (ms)", "Network recovery time (ms)"],
+        outputs: ["ESP-NOW mesh networking sender/receiver code", "Node topology layout diagrams", "Latency profiling reports"]
       },
       {
-        num: "4", icon: "📦", title: "Container Registry Distribution",
+        num: "4", icon: "🔀", title: "Telemetry Brokerage",
         role: "Cloud / DevOps Engineer",
-        analyticsType: "Image Management",
+        analyticsType: "Telemetry Routing",
         color: "#6366F1",
-        what: "Setting up secure container registries (Docker Hub/AWS ECR) to host build images.",
-        analyze: ["ECR IAM policies and credentials mapping", "Image tag numbering conventions (SHA vs SemVer)", "Image vulnerability lifecycle scanning"],
-        metrics: ["Registry upload bandwidth", "Vulnerability count in images", "Registry access latency (ms)"],
-        outputs: ["GitHub Actions push-to-ECR configuration", "AWS ECR registry configurations", "Image vulnerability scan metrics"]
+        what: "Configuring MQTT brokers (Mosquitto) and TLS certificates to route encrypted venue decibel telemetry to server clusters.",
+        analyze: ["MQTT broker configurations under TLS", "Topic routing naming schemas for zones", "Broker rate limits for edge clients"],
+        metrics: ["TLS handshake latency (ms)", "Broker message rate (packets/sec)", "Broker CPU and memory consumption"],
+        outputs: ["Mosquitto broker config files", "TLS certificates commands script", "Broker metrics dashboard"]
       },
       {
-        num: "5", icon: "☁️", title: "AWS Infrastructure Layer",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Cloud Architecture",
-        color: "#6366F1",
-        what: "Orchestrating virtual private networks, security groups, and cloud instances on AWS.",
-        analyze: ["Subnetting splits (public vs private subnets)", "Security group rules (port 80/443 ingress, egress rules)", "IAM role boundary maps"],
-        metrics: ["Provisioning runtime (min)", "AWS cost forecasts ($/month)", "Network latency between services (ms)"],
-        outputs: ["AWS VPC Network Architecture Diagram", "Security group mappings", "IAM policy configuration files"]
+        num: "5", icon: "⚡", title: "WebSockets Real-time Hub",
+        role: "Backend Developer",
+        analyticsType: "Real-Time Broadcast",
+        color: "#38BDF8",
+        what: "Developing WebSockets telemetry hubs in Node.js to broadcast real-time audio parameters to visualizers.",
+        analyze: ["Node.js socket connections pooling strategies", "Event-driven payload schemas layout", "Socket transmission performance profiles"],
+        metrics: ["Socket broadcast latency (ms)", "Concurrent client capacity", "Server connection memory (MB)"],
+        outputs: ["Node.js WebSockets server script", "Socket API schema JSON", "Network benchmark graphs"]
       },
       {
-        num: "6", icon: "🚢", title: "CD Rolling Deployments",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Release Management",
-        color: "#6366F1",
-        what: "Configuring GitOps automated deployment scripts for zero-downtime rolling updates.",
-        analyze: ["Rolling vs Blue-Green update patterns", "Health check probes and startup delay parameters", "Database migration version control scripts"],
-        metrics: ["Deployment cycle duration (sec)", "Deployment uptime during updates %", "Rollback execution speed (sec)"],
-        outputs: ["GitOps deployment automation script", "Health check route endpoints in backend", "Zero-downtime test reports"]
+        num: "6", icon: "🤖", title: "Zone Clustering Engine",
+        role: "AI / ML Engineer",
+        analyticsType: "Spatial Analysis",
+        color: "#14B8A6",
+        what: "Implementing spatial clustering models to map venue energy zones and categorize crowd vibes dynamically.",
+        analyze: ["K-Means clustering algorithms sizing", "Clustering convergence rates under live streams", "Venue zoning mappings configurations"],
+        metrics: ["Model execution time (ms)", "Clustering accuracy %", "Vibe classification confidence"],
+        outputs: ["Python spatial clustering module code", "Venue energy zoning scripts", "Model validation reports"]
       },
       {
-        num: "7", icon: "⚖️", title: "Auto-Scaling & Load Balancing",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Resiliency Architecture",
+        num: "7", icon: "💡", title: "DMX Stage Automation",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Hardware Controller Integration",
         color: "#6366F1",
-        what: "Setting up load balancers and auto-scaling rules to handle traffic spikes.",
-        analyze: ["Auto-scaling thresholds (CPU > 70%, Memory > 80%)", "Load balancer health check intervals", "Target group registration speeds"],
-        metrics: ["Auto-scaling response latency (sec)", "Server CPU/Memory load averages", "Load balancer response times (ms)"],
-        outputs: ["Auto-scaling rule definitions", "AWS ALB configuration details", "Traffic spike simulation logs"]
+        what: "Writing scripts interfacing with serial DMX light controllers to map crowd decibels to stage color schemes.",
+        analyze: ["DMX512 serial communication protocol offsets", "Light dimming and color transitions timing rules", "Light controller serial write command structures"],
+        metrics: ["DMX command latency (ms)", "Light transition speed (ms)", "Serial port command execution rates"],
+        outputs: ["C++ DMX controller driver code", "DMX channel mappings configuration", "Light show timing diagrams"]
       },
       {
-        num: "8", icon: "📈", title: "Metrics Harvesting Layer",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Infrastructure Metrics",
-        color: "#6366F1",
-        what: "Deploying Prometheus nodes and exporters to continuously harvest system metrics.",
-        analyze: ["Prometheus scraper intervals configuration", "Metrics cardinality constraints", "Storage requirements for historical metrics"],
-        metrics: ["Metrics collection latency (ms)", "Scraping success rate %", "Card cardinality indices"],
-        outputs: ["Prometheus configuration script", "Docker stats exporter configs", "Metrics extraction charts"]
+        num: "8", icon: "🎸", title: "Audio DSP Integration",
+        role: "Full Stack Developer",
+        analyticsType: "Audio Hardware Automation",
+        color: "#2ECC71",
+        what: "Interfacing guitar MIDI controllers over TCP/IP to automatically modulate delay times and reverb decays based on crowd volume.",
+        analyze: ["MIDI command structures mapping", "Modulation envelope rules mapping crowd decibels to MIDI CC", "Audio processor MIDI latency"],
+        metrics: ["MIDI transmission latency (ms)", "Modulation accuracy %", "Pedal response delay (ms)"],
+        outputs: ["Python MIDI mapping automation script", "MIDI CC channel mapping catalog", "Audio response profiling reports"]
       },
       {
-        num: "9", icon: "📊", title: "Grafana Dashboards",
-        role: "Cloud / DevOps Engineer",
-        analyticsType: "Infrastructure Analytics",
-        color: "#6366F1",
-        what: "Building rich analytical Grafana panels graphing cluster resource consumption and traffic spikes.",
-        analyze: ["PromQL query efficiency for dashboard panels", "Alert manager routing thresholds", "Panel UI responsiveness layout"],
-        metrics: ["Dashboard load latency (ms)", "Active alert count", "Panel query execution speed (ms)"],
-        outputs: ["Grafana dashboard JSON exports", "PromQL alert definition files", "Infrastructure status reports"]
+        num: "9", icon: "🖥️", title: "Energy Visualization Dashboard",
+        role: "Full Stack Developer",
+        analyticsType: "Spatial Energy Mapping",
+        color: "#2ECC71",
+        what: "Building a React WebGL dashboard displaying a spatial heatmap of venue decibel levels and light status.",
+        analyze: ["WebGL heatmap rendering execution speeds", "React components re-renders optimization rules", "Responsive dashboard viewport scaling rules"],
+        metrics: ["Visualization frame rate (FPS)", "WebGL load latency (ms)", "Dashboard layout accessibility compliance %"],
+        outputs: ["React dashboard code with WebGL visualizer", "Responsive dashboard layout files", "Heatmap shaders files"]
       }
     ],
     deliverables: [
-      { icon: "🐳", label: "Docker Configs", desc: "Optimized Dockerfiles, multi-service Compose files, and network isolation setups" },
-      { icon: "🔄", label: "GitActions CI/CD", desc: "Automated pipelines pushing versions to container registries and triggering cloud updates" },
-      { icon: "☁️", label: "Terraform Specs", desc: "Declarative AWS cluster topology mapping VPCs, subnets, EC2 scales, and load balancers" },
-      { icon: "📊", label: "Grafana Panel", desc: "Central server monitoring system collecting CPU, RAM, traffic, and error metrics" }
+      { icon: "🔌", label: "ESP32 firmware code", desc: "ESP-NOW nodes, I2S microphone sampling and edge FFT calculations in C++" },
+      { icon: "🌐", label: "WebSockets Dashboard", desc: "Live web interface plotting crowd response peaks and mapping venue energy zones" },
+      { icon: "⚙️", label: "DMX & MIDI Serial Bridges", desc: "Hardware interface scripts controlling stage lights and guitar pedals based on decibels" },
+      { icon: "📄", label: "Economic Case Study", desc: "'Crowd-Driven Venues: Quantifying Crowd Engagement and Automated Hardware Feedback in BPL'" }
     ],
     roleMap: [
-      { section: "Container Builds", role: "Cloud / DevOps Engineer" },
-      { section: "Quality Testing CI", role: "Cloud / DevOps Engineer" },
-      { section: "AWS Infrastructure", role: "Cloud / DevOps Engineer" },
-      { section: "Scale Architecture", role: "Cloud / DevOps Engineer" },
-      { section: "Grafana Analytics", role: "Cloud / DevOps Engineer" }
+      { section: "Decibel Sensor Nodes", role: "Embedded Systems & IoT Engineer" },
+      { section: "Telemetry Brokerage", role: "Cloud / DevOps Engineer" },
+      { section: "Zone Clustering", role: "AI / ML Engineer" },
+      { section: "Light/MIDI Controller Bridge", role: "Embedded Systems & IoT Engineer" },
+      { section: "Real-time Visual Portal", role: "Full Stack Developer" }
     ]
   },
   {
-    id: "figma",
-    emoji: "🎨",
-    title: "High-Fidelity Interactive Figma Ecosystem",
-    subtitle: "UI/UX · component library · auto-layout variables · interactive prototype · developer handoff",
+    id: "foleystage",
+    emoji: "🎬👣",
+    title: "Automated Foley Sound Stage",
+    subtitle: "Cinema · Electronics · CSE · FSR Sensors · STM32 · Python Sound Engine",
     accentColor: "#D946EF",
-    deliverable: "Complete modular design system and clickable responsive prototype for digital community/streaming platform",
-    metaInsight: '"Design is not how it looks; it is how it behaves, scales across viewports, and maintains visual consistency across team handoffs."',
+    deliverable: "Smart Foley Stage with modular floor grids and ultrasonic sensors syncing live footsteps to video timelines",
+    metaInsight: '"Sound stages historically required manual recording. Automation brings spatial sensor matrices to dynamic cinematic audio synchronization."',
     layers: [
       {
-        num: "1", icon: "👥", title: "User Research & Personas",
-        role: "UI/UX Designer",
-        analyticsType: "Qualitative Research",
+        num: "1", icon: "🔌", title: "Sensor Matrix Grid",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Hardware Multiplexing",
         color: "#D946EF",
-        what: "Conducting user interviews and constructing empathy maps and detailed target persona cards.",
-        analyze: ["User pain points in current digital streaming apps", "Demographic variables (age, device familiarity)", "Core tasks and success criteria mapping"],
-        metrics: ["User interview completion count", "Persona representative validation %", "Friction points identified count"],
-        outputs: ["User Empathy Map templates", "3 detailed User Persona cards", "User Research Insights report"]
+        what: "Multi-sensor array of Force Sensitive Resistors (FSRs) mapping spatial grid pressure.",
+        analyze: ["Multiplexing row-column select lines", "GPIO configuration logic for matrix scanners", "Vulnerability to analog signal crosstalk"],
+        metrics: ["Sensor scan rate (Hz)", "Analogue read latency (us)", "Sensor crosstalk rejection (dB)"],
+        outputs: ["STM32 multiplexer driver in C", "Raw FSR raw voltage streams", "Hardware grid circuit diagram"]
       },
       {
-        num: "2", icon: "🗂️", title: "Information Architecture",
-        role: "UI/UX Designer",
-        analyticsType: "Navigational Architecture",
+        num: "2", icon: "⚙️", title: "ADC & Register Calibration",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Analog-to-Digital Calibration",
         color: "#D946EF",
-        what: "Mapping app structures, navigation systems, and workflows using card sorting.",
-        analyze: ["Navigation depth index tradeoffs", "Card sorting results and labeling hierarchies", "Search path efficiency models"],
-        metrics: ["Navigation path length", "Task completion route efficiency", "Card categorization consensus %"],
-        outputs: ["App Site Map Diagram", "Navigational Flow Chart layouts", "Card Sorting analysis matrix"]
+        what: "Register-level STM32 ADC setup to scan sensor nodes at high-frequency and calibrate thresholds.",
+        analyze: ["ADC sampling timing configurations", "Direct Memory Access (DMA) channel mappings", "ADC noise filters ruleset design"],
+        metrics: ["ADC resolution bits", "DMA buffer transfer speeds", "ADC read error rates %"],
+        outputs: ["STM32 ADC register configuration C code", "ADC DMA calibration profiles", "Register timing graphs"]
       },
       {
-        num: "3", icon: "✍️", title: "Low-Fidelity Wireframes",
-        role: "UI/UX Designer",
-        analyticsType: "Structural Ideation",
+        num: "3", icon: "📡", title: "Ultrasonic Distance Tracking",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Distance Telemetry",
         color: "#D946EF",
-        what: "Sketching quick mobile & desktop layouts to establish basic element spacing and visual hierarchy.",
-        analyze: ["Layout grids (12-column desktop vs 4-column mobile)", "Placement priorities for key CTAs", "White-space ratios and density comparisons"],
-        metrics: ["Wireframe iterations generated", "Validation session feedback count", "% area allocated to key actions"],
-        outputs: ["18 desktop + mobile paper sketches", "Digital Low-Fidelity layout templates", "Structure evaluation notes"]
+        what: "Interfacing ultrasonic sensors to track foot elevation and vertical velocity vectors.",
+        analyze: ["Echo pulse width timing configurations", "GPIO trigger-echo state transitions", "Ultrasonic noise filtering algorithms"],
+        metrics: ["Distance resolution (mm)", "Sensor readout delays (ms)", "Measurement accuracy tolerance %"],
+        outputs: ["STM32 ultrasonic sensor driver code", "Ultrasonic distance logs", "Sensor timing diagrams"]
       },
       {
-        num: "4", icon: "🎨", title: "Typography & Tokens stylesheet",
-        role: "UI/UX Designer",
-        analyticsType: "Design Standardization",
+        num: "4", icon: "📦", title: "Serial Payload Packaging",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Protocol Serialization",
         color: "#D946EF",
-        what: "Setting up a strict typography stylesheet, responsive spacing scales, and dark/light color variables.",
-        analyze: ["Typography scale readability (12px to 48px modular scales)", "Contrast ratios for accessibility (WCAG AAA standards)", "Semantic naming rules for token variables"],
-        metrics: ["WCAG contrast compliance %", "Figma variable count", "Style application consistency score %"],
-        outputs: ["Figma typographic scale sheet", "Light/Dark mode color variable library", "Responsive spacing documentation"]
+        what: "Custom binary packet serialization over serial ports to reduce transmission latency.",
+        analyze: ["Bit-level packet formatting for payload fields", "Checksum calculations rules (CRC8/CRC16)", "Serial baud rates configurations"],
+        metrics: ["Serialization processing overhead", "Serial bus utilization %", "Payload transmission checksum errors %"],
+        outputs: ["C binary packaging function script", "CRC checksum logic files", "Serial performance reports"]
       },
       {
-        num: "5", icon: "🧱", title: "Figma Component Library",
-        role: "UI/UX Designer",
-        analyticsType: "Component Engineering",
-        color: "#D946EF",
-        what: "Creating component libraries with state variants, auto-layout variables, and sizing constraints.",
-        analyze: ["Auto-layout nesting strategies for cards", "Component variant properties design", "Responsive resizing rule sets (fill container, hug contents)"],
-        metrics: ["Auto-layout usage rate %", "Dynamic component variant counts", "Library synchronization time (sec)"],
-        outputs: ["Synchronized Figma component library", "Dynamic responsive UI card variants", "Component property maps"]
+        num: "5", icon: "🔀", title: "Python Ingestion Daemon",
+        role: "Backend Developer",
+        analyticsType: "Event Routing Daemon",
+        color: "#38BDF8",
+        what: "Building a Python daemon to parse serial packets and bridge hardware events to a local WebSockets hub.",
+        analyze: ["Python serial port listener threads", "WebSocket frame packaging formats", "Telemetry queue buffering rules"],
+        metrics: ["Bridge latency (ms)", "CPU utilization % of bridge daemon", "Queue overflow packet drops %"],
+        outputs: ["Python serial parser script", "WebSocket interface module", "Performance testing logs"]
       },
       {
-        num: "6", icon: "⚡", title: "Micro-Interactions Design",
-        role: "UI/UX Designer",
-        analyticsType: "Behavioral Design",
-        color: "#D946EF",
-        what: "Designing and animating fine-grained component micro-interactions in Figma.",
-        analyze: ["Easing curves and duration timing (e.g. 200ms ease-out)", "Animated feedback on button clicks & inputs", "Hover state transitions and tooltip delays"],
-        metrics: ["Interaction duration (ms)", "User click verification rates %", "Component micro-animation frames count"],
-        outputs: ["Interactive Search Input components", "Figma prototype link showcasing transitions", "Micro-interaction timing sheet"]
+        num: "6", icon: "🤖", title: "AI Footstep Classifier",
+        role: "AI / ML Engineer",
+        analyticsType: "Pattern Classification",
+        color: "#14B8A6",
+        what: "Training Python classification models to map pressure profiles and foot timings to specific surface textures and gait speeds.",
+        analyze: ["Pressure wave features extraction rules", "SVM/Random Forest model optimization parameters", "Surface classification model margins"],
+        metrics: ["Classification accuracy %", "Classifier inference latency (ms)", "Model validation confidence"],
+        outputs: ["Trained Python classifier code", "Features extractor python script", "Model accuracy matrices"]
       },
       {
-        num: "7", icon: "📱", title: "Responsive Layout Mockups",
-        role: "UI/UX Designer",
-        analyticsType: "Viewport Adaptation",
-        color: "#D946EF",
-        what: "Adapting high-fidelity layout files across desktop (1440px), tablet (768px), and mobile (375px) breakpoints.",
-        analyze: ["Hamburger menu vs navigation bar responsive breakpoints", "Content wrapping and card scaling limits", "Font scaling behaviors by viewport"],
-        metrics: ["Breakpoints supported count", "Responsive grid compliance %", "Adaptability score %"],
-        outputs: ["High-fidelity mobile layout designs", "High-fidelity tablet layouts", "High-fidelity desktop layouts"]
+        num: "7", icon: "🔊", title: "Audio Sample Triggering",
+        role: "Backend Developer",
+        analyticsType: "Dynamic Audio Dispatch",
+        color: "#38BDF8",
+        what: "Deploying the Python audio player engine to load and trigger high-fidelity WAV foley samples dynamically.",
+        analyze: ["WAV playback latency optimization", "Dynamic audio volume/pitch scaling mapping", "Concurrency limits of player threads"],
+        metrics: ["Playback latency (ms)", "Concurrent sample trigger limits", "Sound buffer utilization %"],
+        outputs: ["Python Pygame/SoundDevice playback engine code", "Audio configuration JSON sheets", "Sound latency benchmarks"]
       },
       {
-        num: "8", icon: "🔗", title: "High-Fidelity Interactive Prototype",
-        role: "UI/UX Designer",
-        analyticsType: "Interactive Simulation",
-        color: "#D946EF",
-        what: "Linking design pages together using smart-animate in Figma to model end-to-end user journeys.",
-        analyze: ["Smart-animate transition flows", "Navigation link routing loops", "Prototype load speed optimizations"],
-        metrics: ["Prototype interaction steps count", "Task completion rates on prototype %", "Prototype loading latency (sec)"],
-        outputs: ["Fully clickable desktop user journey prototype link", "Fully clickable mobile prototype link", "User testing session log"]
+        num: "8", icon: "🖥️", title: "React Control Dashboard",
+        role: "Full Stack Developer",
+        analyticsType: "Cinematic Visualizations",
+        color: "#2ECC71",
+        what: "Building a React-based Foley dashboard displaying live pressure maps, step coordinate trails, and sound envelope overlays.",
+        analyze: ["React state rendering of coordinates trails", "WebGL pressure map overlay designs", "Video player timeline control sync hooks"],
+        metrics: ["Dashboard render frame rate (FPS)", "Video-sound sync offset (ms)", "LCP dashboard speed"],
+        outputs: ["React dashboard component code", "WebGL pressure grid shader files", "Timeline control widgets"]
       },
       {
-        num: "9", icon: "📐", title: "Developer Handoff Guide",
-        role: "UI/UX Designer",
-        analyticsType: "Handoff Specification",
+        num: "9", icon: "📐", title: "Media Workflow Analytics",
+        role: "Media Analyst",
+        analyticsType: "User Experience Optimization",
         color: "#D946EF",
-        what: "Creating developer handoff specs detailing CSS variables, layout behaviors, and assets exports.",
-        analyze: ["Figma Dev Mode annotations", "Assets exports formats (SVG, PNG)", "Accessibility guidelines check (WCAG)"],
-        metrics: ["Handoff checklist compliance %", "Handoff review sessions count", "Handoff assets count"],
-        outputs: ["Figma Handoff Specification notes", "Zip file of SVG/PNG assets", "WCAG compliance statement"]
+        what: "Designing developer handoff specifications and auditing workflow latencies.",
+        analyze: ["Recruiter portfolio presentation designs", "Foley artist click workflow friction points", "Handoff assets specifications layouts"],
+        metrics: ["Handoff accessibility ratings", "Foley artist task completion times (sec)", "Asset exports loading delays"],
+        outputs: ["Portfolio design specification guides", "Foley workflow case study reports", "Demos video rendering guides"]
       }
     ],
     deliverables: [
-      { icon: "🎨", label: "Component Library", desc: "Structured Figma file detailing text scales, mode variables, and modular grid tokens" },
-      { icon: "📱", label: "Interactive Prototype", desc: "End-to-end clickable flow mapping desktop streaming search and mobile filters" },
-      { icon: "📄", label: "Research map", desc: "'Empathy maps, user journeys, personas, and navigation depth analysis report'" }
+      { icon: "🔌", label: "STM32 firmware code", desc: "C/C++ code configuring multiplexed ADCs and serial communications loops" },
+      { icon: "🐍", label: "Python Sound Engine", desc: "Script parsing raw inputs, running step classifiers, and triggering dynamic WAV samples" },
+      { icon: "🌐", label: "React Video Dashboard", desc: "Web app showcasing video-foley sync timeline, pressure maps, and delay parameters" },
+      { icon: "📄", label: "Analytical Paper", desc: "'Automating Foley: Low-Latency Spatial Sensors and Step Profiling in Cinema Production'" }
     ],
     roleMap: [
-      { section: "Audience Profiling", role: "UI/UX Designer" },
-      { section: "App Structure Map", role: "UI/UX Designer" },
-      { section: "Visual Style Sheet", role: "UI/UX Designer" },
-      { section: "Library Architecture", role: "UI/UX Designer" },
-      { section: "Responsive Grids", role: "UI/UX Designer" },
-      { section: "Clickable Journeys", role: "UI/UX Designer" }
+      { section: "Multiplexed Sensors", role: "Embedded Systems & IoT Engineer" },
+      { section: "Serial Ingestion & Sound Engine", role: "Backend Developer" },
+      { section: "Step Weight Classification", role: "AI / ML Engineer" },
+      { section: "Visual Control Portal", role: "Full Stack Developer" },
+      { section: "Foley Workflow Design", role: "UI/UX Designer" }
     ]
   }
 ];
@@ -3684,6 +3696,144 @@ const tabs = [
 
           </div>
         )}
+
+        {/* CONTENT OS TAB */}
+        {activeTab === "content-os" && (
+          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+            <h2 style={{ fontSize: 20, fontWeight: 800, borderBottom: `1px solid ${BORDER}`, paddingBottom: 12 }}>
+              Content OS: Writing &amp; Creator Workspace
+            </h2>
+
+            {/* 8 Portfolio Pillars Grid */}
+            <div>
+              <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>8 PORTFOLIO PILLARS (Dec 2026 Target)</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12 }}>
+                {[
+                  { icon: "🎬", title: "Film Deep-Dives", desc: "10-12 essays (500-800 words) on screenplays, interval blocks, character arcs." },
+                  { icon: "✍️", title: "Original Stories/Scripts", desc: "5-10 short script concepts, dialogue cards, universe world-building guides." },
+                  { icon: "🎵", title: "Lyrics Engine", desc: "12-15 original Telugu/Hindi songs with audiobooks, singer credits." },
+                  { icon: "🏏", title: "IPL Sports Analytics", desc: "10 detailed posts analyzing IPL match tactics, franchise economics, fan loyalty." },
+                  { icon: "📊", title: "Brand Messaging Teardowns", desc: "8 breakdowns of advertising campaigns, copy strategy, viral marketing hooks." },
+                  { icon: "🧠", title: "Creator Economy Essays", desc: "8 articles detailing movie promotion dynamics, meme networks, streaming monetization." },
+                  { icon: "🚀", title: "Founder Journals", desc: "6 reflections detailing the journey of building Sahitya Rachanalu." },
+                  { icon: "📐", title: "Visual Storyboards", desc: "AI-generated image grids detailing shot selections for scene prototypes." }
+                ].map(p => (
+                  <div key={p.title} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 14 }}>
+                    <span style={{ fontSize: 20 }}>{p.icon}</span>
+                    <div style={{ fontSize: 12, fontWeight: 700, marginTop: 6, color: TEXT }}>{p.title}</div>
+                    <div style={{ fontSize: 10, color: MUTED, marginTop: 4, lineHeight: 1.4 }}>{p.desc}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: 16 }}>
+              {/* 6-Month Content Production Plan */}
+              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>6-MONTH CONTENT PRODUCTION TIMELINE</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {[
+                    { m: "Month 1 (July)", focus: "Set up Sahitya Rachanalu infrastructure, release first 2 film reviews.", kpi: "2 artifacts" },
+                    { m: "Month 2 (Aug)", focus: "Publish first 3 original lyrics, launch lyrics UI, release 2 brand teardowns.", kpi: "5 artifacts" },
+                    { m: "Month 3 (Sept)", focus: "Release 2 screenplay breakdowns, publish first 2 founder journals, 2 IPL posts.", kpi: "6 artifacts" },
+                    { m: "Month 4 (Oct)", focus: "Publish 2 short scripts, 3 new lyrics, 2 creator economy essays.", kpi: "7 artifacts" },
+                    { m: "Month 5 (Nov)", focus: "Release 3 film essays, 2 brand teardowns, launch visual storyboards.", kpi: "6 artifacts" },
+                    { m: "Month 6 (Dec)", focus: "Final consolidation of all 80+ artifacts, launch portfolio search.", kpi: "Consolidation ✅" }
+                  ].map((item, i) => (
+                    <div key={item.m} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: i < 5 ? `1px solid ${BORDER}40` : "none", paddingBottom: i < 5 ? 8 : 0 }}>
+                      <div>
+                        <div style={{ fontSize: 11, fontWeight: 700, color: PURPLE }}>{item.m}</div>
+                        <div style={{ fontSize: 10, color: TEXT, marginTop: 2 }}>{item.focus}</div>
+                      </div>
+                      <span style={{ fontSize: 9, background: "#1a1a2e", border: `1px solid ${BORDER}`, padding: "2px 6px", borderRadius: 4, color: ACCENT, fontWeight: 700 }}>{item.kpi}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Weekly OS */}
+              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>WEEKLY CONTENT OPERATING SYSTEM</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {[
+                    { day: "Mon", action: "Idea Ingestion", detail: "Capture 5 ideas from movies, ads, or cricket in Notion." },
+                    { day: "Tue", action: "Outline Day", detail: "Select top idea, outline sections and key messaging." },
+                    { day: "Wed", action: "Drafting", detail: "Write 600-word draft (distraction-free editor)." },
+                    { day: "Thu", action: "Editing", detail: "Refine copy, optimize SEO keywords, format layout." },
+                    { day: "Fri", action: "Asset Design", detail: "Generate AI storyboards or custom dashboard charts." },
+                    { day: "Sat", action: "Publishing", detail: "Post on Sahitya Rachanalu, share summary on LinkedIn." },
+                    { day: "Sun", action: "Analytics", detail: "Review traffic, follower growth, and engagement rate." }
+                  ].map((w, i) => (
+                    <div key={w.day} style={{ display: "flex", alignItems: "center", gap: 10, borderBottom: i < 6 ? `1px solid ${BORDER}40` : "none", paddingBottom: i < 6 ? 6 : 0 }}>
+                      <div style={{ minWidth: 32, fontSize: 11, fontWeight: 800, color: BLUE }}>{w.day}</div>
+                      <div style={{ flex: 1 }}>
+                        <div style={{ fontSize: 10, fontWeight: 700 }}>{w.action}</div>
+                        <div style={{ fontSize: 9, color: MUTED, marginTop: 1 }}>{w.detail}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Certification Timeline */}
+            <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
+              <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>CERTIFICATION TIMELINE (Curated — No Redundancy)</div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+                <div>
+                  {[
+                    { name: "Google Data Analytics Professional", by: "Google / Coursera", track: "Core Data Analytics", time: "Month 1-2 (July-Aug)", color: BLUE },
+                    { name: "HubSpot Content Marketing", by: "HubSpot Academy", track: "Writing & SEO Strategy", time: "Month 2 (Aug)", color: PURPLE },
+                    { name: "Google Analytics (GA4) Certification", by: "Google Skillshop", track: "Growth & Product Analytics", time: "Month 3 (Sept)", color: GREEN }
+                  ].map(c => (
+                    <div key={c.name} style={{ display: "flex", gap: 10, marginBottom: 12 }}>
+                      <div style={{ fontSize: 16, background: `${c.color}15`, color: c.color, width: 32, height: 32, borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>🏆</div>
+                      <div>
+                        <div style={{ fontSize: 11, fontWeight: 700, color: TEXT }}>{c.name}</div>
+                        <div style={{ fontSize: 9, color: MUTED }}>{c.by} · <span style={{ color: c.color }}>{c.track}</span> · {c.time}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  {[
+                    { name: "HubSpot Digital Marketing Certification", by: "HubSpot Academy", track: "Campaign & Ad Strategy", time: "Month 4 (Oct)", color: "#F4A72A" },
+                    { name: "Google Ads Search Certification", by: "Google Skillshop", track: "Paid Ad Copy & Bid Strategy", time: "Month 5 (Nov)", color: "#E0F2FE" }
+                  ].map(c => (
+                    <div key={c.name} style={{ display: "flex", gap: 10, marginBottom: 12 }}>
+                      <div style={{ fontSize: 16, background: `${c.color}15`, color: c.color, width: 32, height: 32, borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>🏆</div>
+                      <div>
+                        <div style={{ fontSize: 11, fontWeight: 700, color: TEXT }}>{c.name}</div>
+                        <div style={{ fontSize: 9, color: MUTED }}>{c.by} · <span style={{ color: c.color }}>{c.track}</span> · {c.time}</div>
+                      </div>
+                    </div>
+                  ))}
+                  <div style={{ padding: "10px 14px", background: "#0A0A0F", border: `1px solid ${BORDER}`, borderRadius: 8, fontSize: 10, color: MUTED }}>
+                    ⛔ <strong style={{ color: "#FFF" }}>Skip:</strong> IBM SQL (redundant with Google DA), Microsoft 365 Fundamentals (too basic), AWS Prompt Engineering (use LinkedIn AI badge instead)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* End-state tracker */}
+            <div style={{ background: "linear-gradient(135deg, #1a2e0a, #0A0A0F)", border: `1px solid #34D39940`, borderRadius: 10, padding: 20 }}>
+              <div style={{ color: "#34D399", fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>END-STATE PORTFOLIO — DECEMBER 2026</div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 8 }}>
+                {[["Film Analyses","10–12"],["Character Studies","8"],["Screenplay Breakdowns","8"],["Brand Teardowns","8"],["IPL Articles","10"],["Creator Economy Essays","8"],["Founder Journals","6"],["Lyrics","12–15"],["Story/Script Concepts","5–10"],["Universe/World Docs","2–3"]].map(([k,v]) => (
+                  <div key={k} style={{ display: "flex", justifyContent: "space-between", padding: "6px 10px", background: CARD, borderRadius: 4, fontSize: 11 }}>
+                    <span style={{ color: MUTED }}>{k}</span>
+                    <span style={{ color: "#34D399", fontWeight: 700 }}>{v}</span>
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginTop: 14, padding: "10px 14px", background: "#34D39910", border: `1px solid #34D39940`, borderRadius: 6, fontSize: 12, fontWeight: 700, textAlign: "center", color: "#34D399" }}>
+                Total: 80–100 portfolio artifacts · All 25 creative/content roles credibly covered
+              </div>
+            </div>
+
+          </div>
+        )}
+
         </div>
       )}
     </div>
@@ -4260,6 +4410,68 @@ function getDynamicProjects(role, monthIndex, activeTracks = ['aptitude','analys
     skills_demonstrated: ["Register-level C", "Signal Processing", "MQTT Protocols", "Dashboard Dev"]
   };
 
+  let musicbatStatus = "";
+  let musicbatBullets = [];
+  if (monthIndex === 0) {
+    musicbatStatus = "Planned (Starts June 2026)";
+    musicbatBullets = [
+      "Planned: Access physical IMU data on ESP32 register levels and implement edge signal Kalman filters",
+      "Planned: Build a WebSockets audio pipeline translating classified swing vectors into real-time musical chords"
+    ];
+  } else if (monthIndex === 1) {
+    musicbatStatus = "In Progress (June 2026)";
+    musicbatBullets = [
+      "Configuring ESP32 I2C registers to read raw gyroscope and accelerometer vectors from MPU6050",
+      "Measuring bus latency and timing profiles to guarantee deterministic high-frequency sensor polling"
+    ];
+  } else if (monthIndex === 2) {
+    musicbatStatus = "In Progress (July 2026)";
+    musicbatBullets = [
+      "Implementing on-device Kalman/Complementary filters to separate swing acceleration from hand vibrations",
+      "Developing feature extraction algorithms to identify peak acceleration, tilt angles, and swing start/stop boundaries"
+    ];
+  } else if (monthIndex === 3) {
+    musicbatStatus = "In Progress (August 2026)";
+    musicbatBullets = [
+      "Developing a low-footprint KNN classification model compiled to run efficiently on-device for swing type identification",
+      "Optimizing on-microcontroller memory overhead and classification execution time"
+    ];
+  } else if (monthIndex === 4) {
+    musicbatStatus = "In Progress (September 2026)";
+    musicbatBullets = [
+      "Establishing low-latency WebSockets connections to stream motion datasets from ESP32 to server gateways",
+      "Developing a Node.js server to ingest high-frequency telemetry data streams with minimum serialization overhead"
+    ];
+  } else if (monthIndex === 5) {
+    musicbatStatus = "In Progress (October 2026)";
+    musicbatBullets = [
+      "Setting up TimescaleDB database schemas to log millions of coordinate vectors partitioned by session",
+      "Designing the Web Audio API synthesis logic to map sensor parameters directly to synthesized chords and sound envelopes"
+    ];
+  } else if (monthIndex === 6) {
+    musicbatStatus = "In Progress (November 2026)";
+    musicbatBullets = [
+      "Building a React-based monitoring dashboard using HTML5 Canvas to render real-time swing vectors and audio waveforms",
+      "Throttling UI state updates to maintain a smooth 60 FPS rendering rate during active telemetry streaming"
+    ];
+  } else {
+    musicbatStatus = "Completed (December 2026)";
+    musicbatBullets = [
+      "Successfully built and deployed an edge-computing cricket bat attachment containing an ESP32 and IMU sensor",
+      "Implemented on-device KNN classifier models recognizing swing types in real-time with 92% classification accuracy",
+      "Created Web Audio API pipeline synthesizing dynamic chords and cinematic sound effects mapped to swing velocity and tilt"
+    ];
+  }
+
+  const musicbat = {
+    id: "musicbat",
+    title: "The Musical Swing Analyst",
+    status: musicbatStatus,
+    tags: ["Embedded IoT", "ESP32 + IMU", "Web Audio API", "Real-Time WebSockets"],
+    bullets: musicbatBullets,
+    skills_demonstrated: ["Sensor Integration", "Real-Time Telemetry", "Web Audio API", "Edge ML"]
+  };
+
   let threatStatus = "";
   let threatBullets = [];
   if (monthIndex === 0) {
@@ -4322,192 +4534,143 @@ function getDynamicProjects(role, monthIndex, activeTracks = ['aptitude','analys
     skills_demonstrated: ["OWASP Top 10", "Forensics", "SIEM Integration", "Firewall Rules"]
   };
 
-  let pipelineStatus = "";
-  let pipelineBullets = [];
+  let stagecontrollerStatus = "";
+  let stagecontrollerBullets = [];
   if (monthIndex === 0) {
-    pipelineStatus = "Planned (Starts June 2026)";
-    pipelineBullets = [
-      "Planned: Containerize microservices (UI, API, DB) using multi-stage Dockerfiles",
-      "Planned: Orchestrate automated container builds and zero-downtime deployment pipelines on AWS EC2/ECS"
+    stagecontrollerStatus = "Planned (Starts June 2026)";
+    stagecontrollerBullets = [
+      "Planned: Interface decibel sound sensors with distributed ESP32 nodes using ESP-NOW mesh telemetry",
+      "Planned: Build a WebSockets control engine translating crowd energy zones into automated DMX stage light triggers"
     ];
   } else if (monthIndex === 1) {
-    pipelineStatus = "In Progress (June 2026)";
-    pipelineBullets = [
-      "Writing multi-stage Dockerfiles and isolating image build outputs",
-      "Configuring Docker Compose network groups for local database and service orchestration"
+    stagecontrollerStatus = "In Progress (June 2026)";
+    stagecontrollerBullets = [
+      "Interfacing acoustic microphone sensors (MAX4466) with ESP32 ADC and internal sampling registers",
+      "Developing basic edge noise gate filters to isolate environmental decibel levels"
     ];
   } else if (monthIndex === 2) {
-    pipelineStatus = "In Progress (July 2026)";
-    pipelineBullets = [
-      "Designing GitHub Actions CI pipelines executing automated unit testing and linting quality gates",
-      "Optimizing pipeline runtimes and compiling code coverage metrics"
+    stagecontrollerStatus = "In Progress (July 2026)";
+    stagecontrollerBullets = [
+      "Porting Fast Fourier Transform (FFT) algorithms to the ESP32 to analyze crowd cheering frequencies",
+      "Configuring ESP-NOW wireless mesh networks to link distributed decibel nodes to a central receiver gateway"
     ];
   } else if (monthIndex === 3) {
-    pipelineStatus = "In Progress (August 2026)";
-    pipelineBullets = [
-      "Configuring secure AWS ECR container image registries and automated push hooks in CI",
-      "Auditing container image tags and scanning for base vulnerabilities"
+    stagecontrollerStatus = "In Progress (August 2026)";
+    stagecontrollerBullets = [
+      "Configuring MQTT brokers (Mosquitto) and TLS certificates to route encrypted venue decibel telemetry to server clusters",
+      "Auditing network security policies and testing client connection rate limits"
     ];
   } else if (monthIndex === 4) {
-    pipelineStatus = "In Progress (September 2026)";
-    pipelineBullets = [
-      "Provisioning secure cloud infrastructure on AWS (VPC, Subnets, Security Groups, EC2 nodes)",
-      "Mapping network routes and configuring load balancer targets"
+    stagecontrollerStatus = "In Progress (September 2026)";
+    stagecontrollerBullets = [
+      "Developing WebSockets telemetry hubs in Node.js to broadcast real-time audio parameters to visualizers",
+      "Designing event-driven payload schemas to handle high-frequency decibel streams from multiple nodes"
     ];
   } else if (monthIndex === 5) {
-    pipelineStatus = "In Progress (October 2026)";
-    pipelineBullets = [
-      "Implementing GitOps automated deployment scripts for zero-downtime rolling updates",
-      "Configuring health-check probes and verifying startup delays to ensure seamless cutovers"
+    stagecontrollerStatus = "In Progress (October 2026)";
+    stagecontrollerBullets = [
+      "Implementing spatial clustering models to map venue energy zones and categorize crowd vibes dynamically",
+      "Writing Python scripts interfacing with serial DMX light controllers to map crowd decibels to stage color schemes"
     ];
   } else if (monthIndex === 6) {
-    pipelineStatus = "In Progress (November 2026)";
-    pipelineBullets = [
-      "Deploying Prometheus metrics harvesters and configuring data scraping intervals on instances",
-      "Building analytical Grafana panels graphing cluster resource consumption and server uptime"
+    stagecontrollerStatus = "In Progress (November 2026)";
+    stagecontrollerBullets = [
+      "Interfacing guitar MIDI controllers over TCP/IP to automatically modulate delay times and reverb decays based on crowd volume",
+      "Building a React WebGL dashboard displaying a spatial heatmap of venue decibel levels and light status"
     ];
   } else {
-    pipelineStatus = "Completed (December 2026)";
-    pipelineBullets = [
-      "Architected and deployed a multi-service GitOps container pipeline using multi-stage Dockerfiles and GitHub Actions",
-      "Orchestrated auto-scaling and zero-downtime rolling updates on AWS EC2/ECS behind Application Load Balancers",
-      "Configured Prometheus Node Exporters and Grafana dashboards, alerting on infrastructure CPU/RAM spikes"
+    stagecontrollerStatus = "Completed (December 2026)";
+    stagecontrollerBullets = [
+      "Architected a distributed IoT system deploying decibel-sensing ESP32 nodes mapping venue energy zones in real-time",
+      "Integrated a DMX console bridge and MIDI serial controller syncing stage lighting layouts to crowd cheering frequencies",
+      "Developed a WebSockets dashboard visualization plotting crowd vibes, retention timelines, and sound triggers"
     ];
   }
-
-  const pipeline = {
-    id: "pipeline",
-    title: "The Auto-Scaling Multi-Service Pipeline",
-    status: pipelineStatus,
-    tags: ["DevOps", "Docker & Compose", "GitHub Actions CI/CD", "AWS EC2/ECS", "Prometheus & Grafana"],
-    bullets: pipelineBullets,
-    skills_demonstrated: ["Infrastructure as Code", "Container Builds", "AWS Provisioning", "Grafana Monitoring"]
-  };
-
-  let figmaStatus = "";
-  let figmaBullets = [];
-  if (monthIndex === 0) {
-    figmaStatus = "Planned (Starts June 2026)";
-    figmaBullets = [
-      "Planned: Formulate design language, user personas, information maps, and component libraries",
-      "Planned: Deploy clickable high-fidelity mobile + desktop prototype in Figma"
-    ];
-  } else if (monthIndex === 1) {
-    figmaStatus = "In Progress (June 2026)";
-    figmaBullets = [
-      "Conducting user interviews and constructing empathy maps of target streaming portal users",
-      "Mapping information architecture hierarchies and navigational depths"
-    ];
-  } else if (monthIndex === 2) {
-    figmaStatus = "In Progress (July 2026)";
-    figmaBullets = [
-      "Drafting responsive layout wireframes and validating spacing rules",
-      "Establishing typographic modular scales and dark/light color token variables"
-    ];
-  } else if (monthIndex === 3) {
-    figmaStatus = "In Progress (August 2026)";
-    figmaBullets = [
-      "Engineering reusable component libraries in Figma using auto-layout variables",
-      "Creating component variants properties with responsive resizing policies"
-    ];
-  } else if (monthIndex === 4) {
-    figmaStatus = "In Progress (September 2026)";
-    figmaBullets = [
-      "Designing responsive screen templates across mobile (375px) and desktop (1440px) breakpoints",
-      "Animating interactive components (search input triggers, dropdown transitions)"
-    ];
-  } else if (monthIndex === 5) {
-    figmaStatus = "In Progress (October 2026)";
-    figmaBullets = [
-      "Linking design templates to construct clickable high-fidelity interactive user journeys",
-      "Running user testing flows on prototype and documenting navigation drop-offs"
-    ];
-  } else if (monthIndex === 6) {
-    figmaStatus = "In Progress (November 2026)";
-    figmaBullets = [
-      "Compiling WCAG accessibility audits and marking contrast compliance scores",
-      "Creating Figma Dev Mode handoff guidelines for CSS variables and layouts spacing"
-    ];
-  } else {
-    figmaStatus = "Completed (December 2026)";
-    figmaBullets = [
-      "Constructed comprehensive design system in Figma complete with Auto-Layout variants, typography stylesheets, and dark/light variables",
-      "Developed high-fidelity cross-platform interactive prototype mapping digital streaming and community flows",
-      "Drafted WCAG-compliant handoff documentation, spacing scales, and SVG asset libraries for developer handoffs"
-    ];
-  }
-
-  const figma = {
-    id: "figma",
-    title: "High-Fidelity Figma Design System",
-    status: figmaStatus,
-    tags: ["UI/UX", "User Research", "Figma Components", "Interactive Prototype", "Design Tokens"],
-    bullets: figmaBullets,
-    skills_demonstrated: ["Persona Studies", "Auto-Layout Libraries", "Micro-Interactions", "WCAG Accessibility"]
-  };
-
-  const musicbat = {
-    id: "musicbat",
-    title: "The Musical Swing Analyst (Cricket + Music + Tech)",
-    status: monthIndex >= 6 ? "Completed (November 2026)" : monthIndex >= 5 ? "In Progress" : "Planned",
-    tags: ["Embedded IoT", "ESP32 + IMU", "Web Audio API", "Real-Time WebSockets"],
-    bullets: [
-      "Built an IoT sports telemetry device combining a cricket bat with a custom-engineered sensor attachment containing an ESP32 and IMU",
-      "Developed on-device DSP signal processing (Kalman filter) to filter motor vibrations and bats swing acceleration data",
-      "Created a WebSockets audio pipeline translating bats speed, swing tilt, and classification vectors into real-time musical chords and cinematic effects"
-    ],
-    skills_demonstrated: ["Sensor Integration", "Real-Time Telemetry", "Web Audio API", "Edge ML"]
-  };
-
-  const foleystage = {
-    id: "foleystage",
-    title: "Interactive Foley Sound Stage (Cinema + Tech)",
-    status: monthIndex >= 7 ? "Completed (December 2026)" : monthIndex >= 6 ? "In Progress" : "Planned",
-    tags: ["STM32 Grid", "FSR Sensor Arrays", "React UI Layout", "Python Sound Engine"],
-    bullets: [
-      "Designed and wired a physical pressure-sensitive Foley stage using analog sensor arrays (FSRs) and ultrasonic nodes connected to an STM32",
-      "Developed a React dashboard displaying real-time pressure mapping and spatial steps coordinates with auto-layout Figma systems components",
-      "Engineered a Python sound engine mapping physical steps velocity to video timelines, dynamically playing back high-fidelity movie Foley sound effects"
-    ],
-    skills_demonstrated: ["Hardware Interfaces", "Dynamic UI Design", "Audio Synthesis", "Interactive Media"]
-  };
 
   const stagecontroller = {
     id: "stagecontroller",
-    title: "Audience-Driven Stage Controller (Music + Tech)",
-    status: monthIndex >= 7 ? "Completed (December 2026)" : monthIndex >= 6 ? "In Progress" : "Planned",
+    title: "Audience-Driven Stage Controller",
+    status: stagecontrollerStatus,
     tags: ["Decibel Sensor Nodes", "DMX Light Control", "WebSockets", "Data Analytics"],
-    bullets: [
-      "Architected a distributed IoT system utilizing decibel microphone nodes spread across live music venues to stream audience cheering energy",
-      "Developed a WebSockets metrics dashboard plotting crowd response peaks and mapping engagement retention patterns",
-      "Interfaced a DMX light controller interface to automatically sync stage lighting layouts and audio filters to audience cheering triggers"
-    ],
+    bullets: stagecontrollerBullets,
     skills_demonstrated: ["IoT Architecture", "WebSockets Data", "DMX Stage Automation", "Attribution Models"]
   };
 
+  let foleystageStatus = "";
+  let foleystageBullets = [];
+  if (monthIndex === 0) {
+    foleystageStatus = "Planned (Starts June 2026)";
+    foleystageBullets = [
+      "Planned: Design a modular pressure-sensitive floor grid and calibrate STM32 ADC channels",
+      "Planned: Deploy a Python sound engine to dynamically play back Foley audio syncing with video timelines"
+    ];
+  } else if (monthIndex === 1) {
+    foleystageStatus = "In Progress (June 2026)";
+    foleystageBullets = [
+      "Multiplexing Force Sensitive Resistors (FSRs) into an analog sensor array connected to STM32 ADC ports",
+      "Configuring GPIO pins and timer registers on the STM32 for rapid matrix scans"
+    ];
+  } else if (monthIndex === 2) {
+    foleystageStatus = "In Progress (July 2026)";
+    foleystageBullets = [
+      "Calibrating pressure thresholds on the floor grid to register steps of various weights and contact areas",
+      "Interfacing ultrasonic sensors to capture foot elevation and vertical velocity vectors"
+    ];
+  } else if (monthIndex === 3) {
+    foleystageStatus = "In Progress (August 2026)";
+    foleystageBullets = [
+      "Writing serial communication drivers packetizing coordinate grids and pressure values into custom binary payloads",
+      "Optimizing serial bus transmission speeds to prevent data buffering bottlenecks"
+    ];
+  } else if (monthIndex === 4) {
+    foleystageStatus = "In Progress (September 2026)";
+    foleystageBullets = [
+      "Building a Python daemon to parse serial packets and bridge hardware events to a local WebSockets hub",
+      "Designing a latency-optimized routing architecture to forward sensor payloads to UI client dashboards"
+    ];
+  } else if (monthIndex === 5) {
+    foleystageStatus = "In Progress (October 2026)";
+    foleystageBullets = [
+      "Training Python classification models to map pressure profiles and foot timings to specific surface textures and gait speeds",
+      "Deploying the Python audio player engine to load and trigger high-fidelity WAV foley samples dynamically"
+    ];
+  } else if (monthIndex === 6) {
+    foleystageStatus = "In Progress (November 2026)";
+    foleystageBullets = [
+      "Building a React-based Foley dashboard displaying live pressure maps, step coordinate trails, and sound envelope overlays",
+      "Integrating movie playback controls and syncing video frame times to physical sensor triggers"
+    ];
+  } else {
+    foleystageStatus = "Completed (December 2026)";
+    foleystageBullets = [
+      "Designed and constructed a pressure-sensitive modular floor grid using multiplexed analog FSR arrays and STM32 registers",
+      "Wrote a Python background daemon and sound engine mapping step weights/velocities to dynamic cinematic audio",
+      "Deployed a React video-sync dashboard plotting real-time pressure coordinates and monitoring audio latency offsets"
+    ];
+  }
+
+  const foleystage = {
+    id: "foleystage",
+    title: "Automated Foley Sound Stage",
+    status: foleystageStatus,
+    tags: ["STM32 Grid", "FSR Sensor Arrays", "React UI Layout", "Python Sound Engine"],
+    bullets: foleystageBullets,
+    skills_demonstrated: ["Hardware Interfaces", "Dynamic UI Design", "Audio Synthesis", "Interactive Media"]
+  };
+
   list.push(ipl, bpl, ecom, ott, hiremap, sahitya);
-  if (activeTracks.includes("embedded") || role === "Embedded Systems & IoT Engineer") {
-    list.push(telemetry);
+
+  if (activeTracks.includes("embedded") || role === "Embedded Systems & IoT Engineer" || role === "AI / ML Engineer" || role === "SDE (Intern)" || role === "Sports Analyst") {
+    list.push(musicbat);
   }
   if (activeTracks.includes("cybersecurity") || role === "Cybersecurity Analyst / SOC") {
     list.push(threatshield);
   }
-  if (activeTracks.includes("devops") || role === "Cloud / DevOps Engineer") {
-    list.push(pipeline);
-  }
-  if (activeTracks.includes("uiux") || role === "UI/UX Designer") {
-    list.push(figma);
-  }
-
-  // Conditionally push creative tech fusions depending on role
-  if (role === "Embedded Systems & IoT Engineer" || role === "AI / ML Engineer" || role === "SDE (Intern)") {
-    list.push(musicbat);
-  }
-  if (role === "UI/UX Designer" || role === "Full Stack Developer" || role === "Backend Developer") {
-    list.push(foleystage);
-  }
-  if (role === "Product Analyst" || role === "Growth Marketer" || role === "Content Strategist" || role === "Business Analyst") {
+  if (activeTracks.includes("devops") || role === "Cloud / DevOps Engineer" || role === "Product Analyst" || role === "Growth Marketer" || role === "Content Strategist" || role === "Business Analyst" || role === "Growth Analyst") {
     list.push(stagecontroller);
+  }
+  if (activeTracks.includes("uiux") || role === "UI/UX Designer" || role === "Full Stack Developer" || role === "Backend Developer" || role === "Media Analyst" || role === "Narrative Designer") {
+    list.push(foleystage);
   }
 
   return list;
@@ -4892,34 +5055,119 @@ const getSkillCategorizedDetails = (name) => {
       pros: ["Builds sustainable, compounding web traffic", "Allows rapid experimentation and funnel tuning"],
       cons: ["Search algorithms change frequently", "Paid ads require budget and can have high CAC"]
     };
-  }
-
-  if (n.includes("writing") || n.includes("content strategy") || n.includes("calendar") || n.includes("messaging") || n.includes("copywriting") || n.includes("timeline") || n.includes("character") || n.includes("bible") || n.includes("storytelling") || n.includes("literature")) {
-    return {
-      category: "Creative & Content Strategy",
-      impact: `Establishes unique brand identity, community engagement, and lore timelines for immersive products.`,
-      pros: ["Creates strong emotional connection with users", "Highly differentiating in copy and messaging"],
-      cons: ["Hard to directly measure qualitative impact", "Creative burnouts can disrupt publishing speed"]
-    };
-  }
-
-  return {
-    category: "Logical Aptitude & Problem Solving",
-    impact: `Sharpens the core reasoning, quantitative, and logical abilities tested in initial screening rounds.`,
-    pros: ["Builds high mental speed and cognitive flexibility", "Helps clear initial filters at top recruitment drives"],
-    cons: ["Requires repetitive practice to stay sharp", "Does not directly build code artifacts"]
-  };
 };
 
-const getRolesHelped = (skillName) => {
-  const helped = [];
-  Object.entries(roleRequirements).forEach(([rName, req]) => {
-    const suitability = getSkillSuitability(skillName, rName);
-    if (suitability !== "none") {
-      helped.push({ roleName: rName, suitability, color: req.color });
-    }
+const matchSkill = (mustHaveSkill, learnedSet) => {
+  const sl = mustHaveSkill.toLowerCase();
+  return [...learnedSet].some(s => {
+    const sLower = s.toLowerCase();
+    
+    // Direct / Substring matches
+    if (sLower === sl) return true;
+    if (sLower.includes(sl) || sl.includes(sLower)) return true;
+    
+    // SQL
+    if (sl === "sql" && sLower.includes("sql")) return true;
+    
+    // Python & Pandas
+    if (sl.includes("python") && sLower.includes("python")) return true;
+    if (sl.includes("pandas") && sLower.includes("pandas")) return true;
+    
+    // Excel & Sheets
+    if ((sl.includes("excel") || sl.includes("sheets")) && (sLower.includes("excel") || sLower.includes("sheets"))) return true;
+    
+    // Dashboards / Viz
+    if (sl.includes("dashboard") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("dashboard") || sLower.includes("visualization"))) return true;
+    if (sl.includes("visualization") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("seaborn") || sLower.includes("matplotlib") || sLower.includes("visualization"))) return true;
+    
+    // Stats / Analysis / Thinking
+    if (sl.includes("statistical") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
+    if (sl.includes("statistics") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning"))) return true;
+    if (sl.includes("interpretation") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("interpretation"))) return true;
+    if (sl.includes("thinking") && (sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
+    
+    // Product metrics / Funnel / Cohort / Analytics
+    if (sl.includes("product metrics") && (sLower.includes("kpi") || sLower.includes("funnel") || sLower.includes("ltv/cac") || sLower.includes("analytics") || sLower.includes("metrics") || sLower.includes("retention"))) return true;
+    if (sl.includes("funnel") && sLower.includes("funnel")) return true;
+    if (sl.includes("retention") && sLower.includes("retention")) return true;
+    
+    // A/B Testing
+    if (sl.includes("a/b testing") && sLower.includes("a/b testing")) return true;
+    
+    
+    // SEO & Content Strategy
+    if (sl.includes("seo") && sLower.includes("seo")) return true;
+    if (sl.includes("content strategy") && sLower.includes("content strategy")) return true;
+    if (sl.includes("social media") && (sLower.includes("content strategy") || sLower.includes("growth") || sLower.includes("social media"))) return true;
+
+    // Content Calendar & Brand Messaging
+    if (sl.includes("content calendar") && (sLower.includes("content calendar") || sLower.includes("content strategy") || sLower.includes("editorial"))) return true;
+    if (sl.includes("brand messaging") && (sLower.includes("brand messaging") || sLower.includes("copywriting") || sLower.includes("brand"))) return true;
+
+    // Analytics Tools (GA4, Power BI, Tableau)
+    if (sl.includes("analytics tools") && (sLower.includes("analytics") || sLower.includes("ga4") || sLower.includes("power bi") || sLower.includes("tableau"))) return true;
+    if (sl.includes("google analytics") && (sLower.includes("google analytics") || sLower.includes("ga4"))) return true;
+
+    // HubSpot
+    if (sl.includes("hubspot") && (sLower.includes("hubspot") || sLower.includes("marketing automation"))) return true;
+
+    // User Journey / Process Mapping
+    if (sl.includes("user journey") && (sLower.includes("funnel") || sLower.includes("process") || sLower.includes("schema design"))) return true;
+    if (sl.includes("process mapping") && (sLower.includes("schema design") || sLower.includes("process") || sLower.includes("workflow") || sLower.includes("design"))) return true;
+
+    // Business Framing / Stakeholder / Storytelling
+    if (sl.includes("business problem") && (sLower.includes("case study") || sLower.includes("case studies") || sLower.includes("storytelling") || sLower.includes("framing") || sLower.includes("consolidation"))) return true;
+    if (sl.includes("stakeholder") && (sLower.includes("storytelling") || sLower.includes("communication"))) return true;
+    if (sl.includes("storytelling") && sLower.includes("storytelling")) return true;
+
+    // Sports Domain
+    if (sl.includes("sports domain") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
+    if (sl.includes("sports") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
+    
+    // Financial
+    if (sl.includes("financial modeling") && (sLower.includes("financial") || sLower.includes("forecasting") || sLower.includes("modeling"))) return true;
+    if (sl.includes("accounting") && (sLower.includes("financial literacy") || sLower.includes("accounting"))) return true;
+
+    // Audience / Campaign / Keyword / Technical SEO
+    if (sl.includes("audience research") && (sLower.includes("analytics") || sLower.includes("seo") || sLower.includes("audience") || sLower.includes("campaign"))) return true;
+    if (sl.includes("campaign planning") && (sLower.includes("content strategy") || sLower.includes("seo") || sLower.includes("campaign"))) return true;
+    if (sl.includes("keyword research") && (sLower.includes("seo") || sLower.includes("keyword"))) return true;
+    if (sl.includes("optimization") && (sLower.includes("seo") || sLower.includes("optimization"))) return true;
+
+    // Specialization tracks
+    if ((sl.includes("c programming") || sl.includes("c/c++") || sl.includes("c/c++ programming")) && (sLower.includes("c programming") || sLower.includes("c/c++") || sLower.includes("embedded c") || sLower.includes("c syntax") || sLower.includes("c/c++ programming"))) return true;
+    if (sl.includes("microcontrollers") && (sLower.includes("microcontrollers") || sLower.includes("stm32") || sLower.includes("arduino") || sLower.includes("gpio"))) return true;
+    if (sl.includes("rtos") && (sLower.includes("rtos") || sLower.includes("freertos") || sLower.includes("real-time"))) return true;
+    if (sl.includes("iot") && (sLower.includes("esp32") || sLower.includes("sensors") || sLower.includes("mqtt") || sLower.includes("iot"))) return true;
+    if (sl.includes("robotics") && (sLower.includes("ros") || sLower.includes("robot") || sLower.includes("automation"))) return true;
+    if (sl.includes("computer vision") && (sLower.includes("opencv") || sLower.includes("vision") || sLower.includes("image processing"))) return true;
+    if (sl.includes("cybersecurity") && (sLower.includes("cybersecurity") || sLower.includes("security") || sLower.includes("soc") || sLower.includes("owasp") || sLower.includes("wireshark") || sLower.includes("siem"))) return true;
+    if (sl.includes("devops") && (sLower.includes("devops") || sLower.includes("cloud") || sLower.includes("ci/cd") || sLower.includes("docker") || sLower.includes("kubernetes"))) return true;
+    if (sl.includes("ui/ux") && (sLower.includes("ui/ux") || sLower.includes("design") || sLower.includes("figma") || sLower.includes("wireframing") || sLower.includes("prototyping"))) return true;
+    if (sl.includes("machine learning") && (sLower.includes("ml") || sLower.includes("machine learning") || sLower.includes("regression") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("aiml") || sLower.includes("rag"))) return true;
+
+    // Specialization mappings
+    if (sl.includes("digital electronics") && (sLower.includes("digital electronics") || sLower.includes("logic gates") || sLower.includes("fsm") || sLower.includes("flip-flop"))) return true;
+    if (sl.includes("vulnerability assessment") && (sLower.includes("vulnerability") || sLower.includes("ethical hacking") || sLower.includes("nmap") || sLower.includes("recon"))) return true;
+    if (sl.includes("siem") && (sLower.includes("siem") || sLower.includes("splunk") || sLower.includes("elk") || sLower.includes("logs"))) return true;
+    if (sl.includes("linux administration") && (sLower.includes("linux") || sLower.includes("shell scripting"))) return true;
+    if (sl.includes("git & ci/cd") && (sLower.includes("git") || sLower.includes("ci/cd") || sLower.includes("actions"))) return true;
+    if (sl.includes("docker containerization") && (sLower.includes("docker") || sLower.includes("container"))) return true;
+    if (sl.includes("aws cloud") && (sLower.includes("aws") || sLower.includes("cloud") || sLower.includes("ec2") || sLower.includes("iam"))) return true;
+    if (sl.includes("kubernetes orchestration") && (sLower.includes("kubernetes") || sLower.includes("k8s"))) return true;
+    if (sl.includes("figma basics") && (sLower.includes("figma") || sLower.includes("design system") || sLower.includes("layout"))) return true;
+    if (sl.includes("user flow") && (sLower.includes("user flow") || sLower.includes("wireframe") || sLower.includes("ux basics") || sLower.includes("ia"))) return true;
+    if (sl.includes("auto-layout") && (sLower.includes("auto-layout") || sLower.includes("components") || sLower.includes("figma"))) return true;
+    if (sl.includes("user research") && (sLower.includes("research") || sLower.includes("personas") || sLower.includes("user journey") || sLower.includes("cjm"))) return true;
+    if (sl.includes("supervised learning") && (sLower.includes("supervised") || sLower.includes("regression") || sLower.includes("knn") || sLower.includes("stats & ml"))) return true;
+    if (sl.includes("ensemble models") && (sLower.includes("ensemble") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("core ml"))) return true;
+    if (sl.includes("fastapi deployment") && (sLower.includes("fastapi") || sLower.includes("deployment") || sLower.includes("mlops"))) return true;
+    if (sl.includes("rag & llm") && (sLower.includes("rag") || sLower.includes("llm") || sLower.includes("agent") || sLower.includes("vector") || sLower.includes("langchain"))) return true;
+    if (sl.includes("cloud security") && (sLower.includes("cloud security") || sLower.includes("aws") || sLower.includes("iam") || sLower.includes("security mgmt"))) return true;
+    if (sl.includes("responsive design") && (sLower.includes("responsive") || sLower.includes("mobile") || sLower.includes("desktop") || sLower.includes("breakpoint") || sLower.includes("adaptive"))) return true;
+
+    return false;
   });
-  return helped;
 };
 
 function ResumeATSAnalyzer({ activeTracks = [] }) {
@@ -4946,17 +5194,32 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
     }
   });
 
+  const role = roleRequirements[activeRole];
+
+  const isRoleRelevant = (s) => {
+    if (!role) return true;
+    const sL = s.toLowerCase();
+    return (
+      role.must_have.some(mh => matchSkill(mh, new Set([s]))) ||
+      role.good_to_have.some(gth => matchSkill(gth, new Set([s]))) ||
+      (role.ats_keywords && role.ats_keywords.some(ak => {
+        const akL = ak.toLowerCase();
+        return sL === akL || sL.includes(akL) || akL.includes(sL);
+      }))
+    );
+  };
+
   const rawSkills = getDynamicSkills(activeRole, monthProgress, activeTracks) || { current: [], learning: [], planned: [] };
   const currentSkillsList = Array.from(new Set([
     ...(rawSkills.current || []),
     ...masteredSubSkills
-  ]));
+  ])).filter(isRoleRelevant);
   const learningSkillsList = (rawSkills.learning || []).filter(
     s => !masteredSubSkills.some(ms => ms.toLowerCase() === s.toLowerCase() || s.toLowerCase().includes(ms.toLowerCase()) || ms.toLowerCase().includes(s.toLowerCase()))
-  );
+  ).filter(isRoleRelevant);
   const plannedSkillsList = (rawSkills.planned || []).filter(
     s => !masteredSubSkills.some(ms => ms.toLowerCase() === s.toLowerCase() || s.toLowerCase().includes(ms.toLowerCase()) || ms.toLowerCase().includes(s.toLowerCase()))
-  );
+  ).filter(isRoleRelevant);
 
   const dynamicResume = {
     name: "Srihari [Last Name]",
@@ -4982,122 +5245,8 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
     }
   };
 
-  const role = roleRequirements[activeRole];
   const allCurrentSkills = new Set(dynamicResume.skills.current.map(s => s.toLowerCase()));
   const allLearningSkills = new Set(dynamicResume.skills.learning.map(s => s.toLowerCase()));
-
-  const matchSkill = (mustHaveSkill, learnedSet) => {
-    const sl = mustHaveSkill.toLowerCase();
-    return [...learnedSet].some(s => {
-      const sLower = s.toLowerCase();
-      
-      // Direct / Substring matches
-      if (sLower === sl) return true;
-      if (sLower.includes(sl) || sl.includes(sLower)) return true;
-      
-      // SQL
-      if (sl === "sql" && sLower.includes("sql")) return true;
-      
-      // Python & Pandas
-      if (sl.includes("python") && sLower.includes("python")) return true;
-      if (sl.includes("pandas") && sLower.includes("pandas")) return true;
-      
-      // Excel & Sheets
-      if ((sl.includes("excel") || sl.includes("sheets")) && (sLower.includes("excel") || sLower.includes("sheets"))) return true;
-      
-      // Dashboards / Viz
-      if (sl.includes("dashboard") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("dashboard") || sLower.includes("visualization"))) return true;
-      if (sl.includes("visualization") && (sLower.includes("power bi") || sLower.includes("tableau") || sLower.includes("seaborn") || sLower.includes("matplotlib") || sLower.includes("visualization"))) return true;
-      
-      // Stats / Analysis / Thinking
-      if (sl.includes("statistical") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
-      if (sl.includes("statistics") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning"))) return true;
-      if (sl.includes("interpretation") && (sLower.includes("eda") || sLower.includes("pandas") || sLower.includes("interpretation"))) return true;
-      if (sl.includes("thinking") && (sLower.includes("stats") || sLower.includes("quantitative") || sLower.includes("reasoning") || sLower.includes("math"))) return true;
-      
-      // Product metrics / Funnel / Cohort / Analytics
-      if (sl.includes("product metrics") && (sLower.includes("kpi") || sLower.includes("funnel") || sLower.includes("ltv/cac") || sLower.includes("analytics") || sLower.includes("metrics") || sLower.includes("retention"))) return true;
-      if (sl.includes("funnel") && sLower.includes("funnel")) return true;
-      if (sl.includes("retention") && sLower.includes("retention")) return true;
-      
-      // A/B Testing
-      if (sl.includes("a/b testing") && sLower.includes("a/b testing")) return true;
-      
-      
-      // SEO & Content Strategy
-      if (sl.includes("seo") && sLower.includes("seo")) return true;
-      if (sl.includes("content strategy") && sLower.includes("content strategy")) return true;
-      if (sl.includes("social media") && (sLower.includes("content strategy") || sLower.includes("growth") || sLower.includes("social media"))) return true;
-
-      // Content Calendar & Brand Messaging
-      if (sl.includes("content calendar") && (sLower.includes("content calendar") || sLower.includes("content strategy") || sLower.includes("editorial"))) return true;
-      if (sl.includes("brand messaging") && (sLower.includes("brand messaging") || sLower.includes("copywriting") || sLower.includes("brand"))) return true;
-
-      // Analytics Tools (GA4, Power BI, Tableau)
-      if (sl.includes("analytics tools") && (sLower.includes("analytics") || sLower.includes("ga4") || sLower.includes("power bi") || sLower.includes("tableau"))) return true;
-      if (sl.includes("google analytics") && (sLower.includes("google analytics") || sLower.includes("ga4"))) return true;
-
-      // HubSpot
-      if (sl.includes("hubspot") && (sLower.includes("hubspot") || sLower.includes("marketing automation"))) return true;
-
-      // User Journey / Process Mapping
-      if (sl.includes("user journey") && (sLower.includes("funnel") || sLower.includes("process") || sLower.includes("schema design"))) return true;
-      if (sl.includes("process mapping") && (sLower.includes("schema design") || sLower.includes("process") || sLower.includes("workflow") || sLower.includes("design"))) return true;
-
-      // Business Framing / Stakeholder / Storytelling
-      if (sl.includes("business problem") && (sLower.includes("case study") || sLower.includes("case studies") || sLower.includes("storytelling") || sLower.includes("framing") || sLower.includes("consolidation"))) return true;
-      if (sl.includes("stakeholder") && (sLower.includes("storytelling") || sLower.includes("communication"))) return true;
-      if (sl.includes("storytelling") && sLower.includes("storytelling")) return true;
-
-      // Sports Domain
-      if (sl.includes("sports domain") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
-      if (sl.includes("sports") && (sLower.includes("ipl") || sLower.includes("sports") || sLower.includes("analytics"))) return true;
-      
-      // Financial
-      if (sl.includes("financial modeling") && (sLower.includes("financial") || sLower.includes("forecasting") || sLower.includes("modeling"))) return true;
-      if (sl.includes("accounting") && (sLower.includes("financial literacy") || sLower.includes("accounting"))) return true;
-
-      // Audience / Campaign / Keyword / Technical SEO
-      if (sl.includes("audience research") && (sLower.includes("analytics") || sLower.includes("seo") || sLower.includes("audience") || sLower.includes("campaign"))) return true;
-      if (sl.includes("campaign planning") && (sLower.includes("content strategy") || sLower.includes("seo") || sLower.includes("campaign"))) return true;
-      if (sl.includes("keyword research") && (sLower.includes("seo") || sLower.includes("keyword"))) return true;
-      if (sl.includes("optimization") && (sLower.includes("seo") || sLower.includes("optimization"))) return true;
-
-      // Specialization tracks
-      if ((sl.includes("c programming") || sl.includes("c/c++") || sl.includes("c/c++ programming")) && (sLower.includes("c programming") || sLower.includes("c/c++") || sLower.includes("embedded c") || sLower.includes("c syntax") || sLower.includes("c/c++ programming"))) return true;
-      if (sl.includes("microcontrollers") && (sLower.includes("microcontrollers") || sLower.includes("stm32") || sLower.includes("arduino") || sLower.includes("gpio"))) return true;
-      if (sl.includes("rtos") && (sLower.includes("rtos") || sLower.includes("freertos") || sLower.includes("real-time"))) return true;
-      if (sl.includes("iot") && (sLower.includes("esp32") || sLower.includes("sensors") || sLower.includes("mqtt") || sLower.includes("iot"))) return true;
-      if (sl.includes("robotics") && (sLower.includes("ros") || sLower.includes("robot") || sLower.includes("automation"))) return true;
-      if (sl.includes("computer vision") && (sLower.includes("opencv") || sLower.includes("vision") || sLower.includes("image processing"))) return true;
-      if (sl.includes("cybersecurity") && (sLower.includes("cybersecurity") || sLower.includes("security") || sLower.includes("soc") || sLower.includes("owasp") || sLower.includes("wireshark") || sLower.includes("siem"))) return true;
-      if (sl.includes("devops") && (sLower.includes("devops") || sLower.includes("cloud") || sLower.includes("ci/cd") || sLower.includes("docker") || sLower.includes("kubernetes"))) return true;
-      if (sl.includes("ui/ux") && (sLower.includes("ui/ux") || sLower.includes("design") || sLower.includes("figma") || sLower.includes("wireframing") || sLower.includes("prototyping"))) return true;
-      if (sl.includes("machine learning") && (sLower.includes("ml") || sLower.includes("machine learning") || sLower.includes("regression") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("aiml") || sLower.includes("rag"))) return true;
-
-      // Specialization mappings
-      if (sl.includes("digital electronics") && (sLower.includes("digital electronics") || sLower.includes("logic gates") || sLower.includes("fsm") || sLower.includes("flip-flop"))) return true;
-      if (sl.includes("vulnerability assessment") && (sLower.includes("vulnerability") || sLower.includes("ethical hacking") || sLower.includes("nmap") || sLower.includes("recon"))) return true;
-      if (sl.includes("siem") && (sLower.includes("siem") || sLower.includes("splunk") || sLower.includes("elk") || sLower.includes("logs"))) return true;
-      if (sl.includes("linux administration") && (sLower.includes("linux") || sLower.includes("shell scripting"))) return true;
-      if (sl.includes("git & ci/cd") && (sLower.includes("git") || sLower.includes("ci/cd") || sLower.includes("actions"))) return true;
-      if (sl.includes("docker containerization") && (sLower.includes("docker") || sLower.includes("container"))) return true;
-      if (sl.includes("aws cloud") && (sLower.includes("aws") || sLower.includes("cloud") || sLower.includes("ec2") || sLower.includes("iam"))) return true;
-      if (sl.includes("kubernetes orchestration") && (sLower.includes("kubernetes") || sLower.includes("k8s"))) return true;
-      if (sl.includes("figma basics") && (sLower.includes("figma") || sLower.includes("design system") || sLower.includes("layout"))) return true;
-      if (sl.includes("user flow") && (sLower.includes("user flow") || sLower.includes("wireframe") || sLower.includes("ux basics") || sLower.includes("ia"))) return true;
-      if (sl.includes("auto-layout") && (sLower.includes("auto-layout") || sLower.includes("components") || sLower.includes("figma"))) return true;
-      if (sl.includes("user research") && (sLower.includes("research") || sLower.includes("personas") || sLower.includes("user journey") || sLower.includes("cjm"))) return true;
-      if (sl.includes("supervised learning") && (sLower.includes("supervised") || sLower.includes("regression") || sLower.includes("knn") || sLower.includes("stats & ml"))) return true;
-      if (sl.includes("ensemble models") && (sLower.includes("ensemble") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("core ml"))) return true;
-      if (sl.includes("fastapi deployment") && (sLower.includes("fastapi") || sLower.includes("deployment") || sLower.includes("mlops"))) return true;
-      if (sl.includes("rag & llm") && (sLower.includes("rag") || sLower.includes("llm") || sLower.includes("agent") || sLower.includes("vector") || sLower.includes("langchain"))) return true;
-      if (sl.includes("cloud security") && (sLower.includes("cloud security") || sLower.includes("aws") || sLower.includes("iam") || sLower.includes("security mgmt"))) return true;
-      if (sl.includes("responsive design") && (sLower.includes("responsive") || sLower.includes("mobile") || sLower.includes("desktop") || sLower.includes("breakpoint") || sLower.includes("adaptive"))) return true;
-
-      return false;
-    });
-  };
 
   const getSkillStatus = (skill, currentSet, learningSet) => {
     if (matchSkill(skill, currentSet)) return "have";

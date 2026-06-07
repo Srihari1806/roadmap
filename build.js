@@ -30,13 +30,13 @@ try {
     filename: 'roadmap.jsx',
   });
   compiled = result.code;
-  console.log(`Compiled OK       (${(compiled.length/1024).toFixed(1)} KB)`);
+  console.log(`Compiled to JS  (${(compiled.length/1024).toFixed(1)} KB)`);
 } catch (err) {
   console.error('Babel compile error:', err.message);
   process.exit(1);
 }
 
-// ── 4. Mount call appended at end ─────────────────────────────────────────────
+// ── 4. Mount call appended at end as plain JS (no JSX) ───────────────────
 const mountCall = `
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(React.createElement(ErrorBoundary, null, React.createElement(CombinedApp)));
