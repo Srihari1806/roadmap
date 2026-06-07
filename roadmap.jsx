@@ -1437,7 +1437,7 @@ const SM_GRID_DATA = {
   JUNE: {
     aptitude: "Logical Reasoning",
     analyst: "Advanced SQL · Excel Power Query · Schema Design",
-    project: "IPL Analytics",
+    project: "IPL Analytics Dashboard (Base Data Wrangling)",
     dsa: "Fundamentals: Maths · Complexity Analysis",
     fullstack: "Web Development Fundamentals",
     cscore: "OOPS",
@@ -1451,7 +1451,7 @@ const SM_GRID_DATA = {
   JULY: {
     aptitude: "Quantitative Aptitude",
     analyst: "Python (pandas/seaborn) · EDA · KPI Design",
-    project: "BPL Analytics",
+    project: "BPL Ecosystem & Matchmaking (Product & Supply Solver)",
     dsa: "Data Structures: Array · Hashing · Strings · Matrix",
     fullstack: "JavaScript",
     cscore: "DBMS",
@@ -1465,7 +1465,7 @@ const SM_GRID_DATA = {
   AUGUST: {
     aptitude: "Verbal Ability",
     analyst: "Power BI · DAX · Funnel & Retention Analytics",
-    project: "E-Commerce",
+    project: "E-Commerce Funnel Diagnostics (Attribution & CAC Model)",
     dsa: "Linked List · Stack · Queue · Deque · Tree · Heap · Graph",
     fullstack: "Frontend Framework",
     cscore: "OS",
@@ -1479,7 +1479,7 @@ const SM_GRID_DATA = {
   SEPTEMBER: {
     aptitude: "Logical Reasoning",
     analyst: "GA4 · SEO Architecture · A/B Testing · LTV/CAC",
-    project: "OTT Platform",
+    project: "OTT Platform Sentiment & Churn (NLP & Recommendation Engine)",
     dsa: "Algorithms: Searching · Sorting · Two Pointer · Window Sliding",
     fullstack: "Node.js + Express + MongoDB",
     cscore: "CN",
@@ -1493,7 +1493,7 @@ const SM_GRID_DATA = {
   OCTOBER: {
     aptitude: "Quantitative Aptitude",
     analyst: "Prompt Engineering · NLP · Make/Zapier · API Calls",
-    project: "Sahitya Rachanalu",
+    project: "Sahitya Rachanalu + Interactive Foley Stage (Sensor Arrays + Sound Engine)",
     dsa: "Prefix Sum · Recursion · Greedy Algorithms · Dynamic Programming",
     fullstack: "Databases + API",
     cscore: "LLD",
@@ -1507,7 +1507,7 @@ const SM_GRID_DATA = {
   NOVEMBER: {
     aptitude: "Verbal Ability",
     analyst: "Predictive Modeling · Financial Literacy · Storytelling",
-    project: "Hiremap",
+    project: "Hiremap Portal + Musical Swing Analyst (Edge IoT + AI Swing Classifier)",
     dsa: "Trie · Segment Tree · Red-Black Tree & Binary Indexed Tree",
     fullstack: "Project (portfolios)",
     cscore: "HLD",
@@ -1521,7 +1521,7 @@ const SM_GRID_DATA = {
   DECEMBER: {
     aptitude: "Final Lap",
     analyst: "Portfolio Consolidation",
-    project: "Portfolio Mapping",
+    project: "Portfolio Launch + Threat Shield / Stage Controller / DevOps Cloud Pipeline",
     dsa: "Bitwise Algorithms · Backtracking · Divide & Conquer · Branch & Bound · Geometric & Randomized",
     fullstack: "Interview Ready...",
     cscore: "Interview Ready..",
@@ -3137,26 +3137,43 @@ const tabs = [
         {activeTab === "overview" && (
           <div>
             {/* Stats bar */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 24 }}>
-              {[
-                { label: "Days", value: "180", color: ACCENT },
-                { label: "Projects", value: "4+", color: BLUE },
-                { label: "Platforms", value: "2", color: PURPLE },
-                { label: "Target Roles", value: "4", color: GREEN },
-              ].map(stat => (
-                <div key={stat.label} style={{
-                  background: CARD,
-                  border: `1px solid ${BORDER}`,
-                  borderTop: `3px solid ${stat.color}`,
-                  borderRadius: 8,
-                  padding: "16px 12px",
-                  textAlign: "center",
-                }}>
-                  <div style={{ fontSize: 28, fontWeight: 800, color: stat.color }}>{stat.value}</div>
-                  <div style={{ fontSize: 11, color: MUTED, marginTop: 2, letterSpacing: 1 }}>{stat.label}</div>
+            {(() => {
+              let totalProjectsVal = 6;
+              if (activeTracks.includes("embedded")) totalProjectsVal += 1;
+              if (activeTracks.includes("cybersecurity")) totalProjectsVal += 1;
+              if (activeTracks.includes("devops")) totalProjectsVal += 1;
+              if (activeTracks.includes("uiux")) totalProjectsVal += 1;
+
+              let targetRolesCountVal = 16;
+              if (activeTracks.includes("embedded")) targetRolesCountVal += 1;
+              if (activeTracks.includes("cybersecurity")) targetRolesCountVal += 1;
+              if (activeTracks.includes("devops")) targetRolesCountVal += 1;
+              if (activeTracks.includes("uiux")) targetRolesCountVal += 1;
+              if (activeTracks.includes("aiml")) targetRolesCountVal += 1;
+
+              return (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 24 }}>
+                  {[
+                    { label: "Days", value: "180", color: ACCENT },
+                    { label: "Projects", value: String(totalProjectsVal), color: BLUE },
+                    { label: "Platforms", value: "2", color: PURPLE },
+                    { label: "Target Roles", value: String(targetRolesCountVal), color: GREEN },
+                  ].map(stat => (
+                    <div key={stat.label} style={{
+                      background: CARD,
+                      border: `1px solid ${BORDER}`,
+                      borderTop: `3px solid ${stat.color}`,
+                      borderRadius: 8,
+                      padding: "16px 12px",
+                      textAlign: "center",
+                    }}>
+                      <div style={{ fontSize: 28, fontWeight: 800, color: stat.color }}>{stat.value}</div>
+                      <div style={{ fontSize: 11, color: MUTED, marginTop: 2, letterSpacing: 1 }}>{stat.label}</div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              );
+            })()}
 
             {/* SUCCESS BLUEPRINT */}
             <div style={{
@@ -3301,6 +3318,9 @@ const tabs = [
                 { id: "bpl", emoji: "🎸", title: "BPL Ecosystem", week: "Weeks 5+8", layers: "8 layers", output: "Dashboard + Dataset + Report", color: "#F4A72A" },
                 { id: "hiremap", emoji: "💼", title: "Hiremap Portal", week: "Weeks 6+8", layers: "9 layers", output: "Vercel Web App + Backlog + Case Study", color: "#10B981" },
                 { id: "sahitya", emoji: "✍️", title: "Sahitya Rachanalu", week: "Weeks 7+8", layers: "9 layers", output: "Next.js Web App + 8-Pillar Calendar", color: "#F4A72A" },
+                { id: "musicbat", emoji: "🏏🎹", title: "Musical Swing Analyst", week: "Weeks 9-10 (Nov)", layers: "Edge IoT + AI Swing Classifier", output: "ESP32 bat telemetry + Web Audio Synthesizer", color: "#06B6D4" },
+                { id: "foleystage", emoji: "🎬👣", title: "Interactive Foley Stage", week: "Weeks 11-12 (Nov-Dec)", layers: "Sensor Array + Python Sound Engine", output: "STM32 floor grid + web video sync dashboard", color: "#D946EF" },
+                { id: "stagecontroller", emoji: "🎸💡", title: "Audience Stage Controller", week: "Week 13 (Dec)", layers: "Decibel nodes + DMX light control", output: "ESP32 nodes + WebSockets crowd dashboard", color: "#10B981" },
               ].map(p => (
                 <div key={p.title} onClick={() => {
                   setActiveTab("projects");
@@ -4426,6 +4446,45 @@ function getDynamicProjects(role, monthIndex, activeTracks = ['aptitude','analys
     skills_demonstrated: ["Persona Studies", "Auto-Layout Libraries", "Micro-Interactions", "WCAG Accessibility"]
   };
 
+  const musicbat = {
+    id: "musicbat",
+    title: "The Musical Swing Analyst (Cricket + Music + Tech)",
+    status: monthIndex >= 6 ? "Completed (November 2026)" : monthIndex >= 5 ? "In Progress" : "Planned",
+    tags: ["Embedded IoT", "ESP32 + IMU", "Web Audio API", "Real-Time WebSockets"],
+    bullets: [
+      "Built an IoT sports telemetry device combining a cricket bat with a custom-engineered sensor attachment containing an ESP32 and IMU",
+      "Developed on-device DSP signal processing (Kalman filter) to filter motor vibrations and bats swing acceleration data",
+      "Created a WebSockets audio pipeline translating bats speed, swing tilt, and classification vectors into real-time musical chords and cinematic effects"
+    ],
+    skills_demonstrated: ["Sensor Integration", "Real-Time Telemetry", "Web Audio API", "Edge ML"]
+  };
+
+  const foleystage = {
+    id: "foleystage",
+    title: "Interactive Foley Sound Stage (Cinema + Tech)",
+    status: monthIndex >= 7 ? "Completed (December 2026)" : monthIndex >= 6 ? "In Progress" : "Planned",
+    tags: ["STM32 Grid", "FSR Sensor Arrays", "React UI Layout", "Python Sound Engine"],
+    bullets: [
+      "Designed and wired a physical pressure-sensitive Foley stage using analog sensor arrays (FSRs) and ultrasonic nodes connected to an STM32",
+      "Developed a React dashboard displaying real-time pressure mapping and spatial steps coordinates with auto-layout Figma systems components",
+      "Engineered a Python sound engine mapping physical steps velocity to video timelines, dynamically playing back high-fidelity movie Foley sound effects"
+    ],
+    skills_demonstrated: ["Hardware Interfaces", "Dynamic UI Design", "Audio Synthesis", "Interactive Media"]
+  };
+
+  const stagecontroller = {
+    id: "stagecontroller",
+    title: "Audience-Driven Stage Controller (Music + Tech)",
+    status: monthIndex >= 7 ? "Completed (December 2026)" : monthIndex >= 6 ? "In Progress" : "Planned",
+    tags: ["Decibel Sensor Nodes", "DMX Light Control", "WebSockets", "Data Analytics"],
+    bullets: [
+      "Architected a distributed IoT system utilizing decibel microphone nodes spread across live music venues to stream audience cheering energy",
+      "Developed a WebSockets metrics dashboard plotting crowd response peaks and mapping engagement retention patterns",
+      "Interfaced a DMX light controller interface to automatically sync stage lighting layouts and audio filters to audience cheering triggers"
+    ],
+    skills_demonstrated: ["IoT Architecture", "WebSockets Data", "DMX Stage Automation", "Attribution Models"]
+  };
+
   list.push(ipl, bpl, ecom, ott, hiremap, sahitya);
   if (activeTracks.includes("embedded") || role === "Embedded Systems & IoT Engineer") {
     list.push(telemetry);
@@ -4439,6 +4498,18 @@ function getDynamicProjects(role, monthIndex, activeTracks = ['aptitude','analys
   if (activeTracks.includes("uiux") || role === "UI/UX Designer") {
     list.push(figma);
   }
+
+  // Conditionally push creative tech fusions depending on role
+  if (role === "Embedded Systems & IoT Engineer" || role === "AI / ML Engineer" || role === "SDE (Intern)") {
+    list.push(musicbat);
+  }
+  if (role === "UI/UX Designer" || role === "Full Stack Developer" || role === "Backend Developer") {
+    list.push(foleystage);
+  }
+  if (role === "Product Analyst" || role === "Growth Marketer" || role === "Content Strategist" || role === "Business Analyst") {
+    list.push(stagecontroller);
+  }
+
   return list;
 }
 
@@ -5268,14 +5339,40 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
                 </div>
 
                 <div style={{ marginBottom: 24 }}>
-                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Skills Ingested</div>
+                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Skills Ingested (Role Relevant)</div>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                    {dynamicResume.skills.current.map(s => (
-                      <span key={s} className="tag" style={{ background: "#064E3B", color: "#34D399", borderColor: "#064E3B", fontSize: 9 }}>{s}</span>
-                    ))}
-                    {dynamicResume.skills.learning.map(s => (
-                      <span key={s} className="tag" style={{ background: "#713F12", color: "#FCD34D", borderColor: "#713F12", fontSize: 9 }}>{s} (learning)</span>
-                    ))}
+                    {dynamicResume.skills.current
+                      .filter(s => {
+                        const sL = s.toLowerCase();
+                        return (
+                          role.must_have.some(mh => matchSkill(mh, new Set([s]))) ||
+                          role.good_to_have.some(gth => matchSkill(gth, new Set([s]))) ||
+                          role.ats_keywords.some(ak => {
+                            const akL = ak.toLowerCase();
+                            return sL === akL || sL.includes(akL) || akL.includes(sL);
+                          })
+                        );
+                      })
+                      .map(s => (
+                        <span key={s} className="tag" style={{ background: "#064E3B", color: "#34D399", borderColor: "#064E3B", fontSize: 9 }}>{s}</span>
+                      ))
+                    }
+                    {dynamicResume.skills.learning
+                      .filter(s => {
+                        const sL = s.toLowerCase();
+                        return (
+                          role.must_have.some(mh => matchSkill(mh, new Set([s]))) ||
+                          role.good_to_have.some(gth => matchSkill(gth, new Set([s]))) ||
+                          role.ats_keywords.some(ak => {
+                            const akL = ak.toLowerCase();
+                            return sL === akL || sL.includes(akL) || akL.includes(sL);
+                          })
+                        );
+                      })
+                      .map(s => (
+                        <span key={s} className="tag" style={{ background: "#713F12", color: "#FCD34D", borderColor: "#713F12", fontSize: 9 }}>{s} (learning)</span>
+                      ))
+                    }
                   </div>
                 </div>
 
