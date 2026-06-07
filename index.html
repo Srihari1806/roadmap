@@ -432,27 +432,16 @@ const projectsData = [{
     what: "Venue economics and tourism impact",
     analyze: ["Stadium occupancy vs local economy impact", "Tourism effect — travel/hotel spikes in match cities", "IPL vs Movie Industry revenue cannibalization", "Impact on OTT release calendars"],
     metrics: ["Tourism Impact Index", "Seasonal GMV Shift", "Movie Box Office Depression %", "Local Business Spike Score"],
-    outputs: ["Economic Ecosystem Map", "Industry comparison charts", "Seasonal economy timeline"]
-  }, {
-    num: "10",
-    icon: "🤖",
-    title: "AI Intelligence Layer",
-    role: "AI / ML Engineer",
-    analyticsType: "Predictive & Prescriptive",
-    color: "#6366F1",
-    what: "Match hype and engagement forecasting",
-    analyze: ["Match recommendation loops (Netflix style)", "Match hype prediction for upcoming fixtures", "Highlight virality forecasting", "Retention mechanics optimization"],
-    metrics: ["Match Recommendation Score", "Replay Probability", "Highlight Virality Score", "Engagement Forecast Accuracy"],
-    outputs: ["Match Hype Prediction Engine", "Highlight Virality Heatmap", "AI-driven retention strategy"]
-  }],
-  deliverables: [{
-    icon: "🌐",
-    label: "Live Website",
-    desc: "Vercel-hosted interactive site — all 10 layers as separate pages with charts + filters"
-  }, {
-    icon: "📊",
-    label: "Power BI Dashboard",
-    desc: "Multi-role intelligence dashboard with 10 detailed slicers"
+outputs: ["Economic Ecosystem Map", "Industry comparison charts", "Seasonal economy timeline"]
+   }],
+   deliverables: [{
+     icon: "🌐",
+     label: "Live Website",
+     desc: "Vercel-hosted interactive site — all 9 layers as separate pages with charts + filters"
+   }, {
+     icon: "📊",
+     label: "Power BI Dashboard",
+     desc: "Multi-role intelligence dashboard with 9 detailed slicers"
   }, {
     icon: "📝",
     label: "Blog Series",
@@ -1500,9 +1489,653 @@ const projectsData = [{
     section: "Responsive Grids",
     role: "UI/UX Designer"
   }, {
-    section: "Clickable Journeys",
-    role: "UI/UX Designer"
-  }]
+section: "Clickable Journeys",
+     role: "UI/UX Designer"
+   }]
+}, {
+   id: "hiremap",
+   emoji: "💼",
+   title: "Hiremap Portal",
+   subtitle: "Job Matching · Resume Parsing · ATS · Interview Prep",
+   accentColor: "#10B981",
+   deliverable: "AI-powered job matching platform with resume analysis and interview preparation tools",
+   metaInsight: '"The right candidate for the right role requires precision matching, not just keyword scanning."',
+   layers: [{
+     num: "1",
+     icon: "📄",
+     title: "Resume Data Ingestion",
+     role: "Backend Developer",
+     analyticsType: "ETL & Parsing",
+     color: "#38BDF8",
+     what: "Extract and structure resume data into searchable profiles.",
+     analyze: ["PDF/text resume parsing", "Skill extraction and normalization", "Experience timeline mapping"],
+     metrics: ["Parse success rate %", "Data completeness score", "Processing time (ms)"],
+     outputs: ["Structured candidate profiles", "Skill taxonomy database", "Experience timeline extraction"]
+   }, {
+     num: "2",
+     icon: "🔍",
+     title: "Job Matching Engine",
+     role: "AI / ML Engineer",
+     analyticsType: "Recommendation",
+     color: "#14B8A6",
+     what: "Match candidates to roles using semantic similarity.",
+     analyze: ["Job description embeddings", "Skill overlap scoring", "Role preference learning"],
+     metrics: ["Match accuracy %", "Top-3 recall rate", "Feedback incorporation speed"],
+     outputs: ["Personalized job recommendations", "Match score dashboard", "Preference optimization engine"]
+   }, {
+     num: "3",
+     icon: "🎯",
+     title: "ATS Optimization",
+     role: "Content Strategist",
+     analyticsType: "SEO & Keywords",
+     color: "#EC4899",
+     what: "Optimize resumes to pass ATS filters.",
+     analyze: ["ATS keyword requirements", "Format compatibility rules", "Gap analysis"],
+     metrics: ["ATS pass rate %", "Keyword coverage %", "Format compliance score"],
+     outputs: ["ATS score badge", "Missing keyword suggestions", "Format compliance report"]
+   }, {
+     num: "4",
+     icon: "💼",
+     title: "Interview Simulator",
+     role: "Product Analyst",
+     analyticsType: "Behavioral",
+     color: "#A855F7",
+     what: "Mock interview sessions with feedback.",
+     analyze: ["Question bank curation", "Response analysis", "Improvement tracking"],
+     metrics: ["Question variety %", "Confidence improvement", "Feedback relevance"],
+     outputs: ["Mock interview transcripts", "Weakness identification", "Prep plan generator"]
+   }, {
+     num: "5",
+     icon: "📊",
+     title: "Analytics Dashboard",
+     role: "Data Analyst",
+     analyticsType: "Metrics & KPIs",
+     color: "#4A9EFF",
+     what: "Track application success metrics.",
+     analyze: ["Application funnel tracking", "Conversion rates", "Time-to-hire"],
+     metrics: ["Apply rate %", "Interview rate %", "Offer acceptance %"],
+     outputs: ["Funnel visualization", "Success predictor", "Optimization recommendations"]
+   }, {
+     num: "6",
+     icon: "🤝",
+     title: "Recruiter Portal",
+     role: "Business Analyst",
+     analyticsType: "Marketplace",
+     color: "#F97316",
+     what: "Platform for recruiters to find candidates.",
+     analyze: ["Candidate pipeline management", "Sourcing efficiency", "Hiring metrics"],
+     metrics: ["Time-to-fill", "Quality score", "Cost-per-hire"],
+     outputs: ["Recruit dashboard", "Pipeline analytics", "Market insights"]
+   }, {
+     num: "7",
+     icon: "📱",
+     title: "Mobile Experience",
+     role: "Full Stack Developer",
+     analyticsType: "Responsive UI",
+     color: "#2ECC71",
+     what: "Mobile-first application experience.",
+     analyze: ["PWA performance", "Offline capabilities", "Push notifications"],
+     metrics: ["Load time (ms)", "Offline access %", "Engagement rate"],
+     outputs: ["Mobile app shell", "Offline resume storage", "Notification system"]
+   }, {
+     num: "8",
+     icon: "🎨",
+     title: "Branding & UX",
+     role: "UI/UX Designer",
+     analyticsType: "Design Systems",
+     color: "#D946EF",
+     what: "Design professional, trustworthy interface.",
+     analyze: ["Professional color palette", "Accessibility standards", "Micro-interactions"],
+     metrics: ["Contrast ratio", "Task completion time", "User satisfaction"],
+     outputs: ["Component library", "Style guide", "Prototypes"]
+   }, {
+     num: "9",
+     icon: "🚀",
+     title: "Launch & Scale",
+     role: "Cloud / DevOps Engineer",
+     analyticsType: "Infrastructure",
+     color: "#6366F1",
+     what: "Deploy and scale the platform.",
+     analyze: ["CI/CD pipeline", "Auto-scaling setup", "Monitoring"],
+     metrics: ["Deploy time", "Uptime %", "Cost efficiency"],
+     outputs: ["Deployment scripts", "Monitoring dashboards", "Scaling guides"]
+   }],
+   deliverables: [{
+     icon: "🌐",
+     label: "Live Web App",
+     desc: "Vercel-hosted job matching platform with AI recommendations"
+   }, {
+     icon: "📊",
+     label: "Analytics Dashboard",
+     desc: "Application tracking and success metrics visualization"
+   }, {
+     icon: "📱",
+     label: "Mobile PWA",
+     desc: "Progressive web app for on-the-go job searching"
+   }],
+   roleMap: [{
+     section: "Resume Parsing",
+     role: "Backend Developer"
+   }, {
+     section: "Matching Engine",
+     role: "AI / ML Engineer"
+   }, {
+     section: "UX Design",
+     role: "UI/UX Designer"
+   }, {
+     section: "Analytics",
+     role: "Data Analyst"
+   }]
+}, {
+   id: "sahitya",
+   emoji: "✍️",
+   title: "Sahitya Rachanalu",
+   subtitle: "Telugu Literature · Content Platform · Community · Analytics",
+   accentColor: "#F4A72A",
+   deliverable: "Interactive digital platform for Telugu literature, music, and cinema content",
+   metaInsight: '"Stories live forever when told with technology that honors tradition."',
+   layers: [{
+     num: "1",
+     icon: "📚",
+     title: "Content Architecture",
+     role: "Product Analyst",
+     analyticsType: "Structural Design",
+     color: "#4A9EFF",
+     what: "Design content hierarchy for literature, lyrics, and films.",
+     analyze: ["Content categorization", "Search optimization", "Navigation flow"],
+     metrics: ["Content findability score", "Browse depth", "Click-through rates"],
+     outputs: ["Category taxonomy", "Search index", "User flow diagrams"]
+   }, {
+     num: "2",
+     icon: "🎵",
+     title: "Lyric Engine",
+     role: "Data Analyst",
+     analyticsType: "NLP & Metadata",
+     color: "#EC4899",
+     what: "Tag and organize songs by mood, era, and context.",
+     analyze: ["Sentiment analysis", "Genre tagging", "Artist relationship mapping"],
+     metrics: ["Tag accuracy %", "Search relevance", "Discovery rate"],
+     outputs: ["Lyric database", "Mood clustering", "Artist analytics"]
+   }, {
+     num: "3",
+     icon: "🎬",
+     title: "Cinepedia",
+     role: "UI/UX Designer",
+     analyticsType: "Visual Design",
+     color: "#14B8A6",
+     what: "Create movie exploration interfaces.",
+     analyze: ["Layout design", "Filter systems", "Responsive grids"],
+     metrics: ["Load performance", "User engagement", "Mobile usability"],
+     outputs: ["Movie cards", "Filter components", "Watchlist feature"]
+   }, {
+     num: "4",
+     icon: "📝",
+     title: "Writing Tools",
+     role: "Content Writer",
+     analyticsType: "Editorial",
+     color: "#A855F7",
+     what: "Tools for writers to create and publish.",
+     analyze: ["Grammar checking", "Thesaurus integration", "Publishing workflow"],
+     metrics: ["Writing speed", "Error reduction", "Publish rate"],
+     outputs: ["Editor component", "Style suggestions", "Publishing dashboard"]
+   }, {
+     num: "5",
+     icon: "📊",
+     title: "Analytics",
+     role: "Growth Analyst",
+     analyticsType: "Engagement",
+     color: "#F97316",
+     what: "Track content consumption and community growth.",
+     analyze: ["Reading patterns", "Sharing behavior", "Retention"],
+     metrics: ["Views per article", "Time on page", "Share rate"],
+     outputs: ["Reader insights", "Popular content", "Growth recommendations"]
+   }, {
+     num: "6",
+     icon: "🤖",
+     title: "AI Features",
+     role: "AI / ML Engineer",
+     analyticsType: "Recommendation",
+     color: "#6366F1",
+     what: "Personalize content discovery.",
+     analyze: ["User preferences", "Content similarity", "Trend detection"],
+     metrics: ["Recommendation click %", "New content discovery", "Satisfaction score"],
+     outputs: ["Personalized feed", "Similar content", "Trend alerts"]
+   }, {
+     num: "7",
+     icon: "📱",
+     title: "Mobile App",
+     role: "Full Stack Developer",
+     analyticsType: "PWA",
+     color: "#2ECC71",
+     what: "Offline reading and sync.",
+     analyze: ["Service workers", "IndexedDB storage", "Push notifications"],
+     metrics: ["Offline access %", "Sync success", "Install rate"],
+     outputs: ["PWA manifest", "Offline cache", "Mobile UI"]
+   }, {
+     num: "8",
+     icon: "🎨",
+     title: "Brand Identity",
+     role: "UI/UX Designer",
+     analyticsType: "Visual Design",
+     color: "#D946EF",
+     what: "Design authentic Telugu cultural aesthetics.",
+     analyze: ["Traditional motifs", "Color psychology", "Typography"],
+     metrics: ["Brand recognition", "Cultural authenticity", "User affinity"],
+     outputs: ["Logo variations", "Color system", "Typography guide"]
+   }, {
+     num: "9",
+     icon: "🚀",
+     title: "Launch Strategy",
+     role: "Growth Analyst",
+     analyticsType: "Go-to-Market",
+     color: "#10B981",
+     what: "Deploy and grow the community.",
+     analyze: ["Launch phases", "Community building", "SEO strategy"],
+     metrics: ["User acquisition", "Retention", "Content velocity"],
+     outputs: ["Launch plan", "Growth metrics", "SEO content"]
+   }],
+   deliverables: [{
+     icon: "🌐",
+     label: "Live Platform",
+     desc: "Next.js web app hosting literature, lyrics, and film content"
+   }, {
+     icon: "📱",
+     label: "Mobile PWA",
+     desc: "Installable app with offline reading capability"
+   }, {
+     icon: "📊",
+     label: "Analytics",
+     desc: "Reader engagement and content performance tracking"
+   }],
+   roleMap: [{
+     section: "Content Strategy",
+     role: "Content Strategist"
+   }, {
+     section: "Platform Design",
+     role: "UI/UX Designer"
+   }, {
+     section: "Data Analysis",
+     role: "Data Analyst"
+   }]
+}, {
+   id: "musicbat",
+   emoji: "🏏🎹",
+   title: "Musical Swing Analyst",
+   subtitle: "Sports · Music · IoT · AI · Real-Time",
+   accentColor: "#06B6D4",
+   deliverable: "Real-time cricket bat swing analyzer with audio synthesis - ESP32 IMU sensor streaming",
+   metaInsight: '"Motion becomes music when technology translates physics into melody."',
+   layers: [{
+     num: "1",
+     icon: "🔌",
+     title: "Hardware Integration",
+     role: "Embedded Systems & IoT Engineer",
+     analyticsType: "Sensor Data",
+     color: "#06B6D4",
+     what: "Connect IMU sensors to ESP32 for swing capture.",
+     analyze: ["Sensor calibration", "Data sampling rate", "Power optimization"],
+     metrics: ["Sampling Hz", "Battery life", "Accuracy"],
+     outputs: ["Sensor setup guide", "Calibration routine", "Power profile"]
+   }, {
+     num: "2",
+     icon: "⚙️",
+     title: "Signal Processing",
+     role: "Embedded Systems & IoT Engineer",
+     analyticsType: "Filtering",
+     color: "#06B6D4",
+     what: "Process raw accelerometer data.",
+     analyze: ["Noise filtering", "Swing detection", "Feature extraction"],
+     metrics: ["Signal clarity", "Latency ms", "Detection accuracy"],
+     outputs: ["Filtered data stream", "Swing classifier", "Feature vectors"]
+   }, {
+     num: "3",
+     icon: "📡",
+     title: "MQTT Streaming",
+     role: "Backend Developer",
+     analyticsType: "Real-time Transport",
+     color: "#38BDF8",
+     what: "Stream swing data over MQTT.",
+     analyze: ["Protocol optimization", "Message queuing", "Bandwidth"],
+     metrics: ["Throughput msgs/sec", "Latency", "Reliability %"],
+     outputs: ["MQTT broker config", "WebSocket bridge", "Dashboard endpoint"]
+   }, {
+     num: "4",
+     icon: "⚡",
+     title: "Swing Classification",
+     role: "AI / ML Engineer",
+     analyticsType: "Model Training",
+     color: "#14B8A6",
+     what: "Classify swing types using ML.",
+     analyze: ["Feature engineering", "Model selection", "Accuracy tuning"],
+     metrics: ["Precision %", "Recall %", "F1 score"],
+     outputs: ["ML model", "Accuracy report", "API endpoint"]
+   }, {
+     num: "5",
+     icon: "🎵",
+     title: "Audio Synthesis",
+     role: "Full Stack Developer",
+     analyticsType: "Sound Engine",
+     color: "#2ECC71",
+     what: "Convert swing to musical tones.",
+     analyze: ["Frequency mapping", "Sound synthesis", "Real-time playback"],
+     metrics: ["Latency ms", "Audio quality", "Variety of tones"],
+     outputs: ["Sound engine", "Tone mapper", "Web audio API"]
+   }, {
+     num: "6",
+     icon: "📊",
+     title: "Analytics Dashboard",
+     role: "Data Analyst",
+     analyticsType: "Visualization",
+     color: "#4A9EFF",
+     what: "Visualize swing patterns.",
+     analyze: ["Swing speed charts", "Angle tracking", "Consistency metrics"],
+     metrics: ["Dashboard load time", "Data points/sec", "Mobile performance"],
+     outputs: ["Swing analytics", "Performance graphs", "Comparison tools"]
+   }, {
+     num: "7",
+     icon: "🎛️",
+     title: "Control Interface",
+     role: "UI/UX Designer",
+     analyticsType: "Interactive UI",
+     color: "#D946EF",
+     what: "Design real-time control panel.",
+     analyze: ["Live controls", "Feedback loops", "Mobile layout"],
+     metrics: ["Response time", "Usability score", "Completion rate"],
+     outputs: ["Control panel", "Mobile view", "Settings panel"]
+   }, {
+     num: "8",
+     icon: "📱",
+     title: "Mobile App",
+     role: "Full Stack Developer",
+     analyticsType: "PWA",
+     color: "#EC4899",
+     what: "Mobile interface for swing tracking.",
+     analyze: ["Offline sync", "Battery monitoring", "Push notifications"],
+     metrics: ["App size", "Startup time", "Offline sync success"],
+     outputs: ["Mobile app", "Sync system", "Notification system"]
+   }, {
+     num: "9",
+     icon: "🚀",
+     title: "Deployment",
+     role: "Cloud / DevOps Engineer",
+     analyticsType: "CI/CD",
+     color: "#6366F1",
+     what: "Deploy complete system.",
+     analyze: ["Container setup", "Auto-scaling", "Monitoring"],
+     metrics: ["Uptime %", "Deploy time", "Resource usage"],
+     outputs: ["Dockerfile", "CI/CD pipeline", "Monitoring setup"]
+   }],
+   deliverables: [{
+     icon: "🔌",
+     label: "Telemetry Device",
+     desc: "ESP32 firmware capturing and streaming swing motion"
+   }, {
+     icon: "🎵",
+     label: "Sound Engine",
+     desc: "Web Audio synthesizer converting motion to music"
+   }, {
+     icon: "📊",
+     label: "Dashboard",
+     desc: "Real-time visualization of swing analytics"
+   }],
+   roleMap: [{
+     section: "Hardware",
+     role: "Embedded Systems & IoT Engineer"
+   }, {
+     section: "Streaming",
+     role: "Backend Developer"
+   }, {
+     section: "ML Analysis",
+     role: "AI / ML Engineer"
+   }]
+}, {
+   id: "foleystage",
+   emoji: "🎬👣",
+   title: "Interactive Foley Stage",
+   subtitle: "Audio · Sensors · Video · Interactive · Real-Time",
+   accentColor: "#D946EF",
+   deliverable: "Floor-based interactive foley sound stage with video sync - STM32 pressure sensor array",
+   metaInsight: '"Every step tells a story when sound responds to motion in perfect sync."',
+   layers: [{
+     num: "1",
+     icon: "🔌",
+     title: "Sensor Hardware",
+     role: "Embedded Systems & IoT Engineer",
+     analyticsType: "Sensor Array",
+     color: "#D946EF",
+     what: "Deploy pressure sensors across floor grid.",
+     analyze: ["Sensor placement", "Signal conditioning", "Calibration"],
+     metrics: ["Sensor count", "Accuracy mm", "Response time"],
+     outputs: ["Floor grid design", "Calibration tool", "Signal conditioning"]
+   }, {
+     num: "2",
+     icon: "⚙️",
+     title: "Signal Processing",
+     role: "Embedded Systems & IoT Engineer",
+     analyticsType: "Data Cleaning",
+     color: "#D946EF",
+     what: "Process footstep pressure data.",
+     analyze: ["Peak detection", "Debounce filtering", "Timestamp sync"],
+     metrics: ["Detection accuracy", "False positive %", "Jitter ms"],
+     outputs: ["Processed footsteps", "Timing markers", "Clean signal stream"]
+   }, {
+     num: "3",
+     icon: "🐍",
+     title: "Sound Engine",
+     role: "Backend Developer",
+     analyticsType: "Audio Processing",
+     color: "#38BDF8",
+     what: "Generate synchronized sound effects.",
+     analyze: ["Sample mapping", "Real-time mixing", "Video sync"],
+     metrics: ["Latency ms", "Sync accuracy", "Audio quality dB"],
+     outputs: ["Sound engine", "Sync system", "Sample library"]
+   }, {
+     num: "4",
+     icon: "🎬",
+     title: "Video Integration",
+     role: "Full Stack Developer",
+     analyticsType: "Multi-media",
+     color: "#2ECC71",
+     what: "Sync audio with visual playback.",
+     analyze: ["Timecode sync", "Format support", "Streaming"],
+     metrics: ["Sync drift ms", "Formats supported", "Playback rate"],
+     outputs: ["Sync controller", "Multi-format support", "Streaming endpoint"]
+   }, {
+     num: "5",
+     icon: "📡",
+     title: "Network Layer",
+     role: "Cloud / DevOps Engineer",
+     analyticsType: "Real-time",
+     color: "#6366F1",
+     what: "Stream data over WebSocket.",
+     analyze: ["Connection handling", "Message routing", "Scalability"],
+     metrics: ["Connections", "Latency ms", "Uptime %"],
+     outputs: ["WebSocket server", "Load balancing", "Scaling guide"]
+   }, {
+     num: "6",
+     icon: "📊",
+     title: "Dashboard",
+     role: "Full Stack Developer",
+     analyticsType: "Visualization",
+     color: "#14B8A6",
+     what: "Visualize footstep patterns.",
+     analyze: ["Heat mapping", "Real-time charts", "History"],
+     metrics: ["Refresh rate", "Mobile view", "Data points/sec"],
+     outputs: ["Stage visualizer", "Heatmap view", "History panel"]
+   }, {
+     num: "7",
+     icon: "🎛️",
+     title: "Stage Controls",
+     role: "UI/UX Designer",
+     analyticsType: "Interactive",
+     color: "#A855F7",
+     what: "Control panel for sound mapping.",
+     analyze: ["Scene selection", "Effect intensity", "Recording"],
+     metrics: ["Panel load time", "Controls latency", "Recording quality"],
+     outputs: ["Control panel", "Scene manager", "Recording tool"]
+   }, {
+     num: "8",
+     icon: "📱",
+     title: "Mobile Controller",
+     role: "Full Stack Developer",
+     analyticsType: "Remote Control",
+     color: "#F97316",
+     what: "Mobile app for stage control.",
+     analyze: ["Remote protocol", "UI design", "Offline mode"],
+     metrics: ["Connect time", "UI response", "Features"],
+     outputs: ["Controller app", "Remote protocol", "Settings"]
+   }, {
+     num: "9",
+     icon: "🚀",
+     title: "Production Deploy",
+     role: "Cloud / DevOps Engineer",
+     analyticsType: "Live Deployment",
+     color: "#EF4444",
+     what: "Stage-ready production system.",
+     analyze: ["Reliability", "Monitoring", "Backup"],
+     metrics: ["Uptime %", "Alerts", "Recovery time"],
+     outputs: ["Production setup", "Monitor alerts", "Recovery plan"]
+   }],
+   deliverables: [{
+     icon: "🎬",
+     label: "Stage System",
+     desc: "STM32 floor grid with pressure sensors and sound engine"
+   }, {
+     icon: "📱",
+     label: "Mobile App",
+     desc: "Remote controller for stage operation and effects"
+   }],
+   roleMap: [{
+     section: "Hardware",
+     role: "Embedded Systems & IoT Engineer"
+   }, {
+     section: "Audio Engine",
+     role: "Backend Developer"
+   }]
+}, {
+   id: "stagecontroller",
+   emoji: "🎸💡",
+   title: "Audience Stage Controller",
+   subtitle: "Crowd · IoT · Lighting · Real-Time · WebSockets",
+   accentColor: "#10B981",
+   deliverable: "Crowd-responsive stage lighting system - ESP32 decibel nodes controlling DMX lights",
+   metaInsight: '"The crowd becomes the conductor when every voice shapes the light."',
+   layers: [{
+     num: "1",
+     icon: "🔌",
+     title: "Audio Nodes",
+     role: "Embedded Systems & IoT Engineer",
+     analyticsType: "Sound Capture",
+     color: "#10B981",
+     what: "Deploy ESP32 decibel sensors.",
+     analyze: ["Microphone selection", "Amplification", "Calibration"],
+     metrics: ["dB range", "Accuracy", "Power consumption"],
+     outputs: ["Node design", "Calibration tool", "Power profile"]
+   }, {
+     num: "2",
+     icon: "⚙️",
+     title: "Signal Processing",
+     role: "Embedded Systems & IoT Engineer",
+     analyticsType: "Real-time Filtering",
+     color: "#10B981",
+     what: "Analyze crowd noise patterns.",
+     analyze: ["Volume thresholds", "Peak detection", "Averaging"],
+     metrics: ["Response time", "Accuracy dB", "False triggers"],
+     outputs: ["Volume analyzer", "Trigger system", "Filtered output"]
+   }, {
+     num: "3",
+     icon: "📡",
+     title: "MQTT Network",
+     role: "Cloud / DevOps Engineer",
+     analyticsType: "Broker Setup",
+     color: "#6366F1",
+     what: "Connect nodes to central broker.",
+     analyze: ["Topic structure", "QoS levels", "Scaling"],
+     metrics: ["Connections", "Message rate", "Latency ms"],
+     outputs: ["Broker config", "Topic design", "Scale plan"]
+   }, {
+     num: "4",
+     icon: "💡",
+     title: "DMX Control",
+     role: "Embedded Systems & IoT Engineer",
+     analyticsType: "Lighting Protocol",
+     color: "#F97316",
+     what: "Control stage lights via DMX.",
+     analyze: ["Channel mapping", "Intensity curves", "Synchronization"],
+     metrics: ["Channel count", "Response time", "Sync accuracy"],
+     outputs: ["DMX controller", "Mapping tool", "Sync system"]
+   }, {
+     num: "5",
+     icon: "🎵",
+     title: "Light Sequencer",
+     role: "Backend Developer",
+     analyticsType: "Pattern Engine",
+     color: "#38BDF8",
+     what: "Create responsive light patterns.",
+     analyze: ["Pattern algorithms", "Crowd response", "Transitions"],
+     metrics: ["Pattern variety", "Response latency", "Smoothness"],
+     outputs: ["Sequencer engine", "Pattern library", "Transition system"]
+   }, {
+     num: "6",
+     icon: "📊",
+     title: "Analytics",
+     role: "Data Analyst",
+     analyticsType: "Real-time Metrics",
+     color: "#4A9EFF",
+     what: "Track crowd engagement.",
+     analyze: ["Volume trends", "Engagement peaks", "Light effectiveness"],
+     metrics: ["Data points/sec", "Chart update", "History depth"],
+     outputs: ["Analytics dashboard", "Engagement charts", "Reports"]
+   }, {
+     num: "7",
+     icon: "🎛️",
+     title: "Dashboard UI",
+     role: "UI/UX Designer",
+     analyticsType: "Control Panel",
+     color: "#D946EF",
+     what: "Operator control interface.",
+     analyze: ["Manual overrides", "Pattern selection", "Live view"],
+     metrics: ["UI load time", "Controls count", "Response time"],
+     outputs: ["Control panel", "Pattern selector", "Live monitor"]
+   }, {
+     num: "8",
+     icon: "📱",
+     title: "Crowd View",
+     role: "Full Stack Developer",
+     analyticsType: "Audience Display",
+     color: "#2ECC71",
+     what: "Show crowd impact to audience.",
+     analyze: ["Large display", "Mobile view", "Real-time updates"],
+     metrics: ["Display FPS", "Mobile load", "Data rate"],
+     outputs: ["Audience display", "Mobile UI", "WebSocket stream"]
+   }, {
+     num: "9",
+     icon: "🚀",
+     title: "Live Deployment",
+     role: "Cloud / DevOps Engineer",
+     analyticsType: "Production",
+     color: "#EF4444",
+     what: "Deploy for live events.",
+     analyze: ["Reliability", "Backup systems", "Monitoring"],
+     metrics: ["Uptime %", "Recovery time", "Alert response"],
+     outputs: ["Production setup", "Backup plan", "Monitor alerts"]
+   }],
+   deliverables: [{
+     icon: "💡",
+     label: "Light System",
+     desc: "ESP32 nodes controlling DMX lighting based on crowd volume"
+   }, {
+     icon: "📊",
+     label: "Dashboard",
+     desc: "Real-time crowd analytics and lighting control interface"
+   }],
+   roleMap: [{
+     section: "Sensors",
+     role: "Embedded Systems & IoT Engineer"
+   }, {
+     section: "Control",
+     role: "Cloud / DevOps Engineer"
+   }]
 }];
 
 // export default projectsData;
