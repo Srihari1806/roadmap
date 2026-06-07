@@ -5836,6 +5836,54 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
   const [monthProgress, setMonthProgress] = useState(7); // Default to December (Full)
   const [selectedSkillId, setSelectedSkillId] = useState("sql");
   const [selectedSkillDetail, setSelectedSkillDetail] = useState(null);
+
+  const getGroupedSkills = (current, learning) => {
+    const all = Array.from(new Set([...current, ...learning]));
+    const groups = {
+      languages: [],
+      frameworks: [],
+      databases: [],
+      tools: [],
+      coursework: []
+    };
+    
+    all.forEach(s => {
+      const sl = s.toLowerCase();
+      if (
+        sl === "sql" || sl === "python" || sl === "javascript" || sl === "typescript" || 
+        sl === "html/css" || sl === "html" || sl === "css" || sl.includes("c/c++") || 
+        sl.includes("c programming") || sl === "java" || sl === "c++"
+      ) {
+        groups.languages.push(s);
+      } else if (
+        sl.includes("react") || sl.includes("pandas") || sl.includes("seaborn") || 
+        sl.includes("matplotlib") || sl.includes("express") || sl.includes("spring boot") || 
+        sl.includes("tailwind") || sl.includes("framer motion") || sl.includes("hooks") || 
+        sl.includes("library") || sl.includes("numpy")
+      ) {
+        groups.frameworks.push(s);
+      } else if (
+        sl.includes("mongodb") || sl.includes("firebase") || sl.includes("postgres") || 
+        sl.includes("dbms") || sl.includes("database") || sl.includes("normalization") || 
+        sl.includes("schema") || sl.includes("azure") || sl.includes("mysql") || 
+        sl.includes("nosql") || sl.includes("firestore")
+      ) {
+        groups.databases.push(s);
+      } else if (
+        sl.includes("power query") || sl.includes("excel") || sl.includes("power bi") || 
+        sl.includes("tableau") || sl.includes("hubspot") || sl.includes("git") || 
+        sl.includes("github") || sl.includes("vercel") || sl.includes("google analytics") || 
+        sl.includes("ga4") || sl.includes("postman") || sl.includes("ads") || 
+        sl.includes("analytics") || sl.includes("seo") || sl.includes("marketing")
+      ) {
+        groups.tools.push(s);
+      } else {
+        groups.coursework.push(s);
+      }
+    });
+    
+    return groups;
+  };
   
   let masteredSkills = {};
   try {
@@ -6103,93 +6151,148 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
 
           return (
             <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 32, alignItems: "flex-start" }}>
-              
-              {/* Left Column: The 📄 Resume */}
-              <div style={{ background: "#0D0E12", border: "1px solid #1E293B", borderRadius: 4, padding: "28px 32px" }}>
-                <div style={{ borderBottom: "1px solid #1E293B", paddingBottom: 20, marginBottom: 24 }}>
-                  <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 36, letterSpacing: 3, color: "#F8FAFC", lineHeight: 1 }}>{dynamicResume.name}</div>
-                  <div style={{ fontSize: 10, letterSpacing: 2, color: role.color, textTransform: "uppercase", marginTop: 4, fontWeight: 700 }}>{dynamicResume.title}</div>
-                  <div style={{ display: "flex", gap: 12, marginTop: 10, flexWrap: "wrap" }}>
-                    {Object.entries(dynamicResume.contact).map(([k, v]) => (
-                      <span key={k} style={{ fontSize: 9, color: "#64748B", letterSpacing: 0.5 }}>
-                        <span style={{ color: "#475569" }}>{k.toUpperCase()}: </span>{v}
-                      </span>
-                    ))}
+              {/* Left Column: The 📄 Resume (Aligned with resume template.jpeg) */}
+              <div style={{
+                background: "#FFFFFF",
+                color: "#000000",
+                border: "1px solid #E5E7EB",
+                boxShadow: "0 10px 25px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.05)",
+                borderRadius: "4px",
+                padding: "36px 32px",
+                fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+                lineHeight: "1.35"
+              }}>
+                {/* Header */}
+                <div style={{ textAlign: "center", marginBottom: "12px" }}>
+                  <h2 style={{ fontSize: "20px", fontWeight: "bold", letterSpacing: "0.5px", color: "#000000", margin: "0 0 6px 0" }}>
+                    {dynamicResume.name.toUpperCase()}
+                  </h2>
+                  <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "10px", flexWrap: "wrap", fontSize: "9.5px", color: "#374151" }}>
+                    <span style={{ display: "flex", alignItems: "center" }}>
+                      <svg viewBox="0 0 24 24" style={{ width: 10, height: 10, fill: '#374151', marginRight: 3 }}><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                      {dynamicResume.contact.email}
+                    </span>
+                    <span style={{ color: "#D1D5DB" }}>|</span>
+                    <span style={{ display: "flex", alignItems: "center" }}>
+                      <svg viewBox="0 0 24 24" style={{ width: 10, height: 10, fill: '#374151', marginRight: 3 }}><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                      {dynamicResume.contact.linkedin}
+                    </span>
+                    <span style={{ color: "#D1D5DB" }}>|</span>
+                    <span style={{ display: "flex", alignItems: "center" }}>
+                      <svg viewBox="0 0 24 24" style={{ width: 10, height: 10, fill: '#374151', marginRight: 3 }}><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.21.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                      {dynamicResume.contact.github}
+                    </span>
+                    <span style={{ color: "#D1D5DB" }}>|</span>
+                    <span>{dynamicResume.contact.location}</span>
                   </div>
                 </div>
 
-                <div style={{ marginBottom: 24 }}>
-                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Profile Summary</div>
-                  <p style={{ fontSize: 11, lineHeight: 1.7, color: "#94A3B8" }}>{dynamicResume.summary}</p>
+                {/* Education Section */}
+                <div style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", color: "#000000", borderBottom: "1px solid #000000", paddingBottom: "1px", marginTop: "12px", marginBottom: "6px", letterSpacing: "0.5px" }}>
+                  Education
+                </div>
+                <div style={{ marginBottom: "10px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "10px", fontWeight: "bold", color: "#000000" }}>
+                    <span>{dynamicResume.education.college}</span>
+                    <span>{dynamicResume.education.year}</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "9.5px", color: "#374151", marginTop: "1px" }}>
+                    <span style={{ fontStyle: "italic" }}>{dynamicResume.education.degree}</span>
+                    <span>CGPA: {dynamicResume.education.cgpa}/10.0</span>
+                  </div>
                 </div>
 
-                <div style={{ marginBottom: 24 }}>
-                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Experience & Projects</div>
-                  {dynamicResume.projects.map(p => (
-                    <div key={p.id} style={{ marginBottom: 18, borderBottom: "1px solid #141822", paddingBottom: 14 }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6, flexWrap: "wrap", gap: 8 }}>
-                        <div>
-                          <div style={{ fontSize: 12, fontWeight: 700, color: "#E2E8F0" }}>{p.title}</div>
-                          <div style={{ fontSize: 9, color: "#475569", marginTop: 2 }}>{p.status}</div>
+                {/* Experience & Projects Section */}
+                <div style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", color: "#000000", borderBottom: "1px solid #000000", paddingBottom: "1px", marginTop: "12px", marginBottom: "6px", letterSpacing: "0.5px" }}>
+                  Experience & Projects
+                </div>
+                {dynamicResume.projects.filter(p => p.id !== "sahitya").map(p => (
+                  <div key={p.id} style={{ marginBottom: "10px" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: "10px", fontWeight: "bold", color: "#000000" }}>
+                      <span>{p.title} <span style={{ fontWeight: "normal", fontStyle: "italic", color: "#4B5563" }}>| {p.tags.join(", ")}</span></span>
+                      <span style={{ fontSize: "9px", fontWeight: "bold", color: "#111827" }}>{p.status}</span>
+                    </div>
+                    <ul style={{ paddingLeft: "15px", margin: "3px 0 0 0", listStyleType: "disc" }}>
+                      {p.bullets.map((b, idx) => (
+                        <li key={idx} style={{ fontSize: "9.5px", color: "#374151", lineHeight: "1.35", marginBottom: "1px" }}>
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+
+                {/* Technical Skills Section */}
+                <div style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", color: "#000000", borderBottom: "1px solid #000000", paddingBottom: "1px", marginTop: "12px", marginBottom: "6px", letterSpacing: "0.5px" }}>
+                  Technical Skills
+                </div>
+                {(() => {
+                  const groups = getGroupedSkills(dynamicResume.skills.current, dynamicResume.skills.learning);
+                  const entries = [
+                    { label: "Programming Languages", value: groups.languages },
+                    { label: "Frameworks & Libraries", value: groups.frameworks },
+                    { label: "Databases & Cloud", value: groups.databases },
+                    { label: "Tools & Platforms", value: groups.tools },
+                    { label: "Coursework / Foundations", value: groups.coursework }
+                  ].filter(e => e.value.length > 0);
+                  
+                  return (
+                    <div style={{ display: "flex", flexDirection: "column", gap: "3px", marginBottom: "6px" }}>
+                      {entries.map(e => (
+                        <div key={e.label} style={{ fontSize: "9.5px", color: "#374151", lineHeight: "1.3" }}>
+                          <strong style={{ color: "#000000" }}>{e.label}: </strong>
+                          {e.value.join(", ")}
                         </div>
-                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-                          {p.tags.slice(0, 3).map(t => <span key={t} className="tag" style={{ fontSize: 8, padding: "2px 6px" }}>{t}</span>)}
-                        </div>
-                      </div>
-                      <ul style={{ paddingLeft: 0, listStyle: "none", marginTop: 6 }}>
-                        {p.bullets.map((b, i) => (
-                          <li key={i} style={{ fontSize: 10.5, color: "#64748B", lineHeight: 1.6, paddingLeft: 12, position: "relative" }}>
-                            <span style={{ position: "absolute", left: 0, color: "#334155" }}>›</span>{b}
-                          </li>
-                        ))}
-                      </ul>
+                      ))}
+                    </div>
+                  );
+                })()}
+
+                {/* Position of Responsibility Section */}
+                <div style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", color: "#000000", borderBottom: "1px solid #000000", paddingBottom: "1px", marginTop: "12px", marginBottom: "6px", letterSpacing: "0.5px" }}>
+                  Position of Responsibility
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: "4px", marginBottom: "6px" }}>
+                  {dynamicResume.projects.filter(p => p.id === "sahitya").map(lp => (
+                    <div key={lp.id} style={{ display: "flex", justifyContent: "space-between", fontSize: "9.5px", color: "#374151" }}>
+                      <span>
+                        <strong>Founder</strong> : Sahitya Rachanalu (Telugu Literary Community)
+                      </span>
+                      <span style={{ fontSize: "9px", fontWeight: "bold", color: "#111827" }}>
+                        {lp.status.replace("Founder | ", "")}
+                      </span>
                     </div>
                   ))}
-                </div>
-
-                <div style={{ marginBottom: 24 }}>
-                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Skills Ingested (Role Relevant)</div>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                    {dynamicResume.skills.current
-                      .filter(s => {
-                        const sL = s.toLowerCase();
-                        return (
-                          role.must_have.some(mh => matchSkill(mh, new Set([s]))) ||
-                          role.good_to_have.some(gth => matchSkill(gth, new Set([s]))) ||
-                          role.ats_keywords.some(ak => {
-                            const akL = ak.toLowerCase();
-                            return sL === akL || sL.includes(akL) || akL.includes(sL);
-                          })
-                        );
-                      })
-                      .map(s => (
-                        <span key={s} className="tag" style={{ background: "#064E3B", color: "#34D399", borderColor: "#064E3B", fontSize: 9 }}>{s}</span>
-                      ))
-                    }
-                    {dynamicResume.skills.learning
-                      .filter(s => {
-                        const sL = s.toLowerCase();
-                        return (
-                          role.must_have.some(mh => matchSkill(mh, new Set([s]))) ||
-                          role.good_to_have.some(gth => matchSkill(gth, new Set([s]))) ||
-                          role.ats_keywords.some(ak => {
-                            const akL = ak.toLowerCase();
-                            return sL === akL || sL.includes(akL) || akL.includes(sL);
-                          })
-                        );
-                      })
-                      .map(s => (
-                        <span key={s} className="tag" style={{ background: "#713F12", color: "#FCD34D", borderColor: "#713F12", fontSize: 9 }}>{s} (learning)</span>
-                      ))
-                    }
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "9.5px", color: "#374151" }}>
+                    <span>
+                      <strong>Member</strong> : IoT & Embedded Club, KIIT University
+                    </span>
+                    <span style={{ fontSize: "9px", fontWeight: "bold", color: "#111827" }}>2024 – Present</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "9.5px", color: "#374151" }}>
+                    <span>
+                      <strong>Volunteer</strong> : NSS KIIT Campus
+                    </span>
+                    <span style={{ fontSize: "9px", fontWeight: "bold", color: "#111827" }}>2023 – Present</span>
                   </div>
                 </div>
 
-                <div>
-                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Education</div>
-                  <div style={{ fontSize: 11, color: "#E2E8F0", fontWeight: 700, marginBottom: 2 }}>{dynamicResume.education.degree}</div>
-                  <div style={{ fontSize: 10, color: "#64748B", lineHeight: 1.6 }}>
-                    {dynamicResume.education.college} | {dynamicResume.education.year} | <span style={{ color: "#475569" }}>CGPA:</span> {dynamicResume.education.cgpa}
+                {/* Certifications & Achievements Section */}
+                <div style={{ fontSize: "11px", fontWeight: "bold", textTransform: "uppercase", color: "#000000", borderBottom: "1px solid #000000", paddingBottom: "1px", marginTop: "12px", marginBottom: "6px", letterSpacing: "0.5px" }}>
+                  Certifications & Achievements
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "9.5px", color: "#374151" }}>
+                    <span><strong>Google Analytics (GA4) Certification</strong> — Google Skillshop</span>
+                    <span style={{ fontSize: "9px", fontStyle: "italic" }}>Verified Credential</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "9.5px", color: "#374151" }}>
+                    <span><strong>HubSpot Social Media Certification</strong> — HubSpot Academy</span>
+                    <span style={{ fontSize: "9px", fontStyle: "italic" }}>Verified Credential</span>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", fontSize: "9.5px", color: "#374151" }}>
+                    <span><strong>Google Ads Search Certification</strong> — Google Skillshop</span>
+                    <span style={{ fontSize: "9px", fontStyle: "italic" }}>Verified Credential</span>
                   </div>
                 </div>
               </div>
