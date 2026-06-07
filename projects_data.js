@@ -1,13 +1,13 @@
 // ─── PROJECT DATA ────────────────────────────────────────────────────────────
-// This file defines the deep-dive layers for the three core projects.
-// Each layer is mapped to one of the 7 Analyst Roles and one of the 7 Core Analytics Types.
+// This file defines the deep-dive layers for the core projects.
+// Each layer is mapped to one of the target roles and core analytics types.
 
 const projectsData = [
   {
     id: "ipl",
     emoji: "🏏",
     title: "IPL Analytics Engine",
-    subtitle: "Sports · Product · Business · Growth · Strategy",
+    subtitle: "Sports · Product · Business · Growth · Strategy · Machine Learning",
     accentColor: "#F4A72A",
     deliverable: "Interactive website hosted on Vercel — all dashboards, reports and blogs redirect from portfolio",
     metaInsight: '"IPL is not a cricket tournament. It is an interconnected attention economy."',
@@ -104,7 +104,7 @@ const projectsData = [
       },
       {
         num: "10", icon: "🤖", title: "AI Intelligence Layer",
-        role: "AI Analyst",
+        role: "AI / ML Engineer",
         analyticsType: "Predictive & Prescriptive",
         color: "#6366F1",
         what: "Match hype and engagement forecasting",
@@ -126,7 +126,7 @@ const projectsData = [
       { section: "Growth + Virality", role: "Growth Analyst" },
       { section: "Business + Revenue", role: "Business Analyst" },
       { section: "Strategy + Economics", role: "Strategy Analyst" },
-      { section: "AI Intelligence", role: "AI Analyst" },
+      { section: "AI Intelligence", role: "AI / ML Engineer" },
     ],
     resolvedBugs: [
       {
@@ -155,7 +155,7 @@ const projectsData = [
     id: "ott",
     emoji: "🎬",
     title: "OTT vs Theatre Intelligence",
-    subtitle: "Content · Audience · Distribution · Business · COVID Impact",
+    subtitle: "Content · Audience · Distribution · Business · COVID Impact · ML Sentiment",
     accentColor: "#A855F7",
     deliverable: "Interactive website with 9 analysis modules — linked from portfolio",
     metaInsight: '"Theatres capture the peak. OTT captures the memory."',
@@ -202,7 +202,7 @@ const projectsData = [
       },
       {
         num: "5", icon: "🔗", title: "Full Content Lifecycle",
-        role: "Strategy / Market Analyst",
+        role: "Strategy Analyst",
         analyticsType: "Inferential & Trends",
         color: "#14B8A6",
         what: "Theatre window to OTT gap has collapsed 60→8 weeks",
@@ -212,7 +212,7 @@ const projectsData = [
       },
       {
         num: "6", icon: "📈", title: "Marketing & Promotion Strategies",
-        role: "Growth / Marketing Analyst",
+        role: "Growth Analyst",
         analyticsType: "Causal & Attribution",
         color: "#F97316",
         what: "Promotion doesn't just inform — it creates cultural moments",
@@ -264,13 +264,14 @@ const projectsData = [
       { section: "Demographics", role: "Product Analyst" },
       { section: "Marketing ROI", role: "Growth Analyst" },
       { section: "Business Models", role: "Financial Analyst" },
+      { section: "Sentiment Models", role: "AI / ML Engineer" },
     ]
   },
   {
     id: "ecom",
     emoji: "🛒",
     title: "E-Commerce + Ads System",
-    subtitle: "Sales · Psychology · Quick Commerce · Offline Impact · Conglomerates",
+    subtitle: "Sales · Psychology · Quick Commerce · DevOps Pipelines · Conglomerates",
     accentColor: "#2ECC71",
     deliverable: "Interactive website with 9 analysis modules — redirects from portfolio",
     metaInsight: '"E-commerce is not selling products. It is controlling attention, behavior, logistics, and ecosystems."',
@@ -297,7 +298,7 @@ const projectsData = [
       },
       {
         num: "3", icon: "📱", title: "Ads Impact & Conversion",
-        role: "Growth / Marketing Analyst",
+        role: "Growth Analyst",
         analyticsType: "Causal & Attribution",
         color: "#EC4899",
         what: "Reels ads are the highest converting format in e-commerce",
@@ -327,7 +328,7 @@ const projectsData = [
       },
       {
         num: "6", icon: "⚡", title: "Quick Commerce Market Shift",
-        role: "Strategy / Market Analyst",
+        role: "Strategy Analyst",
         analyticsType: "Exploratory & Market",
         color: "#14B8A6",
         what: "Time is replacing price as the #1 purchase decision factor",
@@ -337,7 +338,7 @@ const projectsData = [
       },
       {
         num: "7", icon: "🏪", title: "Impact on Offline Market",
-        role: "Strategy / Market Analyst",
+        role: "Strategy Analyst",
         analyticsType: "Causal & Macro",
         color: "#F97316",
         what: "Offline is not dying — it is being absorbed into online ecosystems",
@@ -356,14 +357,14 @@ const projectsData = [
         outputs: ["Conglomerate strategy comparison matrix", "Ecosystem map visualization", "Insight: 'The battle is won in logistics and data, not UI'"],
       },
       {
-        num: "9", icon: "🧬", title: "Prescriptive Strategy",
-        role: "Strategy / Market Analyst",
-        analyticsType: "Prescriptive & Final",
+        num: "9", icon: "🧬", title: "Prescriptive Strategy & deployment",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Prescriptive & Infrastructure",
         color: "#A855F7",
-        what: "Connect all 8 layers into one unified narrative",
-        analyze: ["How attention → behavior → logistics → ecosystem forms a loop", "Which companies own each layer", "What breaks the loop (regulation, trust, competition)"],
-        metrics: ["Customer journey touchpoints controlled per platform", "Lock-in index (how many services bundle together)", "Switching cost proxy"],
-        outputs: ["Ecosystem control map", "Full system narrative report", "Insight: 'E-commerce is attention + behavior + logistics + ecosystem control'"],
+        what: "Automated scaling deployment configuration & cross-system loop checking",
+        analyze: ["Dockerizing e-commerce catalog modules", "GitHub Actions pipeline configurations for web assets", "Auto-scaling web traffic limits"],
+        metrics: ["Infrastructure response latency (ms)", "Rolling deployment success rate %", "Resource efficiency"],
+        outputs: ["Docker Compose templates", "GitHub Actions deployment logs", "System monitoring dashboard"]
       },
     ],
     deliverables: [
@@ -379,13 +380,14 @@ const projectsData = [
       { section: "Consumer Psych", role: "Product Analyst" },
       { section: "Quick Commerce", role: "Strategy Analyst" },
       { section: "Conglomerates", role: "Business Analyst" },
+      { section: "Deployment Pipeline", role: "Cloud / DevOps Engineer" },
     ]
   },
   {
     id: "bpl",
     emoji: "🎸",
     title: "Band Premier League (BPL)",
-    subtitle: "Music · Market · Product · Revenue · Ecosystem",
+    subtitle: "Music · Market · Product · Revenue · Scheduling Algorithm · UI Design",
     accentColor: "#F4A72A",
     deliverable: "Primary data collection project — Venue & Band Matchmaking System",
     metaInsight: '"Live music is not just entertainment. It is a repeatable business model and a cultural economy."',
@@ -422,10 +424,10 @@ const projectsData = [
       },
       {
         num: "4", icon: "🟣", title: "Matchmaking & Optimization",
-        role: "Product Analyst",
+        role: "SDE (Intern)",
         analyticsType: "Predictive & Prescriptive",
         color: "#A855F7",
-        what: "The 'IPL System' layer — slot optimization",
+        what: "The 'IPL System' layer — slot optimization algorithm",
         analyze: ["Optimal band-venue pairing", "Scheduling to avoid clashing", "Slot utilization efficiency"],
         metrics: ["Slot fill rate", "Match score (Band-Venue fit)", "Predicted attendance per slot"],
         outputs: ["Optimal show calendar", "Scheduling model"]
@@ -441,14 +443,14 @@ const projectsData = [
         outputs: ["Revenue waterfall chart", "Profit/Show scenario analysis"]
       },
       {
-        num: "6", icon: "🟠", title: "Funnel & Product Analytics",
-        role: "Product Analyst",
-        analyticsType: "Diagnostic & Funnel",
-        color: "#F97316",
-        what: "The booking journey (BookMyShow style)",
-        analyze: ["Awareness → Interest → Booking → Attendance", "Drop-off points in the booking journey", "Conversion lift from promo triggers"],
-        metrics: ["Funnel conversion %", "Booking-to-show lead time", "Repeat booking rate"],
-        outputs: ["Conversion funnel diagram", "Drop-off heatmaps"]
+        num: "6", icon: "🟢", title: "Figma Component & UI Mapping",
+        role: "UI/UX Designer",
+        analyticsType: "Interactive Prototypes",
+        color: "#D946EF",
+        what: "Designing the booking portal layout and interactive slots schedule",
+        analyze: ["Mobile-first layout sizing", "Typography systems for venue maps", "Figma component auto-layout constraints"],
+        metrics: ["Usability index", "Interactive transitions latency (ms)", "Interface accessibility rating"],
+        outputs: ["Figma interactive high-fidelity dashboard prototype", "UI component library specifications", "Design token variables spreadsheet"]
       },
       {
         num: "7", icon: "🟤", title: "Growth & Marketing Strategy",
@@ -462,7 +464,7 @@ const projectsData = [
       },
       {
         num: "8", icon: "⚫", title: "Ecosystem Impact",
-        role: "Strategy / Market Analyst",
+        role: "Strategy Analyst",
         analyticsType: "Prescriptive & Macro",
         color: "#1F2937",
         what: "Your edge — the big picture economic impact",
@@ -482,7 +484,467 @@ const projectsData = [
       { section: "Demand & Funnel", role: "Product Analyst" },
       { section: "Revenue Model", role: "Business Analyst" },
       { section: "Campaign ROI", role: "Growth Analyst" },
-      { section: "Macro Impact", role: "Strategy Analyst" }
+      { section: "Macro Impact", role: "Strategy Analyst" },
+      { section: "Matchmaking Algorithm", role: "SDE (Intern)" },
+      { section: "Interface Design", role: "UI/UX Designer" }
+    ]
+  },
+  {
+    id: "telemetry",
+    emoji: "🔌",
+    title: "The Smart Telemetry Box",
+    subtitle: "Embedded · Signal Processing · Network Protocols · Time-Series DB · Real-Time Dashboard",
+    accentColor: "#06B6D4",
+    deliverable: "Live Edge-Computing Sports Telemetry Tracker (ESP32/STM32 + IMU sensor + MQTT + real-time Canvas charts)",
+    metaInsight: '"Hardware is just the collector. The value is created in real-time signals, low-latency transmission, and edge analysis."',
+    layers: [
+      {
+        num: "1", icon: "🔌", title: "Low-Level Hardware Layer",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Register Configuration",
+        color: "#06B6D4",
+        what: "Accessing raw physical IMU data directly via I2C/SPI protocols on STM32/ESP32 register levels.",
+        analyze: ["Clock configuration and register offsets", "I2C/SPI bus clock frequency timing", "Raw data output registers for acceleration and gyroscope vectors"],
+        metrics: ["Data acquisition rate (Hz)", "Bus communication latency (us)", "Register read success rate %"],
+        outputs: ["Working bare-metal I2C register driver in C", "Raw accelerometer x-y-z stream logs", "Timing verification graphs"]
+      },
+      {
+        num: "2", icon: "⚙️", title: "Edge Filtering Layer",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Signal Processing",
+        color: "#06B6D4",
+        what: "Implementing low-footprint Kalman or Complementary filters at the hardware edge to eliminate sensor noise.",
+        analyze: ["IMU gyroscope drift over time", "High-frequency noise from motor vibrations", "Filter coefficients optimization for dynamic response"],
+        metrics: ["Signal-to-noise ratio (SNR) lift (dB)", "Mathematical operation execution time (us)", "Memory allocation overhead (bytes)"],
+        outputs: ["C implementation of Complementary/Kalman filter", "Filtered vs raw motion data overlay charts", "Optimized filter coefficient configurations"]
+      },
+      {
+        num: "3", icon: "📦", title: "Packet Compression Layer",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Data Optimization",
+        color: "#06B6D4",
+        what: "Serializing and compressing sensor streams to reduce wireless transmission payload sizes.",
+        analyze: ["Bitwise packing algorithms for sensor floats", "Protobuf vs JSON serialization size comparison", "Frequency of delta-compression vs full updates"],
+        metrics: ["Payload compression ratio", "Serialization/deserialization CPU cycles", "Packet drop rate under limited bandwidth"],
+        outputs: ["Custom C bit-packing function", "Protobuf message definitions", "Compression efficiency benchmark report"]
+      },
+      {
+        num: "4", icon: "📡", title: "Firmware Network Layer",
+        role: "Embedded Systems & IoT Engineer",
+        analyticsType: "Communication Protocols",
+        color: "#06B6D4",
+        what: "Establishing secure, lightweight MQTT network connections with the ESP32 Wi-Fi module.",
+        analyze: ["Wi-Fi RSSI signal strength impact on transmission stability", "MQTT Quality of Service (QoS 0 vs 1 vs 2) performance tradeoffs", "Reconnection handshake time and backoff loops"],
+        metrics: ["MQTT connection uptime %", "Average packet round-trip time (RTT)", "Power consumption during transmission (mA)"],
+        outputs: ["Robust ESP32 Wi-Fi auto-reconnect logic", "MQTT publish/subscribe script in C/Arduino", "Network latency profile graph"]
+      },
+      {
+        num: "5", icon: "🔀", title: "Broker & Ingestion Layer",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Infrastructure Routing",
+        color: "#6366F1",
+        what: "Setting up and scaling an MQTT Broker (Mosquitto) to route incoming device payloads to server streams.",
+        analyze: ["Broker CPU/Memory load under high topic counts", "Rate-limiting rules for misbehaving edge nodes", "Access Control List (ACL) security mappings"],
+        metrics: ["Concurrent device capacity", "Throughput rate (packets/sec)", "Broker queue size overflows"],
+        outputs: ["Secure Mosquitto broker configuration script", "TLS certificate generation commands", "Throughput performance metrics Dashboard"]
+      },
+      {
+        num: "6", icon: "⚡", title: "Backend Streaming Layer",
+        role: "Backend Developer",
+        analyticsType: "Event-Driven Processing",
+        color: "#38BDF8",
+        what: "Designing a Node.js and Socket.io microservice to stream telemetry data from MQTT queues to client dashboards.",
+        analyze: ["Node.js event-loop blocking under high-frequency sockets", "Memory leakage across active socket connections", "Broker-to-Socket message propagation delay"],
+        metrics: ["Websocket message latency (ms)", "CPU utilization % per 1k clients", "Active socket count"],
+        outputs: ["Node.js server with integrated MQTT client & Websocket server", "Websocket message event payload schemas", "Latency profile reports"]
+      },
+      {
+        num: "7", icon: "💾", title: "Time-Series Logging Layer",
+        role: "Database Administrator",
+        analyticsType: "Storage Optimization",
+        color: "#10B981",
+        what: "Configuring a time-series database (InfluxDB or TimescaleDB) to store high-frequency telemetry data efficiently.",
+        analyze: ["Database write performance under continuous streams", "Partitioning strategies for raw metrics by device", "Data retention policies and downsampling intervals"],
+        metrics: ["Write latency (ms)", "Disk compression ratio", "Index lookup query response times"],
+        outputs: ["TimescaleDB partition and schema DDL", "InfluxDB downsampling continuous queries", "Storage usage forecasts"]
+      },
+      {
+        num: "8", icon: "📊", title: "Real-Time Dashboard Layer",
+        role: "Full Stack Developer",
+        analyticsType: "Descriptive Visualization",
+        color: "#2ECC71",
+        what: "Building a React-based monitoring dashboard displaying real-time sports telemetry charts.",
+        analyze: ["React component re-render performance for high-frequency chart inputs", "Canvas-based (ChartJS/HTML5 Canvas) vs SVG rendering speeds", "State update throttling rules"],
+        metrics: ["Dashboard frame rate (FPS)", "Webpage memory utilization (MB)", "Dashboard loading speed (LCP)"],
+        outputs: ["React dashboard with real-time Canvas charts", "Responsive telemetry tracking UI components", "Interactive speed and angle widgets"]
+      },
+      {
+        num: "9", icon: "🎯", title: "Sports Analytics Layer",
+        role: "Sports Analyst",
+        analyticsType: "Predictive Analytics",
+        color: "#EF4444",
+        what: "Mapping accelerometer/gyroscope vector shapes to swing speeds and predicting athlete stroke types.",
+        analyze: ["Vector acceleration signatures for different swings", "Classification accuracy of KNN/Random Forest models", "Features correlation (peak acceleration vs hit velocity)"],
+        metrics: ["Model prediction accuracy %", "Inference delay on backend (ms)", "F1 score for swing classification"],
+        outputs: ["Scikit-learn swing classification model", "Feature engineering python script", "Sports swing efficiency analysis case study"]
+      }
+    ],
+    deliverables: [
+      { icon: "🔌", label: "Telemetry Device", desc: "ESP32 firmware code and custom register drivers (C/C++)" },
+      { icon: "🌐", label: "Real-time Site", desc: "Websocket streaming dashboard mapping bat motion vectors" },
+      { icon: "📊", label: "Timescale DB", desc: "Dockerized PostgreSQL database storing millions of coordinate values" },
+      { icon: "📄", label: "Analytical Case Study", desc: "'Edge Filtering and Kalman Drift Mitigation in Motion Tracking'" }
+    ],
+    roleMap: [
+      { section: "Low-level / Firmware", role: "Embedded Systems & IoT Engineer" },
+      { section: "Broker / Routing", role: "Cloud / DevOps Engineer" },
+      { section: "Event Streaming", role: "Backend Developer" },
+      { section: "DB Logging", role: "Database Administrator" },
+      { section: "Frontend Dashboard", role: "Full Stack Developer" },
+      { section: "Prediction Models", role: "AI / ML Engineer" }
+    ]
+  },
+  {
+    id: "threatshield",
+    emoji: "🛡️",
+    title: "The Live OWASP Threat Shield",
+    subtitle: "Cybersecurity · Log Parsing Agent · Attack Emulation · Splunk / ELK SIEM · Active Hardening",
+    accentColor: "#F43F5E",
+    deliverable: "Deliberately vulnerable Node.js application + python automated scanner + raw log tailing intrusion dashboard",
+    metaInsight: '"True security is not about writing a report. It is about actively monitoring access logs, parsing payloads, and detecting threats in real-time."',
+    layers: [
+      {
+        num: "1", icon: "🕸️", title: "Vulnerable Application Layer",
+        role: "Backend Developer",
+        analyticsType: "Application Vulnerabilities",
+        color: "#38BDF8",
+        what: "Designing and deploying a Node.js full-stack web application deliberately configured with OWASP vulnerabilities.",
+        analyze: ["SQL Injection entry points on login/search inputs", "Cross-Site Scripting (XSS) input reflection", "Insecure Session management and cookie tokens"],
+        metrics: ["Vulnerability count", "Exploitation success rate %", "Session hijacking window (mins)"],
+        outputs: ["Vulnerable Node.js web application code", "Vulnerability mapping diagram", "Local sandbox configuration script"]
+      },
+      {
+        num: "2", icon: "💥", title: "Automated Attack Simulator",
+        role: "Cybersecurity Analyst / SOC",
+        analyticsType: "Threat Emulation",
+        color: "#F43F5E",
+        what: "Writing automated python scripts to systematically target vulnerabilities and generate attack traffic.",
+        analyze: ["Brute-force password guessing algorithms", "SQLi evasion encoding (URL encoding, double encoding)", "XSS payload injection patterns"],
+        metrics: ["Attack requests per minute", "Evasion detection rate", "Payload execution success rate %"],
+        outputs: ["Python automated exploit scripts", "JSON catalog of payload vectors", "Traffic volume metrics graph"]
+      },
+      {
+        num: "3", icon: "📝", title: "Log Formatting & Capture",
+        role: "Database Administrator",
+        analyticsType: "Audit Logging",
+        color: "#10B981",
+        what: "Configuring web servers (Nginx/Node) to write structured access logs detailing incoming headers and payloads.",
+        analyze: ["Log schema requirements for forensics (IP, payload, headers, user-agent)", "Performance overhead of detailed logging", "Log rotation and permission locking"],
+        metrics: ["Log entry generation latency (ms)", "Disk space footprint per 1M logs", "Log preservation rate %"],
+        outputs: ["Nginx custom log format configurations", "Node.js Winston logging middleware", "Log rotation scripts"]
+      },
+      {
+        num: "4", icon: "🕵️", title: "Log Analysis Agent",
+        role: "Cybersecurity Analyst / SOC",
+        analyticsType: "Behavioral Monitoring",
+        color: "#F43F5E",
+        what: "Building a Python monitoring daemon that tails active log files and parses them in real-time.",
+        analyze: ["Regex matching efficiencies for large log files", "Buffer sizes and stream polling rates", "Event parsing schemas (extracting IP, timestamp, query string)"],
+        metrics: ["Tailing latency (ms)", "Agent CPU utilization %", "Log parsing error rate %"],
+        outputs: ["Python log-tailing background agent code", "Regex matching ruleset catalog", "Parsing test coverage suite"]
+      },
+      {
+        num: "5", icon: "🛡️", title: "Signature Detection Engine",
+        role: "Cybersecurity Analyst / SOC",
+        analyticsType: "Intrusion Detection",
+        color: "#F43F5E",
+        what: "Developing detection algorithms to identify suspicious payloads (like SQLi strings, XSS scripts, or command characters).",
+        analyze: ["SQL Injection signature patterns (e.g., `' OR '1'='1`)", "Script tags and event handlers (`<script>`, `onerror`) in queries", "Rate-based thresholds for brute-force tracking"],
+        metrics: ["False positive rate %", "Detection accuracy (Precision/Recall)", "Signature matching speed (us)"],
+        outputs: ["Security signature rules engine code", "Threat classification mapping", "False-positive analysis report"]
+      },
+      {
+        num: "6", icon: "📢", title: "Alerting & Webhooks",
+        role: "Backend Developer",
+        analyticsType: "Notification Routing",
+        color: "#38BDF8",
+        what: "Integrating real-time webhook alerting to dispatch high-priority notifications on critical intrusion events.",
+        analyze: ["Alert throttling thresholds to prevent alert fatigue", "Webhook routing payloads formatting", "Retry logic and logging of failed webhook posts"],
+        metrics: ["Notification delivery latency (ms)", "Alert volume per incident", "Alert notification success rate %"],
+        outputs: ["Alert dispatcher class code", "Slack/Discord webhook integration configurations", "Alert throttling schema"]
+      },
+      {
+        num: "7", icon: "📊", title: "SIEM Indexing Layer",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Log Consolidation",
+        color: "#6366F1",
+        what: "Ingesting security events into an Elasticsearch & Kibana (ELK) or Splunk cluster for centralized tracking.",
+        analyze: ["Elasticsearch index mapping configurations", "Query performance of security dashboards", "Retention filters and index rollups"],
+        metrics: ["Index ingestion rate (events/sec)", "Search query response time (ms)", "Disk index compression efficiency"],
+        outputs: ["Elasticsearch mapping schema JSON", "SIEM ingestion pipeline configs", "Retention cleanup script"]
+      },
+      {
+        num: "8", icon: "🖥️", title: "Security Dashboard UI",
+        role: "Full Stack Developer",
+        analyticsType: "Security Visualization",
+        color: "#2ECC71",
+        what: "Designing an interactive React application displaying threat maps, attack graphs, and blocked IPs.",
+        analyze: ["Live-updating React components for incoming attacks", "Geolocation API integration from IP addresses", "Charts layout (attack type bar graphs, logs table)"],
+        metrics: ["UI update latency (ms)", "Browser page load time", "Active component state counts"],
+        outputs: ["React threat dashboard dashboard code", "Interactive Leaflet map displaying attack locations", "Chart configurations (Recharts/Chart.js)"]
+      },
+      {
+        num: "9", icon: "🔒", title: "Hardening & Active Mitigation",
+        role: "Cybersecurity Analyst / SOC",
+        analyticsType: "Active Mitigation",
+        color: "#F43F5E",
+        what: "Implementing network and application-level controls to block attackers dynamically.",
+        analyze: ["Dynamic firewall blocking script (iptables/fail2ban APIs)", "WAF (Web Application Firewall) rule structures", "SQL parameterized query patches"],
+        metrics: ["Mitigation action response time (sec)", "% traffic blocked", "Security posture audit score"],
+        outputs: ["Fail2ban dynamic blocking script", "SQL query parameterization patch files", "Security hardening compliance report"]
+      }
+    ],
+    deliverables: [
+      { icon: "🕸️", label: "Vulnerable App", desc: "React+Express web sandbox deliberately packed with 12 vulnerability ports" },
+      { icon: "🐍", label: "Attack Simulator", desc: "Python automated attack scanner generating SQLi, XSS and directory traversals" },
+      { icon: "🕵️", label: "Intrusion Agent", desc: "Live background log parsing agent written in Python with Discord integrations" },
+      { icon: "📊", label: "SIEM Console", desc: "Local Kibana configuration dashboard index mapping ongoing attack vectors" }
+    ],
+    roleMap: [
+      { section: "Vulnerable App Design", role: "Backend Developer" },
+      { section: "Attack Scripts", role: "Cybersecurity Analyst / SOC" },
+      { section: "Structured Logging", role: "Database Administrator" },
+      { section: "Incident Monitoring", role: "Cybersecurity Analyst / SOC" },
+      { section: "Central Logging SIEM", role: "Cloud / DevOps Engineer" },
+      { section: "React Admin Shield", role: "Full Stack Developer" }
+    ]
+  },
+  {
+    id: "pipeline",
+    emoji: "☁️",
+    title: "The Auto-Scaling Multi-Service Pipeline",
+    subtitle: "DevOps · multi-stage Docker · GitHub Actions CI/CD · AWS Architecture · Grafana Analytics",
+    accentColor: "#6366F1",
+    deliverable: "Automated containerized GitOps pipeline deploying three microservices onto AWS with Prometheus monitoring",
+    metaInsight: '"Code that does not scale automatically is a liability. DevOps bridges raw code to robust, auto-scaling production infrastructure."',
+    layers: [
+      {
+        num: "1", icon: "🐳", title: "Microservices Containerization",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Build Optimization",
+        color: "#6366F1",
+        what: "Writing optimized, secure multi-stage Dockerfiles for frontend web and backend API microservices.",
+        analyze: ["Docker image layers and cache invalidation order", "Alpine/Distroless base images security", "Multi-stage build outputs sizing"],
+        metrics: ["Docker image size (MB)", "Image build time (sec)", "Vulnerability scan count"],
+        outputs: ["Multi-stage Dockerfile for React/Vite", "Multi-stage Dockerfile for Node.js", "Docker image size optimization logs"]
+      },
+      {
+        num: "2", icon: "⛓️", title: "Multi-Service Orchestration",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Local Orchestration",
+        color: "#6366F1",
+        what: "Defining local multi-container environments using Docker Compose for developers.",
+        analyze: ["Service startup order dependencies (DB -> API -> UI)", "Network isolating rules for internal services", "Persistent data volumes mappings"],
+        metrics: ["Service launch boot time (sec)", "Network throughput (MB/sec)", "Disk mount latency"],
+        outputs: ["Docker Compose development configuration script", "Environment variables template", "Startup sequence test logs"]
+      },
+      {
+        num: "3", icon: "🔄", title: "CI Pipeline Quality Gates",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Quality Engineering",
+        color: "#6366F1",
+        what: "Designing GitHub Actions workflows to execute tests, audits, and formatting checks.",
+        analyze: ["Test suite parallelization strategies", "Linting & formatting checks rulesets", "Code coverage analytics metrics"],
+        metrics: ["Pipeline runtime (min)", "Test execution success rate %", "Code coverage %"],
+        outputs: ["GitHub Actions CI workflow YAML", "Jest test runner configurations", "SonarQube/code quality reports"]
+      },
+      {
+        num: "4", icon: "📦", title: "Container Registry Distribution",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Image Management",
+        color: "#6366F1",
+        what: "Setting up secure container registries (Docker Hub/AWS ECR) to host build images.",
+        analyze: ["ECR IAM policies and credentials mapping", "Image tag numbering conventions (SHA vs SemVer)", "Image vulnerability lifecycle scanning"],
+        metrics: ["Registry upload bandwidth", "Vulnerability count in images", "Registry access latency (ms)"],
+        outputs: ["GitHub Actions push-to-ECR configuration", "AWS ECR registry configurations", "Image vulnerability scan metrics"]
+      },
+      {
+        num: "5", icon: "☁️", title: "AWS Infrastructure Layer",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Cloud Architecture",
+        color: "#6366F1",
+        what: "Orchestrating virtual private networks, security groups, and cloud instances on AWS.",
+        analyze: ["Subnetting splits (public vs private subnets)", "Security group rules (port 80/443 ingress, egress rules)", "IAM role boundary maps"],
+        metrics: ["Provisioning runtime (min)", "AWS cost forecasts ($/month)", "Network latency between services (ms)"],
+        outputs: ["AWS VPC Network Architecture Diagram", "Security group mappings", "IAM policy configuration files"]
+      },
+      {
+        num: "6", icon: "🚢", title: "CD Rolling Deployments",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Release Management",
+        color: "#6366F1",
+        what: "Configuring GitOps automated deployment scripts for zero-downtime rolling updates.",
+        analyze: ["Rolling vs Blue-Green update patterns", "Health check probes and startup delay parameters", "Database migration version control scripts"],
+        metrics: ["Deployment cycle duration (sec)", "Deployment uptime during updates %", "Rollback execution speed (sec)"],
+        outputs: ["GitOps deployment automation script", "Health check route endpoints in backend", "Zero-downtime test reports"]
+      },
+      {
+        num: "7", icon: "⚖️", title: "Auto-Scaling & Load Balancing",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Resiliency Architecture",
+        color: "#6366F1",
+        what: "Setting up load balancers and auto-scaling rules to handle traffic spikes.",
+        analyze: ["Auto-scaling thresholds (CPU > 70%, Memory > 80%)", "Load balancer health check intervals", "Target group registration speeds"],
+        metrics: ["Auto-scaling response latency (sec)", "Server CPU/Memory load averages", "Load balancer response times (ms)"],
+        outputs: ["Auto-scaling rule definitions", "AWS ALB configuration details", "Traffic spike simulation logs"]
+      },
+      {
+        num: "8", icon: "📈", title: "Metrics Harvesting Layer",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Infrastructure Metrics",
+        color: "#6366F1",
+        what: "Deploying Prometheus nodes and exporters to continuously harvest system metrics.",
+        analyze: ["Prometheus scraper intervals configuration", "Metrics cardinality constraints", "Storage requirements for historical metrics"],
+        metrics: ["Metrics collection latency (ms)", "Scraping success rate %", "Card cardinality indices"],
+        outputs: ["Prometheus configuration script", "Docker stats exporter configs", "Metrics extraction charts"]
+      },
+      {
+        num: "9", icon: "📊", title: "Grafana Dashboards",
+        role: "Cloud / DevOps Engineer",
+        analyticsType: "Infrastructure Analytics",
+        color: "#6366F1",
+        what: "Building rich analytical Grafana panels graphing cluster resource consumption and traffic spikes.",
+        analyze: ["PromQL query efficiency for dashboard panels", "Alert manager routing thresholds", "Panel UI responsiveness layout"],
+        metrics: ["Dashboard load latency (ms)", "Active alert count", "Panel query execution speed (ms)"],
+        outputs: ["Grafana dashboard JSON exports", "PromQL alert definition files", "Infrastructure status reports"]
+      }
+    ],
+    deliverables: [
+      { icon: "🐳", label: "Docker Configs", desc: "Optimized Dockerfiles, multi-service Compose files, and network isolation setups" },
+      { icon: "🔄", label: "GitActions CI/CD", desc: "Automated pipelines pushing versions to container registries and triggering cloud updates" },
+      { icon: "☁️", label: "Terraform Specs", desc: "Declarative AWS cluster topology mapping VPCs, subnets, EC2 scales, and load balancers" },
+      { icon: "📊", label: "Grafana Panel", desc: "Central server monitoring system collecting CPU, RAM, traffic, and error metrics" }
+    ],
+    roleMap: [
+      { section: "Container Builds", role: "Cloud / DevOps Engineer" },
+      { section: "Quality Testing CI", role: "Cloud / DevOps Engineer" },
+      { section: "AWS Infrastructure", role: "Cloud / DevOps Engineer" },
+      { section: "Scale Architecture", role: "Cloud / DevOps Engineer" },
+      { section: "Grafana Analytics", role: "Cloud / DevOps Engineer" }
+    ]
+  },
+  {
+    id: "figma",
+    emoji: "🎨",
+    title: "High-Fidelity Interactive Figma Ecosystem",
+    subtitle: "UI/UX · component library · auto-layout variables · interactive prototype · developer handoff",
+    accentColor: "#D946EF",
+    deliverable: "Complete modular design system and clickable responsive prototype for digital community/streaming platform",
+    metaInsight: '"Design is not how it looks; it is how it behaves, scales across viewports, and maintains visual consistency across team handoffs."',
+    layers: [
+      {
+        num: "1", icon: "👥", title: "User Research & Personas",
+        role: "UI/UX Designer",
+        analyticsType: "Qualitative Research",
+        color: "#D946EF",
+        what: "Conducting user interviews and constructing empathy maps and detailed target persona cards.",
+        analyze: ["User pain points in current digital streaming apps", "Demographic variables (age, device familiarity)", "Core tasks and success criteria mapping"],
+        metrics: ["User interview completion count", "Persona representative validation %", "Friction points identified count"],
+        outputs: ["User Empathy Map templates", "3 detailed User Persona cards", "User Research Insights report"]
+      },
+      {
+        num: "2", icon: "🗂️", title: "Information Architecture",
+        role: "UI/UX Designer",
+        analyticsType: "Navigational Architecture",
+        color: "#D946EF",
+        what: "Mapping app structures, navigation systems, and workflows using card sorting.",
+        analyze: ["Navigation depth index tradeoffs", "Card sorting results and labeling hierarchies", "Search path efficiency models"],
+        metrics: ["Navigation path length", "Task completion route efficiency", "Card categorization consensus %"],
+        outputs: ["App Site Map Diagram", "Navigational Flow Chart layouts", "Card Sorting analysis matrix"]
+      },
+      {
+        num: "3", icon: "✍️", title: "Low-Fidelity Wireframes",
+        role: "UI/UX Designer",
+        analyticsType: "Structural Ideation",
+        color: "#D946EF",
+        what: "Sketching quick mobile & desktop layouts to establish basic element spacing and visual hierarchy.",
+        analyze: ["Layout grids (12-column desktop vs 4-column mobile)", "Placement priorities for key CTAs", "White-space ratios and density comparisons"],
+        metrics: ["Wireframe iterations generated", "Validation session feedback count", "% area allocated to key actions"],
+        outputs: ["18 desktop + mobile paper sketches", "Digital Low-Fidelity layout templates", "Structure evaluation notes"]
+      },
+      {
+        num: "4", icon: "🎨", title: "Typography & Tokens stylesheet",
+        role: "UI/UX Designer",
+        analyticsType: "Design Standardization",
+        color: "#D946EF",
+        what: "Setting up a strict typography stylesheet, responsive spacing scales, and dark/light color variables.",
+        analyze: ["Typography scale readability (12px to 48px modular scales)", "Contrast ratios for accessibility (WCAG AAA standards)", "Semantic naming rules for token variables"],
+        metrics: ["WCAG contrast compliance %", "Figma variable count", "Style application consistency score %"],
+        outputs: ["Figma typographic scale sheet", "Light/Dark mode color variable library", "Responsive spacing documentation"]
+      },
+      {
+        num: "5", icon: "🧱", title: "Figma Component Library",
+        role: "UI/UX Designer",
+        analyticsType: "Component Engineering",
+        color: "#D946EF",
+        what: "Creating component libraries with state variants, auto-layout variables, and sizing constraints.",
+        analyze: ["Auto-layout nesting strategies for cards", "Component variant properties design", "Responsive resizing rule sets (fill container, hug contents)"],
+        metrics: ["Auto-layout usage rate %", "Dynamic component variant counts", "Library synchronization time (sec)"],
+        outputs: ["Synchronized Figma component library", "Dynamic responsive UI card variants", "Component property maps"]
+      },
+      {
+        num: "6", icon: "⚡", title: "Micro-Interactions Design",
+        role: "UI/UX Designer",
+        analyticsType: "Behavioral Design",
+        color: "#D946EF",
+        what: "Designing and animating fine-grained component micro-interactions in Figma.",
+        analyze: ["Easing curves and duration timing (e.g. 200ms ease-out)", "Animated feedback on button clicks & inputs", "Hover state transitions and tooltip delays"],
+        metrics: ["Interaction duration (ms)", "User click verification rates %", "Component micro-animation frames count"],
+        outputs: ["Interactive Search Input components", "Figma prototype link showcasing transitions", "Micro-interaction timing sheet"]
+      },
+      {
+        num: "7", icon: "📱", title: "Responsive Layout Mockups",
+        role: "UI/UX Designer",
+        analyticsType: "Viewport Adaptation",
+        color: "#D946EF",
+        what: "Adapting high-fidelity layout files across desktop (1440px), tablet (768px), and mobile (375px) breakpoints.",
+        analyze: ["Hamburger menu vs navigation bar responsive breakpoints", "Content wrapping and card scaling limits", "Font scaling behaviors by viewport"],
+        metrics: ["Breakpoints supported count", "Responsive grid compliance %", "Adaptability score %"],
+        outputs: ["High-fidelity mobile layout designs", "High-fidelity tablet layouts", "High-fidelity desktop layouts"]
+      },
+      {
+        num: "8", icon: "🔗", title: "High-Fidelity Interactive Prototype",
+        role: "UI/UX Designer",
+        analyticsType: "Interactive Simulation",
+        color: "#D946EF",
+        what: "Linking design pages together using smart-animate in Figma to model end-to-end user journeys.",
+        analyze: ["Smart-animate transition flows", "Navigation link routing loops", "Prototype load speed optimizations"],
+        metrics: ["Prototype interaction steps count", "Task completion rates on prototype %", "Prototype loading latency (sec)"],
+        outputs: ["Fully clickable desktop user journey prototype link", "Fully clickable mobile prototype link", "User testing session log"]
+      },
+      {
+        num: "9", icon: "📐", title: "Developer Handoff Guide",
+        role: "UI/UX Designer",
+        analyticsType: "Handoff Specification",
+        color: "#D946EF",
+        what: "Creating developer handoff specs detailing CSS variables, layout behaviors, and assets exports.",
+        analyze: ["Figma Dev Mode annotations", "Assets exports formats (SVG, PNG)", "Accessibility guidelines check (WCAG)"],
+        metrics: ["Handoff checklist compliance %", "Handoff review sessions count", "Handoff assets count"],
+        outputs: ["Figma Handoff Specification notes", "Zip file of SVG/PNG assets", "WCAG compliance statement"]
+      }
+    ],
+    deliverables: [
+      { icon: "🎨", label: "Component Library", desc: "Structured Figma file detailing text scales, mode variables, and modular grid tokens" },
+      { icon: "📱", label: "Interactive Prototype", desc: "End-to-end clickable flow mapping desktop streaming search and mobile filters" },
+      { icon: "📄", label: "Research map", desc: "'Empathy maps, user journeys, personas, and navigation depth analysis report'" }
+    ],
+    roleMap: [
+      { section: "Audience Profiling", role: "UI/UX Designer" },
+      { section: "App Structure Map", role: "UI/UX Designer" },
+      { section: "Visual Style Sheet", role: "UI/UX Designer" },
+      { section: "Library Architecture", role: "UI/UX Designer" },
+      { section: "Responsive Grids", role: "UI/UX Designer" },
+      { section: "Clickable Journeys", role: "UI/UX Designer" }
     ]
   }
 ];

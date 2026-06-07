@@ -5,12 +5,23 @@ with open('roadmap.jsx', encoding='utf-8') as f:
 with open('projects_data.js', encoding='utf-8') as f:
     projects_data_js = f.read()
 
-target = 'const skillsRoadmap = ['
-if projects_data_js.strip() not in content:
-    content = content.replace(target, projects_data_js + '\n\n' + target, 1)
-    print('Injected projectsData constant')
+start_target = 'const projectsData = ['
+end_target = 'const skillsRoadmap = ['
+
+if start_target in content:
+    start_idx = content.find(start_target)
+    end_idx = content.find(end_target)
+    if start_idx < end_idx:
+        content = content[:start_idx] + projects_data_js + '\n\n' + content[end_idx:]
+        print('Updated projectsData constant')
+    else:
+        print('ERROR: const projectsData found after const skillsRoadmap')
 else:
-    print('projectsData already present, skipping injection')
+    if projects_data_js.strip() not in content:
+        content = content.replace(end_target, projects_data_js + '\n\n' + end_target, 1)
+        print('Injected projectsData constant')
+    else:
+        print('projectsData already present, skipping injection')
 
 # ── 2. Replace Projects tab body ───────────────────────────────────────────────
 old_projects = '''        {/* PROJECTS TAB */}
