@@ -4509,12 +4509,12 @@ function Roadmap() {
       marginBottom: 20
     }
   }, "I have curated the ", /*#__PURE__*/React.createElement("strong", null, "Gold Standard"), " resources for you. To achieve 100% knowledge acquisition, follow this execution framework blindly:"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: "grid",
-      gridTemplateColumns: "repeat(3, 1fr)",
-      gap: 16
-    }
-  }, [{
+style: {
+       display: "grid",
+       gridTemplateColumns: "repeat(4, 1fr)",
+       gap: 12
+     }
+   }, [{
     title: "Active Recall",
     icon: "⚡",
     desc: "Never just watch. For every 10 mins of video, spend 20 mins building the code yourself. Output is the only metric of learning."
@@ -4789,85 +4789,109 @@ function Roadmap() {
       marginTop: 32,
       marginBottom: 16
     }
-  }, "Project Quick Reference"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: "grid",
-      gridTemplateColumns: "repeat(3, 1fr)",
-      gap: 12
-    }
-  }, [{
-    id: "ipl",
-    emoji: "🏏",
-    title: "IPL Analytics",
-    week: "Weeks 1–2+8",
-    layers: "7 layers",
-    output: "Dashboard + Report + 3 blogs",
-    color: ACCENT
-  }, {
-    id: "ott",
-    emoji: "🎬",
-    title: "OTT vs Theatre",
-    week: "Weeks 3+8",
-    layers: "9 layers",
-    output: "Dashboard + Report + 2 blogs",
-    color: PURPLE
-  }, {
-    id: "ecom",
-    emoji: "🛒",
-    title: "E-Commerce",
-    week: "Weeks 4+8",
-    layers: "9 layers",
-    output: "Dashboard + Report + 2 blogs",
-    color: GREEN
-  }, {
-    id: "bpl",
-    emoji: "🎸",
-    title: "BPL Ecosystem",
-    week: "Weeks 5+8",
-    layers: "8 layers",
-    output: "Dashboard + Dataset + Report",
-    color: "#F4A72A"
-  }, {
-    id: "hiremap",
-    emoji: "💼",
-    title: "Hiremap Portal",
-    week: "Weeks 6+8",
-    layers: "9 layers",
-    output: "Vercel Web App + Backlog + Case Study",
-    color: "#10B981"
-  }, {
-    id: "sahitya",
-    emoji: "✍️",
-    title: "Sahitya Rachanalu",
-    week: "Weeks 7+8",
-    layers: "9 layers",
-    output: "Next.js Web App + 8-Pillar Calendar",
-    color: "#F4A72A"
-  }, {
-    id: "musicbat",
-    emoji: "🏏🎹",
-    title: "Musical Swing Analyst",
-    week: "Weeks 9-10 (Nov)",
-    layers: "Edge IoT + AI Swing Classifier",
-    output: "ESP32 bat telemetry + Web Audio Synthesizer",
-    color: "#06B6D4"
-  }, {
-    id: "foleystage",
-    emoji: "🎬👣",
-    title: "Interactive Foley Stage",
-    week: "Weeks 11-12 (Nov-Dec)",
-    layers: "Sensor Array + Python Sound Engine",
-    output: "STM32 floor grid + web video sync dashboard",
-    color: "#D946EF"
-  }, {
-    id: "stagecontroller",
-    emoji: "🎸💡",
-    title: "Audience Stage Controller",
-    week: "Week 13 (Dec)",
-    layers: "Decibel nodes + DMX light control",
-    output: "ESP32 nodes + WebSockets crowd dashboard",
-    color: "#10B981"
-  }].map(p => /*#__PURE__*/React.createElement("div", {
+}, "Project Quick Reference"), /*#__PURE__*/React.createElement("div", {
+     style: {
+       display: "grid",
+       gridTemplateColumns: "repeat(4, 1fr)",
+       gap: 12
+     }
+   }, [{
+     id: "ipl",
+     emoji: "🏏",
+     title: "IPL Analytics",
+     week: "Weeks 1–2+8",
+     layers: "9 layers",
+     output: "Dashboard + Report + 3 blogs",
+     color: ACCENT
+   }, {
+     id: "ott",
+     emoji: "🎬",
+     title: "OTT vs Theatre",
+     week: "Weeks 3+8",
+     layers: "9 layers",
+     output: "Dashboard + Report + 2 blogs",
+     color: PURPLE
+   }, {
+     id: "ecom",
+     emoji: "🛒",
+     title: "E-Commerce",
+     week: "Weeks 4+8",
+     layers: "9 layers",
+     output: "Dashboard + Report + 2 blogs",
+     color: GREEN
+   }, {
+     id: "bpl",
+     emoji: "🎸",
+     title: "BPL Ecosystem",
+     week: "Weeks 5+8",
+     layers: "9 layers",
+     output: "Dashboard + Dataset + Report",
+     color: "#F4A72A"
+   }, {
+     id: "hiremap",
+     emoji: "💼",
+     title: "Hiremap Portal",
+     week: "Weeks 6+8",
+     layers: "9 layers",
+     output: "Vercel Web App + Backlog + Case Study",
+     color: "#10B981"
+   }, {
+     id: "sahitya",
+     emoji: "✍️",
+     title: "Sahitya Rachanalu",
+     week: "Weeks 7+8",
+     layers: "9 layers",
+     output: "Next.js Web App + 8-Pillar Calendar",
+     color: "#F4A72A"
+   }, {
+     id: "musicbat",
+     emoji: "🏏🎹",
+     title: "Musical Swing Analyst",
+     week: "Weeks 9-10 (Nov)",
+     layers: "9 layers",
+     output: "ESP32 bat telemetry + Web Audio Synthesizer",
+     color: "#06B6D4"
+   }, {
+     id: "foleystage",
+     emoji: "🎬👣",
+     title: "Interactive Foley Stage",
+     week: "Weeks 11-12 (Nov-Dec)",
+     layers: "9 layers",
+     output: "STM32 floor grid + web video sync dashboard",
+     color: "#D946EF"
+   }, {
+     id: "stagecontroller",
+     emoji: "🎸💡",
+     title: "Audience Stage Controller",
+     week: "Week 13 (Dec)",
+     layers: "9 layers",
+     output: "ESP32 nodes + WebSockets crowd dashboard",
+     color: "#10B981"
+   }, {
+     id: "telemetry",
+     emoji: "🔌",
+     title: "The Smart Telemetry Box",
+     week: "Embedded · Signal Processing · Network Protocols · Time-Series DB · Real-Time Dashboard",
+     layers: "9 layers",
+     output: "Live Edge-Computing Sports Telemetry Tracker (ESP32/STM32 + IMU sensor + MQTT + real-time Canvas charts)",
+     color: "#06B6D4"
+   }, {
+     id: "threatshield",
+     emoji: "🛡️",
+     title: "The Live OWASP Threat Shield",
+     week: "Cybersecurity · Log Parsing Agent · Attack Emulation · Splunk / ELK SIEM · Active Hardening",
+     layers: "9 layers",
+     output: "Deliberately vulnerable Node.js application + python automated scanner + raw log tailing intrusion dashboard",
+     color: "#F43F5E"
+   }, {
+     id: "pipeline",
+     emoji: "☁️",
+     title: "The Auto-Scaling Multi-Service Pipeline",
+     week: "DevOps · multi-stage Docker · GitHub Actions CI/CD · AWS Architecture · Grafana Analytics",
+     layers: "9 layers",
+     output: "Automated containerized GitOps pipeline deploying three microservices onto AWS with Prometheus monitoring",
+     color: "#6366F1"
+   }].map(p => /*#__PURE__*/React.createElement("div", {
     key: p.title,
     onClick: () => {
       setActiveTab("projects");
