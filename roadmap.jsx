@@ -3661,7 +3661,6 @@ const tabs = [
     { id: "projects", label: "🚀 Projects Deep-Dive" },
     { id: "platforms", label: "🌐 Platforms & Portfolio" },
     { id: "creative", label: "🎨 Creative Hub" },
-    { id: "content-os", label: "✍️ Content OS" },
     { id: "skills", label: "🛠️ Skills" },
     { id: "resume", label: "📄 Resume System" },
   ];
@@ -4283,15 +4282,18 @@ const tabs = [
 
         {activeTab === "creative" && (
           <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, borderBottom: `1px solid ${BORDER}`, paddingBottom: 12 }}>
-              Creative Content Hub
+            <h2 style={{ fontSize: 20, fontWeight: 800, borderBottom: `1px solid ${BORDER}`, paddingBottom: 12, display: "flex", alignItems: "center", gap: 8 }}>
+              🎨 Creative & Design Hub <span style={{ fontSize: 11, background: "rgba(217, 70, 239, 0.1)", color: "#D946EF", border: "1px solid rgba(217, 70, 239, 0.2)", padding: "2px 8px", borderRadius: 12, fontWeight: 500, letterSpacing: 0.5 }}>Figma & Content Workspace</span>
             </h2>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+            {/* Grid 1: Roles and Pillars */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: 16 }}>
+              {/* Left Column: Roles & Certifications */}
               <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 18 }}>
-                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>WRITING ROLES & CERTIFICATIONS</div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "420px", overflowY: "auto", paddingRight: 6 }}>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>CREATIVE, DESIGN & CONTENT ROLES</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12, maxHeight: "450px", overflowY: "auto", paddingRight: 6 }}>
                   {[
+                    { role: "UI/UX Designer", desc: "User journeys, Figma auto-layouts, clickable prototypes", cert: "Figma Basics & CJM + Responsive Design" },
                     { role: "Content Writer", desc: "Blogs, posts, LinkedIn articles", cert: "Google DA Professional + HubSpot Digital Marketing" },
                     { role: "Creative Writer", desc: "Stories, scripts, reel concepts", cert: "Sahitya Rachanalu + Berklee Songwriting (planned)" },
                     { role: "Copywriter", desc: "Captions, ads, punchlines, marketing lines", cert: "Adweek Copywriting + Google Ads Search ✅" },
@@ -4306,7 +4308,7 @@ const tabs = [
                     <div key={r.role} style={{ paddingBottom: 10, borderBottom: `1px solid ${BORDER}40` }}>
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: 4 }}>
                         <span style={{ fontSize: 12, fontWeight: 700, color: "#FFF" }}>{r.role}</span>
-                        <span style={{ fontSize: 11, color: MUTED }}>{r.desc}</span>
+                        <span style={{ fontSize: 10, color: MUTED }}>{r.desc}</span>
                       </div>
                       <div style={{ fontSize: 10, color: ACCENT, marginTop: 4, display: "flex", alignItems: "center", gap: 6 }}>
                         <span style={{ color: "#475569", textTransform: "uppercase", fontSize: 8, letterSpacing: 0.5 }}>Certificates:</span>
@@ -4317,101 +4319,50 @@ const tabs = [
                 </div>
               </div>
 
-              <div>
-                <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16, marginBottom: 12 }}>
-                  <div style={{ color: PURPLE, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>10 CONTENT TOPICS (500–800 words each)</div>
+              {/* Right Column: 8 Portfolio Pillars */}
+              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 18 }}>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, marginBottom: 12, letterSpacing: 1 }}>8 PORTFOLIO PILLARS (Dec 2026 Target)</div>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 12, maxHeight: "450px", overflowY: "auto", paddingRight: 6 }}>
                   {[
-                    "Script/Screenplay Analysis — 'Why the interval bang in [Film] works'",
-                    "Character Psychology — 'Why audiences root for grey characters (Pushpa)'",
-                    "Film Economics — 'Pan-India Blockbusters: Marketing genius or cultural shift?'",
-                    "E-Commerce Psychology — 'The anatomy of cart abandonment'",
-                    "Product Teardowns — 'Why BookMyShow UI is built for FOMO'",
-                    "Creator Economy — 'How meme pages became movie promoters'",
-                    "Visual Storytelling — 'Color theory in cinema'",
-                    "Sports Analytics — 'IPL as a product: 4 hours of engineered engagement'",
-                    "Music + Tech — 'How Spotify's algorithm shapes what we hear'",
-                    "Personal Journey — 'Why I built Sahitya Rachanalu'",
-                  ].map((t, i) => (
-                    <div key={i} style={{ fontSize: 11, color: MUTED, padding: "4px 0", borderBottom: `1px solid ${BORDER}20` }}>
-                      {i + 1}. {t}
+                    { icon: "🎬", title: "Film Deep-Dives", desc: "10-12 essays (500-800 words) on screenplays, interval blocks, character arcs." },
+                    { icon: "🎨", title: "Figma UI/UX Layouts", desc: "Clickable wireframes, responsive screen components, design token guides." },
+                    { icon: "✍️", title: "Original Stories/Scripts", desc: "5-10 short script concepts, dialogue cards, universe world-building guides." },
+                    { icon: "🎵", title: "Lyrics Engine", desc: "12-15 original Telugu/Hindi songs with audiobooks, singer credits." },
+                    { icon: "🏏", title: "IPL Sports Analytics", desc: "10 detailed posts analyzing IPL match tactics, franchise economics, fan loyalty." },
+                    { icon: "📊", title: "Brand Messaging Teardowns", desc: "8 breakdowns of advertising campaigns, copy strategy, viral marketing hooks." },
+                    { icon: "🧠", title: "Creator Economy Essays", desc: "8 articles detailing movie promotion dynamics, meme networks, streaming monetization." },
+                    { icon: "🚀", title: "Founder Journals", desc: "6 reflections detailing the journey of building Sahitya Rachanalu." }
+                  ].map(p => (
+                    <div key={p.title} style={{ background: "rgba(255,255,255,0.01)", border: `1px solid ${BORDER}30`, borderRadius: 6, padding: 10 }}>
+                      <span style={{ fontSize: 18 }}>{p.icon}</span>
+                      <div style={{ fontSize: 11, fontWeight: 700, marginTop: 4, color: TEXT }}>{p.title}</div>
+                      <div style={{ fontSize: 9.5, color: MUTED, marginTop: 2, lineHeight: 1.3 }}>{p.desc}</div>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
 
-            <div style={{ background: "linear-gradient(135deg, #1a1a2e, #0A0A0F)", border: `1px solid ${BLUE}`, borderRadius: 10, padding: 20 }}>
-              <h3 style={{ fontSize: 16, fontWeight: 800, marginBottom: 16, color: BLUE }}>🎬 Creative Portfolio Presentation Formats</h3>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
-                {[
-                  { icon: "🎬", label: "Video Opening", desc: "Cinematic template-style portfolio intro with motion design" },
-                  { icon: "📚", label: "Books / Audiobooks", desc: "Film-script format, chapter releases, purchasable links" },
-                  { icon: "🎨", label: "Visual Storyboards", desc: "AI-generated + manual editing for concept visualization" },
-                  { icon: "🎵", label: "Music Dashboard", desc: "Spotify-style layout — lyrics + singers + streaming data" },
-                  { icon: "🏏", label: "IPL Content Hub", desc: "Dedicated section: job roles, match reports, insights" },
-                  { icon: "🎭", label: "Movies Watch List", desc: "Curated cinematic list with thematic notes and ratings" },
-                ].map(item => (
-                  <div key={item.label} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 12 }}>
-                    <span style={{ fontSize: 20 }}>{item.icon}</span>
-                    <div style={{ fontSize: 12, fontWeight: 700, marginTop: 6 }}>{item.label}</div>
-                    <div style={{ fontSize: 11, color: MUTED, marginTop: 4, lineHeight: 1.4 }}>{item.desc}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        )}
-
-        {/* CONTENT OS TAB */}
-        {activeTab === "content-os" && (
-          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 800, borderBottom: `1px solid ${BORDER}`, paddingBottom: 12 }}>
-              Content OS: Writing &amp; Creator Workspace
-            </h2>
-
-            {/* 8 Portfolio Pillars Grid */}
-            <div>
-              <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>8 PORTFOLIO PILLARS (Dec 2026 Target)</div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12 }}>
-                {[
-                  { icon: "🎬", title: "Film Deep-Dives", desc: "10-12 essays (500-800 words) on screenplays, interval blocks, character arcs." },
-                  { icon: "✍️", title: "Original Stories/Scripts", desc: "5-10 short script concepts, dialogue cards, universe world-building guides." },
-                  { icon: "🎵", title: "Lyrics Engine", desc: "12-15 original Telugu/Hindi songs with audiobooks, singer credits." },
-                  { icon: "🏏", title: "IPL Sports Analytics", desc: "10 detailed posts analyzing IPL match tactics, franchise economics, fan loyalty." },
-                  { icon: "📊", title: "Brand Messaging Teardowns", desc: "8 breakdowns of advertising campaigns, copy strategy, viral marketing hooks." },
-                  { icon: "🧠", title: "Creator Economy Essays", desc: "8 articles detailing movie promotion dynamics, meme networks, streaming monetization." },
-                  { icon: "🚀", title: "Founder Journals", desc: "6 reflections detailing the journey of building Sahitya Rachanalu." },
-                  { icon: "📐", title: "Visual Storyboards", desc: "AI-generated image grids detailing shot selections for scene prototypes." }
-                ].map(p => (
-                  <div key={p.title} style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 14 }}>
-                    <span style={{ fontSize: 20 }}>{p.icon}</span>
-                    <div style={{ fontSize: 12, fontWeight: 700, marginTop: 6, color: TEXT }}>{p.title}</div>
-                    <div style={{ fontSize: 10, color: MUTED, marginTop: 4, lineHeight: 1.4 }}>{p.desc}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
+            {/* Grid 2: Timeline & Weekly OS */}
             <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: 16 }}>
-              {/* 6-Month Content Production Plan */}
+              {/* 6-Month Content & Design Plan */}
               <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
-                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>6-MONTH CONTENT PRODUCTION TIMELINE</div>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>6-MONTH CONTENT & DESIGN TIMELINE</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {[
-                    { m: "Month 1 (July)", focus: "Set up Sahitya Rachanalu infrastructure, release first 2 film reviews.", kpi: "2 artifacts" },
-                    { m: "Month 2 (Aug)", focus: "Publish first 3 original lyrics, launch lyrics UI, release 2 brand teardowns.", kpi: "5 artifacts" },
-                    { m: "Month 3 (Sept)", focus: "Release 2 screenplay breakdowns, publish first 2 founder journals, 2 IPL posts.", kpi: "6 artifacts" },
-                    { m: "Month 4 (Oct)", focus: "Publish 2 short scripts, 3 new lyrics, 2 creator economy essays.", kpi: "7 artifacts" },
-                    { m: "Month 5 (Nov)", focus: "Release 3 film essays, 2 brand teardowns, launch visual storyboards.", kpi: "6 artifacts" },
-                    { m: "Month 6 (Dec)", focus: "Final consolidation of all 80+ artifacts, launch portfolio search.", kpi: "Consolidation ✅" }
+                    { m: "Month 1 (July)", focus: "Set up Sahitya Rachanalu infrastructure, release first 2 reviews, establish Figma design tokens.", kpi: "3 milestones" },
+                    { m: "Month 2 (Aug)", focus: "Publish first 3 lyrics, launch lyrics UI, release 2 brand teardowns, design clickable OTT App dashboard.", kpi: "6 milestones" },
+                    { m: "Month 3 (Sept)", focus: "Release 2 screenplay breakdowns, publish 2 founder journals, 2 IPL posts, wireframe Bingoo portal user flows.", kpi: "7 milestones" },
+                    { m: "Month 4 (Oct)", focus: "Publish 2 short scripts, 3 lyrics, 2 creator essays, design responsive mobile & desktop web views.", kpi: "8 milestones" },
+                    { m: "Month 5 (Nov)", focus: "Release 3 film essays, 2 brand teardowns, launch visual storyboards, finalize high-fidelity clickable prototype.", kpi: "7 milestones" },
+                    { m: "Month 6 (Dec)", focus: "Final consolidation of all 80+ artifacts & Figma prototypes, launch unified portfolio search.", kpi: "Consolidation ✅" }
                   ].map((item, i) => (
                     <div key={item.m} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: i < 5 ? `1px solid ${BORDER}40` : "none", paddingBottom: i < 5 ? 8 : 0 }}>
                       <div>
                         <div style={{ fontSize: 11, fontWeight: 700, color: PURPLE }}>{item.m}</div>
                         <div style={{ fontSize: 10, color: TEXT, marginTop: 2 }}>{item.focus}</div>
                       </div>
-                      <span style={{ fontSize: 9, background: "#1a1a2e", border: `1px solid ${BORDER}`, padding: "2px 6px", borderRadius: 4, color: ACCENT, fontWeight: 700 }}>{item.kpi}</span>
+                      <span style={{ fontSize: 9, background: "#1a1a2e", border: `1px solid ${BORDER}`, padding: "2px 6px", borderRadius: 4, color: ACCENT, fontWeight: 700, flexShrink: 0 }}>{item.kpi}</span>
                     </div>
                   ))}
                 </div>
@@ -4419,16 +4370,16 @@ const tabs = [
 
               {/* Weekly OS */}
               <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
-                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>WEEKLY CONTENT OPERATING SYSTEM</div>
+                <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>WEEKLY CONTENT & DESIGN OS</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   {[
-                    { day: "Mon", action: "Idea Ingestion", detail: "Capture 5 ideas from movies, ads, or cricket in Notion." },
-                    { day: "Tue", action: "Outline Day", detail: "Select top idea, outline sections and key messaging." },
-                    { day: "Wed", action: "Drafting", detail: "Write 600-word draft (distraction-free editor)." },
-                    { day: "Thu", action: "Editing", detail: "Refine copy, optimize SEO keywords, format layout." },
-                    { day: "Fri", action: "Asset Design", detail: "Generate AI storyboards or custom dashboard charts." },
-                    { day: "Sat", action: "Publishing", detail: "Post on Sahitya Rachanalu, share summary on LinkedIn." },
-                    { day: "Sun", action: "Analytics", detail: "Review traffic, follower growth, and engagement rate." }
+                    { day: "Mon", action: "Idea Ingestion", detail: "Capture 5 ideas from movies, ads, or design references in Notion." },
+                    { day: "Tue", action: "Outline & Wireframe", detail: "Select top idea, outline sections and sketch low-fidelity Figma wireframes." },
+                    { day: "Wed", action: "Drafting & UI Design", detail: "Write 600-word draft and build high-fidelity Figma components." },
+                    { day: "Thu", action: "Editing & Handoff", detail: "Refine copy, optimize keywords, check Figma component alignments." },
+                    { day: "Fri", action: "Asset & Prototyping", detail: "Generate AI storyboards, link interactive screen flows in Figma." },
+                    { day: "Sat", action: "Publish & Launch", detail: "Publish on Sahitya Rachanalu and share design prototype on LinkedIn." },
+                    { day: "Sun", action: "Analytics & Critique", detail: "Review site traffic, user flow session maps, and engagement." }
                   ].map((w, i) => (
                     <div key={w.day} style={{ display: "flex", alignItems: "center", gap: 10, borderBottom: i < 6 ? `1px solid ${BORDER}40` : "none", paddingBottom: i < 6 ? 6 : 0 }}>
                       <div style={{ minWidth: 32, fontSize: 11, fontWeight: 800, color: BLUE }}>{w.day}</div>
@@ -4442,7 +4393,7 @@ const tabs = [
               </div>
             </div>
 
-            {/* Certification Timeline */}
+            {/* Certifications Timeline */}
             <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 16 }}>
               <div style={{ color: ACCENT, fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>CERTIFICATION TIMELINE (Curated — No Redundancy)</div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
@@ -4481,19 +4432,45 @@ const tabs = [
               </div>
             </div>
 
-            {/* End-state tracker */}
-            <div style={{ background: "linear-gradient(135deg, #1a2e0a, #0A0A0F)", border: `1px solid #34D39940`, borderRadius: 10, padding: 20 }}>
-              <div style={{ color: "#34D399", fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 14 }}>END-STATE PORTFOLIO — DECEMBER 2026</div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 8 }}>
-                {[["Film Analyses","10–12"],["Character Studies","8"],["Screenplay Breakdowns","8"],["Brand Teardowns","8"],["IPL Articles","10"],["Creator Economy Essays","8"],["Founder Journals","6"],["Lyrics","12–15"],["Story/Script Concepts","5–10"],["Universe/World Docs","2–3"]].map(([k,v]) => (
-                  <div key={k} style={{ display: "flex", justifyContent: "space-between", padding: "6px 10px", background: CARD, borderRadius: 4, fontSize: 11 }}>
-                    <span style={{ color: MUTED }}>{k}</span>
-                    <span style={{ color: "#34D399", fontWeight: 700 }}>{v}</span>
-                  </div>
-                ))}
+            {/* Grid 3: Presentation Formats & End-State */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+              {/* Presentation Formats */}
+              <div style={{ background: CARD, border: `1px solid ${BORDER}`, borderRadius: 8, padding: 18 }}>
+                <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, color: BLUE }}>🎬 Creative Portfolio Presentation Formats</h3>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                  {[
+                    { icon: "🎬", label: "Video Opening", desc: "Cinematic portfolio intro with motion design" },
+                    { icon: "📱", label: "Figma Prototypes", desc: "Interactive layout flow maps & DevMode specs" },
+                    { icon: "📚", label: "Books / Audiobooks", desc: "Film-script format, chapter releases" },
+                    { icon: "🎨", label: "Visual Storyboards", desc: "AI concept art grid layouts for movies" },
+                    { icon: "🎵", label: "Music Dashboard", desc: "Spotify-style lyrics + streaming metrics" },
+                    { icon: "🏏", label: "IPL Content Hub", desc: "Match reports, franchise economics teardowns" }
+                  ].map(item => (
+                    <div key={item.label} style={{ background: "rgba(255,255,255,0.01)", border: `1px solid ${BORDER}30`, borderRadius: 6, padding: 10 }}>
+                      <span style={{ fontSize: 18 }}>{item.icon}</span>
+                      <div style={{ fontSize: 11, fontWeight: 700, marginTop: 4 }}>{item.label}</div>
+                      <div style={{ fontSize: 9.5, color: MUTED, marginTop: 2, lineHeight: 1.3 }}>{item.desc}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div style={{ marginTop: 14, padding: "10px 14px", background: "#34D39910", border: `1px solid #34D39940`, borderRadius: 6, fontSize: 12, fontWeight: 700, textAlign: "center", color: "#34D399" }}>
-                Total: 80–100 portfolio artifacts · All 25 creative/content roles credibly covered
+
+              {/* End-State Tracker */}
+              <div style={{ background: "linear-gradient(135deg, #1a2e0a, #0A0A0F)", border: `1px solid #34D39940`, borderRadius: 10, padding: 18, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+                <div>
+                  <div style={{ color: "#34D399", fontSize: 11, fontWeight: 700, letterSpacing: 2, marginBottom: 12 }}>END-STATE PORTFOLIO — DECEMBER 2026</div>
+                  <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 6 }}>
+                    {[["Film Analyses","10–12"],["Figma UI Screens","12–15"],["Screenplay Breakdowns","8"],["Brand Teardowns","8"],["IPL Articles","10"],["Creator Economy Essays","8"],["Founder Journals","6"],["Lyrics","12–15"],["Story/Script Concepts","5–10"],["Universe/World Docs","2–3"]].map(([k,v]) => (
+                      <div key={k} style={{ display: "flex", justifyContent: "space-between", padding: "4px 8px", background: CARD, borderRadius: 4, fontSize: 10.5 }}>
+                        <span style={{ color: MUTED }}>{k}</span>
+                        <span style={{ color: "#34D399", fontWeight: 700 }}>{v}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ marginTop: 12, padding: "8px 12px", background: "#34D39910", border: `1px solid #34D39940`, borderRadius: 6, fontSize: 11, fontWeight: 700, textAlign: "center", color: "#34D399" }}>
+                  Total: 90–110 portfolio artifacts · All creative, design & content roles credibly covered
+                </div>
               </div>
             </div>
 
@@ -5721,6 +5698,23 @@ const getSkillCategorizedDetails = (name) => {
       pros: ["Builds sustainable, compounding web traffic", "Allows rapid experimentation and funnel tuning"],
       cons: ["Search algorithms change frequently", "Paid ads require budget and can have high CAC"]
     };
+  }
+
+  if (n.includes("writing") || n.includes("content strategy") || n.includes("calendar") || n.includes("messaging") || n.includes("copywriting") || n.includes("timeline") || n.includes("character") || n.includes("bible") || n.includes("storytelling") || n.includes("literature")) {
+    return {
+      category: "Creative & Content Strategy",
+      impact: `Establishes unique brand identity, community engagement, and lore timelines for immersive products.`,
+      pros: ["Creates strong emotional connection with users", "Highly differentiating in copy and messaging"],
+      cons: ["Hard to directly measure qualitative impact", "Creative burnouts can disrupt publishing speed"]
+    };
+  }
+
+  return {
+    category: "Logical Aptitude & Problem Solving",
+    impact: `Sharpens the core reasoning, quantitative, and logical abilities tested in initial screening rounds.`,
+    pros: ["Builds high mental speed and cognitive flexibility", "Helps clear initial filters at top recruitment drives"],
+    cons: ["Requires repetitive practice to stay sharp", "Does not directly build code artifacts"]
+  };
 };
 
 const matchSkill = (mustHaveSkill, learnedSet) => {
