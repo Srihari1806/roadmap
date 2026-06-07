@@ -1470,7 +1470,7 @@ const SM_GRID_DATA = {
     fullstack: "Frontend Framework",
     cscore: "OS",
     embedded: "Microcontrollers & Embedded C (STM32/Arduino)",
-    cybersecurity: "Ethical Hacking Basics (Recon, nmap, Burp)",
+    cybersecurity: "Ethical Hacking Basics & Vulnerability Assessment (Recon, nmap, Burp)",
     devops: "Docker Containers (Images, Volumes, Networks)",
     uiux: "Advanced Figma (Components, Auto-layout, Design systems)",
     aiml: "Core ML (Trees, Random Forest, XGBoost, Evaluation)",
@@ -1484,7 +1484,7 @@ const SM_GRID_DATA = {
     fullstack: "Node.js + Express + MongoDB",
     cscore: "CN",
     embedded: "Sensors & ESP32 IoT (WiFi, Bluetooth, MQTT)",
-    cybersecurity: "System Security (Windows/Linux Hardening, Logs)",
+    cybersecurity: "System Security (Windows/Linux Hardening, Logs, SIEM basics)",
     devops: "Cloud AWS (EC2, S3, IAM, VPC)",
     uiux: "Research (Personas, User Journeys, Flows)",
     aiml: "Deployment & MLOps (FastAPI, Vercel, MLflow)",
@@ -3026,19 +3026,18 @@ const tabs = [
               </div>
               {(() => {
                 const isMultiTrack = activeTracks.some(t => ['embedded', 'cybersecurity', 'devops', 'uiux', 'aiml'].includes(t));
-                let totalProjects = 4;
-                if (activeTracks.includes("embedded")) totalProjects += 2;
-                if (activeTracks.includes("cybersecurity")) totalProjects += 2;
-                if (activeTracks.includes("devops")) totalProjects += 2;
-                if (activeTracks.includes("uiux")) totalProjects += 3;
-                if (activeTracks.includes("aiml")) totalProjects += 5;
+                let totalProjects = 6;
+                if (activeTracks.includes("embedded")) totalProjects += 1;
+                if (activeTracks.includes("cybersecurity")) totalProjects += 1;
+                if (activeTracks.includes("devops")) totalProjects += 1;
+                if (activeTracks.includes("uiux")) totalProjects += 1;
 
-                let targetRolesCount = 4;
-                if (activeTracks.includes("embedded")) targetRolesCount += 2;
-                if (activeTracks.includes("cybersecurity")) targetRolesCount += 2;
-                if (activeTracks.includes("devops")) targetRolesCount += 2;
-                if (activeTracks.includes("uiux")) targetRolesCount += 2;
-                if (activeTracks.includes("aiml")) targetRolesCount += 2;
+                let targetRolesCount = 16;
+                if (activeTracks.includes("embedded")) targetRolesCount += 1;
+                if (activeTracks.includes("cybersecurity")) targetRolesCount += 1;
+                if (activeTracks.includes("devops")) targetRolesCount += 1;
+                if (activeTracks.includes("uiux")) targetRolesCount += 1;
+                if (activeTracks.includes("aiml")) targetRolesCount += 1;
 
                 return (
                   <>
@@ -3046,7 +3045,7 @@ const tabs = [
                       Srihari's <span style={{ color: ACCENT }}>{isMultiTrack ? "Multi-Discipline" : "Analyst"}</span> Plan
                     </h1>
                     <p style={{ margin: "6px 0 0", color: MUTED, fontSize: 12 }}>
-                       180 Days · {totalProjects}+ Projects · 2 Platforms · {targetRolesCount} Target Roles
+                       180 Days · {totalProjects} Projects · 2 Platforms · {targetRolesCount} Target Roles
                     </p>
                   </>
                 );
@@ -4626,7 +4625,7 @@ function getMatchedKeywords(skillTitle) {
       if (sl.includes("audience research") && (sLower.includes("analytics") || sLower.includes("seo") || sLower.includes("audience") || sLower.includes("campaign"))) return true;
       if (sl.includes("campaign planning") && (sLower.includes("content strategy") || sLower.includes("seo") || sLower.includes("campaign"))) return true;
       if (sl.includes("keyword research") && (sLower.includes("seo") || sLower.includes("keyword"))) return true;
-      if (sl.includes("c programming") && (sLower.includes("c programming") || sLower.includes("c/c++") || sLower.includes("embedded c") || sLower.includes("c syntax"))) return true;
+      if ((sl.includes("c programming") || sl.includes("c/c++") || sl.includes("c/c++ programming")) && (sLower.includes("c programming") || sLower.includes("c/c++") || sLower.includes("embedded c") || sLower.includes("c syntax") || sLower.includes("c/c++ programming"))) return true;
       if (sl.includes("microcontrollers") && (sLower.includes("microcontrollers") || sLower.includes("stm32") || sLower.includes("arduino") || sLower.includes("gpio"))) return true;
       if (sl.includes("rtos") && (sLower.includes("rtos") || sLower.includes("freertos") || sLower.includes("real-time"))) return true;
       if (sl.includes("iot") && (sLower.includes("esp32") || sLower.includes("sensors") || sLower.includes("mqtt") || sLower.includes("iot"))) return true;
@@ -4637,6 +4636,27 @@ function getMatchedKeywords(skillTitle) {
       if (sl.includes("ui/ux") && (sLower.includes("ui/ux") || sLower.includes("design") || sLower.includes("figma") || sLower.includes("wireframing") || sLower.includes("prototyping"))) return true;
       if (sl.includes("machine learning") && (sLower.includes("ml") || sLower.includes("machine learning") || sLower.includes("regression") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("aiml") || sLower.includes("rag"))) return true;
       if (sl.includes("optimization") && (sLower.includes("seo") || sLower.includes("optimization"))) return true;
+
+      // Specialization mappings
+      if (sl.includes("digital electronics") && (sLower.includes("digital electronics") || sLower.includes("logic gates") || sLower.includes("fsm") || sLower.includes("flip-flop"))) return true;
+      if (sl.includes("vulnerability assessment") && (sLower.includes("vulnerability") || sLower.includes("ethical hacking") || sLower.includes("nmap") || sLower.includes("recon"))) return true;
+      if (sl.includes("siem") && (sLower.includes("siem") || sLower.includes("splunk") || sLower.includes("elk") || sLower.includes("logs"))) return true;
+      if (sl.includes("linux administration") && (sLower.includes("linux") || sLower.includes("shell scripting"))) return true;
+      if (sl.includes("git & ci/cd") && (sLower.includes("git") || sLower.includes("ci/cd") || sLower.includes("actions"))) return true;
+      if (sl.includes("docker containerization") && (sLower.includes("docker") || sLower.includes("container"))) return true;
+      if (sl.includes("aws cloud") && (sLower.includes("aws") || sLower.includes("cloud") || sLower.includes("ec2") || sLower.includes("iam"))) return true;
+      if (sl.includes("kubernetes orchestration") && (sLower.includes("kubernetes") || sLower.includes("k8s"))) return true;
+      if (sl.includes("figma basics") && (sLower.includes("figma") || sLower.includes("design system") || sLower.includes("layout"))) return true;
+      if (sl.includes("user flow") && (sLower.includes("user flow") || sLower.includes("wireframe") || sLower.includes("ux basics") || sLower.includes("ia"))) return true;
+      if (sl.includes("auto-layout") && (sLower.includes("auto-layout") || sLower.includes("components") || sLower.includes("figma"))) return true;
+      if (sl.includes("user research") && (sLower.includes("research") || sLower.includes("personas") || sLower.includes("user journey") || sLower.includes("cjm"))) return true;
+      if (sl.includes("supervised learning") && (sLower.includes("supervised") || sLower.includes("regression") || sLower.includes("knn") || sLower.includes("stats & ml"))) return true;
+      if (sl.includes("ensemble models") && (sLower.includes("ensemble") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("core ml"))) return true;
+      if (sl.includes("fastapi deployment") && (sLower.includes("fastapi") || sLower.includes("deployment") || sLower.includes("mlops"))) return true;
+      if (sl.includes("rag & llm") && (sLower.includes("rag") || sLower.includes("llm") || sLower.includes("agent") || sLower.includes("vector") || sLower.includes("langchain"))) return true;
+      if (sl.includes("cloud security") && (sLower.includes("cloud security") || sLower.includes("aws") || sLower.includes("iam") || sLower.includes("security mgmt"))) return true;
+      if (sl.includes("responsive design") && (sLower.includes("responsive") || sLower.includes("mobile") || sLower.includes("desktop") || sLower.includes("breakpoint") || sLower.includes("adaptive"))) return true;
+
       return false;
     });
     if (isMatch) {
@@ -4973,7 +4993,7 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
       if (sl.includes("optimization") && (sLower.includes("seo") || sLower.includes("optimization"))) return true;
 
       // Specialization tracks
-      if (sl.includes("c programming") && (sLower.includes("c programming") || sLower.includes("c/c++") || sLower.includes("embedded c") || sLower.includes("c syntax"))) return true;
+      if ((sl.includes("c programming") || sl.includes("c/c++") || sl.includes("c/c++ programming")) && (sLower.includes("c programming") || sLower.includes("c/c++") || sLower.includes("embedded c") || sLower.includes("c syntax") || sLower.includes("c/c++ programming"))) return true;
       if (sl.includes("microcontrollers") && (sLower.includes("microcontrollers") || sLower.includes("stm32") || sLower.includes("arduino") || sLower.includes("gpio"))) return true;
       if (sl.includes("rtos") && (sLower.includes("rtos") || sLower.includes("freertos") || sLower.includes("real-time"))) return true;
       if (sl.includes("iot") && (sLower.includes("esp32") || sLower.includes("sensors") || sLower.includes("mqtt") || sLower.includes("iot"))) return true;
@@ -4983,7 +5003,27 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
       if (sl.includes("devops") && (sLower.includes("devops") || sLower.includes("cloud") || sLower.includes("ci/cd") || sLower.includes("docker") || sLower.includes("kubernetes"))) return true;
       if (sl.includes("ui/ux") && (sLower.includes("ui/ux") || sLower.includes("design") || sLower.includes("figma") || sLower.includes("wireframing") || sLower.includes("prototyping"))) return true;
       if (sl.includes("machine learning") && (sLower.includes("ml") || sLower.includes("machine learning") || sLower.includes("regression") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("aiml") || sLower.includes("rag"))) return true;
-      
+
+      // Specialization mappings
+      if (sl.includes("digital electronics") && (sLower.includes("digital electronics") || sLower.includes("logic gates") || sLower.includes("fsm") || sLower.includes("flip-flop"))) return true;
+      if (sl.includes("vulnerability assessment") && (sLower.includes("vulnerability") || sLower.includes("ethical hacking") || sLower.includes("nmap") || sLower.includes("recon"))) return true;
+      if (sl.includes("siem") && (sLower.includes("siem") || sLower.includes("splunk") || sLower.includes("elk") || sLower.includes("logs"))) return true;
+      if (sl.includes("linux administration") && (sLower.includes("linux") || sLower.includes("shell scripting"))) return true;
+      if (sl.includes("git & ci/cd") && (sLower.includes("git") || sLower.includes("ci/cd") || sLower.includes("actions"))) return true;
+      if (sl.includes("docker containerization") && (sLower.includes("docker") || sLower.includes("container"))) return true;
+      if (sl.includes("aws cloud") && (sLower.includes("aws") || sLower.includes("cloud") || sLower.includes("ec2") || sLower.includes("iam"))) return true;
+      if (sl.includes("kubernetes orchestration") && (sLower.includes("kubernetes") || sLower.includes("k8s"))) return true;
+      if (sl.includes("figma basics") && (sLower.includes("figma") || sLower.includes("design system") || sLower.includes("layout"))) return true;
+      if (sl.includes("user flow") && (sLower.includes("user flow") || sLower.includes("wireframe") || sLower.includes("ux basics") || sLower.includes("ia"))) return true;
+      if (sl.includes("auto-layout") && (sLower.includes("auto-layout") || sLower.includes("components") || sLower.includes("figma"))) return true;
+      if (sl.includes("user research") && (sLower.includes("research") || sLower.includes("personas") || sLower.includes("user journey") || sLower.includes("cjm"))) return true;
+      if (sl.includes("supervised learning") && (sLower.includes("supervised") || sLower.includes("regression") || sLower.includes("knn") || sLower.includes("stats & ml"))) return true;
+      if (sl.includes("ensemble models") && (sLower.includes("ensemble") || sLower.includes("random forest") || sLower.includes("xgboost") || sLower.includes("core ml"))) return true;
+      if (sl.includes("fastapi deployment") && (sLower.includes("fastapi") || sLower.includes("deployment") || sLower.includes("mlops"))) return true;
+      if (sl.includes("rag & llm") && (sLower.includes("rag") || sLower.includes("llm") || sLower.includes("agent") || sLower.includes("vector") || sLower.includes("langchain"))) return true;
+      if (sl.includes("cloud security") && (sLower.includes("cloud security") || sLower.includes("aws") || sLower.includes("iam") || sLower.includes("security mgmt"))) return true;
+      if (sl.includes("responsive design") && (sLower.includes("responsive") || sLower.includes("mobile") || sLower.includes("desktop") || sLower.includes("breakpoint") || sLower.includes("adaptive"))) return true;
+
       return false;
     });
   };
@@ -5062,603 +5102,353 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
               <div style={{ fontSize: 9, color: "#475569", letterSpacing: 1 }}>for {activeRole}</div>
             </div>
           </div>
-          <div style={{ display: "flex", gap: 0, borderBottom: "1px solid #1E293B" }}>
-            {["resume", "ats-gap", "roadmap", "assessment"].map(tab => (
-              <button key={tab} onClick={() => setActiveTab(tab)} className={`tab-btn ${activeTab === tab ? "active" : "inactive"}`}>
-                {tab === "resume" ? "📄 Resume" : tab === "ats-gap" ? "🎯 Eligibility & Skill Gap" : tab === "roadmap" ? "🗺 Skill Roadmap" : "📋 Role Assessment"}
-              </button>
-            ))}
-          </div>
         </div>
       </div>
 
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "32px 40px" }}>
 
-        {/* Month Progress Selector */}
-        <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: "16px 20px", marginBottom: 28 }}>
-          <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 12 }}>
-            Simulate Resume Progress (Month-by-Month Skills & Projects)
-          </div>
-          <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-            {["June (Beg)", "End of June", "End of July", "End of August", "End of September", "End of October", "End of November", "End of December"].map((label, idx) => (
-              <button
-                key={idx}
-                onClick={() => setMonthProgress(idx)}
-                style={{
-                  background: monthProgress === idx ? "#F4A72A" : "#1A202C",
-                  color: monthProgress === idx ? "#000" : "#94A3B8",
-                  border: "none",
-                  cursor: "pointer",
-                  fontSize: 10,
-                  fontWeight: 700,
-                  padding: "8px 14px",
-                  borderRadius: 2,
-                  transition: "all 0.2s"
-                }}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div style={{ marginBottom: 28 }}>
-          <div className="section-label">Target Role</div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-            {Object.entries(roleRequirements).map(([name, data]) => (
-              <button
-                key={name}
-                onClick={() => setActiveRole(name)}
-                className="role-chip"
-                style={{
-                  background: activeRole === name ? data.color + "22" : "#0F1724",
-                  color: activeRole === name ? data.color : "#475569",
-                  border: `1px solid ${activeRole === name ? data.color : "#1E293B"}`,
-                }}
-              >
-                {name}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {activeTab === "resume" && (
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 320px", gap: 32 }}>
-            <div>
-              <div style={{ marginBottom: 32 }}>
-                <div className="section-label">Profile</div>
-                <p style={{ fontSize: 12, lineHeight: 1.8, color: "#94A3B8" }}>{dynamicResume.summary}</p>
-              </div>
-
-              <div>
-                <div className="section-label">Projects</div>
-                {dynamicResume.projects.map(p => (
-                  <div key={p.id} className="project-card">
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8, flexWrap: "wrap", gap: 8 }}>
-                      <div>
-                        <div style={{ fontSize: 13, fontWeight: 600, color: "#F1F5F9", letterSpacing: 0.5 }}>{p.title}</div>
-                        <div style={{ fontSize: 10, color: "#475569", marginTop: 2, letterSpacing: 1 }}>{p.status}</div>
-                      </div>
-                      <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-                        {p.tags.slice(0, 3).map(t => <span key={t} className="tag">{t}</span>)}
-                      </div>
-                    </div>
-                    <ul style={{ paddingLeft: 0, listStyle: "none" }}>
-                      {p.bullets.map((b, i) => (
-                        <li key={i} style={{ fontSize: 11, color: "#64748B", lineHeight: 1.7, paddingLeft: 14, position: "relative" }}>
-                          <span style={{ position: "absolute", left: 0, color: "#334155" }}>›</span>{b}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <div style={{ marginBottom: 28 }}>
-                <div className="section-label">Education</div>
-                <div style={{ fontSize: 12, color: "#F1F5F9", fontWeight: 600, marginBottom: 4 }}>{dynamicResume.education.degree}</div>
-                <div style={{ fontSize: 11, color: "#64748B", lineHeight: 1.8 }}>
-                  {dynamicResume.education.college}<br />
-                  {dynamicResume.education.year}<br />
-                  <span style={{ color: "#475569" }}>CGPA: </span>{dynamicResume.education.cgpa}
-                </div>
-              </div>
-
-              <div style={{ marginBottom: 28 }}>
-                <div className="section-label">Current Skills</div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {dynamicResume.skills.current
-                    .filter(s => getSkillSuitability(s, activeRole) !== "none")
-                    .map(s => (
-                      <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F2A1F", color: "#34D399", border: "1px solid #064E3B", cursor: "pointer" }}>{s}</span>
-                    ))}
-                </div>
-              </div>
-
-              <div style={{ marginBottom: 28 }}>
-                <div className="section-label">Currently Learning</div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {dynamicResume.skills.learning
-                    .filter(s => getSkillSuitability(s, activeRole) !== "none")
-                    .map(s => (
-                      <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#1C1A0A", color: "#FCD34D", border: "1px solid #713F12", cursor: "pointer" }}>{s}</span>
-                    ))}
-                </div>
-              </div>
-
-              <div>
-                <div className="section-label">Planned to Learn</div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {dynamicResume.skills.planned
-                    .filter(s => getSkillSuitability(s, activeRole) !== "none")
-                    .map(s => (
-                      <span key={s} onClick={() => setSelectedSkillDetail(s)} className="skill-badge" style={{ background: "#0F1724", color: "#475569", border: "1px solid #1E293B", cursor: "pointer" }}>{s}</span>
-                    ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {activeTab === "ats-gap" && (() => {
-          const selectedSkillObj = core16Skills.find(s => s.id === selectedSkillId) || core16Skills[0];
-          const skillStatus = getCoreSkillStatus(selectedSkillObj.month, monthProgress);
+        {/* Month Progress & Target Role Filter Controls */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 16, background: "#0F1724", border: "1px solid #1E293B", borderRadius: 6, padding: "20px 24px", marginBottom: 28 }}>
           
-          let havePercent = 0;
-          let lackPercent = 100;
-          let statusText = "Gap (0% Competency)";
-          let statusColor = "#F87171"; // Red
+          {/* Target Role Dropdown */}
+          <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
+            <span style={{ fontSize: 10, letterSpacing: 2, color: "#64748B", textTransform: "uppercase", fontWeight: 700 }}>Target Role:</span>
+            <select
+              value={activeRole}
+              onChange={(e) => setActiveRole(e.target.value)}
+              style={{
+                background: "#080C14",
+                color: "#F8FAFC",
+                border: "1px solid #1E293B",
+                padding: "8px 16px",
+                borderRadius: 4,
+                fontFamily: "inherit",
+                fontSize: 11,
+                letterSpacing: 0.5,
+                outline: "none",
+                cursor: "pointer",
+                transition: "border-color 0.2s"
+              }}
+              onFocus={(e) => e.target.style.borderColor = role.color}
+              onBlur={(e) => e.target.style.borderColor = "#1E293B"}
+            >
+              {Object.keys(roleRequirements).map(rName => (
+                <option key={rName} value={rName}>{rName}</option>
+              ))}
+            </select>
+          </div>
 
-          if (skillStatus === "have") {
-            havePercent = 100;
-            lackPercent = 0;
-            statusText = "Mastered (100% Competency)";
-            statusColor = "#34D399"; // Green
-          } else if (skillStatus === "learning") {
-            havePercent = 50;
-            lackPercent = 50;
-            statusText = "Learning (50% Competency)";
-            statusColor = "#FCD34D"; // Yellow
-          }
+          <div style={{ height: "1px", background: "#1E293B" }} />
 
-          const suitability = getSkillSuitability(selectedSkillObj.name, activeRole);
-          let suitabilityLabel = "Not Required";
-          let suitabilityColor = "#64748B"; // Muted
-          let suitabilityDesc = "This skill is not directly required or mentioned in the core requirements for this role, but serves as a solid general technical/analytical foundation.";
+          {/* Month progress slider */}
+          <div>
+            <div style={{ fontSize: 10, letterSpacing: 2, color: "#64748B", textTransform: "uppercase", marginBottom: 12, fontWeight: 700 }}>
+              Simulate Resume Progress (Month-by-Month Skills & Projects)
+            </div>
+            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+              {["June (Beg)", "End of June", "End of July", "End of August", "End of September", "End of October", "End of November", "End of December"].map((label, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setMonthProgress(idx)}
+                  style={{
+                    background: monthProgress === idx ? "#F4A72A" : "#1A202C",
+                    color: monthProgress === idx ? "#000" : "#94A3B8",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: 10,
+                    fontWeight: 700,
+                    padding: "8px 14px",
+                    borderRadius: 2,
+                    transition: "all 0.2s"
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
 
-          if (suitability === "high") {
-            suitabilityLabel = "High (Must-Have)";
-            suitabilityColor = "#EF4444"; // Red (Critical)
-            suitabilityDesc = "Critical must-have skill. Absolutely required to be prominently demonstrated on your resume to pass ATS screening and technical rounds.";
-          } else if (suitability === "medium") {
-            suitabilityLabel = "Medium (Good-to-Have)";
-            suitabilityColor = "#F59E0B"; // Orange/Yellow
-            suitabilityDesc = "Highly recommended secondary skill that differentiates you from other candidates and adds depth to your project portfolio.";
-          } else if (suitability === "low") {
-            suitabilityLabel = "Low (ATS Keyword)";
-            suitabilityColor = "#3B82F6"; // Blue
-            suitabilityDesc = "Recommended ATS keyword to weave into your bullet points or summary to optimize automated resume screening scores.";
-          }
+        {(() => {
+          const MISSING_KNOWLEDGE_DETAILS = {
+            "c/c++ programming": { topics: "Pointers, Dynamic Memory Allocation, Bitwise operations, Structure padding", milestone: "June — Embedded Specialization" },
+            "digital electronics": { topics: "Logic Gates, Karnaugh Maps, Flip-Flops, Finite State Machines (FSMs)", milestone: "July — Embedded Specialization" },
+            "microcontrollers (arduino/stm32)": { topics: "Bare-metal registers, GPIO configuration, interrupt handlers, hardware debugging", milestone: "August — Embedded Specialization" },
+            "esp32 & iot sensors": { topics: "Sensor buses (SPI/I2C/UART), Wi-Fi & Bluetooth stacks, MQTT cloud messaging", milestone: "September — Embedded Specialization" },
+            "rtos (freertos)": { topics: "Task scheduling, Semaphores, Mutexes, Queue structures, avoiding priority inversion", milestone: "October — Embedded Specialization" },
+            "linux & networking": { topics: "Linux command line basics, permissions, TCP/IP stack, DNS, HTTP/HTTPS ports", milestone: "June — Cybersecurity Specialization" },
+            "owasp top 10": { topics: "SQL Injection, Cross-Site Scripting (XSS), CSRF, Authentication flaws, security headers", milestone: "July — Cybersecurity Specialization" },
+            "vulnerability assessment": { topics: "Reconnaissance, Nmap network scanning, intercepting proxies (Burp Suite), Nikto web scans", milestone: "August — Cybersecurity Specialization" },
+            "siem (splunk/elk)": { topics: "System log collection, SIEM analytics, dashboard monitoring, security incident alerts", milestone: "September — Cybersecurity Specialization" },
+            "cloud security (aws iam)": { topics: "AWS Identity & Access Management (IAM), S3 bucket security, AWS Secrets Manager", milestone: "October — Cybersecurity Specialization" },
+            "linux administration": { topics: "Linux server setup, user permissions hardening, automation shell scripts, cron jobs", milestone: "June — DevOps Specialization" },
+            "git & ci/cd pipelines": { topics: "Advanced Git branching, GitHub Actions workflows, build pipelines, deployment triggers", milestone: "July — DevOps Specialization" },
+            "docker containerization": { topics: "Dockerfiles, image size optimization, volume mapping, network isolation, Docker Compose", milestone: "August — DevOps Specialization" },
+            "aws cloud services": { topics: "AWS EC2 instances, S3 storage, VPC setup, Security groups, AWS IAM least-privilege", milestone: "September — DevOps Specialization" },
+            "kubernetes orchestration": { topics: "Kubernetes Pods, ReplicaSets, Service definitions, Ingress controllers, deployments scaling", milestone: "October — DevOps Specialization" },
+            "figma basics & design system": { topics: "Figma tools, typography scales, grid setups, responsive color/variable styles", milestone: "June — UI/UX Specialization" },
+            "user flow & wireframing": { topics: "Information Architecture, user flows, low-fidelity paper wireframes, digital mockups", milestone: "July — UI/UX Specialization" },
+            "auto-layout & figma components": { topics: "Figma Auto-Layout v5, component variables, variants, responsive padding & alignments", milestone: "August — UI/UX Specialization" },
+            "user research & cjm": { topics: "User Persona studies, Customer Journey Maps (CJM), user interview surveys, drop-off mapping", milestone: "September — UI/UX Specialization" },
+            "responsive design": { topics: "Mobile-first layouts, breakpoint design systems, layout constraints, WCAG accessibility rules", milestone: "October — UI/UX Specialization" },
+            "python & data foundations": { topics: "Python OOP structures, NumPy vector arrays, Pandas DataFrames data cleaning, matplotlib plotting", milestone: "June — AI/ML Specialization" },
+            "supervised learning (regression/knn)": { topics: "Mean, variance, linear regression model fitting, logistic regressions, KNN clustering", milestone: "July — AI/ML Specialization" },
+            "ensemble models (random forest/xgboost)": { topics: "Decision trees, Random Forest bagging, XGBoost boosting models, model evaluation metrics", milestone: "August — AI/ML Specialization" },
+            "fastapi deployment": { topics: "FastAPI server script, query/path parameters validation, MLOps model deployment", milestone: "September — AI/ML Specialization" },
+            "rag & llm agents": { topics: "LangChain/LangGraph frameworks, Vector databases (Pinecone/Chroma), RAG indexing, LLM API calls", milestone: "November — AI/ML Specialization" }
+          };
 
-          let eligibilityRating = "Early Learning Stage";
-          let eligibilityColor = "#EF4444"; // Red
-          if (atsScore >= 75) {
-            eligibilityRating = "Match Ready / Fit to Apply";
-            eligibilityColor = "#34D399"; // Green
-          } else if (atsScore >= 50) {
-            eligibilityRating = "Developing Fit (Learning)";
-            eligibilityColor = "#FCD34D"; // Yellow
-          }
+          const getGapDetails = (skillName) => {
+            const skL = skillName.toLowerCase();
+            for (const [key, info] of Object.entries(MISSING_KNOWLEDGE_DETAILS)) {
+              if (skL.includes(key) || key.includes(skL)) {
+                return info;
+              }
+            }
+            const coreSkill = core16Skills.find(c => c.name.toLowerCase().includes(skL) || skL.includes(c.name.toLowerCase()));
+            if (coreSkill) {
+              return {
+                topics: coreSkill.desc,
+                milestone: `${coreSkill.month} — Core Curriculum`
+              };
+            }
+            const catDetails = getSkillCategorizedDetails(skillName);
+            return {
+              topics: catDetails.impact,
+              milestone: `${getSkillLearningMonth(skillName)} — Planned`
+            };
+          };
+
+          const criticalGapsList = mustHaveAnalysis.filter(s => s.status === "gap" || s.status === "learning");
 
           return (
-            <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 28 }}>
-              {/* Left Panel: 4x4 Core Skills Matrix */}
-              <div>
-                <div className="section-label" style={{ marginBottom: 16 }}>
-                  16 Core Skills Matrix (4 Skills/Month × 4 Months)
+            <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 32, alignItems: "flex-start" }}>
+              
+              {/* Left Column: The 📄 Resume */}
+              <div style={{ background: "#0D0E12", border: "1px solid #1E293B", borderRadius: 4, padding: "28px 32px" }}>
+                <div style={{ borderBottom: "1px solid #1E293B", paddingBottom: 20, marginBottom: 24 }}>
+                  <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 36, letterSpacing: 3, color: "#F8FAFC", lineHeight: 1 }}>{dynamicResume.name}</div>
+                  <div style={{ fontSize: 10, letterSpacing: 2, color: role.color, textTransform: "uppercase", marginTop: 4, fontWeight: 700 }}>{dynamicResume.title}</div>
+                  <div style={{ display: "flex", gap: 12, marginTop: 10, flexWrap: "wrap" }}>
+                    {Object.entries(dynamicResume.contact).map(([k, v]) => (
+                      <span key={k} style={{ fontSize: 9, color: "#64748B", letterSpacing: 0.5 }}>
+                        <span style={{ color: "#475569" }}>{k.toUpperCase()}: </span>{v}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                
-                {["June", "July", "August", "September"].map((mName, idx) => {
-                  const monthSkills = core16Skills.filter(s => s.month === mName);
-                  return (
-                    <div key={mName} style={{ marginBottom: 20 }}>
-                      <div style={{ fontSize: 9, letterSpacing: 2, color: "#64748B", textTransform: "uppercase", marginBottom: 10, fontWeight: 700, display: "flex", alignItems: "center", gap: 8 }}>
-                        <span style={{ width: 6, height: 6, borderRadius: "50%", background: role.color }} />
-                        Month {idx + 1} — {mName}
-                      </div>
-                      <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 12 }}>
-                        {monthSkills.map(skill => {
-                          const status = getCoreSkillStatus(skill.month, monthProgress);
-                          const isSelected = selectedSkillId === skill.id;
-                          
-                          let cardBorder = "#1E293B";
-                          let statusBg = "#1A202C";
-                          let statusColor = "#64748B";
-                          let statusLabel = "Gap";
-                          
-                          if (status === "have") {
-                            statusBg = "#0F2A1F";
-                            statusColor = "#34D399";
-                            statusLabel = "Mastered";
-                          } else if (status === "learning") {
-                            statusBg = "#1C1A0A";
-                            statusColor = "#FCD34D";
-                            statusLabel = "Learning";
-                          }
-                          
-                          if (isSelected) {
-                            cardBorder = role.color;
-                          }
 
-                          return (
-                            <div 
-                              key={skill.id}
-                              onClick={() => setSelectedSkillId(skill.id)}
-                              style={{
-                                background: isSelected ? "#0F172A" : "#050811",
-                                border: `1px solid ${cardBorder}`,
-                                borderRadius: 4,
-                                padding: "12px 14px",
-                                cursor: "pointer",
-                                transition: "all 0.2s",
-                                boxShadow: isSelected ? `0 0 12px ${role.color}15` : "none",
-                                display: "flex",
-                                flexDirection: "column",
-                                justifyContent: "space-between",
-                                minHeight: 80
-                              }}
-                            >
-                              <div style={{ fontSize: 11, fontWeight: 700, color: isSelected ? "#FFF" : "#94A3B8", lineHeight: 1.3 }}>
-                                {skill.name}
-                              </div>
-                              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 8 }}>
-                                <span style={{ fontSize: 8, color: "#475569", textTransform: "uppercase" }}>{skill.month}</span>
-                                <span style={{ 
-                                  fontSize: 8, 
-                                  background: statusBg, 
-                                  color: statusColor, 
-                                  padding: "2px 6px", 
-                                  borderRadius: 2, 
-                                  fontWeight: 700, 
-                                  textTransform: "uppercase" 
-                                }}>
-                                  {statusLabel}
-                                </span>
-                              </div>
-                            </div>
-                          );
-                        })}
+                <div style={{ marginBottom: 24 }}>
+                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Profile Summary</div>
+                  <p style={{ fontSize: 11, lineHeight: 1.7, color: "#94A3B8" }}>{dynamicResume.summary}</p>
+                </div>
+
+                <div style={{ marginBottom: 24 }}>
+                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Experience & Projects</div>
+                  {dynamicResume.projects.map(p => (
+                    <div key={p.id} style={{ marginBottom: 18, borderBottom: "1px solid #141822", paddingBottom: 14 }}>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6, flexWrap: "wrap", gap: 8 }}>
+                        <div>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: "#E2E8F0" }}>{p.title}</div>
+                          <div style={{ fontSize: 9, color: "#475569", marginTop: 2 }}>{p.status}</div>
+                        </div>
+                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+                          {p.tags.slice(0, 3).map(t => <span key={t} className="tag" style={{ fontSize: 8, padding: "2px 6px" }}>{t}</span>)}
+                        </div>
                       </div>
+                      <ul style={{ paddingLeft: 0, listStyle: "none", marginTop: 6 }}>
+                        {p.bullets.map((b, i) => (
+                          <li key={i} style={{ fontSize: 10.5, color: "#64748B", lineHeight: 1.6, paddingLeft: 12, position: "relative" }}>
+                            <span style={{ position: "absolute", left: 0, color: "#334155" }}>›</span>{b}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                  );
-                })}
+                  ))}
+                </div>
+
+                <div style={{ marginBottom: 24 }}>
+                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Skills Ingested</div>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                    {dynamicResume.skills.current.map(s => (
+                      <span key={s} className="tag" style={{ background: "#064E3B", color: "#34D399", borderColor: "#064E3B", fontSize: 9 }}>{s}</span>
+                    ))}
+                    {dynamicResume.skills.learning.map(s => (
+                      <span key={s} className="tag" style={{ background: "#713F12", color: "#FCD34D", borderColor: "#713F12", fontSize: 9 }}>{s} (learning)</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <div className="section-label" style={{ fontSize: 8, letterSpacing: 2, color: "#475569", marginBottom: 10 }}>Education</div>
+                  <div style={{ fontSize: 11, color: "#E2E8F0", fontWeight: 700, marginBottom: 2 }}>{dynamicResume.education.degree}</div>
+                  <div style={{ fontSize: 10, color: "#64748B", lineHeight: 1.6 }}>
+                    {dynamicResume.education.college} | {dynamicResume.education.year} | <span style={{ color: "#475569" }}>CGPA:</span> {dynamicResume.education.cgpa}
+                  </div>
+                </div>
               </div>
 
-              {/* Right Panel: Selected Skill Scorecard & Overall Eligibility */}
-              <div>
-                {/* Active Skill Detail */}
-                <div style={{ background: "#0F1724", border: `1px solid ${selectedSkillId ? role.color : "#1E293B"}33`, borderRadius: 4, padding: 20, marginBottom: 20 }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
-                    <span style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase" }}>Selected Skill Analysis</span>
-                    <span style={{ fontSize: 9, color: role.color, letterSpacing: 1, textTransform: "uppercase", fontWeight: 700 }}>{selectedSkillObj.month} Skill</span>
-                  </div>
-                  <h3 style={{ fontSize: 16, fontWeight: 700, color: "#fff", marginBottom: 6 }}>{selectedSkillObj.name}</h3>
-                  <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.6 }}>{selectedSkillObj.desc}</p>
-                  <button 
-                    onClick={() => setSelectedSkillDetail(selectedSkillObj.name)}
-                    style={{
-                      background: `${role.color}15`,
-                      color: role.color,
-                      border: `1px solid ${role.color}33`,
-                      borderRadius: 2,
-                      cursor: "pointer",
-                      fontSize: 9,
-                      fontWeight: 700,
-                      padding: "6px 12px",
-                      marginTop: 12,
-                      textTransform: "uppercase",
-                      fontFamily: "inherit",
-                      transition: "all 0.2s"
-                    }}
-                    onMouseEnter={e => { e.target.style.background = `${role.color}33`; }}
-                    onMouseLeave={e => { e.target.style.background = `${role.color}15`; }}
-                  >
-                    🔍 View Full Skill Card (Pros & Cons)
-                  </button>
-                </div>
-
-                {/* Skill Mastery Metrics */}
-                <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20, marginBottom: 20 }}>
-                  <div className="section-label" style={{ marginBottom: 14 }}>Skill Gap & Competency</div>
-                  
-                  {/* Competency Level (Have) */}
-                  <div style={{ marginBottom: 18 }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
-                      <span style={{ fontSize: 10, color: "#94A3B8", textTransform: "uppercase", letterSpacing: 1 }}>What I Have (Competency)</span>
-                      <span style={{ fontSize: 11, fontWeight: 700, color: statusColor }}>{havePercent}%</span>
-                    </div>
-                    <div className="ats-bar-bg" style={{ height: 8 }}>
-                      <div className="ats-bar-fill" style={{ height: 8, width: `${havePercent}%`, background: "linear-gradient(90deg, #059669, #34D399)", borderRadius: 2 }} />
-                    </div>
-                  </div>
-
-                  {/* Skill Deficit (Lack) */}
-                  <div>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
-                      <span style={{ fontSize: 10, color: "#94A3B8", textTransform: "uppercase", letterSpacing: 1 }}>What I Lack (Deficit)</span>
-                      <span style={{ fontSize: 11, fontWeight: 700, color: lackPercent > 0 ? "#F87171" : "#64748B" }}>{lackPercent}%</span>
-                    </div>
-                    <div className="ats-bar-bg" style={{ height: 8 }}>
-                      <div className="ats-bar-fill" style={{ height: 8, width: `${lackPercent}%`, background: "linear-gradient(90deg, #DC2626, #F87171)", borderRadius: 2 }} />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Role Relevance */}
-                <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20, marginBottom: 20 }}>
-                  <div className="section-label" style={{ marginBottom: 12 }}>Role Suitability for {activeRole}</div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                    <span style={{ 
-                      fontSize: 10, 
-                      background: suitabilityColor + "20", 
-                      color: suitabilityColor, 
-                      border: `1px solid ${suitabilityColor}40`,
-                      padding: "4px 10px", 
-                      borderRadius: 2, 
-                      fontWeight: 700, 
-                      textTransform: "uppercase" 
-                    }}>
-                      {suitabilityLabel}
-                    </span>
-                  </div>
-                  <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.6 }}>{suitabilityDesc}</p>
-                </div>
-
-                {/* Overall Eligibility */}
-                <div style={{ background: "#0F1724", border: `1px solid ${eligibilityColor}33`, borderRadius: 4, padding: 20 }}>
-                  <div className="section-label" style={{ marginBottom: 12, borderBottomColor: `${eligibilityColor}22` }}>Overall Role Eligibility</div>
+              {/* Right Column: ATS Analyzer & Skill Gap Scorecard */}
+              <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+                
+                {/* ATS Score and Verdict */}
+                <div style={{ background: "#0F1724", border: `1px solid ${role.color}33`, borderRadius: 4, padding: 20 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <div>
-                      <div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{activeRole} Fit</div>
-                      <div style={{ fontSize: 9, color: eligibilityColor, marginTop: 4, fontWeight: 600, textTransform: "uppercase" }}>{eligibilityRating}</div>
+                      <div style={{ fontSize: 9, letterSpacing: 2, color: "#64748B", textTransform: "uppercase", marginBottom: 4 }}>Resume Match Score</div>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: "#FFF" }}>{activeRole}</div>
+                      <div style={{ fontSize: 9, color: atsScore >= 75 ? "#34D399" : atsScore >= 50 ? "#FCD34D" : "#EF4444", fontWeight: 700, marginTop: 4 }}>
+                        {atsScore >= 75 ? "✓ ATS Match Ready" : atsScore >= 50 ? "⟳ Developing Fit" : "✗ Gap / In Training"}
+                      </div>
                     </div>
-                    <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 42, color: eligibilityColor, lineHeight: 1 }}>
-                      {atsScore}%
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                      <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 44, color: role.color, lineHeight: 1 }}>{atsScore}%</div>
+                      <span style={{ fontSize: 8, color: "#475569", textTransform: "uppercase", letterSpacing: 0.5 }}>Match Rate</span>
                     </div>
-                  </div>
-                  <div className="ats-bar-bg" style={{ marginTop: 12 }}>
-                    <div className="ats-bar-fill" style={{ width: `${atsScore}%`, background: eligibilityColor }} />
                   </div>
                   
-                  {/* Must-have skills list matching */}
-                  <div style={{ marginTop: 20 }}>
-                    <div style={{ fontSize: 9, letterSpacing: 2, color: "#475569", textTransform: "uppercase", marginBottom: 10 }}>Role must-haves checklist</div>
-                    <div style={{ display: "flex", flexDirection: "column", gap: 6, maxHeight: 180, overflowY: "auto", paddingRight: 4 }}>
-                      {mustHaveAnalysis.map(({ skill, status }) => (
-                        <div key={skill} onClick={() => setSelectedSkillDetail(skill)} style={{ display: "flex", alignItems: "center", justifyContent: "space-between", fontSize: 10, padding: "6px 10px", background: "#0A0D14", border: "1px solid #1E293B", borderRadius: 2, cursor: "pointer" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                            <span className="status-dot" style={{ background: status === "have" ? "#34D399" : status === "learning" ? "#FCD34D" : "#EF4444", margin: 0 }} />
-                            <span style={{ color: "#94A3B8" }}>{skill}</span>
-                          </div>
-                          <span style={{ fontSize: 8, color: status === "have" ? "#34D399" : status === "learning" ? "#F59E0B" : "#EF4444", fontWeight: 700, textTransform: "uppercase" }}>
-                            {status === "have" ? "✓ Have" : status === "learning" ? "⟳ Learning" : "✗ Gap"}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
+                  {/* ATS matching progress bar */}
+                  <div className="ats-bar-bg" style={{ height: 6, marginTop: 14 }}>
+                    <div className="ats-bar-fill" style={{ height: 6, width: `${atsScore}%`, background: role.color, borderRadius: 2 }} />
                   </div>
                 </div>
+
+                {/* Skill Keywords to Use in Resume */}
+                <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20 }}>
+                  <div className="section-label" style={{ marginBottom: 12 }}>Must-Have Skill Keywords Checklist</div>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                    {mustHaveAnalysis.map(({ skill, status }) => {
+                      let statusColor = "#EF4444";
+                      let statusBg = "#1E1014";
+                      let statusBorder = "#7F1D1D";
+                      let statusLabel = "Gap";
+
+                      if (status === "have") {
+                        statusColor = "#34D399";
+                        statusBg = "#0F2A1F";
+                        statusBorder = "#064E3B";
+                        statusLabel = "Matched";
+                      } else if (status === "learning") {
+                        statusColor = "#FCD34D";
+                        statusBg = "#1C1A0A";
+                        statusBorder = "#713F12";
+                        statusLabel = "Learning";
+                      }
+
+                      return (
+                        <div 
+                          key={skill}
+                          onClick={() => setSelectedSkillDetail(skill)}
+                          style={{ 
+                            display: "flex", 
+                            justifyContent: "space-between", 
+                            alignItems: "center", 
+                            padding: "8px 12px", 
+                            background: "#080C14", 
+                            border: "1px solid #1E293B", 
+                            borderRadius: 2,
+                            cursor: "pointer",
+                            transition: "border-color 0.2s"
+                          }}
+                          onMouseEnter={e => e.currentTarget.style.borderColor = role.color + "55"}
+                          onMouseLeave={e => e.currentTarget.style.borderColor = "#1E293B"}
+                        >
+                          <span style={{ fontSize: 10.5, fontWeight: 600, color: "#94A3B8" }}>{skill}</span>
+                          <span style={{ 
+                            fontSize: 8, 
+                            background: statusBg, 
+                            color: statusColor, 
+                            border: `1px solid ${statusBorder}`,
+                            padding: "2px 6px", 
+                            borderRadius: 2, 
+                            fontWeight: 700, 
+                            textTransform: "uppercase" 
+                          }}>
+                            {statusLabel}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Nice to have checklist */}
+                {goodToHaveAnalysis.length > 0 && (
+                  <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20 }}>
+                    <div className="section-label" style={{ marginBottom: 12 }}>Nice-to-Have Skill Keywords</div>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                      {goodToHaveAnalysis.map(({ skill, status }) => {
+                        let statusColor = "#64748B";
+                        let statusBg = "#1E293B";
+                        if (status === "have") {
+                          statusColor = "#34D399";
+                          statusBg = "#064E3B";
+                        } else if (status === "learning") {
+                          statusColor = "#FCD34D";
+                          statusBg = "#713F12";
+                        }
+                        return (
+                          <span 
+                            key={skill} 
+                            style={{ 
+                              fontSize: 9, 
+                              background: statusBg, 
+                              color: statusColor, 
+                              padding: "4px 8px", 
+                              borderRadius: 2, 
+                              fontWeight: 500,
+                              border: "1px solid rgba(255,255,255,0.05)"
+                            }}
+                          >
+                            {skill}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                {/* Critical Gaps & Study Actions */}
+                <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20 }}>
+                  <div className="section-label" style={{ marginBottom: 12 }}>Critical Gaps & Learning Roadmap</div>
+                  {criticalGapsList.length > 0 ? (
+                    <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                      {criticalGapsList.map(({ skill, status }) => {
+                        const gapInfo = getGapDetails(skill);
+                        const isLearning = status === "learning";
+                        return (
+                          <div key={skill} style={{ background: "#080C14", borderLeft: `3px solid ${isLearning ? "#FCD34D" : "#EF4444"}`, padding: 12, borderRadius: 2 }}>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+                              <span style={{ fontSize: 11, fontWeight: 700, color: "#E2E8F0" }}>{skill}</span>
+                              <span style={{ fontSize: 8, color: isLearning ? "#FCD34D" : "#EF4444", textTransform: "uppercase", fontWeight: 700 }}>
+                                {isLearning ? "Currently Learning" : "Lacking Key Skill"}
+                              </span>
+                            </div>
+                            <div style={{ fontSize: 10, color: "#94A3B8", lineHeight: 1.4, marginBottom: 6 }}>
+                              <strong style={{ color: "#64748B" }}>Required Knowledge: </strong>{gapInfo.topics}
+                            </div>
+                            <div style={{ fontSize: 9, color: "#64748B" }}>
+                              Target Timeline: <strong style={{ color: "#FCD34D" }}>{gapInfo.milestone}</strong>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div style={{ background: "#0F2A1F", border: "1px solid #064E3B", borderRadius: 4, padding: "16px 20px", textAlign: "center" }}>
+                      <span style={{ fontSize: 18, display: "block", marginBottom: 6 }}>🎉</span>
+                      <div style={{ fontSize: 11, fontWeight: 700, color: "#34D399" }}>100% Match Reached!</div>
+                      <div style={{ fontSize: 10, color: "#64748B", marginTop: 4 }}>Your resume matches all must-have keywords for this role in the curriculum timeline.</div>
+                    </div>
+                  )}
+                </div>
+
               </div>
             </div>
           );
         })()}
+      </div>
 
-        {activeTab === "roadmap" && (
-          <div>
-            {/* Role Eligibility Grid */}
-            <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 20, marginBottom: 28 }}>
-              <div style={{ fontSize: 9, letterSpacing: 3, color: "#94A3B8", textTransform: "uppercase", marginBottom: 16 }}>
-                💼 Role Eligibility Overview (At Selected Milestone)
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 12 }}>
-                {Object.keys(roleRequirements).map(rName => {
-                  const score = calculateAtsScore(rName);
-                  let statusLabel = "";
-                  let statusColor = "";
-                  if (score >= 75) {
-                    statusLabel = "✓ Eligible & Match Ready";
-                    statusColor = "#34D399"; // Green
-                  } else if (score >= 50) {
-                    statusLabel = "⟳ Partially Match (Learning)";
-                    statusColor = "#FCD34D"; // Yellow
-                  } else {
-                    statusLabel = "✗ Gap / In Training";
-                    statusColor = "#EF4444"; // Red
-                  }
-                  
-                  const isCurrentTarget = activeRole === rName;
-
-                  return (
-                    <div 
-                      key={rName} 
-                      onClick={() => setActiveRole(rName)}
-                      style={{ 
-                        display: "flex", 
-                        justifyContent: "space-between", 
-                        alignItems: "center", 
-                        padding: "12px 16px", 
-                        background: isCurrentTarget ? "#1E293B" : "#090D16", 
-                        border: isCurrentTarget ? `1px solid ${roleRequirements[rName].color}` : "1px solid #1E293B",
-                        borderRadius: 4,
-                        cursor: "pointer",
-                        transition: "all 0.2s"
-                      }}
-                    >
-                      <div>
-                        <div style={{ fontSize: 11, fontWeight: 700, color: isCurrentTarget ? "#FFF" : "#94A3B8" }}>{rName}</div>
-                        <div style={{ fontSize: 9, color: statusColor, marginTop: 4, fontWeight: 600 }}>{statusLabel}</div>
-                      </div>
-                      <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 28, color: statusColor, marginLeft: 12 }}>{score}%</div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-            <div style={{ marginBottom: 28 }}>
-              <div className="section-label">Project Timeline & Skill Build</div>
-              {[
-                { month: "Now → Jun 2026", project: "IPL Analytics Dashboard", skills: ["Python/Pandas", "Matplotlib/Seaborn", "Kaggle", "Data Storytelling"], color: "#3B82F6", status: "active" },
-                { month: "Jun → Jul 2026", project: "BPL Analytics", skills: ["Cross-dataset joins", "Player benchmarking", "Aggregations", "Notebook narrative"], color: "#8B5CF6", status: "next" },
-                { month: "Aug → Sep 2026", project: "E-Commerce Analytics", skills: ["SQL (must!)", "Funnel analysis", "Cohort retention", "Business KPIs", "Power BI/Tableau"], color: "#10B981", status: "planned" },
-                { month: "Oct → Nov 2026", project: "OTT Platform Analytics", skills: ["Content analytics", "Churn modeling", "Feature adoption", "Mixpanel-style metrics"], color: "#F59E0B", status: "planned" },
-              ].map((item, i) => (
-                <div key={i} style={{ display: "flex", gap: 20, marginBottom: 20 }}>
-                  <div style={{ width: 130, flexShrink: 0, paddingTop: 4 }}>
-                    <div style={{ fontSize: 9, color: item.color, letterSpacing: 1.5, textTransform: "uppercase", fontWeight: 600 }}>{item.month}</div>
-                    <div style={{ width: 2, height: 60, background: item.color + "30", margin: "8px 0 0 4px" }} />
-                  </div>
-                  <div style={{ background: "#0F1724", border: `1px solid ${item.color}22`, borderRadius: 4, padding: 16, flex: 1 }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-                      <div>
-                        <div style={{ fontSize: 12, fontWeight: 600, color: "#F1F5F9" }}>{item.project}</div>
-                      </div>
-                      <span style={{ fontSize: 9, letterSpacing: 1, textTransform: "uppercase", color: item.color, background: item.color + "15", padding: "2px 8px", borderRadius: 2 }}>{item.status}</span>
-                    </div>
-                    <div style={{ fontSize: 10, color: "#475569", marginBottom: 8 }}>Skills you'll build:</div>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                      {item.skills.map(s => <span key={s} onClick={() => setSelectedSkillDetail(s)} className="tag" style={{ cursor: "pointer" }}>{s}</span>)}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div style={{ background: "#0F0A1F", border: "1px solid #3B0764", borderRadius: 4, padding: 20 }}>
-              <div style={{ fontSize: 9, letterSpacing: 3, color: "#7C3AED", textTransform: "uppercase", marginBottom: 12 }}>⚡ Priority Action: Learn SQL Now</div>
-              <p style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.8 }}>
-                SQL is the single most impactful skill to learn immediately. It appears as a must-have in <strong style={{ color: "#C4B5FD" }}>5 out of 6</strong> analyst roles you're targeting. Use Mode Analytics or SQLZoo — 30 min/day for 30 days will get you interview-ready.
-              </p>
-              <div style={{ marginTop: 12, display: "flex", flexWrap: "wrap", gap: 8 }}>
-                {["SQLZoo (free)", "Mode Analytics SQL Tutorial", "StrataScratch (practice)", "LeetCode Easy SQL (50 Qs)"].map(r => (
-                  <span key={r} className="skill-badge" style={{ background: "#2E1065", color: "#A78BFA", border: "1px solid #4C1D95" }}>{r}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-
-        {activeTab === "assessment" && (
-          <div>
-            <div style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 24, marginBottom: 28 }}>
-              <div style={{ fontSize: 9, letterSpacing: 3, color: "#F4A72A", textTransform: "uppercase", marginBottom: 6 }}>Srihari's Role Suitability & Readiness Assessment Report</div>
-              <h3 style={{ margin: "0 0 8px", fontSize: 18, fontWeight: 700, color: "#fff" }}>Monthly Fit & Apply Progression</h3>
-              <p style={{ margin: 0, color: "#64748B", fontSize: 11, lineHeight: 1.6 }}>
-                This report analyzes which months you are fit to apply for each role based on your planned learning roadmap and skill mastery. Target apply windows are dynamically adjusted based on the current timeline selector.
-              </p>
-            </div>
-
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
-              {/* Left Side: Creative & Writing Roles */}
-              <div>
-                <div className="section-label">✍️ Creative & Writing Roles (25 Roles OS)</div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                  {[
-                    { role: "Content Writer", fitMonth: "June", targetFit: "90%", keySkills: ["MDX Blog System", "SEO Strategy", "Research & Curation"], description: "Ready immediately with Sahitya planning foundation and portfolio folder setups." },
-                    { role: "Copywriter", fitMonth: "August", targetFit: "85%", keySkills: ["Zomato/Swiggy Teardowns", "CTA Copy", "Conversion optimization"], description: "Unlocked after August Brand and Product Teardowns series launch." },
-                    { role: "SEO Writer", fitMonth: "August", targetFit: "90%", keySkills: ["Keyword Research", "On-page optimization", "Crawl index logic"], description: "Ready to apply after August HubSpot Digital Marketing and SEO Article publishes." },
-                    { role: "Lyricist", fitMonth: "July", targetFit: "80%", keySkills: ["Lyrics Vault", "Folk lyrics decode", "Srivalli analysis"], description: "Optimal in July after Srivalli Decoded analysis and Month 1-2 lyrics publishes." },
-                    { role: "Film Analyst / Critic", fitMonth: "October", targetFit: "85%", keySkills: ["Cinepedia Wiki", "Thematic essays", "Color grammar studies"], description: "Unlocked in October after writing Mani Ratnam & Vikram Vedha breakdowns." },
-                    { role: "Narrative Designer", fitMonth: "October", targetFit: "85%", keySkills: ["Story Universe map", "Character bibles", "Lore coherence"], description: "Fit to apply after October Original Web Series Universe Design document launches." },
-                    { role: "Creative Director", fitMonth: "November", targetFit: "85%", keySkills: ["Founder Journal", "Platform vision", "Content ecosystems"], description: "Peak fit in November after launching Sahitya Rachanalu's 5 core platform modules." },
-                    { role: "Creative Producer", fitMonth: "November", targetFit: "85%", keySkills: ["Screenplay breakdowns", "ZNMD roadmap", "Production docs"], description: "Optimal in November after finishing 8 detailed screenplay breakdowns." },
-                    { role: "Sports Writer", fitMonth: "July", targetFit: "95%", keySkills: ["IPL Analytics Hub", "Dhoni Nostalgia Premium", "Stat stories"], description: "Apply aggressively in July as the IPL Analytics Engine Kaggle notebook goes live." },
-                  ].map((r, i) => {
-                    const targetMapping = { "June": 1, "July": 2, "August": 3, "September": 4, "October": 5, "November": 6, "December": 7 };
-                    const targetIdx = targetMapping[r.fitMonth];
-                    let currentFitVal = 0;
-                    if (monthProgress >= targetIdx) {
-                      currentFitVal = parseInt(r.targetFit);
-                    } else {
-                      const diff = targetIdx - monthProgress;
-                      currentFitVal = Math.max(20, parseInt(r.targetFit) - diff * 15);
-                    }
-
-                    return (
-                      <div key={i} style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 12 }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
-                          <div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{r.role}</div>
-                          <span style={{ fontSize: 10, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B", fontWeight: 700 }}>
-                            {monthProgress >= targetIdx ? "Ready to Apply" : `Target: ${r.fitMonth}`}
-                          </span>
-                        </div>
-                        <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "6px 0" }}>
-                          <div className="ats-bar-bg" style={{ flex: 1 }}>
-                            <div className="ats-bar-fill" style={{ width: `${currentFitVal}%`, background: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }} />
-                          </div>
-                          <span style={{ fontSize: 11, fontWeight: 700, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }}>{currentFitVal}%</span>
-                        </div>
-                        <p style={{ fontSize: 10, color: "#64748B", margin: "4px 0", lineHeight: 1.4 }}>{r.description}</p>
-                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 6 }}>
-                          {r.keySkills.map(s => <span key={s} className="tag" style={{ fontSize: 8 }}>{s}</span>)}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Right Side: Growth & Media Strategy Roles */}
-              <div>
-                <div className="section-label">📈 Growth & Media Strategy Roles</div>
-                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                  {[
-                    { role: "Growth Marketer", fitMonth: "September", targetFit: "90%", keySkills: ["A/B Copy Testing", "Attribution Models", "GA4 Analytics"], description: "Apply in September after completing the Google PM and HubSpot automation certs." },
-                    { role: "Social Media Strategist", fitMonth: "September", targetFit: "85%", keySkills: ["Reel Concepts", "LinkedIn series", "Campaign Planning"], description: "Unlocked after launching the 10-part IPL attention economy series." },
-                    { role: "Community Builder", fitMonth: "November", targetFit: "90%", keySkills: ["Organic Distribution", "Founder Journals", "Creator systems"], description: "Peak fit in November after launching Sahitya Rachanalu pre-launch growth tracks." },
-                    { role: "Communications Specialist", fitMonth: "September", targetFit: "85%", keySkills: ["Stakeholder reports", "Brand voice", "Copywriting"], description: "Apply in September after completing the HireMap product case studies." },
-                    { role: "Podcast Script Writer", fitMonth: "September", targetFit: "80%", keySkills: ["Script writing", "IPL Audio scripts", "Story structuring"], description: "Optimal in September after publishing the attention economy audio series." },
-                    { role: "Reel Concept Creator", fitMonth: "September", targetFit: "90%", keySkills: ["10 Reel concepts", "Visual storytelling", "TikTok/Reel hooks"], description: "Ready in September after launching the reels and visual metrics campaign." },
-                    { role: "SEO Analyst", fitMonth: "August", targetFit: "90%", keySkills: ["Keyword Maps", "On-page structure", "SEO Audits"], description: "Ready to apply after August Google Analytics and SEO modules are completed." },
-                    { role: "Content Strategist", fitMonth: "September", targetFit: "90%", keySkills: ["GA4 Tracking", "Editorial timelines", "Copywriting plays"], description: "Unlocked in September after completing GA4 + HubSpot certifications." }
-                  ].map((r, i) => {
-                    const targetMapping = { "June": 1, "July": 2, "August": 3, "September": 4, "October": 5, "November": 6, "December": 7 };
-                    const targetIdx = targetMapping[r.fitMonth];
-                    let currentFitVal = 0;
-                    if (monthProgress >= targetIdx) {
-                      currentFitVal = parseInt(r.targetFit);
-                    } else {
-                      const diff = targetIdx - monthProgress;
-                      currentFitVal = Math.max(20, parseInt(r.targetFit) - diff * 15);
-                    }
-
-                    return (
-                      <div key={i} style={{ background: "#0F1724", border: "1px solid #1E293B", borderRadius: 4, padding: 12 }}>
-                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
-                          <div style={{ fontSize: 12, fontWeight: 700, color: "#fff" }}>{r.role}</div>
-                          <span style={{ fontSize: 10, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B", fontWeight: 700 }}>
-                            {monthProgress >= targetIdx ? "Ready to Apply" : `Target: ${r.fitMonth}`}
-                          </span>
-                        </div>
-                        <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "6px 0" }}>
-                          <div className="ats-bar-bg" style={{ flex: 1 }}>
-                            <div className="ats-bar-fill" style={{ width: `${currentFitVal}%`, background: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }} />
-                          </div>
-                          <span style={{ fontSize: 11, fontWeight: 700, color: monthProgress >= targetIdx ? "#34D399" : "#F59E0B" }}>{currentFitVal}%</span>
-                        </div>
-                        <p style={{ fontSize: 10, color: "#64748B", margin: "4px 0", lineHeight: 1.4 }}>{r.description}</p>
-                        <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 6 }}>
-                          {r.keySkills.map(s => <span key={s} className="tag" style={{ fontSize: 8 }}>{s}</span>)}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
       {selectedSkillDetail && (() => {
         const sName = selectedSkillDetail;
         const month = getSkillLearningMonth(sName);
@@ -5790,8 +5580,6 @@ function ResumeATSAnalyzer({ activeTracks = [] }) {
           </div>
         );
       })()}
-        </div>
-      )}
     </div>
   );
 }
