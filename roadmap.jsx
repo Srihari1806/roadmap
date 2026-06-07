@@ -1,4 +1,4 @@
-const { useState, Component } = React;
+const { useState, useEffect, Component } = React;
 
 class ErrorBoundary extends Component {
   constructor(props) {
